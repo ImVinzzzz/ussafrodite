@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PADD 4a – All'Attenzione dell'Equipaggio | USS Afrodite</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="header-lcars">
+    <div class="header-elbow">
+      <span class="ship-name">USS Afrodite</span>
+      <span class="ship-registry">NCC-1863 · Miranda</span>
+    </div>
+    <div class="header-content">
+      <div class="header-top-bar">
+        <div class="lcars-bar lcars-bar-1"></div>
+        <div class="lcars-bar lcars-bar-2"></div>
+        <div class="lcars-bar lcars-bar-3"></div>
+        <span id="lcars-clock" style="font-family:'Orbitron',sans-serif;font-size:0.65rem;color:var(--lcars-orange);letter-spacing:0.1em;white-space:nowrap;"></span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link log" style="background:rgba(255,153,0,0.25);color:var(--lcars-orange);border:1px solid var(--lcars-orange);"><i class="fa-solid fa-house"></i></a>
+        <a href="log.html"  class="nav-link log"><i class="fa-solid fa-book-open"></i> Log</a>
+        <a href="crew.html" class="nav-link crew"><i class="fa-solid fa-users"></i> Crew</a>
+        <a href="ship.html" class="nav-link ship"><i class="fa-solid fa-rocket"></i> Ship</a>
+        <a href="padd.html" class="nav-link padd active"><i class="fa-solid fa-tablet-screen-button"></i> PADD</a>
+        <span class="nav-status">● Sistema operativo</span>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+    <span>›</span>
+    <a href="padd.html">PADD</a>
+    <span>›</span>
+    <span class="current">MSG-4A</span>
+  </div>
+
+  <div class="padd-detail-wrapper animate-in">
+
+    <div class="padd-detail-header">
+      <div class="padd-meta">
+        <i class="fa-solid fa-tablet-screen-button"></i>
+        &nbsp;MSG-4A &nbsp;·&nbsp; USS Afrodite &nbsp;·&nbsp;
+        Stardate <span class="js-stardate"></span>
+      </div>
+      <div class="padd-title">All'Attenzione dell'Equipaggio</div>
+      <div style="margin-top:8px;font-size:0.75rem;color:rgba(248,248,255,0.45);">
+        Da: Primo Ufficiale Scientifico GM Renzi
+      </div>
+    </div>
+
+    <div class="padd-detail-body">
+      <p>
+        [Inserire qui il testo dell'avviso "All'attenzione dell'equipaggio"
+        proveniente dal Primo Ufficiale Scientifico. Testo segnaposto da sostituire.]
+      </p>
+      <p>
+        Lorem ipsum: comunicazione ufficiale a tutto l'equipaggio della USS Afrodite.
+        Si informa che a partire da [data] entreranno in vigore le seguenti disposizioni...
+      </p>
+      <p>
+        [Corpo del messaggio. Aggiungere eventuale immagine con tag
+        <code style="font-size:0.8em;background:rgba(255,255,255,0.07);padding:2px 6px;border-radius:4px;">&lt;img src="images/nome_immagine.jpg" alt="..."&gt;</code>]
+      </p>
+      <p style="margin-top:24px;font-size:0.8rem;color:rgba(248,248,255,0.45);font-style:italic;">
+        GM Fabiola Renzi<br/>
+        Primo Ufficiale Scientifico<br/>
+        USS Afrodite NCC-1863
+      </p>
+    </div>
+  </div>
+
+  <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;">
+    <a href="padd.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Torna ai Messaggi
+    </a>
+    <a href="padd_4b.html" class="btn-back" style="margin-left:auto;">
+      Messaggio successivo <i class="fa-solid fa-chevron-right"></i>
+    </a>
+  </div>
+
+</main>
+
+<footer>
+  USS Afrodite &nbsp;·&nbsp; NCC-1863 &nbsp;·&nbsp; Classe Miranda &nbsp;·&nbsp;
+  Stardate <span class="js-stardate"></span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

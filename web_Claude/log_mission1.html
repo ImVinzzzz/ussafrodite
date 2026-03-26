@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mission: 1 | USS Afrodite</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<header id="site-header"></header> 
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-paper-plane"></i></a>
+    <span>›</span>
+    <a href="log.html">Log</a>
+    <span>›</span>
+    <span class="current">Mission: 1</span>
+  </div>
+
+  <!-- Mission header -->
+  <div class="mission-header-block">
+    <div style="font-size:2.5rem;color:var(--lcars-orange);flex-shrink:0;"><i class="fa-solid fa-file-lines"></i></div>
+    <div>
+      <div class="mission-header-label">Missione</div>
+      <div class="mission-header-title">LA USS CASSIOPEA</div>
+      <div style="font-family:'Orbitron',sans-serif;font-size:0.65rem;color:rgba(248,248,255,0.45);margin-top:4px;letter-spacing:0.1em;">
+        Mission: 1
+      </div>
+    </div>
+    <div style="margin-left:auto;text-align:right;">
+      <div style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.2em;color:rgba(255,153,0,0.5);">STARDATE</div>
+      <div style="font-family:'Orbitron',sans-serif;font-size:0.9rem;color:var(--lcars-orange);">9907.15</div>
+    </div>
+  </div>
+
+  <!-- Diary grid -->
+  <div class="diary-grid">
+
+    <!-- Briefing – always first, special styling -->
+    <a href="log_mission1_briefing.html" class="diary-card" style="border-color:rgba(255,153,0,0.3);">
+      <div class="diary-card-bar" style="background: linear-gradient(90deg, var(--lcars-orange), var(--accent-gold));"></div>
+      <div class="diary-card-body">
+        <div class="diary-card-role" style="color:var(--lcars-orange);">
+          <i class="fa-solid fa-compass"></i> &nbsp;Comunicazione
+        </div>
+        <div class="diary-card-name">Ordini da StarFleet</div>
+        <div style="font-size:0.7rem;color:rgba(248,248,255,0.4);margin-top:6px;">Ammiraglio Stark</div>
+        <div class="diary-card-arrow">Rapporto ›</div>
+      </div>
+    </a>
+
+    <!-- 1a – Capitano -->
+    <a href="log_mission1_alighieri.html" class="diary-card">
+      <div class="diary-card-bar" style="background:var(--cmd-color);"></div>
+      <div class="diary-card-body">
+        <div class="diary-card-role" style="color:var(--cmd-color);">
+          <i class="fa-solid fa-star"></i> &nbsp;Comando · Capitano
+        </div>
+        <div class="diary-card-name">Diario di Bordo <br/>del F.F. Capitano<br/> S.Ten. G. Alighieri</div>
+        <div class="diary-card-arrow">Diario ›</div>
+      </div>
+    </a>
+
+    <!-- 1b – Primo Ufficiale -->
+    <a href="log_mission1_frruuu.html" class="diary-card">
+      <div class="diary-card-bar" style="background:var(--cmd-color);"></div>
+      <div class="diary-card-body">
+        <div class="diary-card-role" style="color:var(--cmd-color);">
+          <i class="fa-solid fa-chevron-up"></i> &nbsp;Comando · Primo Ufficiale
+        </div>
+        <div class="diary-card-name">Diario Personale del Primo Ufficiale<br/>GM Frruuu</div>
+        <div class="diary-card-arrow">Diario ›</div>
+      </div>
+    </a>
+
+    <!-- 1c – Primo Ufficiale Scientifico -->
+    <a href="log_mission1_renzi.html" class="diary-card">
+      <div class="diary-card-bar" style="background:var(--sci-color);"></div>
+      <div class="diary-card-body">
+        <div class="diary-card-role" style="color:var(--sci-color);">
+          <i class="fa-solid fa-flask"></i> &nbsp;Scienze · 1° Uff. Scientifico
+        </div>
+        <div class="diary-card-name">Diario Personale del Primo Ufficiale Scientifico<br/>GM Renzi</div>
+        <div class="diary-card-arrow">Diario ›</div>
+      </div>
+    </a>
+
+    <!-- 1d – Secondo Ufficiale Scientifico -->
+    <a href="log_mission1_danee.html" class="diary-card">
+      <div class="diary-card-bar" style="background:var(--sci-color);"></div>
+      <div class="diary-card-body">
+        <div class="diary-card-role" style="color:var(--sci-color);">
+          <i class="fa-solid fa-flask"></i> &nbsp;Scienze · 2° Uff. Scientifico
+        </div>
+        <div class="diary-card-name">Diario Personale del Secondo Ufficiale Scientifico<br/>GM Da Nee</div>
+        <div class="diary-card-arrow">Diario ›</div>
+      </div>
+    </a>
+
+    <!-- 1e – Ufficiale Medico Capo -->
+    <a href="log_mission1_tmik.html" class="diary-card">
+      <div class="diary-card-bar" style="background:var(--sci-color);"></div>
+      <div class="diary-card-body">
+        <div class="diary-card-role" style="color:var(--sci-color);">
+          <i class="fa-solid fa-stethoscope"></i> &nbsp;Medica · Uff. Medico Capo
+        </div>
+        <div class="diary-card-name">Diario Personale dell'Ufficiale Medico Capo<br/>GM T'Mik</div>
+        <div class="diary-card-arrow">Diario ›</div>
+      </div>
+    </a>
+
+    <!-- 1f – Secondo Ufficiale Medico -->
+    <a href="log_mission1_vanbajark.html" class="diary-card">
+      <div class="diary-card-bar" style="background:var(--sci-color);"></div>
+      <div class="diary-card-body">
+        <div class="diary-card-role" style="color:var(--sci-color);">
+          <i class="fa-solid fa-stethoscope"></i> &nbsp;Medica · 2° Uff. Medico
+        </div>
+        <div class="diary-card-name">Diario Personale del Secondo Ufficiale Medico<br/>GM Van Bajark</div>
+        <div class="diary-card-arrow">Diario ›</div>
+      </div>
+    </a>
+
+    <!-- 1g – Capo Sicurezza -->
+    <a href="log_mission1_rael.html" class="diary-card">
+      <div class="diary-card-bar" style="background:var(--ops-color);"></div>
+      <div class="diary-card-body">
+        <div class="diary-card-role" style="color:var(--ops-color);">
+          <i class="fa-solid fa-shield-halved"></i> &nbsp;Sicurezza · Capo Sicurezza
+        </div>
+        <div class="diary-card-name">Diario Personale del Capo della Sicurezza<br/>GM Rael</div>
+        <div class="diary-card-arrow">Diario ›</div>
+      </div>
+    </a>
+
+    <!-- 1h – Vice Capo Sicurezza -->
+    <a href="log_mission1_daccardi.html" class="diary-card">
+      <div class="diary-card-bar" style="background:var(--ops-color);"></div>
+      <div class="diary-card-body">
+        <div class="diary-card-role" style="color:var(--ops-color);">
+          <i class="fa-solid fa-shield-halved"></i> &nbsp;Sicurezza · Vice Capo
+        </div>
+        <div class="diary-card-name">Diario Personale del Vice Capo della Sicurezza<br/>GM D'Accardi</div>
+        <div class="diary-card-arrow">Diario ›</div>
+      </div>
+    </a>
+
+    <!-- 1i – Ingegnere Capo -->
+    <a href="log_mission1_tanutri.html" class="diary-card">
+      <div class="diary-card-bar" style="background:var(--ops-color);"></div>
+      <div class="diary-card-body">
+        <div class="diary-card-role" style="color:var(--ops-color);">
+          <i class="fa-solid fa-wrench"></i> &nbsp;Ingegneria · Ingegnere Capo
+        </div>
+        <div class="diary-card-name">Diario Personale dell'Ingegnere Capo<br/>GM Ta Nutri</div>
+        <div class="diary-card-arrow">Diario ›</div>
+      </div>
+    </a>
+
+    <!-- 1l – Capo OPS -->
+    <a href="log_mission1_jacket.html" class="diary-card">
+      <div class="diary-card-bar" style="background:var(--ops-color);"></div>
+      <div class="diary-card-body">
+        <div class="diary-card-role" style="color:var(--ops-color);">
+          <i class="fa-solid fa-satellite-dish"></i> &nbsp;OPS · Capo OPS
+        </div>
+        <div class="diary-card-name">Diario Personale del Capo OPS<br/>GM Jacket</div>
+        <div class="diary-card-arrow">Diario ›</div>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- NOTE per diari aggiuntivi -->
+  <div style="margin-top:24px;padding:16px 20px;background:rgba(68,136,255,0.06);border:1px solid rgba(68,136,255,0.15);border-radius:12px;">
+    <p style="font-family:'Orbitron',sans-serif;font-size:0.6rem;letter-spacing:0.15em;color:var(--lcars-blue);text-transform:uppercase;margin-bottom:6px;">
+      <i class="fa-solid fa-circle-info"></i> &nbsp;Diari aggiuntivi
+    </p>
+    <p style="font-size:0.8rem;color:rgba(248,248,255,0.5);">
+      Per aggiungere un diario extra per questa missione, duplica uno dei blocchi
+      <code style="font-size:0.75em;background:rgba(255,255,255,0.07);padding:1px 5px;border-radius:4px;">&lt;a href="..." class="diary-card"&gt;</code>
+      in questo file e crea il corrispondente file HTML.
+    </p>
+  </div>
+
+  <div style="margin-top:24px;">
+    <a href="log.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Torna all'Archivio Missioni
+    </a>
+  </div>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
