@@ -9,6 +9,10 @@ async function loadComponent(selector, filePath) {
     // Dopo il caricamento, esegui le funzioni che dipendono dall'header
     highlightActiveNav();
     updateClock();
+    // Popola gli stardate nel componente appena caricato
+    el.querySelectorAll('.js-stardate').forEach(span => {
+      span.textContent = getStardate();
+    });
   } catch (err) {
     console.warn('Componente non caricato:', filePath, err);
   }
@@ -27,8 +31,8 @@ function highlightActiveNav() {
 
 // Avvia il caricamento dei componenti
 document.addEventListener('DOMContentLoaded', () => {
-  loadComponent('#site-header',   'header.html');
-  loadComponent('#site-footer',   'footer.html');
+  loadComponent('#site-header', 'header.html');
+  loadComponent('#site-footer', 'footer.html');
 });
 
 /* ============================================================
