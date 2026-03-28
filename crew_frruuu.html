@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alighieri – USS Afrodite Crew</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+    <span>›</span>
+    <a href="crew.html">Crew</a>
+    <span>›</span>
+    <span class="current">Capitano FF Giuseppe Alighieri</span>
+  </div>
+
+  <div class="crew-detail-wrapper animate-in">
+
+    <!-- Top: photo + header -->
+    <div class="crew-detail-top" style="border: 1px solid rgba(128,0,0,0.4);">
+
+      <!-- Left: photo + dept logo -->
+      <div class="crew-detail-img-wrap" style="border-right:1px solid rgba(128,0,0,0.25);">
+        <!-- Logo sezione: sostituire src con il path della gif reale (125x150px trasparente) -->
+        <img src="images/l_com.gif" alt="Logo Comando"
+             class="crew-dept-logo"
+             onerror="this.style.display='none'" />
+
+        <!-- Foto PG: sostituire src con il path della foto jpeg reale -->
+        <img src="images/crew/alighieri.gif" alt="Capitano Alighieri"
+             style="width:160px;height:190px;object-fit:cover;border-radius:8px;border:2px solid rgba(128,0,0,0.5);"
+             onerror="this.outerHTML='<div style=\'width:160px;height:190px;background:rgba(128,0,0,0.15);border-radius:8px;border:2px dashed rgba(128,0,0,0.3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px\'><i class=\'fa-solid fa-user-tie\' style=\'font-size:3rem;color:rgba(128,0,0,0.4);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.55rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+      </div>
+
+      <!-- Right: title header -->
+      <div class="crew-detail-header" style="background:linear-gradient(135deg, rgba(128,0,0,0.35), rgba(60,0,0,0.5));">
+        <div class="role-label" style="color:rgba(248,248,255,0.6);">
+          <i class="fa-solid fa-star" style="color:var(--cmd-color);"></i>
+          &nbsp;Ufficiali Superiori · Comando
+        </div>
+        <div class="rank-name">Sottotenente</div>
+        <div class="char-name" style="color:var(--cmd-color);">Giuseppe Alighieri</div>
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(128,0,0,0.2);border:1px solid rgba(128,0,0,0.4);color:rgba(248,248,255,0.7);">
+            CAPITANO FF
+          </span>
+          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(68,136,255,0.1);border:1px solid rgba(68,136,255,0.25);color:rgba(248,248,255,0.5);">
+            PG
+          </span>
+        </div>
+        <!-- Link al diario -->
+        <a href="log.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:'Orbitron',sans-serif;font-size:0.6rem;letter-spacing:0.1em;color:var(--lcars-orange);text-decoration:none;text-transform:uppercase;">
+          <i class="fa-solid fa-file-lines"></i> Diari di Missione
+        </a>
+      </div>
+    </div>
+
+    <!-- Stats + Notes -->
+    <div class="crew-stats-table">
+
+      <div class="crew-stats-grid">
+        <div class="stat-row" style="border-left-color:var(--cmd-color);">
+          <span class="s-label">Nome</span>
+          <span class="s-value">Giuseppe 'Beppe' Alighieri</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--cmd-color);">
+          <span class="s-label">Grado</span>
+          <span class="s-value">Sottotenente</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Razza</span>
+          <span class="s-value">Diavolo (Terra di Sotto)</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Età</span>
+          <span class="s-value">917 as</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Sesso</span>
+          <span class="s-value">M</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Peso</span>
+          <span class="s-value">80 kg</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Altezza</span>
+          <span class="s-value">1.90 m</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Occhi</span>
+          <span class="s-value">neri</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Capelli</span>
+          <span class="s-value">neri</span>
+        </div>
+      </div>
+
+      <div class="crew-notes-section">
+        <h3><i class="fa-solid fa-note-sticky"></i> &nbsp;Note</h3>
+        <p>Diavolo, originario della Terra di Sotto - Inferno - Sol III (razza riconosciuta dalla Federazione grazie alla promozione del Cadetto Alighieri, il quale ha dimostrato che i Diavoli 
+          possono convivere all'interno della Federazione. Il riconoscimento proviene dall'Ammiraglio Vulcaniano che stipulò il patto quattro anni or sono con "Sua Eccellenza" in persona. 
+          Sono tuttora in corso gli scambi ufficiali con i rispettivi Ambasciatori, ma il più è fatto).</p>
+        <p>Data la somiglianza con il padre (da cui ha preso il naso adunco) e con la madre (dalla quale ha ereditato il carattere forte, risoluto, infingardo...), Beppe ha un NOTEVOLE aspetto fisico: 
+          alto, carnagione scura, capelli neri portati lunghi. Tutti riconoscono e soccombono al suo sguardo diabolico.</p>
+        </p>Ultimo di 14 fratelli, che non hanno per il momento intenzione di lasciare la piantagione dove sono cresciuti, ha accettato il patto fra Sua Eccellenza e l'Ammiraglio per poter avere anche lui 
+        (dato il sangue misto) gli attributi infernali (leggi CORNA).</p>
+        </p>Ora che è in possesso di un diploma e di un bel paio di cornetti (che cresceranno, anche se ora sono nascosti dai capelli!), ha volontariamente scelto la carriera all'interno della Flotta Stellare, 
+        dopo aver scoperto nei quattro anni di Accademia di avere una grande sete di avventure e di conoscenza; non solo, ma anche di trovarsi bene tra razze di diverso aspetto e ideali.</p>
+        </p>In particolare, Beppe ha stretto amicizia con la Horta Frruuu, con la quale ha diviso la stanza, i test dell'Accademia e il suo riso fritto. Senza dimenticare il cadetto vulca-messicano Alonzo Gomez Stock, 
+        la sua Ragazza Marina Scamoggia, il suo compagno al Wilde Village, Robert 'Bob' F. De Niro, Rosa Marmo, Gianna Beltempo, Patrick De Gagliardet (che ora vende scarpe in centro). 
+        Ma il posto d'onore nella vita di Beppe è preso, senza ombra di dubbio, dal suo gatto Geppo: uno stregatto infernale che lo segue ovunque adagiato sulla sua spalla sinistra, il più delle volte invisibile 
+        (si vede solo il suo sogghigno). A lui è stata dedicata la poesia che i cadetti hanno dedicato all'amore della loro vita.</p>
+        </p>Beppe è elegante, riservato, micidiale quando serve.</p>
+        </p>Non sopporta gli Andoriani (perché cornuti) e nemmeno De Leone. Il perché l'Ammiraglio sia ancora vivo è tuttora un mistero. 
+        Il perché tutto il chinotto dell'Accademia sia sparito nel giro di poche settimane, un po' meno!</p>
+        </p><br/>Adora leggere e scrivere poesie.<br/>
+        Segue la holonovela "Anche gli ologrammi piangono", fin dal primo episodio.<br/>
+        Non gli piace rimettere in ordine la stanza.<br/>
+        Non sa giocare a scacchi.</p>
+
+        <h3><i class="fa-solid fa-bolt"></i> &nbsp;Abilità</h3>
+        <ul>
+          <li><b>SADC, Superiore Abilità Dialettica e Coercitiva</b>: fin dalla sua nascita, Beppe è sempre riuscito a convincere chiunque di qualunque cosa volesse. 
+            Questo finché non ha diviso la stanza con una Horta, e non ha sostenuto un esame con Vinsar. Ma è bene considerare la difficoltà dell'impresa.</li>
+          <li><b>GIOCARE SPORCO</b>: in questo è imbattibile. Quando gli si fa presente la difficoltà per un Ufficiale della Flotta di mostrare sempre lealtà ed onore, 
+            lui perende come esempio James T. Kirk (e zittisce tutti).</li>
+          <li>Scrivere poesie: il sangue non è acqua.</li>
+          <li>Teletrasportarsi da un luogo all'altro istantaneamente. L'unico problema è che ci riesce con l'accompagnamento...<br/>
+            No!, non zolfo. Aglio.<br/>
+            E deve conoscere, almeno approssivamente, il luogo dove si teletrasporta.</li>
+          <li>Guidare qualsiasi mezzo meccanico.</li>
+          <li>È telecinetico (in fase di studio: Beppe non ha ancora raggiunto la piena maturità).</li>
+          <li>È imbattibile nel gioco del poker (perché bara); niente male nello scopone e tressette; il gioco del lotto è il suo must.</li>
+          <li>Riesce ad interpretare il linguaggio di "quasi" tutti gli animali...</li>
+        </ul>
+
+        <h3><i class="fa-solid fa-medal"></i> &nbsp;Incarichi</h3>
+        <ul>
+          <li>Capitano FF - USS AFRODITE NCC-1863.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="margin-top:24px;">
+    <a href="crew.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Fascicoli Equipaggio
+    </a>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+  
+<script src="script.js"></script>
+</body>
+</html>
