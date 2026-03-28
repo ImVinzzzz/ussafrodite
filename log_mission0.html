@@ -15,36 +15,13 @@
 <div class="scanline-overlay"></div>
 
 <!-- HEADER -->
-<header id="site-header">
-  <div class="header-lcars">
-    <div class="header-elbow">
-      <span class="ship-name">USS Afrodite</span>
-      <span class="ship-registry">NCC-1863 · Miranda</span>
-    </div>
-    <div class="header-content">
-      <div class="header-top-bar">
-        <div class="lcars-bar lcars-bar-1"></div>
-        <div class="lcars-bar lcars-bar-2"></div>
-        <div class="lcars-bar lcars-bar-3"></div>
-        <span id="lcars-clock" style="font-family:'Orbitron',sans-serif;font-size:0.65rem;color:var(--lcars-orange);letter-spacing:0.1em;white-space:nowrap;"></span>
-      </div>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link log" style="background:rgba(255,153,0,0.25);color:var(--lcars-orange);border:1px solid var(--lcars-orange);"><i class="fa-solid fa-house"></i></a>
-        <a href="log.html"  class="nav-link log active"><i class="fa-solid fa-book-open"></i> Log</a>
-        <a href="crew.html" class="nav-link crew"><i class="fa-solid fa-users"></i> Crew</a>
-        <a href="ship.html" class="nav-link ship"><i class="fa-solid fa-rocket"></i> Ship</a>
-        <a href="padd.html" class="nav-link padd"><i class="fa-solid fa-tablet-screen-button"></i> PADD</a>
-        <span class="nav-status">● Sistema operativo</span>
-      </nav>
-    </div>
-  </div>
-</header>
+<header id="site-header"></header>
 
 <main id="main-content">
 
   <!-- Breadcrumb -->
   <div class="breadcrumb">
-    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
     <span>›</span>
     <a href="log.html">Log</a>
     <span>›</span>
@@ -55,10 +32,10 @@
   <div class="mission-header-block" style="margin-bottom:32px;">
     <div style="font-size:2.5rem;color:var(--lcars-orange);flex-shrink:0;"><i class="fa-solid fa-circle-0"></i></div>
     <div>
-      <div class="mission-header-label">Missione</div>
+      <div class="mission-header-label">Mission: 0</div>
       <div class="mission-header-title">First Contact</div>
       <div style="font-family:'Orbitron',sans-serif;font-size:0.65rem;color:rgba(248,248,255,0.45);margin-top:6px;letter-spacing:0.1em;">
-        DIARIO UNICO · NESSUN BRIEFING SEPARATO
+        -
       </div>
     </div>
   </div>
@@ -133,8 +110,8 @@
       </p>
 
       <p>
-        Fine registrazione.<br/>
-        <em style="color:rgba(248,248,255,0.5);">S.Ten. Giuseppe Alighieri – F.F. Capitano, USS Afrodite NCC-1863</em>
+        Fine registrazione.<br/><br/>
+        <em style="color:rgba(248,248,255,0.5);">S.Ten. Giuseppe Alighieri<br/>Capitano F.F.<br/> USS Afrodite NCC-1863</em>
       </p>
     </div>
   </div>
@@ -147,10 +124,8 @@
 
 </main>
 
-<footer>
-  USS Afrodite &nbsp;·&nbsp; NCC-1863 &nbsp;·&nbsp; Miranda Class &nbsp;·&nbsp;
-  Stardate <span class="js-stardate"></span>
-</footer>
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
 <script src="script.js"></script>
 </body>
 </html>
