@@ -780,7 +780,7 @@ nav.main-nav {
   gap: 12px;
 }
 
-.crew-detail-img-wrap img {
+.crew-detail-img-wrap img:not(.crew-dept-logo) {
   width: 160px;
   height: 190px;
   object-fit: cover;
@@ -790,7 +790,9 @@ nav.main-nav {
 
 .crew-dept-logo {
   width: 55px;
+  height: auto;
   opacity: 0.85;
+  flex-shrink: 0;
 }
 
 .crew-detail-header {
