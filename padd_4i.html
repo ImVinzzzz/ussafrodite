@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PADD 4i – USS Afrodite</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 */
+      margin: 24px 0;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid rgba(68, 136, 255, 0.25);
+      box-shadow: 0 0 32px rgba(68, 136, 255, 0.15), var(--panel-shadow);
+    }
+    .video-wrap iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+    <span>›</span>
+    <a href="padd.html">PADD</a>
+    <span>›</span>
+    <span class="current">MSG-4I</span>
+  </div>
+
+  <div class="padd-detail-wrapper animate-in">
+
+    <div class="padd-detail-header">
+      <div class="padd-meta">
+        <i class="fa-solid fa-tablet-screen-button"></i>
+        &nbsp;MSG-4I &nbsp;·&nbsp; USS Afrodite &nbsp;·&nbsp;
+        Stardate <span class="js-stardate"></span>
+      </div>
+      <div class="padd-title">[Titolo avviso da inserire]</div>
+      <div style="margin-top:8px;font-size:0.75rem;color:rgba(248,248,255,0.45);">
+        Da: [Mittente da inserire]
+      </div>
+    </div>
+
+    <div class="padd-detail-body">
+
+      <p>[Inserire qui il testo introduttivo dell'avviso. Testo segnaposto da sostituire.]</p>
+
+      <!-- VIDEO YOUTUBE -->
+      <div class="video-wrap">
+        <iframe
+          src="https://www.youtube.com/embed/mJTSOzT9pZA"
+          title="Avviso video – USS Afrodite"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <p>[Inserire eventuale testo dopo il video. Testo segnaposto da sostituire.]</p>
+
+      <p style="margin-top:24px;font-size:0.8rem;color:rgba(248,248,255,0.45);font-style:italic;">
+        [Firma]<br/>
+        USS Afrodite NCC-1863
+      </p>
+
+    </div>
+  </div>
+
+  <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;">
+    <a href="padd.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Torna ai Messaggi
+    </a>
+  </div>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
