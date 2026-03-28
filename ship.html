@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ship – USS Afrodite NCC-1863</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="header-lcars">
+    <div class="header-elbow">
+      <span class="ship-name">USS Afrodite</span>
+      <span class="ship-registry">NCC-1863 · Miranda</span>
+    </div>
+    <div class="header-content">
+      <div class="header-top-bar">
+        <div class="lcars-bar lcars-bar-1"></div>
+        <div class="lcars-bar lcars-bar-2"></div>
+        <div class="lcars-bar lcars-bar-3"></div>
+        <span id="lcars-clock" style="font-family:'Orbitron',sans-serif;font-size:0.65rem;color:var(--lcars-orange);letter-spacing:0.1em;white-space:nowrap;"></span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link log" style="background:rgba(255,153,0,0.25);color:var(--lcars-orange);border:1px solid var(--lcars-orange);"><i class="fa-solid fa-house"></i></a>
+        <a href="log.html"  class="nav-link log"><i class="fa-solid fa-book-open"></i> Log</a>
+        <a href="crew.html" class="nav-link crew"><i class="fa-solid fa-users"></i> Crew</a>
+        <a href="ship.html" class="nav-link ship active"><i class="fa-solid fa-rocket"></i> Ship</a>
+        <a href="padd.html" class="nav-link padd"><i class="fa-solid fa-tablet-screen-button"></i> PADD</a>
+        <span class="nav-status">● Sistema operativo</span>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main-content">
+
+  <div class="page-banner">
+    <div class="banner-elbow" style="background:var(--lcars-blue);"></div>
+    <div>
+      <div class="banner-title"><i class="fa-solid fa-rocket" style="color:var(--lcars-blue);"></i> &nbsp;Ship</div>
+      <div class="banner-subtitle">Dati Tecnici · USS Afrodite NCC-1863</div>
+    </div>
+    <div class="banner-lines">
+      <div class="banner-line" style="background:var(--lcars-blue);width:100%;height:4px;border-radius:999px;"></div>
+      <div class="banner-line" style="background:var(--lcars-lavender);width:70%;height:4px;border-radius:999px;"></div>
+      <div class="banner-line" style="background:var(--lcars-orange);width:40%;height:4px;border-radius:999px;"></div>
+    </div>
+  </div>
+
+  <!-- Blueprint images -->
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px;">
+
+    <div class="ship-image-wrap">
+      <!-- Sostituire con il path dell'immagine blueprint reale -->
+      <img src="images/afrodite_topview.jpg" alt="USS Afrodite – Vista Superiore"
+           onerror="this.parentElement.querySelector('.ship-placeholder-img').style.display='flex';this.style.display='none';" />
+      <div class="ship-placeholder-img" style="display:none;">
+        <i class="fa-solid fa-image"></i>
+        <span>Blueprint – Vista Superiore</span>
+        <span style="font-size:0.55rem;color:rgba(119,153,204,0.35);">Sostituire con images/afrodite_topview.jpg</span>
+      </div>
+      <div class="ship-image-caption"><i class="fa-solid fa-arrow-up"></i> Vista Superiore</div>
+    </div>
+
+    <div class="ship-image-wrap">
+      <img src="images/afrodite_sideview.jpg" alt="USS Afrodite – Vista Laterale"
+           onerror="this.parentElement.querySelector('.ship-placeholder-img').style.display='flex';this.style.display='none';" />
+      <div class="ship-placeholder-img" style="display:none;">
+        <i class="fa-solid fa-image"></i>
+        <span>Blueprint – Vista Laterale</span>
+        <span style="font-size:0.55rem;color:rgba(119,153,204,0.35);">Sostituire con images/afrodite_sideview.jpg</span>
+      </div>
+      <div class="ship-image-caption"><i class="fa-solid fa-arrow-right"></i> Vista Laterale</div>
+    </div>
+
+  </div>
+
+  <!-- Technical specs -->
+  <div class="ship-specs-grid">
+
+    <div class="specs-block">
+      <h3><i class="fa-solid fa-id-card"></i> &nbsp;Identificazione</h3>
+      <div class="spec-row">
+        <span class="spec-label">Nome</span>
+        <span class="spec-val">USS Afrodite</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Numero di Registro</span>
+        <span class="spec-val">NCC-1863</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Classe</span>
+        <span class="spec-val">Miranda</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Tipo</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Entrata in servizio</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Cantiere navale</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+    </div>
+
+    <div class="specs-block">
+      <h3><i class="fa-solid fa-ruler-combined"></i> &nbsp;Dimensioni</h3>
+      <div class="spec-row">
+        <span class="spec-label">Lunghezza</span>
+        <span class="spec-val">[Da definire] m</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Larghezza</span>
+        <span class="spec-val">[Da definire] m</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Altezza</span>
+        <span class="spec-val">[Da definire] m</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Ponti</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Tonnellaggio</span>
+        <span class="spec-val">[Da definire] t</span>
+      </div>
+    </div>
+
+    <div class="specs-block">
+      <h3><i class="fa-solid fa-bolt"></i> &nbsp;Propulsione &amp; Velocità</h3>
+      <div class="spec-row">
+        <span class="spec-label">Motore a curvatura</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Motore ad impulso</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Velocità di crociera</span>
+        <span class="spec-val">Warp [Da definire]</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Velocità massima</span>
+        <span class="spec-val">Warp [Da definire]</span>
+      </div>
+    </div>
+
+    <div class="specs-block">
+      <h3><i class="fa-solid fa-shield-halved"></i> &nbsp;Armamento &amp; Difese</h3>
+      <div class="spec-row">
+        <span class="spec-label">Phaser</span>
+        <span class="spec-val">[Da definire] batterie</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Siluri fotoni</span>
+        <span class="spec-val">[Da definire] lanciasiluri</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Scudi deflettori</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Scafo</span>
+        <span class="spec-val">Duranio/Tritanio</span>
+      </div>
+    </div>
+
+    <div class="specs-block">
+      <h3><i class="fa-solid fa-users"></i> &nbsp;Equipaggio</h3>
+      <div class="spec-row">
+        <span class="spec-label">Complemento ufficiali</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Complemento totale</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Passeggeri max</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+    </div>
+
+    <div class="specs-block">
+      <h3><i class="fa-solid fa-circle-nodes"></i> &nbsp;Sistemi</h3>
+      <div class="spec-row">
+        <span class="spec-label">Computer</span>
+        <span class="spec-val">LCARS [Da definire]</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Sensori</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Teletrasporto</span>
+        <span class="spec-val">[Da definire] pad</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Navette</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-label">Holodeck</span>
+        <span class="spec-val">[Da definire]</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- History / Description -->
+  <div class="panel">
+    <div class="panel-header">
+      <div class="panel-header-bar" style="background:var(--lcars-blue);"></div>
+      <span class="panel-header-title">Storia della Nave</span>
+    </div>
+    <div class="panel-body">
+      <p style="font-size:0.9rem;line-height:1.8;color:rgba(248,248,255,0.8);font-weight:300;">
+        [Inserire qui la storia e la descrizione della USS Afrodite. Questo testo segnaposto
+        va sostituito con il contenuto reale della nave.]
+      </p>
+      <p style="font-size:0.9rem;line-height:1.8;color:rgba(248,248,255,0.8);font-weight:300;margin-top:12px;">
+        La classe Miranda è una delle classi di navi stellari più versatili e longeve della
+        Flotta Stellare della Federazione dei Pianeti Uniti. Introdotta nel 23° secolo,
+        la classe Miranda è stata impiegata in ruoli che spaziano dall'esplorazione scientifica
+        alla difesa di frontiera.
+      </p>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  USS Afrodite &nbsp;·&nbsp; NCC-1863 &nbsp;·&nbsp; Classe Miranda &nbsp;·&nbsp;
+  Stardate <span class="js-stardate"></span>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
