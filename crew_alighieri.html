@@ -15,30 +15,7 @@
 <div class="scanline-overlay"></div>
 
 <!-- HEADER -->
-<header id="site-header">
-  <div class="header-lcars">
-    <div class="header-elbow">
-      <span class="ship-name">USS Afrodite</span>
-      <span class="ship-registry">NCC-1863 · Miranda</span>
-    </div>
-    <div class="header-content">
-      <div class="header-top-bar">
-        <div class="lcars-bar lcars-bar-1"></div>
-        <div class="lcars-bar lcars-bar-2"></div>
-        <div class="lcars-bar lcars-bar-3"></div>
-        <span id="lcars-clock" style="font-family:'Orbitron',sans-serif;font-size:0.65rem;color:var(--lcars-orange);letter-spacing:0.1em;white-space:nowrap;"></span>
-      </div>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link log" style="background:rgba(255,153,0,0.25);color:var(--lcars-orange);border:1px solid var(--lcars-orange);"><i class="fa-solid fa-house"></i></a>
-        <a href="log.html"  class="nav-link log"><i class="fa-solid fa-book-open"></i> Log</a>
-        <a href="crew.html" class="nav-link crew active"><i class="fa-solid fa-users"></i> Crew</a>
-        <a href="ship.html" class="nav-link ship"><i class="fa-solid fa-rocket"></i> Ship</a>
-        <a href="padd.html" class="nav-link padd"><i class="fa-solid fa-tablet-screen-button"></i> PADD</a>
-        <span class="nav-status">● Sistema operativo</span>
-      </nav>
-    </div>
-  </div>
-</header>
+<header id="site-header"></header>
 
 <main id="main-content">
 
@@ -48,7 +25,7 @@
     <span>›</span>
     <a href="crew.html">Crew</a>
     <span>›</span>
-    <span class="current">Capitano Giuseppe Alighieri</span>
+    <span class="current">Capitano FF Giuseppe Alighieri</span>
   </div>
 
   <div class="crew-detail-wrapper animate-in">
@@ -59,12 +36,12 @@
       <!-- Left: photo + dept logo -->
       <div class="crew-detail-img-wrap" style="border-right:1px solid rgba(128,0,0,0.25);">
         <!-- Logo sezione: sostituire src con il path della gif reale (125x150px trasparente) -->
-        <img src="images/logo_comando.gif" alt="Logo Comando"
+        <img src="images/l_com.gif" alt="Logo Comando"
              class="crew-dept-logo"
              onerror="this.style.display='none'" />
 
         <!-- Foto PG: sostituire src con il path della foto jpeg reale -->
-        <img src="images/alighieri.jpg" alt="Capitano Alighieri"
+        <img src="images/crew/alighieri.jpg" alt="Capitano Alighieri"
              style="width:160px;height:190px;object-fit:cover;border-radius:8px;border:2px solid rgba(128,0,0,0.5);"
              onerror="this.outerHTML='<div style=\'width:160px;height:190px;background:rgba(128,0,0,0.15);border-radius:8px;border:2px dashed rgba(128,0,0,0.3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px\'><i class=\'fa-solid fa-user-tie\' style=\'font-size:3rem;color:rgba(128,0,0,0.4);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.55rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
       </div>
@@ -163,10 +140,9 @@
 
 </main>
 
-<footer>
-  USS Afrodite &nbsp;·&nbsp; NCC-1863 &nbsp;·&nbsp; Classe Miranda &nbsp;·&nbsp;
-  Stardate <span class="js-stardate"></span>
-</footer>
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+  
 <script src="script.js"></script>
 </body>
 </html>
