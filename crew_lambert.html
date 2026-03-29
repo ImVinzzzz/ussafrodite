@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frruuu – USS Afrodite Crew</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="crew.html">Crew</a>
+    <span>›</span>
+    <span class="current">Primo Ufficiale Frruuu</span>
+  </div>
+
+  <div class="crew-detail-wrapper animate-in">
+
+    <!-- Top: photo + header -->
+    <div class="crew-detail-top" style="border: 1px solid rgba(128,0,0,0.4);">
+
+      <!-- Left: photo + dept logo -->
+      <div class="crew-detail-img-wrap" style="border-right:1px solid rgba(128,0,0,0.25);">
+        <!-- Logo sezione: sostituire src con il path della gif reale (125x150px trasparente) -->
+        <img src="images/l_com.gif" alt="Logo Comando"
+             class="crew-dept-logo"
+             onerror="this.style.display='none'" />
+
+        <!-- Foto PG: sostituire src con il path della foto jpeg reale -->
+        <img src="images/crew/frruuu.gif" alt="Guardiamarina Frruuu"
+             style="width:160px;height:190px;object-fit:cover;border-radius:8px;border:2px solid rgba(128,0,0,0.5);"
+             onerror="this.outerHTML='<div style=\'width:160px;height:190px;background:rgba(128,0,0,0.15);border-radius:8px;border:2px dashed rgba(128,0,0,0.3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px\'><i class=\'fa-solid fa-user-tie\' style=\'font-size:3rem;color:rgba(128,0,0,0.4);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.55rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+      </div>
+
+      <!-- Right: title header -->
+      <div class="crew-detail-header" style="background:linear-gradient(135deg, rgba(128,0,0,0.35), rgba(60,0,0,0.5));">
+        <div class="role-label" style="color:rgba(248,248,255,0.6);">
+          <i class="fa-solid fa-circle-chevron-up" style="color:var(--cmd-color);"></i>
+          &nbsp;Ufficiali Superiori · Comando
+        </div>
+        <div class="rank-name">Frruuu</div>
+        <div class="char-name" style="color:var(--cmd-color);">Guardiamarina</div>
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(128,0,0,0.2);border:1px solid rgba(128,0,0,0.4);color:rgba(248,248,255,0.7);">
+            Primo Ufficiale
+          </span>
+          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(68,136,255,0.1);border:1px solid rgba(68,136,255,0.25);color:rgba(248,248,255,0.5);">
+            PG
+          </span>
+        </div>
+        <!-- Link al diario -->
+        <a href="log.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:'Orbitron',sans-serif;font-size:0.6rem;letter-spacing:0.1em;color:var(--lcars-orange);text-decoration:none;text-transform:uppercase;">
+          <i class="fa-solid fa-file-lines"></i> Diari di Missione
+        </a>
+      </div>
+    </div>
+
+    <!-- Stats + Notes -->
+    <div class="crew-stats-table">
+
+      <div class="crew-stats-grid">
+        <div class="stat-row" style="border-left-color:var(--cmd-color);">
+          <span class="s-label">Nome</span>
+          <span class="s-value">Frruuu</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--cmd-color);">
+          <span class="s-label">Grado</span>
+          <span class="s-value">Guardiamarina</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Razza</span>
+          <span class="s-value">Horta</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Età</span>
+          <span class="s-value">8 aj</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Sesso</span>
+          <span class="s-value">F</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Peso</span>
+          <span class="s-value">328 kg</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Altezza</span>
+          <span class="s-value">0.77 m</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Diametro</span>
+          <span class="s-value">0.57 m</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Occhi</span>
+          <span class="s-value">//</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Capelli</span>
+          <span class="s-value">//</span>
+        </div>
+      </div>
+
+      <div class="crew-notes-section">
+        <h3><i class="fa-solid fa-note-sticky"></i> &nbsp;Note</h3>
+        <p>Fora qualsiasi tipo di terreno e metallo, lascia indietro diamanti e altre pietre preziose perché non li digerisce.</p>
+        <p>Si è arruolata all'Accademia della Flotta Stellare per scoprire le meraviglie e lo stupore dell'Universo, ed avere finalmente una stanza tutta per se' (cresciuta con 50.000 coincubanti ).</p>
+        <p>Frruuu è una horta, tra le prime della sua razza ad arruolarsi nella Flotta Stellare. Timida all'inizio è andata via via smaliziandosi; dal secondo anno, compagna di stanza di Giuseppe Alighieri,
+          diavolo senza corna di cui s'innamora perdutamente arrivando a chiamarlo: 'Beppinoslurp'.</p>
+        <p>Non ha avuto molte pecche sul suo curriculum, a parte la semi distruzione di un villaggio turistico dovuta ad un appassionato Pango (versione Janusiana del Tango).</p>
+        <p>Si è battuta senza molto successo per una Accademia più <em>'politically correct'</em>:<br/>
+          "Con qualsivoglia appendice o arto o scivolando o comunque con mezzo avente un movimento inerziale in avanti, raggiungete la Sala Mensa dove con qualsiasi apparato visivo o capacità mentali 
+          atte a percepire l'esterno, notate la presenza di De Leone. Usando corde vocali o onde sonore artificiali o naturali iniziate a comunicare verbalmente" <br/>
+          Inspiegabilmente gli istruttori dell'Accademia si sono rifiutati di apportare questi semplici cambiamenti.</p>
+        <p>Il cadetto Frruuu non esita ad usare scorciatoie per raggiungere i propri scopi, sempre però ubbidendo ad una propria morale che le impedisce di oltrepassare i limiti.</p>
+        <p>Scrive regolarmente i propri progressi alla Grande Madre.</p>
+
+        <h3><i class="fa-solid fa-bolt"></i> &nbsp;Abilità</h3>
+        <ul>
+          <li>Cucina un ottimo riso fritto con il quale ha finalmente conquistato il suo Beppe.</li>
+        </ul>
+
+        <h3><i class="fa-solid fa-medal"></i> &nbsp;Incarichi</h3>
+        <ul>
+          <li>Primo Ufficiale - USS Afrodite NCC-1863</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="margin-top:24px;">
+    <a href="crew.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Fascicoli Equipaggio
+    </a>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+  
+<script src="script.js"></script>
+</body>
+</html>
