@@ -781,8 +781,8 @@ nav.main-nav {
 }
 
 .crew-detail-img-wrap img:not(.crew-dept-logo) {
-  width: 160px;
-  height: 190px;
+  width: 105px;
+  height: 150px;
   object-fit: cover;
   border-radius: var(--radius-sm);
   border: 2px solid rgba(68,136,255,0.3);
