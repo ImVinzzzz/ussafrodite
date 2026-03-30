@@ -15,30 +15,7 @@
 <div class="scanline-overlay"></div>
 
 <!-- HEADER -->
-<header id="site-header">
-  <div class="header-lcars">
-    <div class="header-elbow">
-      <span class="ship-name">USS Afrodite</span>
-      <span class="ship-registry">NCC-1863 · Miranda</span>
-    </div>
-    <div class="header-content">
-      <div class="header-top-bar">
-        <div class="lcars-bar lcars-bar-1"></div>
-        <div class="lcars-bar lcars-bar-2"></div>
-        <div class="lcars-bar lcars-bar-3"></div>
-        <span id="lcars-clock" style="font-family:'Orbitron',sans-serif;font-size:0.65rem;color:var(--lcars-orange);letter-spacing:0.1em;white-space:nowrap;"></span>
-      </div>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link log" style="background:rgba(255,153,0,0.25);color:var(--lcars-orange);border:1px solid var(--lcars-orange);"><i class="fa-solid fa-house"></i></a>
-        <a href="log.html"  class="nav-link log"><i class="fa-solid fa-book-open"></i> Log</a>
-        <a href="crew.html" class="nav-link crew"><i class="fa-solid fa-users"></i> Crew</a>
-        <a href="ship.html" class="nav-link ship"><i class="fa-solid fa-rocket"></i> Ship</a>
-        <a href="padd.html" class="nav-link padd active"><i class="fa-solid fa-tablet-screen-button"></i> PADD</a>
-        <span class="nav-status">● Sistema operativo</span>
-      </nav>
-    </div>
-  </div>
-</header>
+<header id="site-header"></header>
 
 <main id="main-content">
 
@@ -59,12 +36,21 @@
   <div class="panel">
     <div class="panel-header">
       <div class="panel-header-bar" style="background:var(--accent-gold);"></div>
-      <span class="panel-header-title">Messaggi in Arrivo</span>
+      <span class="panel-header-title">Bacheca Avvisi e Comuniazioni interne</span>
       <span style="margin-left:auto;font-family:'Orbitron',sans-serif;font-size:0.55rem;color:rgba(248,248,255,0.3);letter-spacing:0.15em;">8 MESSAGES</span>
     </div>
     <div class="panel-body">
       <div class="padd-list">
 
+        <a href="padd_4x.html" class="padd-item">
+          <div class="padd-icon"><i class="fa-solid fa-note-sticky"></i></div>
+          <div>
+            <div class="padd-item-title">Avvisi Generali</div>
+            <div style="font-size:0.7rem;color:rgba(248,248,255,0.4);margin-top:3px;">Da: Ufficio Protocollo</div>
+          </div>
+          <span class="padd-item-id">MSG-4X</span>
+        </a>
+        
         <a href="padd_4a.html" class="padd-item">
           <div class="padd-icon"><i class="fa-solid fa-bullhorn"></i></div>
           <div>
@@ -152,10 +138,9 @@
 
 </main>
 
-<footer>
-  USS Afrodite &nbsp;·&nbsp; NCC-1863 &nbsp;·&nbsp; Classe Miranda &nbsp;·&nbsp;
-  Stardate <span class="js-stardate"></span>
-</footer>
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+  
 <script src="script.js"></script>
 </body>
 </html>
