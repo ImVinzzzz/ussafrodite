@@ -15,32 +15,9 @@
 <div class="scanline-overlay"></div>
 
 <!-- HEADER -->
-<header id="site-header">
-  <div class="header-lcars">
-    <div class="header-elbow">
-      <span class="ship-name">USS Afrodite</span>
-      <span class="ship-registry">NCC-1863 · Miranda</span>
-    </div>
-    <div class="header-content">
-      <div class="header-top-bar">
-        <div class="lcars-bar lcars-bar-1"></div>
-        <div class="lcars-bar lcars-bar-2"></div>
-        <div class="lcars-bar lcars-bar-3"></div>
-        <span id="lcars-clock" style="font-family:'Orbitron',sans-serif;font-size:0.65rem;color:var(--lcars-orange);letter-spacing:0.1em;white-space:nowrap;"></span>
-      </div>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link log" style="background:rgba(255,153,0,0.25);color:var(--lcars-orange);border:1px solid var(--lcars-orange);"><i class="fa-solid fa-house"></i></a>
-        <a href="log.html"  class="nav-link log"><i class="fa-solid fa-book-open"></i> Log</a>
-        <a href="crew.html" class="nav-link crew"><i class="fa-solid fa-users"></i> Crew</a>
-        <a href="ship.html" class="nav-link ship active"><i class="fa-solid fa-rocket"></i> Ship</a>
-        <a href="padd.html" class="nav-link padd"><i class="fa-solid fa-tablet-screen-button"></i> PADD</a>
-        <span class="nav-status">● Sistema operativo</span>
-      </nav>
-    </div>
-  </div>
-</header>
+<header id="site-header"></header>
 
-<main id="main-content">
+<!-- main id="main-content">
 
   <div class="page-banner">
     <div class="banner-elbow" style="background:var(--lcars-blue);"></div>
@@ -55,11 +32,11 @@
     </div>
   </div>
 
-  <!-- Blueprint images -->
+  <!-- Blueprint images >
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:32px;">
 
     <div class="ship-image-wrap">
-      <!-- Sostituire con il path dell'immagine blueprint reale -->
+      <!-- Sostituire con il path dell'immagine blueprint reale >
       <img src="images/afrodite_topview.jpg" alt="USS Afrodite – Vista Superiore"
            onerror="this.parentElement.querySelector('.ship-placeholder-img').style.display='flex';this.style.display='none';" />
       <div class="ship-placeholder-img" style="display:none;">
@@ -83,7 +60,7 @@
 
   </div>
 
-  <!-- Technical specs -->
+  <!-- Technical specs >
   <div class="ship-specs-grid">
 
     <div class="specs-block">
@@ -220,7 +197,7 @@
 
   </div>
 
-  <!-- History / Description -->
+  <!-- History / Description >
   <div class="panel">
     <div class="panel-header">
       <div class="panel-header-bar" style="background:var(--lcars-blue);"></div>
@@ -242,10 +219,9 @@
 
 </main>
 
-<footer>
-  USS Afrodite &nbsp;·&nbsp; NCC-1863 &nbsp;·&nbsp; Classe Miranda &nbsp;·&nbsp;
-  Stardate <span class="js-stardate"></span>
-</footer>
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+
 <script src="script.js"></script>
 </body>
 </html>
