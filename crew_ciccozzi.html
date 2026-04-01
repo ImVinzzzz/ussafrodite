@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rael – USS Afrodite Crew</title>
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="crew.html">Crew</a>
+    <span>›</span>
+    <span class="current">Capo della Sicurezza Rael</span>
+  </div>
+
+  <div class="crew-detail-wrapper animate-in">
+
+    <div class="crew-detail-top" style="border: 1px solid rgba(128,128,0,0.4);">
+      <div class="crew-detail-img-wrap" style="border-right:1px solid rgba(128,128,0,0.25);">
+        <img src="images/l_sec.png" alt="Logo SEC"
+             class="crew-dept-logo"
+             onerror="this.style.display='none'" />
+        <img src="images/crew/rael.jpg" alt="Rael"
+             style="width:160px;height:190px;object-fit:cover;border-radius:8px;border:2px solid rgba(128,128,0,0.5);"
+             onerror="this.outerHTML='<div style=\'width:160px;height:190px;background:rgba(128,128,0,0.15);border-radius:8px;border:2px dashed rgba(128,128,0,0.3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px\'><i class=\'fa-solid fa-shield-halved\' style=\'font-size:3rem;color:rgba(128,128,0,0.4);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.55rem;color:rgba(128,128,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+      </div>
+
+      <div class="crew-detail-header" style="background:linear-gradient(135deg, rgba(128,128,0,0.35), rgba(60,60,0,0.5));">
+        <div class="role-label" style="color:rgba(248,248,255,0.6);">
+          <i class="fa-solid fa-shield-halved" style="color:var(--ops-color);"></i>
+          &nbsp; Ufficiali Superiori · SEC
+        </div>
+        <div class="rank-name">Rael</div>
+        <div class="char-name" style="color:var(--ops-color);">Guardiamarina</div>
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(128,128,0,0.2);border:1px solid rgba(128,128,0,0.4);color:rgba(248,248,255,0.7);">
+            CAPO DELLA SICUREZZA
+          </span>
+          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(68,136,255,0.1);border:1px solid rgba(68,136,255,0.25);color:rgba(248,248,255,0.5);">
+            PG
+          </span>
+        </div>
+        <a href="log.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:'Orbitron',sans-serif;font-size:0.6rem;letter-spacing:0.1em;color:var(--lcars-orange);text-decoration:none;text-transform:uppercase;">
+          <i class="fa-solid fa-file-lines"></i> Diari di Missione
+        </a>
+      </div>
+    </div>
+
+    <div class="crew-stats-table">
+      <div class="crew-stats-grid">
+        <div class="stat-row" style="border-left-color:var(--ops-color);">
+          <span class="s-label">Nome</span>
+          <span class="s-value">Rael</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--ops-color);">
+          <span class="s-label">Grado</span>
+          <span class="s-value">Guardiamarina</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Razza</span>
+          <span class="s-value">Romulama / Umana</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Età</span>
+          <span class="s-value">26 as</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Sesso</span>
+          <span class="s-value">F</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Peso</span>
+          <span class="s-value">60 kg</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Altezza</span>
+          <span class="s-value">1.69 m</span>
+        </div>
+      </div>
+
+      <div class="crew-notes-section">
+        <h3><i class="fa-solid fa-note-sticky"></i> &nbsp;Note</h3>
+        <p>Nata a bordo della nave del padre, figlia di un mercante Romulano (Tahn) e di una terestre (Katherine 'Kat' Sheridan), è figlia unica (è pure troppa, hanno detto di lei i suoi genitori).</p>
+        <p>All'età di 19 anni, stanca di fare il mozzo di bordo sulla nave del padre, e perché vuole conoscere qualcos'altro, e, soprattutto, dietro le insistenze dei genitori, ha chiesto di entrare 
+          nella Flotta Stellare, ma viene respinta perché Romulana; ci riprova l'anno successivo, con <em>"l'appoggio"</em> dell'ex proconsole M'Ret dell'Impero Romulano, da qualche anno l'unico Romulano 
+          a far parte del Consiglio della Federazione.</p>
+        <p>Ebbe uno shock quando scoprì tra gli insegnanti dell'Accademia un Klingon (non li può proprio vedere) che insegnava nel corso di Ingegneria; 
+          a causa di ciò, i suoi voti in Ingegneria furono sempre molto scarsi, ed anche perché non partecipava quasi mai alle lezioni.</p>
+        <p>Nonostante tutto, riuscì a diplomarsi all'Accademia.</p>
+        <p>La sua vita in Accademia fu abbastanza solitaria; fece amicizia solo con la sua compagna di stanza: Fabiola Renzi.</p>
+        <p>È molto sportiva, ma non parlatele di calcio, non ci ha mai capito niente; è, al contrario, esperta nell'arte marziale romulana <em>'Sehte Piohte Spack Loshsa'</em> 
+          e quando non ha nulla da fare, la si può trovare in Sala Ologrammi ad allenarsi.</p>
+        <p>Non ha avuto relazioni di rilievo, anzi: chi le si è avvicinato troppo è ancora in prognosi riservata (i più fortunati).</p>
+        <p>Il suo, più che un alloggio è un vero e proprio magazzino: ha di tutto, e anche qualcosa di più, dopotutto è figlia di un mercante.</p>
+        <p>È ultraprotettiva verso la nave ed il Capitano: per lei non devono correre alcun rischio, anche se il STen Alighieri è immortale.</p>
+        <p>È alquanto perplessa per il fatto di avere come Primo Ufficiale una grossa pietra ma, si è detta, <em>'meglio lei di un Klingon'</em>.</p>
+
+        <h3><i class="fa-solid fa-medal"></i> &nbsp;Incarichi</h3>
+        <ul>
+          <li>Capo della Sicurezza - USS Afrodite NCC-1863</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:24px;">
+    <a href="crew.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Fascicoli Equipaggio
+    </a>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
