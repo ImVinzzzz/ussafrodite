@@ -1275,6 +1275,12 @@ footer {
   line-height: 1;
 }
 
+/* ── DIARY EMPHASIS ──────────────────────────────────────── */
+.diary-em {
+  color: var(--lcars-orange);
+  font-style: italic;
+}
+
 /* ── DIARY HEADER PHOTO ──────────────────────────────────── */
 .diary-header {
   display: flex;
