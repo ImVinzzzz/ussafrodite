@@ -1221,6 +1221,118 @@ footer {
   text-transform: uppercase;
 }
 
+/* ── DIARY SUBTITLES ─────────────────────────────────────── */
+.diary-section-title {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--lcars-orange);
+  margin: 28px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,153,0,0.2);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.diary-section-title::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 3px;
+  background: var(--lcars-orange);
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+/* ── DIARY QUOTE BOX ─────────────────────────────────────── */
+.diary-quote {
+  display: inline-block;
+  position: relative;
+  margin: 20px 0;
+  padding: 16px 20px 16px 52px;
+  background: var(--bg-card);
+  border-left: 3px solid var(--lcars-orange);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-style: italic;
+  font-size: 0.92rem;
+  line-height: 1.75;
+  color: rgba(248,248,255,0.82);
+  max-width: 100%;
+}
+
+.diary-quote::before {
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  content: '\f10d';
+  position: absolute;
+  top: 12px;
+  left: 14px;
+  font-size: 1.4rem;
+  color: rgba(255,153,0,0.2);
+  line-height: 1;
+}
+
+/* ── DIARY HEADER PHOTO ──────────────────────────────────── */
+.diary-header {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0;
+}
+
+.diary-header-text {
+  flex: 1;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.diary-header-pgbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  background: rgba(0,0,0,0.2);
+  border-left: 1px solid rgba(255,255,255,0.1);
+  min-width: 90px;
+  flex-shrink: 0;
+}
+
+.diary-header-pgbox img {
+  width: 60px;
+  height: 72px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.diary-header-pgbox a {
+  font-family: var(--font-display);
+  font-size: 0.5rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(248,248,255,0.6);
+  text-decoration: none;
+  padding: 4px 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  background: rgba(0,0,0,0.2);
+}
+
+.diary-header-pgbox a:hover {
+  color: var(--lcars-orange);
+  border-color: var(--lcars-orange);
+  background: rgba(255,153,0,0.1);
+}
+
 /* ── ANIMATIONS ──────────────────────────────────────────── */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }

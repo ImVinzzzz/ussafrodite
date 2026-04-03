@@ -15,30 +15,7 @@
 <div class="scanline-overlay"></div>
 
 <!-- HEADER -->
-<header id="site-header">
-  <div class="header-lcars">
-    <div class="header-elbow">
-      <span class="ship-name">USS Afrodite</span>
-      <span class="ship-registry">NCC-1863 · Miranda</span>
-    </div>
-    <div class="header-content">
-      <div class="header-top-bar">
-        <div class="lcars-bar lcars-bar-1"></div>
-        <div class="lcars-bar lcars-bar-2"></div>
-        <div class="lcars-bar lcars-bar-3"></div>
-        <span id="lcars-clock" style="font-family:'Orbitron',sans-serif;font-size:0.65rem;color:var(--lcars-orange);letter-spacing:0.1em;white-space:nowrap;"></span>
-      </div>
-      <nav class="main-nav">
-        <a href="index.html" class="nav-link log" style="background:rgba(255,153,0,0.25);color:var(--lcars-orange);border:1px solid var(--lcars-orange);"><i class="fa-solid fa-house"></i></a>
-        <a href="log.html"  class="nav-link log active"><i class="fa-solid fa-book-open"></i> Log</a>
-        <a href="crew.html" class="nav-link crew"><i class="fa-solid fa-users"></i> Crew</a>
-        <a href="ship.html" class="nav-link ship"><i class="fa-solid fa-rocket"></i> Ship</a>
-        <a href="padd.html" class="nav-link padd"><i class="fa-solid fa-tablet-screen-button"></i> PADD</a>
-        <span class="nav-status">● Sistema operativo</span>
-      </nav>
-    </div>
-  </div>
-</header>
+<header id="site-header"></header>
 
 <main id="main-content">
 
@@ -55,13 +32,26 @@
 
   <!-- Diary page -->
   <div class="diary-wrapper">
+
     <div class="diary-header" style="background: linear-gradient(135deg, #800000 0%, #5a0000 100%);">
-      <div class="diary-header-role">
-        <i class="fa-solid fa-star"></i> &nbsp;Comando &nbsp;·&nbsp; Capitano
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-solid fa-star"></i> &nbsp;Comando &nbsp;·&nbsp; Capitano
+        </div>
+        <div class="diary-header-name">Diario di Bordo del Capitano S.Ten. Alighieri</div>
+        <div class="diary-header-mission">Mission: 1 — [Titolo missione]</div>
       </div>
-      <div class="diary-header-name">Diario di Bordo del Capitano S.Ten. Alighieri</div>
-      <div class="diary-header-mission">Mission: 1 — [Titolo missione]</div>
+      <!-- Miniatura PG + link scheda -->
+      <div class="diary-header-pgbox">
+        <img src="images/crew/alighieri.jpg" alt="Alighieri"
+             onerror="this.style.opacity='0.2'" />
+        <a href="crew_alighieri.html">
+          <i class="fa-solid fa-id-card"></i> Scheda
+        </a>
+      </div>
     </div>
+
     <div class="diary-body">
 
       <div class="stardate-line">
@@ -69,10 +59,19 @@
         <span class="stardate-value">[Stardate da inserire]</span>
       </div>
 
+      <!-- Esempio sottotitolo PROLOGO -->
+      <div class="diary-section-title">Prologo</div>
       <p>
-        [Inserire qui il testo del Diario di Bordo del Capitano S.Ten. Alighieri per la Missione 1.
-        Questo è un testo segnaposto: sostituirlo con il contenuto reale.]
+        [Inserire qui il testo del prologo. Testo segnaposto da sostituire.]
       </p>
+
+      <!-- Esempio box citazione -->
+      <div class="diary-quote">
+        "Lorem ipsum – testo della citazione da inserire."
+      </div>
+
+      <!-- Esempio sottotitolo DIARIO -->
+      <div class="diary-section-title">Diario</div>
       <p>
         Lorem ipsum – prima voce. La USS Afrodite ha ricevuto ordini di missione alle
         ore [00:00]. Il briefing con gli ufficiali superiori si è tenuto nel salone conferenze.
@@ -94,22 +93,26 @@
     </div>
   </div>
 
-  <!-- Navigation between diaries -->
-  <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;">
+  <!-- Navigation -->
+  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
     <a href="log_mission1.html" class="btn-back">
-      <i class="fa-solid fa-chevron-left"></i> Torna ai diari della Missione 1
+      <i class="fa-solid fa-chevron-left"></i> Log Mission: 1
     </a>
-    <a href="log_mission1_frruuu.html" class="btn-back" style="margin-left:auto;">
-      Diario di GM Frruuu <i class="fa-solid fa-chevron-right"></i>
-    </a>
+    <div style="margin-left:auto;display:flex;gap:8px;">
+      <!-- Primo diario: bottone precedente spento -->
+      <span class="btn-back" style="opacity:0.25;cursor:default;pointer-events:none;margin-bottom:0;">
+        <i class="fa-solid fa-chevron-left"></i>
+      </span>
+      <a href="log_mission1_frruuu.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
   </div>
 
 </main>
 
-<footer>
-  USS Afrodite &nbsp;·&nbsp; NCC-1863 &nbsp;·&nbsp; Classe Miranda &nbsp;·&nbsp;
-  Stardate <span class="js-stardate"></span>
-</footer>
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
 <script src="script.js"></script>
 </body>
 </html>
