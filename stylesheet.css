@@ -1270,8 +1270,8 @@ footer {
   position: absolute;
   top: 12px;
   left: 14px;
-  font-size: 2.5rem;
-  color: rgba(255,153,0,0.2);
+  font-size: 3.5rem;
+  color: rgba(255,153,0,0.15);
   line-height: 1;
 }
 
