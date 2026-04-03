@@ -1240,7 +1240,7 @@ footer {
 .diary-section-title::before {
   content: '';
   display: inline-block;
-  width: 15px;
+  width: 10px;
   height: 3px;
   background: var(--lcars-orange);
   border-radius: 999px;
