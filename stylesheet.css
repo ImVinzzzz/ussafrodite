@@ -421,6 +421,15 @@ nav.main-nav {
   letter-spacing: 0.05em;
 }
 
+/* ── SECTION GRID (2 cards) ─────────────────────── */
+.section-grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+
+
 /* ── LOG PAGE ───────────────────────────────────────────── */
 .mission-list {
   display: flex;
