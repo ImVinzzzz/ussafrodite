@@ -701,7 +701,7 @@ nav.main-nav {
   background: var(--bg-card);
   border-radius: var(--radius-md);
   overflow: hidden;
-  border: 1px solid rgba(68,136,255,0.12);
+  border: 2px solid rgba(68,136,255,0.12);
   transition: all 0.3s ease;
 }
 
