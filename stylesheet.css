@@ -1319,7 +1319,7 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  padding: 16px;
+  padding: 10px;
   background: rgba(0,0,0,0.2);
   border-left: 2px solid rgba(255,255,255,0.1);
   min-width: 90px;
@@ -1328,8 +1328,8 @@ footer {
 }
 
 .diary-header-pgbox img {
-  width: 60px;
-  height: 72px;
+  width: 70px;
+  height: 85px;
   object-fit: cover;
   border-radius: var(--radius-sm);
   border: 1px solid rgba(255,255,255,0.2);
