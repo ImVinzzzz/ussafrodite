@@ -215,25 +215,34 @@
 
   </div>
 
-  <!-- History / Description -->
+  <!-- START History / Description -->
   <div class="panel">
     <div class="panel-header">
       <div class="panel-header-bar" style="background:var(--lcars-blue);"></div>
       <span class="panel-header-title">Storia della Nave</span>
     </div>
-    <div class="panel-body">
-      <p style="font-size:0.9rem;line-height:1.8;color:rgba(248,248,255,0.8);font-weight:300;">
-        [Inserire qui la storia e la descrizione della USS Afrodite. Questo testo segnaposto
-        va sostituito con il contenuto reale della nave.]
-      </p>
-      <p style="font-size:0.9rem;line-height:1.8;color:rgba(248,248,255,0.8);font-weight:300;margin-top:12px;">
+    <div class="panel-body" style="display:grid;grid-template-columns:1fr 3fr;gap:24px;margin-bottom:32px;">
+      <div class="ship-image-wrap">
+      <!-- immagine della nave -->
+      <img src="images/afrodite_topview.jpg" alt="USS Afrodite – Vista Superiore"
+           onerror="this.parentElement.querySelector('.ship-placeholder-img').style.display='flex';this.style.display='none';" />
+      <div class="ship-placeholder-img" style="display:none;">
+        <i class="fa-solid fa-image"></i>
+        <span>Vista Esterno</span>
+        <span style="font-size:0.55rem;color:rgba(119,153,204,0.35);">Sostituire con images/afrodite_topview.jpg</span>
+      </div>
+      <div class="ship-image-caption"><i class="fa-solid fa-rocket"></i> Vista Esterno</div>
+    </div>
+      
+      <div style="font-size:0.9rem;line-height:1.8;color:rgba(248,248,255,0.8);font-weight:300;">
         La classe Miranda è una delle classi di navi stellari più versatili e longeve della
         Flotta Stellare della Federazione dei Pianeti Uniti. Introdotta nel 23° secolo,
         la classe Miranda è stata impiegata in ruoli che spaziano dall'esplorazione scientifica
         alla difesa di frontiera.
-      </p>
+      </div>
     </div>
   </div>
+  <!-- END History / Description -->
 
 </main>
 
