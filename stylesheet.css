@@ -429,6 +429,11 @@ nav.main-nav {
   margin-top: 32px;
 }
 
+@media (max-width: 768px) {
+  .section-grid2 {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* ── LOG PAGE ───────────────────────────────────────────── */
 .mission-list {
