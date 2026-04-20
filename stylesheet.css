@@ -327,6 +327,15 @@ nav.main-nav {
   padding-top: 16px;
 }
 
+.hero-motto {
+  margin-top: 5px;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: rgba(248,248,255,0.7);
+  letter-spacing: 0.05em;
+  padding-top: 5px;
+}
+
 .hero-stats {
   display: flex;
   flex-direction: column;
