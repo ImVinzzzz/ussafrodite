@@ -30,64 +30,39 @@
     <span>›</span>
     <a href="crew.html">Crew</a>
     <span>›</span>
-    <span class="current">Ufficiale Ingegnere Rogers</span>
-  </div>
-
-  <!-- Banner allerta manomissione -->
-  <div class="file-alert-banner">
-    <i class="fa-solid fa-triangle-exclamation fa-lg"></i>
-    <span>Attenzione — Anomalia rilevata nel fascicolo &nbsp;·&nbsp; Integrità dati: <strong>COMPROMESSA</strong> &nbsp;·&nbsp; SECLAR 2</span>
-    <i class="fa-solid fa-triangle-exclamation fa-lg" style="margin-left:auto;"></i>
+    <span class="current">Ufficiale Ingegnare Rogers</span>
   </div>
 
   <div class="crew-detail-wrapper animate-in">
 
-    <!-- crew-detail-top con classe "tampered" per bordo pulsante -->
-    <div class="crew-detail-top tampered" style="border: 1px solid rgba(128,128,0,0.4);">
-
-      <div class="crew-detail-img-wrap" style="border-right:1px solid rgba(128,128,0,0.25);position:relative;">
-        <img src="images/l_eng.png" alt="Logo ENG"
+    <div class="crew-detail-top" style="border: 1px solid rgba(128,128,0,0.4);">
+      <div class="crew-detail-img-wrap" style="border-right:1px solid rgba(128,128,0,0.25);">
+        <img src="images/l_eng.png" alt="Logo SEC"
              class="crew-dept-logo"
              onerror="this.style.display='none'" />
         <img src="images/crew/rogers.jpg" alt="Rogers (?)"
              style="width:160px;height:190px;object-fit:cover;border-radius:8px;border:2px solid rgba(128,128,0,0.5);"
              onerror="this.outerHTML='<div style=\'width:160px;height:190px;background:rgba(128,128,0,0.15);border-radius:8px;border:2px dashed rgba(128,128,0,0.3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px\'><i class=\'fa-solid fa-gear\' style=\'font-size:3rem;color:rgba(128,128,0,0.4);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.55rem;color:rgba(128,128,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
-        <!-- Watermark dossier alterato -->
-        <div class="tampered-watermark">Dossier Alterato</div>
       </div>
 
       <div class="crew-detail-header" style="background:linear-gradient(135deg, rgba(128,128,0,0.35), rgba(60,60,0,0.5));">
         <div class="role-label" style="color:rgba(248,248,255,0.6);">
           <i class="fa-solid fa-gear" style="color:var(--ops-color);"></i>
-          &nbsp; Ingegneria · ENG
+          &nbsp; Ufficiali · ENG
         </div>
-
-        <!-- Grado: barrato Cadetto, sostituito con Guardiamarina -->
-        <div class="rank-name">
-          <div class="altered-field">
-            <span class="altered-original">Cadetto V Anno</span>
-            <span class="altered-replacement">Guardiamarina</span>
-          </div>
-        </div>
-
-        <!-- Nome con effetto glitch: Rogers è il nome falso -->
-        <div class="char-name" style="color:var(--ops-color);">
-          <span class="glitch-text" data-text="Rogers">Rogers</span>
-          <span style="font-size:0.65rem;color:rgba(248,248,255,0.3);font-family:var(--font-body);font-style:italic;margin-left:8px;">(Geber Leandrom)</span>
-        </div>
-
+        <div class="rank-name">Rogers</div>
+        <div class="char-name" style="color:var(--ops-color);">Guardiamarina</div>
         <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
           <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(128,128,0,0.2);border:1px solid rgba(128,128,0,0.4);color:rgba(248,248,255,0.7);">
             INGEGNERE
           </span>
-          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(200,0,0,0.15);border:1px solid rgba(200,0,0,0.4);color:#ff9999;">
+          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(68,136,255,0.1);border:1px solid rgba(68,136,255,0.25);color:rgba(248,248,255,0.5);">
             CLANDESTINO
           </span>
           <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(68,136,255,0.1);border:1px solid rgba(68,136,255,0.25);color:rgba(248,248,255,0.5);">
             PNG
           </span>
         </div>
-
         <a href="log.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:'Orbitron',sans-serif;font-size:0.6rem;letter-spacing:0.1em;color:var(--lcars-orange);text-decoration:none;text-transform:uppercase;">
           <i class="fa-solid fa-file-lines"></i> Diari di Missione
         </a>
@@ -96,45 +71,22 @@
 
     <div class="crew-stats-table">
       <div class="crew-stats-grid">
-
-        <!-- Nome: barrato nome reale, sostituito con alias -->
         <div class="stat-row" style="border-left-color:var(--ops-color);">
           <span class="s-label">Nome</span>
-          <span class="s-value">
-            <div class="altered-field">
-              <span class="altered-original">Geber Leandrom</span>
-              <span class="altered-replacement">Rogers</span>
-            </div>
-          </span>
+          <span class="s-value">Rogers <br/>(Geber Leandrom)</span>
         </div>
-
-        <!-- Grado: barrato Cadetto, sostituito con Guardiamarina -->
         <div class="stat-row" style="border-left-color:var(--ops-color);">
           <span class="s-label">Grado</span>
-          <span class="s-value">
-            <div class="altered-field">
-              <span class="altered-original">Cadetto V Anno</span>
-              <span class="altered-replacement">Guardiamarina</span>
-            </div>
-          </span>
+          <span class="s-value">Guardiamarina <br/>(Cadetto V anno)</span>
         </div>
-
         <div class="stat-row" style="border-left-color:var(--lcars-blue);">
           <span class="s-label">Razza</span>
           <span class="s-value">Umano</span>
         </div>
-
-        <!-- Età: barrata età reale, sostituita con quella falsificata -->
         <div class="stat-row" style="border-left-color:var(--lcars-blue);">
           <span class="s-label">Età</span>
-          <span class="s-value">
-            <div class="altered-field">
-              <span class="altered-original">21 as</span>
-              <span class="altered-replacement">25 as</span>
-            </div>
-          </span>
+          <span class="s-value">25 as <br/>(21)</span>
         </div>
-
         <div class="stat-row" style="border-left-color:var(--lcars-blue);">
           <span class="s-label">Sesso</span>
           <span class="s-value">M</span>
@@ -155,68 +107,38 @@
           <span class="s-label">Capelli</span>
           <span class="s-value">neri</span>
         </div>
-
-        <!-- Nave precedente: dato falsificato -->
-        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
-          <span class="s-label">Nave prec.</span>
-          <span class="s-value">
-            <div class="altered-field">
-              <span class="altered-original">Accademia SF</span>
-              <span class="altered-replacement">USS Kyushiu NCC-1833</span>
-            </div>
-          </span>
-        </div>
-
       </div>
 
       <div class="crew-notes-section">
-
-        <!-- Badge SECLAR stilizzato -->
-        <div class="seclar-badge">
-          <i class="fa-solid fa-shield-halved fa-lg"></i>
-          <span>Classificazione sicurezza: SECLAR 2 &nbsp;·&nbsp; Accesso ristretto &nbsp;·&nbsp; Dossier sotto indagine</span>
-          <i class="fa-solid fa-lock fa-lg" style="margin-left:auto;"></i>
-        </div>
-
+        <h2><i class="fa-solid fa-triangle-exclamation"></i> SECLAR 2 <i class="fa-solid fa-triangle-exclamation"></i></h2>
         <h3><i class="fa-solid fa-note-sticky"></i> &nbsp;Note</h3>
         <p>I suoi genitori sono il Comandante Sylvia Maelyss, della base spaziale Zenobe-12, ed il Ten.Com. Julius Laendrom, Sezione Tecnica della stessa base.</p>
-        <p>Nato su Cristall III, vi ha vissuto per molti anni, finché non è entrato nella Flotta Stellare; ora, dopo 4 anni, in seguito alla sua grande voglia di anticipare i tempi,
-          lascia l'Accademia un po' prima dell'esame finale e si reca sulla base McHinley, sperando di potersi imbarcare.</p>
-        <p>Raggiunta la stazione nota una gran folla che aspetta di poter salire su di una nave di classe Miranda dall'aspetto esterno non dei migliori.</p>
-        <p>Replica una divisa, e manomette il comunicatore dell'Accademia per potersi imbarcare sulla nave.</p>
+        <p>Nato su Cristall III, vi ha vissuto per molti anni, finché non è entrato nella Flotta Stellare; ora, dopo 4 anni, in seguito alla sua grande voglia di anticipare i tempi, 
+          lascia l’Accademia un po' prima dell’esame finale e si reca sulla base McHinley, sperando di potersi imbarcare.</p>
+        <p>Raggiunta la stazione nota una gran folla che aspetta di poter salire su di una nave di classe Miranda dall’aspetto esterno non dei migliori.</p>
+        <p>Replica una divisa, e manomette il comunicatore dell’Accademia per potersi imbarcare aulla nave.</p>
         <p>Si aggira per la nave, certo di passare inosservato tra i 200 membri d'equipaggio; purtroppo, non ha fatto i conti con un imprevisto... per giunta vulcaniano!</p>
-        <p>Si tratta del GM V'Learya, fascinosa vulcaniana dai capelli biondi ed i freddi occhi di un azzurro intenso, con cui nessuno riesce a fidanzarsi, sia perché è vulcaniana,
-          sia perché ogni tanto è decisamente insopportabile. Geber, come molti altri dell'equipaggio, ne è perdutamente innamorato. Lei è una sua ex compagna di corso quando all'Accademia frequentava il III anno.</p>
+        <p>Si tratta del GM V’Learya, fascinosa vulcaniana dai capelli biondi ed i freddi occhi di un azzurro intenso, (con cui nessuno riesce a fidanzarsi, sia per il fatto che è vulcaniana, 
+          sia perché ogni tanto è decisamente insopportabile). Geber, come molti altri dell’equipaggio, ne è perdutamente innamorato. Lei è una sua ex compagna di corso quando all’Accademia frequentava il III anno.</p>
         <p>È uno studioso di archeologia e di storia dell'arte di diverse civiltà.</p>
         <p>Di carattere quieto e gioioso, vede la vita in modo positivo e molti lo invidiano per questo.</p>
         <p>Ha una ragazza nella flotta, il GM. Alyce Sartreen, capo del Dipartimento Servizi Tecnici sulla USS Orion, di classe Nebula.</p>
 
         <h3><i class="fa-solid fa-bolt"></i> &nbsp;Abilità</h3>
         <ul>
-          <li>Possiede forti poteri ESP che gli permettono di spostare gli oggetti, di penetrare negli oggetti/animali con la mente e andare nel passato per rivivere esperienze o fatti
-            dove l'oggetto era presente. Ed altri ancora che scoprirà con il tempo.</li>
+          <li>Possiede forti poteri ESP che gli permettono di spostare gli oggetti, di penetrare negli oggetti/animali con la mente e andare nel passato per rivivere esperienze o fatti dove l’oggetto era presente. 
+            Ed altri ancora che scoprirà con il tempo.</li>
         </ul>
 
         <h3><i class="fa-solid fa-chess"></i> &nbsp;Hobby</h3>
-        <p>Geber è un bravo cuoco, e utilizza il replicatore solo per avere gli ingredienti.</p>
-        <p>Ama leggere, ed utilizzare il Ponte Ologrammi.</p>
-
+          <p>Geber è un bravo cuoco, e utilizza il replicatore solo per avere gli ingredienti.</p>
+          <p>Ama leggere, ed utilizzare il Ponte Ologrammi.</p>
+        
         <h3><i class="fa-solid fa-medal"></i> &nbsp;Incarichi</h3>
         <ul>
-          <li>
-            <div class="altered-field" style="display:inline-flex;flex-direction:column;gap:2px;">
-              <span class="altered-original">Cadetto V Anno – Accademia della Flotta Stellare</span>
-              <span class="altered-replacement">Ufficiale Ingegnere – USS Afrodite NCC-1863</span>
-            </div>
-          </li>
-          <li>
-            <div class="altered-field" style="display:inline-flex;flex-direction:column;gap:2px;">
-              <span class="altered-original">—</span>
-              <span class="altered-replacement">Ufficiale Ingegnere – USS Kyushiu NCC-1833</span>
-            </div>
-          </li>
+          <li>Ufficiale Ingegnere - USS Afrodite NCC-1863</li>
+          <li>Ufficiale Ingegnere - USS Kyushiu NCC-1833</li>
         </ul>
-
       </div>
     </div>
   </div>
