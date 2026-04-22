@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rapporto Frruuu – SMC - UCSM | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="log.html">Log</a>
+    <span>›</span>
+    <a href="log_mission1.html">Mission: 1</a>
+    <span>›</span>
+    <span class="current">SMC - UCSM - Rapporto Frruuu</span>
+  </div>
+
+  <!-- Diary page -->
+  <div class="diary-wrapper">
+
+   <div class="diary-header" style="background: linear-gradient(135deg, #800000 0%, #5a0000 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-solid fa-circle-chevron-up"></i> &nbsp;COM &nbsp;·&nbsp; Primo Ufficiale &nbsp;·&nbsp; Rapporto
+        </div>
+        <div class="diary-header-name">GM Frruuu</div>
+        <div class="diary-header-mission">SMC - UCSM — The Headshrinker</div>
+      </div>
+      <!-- Miniatura PG + link scheda -->
+      <div class="diary-header-pgbox">
+        <img src="images/crew/frruuu.jpg" alt="Giuseppe Alighieri"
+                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+        <a href="crew_frruuu.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+      </div>
+    </div>
+    <div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">10104.21</span>
+      </div>
+
+      <!-- citazione -->
+      <p style="color:rgba(248,248,255,0.5);">
+          Ammiraglio Terenzio Colbotto<br/>
+          Ufficio Controlli Salute Mentale<br/>
+          Comando Flotta Stellare<br/>
+          San Francisco - Sol III<br/>
+          <br/>
+         e p.c. Cap. Giuseppe Alighieri<br/>
+         USS Afrodite - NCC-1863<br/><br/>
+      </p>
+
+      <p>Come richiestomi dal Comando di Flotta, invio rapporto riguardante colloquio privato con Dr. Comm. Proff. Egr. Sup. Bottino.<br/>
+        Alle ore 16:00 del 1 Aprile u.s. mi sono incontrata col suddetto Dr. Comm. Proff. Egr. Sup. Bottino nel suo studio privato messogli a disposizione dal Cap. Alighieri 
+        che volentieri ha ceduto la sua cabina atta all'uopo.<br/>
+        Il Dr. Comm. Proff. Egr. Sup. Bottino ricevevami sito su alto scanno e facevami cenno di accomodarmi su chaise long disposta nel mezzo della stanza. 
+        Circa mezz'ora dopo, visti inutili miei tentativi di accomodarmi su detta chaise long, il Dr. Comm. Proff. Egr. Sup. Bottino acconsentiva benignamente di farmi accomodare per terra davanti suoi piedi, 
+        iniziavasi ora a pormi domande atte a stabilire mio grado di salute mentale:</p>
+
+      <p>
+        <b style="color:rgba(248,248,255,0.5);">Quanto fa sette per otto?</b><br/>
+          A domanda rispondevo: Un momento che ho ancora tutti i gangli indolenziti dal tentare di scalare quel divano, mi dia cinque minuti che poi riesco a contare.<br/>
+        <b style="color:rgba(248,248,255,0.5);">Di quanti gradini è composta la scala per arrivare al suo alloggio?</b><br/>
+        A domanda rispondevo: è questo il mio alloggio, se non lo sa lei!<br/>
+          <b style="color:rgba(248,248,255,0.5);">Vi sono animali sulla nave? Se sì: quanti?</b><br/>
+        A domanda rispondevo: Dal mio personale punto di vista siliceo, di animali su questa nave ce ne sono un paio di centinaia, più o meno pelosi.<br/>
+          <b style="color:rgba(248,248,255,0.5);">Ha mai preso a testate un comignolo?</b><br/>
+        A domanda rispondevo: Un che? (nda Nel XXIII secolo dubito che i comignoli pullulino).<br>
+          <b style="color:rgba(248,248,255,0.5);">Descriva con parole semplici i vostri sentimenti riguardo le Nebule.</b><br/>
+        A domanda rispondevo: Sgrumble ponfa zock @#$%^&$@^*&^###*&@!!#. Abbastanza semplici così?<br/>
+          <b style="color:rgba(248,248,255,0.5);">Ha visto qualche bel film ultimamente?</b><br/>
+        A domanda rispondevo: "Le follie dell'Imperatore", sì, sto attraversando un periodo della mia vita dove la dinamica intellettuale ha avuto una battuta d'arresto.<br/>
+          <b style="color:rgba(248,248,255,0.5);">È soddisfatto del suo Capitano?</b><br/>
+        A domanda rispondevo: Sono soddisfattissima del mio Capitanuccio slurpino, soprattutto dopo che ha mangiato del peperoncino con le ostriche.<br/>
+          <b style="color:rgba(248,248,255,0.5);">Fa mai sogni concernenti i suoi Professori d'Accademia?</b><br/>
+        A domanda rispondevo: Sì, e di solito riguardano una sega ai protoni, un barile di pece e un sacco di piume. Comunque sono sogni che mi sono utilissimi per prendere spunti 
+          per la prossima azione del Commando, e stavolta altro che alla sedia dovranno aggrapparsi. Harg harg harg <em style="color:rgba(248,248,255,0.5);">(risata diabolica - nda)</em>.<br/>
+          <b style="color:rgba(248,248,255,0.5);">Di che colore è la sua uniforme?</b><br/>
+        A domando rispondevo: Non vorrei scioccarla ma vede io... ehm... vado in giro, come dire... nuda. Però per le occasioni ufficiali ho una magnifica mantella bianca con bandana annessa.<br/>
+          <b style="color:rgba(248,248,255,0.5);">Qual è il codice a barre del chinotto?</b><br/>
+        A domanda rispondevo: || ||| |  || ||||| | |||
+      </p>
+
+      <p>Avendo esaurito il colloquio, il Dr. Comm. Proff. Egr. Sup. Bottino mi ha congedata.</p>
+
+        <br/>
+        <br/>
+        <em style="color:rgba(248,248,255,0.5);">
+          GM Frruuu<br/>
+          Primo Ufficiale<br/>
+          USS Afrodite - NCC-1863
+        </em>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+    <a href="log_mission1.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> SMC - UCSM
+    </a>
+    <div style="margin-left:auto;display:flex;gap:8px;">
+
+      <a href="log_missionb_00.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a href="log_missionb_0.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>
