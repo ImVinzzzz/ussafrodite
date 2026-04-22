@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Alighieri – Mission 1 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="log.html">Log</a>
+    <span>›</span>
+    <a href="log_mission1.html">Mission: 1</a>
+    <span>›</span>
+    <span class="current">Diario di Bordo – S.Ten. Alighieri</span>
+  </div>
+
+  <!-- Diary page -->
+  <div class="diary-wrapper">
+
+   <div class="diary-header" style="background: linear-gradient(135deg, #800000 0%, #5a0000 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-solid fa-circle-chevron-up"></i> &nbsp;COM &nbsp;·&nbsp; Capitano FF &nbsp;·&nbsp; Diario di Bordo
+        </div>
+        <div class="diary-header-name">S.Ten. G. Alighieri</div>
+        <div class="diary-header-mission">Mission: 1 — The curse of USS Cassiopea</div>
+      </div>
+      <!-- Miniatura PG + link scheda -->
+      <div class="diary-header-pgbox">
+        <img src="images/crew/alighieri.jpg" alt="Giuseppe Alighieri"
+                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+        <a href="crew_alighieri.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+      </div>
+    </div>
+    <div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">9907.15</span>
+      </div>
+
+      <!-- PROLOGO -->
+      <div class="diary-section-title">Prologo</div>
+
+      <!-- citazione -->
+      <div class="diary-quote">
+        Qualcosa ti accade? È giusto.<br/>
+        Fa parte del fato dell'universo destinato a te fin dal principio.<br/>
+        Ogni cosa che ti accade è parte del grande tutto.<br/>
+        <span class="diary-em">(Marco Aurelio)</span>
+      </div>
+
+      <p><span class="diary-section-subtitle"><br/>
+        Navetta Asimov, Bacino spaziale, verso le stelle...</span></p>
+      <p>Sapevo che doveva esserci una fregatura da qualche parte.</p>
+      <p>Al RE DE LEONE non è andata giù la sparizione di tutto il Chinotto dalle cantine dell'Accademia: accontentarsi di quello replicato deve averlo messo di cattivo umore, non è vero Geppo?</p>
+      <p>E così, eccoci qua: promosso Sottotenente due giorni dopo il diploma, con il comando di una nave TUTTA MIA e la possibilità di fare il diavolo a quattro per il Quadrante Alfa e cosa mi capita? 
+        UNA CLASSE MIRANDA! Vecchia di almeno 80 anni, uno SCASSONE volante... la nostra casa per i prossimi due o tre mesi (è tanto se non si sfascia prima). Ma questo è niente: sai come si chiama, vecchio mio? "AFRODITE!!"</p>
+      <p>E si aspettano che io vada in giro orgoglioso di una nave con un nome simile??!?!</p>
+      <p>"Ehi voi, Klingon, Borg e viscidi Cardassiani: sono il capitano Giuseppe Alighieri della nave federale… Afrodite… Arrendetevi o... (... oh merda!").<br/>
+        Questa me la pagano, tutti e due: già, perché scommetto che anche la caitiana ci ha messo la zampina!<br/>
+        Una buona notizia c'è: Frruuu è dei nostri! Anche Bob De Niro. Ma nessun altro che conosciamo.</br/>
+        C'è una decisa predominanza umana fra i capi dipartimento, a parte la sezione medica. Chissà se...</p>
+      <p>Meno male, il viaggio in navetta è finito: guarda Geppo, eccola là!<br/>
+        Però… Tutto l'equipaggio ci sta aspettando: raddrizza i baffi, vecchio mio e muso in alto! La prima impressione è quella che conta!</p>
+
+      <p><span class="diary-section-subtitle"><br/>
+        USS Afrodite, hangar navette: dove tutto comincia.</span></p>
+      
+      <!-- citazione -->
+      <div class="diary-quote">
+        Le comodità sono la sola cosa <br/>che può darci la nostra civiltà.<br/>
+        <span class="diary-em">(Oscar Wilde)</span>
+      </div>
+      
+      <p>
+        - Non si azzardi a scendere con quegli stivali infangati! Ho appena finito di pulire i corridoi e non voglio ricominciare daccapo!<br/>
+        - Signora… Io sono IL CAPITANO GIUSEPPE ALIGHIERI, al comando di questa nave!<br/>
+        - Ernestina Scramiglio, addetta alle pulizie, molto piacere. Infili le pattine.<br/>
+        - Come si permette? E poi cosa sono queste... pattine?<br/>
+        - Io non sono il tipo che si fida della tecnologia, caro il mio Capitano! Quando ci sono io è tutto un lavorio di spazzoloni e secchi d'acqua alla cara vecchia maniera del 23° secolo! 
+          Allora sì che tutto andava bene! E con le "pattine" ai piedi, ci si risparmia di dare la cera nei corridoi. Sarà meglio che ne dia l'avviso all'equipaggio...<br/>
+        - Signora Scramiglio...<br/>
+        - Mi chiami pure Ernestina, caro, non facciamo complimenti fra noi.<br/>
+        - Signora Ernestina: l'unica cosa che mi viene in mente a proposito della sua presenza qui, al posto della parata dei capi sezione, è che <em>'qualcuno'</em> deve avere un grande senso 
+          dell'umorismo. Devo ammettere però di non essere al momento in grado di apprezzare lo scherzo. Fra le varie ricerche di codici a barre e le mappe topografiche che ci hanno fatto studiare, 
+          non mi risulta da nessuna parte l'impiego da parte della Flotta Stellare di manovalanza per le pulizie.<br/>
+        - Non siamo conosciuti, bello mio, ecco tutto. Nessuno parla dei camerieri, eppure noi siamo quelli che fanno tutto il lavoro sporco. Ho delle referenza eccellenti per sua conoscenza: 
+          ho lavorato per la meravigliosa Enterprise, del Capitano James T. Kirk per tutti i cinque anni di missione...<br/>
+        - No! LEI è quella Ernestina Scramiglio? Quella che ha scritto <span class="diary-em">'Pulire è il mio peccato: i cinque anni migliori della mia vita'</span> e 
+          <span class="diary-em">'Và dove ti porta il naso: dove nessuna scopa è mai arrivata prima'</span><br/>
+        - Naturalmente. Anche il seguito <span class="diary-em">'Io non sono Spock ma Ernestina Scramiglio'</span>.<br/>
+        - Deve farmi un suo autografo, Ernestina! (posso chiamarla Ernestina?). È un onore averla con noi.<br/>
+        - Grazie, caro. Naturalmente il gatto dovrà restarsene nella sua gabbietta.<br/>
+        - Mi chiami Beppe, tutti i miei a... COSA?! Non se ne parla. Non mi separo mai da Geppo, ma vedrà che...<br/>
+        - Gli animali sporcano, e questo gatto non mi sembra diverso dagli altri…<br/>
+        - Geppo È DIVERSO dagli altri, glielo assicuro. Non farà troppi danni, vero, Geppo? <em>(e smettila di sogghignare, non lo vedi che è una vecchietta inoffensiva?)</em>.<br/>
+        - Comunque la parata dei suoi capi... sì insomma quelli lì... non si può fare, sono ancora tutti in licenza: ci sono solo dei guardiamarina ubriachi e - ah sì - il Consigliere di bordo. Lui c'è.<br/>
+        - Quale Consigliere? Io non voglio Consiglieri!<br/>
+        - Lo vada a dire a lui, è sul Ponte di Comando a cercare di psicanalizzare qualche tecnico.<br/>
+        - Glieli dò io i consigli! Ernestina siete allergica all'aglio?<br/>
+        - No, perché?<br/>
+        <br/>SVVVOSHHHHHH!
+      </p>
+      
+      <p><span class="diary-section-subtitle"><br/>
+        USS Afrodite, Ponte di Comando.</span></p>
+      
+      <!-- citazione -->
+      <div class="diary-quote">
+        Il mondo è stato fatto dai pazzi <br/>perché i saggi vi possano vivere.<br/>
+        <span class="diary-em">(Oscar Wilde)</span>
+      </div>
+      
+      <p>
+        - Capitano in Plancia! Atccciuuu!<br/>
+        - Comodi, comodi. Qualcuno di lor signori è allergico all'aglio?<br/>
+        - Aaaaat... cciuuuuu!<br/>
+        - Benvenuto sulla Afrodite, Capitano Alighieri! Sono il Consigliere di bordo, Stanislao Becco. Quando avrà un momento di tempo vorrei poter parlare con lei: 
+        sono veramente affascinato dal suo background culturale e dalle sue origini...<br/>
+        - Signor Becco...<br/>
+        - Aaatccciiuiuuu!<br/>
+        - Uno dei motivi per cui ho richiesto specificatamente questo incarico è per poterla conoscere meglio e lavorare fianco a fianco con un vero diavolo…!<br/>
+        - Signor Becco...<br/>
+        - Come sono i suoi rapporti con sua madre? Ha del risentimento verso suo padre? Sogna mai di salire delle scale ripide?<br/>
+        - Lei non è allergico all'aglio, vero Signor Becco?<br/>
+        - Può chiamarmi Stan. No, non lo sono.<br/>
+        - <em>(Accidenti.)</em> Farò un giro della nave. Faccia sapere ai ritardatari che ho intenzione di partire in orario. I convenevoli a dopo.<br/>
+        - Ma capitano???<br/>
+        <br/>SVVVOSHHHHHH!
+      </p>
+      
+      <!-- citazione -->
+      <div class="diary-quote">
+        Le domande non sono mai indiscrete: <br/>a volte lo sono le risposte...<br/>
+        <span class="diary-em">(Oscar Wilde)</span>
+      </div>
+      
+      <p>
+        - Beppe! Non posso crederci sei tu?! Mi scusi, signore: Guardiamarina Robert F. De Niro, a rapporto, Capitano!<br/>
+        - Così va molto meglio... e piantala, Bob, siamo da soli adesso!! È fantastico, non è vero?<br/>
+        - WOW! Meglio di qualunque sala ologrammi... la mia postazione in Plancia è favolosa, pilotare la tua nave sarà un onore, Capitano... Su questo Ponte ci sono gli alloggi Ufficiali, 
+        stai andando a visitare il tuo nuovo alloggio?!<br/>
+        - Già... Bob, ma non hai niente da fare?<br/>
+        - Perché? Cosa mi stai nascondendo, vecchio cornuto di un diavolo?<br/>
+        - Bob, passi per il cornuto e per il diavolo ma vecchio...<br/>
+        - AH! Ecco perché volevi controllare che le operazione di sbarco del tuo LETTONE A TRE PIAZZE filassero lisce!!! Che demonio! E così la storia continua!<br/>
+        - Bob...<br/>
+        - Tu e miss Silicio siete ancora treno e montagna, eh? A vederti non ti si sarebbe mai creduto un tipo fedele, Beppe ma CAVOLI! Ti piace sempre dormire in mezzo?<br/>
+        - Io dormo SEMPRE al centro, Bob... Frruuu SOTTO il letto - sulla sabbia - e Geppo SOPRA il baldacchino. A noi piace così. Ti spiace scusarmi? Voglio controllare che i <em>"gerani"</em> 
+        siano a posto per quando arriverà...<br/>
+        - Sei un vero diavolo romantico, Beppe!<br/>
+        - Guai a te se lo dici in giro, Bob! Che figura farei con il resto dell'equipaggio?
+      </p>
+
+      <!-- DIARIO -->
+      <div class="diary-section-title">Diario</div>
+      
+      <!-- citazione -->
+      <div class="diary-quote">
+        L'amicizia non inizia male con il riso <br/>e non può finire meglio.<br/>
+        <span class="diary-em">(Oscar Wilde)</span>
+      </div>
+
+      <p><span class="diary-section-subtitle"><br/>
+        USS Afrodite, Ponte di Comando.</span></p>
+      <p>
+        - Sig. Renzi, nessuna novità sul caso <em>"Oryza Sativa"</em>? Lei e Da avete trovato il responsabile dei chicchi di riso sparsi per tutta la nave? 
+          Un'altra lamentela di Ernestina e finiamo tutti sul libro nero...<br/>
+        - Capitano, ho ascoltato finora ben 117 membri dell'equipaggio e tutti affermano di aver ricevuto ordini precisi dalla Flotta... sono controfirmati!<br/>
+        - Gli ordini?<br/>
+        - No, Signore, i chicchi di riso!<br/>
+        <br/>
+        Meno male che i Capitani di astronave sono di forte tempra. Naturalmente, c'è solo una cosa da fare:<br/>
+        - Numero Uno in Plancia! Ah, sei qui, piccola! Dunque, abbiamo uno o due quintali di riso, firmati chicco per chicco... pensaci tu!<br/>
+        - Non preoccuparti Bep... Capitano! Stasera riso fritto alla Grande Madre!<br/>
+        - Bene, e ora che abbiamo sistemato le cose serie, pensiamo agli ordini dell'Alto Comando...
+      </p>
+
+      <p>
+        Messaggio del Capitano Alighieri all'equipaggio: si prega fare attenzione (per il vostro bene).<br/>
+          Su insistenza del Comando di Flotta e su mio suggerimento effettueremo una sosta al Disney Planet del Quadrante Alfa. Sono previsti turni a rotazione per TUTTO l'equipaggio 
+          (vulcaniani riottosi compresi - non faccio nomi) ed è vietato rientrare a bordo dell'astronave senza il "morale alto" e un souvenir del luogo. 
+          Divertitevi (soprattutto la Sicurezza) perché potrebbe essere l'ultima occasione per qualcuno di voi, data la missione che ci attende. Alighieri, chiudo.
+      </p>
+
+      <p>
+        - Capitano a JT: approfittate di questa sosta per fare quella revisione ai motori. Vi assegnerò l'ultimo turno di licenza, fatene buon uso.<br/>
+        - Si, Capitano.
+      </p>
+
+      <p><span class="diary-section-subtitle"><br/>
+        Disney Planet.</span></p>
+      <p>
+      <!-- citazione -->
+      <div class="diary-quote">
+         Il credito è il capitale dei cadetti <br/>e ne vivono piacevolissimamente.<br/>
+        <span class="diary-em">(Oscar Wilde)</span>
+      </div>
+
+      <p>
+        - Andiamo Geppo: tu e Frruuu farete il primo turno con me e niente storie! Su, avanti! Sono mesi che non aspetto altro che andare al "CAPITANO KIRK E IL PLANETOIDE MALEDETTO"...! 
+          Non avrete paura di fare quattro giri della morte a warp due...?!!<br/>
+        - Bella giornata, Capitano! Buon divertimento!<br/>
+        - Altrettanto. PORCA EVA, sbrigatevi voi due se non volete che vi lasci con Da Nee e Sàpek... mi meraviglio di te, Frruuu, dove è finito il tuo ardito coraggio da horta?!<br/>
+        - Va bene, sul wormhole dell'amore ci vengo ma dopo aver mangiato "pesce e patatine"... sei sicura che non vuoi anche dello zucchero filato?? Ok, Ok! No, Geppo, al labirinto di Alice non ci vai, 
+          l'ultima volta il VERO STREGATTO ti ha rincorso dentro il Phanton Manor e non credo che qui dentro l'abbiano scordato. Piuttosto, guarda qui in giro se vedi la vulcaniana, 
+          scommetto le mie corna che ha delegato qualcun altro per comprarle un souvenir... A proposito: quali orecchie vuoi da indossare, Frruuu, quelle di Minni o quelle di Topolino? 
+          Ma certo che ci sono della tua misura!! Guarda, Da Nee ha preso un biglietto della Lotteria Ferenghi: XLVI... speriamo bene, un po’ di Nutella non replicata di vero cioccolato ci farebbe comodo 
+          per i momenti bui! Anche un soggiorno su RISA tutto pagato di due settimane non sarebbe male, eh piccola?<br/>
+        - No, grazie, preferirei un pupazzo a forma di gatto: hai presente "LUCIFERO", quello del film di Cenerentola?<br/>
+        - Buongiorno Capitano!<br/>
+        - Salve JT, come va il morale?<br/>
+        - Ottimo, Signore, siamo tutti molto più rilassati!<br/>
+        - Ve lo meritate, avete fatto un buon lavoro con tutte quelle boe. Così anche lei colleziona pupazzi?<br/>
+        - Da cosa lo ha capito, Capitano?<br/>
+        - JT, chiunque tenga un MEGA Paperino sopra la propria consolle operativa o è un collezionista di pupazzi...<br/>
+        - Beh...<br/>
+        - ... oppure fa parte del mio equipaggio!
+      </p>
+
+      <p>
+        - Se ci sbrighiamo riusciamo a vedere lo spettacolo un'altra volta... uff, di nuovo Smith con Vanian... no è Kiss Mey! Oppure no! Ragazzi, e poi dicono che noi diavoli siamo... 
+        Buon per lui che D'Accardi non è nei paraggi.<br/>
+        - Alt, come non detto, eccolo lì. D�ì Frruuu, non è il nostro Vice della Sicurezza quello che si sta tuffando nel lago...? Sì, quello con il cappello da Pluto?!
+          Voglio proprio sapere quale storia mi propina questa volta...<br/>
+        <br/>Attenti a sinistra, uomini, c'è Becco! E se lui è laggiù può il nostro Capo Operazioni essere lontano? Infatti! Geppo, vai a salvare Peter, ha diritto anche lui ad un po’ di tranquillità. 
+          Dobbiamo anticipare quel torneo di scacchi di cui parliamo da giorni e organizzare una bella gara di ballo, dopodiché scaraventiamo Ernestina nelle braccia del Consigliere e tutto finirà in gloria. 
+          Ma certo, nessuno resiste al Parmigio!<br/>
+        Un regalo per me, Piccola? Una maglietta con su scritto: DON'T WORRY... Be Happy! Grazie, cocca, è una meraviglia! La indosserò subito! È un motto grandioso per una nave come la nostra, non ti pare?<br/>
+        <br/>- Frruuu, non ti girare troppo velocemente verso sinistra: sì, sotto la prima arcata. Quell'umano ti sta fissando da almeno un'ora... e che sguardo! Lo conosci?<br/>
+        - Gino Ciccozzi... no, non mi pare di aver mai avuto il piacere. Un vecchio amico? Ah... non preoccuparti, piccola, se solo si avvicina lo stendo. 
+          Geppo, restale vicino, ci penso io a... come sarebbe... è un membro dell'equipaggio? Del nostro equipaggio?! Una tua vecchia fiamma, tendente alla depressione per il tuo abbandono che ha cercato 
+          a più riprese di suicidarsi, offrendosi volontariamente in missioni suicide? Beh, perché no? è quello che ci vuole su una nave come la nostra, se non sono matti non li vogliamo, giusto?<br/>
+        - Potrebbe farci comodo un volontario. Sei sicura di non provare più niente per... andiamo, sai che puoi dirmi tutto!<br/>
+        - Va bene, come non detto. Torniamo a bordo con i souvenir, all'improvviso ho voglia di un po’ di Nutella...
+
+      
+        
+        <br/>
+        <br/>
+        <em style="color:rgba(248,248,255,0.5);">
+          S.Ten. Giuseppe Alighieri<br/>
+          Capitano FF<br/>
+          USS Afrodite NCC-1863
+        </em>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+    <a href="log_mission1.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Log Mission: 1
+    </a>
+    <div style="margin-left:auto;display:flex;gap:8px;">
+      <!-- Primo diario: bottone precedente spento -->
+      <a href="log_mission1_00.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a href="log_mission1_02.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>
