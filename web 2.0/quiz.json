@@ -1,0 +1,274 @@
+{
+  "categories": [
+    {
+      "id": "comando",
+      "name": "COMANDO E NAVIGAZIONE",
+      "icon": "img/m1.svg",
+      "gradient": ["#B42828", "#E61E1E"],
+      "isRiskio": false,
+      "questions": [
+        {
+          "points": 100,
+          "text": "Chi è il capitano della USS Enterprise NCC-1701-D nella serie The Next Generation?",
+          "options": ["James T. Kirk", "Jean-Luc Picard", "Benjamin Sisko"],
+          "correct": "B",
+          "image": null
+        },
+        {
+          "points": 250,
+          "text": "Con quale grado presta servizio Will Riker sull'Enterprise-D all'inizio della serie TNG?",
+          "options": ["Comandante", "Capitano", "Tenente Comandante"],
+          "correct": "A",
+          "image": null
+        },
+        {
+          "points": 500,
+          "text": "Come si chiama il celebre episodio in due parti in cui Picard viene catturato e trasformato in Borg?",
+          "options": ["Q Who", "The Best of Both Worlds", "I, Borg"],
+          "correct": "B",
+          "image": "img_quiz/picard.jpg"
+        }
+      ]
+    },
+    {
+      "id": "scienza",
+      "name": "SCIENZA E MEDICINA",
+      "icon": "img/m2.svg",
+      "gradient": ["#286E64", "#008080"],
+      "isRiskio": false,
+      "questions": [
+        {
+          "points": 100,
+          "text": "Chi è il medico capo dell'Enterprise-D per la maggior parte della serie TNG?",
+          "options": ["Katherine Pulaski", "Beverly Crusher", "Leonard McCoy"],
+          "correct": "B",
+          "image": null
+        },
+        {
+          "points": 250,
+          "text": "Come si chiama il dispositivo portatile usato dai medici di Flotta per diagnosi immediate sul campo?",
+          "options": ["Tricorder medico", "Faser diagnostico", "Scanner a tachioni"],
+          "correct": "A",
+          "image": null
+        },
+        {
+          "points": 500,
+          "text": "Deanna Troi è per metà Betazoide: quale speciale abilità psionico-empatica possiede?",
+          "options": ["Telepatia totale", "Empatia (percepisce le emozioni)", "Telecinesi"],
+          "correct": "B",
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "tattica",
+      "name": "TATTICA E SICUREZZA",
+      "icon": "img/m3.svg",
+      "gradient": ["#BEBE00", "#FFC800"],
+      "isRiskio": false,
+      "questions": [
+        {
+          "points": 100,
+          "text": "Chi ricopre il ruolo di capo della sicurezza e ufficiale tattico sull'Enterprise-D?",
+          "options": ["Worf", "Tasha Yar", "Miles O'Brien"],
+          "correct": "A",
+          "image": null
+        },
+        {
+          "points": 250,
+          "text": "Come si chiama l'arma individuale standard in dotazione agli ufficiali della Flotta Stellare?",
+          "options": ["Disruptor", "Phaser", "Fotontorpedine"],
+          "correct": "B",
+          "image": null
+        },
+        {
+          "points": 500,
+          "text": "In quale stagione di TNG Tasha Yar viene uccisa dal Vagabondo di Armus sul pianeta Vagra II?",
+          "options": ["Prima stagione", "Seconda stagione", "Terza stagione"],
+          "correct": "A",
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "ingegneria",
+      "name": "INGEGNERIA E OPS",
+      "icon": "img/m4.svg",
+      "gradient": ["#BEBE00", "#FFC800"],
+      "isRiskio": false,
+      "questions": [
+        {
+          "points": 100,
+          "text": "Chi è il capo ingegnere dell'Enterprise-D, riconoscibile per il suo visore VISOR giallo?",
+          "options": ["Geordi La Forge", "Miles O'Brien", "Montgomery Scott"],
+          "correct": "A",
+          "image": null
+        },
+        {
+          "points": 250,
+          "text": "Qual è il tipo di propulsione che permette alle navi della Flotta di viaggiare più veloce della luce?",
+          "options": ["Motore a impulso", "Motore a curvatura (Warp)", "Motore a fusione ionica"],
+          "correct": "B",
+          "image": null
+        },
+        {
+          "points": 500,
+          "text": "Cosa significa l'acronimo EPS nel contesto dell'ingegneria di bordo di una nave stellare?",
+          "options": ["Electro Plasma System", "Emergency Power Supply", "Enhanced Propulsion System"],
+          "correct": "A",
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "riskio",
+      "name": "RISKIO!",
+      "icon": "img/m5.svg",
+      "gradient": ["#374137", "#647D6E"],
+      "isRiskio": true,
+      "questions": [
+        {
+          "points": 200,
+          "text": "RISKIO! — Quante specie fondatrici hanno istituito la Federazione dei Pianeti Uniti nel 2161?",
+          "options": ["Due: Umani e Vulcaniani", "Quattro: Umani, Vulcaniani, Andoriani e Tellariti", "Sei specie fondatrici"],
+          "correct": "B",
+          "image": null
+        },
+        {
+          "points": 500,
+          "text": "RISKIO! — Qual è il nome del computer centrale dell'Enterprise ed il codice di autodistruzione richiesto al capitano?",
+          "options": ["Computer Ship / Codice Verde-Uno", "Computer / Omega Uno Uno Zero Zero Zero", "LCARS / Codice Omega-Rosso"],
+          "correct": "C",
+          "image": null
+        },
+        {
+          "points": 1000,
+          "text": "RISKIO! — Secondo il canone di Star Trek, cosa significa esattamente l'acronimo NCC che precede il numero identificativo delle navi della Flotta?",
+          "options": ["Naval Construction Contract", "New Colonization Command", "Non ha un significato canonico ufficiale definitivo"],
+          "correct": "C",
+          "image": "img_quiz/ncc.jpg"
+        }
+      ]
+    },
+    {
+      "id": "afrodite",
+      "name": "USS AFRODITE",
+      "icon": "img/m6.svg",
+      "gradient": ["#BF6500", "#FF9900"],
+      "isRiskio": false,
+      "questions": [
+        {
+          "points": 100,
+          "text": "A quale classe apparteneva la USS Afrodite nella nostra campagna di gioco?",
+          "options": ["Classe Miranda", "Classe Excelsior", "Classe Nova"],
+          "correct": "B",
+          "image": null
+        },
+        {
+          "points": 250,
+          "text": "Qual era la missione principale della USS Afrodite nei log di campagna?",
+          "options": ["Esplorazione scientifica nella frontiera", "Pattugliamento del confine neutro romulano", "Missione diplomatica verso Cardassia"],
+          "correct": "A",
+          "image": null
+        },
+        {
+          "points": 500,
+          "text": "Quale NPC è stato il primo ufficiale della USS Afrodite prima di assumere un ruolo di comando autonomo?",
+          "options": ["T'Rel", "Cmdr. Voss", "Lt. Mariani"],
+          "correct": "C",
+          "image": "img_quiz/afrodite.jpg"
+        }
+      ]
+    },
+    {
+      "id": "qonos",
+      "name": "QO'NOS",
+      "icon": "img/m7.svg",
+      "gradient": ["#803C64", "#B44B82"],
+      "isRiskio": false,
+      "questions": [
+        {
+          "points": 100,
+          "text": "Qo'noS (pronunciato Kronos) è il pianeta natale di quale specie nell'universo di Star Trek?",
+          "options": ["Romulani", "Klingon", "Cardassiani"],
+          "correct": "B",
+          "image": null
+        },
+        {
+          "points": 250,
+          "text": "Come si traduce in italiano il grido di saluto e di congedo Klingon 'Qapla''?",
+          "options": ["Successo", "Morte onorevole", "Per l'Impero"],
+          "correct": "A",
+          "image": null
+        },
+        {
+          "points": 500,
+          "text": "Come si chiama la tradizionale arma da mischia a doppia lama a mezzaluna dei guerrieri Klingon?",
+          "options": ["D'k tahg", "Mek'leth", "Bat'leth"],
+          "correct": "C",
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "romulus",
+      "name": "ROMULUS",
+      "icon": "img/m8.svg",
+      "gradient": ["#006432", "#009646"],
+      "isRiskio": false,
+      "questions": [
+        {
+          "points": 100,
+          "text": "I Romulani condividono origini evolutive con quale altra specie di Star Trek, da cui si separarono migliaia di anni fa?",
+          "options": ["Vulcaniani", "Cardassiani", "Bajorani"],
+          "correct": "A",
+          "image": null
+        },
+        {
+          "points": 250,
+          "text": "Come si chiama il servizio segreto militare dell'Impero Romulano, temuto per la sua brutalità?",
+          "options": ["Obsidian Order", "Tal Shiar", "Sezione 31"],
+          "correct": "B",
+          "image": null
+        },
+        {
+          "points": 500,
+          "text": "Come si chiama la nave da guerra romulana che sfrutta la tecnologia del mantello d'occultamento?",
+          "options": ["D'deridex Warbird", "Valdore Warbird", "Mogai Warbird"],
+          "correct": "A",
+          "image": "img_quiz/romulus.jpg"
+        }
+      ]
+    },
+    {
+      "id": "vulcano",
+      "name": "VULCANO",
+      "icon": "img/m9.svg",
+      "gradient": ["#1E3280", "#324696"],
+      "isRiskio": false,
+      "questions": [
+        {
+          "points": 100,
+          "text": "Qual è il principio filosofico vulcaniano sintetizzato nell'acronimo IDIC?",
+          "options": ["'Infinite Diversity in Infinite Combinations'", "'Inner Discipline In Contemplation'", "'I Devote Intelligence to Civilization'"],
+          "correct": "A",
+          "image": null
+        },
+        {
+          "points": 250,
+          "text": "Come si chiama il grande filosofo vulcaniano che circa 1800 anni prima del 23° sec. guidò il suo popolo verso la logica?",
+          "options": ["Surak", "Sarek", "Spock"],
+          "correct": "A",
+          "image": null
+        },
+        {
+          "points": 500,
+          "text": "Come si chiama la disciplina mentale vulcaniana estrema che mira alla totale purificazione di ogni emozione?",
+          "options": ["Pon Farr", "Katra", "Kolinahr"],
+          "correct": "C",
+          "image": null
+        }
+      ]
+    }
+  ]
+}
