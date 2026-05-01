@@ -548,7 +548,7 @@ body::after {
 .cat-name {
   font-family: var(--font-main);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 1.2;
@@ -594,10 +594,10 @@ body::after {
 /* ── Mobile Players Bar (fixed bottom) ─────────────────────── */
 .players-mobile-bar {
   display: none;
-  position: fixed;
+  position: relative;
   bottom: 0; left: 0; right: 0;
   z-index: 500;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .players-mobile-bar .p-card-mobile {
