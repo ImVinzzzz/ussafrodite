@@ -12,7 +12,7 @@
           "text": "Chi è il capitano della USS Enterprise NCC-1701-D nella serie The Next Generation?",
           "options": ["James T. Kirk", "Jean-Luc Picard", "Benjamin Sisko"],
           "correct": "B",
-          "image": null
+          "image": "img_quiz/m1a
         },
         {
           "points": 250,
@@ -23,10 +23,10 @@
         },
         {
           "points": 500,
-          "text": "Come si chiama il celebre episodio in due parti in cui Picard viene catturato e trasformato in Borg?",
+          "text": "Come si intitola l'episodio di TNG in cui Picard viene assimilato dai Borg?",
           "options": ["Q Who", "The Best of Both Worlds", "I, Borg"],
           "correct": "B",
-          "image": "img_quiz/picard.jpg"
+          "image": "img_quiz/locutus.jpg"
         }
       ]
     },
@@ -39,8 +39,8 @@
       "questions": [
         {
           "points": 100,
-          "text": "Chi è il medico capo dell'Enterprise-D per la maggior parte della serie TNG?",
-          "options": ["Katherine Pulaski", "Beverly Crusher", "Leonard McCoy"],
+          "text": "Chi è il medico capo dell'Enterprise-D?",
+          "options": ["Plox", "Beverly Crusher", "Leonard McCoy"],
           "correct": "B",
           "image": null
         },
@@ -49,14 +49,14 @@
           "text": "Come si chiama il dispositivo portatile usato dai medici di Flotta per diagnosi immediate sul campo?",
           "options": ["Tricorder medico", "Faser diagnostico", "Scanner a tachioni"],
           "correct": "A",
-          "image": null
+          "image": "img_quiz/tricorder.jpg"
         },
         {
           "points": 500,
-          "text": "Deanna Troi è per metà Betazoide: quale speciale abilità psionico-empatica possiede?",
-          "options": ["Telepatia totale", "Empatia (percepisce le emozioni)", "Telecinesi"],
+          "text": "Deanna Troi è per metà Betazoide: quale speciale abilità psichica possiede?",
+          "options": ["Telepatia", "Empatia", "Telecinesi"],
           "correct": "B",
-          "image": null
+          "image": "img_quiz/troi.jpg"
         }
       ]
     },
@@ -77,16 +77,16 @@
         {
           "points": 250,
           "text": "Come si chiama l'arma individuale standard in dotazione agli ufficiali della Flotta Stellare?",
-          "options": ["Disruptor", "Phaser", "Fotontorpedine"],
+          "options": ["Disgregatore", "Phaser", "Fotontorpedine"],
           "correct": "B",
           "image": null
         },
         {
           "points": 500,
-          "text": "In quale stagione di TNG Tasha Yar viene uccisa dal Vagabondo di Armus sul pianeta Vagra II?",
+          "text": "In quale stagione di TNG Tasha Yar viene uccisa da Armus sul pianeta Vagra II?",
           "options": ["Prima stagione", "Seconda stagione", "Terza stagione"],
           "correct": "A",
-          "image": null
+          "image": "img_quiz/tasha.jpg"
         }
       ]
     },
@@ -99,7 +99,7 @@
       "questions": [
         {
           "points": 100,
-          "text": "Chi è il capo ingegnere dell'Enterprise-D, riconoscibile per il suo visore VISOR giallo?",
+          "text": "Chi è il capo ingegnere dell'Enterprise-D?",
           "options": ["Geordi La Forge", "Miles O'Brien", "Montgomery Scott"],
           "correct": "A",
           "image": null
@@ -107,7 +107,7 @@
         {
           "points": 250,
           "text": "Qual è il tipo di propulsione che permette alle navi della Flotta di viaggiare più veloce della luce?",
-          "options": ["Motore a impulso", "Motore a curvatura (Warp)", "Motore a fusione ionica"],
+          "options": ["Motore a impulso", "Motore a curvatura", "Motore a cavitazione"],
           "correct": "B",
           "image": null
         },
@@ -130,21 +130,21 @@
         {
           "points": 200,
           "text": "RISKIO! — Quante specie fondatrici hanno istituito la Federazione dei Pianeti Uniti nel 2161?",
-          "options": ["Due: Umani e Vulcaniani", "Quattro: Umani, Vulcaniani, Andoriani e Tellariti", "Sei specie fondatrici"],
+          "options": ["Due", "Quattro", "Sei"],
           "correct": "B",
           "image": null
         },
         {
           "points": 500,
-          "text": "RISKIO! — Qual è il nome del computer centrale dell'Enterprise ed il codice di autodistruzione richiesto al capitano?",
-          "options": ["Computer Ship / Codice Verde-Uno", "Computer / Omega Uno Uno Zero Zero Zero", "LCARS / Codice Omega-Rosso"],
+          "text": "RISKIO! — Qual è il nome del sistema di interfaccia informatica del computer centrale dell'Enterprise?",
+          "options": ["Computer Ship", "Cervello Positronico", "LCARS"],
           "correct": "C",
           "image": null
         },
         {
           "points": 1000,
-          "text": "RISKIO! — Secondo il canone di Star Trek, cosa significa esattamente l'acronimo NCC che precede il numero identificativo delle navi della Flotta?",
-          "options": ["Naval Construction Contract", "New Colonization Command", "Non ha un significato canonico ufficiale definitivo"],
+          "text": "RISKIO! — Secondo il canone di Star Trek, cosa significa l'acronimo NCC che precede il numero identificativo delle navi della Flotta?",
+          "options": ["Naval Construction Contract", "New Colonization Command", "Nessun significato"],
           "correct": "C",
           "image": "img_quiz/ncc.jpg"
         }
@@ -160,23 +160,23 @@
         {
           "points": 100,
           "text": "A quale classe apparteneva la USS Afrodite nella nostra campagna di gioco?",
-          "options": ["Classe Miranda", "Classe Excelsior", "Classe Nova"],
-          "correct": "B",
-          "image": null
-        },
-        {
-          "points": 250,
-          "text": "Qual era la missione principale della USS Afrodite nei log di campagna?",
-          "options": ["Esplorazione scientifica nella frontiera", "Pattugliamento del confine neutro romulano", "Missione diplomatica verso Cardassia"],
+          "options": ["Classe Miranda", "Classe Constitution", "Classe Nova"],
           "correct": "A",
           "image": null
         },
         {
+          "points": 250,
+          "text": "Come si chiama lo stregatto del Capitano?",
+          "options": ["Argo", "Geppo", "Peppino"],
+          "correct": "A+B",
+          "image": "img_quiz/gatto.jpg"
+        },
+        {
           "points": 500,
-          "text": "Quale NPC è stato il primo ufficiale della USS Afrodite prima di assumere un ruolo di comando autonomo?",
-          "options": ["T'Rel", "Cmdr. Voss", "Lt. Mariani"],
-          "correct": "C",
-          "image": "img_quiz/afrodite.jpg"
+          "text": "Come si chgiama l'istruttore di Ballo della USS Afrodite",
+          "options": ["Albert Monroe", "Maurice Drews", "Adam Smith"],
+          "correct": "B",
+          "image": "img_quiz/ballo.jpg"
         }
       ]
     },
@@ -189,21 +189,21 @@
       "questions": [
         {
           "points": 100,
-          "text": "Qo'noS (pronunciato Kronos) è il pianeta natale di quale specie nell'universo di Star Trek?",
+          "text": "Qo'noS è il pianeta natale di quale specie nell'universo di Star Trek?",
           "options": ["Romulani", "Klingon", "Cardassiani"],
           "correct": "B",
-          "image": null
+          "image": "img_quiz/qonos.jpg"
         },
         {
           "points": 250,
           "text": "Come si traduce in italiano il grido di saluto e di congedo Klingon 'Qapla''?",
-          "options": ["Successo", "Morte onorevole", "Per l'Impero"],
+          "options": ["Vittoria", "Morte onorevole", "Per l'Impero"],
           "correct": "A",
           "image": null
         },
         {
           "points": 500,
-          "text": "Come si chiama la tradizionale arma da mischia a doppia lama a mezzaluna dei guerrieri Klingon?",
+          "text": "Come si chiama la tradizionale arma a doppia lama a forma di mezzaluna dei guerrieri Klingon?",
           "options": ["D'k tahg", "Mek'leth", "Bat'leth"],
           "correct": "C",
           "image": null
@@ -227,7 +227,7 @@
         {
           "points": 250,
           "text": "Come si chiama il servizio segreto militare dell'Impero Romulano, temuto per la sua brutalità?",
-          "options": ["Obsidian Order", "Tal Shiar", "Sezione 31"],
+          "options": ["Orfdine Ossidiano", "Tal Shiar", "Sezione 31"],
           "correct": "B",
           "image": null
         },
