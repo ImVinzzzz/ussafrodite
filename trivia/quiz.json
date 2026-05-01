@@ -272,31 +272,31 @@
     },
     {
       "id": "afrodite2",
-      "name": "USS AFRODITE",
+      "name": "USS AFRODITE - GOSSIP",
       "icon": "img/m6.svg",
       "gradient": ["#BF6500", "#FF9900"],
       "isRiskio": false,
       "questions": [
         {
           "points": 100,
-          "text": "A quale classe apparteneva la USS Afrodite?",
-          "options": ["Classe Miranda", "Classe Constitution", "Classe Nova"],
-          "correct": "A",
-          "image": null
+          "text": "Quanti libri ha scritto Ernestina Scramiglio?",
+          "options": ["Due", "Tre", "Cinque"],
+          "correct": "E",
+          "image": "img_quiz/scramiglio.jpg"
         },
         {
           "points": 250,
-          "text": "Come si chiama lo stregatto del Capitano?",
-          "options": ["Argo", "Geppo", "Peppino"],
-          "correct": "B",
-          "image": "img_quiz/gatto.jpg"
+          "text": "Chi è il compagno del Secondo Ufficiale Scientifico?",
+          "options": ["Baba Lambert", "Marek Capui", "Sàpek"],
+          "correct": "C",
+          "image": "img_quiz/danee.jpg"
         },
         {
           "points": 500,
-          "text": "Come si chiama l'istruttore di ballo della USS Afrodite",
-          "options": ["Albert Monroe", "Maurice Drews", "Adam Smith"],
+          "text": "Chi è la moglie di Adam Smith?",
+          "options": ["Lucy Bliss", "Kiss Mey", "Eva Brown"],
           "correct": "B",
-          "image": "img_quiz/ballo.jpg"
+          "image": "img_quiz/smith.jpg"
         }
       ]
     }
