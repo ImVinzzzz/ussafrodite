@@ -269,6 +269,36 @@
           "image": null
         }
       ]
-    }
+    },
+    {
+      "id": "afrodite2",
+      "name": "USS AFRODITE",
+      "icon": "img/m6.svg",
+      "gradient": ["#BF6500", "#FF9900"],
+      "isRiskio": false,
+      "questions": [
+        {
+          "points": 100,
+          "text": "A quale classe apparteneva la USS Afrodite?",
+          "options": ["Classe Miranda", "Classe Constitution", "Classe Nova"],
+          "correct": "A",
+          "image": null
+        },
+        {
+          "points": 250,
+          "text": "Come si chiama lo stregatto del Capitano?",
+          "options": ["Argo", "Geppo", "Peppino"],
+          "correct": "B",
+          "image": "img_quiz/gatto.jpg"
+        },
+        {
+          "points": 500,
+          "text": "Come si chiama l'istruttore di ballo della USS Afrodite",
+          "options": ["Albert Monroe", "Maurice Drews", "Adam Smith"],
+          "correct": "B",
+          "image": "img_quiz/ballo.jpg"
+        }
+      ]
+    },
   ]
 }
