@@ -236,7 +236,7 @@
           "text": "Come si chiama la nave da guerra romulana che sfrutta la tecnologia del mantello d'occultamento?",
           "options": ["D'deridex Warbird", "Valdore Warbird", "Mogai Warbird"],
           "correct": "A",
-          "image": "img_quiz/romulus.jpg"
+          "image": null
         }
       ]
     },
