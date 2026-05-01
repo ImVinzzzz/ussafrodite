@@ -340,7 +340,7 @@ function handleAnswer(chosen) {
   if (isCorrect) {
     state.players[state.currentIndex].score += state.currentPoints;
     playAudio('ok');
-    resultText = '✓ RISPOSTA CORRETTA!';
+    resultText = '✓ RIGHT!';
     awardsText = `+${state.currentPoints} PUNTI → ${escHtml(state.players[state.currentIndex].name)}`;
   } else {
     const pts = 250;
@@ -352,7 +352,7 @@ function handleAnswer(chosen) {
       }
     });
     playAudio('wrong');
-    resultText = '✗ RISPOSTA ERRATA!';
+    resultText = '✗ WRONG!';
     awardsText = `+${pts} PUNTI → ${winners.map(escHtml).join(', ')}`;
   }
 
