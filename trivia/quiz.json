@@ -281,7 +281,7 @@
           "points": 100,
           "text": "Quanti libri ha scritto Ernestina Scramiglio?",
           "options": ["Due", "Tre", "Cinque"],
-          "correct": "E",
+          "correct": "B",
           "image": "img_quiz/scramiglio.jpg"
         },
         {
@@ -295,7 +295,7 @@
           "points": 500,
           "text": "Chi è la moglie di Adam Smith?",
           "options": ["Lucy Bliss", "Kiss Mey", "Eva Brown"],
-          "correct": "B",
+          "correct": "C",
           "image": "img_quiz/smith.jpg"
         }
       ]
