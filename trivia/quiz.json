@@ -159,7 +159,7 @@
       "questions": [
         {
           "points": 100,
-          "text": "A quale classe apparteneva la USS Afrodite nella nostra campagna di gioco?",
+          "text": "A quale classe apparteneva la USS Afrodite?",
           "options": ["Classe Miranda", "Classe Constitution", "Classe Nova"],
           "correct": "A",
           "image": null
@@ -173,7 +173,7 @@
         },
         {
           "points": 500,
-          "text": "Come si chgiama l'istruttore di Ballo della USS Afrodite",
+          "text": "Come si chiama l'istruttore di ballo della USS Afrodite",
           "options": ["Albert Monroe", "Maurice Drews", "Adam Smith"],
           "correct": "B",
           "image": "img_quiz/ballo.jpg"
