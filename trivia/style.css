@@ -528,8 +528,8 @@ body::after {
 }
 
 .cat-icon {
-  width: 44px;
-  height: 44px;
+  width: 55px;
+  height: 55px;
   object-fit: contain;
   flex-shrink: 0;
   opacity: 0.85;
