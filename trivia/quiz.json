@@ -168,7 +168,7 @@
           "points": 250,
           "text": "Come si chiama lo stregatto del Capitano?",
           "options": ["Argo", "Geppo", "Peppino"],
-          "correct": "A+B",
+          "correct": "B",
           "image": "img_quiz/gatto.jpg"
         },
         {
