@@ -313,7 +313,7 @@ nav.main-nav {
   font-family: var(--font-display);
   font-size: 1rem;
   color: var(--lcars-blue);
-  letter-spacing: 2.5em;
+  letter-spacing: 0.5em;
   margin-top: 4px;
 }
 
