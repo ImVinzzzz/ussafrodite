@@ -1338,6 +1338,104 @@ footer {
   line-height: 1.5;
 }
 
+/* ── INCOMING MESSAGE BOX ────────────────────────────────── */
+.msg-box {
+  margin: 24px 0;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid rgba(68,136,255,0.3);
+  box-shadow: 0 0 16px rgba(68,136,255,0.08);
+}
+
+.msg-box-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  background: rgba(68,136,255,0.15);
+  border-bottom: 1px solid rgba(68,136,255,0.25);
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lcars-blue);
+}
+
+.msg-box-header i {
+  font-size: 0.8rem;
+}
+
+.msg-box-header .msg-id {
+  margin-left: auto;
+  color: rgba(68,136,255,0.5);
+  font-size: 0.55rem;
+}
+
+.msg-box-body {
+  padding: 16px 20px;
+  background: rgba(0,20,50,0.5);
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: rgba(248,248,255,0.85);
+}
+
+.msg-box-row {
+  display: flex;
+  gap: 12px;
+  padding: 5px 0;
+  border-bottom: 1px solid rgba(68,136,255,0.07);
+  font-size: 0.85rem;
+}
+
+.msg-box-row:last-child {
+  border-bottom: none;
+}
+
+.msg-box-row .msg-label {
+  font-family: var(--font-display);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--lcars-blue);
+  min-width: 110px;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.msg-box-row .msg-value {
+  color: var(--ghost-white);
+  font-weight: 300;
+}
+
+.msg-box-text {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(68,136,255,0.12);
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.msg-box-text p {
+  margin-bottom: 0.8em;
+}
+
+.msg-box-text p:last-child {
+  margin-bottom: 0;
+}
+
+.msg-box-footer {
+  padding: 8px 20px;
+  background: rgba(0,10,30,0.4);
+  border-top: 1px solid rgba(68,136,255,0.12);
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+  color: rgba(68,136,255,0.4);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+}
+
 /* ── PHOTO GALLERY ───────────────────────────────────────── */
 .gallery {
   display: grid;
