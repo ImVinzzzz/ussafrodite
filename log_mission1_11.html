@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Da Nee – Mission 1 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="log.html">Log</a>
+    <span>›</span>
+    <a href="log_mission1.html">Mission: 1</a>
+    <span>›</span>
+    <span class="current">Diario Personale – GM Da Nee</span>
+  </div>
+
+  <!-- Diary page -->
+  <div class="diary-wrapper">
+
+   <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-solid fa-dna"></i> &nbsp;SCI &nbsp;·&nbsp; XSO &nbsp;·&nbsp; Diario Personale
+        </div>
+        <div class="diary-header-name">GM Da Nee</div>
+        <div class="diary-header-mission">Mission: 1 — The curse of USS Cassiopea</div>
+      </div>
+      <!-- Miniatura PG + link scheda -->
+      <div class="diary-header-pgbox">
+        <img src="images/crew/danee.jpg" alt="F. Renzi"
+                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+        <a href="crew_danee.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+      </div>
+    </div>
+    <div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">9907.15</span>
+      </div>
+
+      <!-- PROLOGO -->
+      <div class="diary-section-title">Prologo</div>
+
+      <p>
+FINALMENTE! Il giorno atteso per quattro lunghi anni è arrivato Salire a bordo di questa nave è il coronamento di un sogno... ma cominciamo dall'inizio:<br/>
+Ieri sera, al momento del trasferimento, l'emozione è stata grande, la procedura di attracco di una navetta non mi è mai parsa così lunga...<br/>
+In tarda mattinata c'è stato il discorso del Capitano Alighieri all'equipaggio: è anche per lui il primo incarico, e più che quello di un Alto Ufficiale, mi è parso il discorso 
+        di un vecchio amico di giochi... è una persona davvero squisita, simpatica ed anche un po' stravagante; in fondo è un Diavolo, sarebbe stato strano il contrario!<br/>
+Intorno alle 14.30 ho avuto un colloquio con lui, ed ho confermato ampiamente le prime impressioni. Mi ha molto colpito la sua simpatia, voglia di fare, ma soprattutto il suo carattere 
+        ilare e giocoso. Mi ha accompagnato personalmente al Dipartimento, presentandomi al GM Renzi ed agli uomini che saranno ai miei ordini, tutti ragazzi in gamba, pieni di volontà 
+        e, soprattutto molto capaci. Sento che mi troverò bene su questa nave.<br/>
+<br/>
+Siamo nell'attesa di ricevere ordini dal Comando di Flotta, dato che l'ultimo membro dell'equipaggio ha preso servizio già da tre giorni. Purtroppo la nave non è ancora a punto, 
+        nonostante le riparazioni e gli upgrade ai sistemi, iniziati già da due mesi. I bagordi di due giorni fa sembrano così lontani... il STen. Beppe (come vuol farsi chiamare da tutti) 
+        ha organizzato un Nutella Party sul ponte ologrammi, e ci ha promesso che sarà "...il primo di una lunga serie!".<br/>
+Ho la Signora Scramiglio sempre tra i piedi, e con quello spazzolone sempre insaponato, va continuamente in giro per il Dipartimento a lavare i pavimenti: ho dovuto mandare tre membri 
+        della mia squadra in Infermeria con traumi e contusioni varie (ma guariranno presto: la Dottoressa T'Mik sa il fatto suo), a causa di scivoloni.<br/>
+Come se non bastasse ho da mettere a punto i sistemi dei sensori a lungo raggio, nonostante dal Comando di Flotta ci assicurano che "...la nave è pienamente efficiente"... ma lasciamo perdere.<br/>
+<br/>
+<strong style="color:rgba(248,248,255,0.5);">UNA SORPRESA INASPETTATA!</strong><br/>
+Verso le 9.00 AM, il Capitano mi chiama urgentemente a rapporto in Sala Riunioni. Faccio una volata, pensando a delle scuse plausibili (anche se non ce n'è bisogno, dato lo stato 
+        "pietoso" dei sistemi) per il ritardo nelle riparazioni in sala Cartografia Stellare, che procedono a rilento. Quando la porta della sala si apre quale sorpresa: 
+        mi trovo di fronte nientemeno che Sàpek. Ci sentiamo regolarmente tutti i giorni (anche più volte al giorno, a dire il vero) ed è riuscito a tenermi nascosto di essere stato 
+        assegnato anche lui alla USS Afrodite, quel...; quando mi fa così lo "odio"! No, che dico: non potrei mai... lo amo troppo!<br/>
+Beppe mi presenta al nuovo membro della mia squadra, e ci lascia in libertà, incaricando me di fare gli onori di casa, "... dato il rapporto che intercorre tra di voi...", 
+        non prima di averci comunicato che divideremo anche l'alloggio: sono (siamo) al settimo cielo!<br/>
+<br/>
+<strong style="color:rgba(248,248,255,0.5);">E FINALMENTE SI PARTE</strong><br/>
+Abbiamo lasciato il bacino spaziale alle 11.46 AM, con 2h19' di ritardo sulla tabella di marcia, ma gliel'abbiamo fatta; non mi pare vero.<br/>
+Io ero in Plancia nel momento in cui abbiamo lasciato lo spazioporto: è stato emozionante; tutti, in Plancia, abbiamo versato qualche lacrima per la commozione. 
+        A conclusione della giornata campale un bel Nutella Party.<br/>
+<br/>
+Pensavo che una volta partiti, i problemi sarebbero finiti, invece sono appena incominciati: mi rincresce ammetterlo, ma questa nave è uno scassone! Nonostante le settimane passate 
+        nella messa a punto dei sistemi prima del decollo, piccoli difetti spuntano fuori come funghi (ed io odio i funghi!); piccole cose, per carità, nulla di serio (almeno per il momento), 
+        ma che scoraggerebbero il più fiero dei Klingon: replicatori che sfornano crostata di lamponi anziché zuppa di fagioli, l'Holodeck che non funziona sebbene il Computer dia l'OK 
+        su tuttI i sistemI (ci ho messo 38 ore per reinizializzarne la matrice, e mi gioca ancora scherzi!), e cosette simili. Fortunatamente i sistemi principali funzionano tutti bene... 
+        almeno per ora! Io non sono superstizioso, ma a volte non posso fare a meno di pensare che l'Afrodite sia sotto una qualche sorta di maledizione...<br/>
+E poi il nostro primo incarico non è proprio quel che mi aspettavo: riparare una serie di boe spaziali in avaria nel settore Ludus III: davvero molto... "appassionante e gratificante"!<br/>
+<br/>
+Una giornata che definire "insolita" è poco: appena metto piede al Dipartimento per andare alla mia consolle e dare il cambio al Guardiamarina Field, scivolo su qualcosa di sdrucciolevole, 
+        e per poco non perdo l'equilibrio. Stento a credere ai miei occhi quando mi accorgo che il pavimento è disseminato di chicchi di riso, per di più colorati... 
+        (che sia un gesto scaramantico che fa parte di un qualche rituale anti-jella?) da rimanere a bocca aperta! Non solo il pavimento, ma anche gli strumenti e le consolle sembrano 
+        cosparsi di semi. Nessuno è in grado di darmi una spiegazione, ed informo subito il GM Renzi, che prenda provvedimenti. In seguito vengo a sapere che non solo il Dipartimento Scientifico 
+        è pieno di riso, ma anche il resto del Ponte e di altre zone della nave. Il GM Renzi mette addirittura un avviso in bacheca.<br/>
+<br/>
+Svelato il mistero? Grazie all'avviso in bacheca, oggi c'è stata una vera e propria processione di Ufficiali e Sottufficiali nell'ufficio del GM Renzi.<br/>
+Gli autori del "Caso Oryza Sativa" - come è stato RIbattezzato - sono ben 177 membri dell'equipaggio, i quali, a quanto pare, affermano tutti di aver ricevuto ordini precisi direttamente 
+        dal Comando di Flotta... il mistero si infittisce.<br/>
+<br/>
+Non smetterò mai di ringraziare Capitan Beppe per avermi concesso di condividere l'alloggio con Sàpek: oggi ha avuto il suo Pon Far, e stargli vicino mi ha fatto capire quanto lui sia 
+        importante per me (e quanto io sia importante per lui).<br/>
+Mi ero documentato su questo rituale Vulcaniano da circa due settimane, da quando, cioè, Sàpek mi ha annunciato che il difficile momento si avvicinava... è stato del tutto diverso 
+        da quanto mi aspettassi, anche perché Sàpek ha una dominante genetica umana che ha reso il tutto molto più... intenso del previsto, ma ce l'abbiamo fatta!<br/>
+<br/>
+Oggi  Capitan Beppe ha superato se stesso: in tarda mattinata ci siamo trovati a passare nelle vicinanze del Disney Planet, l'asteroide artificiale allestito a parco dei divertimenti. 
+        Abbiamo potuto usufruire di cinque ore di licenza extra da usare obbligatoriamente per passare sull'asteroide "... una meritata e piacevole distrazione dalle incombenze della 
+        difficile navigazione che avete affrontato finora, per non pensare ai mille piccoli grandi disagi cui siete andati incontro, nonostante gli enormi sforzi compiuti. 
+        Andate e divertitevi: è un ordine! E non dimenticate di portare un souvenir!". Io e Sàpek non ci siamo tirati indietro davanti ad un ordine del genere.<br/>
+<br/>
+Abbiamo provato diverse attrazioni, tutte molto emozionanti, ma il tunnel dell'orrore dal nome "Il Capitano Kirk e il Planetoide Maledetto" non ci ha spaventati molto... 
+        forse perché ci siamo messi a pensare ad altro... Abbiamo anche comperato un paio di biglietti della "Lotteria Ferengi": ci allettava molto il terzo premio... 
+        speriamo di vincerlo: qualche giorno al Wilde Village non sarebbe male... incrociamo le dita!<br/>
+      </p>
+
+      <!-- DIARIO -->
+      <div class="diary-section-title">Diario di Missione</div>
+
+      <p>
+        Non appena verifico l'estrazione dei biglietti vincenti all'holotext di TeleFerengi, mi precipito in Plancia per annunciare la vincita del secondo premio (temo che il Wilde Village 
+        debba aspettare... comunque anche le 40 tonnellate di Nutella non sono da buttare via. Non appena le porte si aprono, mi rendo conto che in Plancia tira la solita aria: 
+        Frruuu sta con delle orecchie da Topolino (probabilmente le ha prese durante le sue ore di licenza sul Disney Planet) applicate sul dorso, intenta a preparare del riso fritto 
+        (squisito: come lo sa preparare lei, nessuno in tutto il quadrante alfa!) sul fornelletto predisposto sotto il visore; Beppe è "stravaccato" sulla sua poltrona e gioca con Geppo...<br/>
+<br/>
+Sul visore noto, per alcuni istanti, una sagoma che mi pare stranamente familiare...<br/>
+GM Renzi: "Da, Stark ci ha appena comunicato i nuovi ordini dal Comando di Flotta: dovremo recuperare dei manufatti molto preziosi da un relitto alla deriva; 
+        ma dimmi, come mai quell'aria serafica?" - "Ricordi quei biglietti che ho comprato sul Disney Planet? Il numero XLVI è stato estratto: ho vinto 40 tonnellate di Nutella, 
+        roba vera, mica replicata: potremo fare Nutella Party per molto tempo...".<br/>
+<br/>
+Improvvisamente scatta l'Allarme Giallo: "T'Mik a Plancia" - "Dica pure Dottoressa, la ascolto!" - "Un preparato sperimentale per la cura dei brufoli su cui stavamo lavorando, è sfuggito 
+        al nostro controllo ed ha infettato alcuni locali. Li ho schermati con dei campi di forza per impedirne l'ulteriore diffusione, ma ci occorre aiuto" - "Le mando già subito qualcuno 
+        della sicurezza. Alighieri, chiudo!".<br/>
+"Rilevo una sonda Signore, è alla deriva. Emette il segnale della Cassiopea!" - "Sullo schermo! Molto interessante. Ottimo Guardiamarina. Plancia a Sala Teletrasporto 2, agganciate la sonda 
+        e teletrasportatela nei Laboratori del Ponte 4."<br/>
+"Una nave nemica a dritta, Capitano." - "Sullo schermo!" - "È un Pod Ferengi."<br/>
+"Non riceve le nostre comunicazioni, Signore!" - "La consolle delle comunicazioni è in avaria! Non possiamo trasmettere!" - "Ci stanno sparando contro..." - "Non hanno una buona mira, a quanto sembra".<br/>
+"Capitano, c'è qualcosa di insolito in queste raffiche: credo che stiano cercando di comunicare. Le sequenze di colpi sembrano seguire uno schema regolare che si ripete, ricordano l'alfabeto Morse".<br/>
+GM Jacket: "Se non sbaglio, credo che dicano 'SOS SOS...'. Potremo comunicare tramite segnali luminosi con le luci di navigazione, usando lo stesso codice, dato che anche il nostro sistema 
+        di comunicazione è fuori uso." - "Ottima idea, Guardiamarina, procedete pure." GM Ta Nutri: "Dicono: 'Non... siamo... nemici... STOP... Abbiamo... un ferito... a bordo... STOP... 
+        Ci occorre... soccorso... urgente... STOP'. Propongo di predisporre una squadra di sbarco che si teletrasporti sulla Deposit, per esaminare da vicino la situazione, Capitano." - 
+        "Sono d'accordo con lei, Guardiamarina; Numero Uno, coordini l'operazione." - "Andrei io con la Dottoressa T'Mik, il GM D'Accardi e tre uomini della Sicurezza." 
+        - "Ottimo, intanto lei, GM Da, vada nel laboratorio, e cerchi di scoprire quante più informazioni le è possibile dalla sonda." - "Sì, Signore!".<br/>
+Giunto in laboratorio trovo la mia squadra già all'opera. La lettura delle informazioni è difficoltosa a causa di alcuni circuiti difettosi, ma riesco a dare alla Plancia le coordinate 
+        della Cassiopea recuperate nei chip della sonda, confermando quelle forniteci dal Comando di Flotta, e a comunicare che i manufatti alieni che dobbiamo recuperare sono conservati 
+        in una teca di duralluminio che emette una particolare radiazione nella banda EM che è possibile rilevare ed agganciare con il teletrasporto.<br/>
+<br/>
+Dopo qualche ora di navigazione intercettiamo il relitto della Cassiopea, e recuperiamo la teca di duralluminio che contiene i manufatti. Il Capo Renzi mi raggiunge in Laboratorio, 
+        giusto in tempo per vedere alcuni uomini della sicurezza che mi portano la teca; stando alla decrittazione dei 'codici a barre' presenti sul lato del contenitore, 
+        contiene effettivamente i manufatti, purtroppo non riusciamo ancora a trovare il modo di aprirlo.<br/>
+Mi raggiunge in Laboratorio il Guardiamarina Jacket, il nostro Capo OPS, per vedere come procede il lavoro. Mi chiede il motivo degli scossoni e delle interferenze agli strumenti, 
+        e lo informo che siamo entrati in una nebula... la Pessaioca. Il Guardiamarina Renzi, tutta elettrizzata per le novità sulla teca, torna su in Plancia per dare di persona 
+        la bella notizia al Capitano Alighieri.<br/>
+<br/>
+Usciamo dalla Nebula!<br/>
+GM Renzi: "Plancia a GM Da" - "Dica pure Capo." - "Il Virus GATES è penetrato nel Computer di bordo, proprio come ha fatto con la Deposit!" - "Stavo per comunicarvelo: dai dati 
+        che ho recuperato dalla sonda, anche la Cassiopea lo è stata, e quando ho connesso la sonda alla mia consolle, anche la Afrodite, purtroppo" - "Non poteva saperlo... Renzi, chiudo".<br/>
+Non mi resta che tornare al mio lavoro: esaminare la teca e la sonda per recuperare i manufatti, e liberarci del Virus GATES.<br/>
+Più tardi, mentre sono intento ad esaminare i risultati di alcune analisi, sento un gran vociare provenire dal Laboratorio adiacente. Temendo una delle solite intrusioni della 
+        Signora Scramiglio, la nostra "addetta alle pulizie" - chi ce l'ha mandata...! - vado nell'altra stanza, e trovo... una festa! È il compleanno del Capo Renzi, e lo sta festeggiando, 
+        nel bel mezzo di una crisi... Ad un tratto arriva anche una comunicazione dal Capitano, che vuol essere aggiornato sugli sviluppi; Renzi ingoia un pezzo di torta alla Nutella 
+        e dice al Capitano che il lavoro procede, e che a breve avremmo aperto la teca di duralluminio recuperata sulla Cassiopea.<br/>
+Sarà stata colpa della torta o della birra Romulana, o dello stress, fatto sta che alcuni membri del mio staff sono colpiti da emicrania, quindi li mando in Infermeria: 
+        restiamo in pochi nel Laboratorio.<br/>
+<br/>
+Controllando su un manuale, sostituisco il componente beta 5 nel microprocessore 37/54 alfa, bypassando l'input del programma originale riuscendo a isolare, almeno provvisoriamente, 
+        il GATES, ne informo subito la Plancia.<br/>
+Nel frattempo la temperatura si fa insopportabile: i controlli ambientali devono essere stati infettati dal GATES...<br/>
+<br/>
+È stata dura, ma ce l'abbiamo fatta a recuperare tutte le informazioni dalla sonda, e ad aprire la scatola con i manufatti: "GM Da a Plancia..."; STen Alighieri: "Parli, la ascolto" - 
+        "Ho terminato ora di esaminare la sonda e ad aprire la teca di duralluminio, Signore, ho tutte le informazioni che ci occorrono..." - "Che cosa ha scoperto?" - "È stata la sonda 
+        ad infettare il nostro sistema, nel momento in cui l'ho collegata alla consolle per il download dei dati, come lei sa. Da quanto sono riuscito recuperare, sembra che 
+        la Cassiopea sia stata infettata dal virus durante la sua ultima missione, in circostanze non chiare. La Deposit poi, cercando di impossessarsi dei manufatti (quattro gomitoli 
+        di fibra tessile in oro al 99.9%) è stata infettata a sua volta. È stato il virus a provocare tutti quei guasti ai sistemi della nave: dalla propulsione, ai controlli ambientali, 
+        alle armi... in particolare, il virus manomette il computer di bordo, spingendolo a credere che i sistemi siano obsoleti, e quindi inefficaci, inducendolo a disabilitarli. 
+        L'unico modo per bypassare l'inconveniente è usare i terminali in Infermeria: in questo caso siamo schermati: il virus non riconosce il sistema informatico della nostra Infermeria 
+        come tale, essendo stato aggiornato con il nuovo sistema bio-neurale di gel-pack; la Cassiopea e la Deposit non sono dotate del sistema bio-neurale di nuova generazione, 
+        e quindi il virus GATES le ha infettate. Per ripristinare il sistema operativo, dovremo procedere alla reinizializzazione totale dei sistemi: ci vorrà del tempo, non posso farle 
+        una stima, perché ancora non conosco l'entità dei danni provocati dal virus, e se vi sono dei sistemi più o meno funzionanti; ho provato ad avviare un diagnostico, ma non funziona, 
+        dovrò procedere manualmente..." - "Ottimo lavoro, Guardiamarina Da. Le serve aiuto per il diagnostico e la reinizializzazione dei sistemi? So che alcuni uomini del suo staff sono 
+        in Infermeria, come del resto molti altri uomini dell'equipaggio..." - "Se potessi disporre di altri tre uomini, Signore, conto di risolvere la situazione in altri due turni al massimo." 
+        - "Bene, proceda pure. Alighieri, chiudo".<br/>
+Ad un tratto scatta l'Allarme Rosso. GM Renzi: "Plancia a GM Da." - "La ascolto, Capo, dica pure!" - "Cerchi di sbrigarsi con la reinizializzazione dei sistemi, o non avremo più un computer 
+        da reinizializzare!" - "Sto facendo del mio meglio, ma mi occorre tempo...!" "Lo so, ma non ne abbiamo molto! Renzi, chiudo."<br/>
+Il Capitano mi manda Jacket e Ta Nutri in aiuto, in Infermeria. Peter mi sembra alquanto deconcentrato e trepidante, un comportamento insolito per lui, comunque in breve riesce 
+        a reinizzializzzare la matrice del computer di bordo. Lavoriamo freneticamente alle consolle, e passiamo alla condizione di Allarme Blu; "Ancora qualche istante di pazienza, ce l'abbiamo quasi fatta!"<br/>
+"Tutto è a posto, i sistemi sono funzionanti ed operativi al 100%".<br/>
+<br/>
+Dopo un'ora circa, il Capitano ci vuole urgentemente in Sala Riunioni per comunicarci il contenuto di un messaggio subspaziale arrivato dal Comando di Flotta: 
+        "Alcuni minuti fa, mi è pervenuto un messaggio dal Comando di Flotta: tra poco entreranno in vigore delle nuove uniformi, disegnate dai famosi stilisti S&G - Salato e Gabbato; 
+        saranno delle tuniche gialle lunghe fino ai piedi, con degli spacchi laterali... ". La notizia ci lascia talmente a bocca aperta, che quasi non noto uno strano uccello 
+        che volteggia sulla testa del Capitano... non ho il coraggio di chiedere cosa sia, e faccio finta di niente...
+      </p>
+      
+        <br/>
+        <br/>
+        <em style="color:rgba(248,248,255,0.5);">
+          GM Da Nee<br/>
+          XSO<br/>
+          USS Afrodite NCC-1863
+        </em>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+    <a href="log_mission1.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Log Mission: 1
+    </a>
+    <div style="margin-left:auto;display:flex;gap:8px;">
+      <!-- Primo diario: bottone precedente spento -->
+      <a href="log_mission1_03.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a href="log_mission1_05.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>
