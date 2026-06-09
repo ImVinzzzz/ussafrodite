@@ -1566,6 +1566,43 @@ footer {
   .crew-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
 }
 
+/* ── ALLARMI ───────────────────── */
+/* RED ALERT */
+.red-alert {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(180,0,0,0.12);
+  border: 1px solid rgba(200,0,0,0.45);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  color: #ff7777;
+  text-transform: uppercase;
+  margin: 20px 0 16px;
+  animation: alert-pulse 2.5s ease-in-out infinite;
+}
+
+.yellow-alert {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(180,180,0,0.12);
+  border: 1px solid rgba(200,200,0,0.45);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  color: #ffff00;
+  text-transform: uppercase;
+  margin: 20px 0 16px;
+  animation: alert-pulse 2.5s ease-in-out infinite;
+}
+
+
 /* ── TAMPERED FILE EFFECTS ── CLANDESTINO ───────────────────── */
 
 /* Banner di allerta in cima alla scheda */
