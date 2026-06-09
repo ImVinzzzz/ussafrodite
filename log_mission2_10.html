@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Jacket – Mission 2 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="log.html">Log</a>
+    <span>›</span>
+    <a href="log_mission1.html">Mission: 1</a>
+    <span>›</span>
+    <span class="current">Diario Personale – GM Jacket</span>
+  </div>
+
+  <!-- Diary page -->
+  <div class="diary-wrapper">
+
+   <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-solid fa-globe"></i> &nbsp;OPS &nbsp;·&nbsp; COO &nbsp;·&nbsp; Diario Personale
+        </div>
+        <div class="diary-header-name">GM P. JACKET</div>
+        <div class="diary-header-mission">Mission: 2 — The betrothed</div>
+      </div>
+      <!-- Miniatura PG + link scheda -->
+      <div class="diary-header-pgbox">
+        <img src="images/crew/jacket_l.jpg" alt="GM Peter Jacket"
+                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+        <a href="crew_jacket.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+      </div>
+    </div>
+    <div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">9907.15</span>
+      </div>
+
+      <!-- PROLOGO -->
+      <div class="diary-section-title">Prologo</div>
+
+      <p>
+E finalmente il gran giorno è arrivato! Oggi salirò a bordo della USS Afrodite NCC-1863 di classe Miranda (e che cavolo, potevano almeno mettermi su una classe Excelsior, 
+        se i posti sull'Enterprise erano tutti occupati!), per il mio primo incarico nella Flotta Stellare come Capo Operazioni della nave, con il grado di Guardiamarina! 
+        Prima, però, devo risolvere una piccola questione. Siccome all'Accademia sono stato spesso deriso per i miei due cognomi Stevanovich e Brikosky ("Ma che hai, un nome o un romanzo?", 
+        "Hai un nome così lungo che sembra una barzelletta!", "Con quel nome, al tuo PRIMO IMBARCO si sbellicheranno dal RISO"), ho deciso di tagliarli e farmi registrare soltanto 
+        come Peter Jaket. Solo che quando ho compilato il modulo per il cambio di nome ho scritto il mio cognome come "Jacket" con una c di troppo (forse non avrei dovuto esagerare 
+        con la birra Romulana, la sera precedente... ) con il risultato che ora io sono il Guardiamarina Peter Jacket. Comunque a forza di camminare per l'Accademia (erano circa sei 
+        mesi che non ci mettevo piede) sono finalmente arrivato all'ufficio anagrafico. Durante la "sfilata" (forse non mi sarei dovuto mettere in alta uniforme...) molti cadetti, 
+        per non dire tutti, mi guardavano come per dire: "Guarda: un Guardiamarina!", ma io non sono cattivo e non li ho presi in giro (neanche quel gruppo a cui, quando gli sono passato 
+        vicino, ho indicato il mio grado sul colletto...).<br/>
+"Buongiorno."<br/>
+"Buongiorno... Guardiamarina.", mi rispose la bionda impiegata. "In cosa posso esserle d'aiuto?"<br/>
+"Dunque, ho un piccolo problema." Attaccai io. "Sto per imbarcarmi sulla USS Afrodite," e dicendo questo gli mostro il DiPAD con la mia assegnazione "solo che c'è un errore nel mio cognome."<br/>
+"Lei non è il GM Peter Jacket?" chiese la donna dopo aver esaminato il mio DiPAD.<br/>
+"In un certo senso, si. Io in realtà mi chiamo Peter Stevanovich Brikosky Jaket. Siccome però il mio cognome è eccessivamente lungo, mi sono rivolto, subito dopo aver sostenuto il 
+        Kobayashi Maru, all'ufficio anagrafico per far cancellare i due cognomi più grandi e cambiare il mio nome in Peter Jaket. Solo che per un banale errore c'è una c in più sull'unico 
+        cognome che è rimasto."<br/>
+"Vediamo se ho capito bene." mi fece la donna con aria scettica "Lei vorrebbe cambiare nuovamente il suo cognome."<br/>
+"Si, alla fin fine questo è proprio ciò che voglio."<br/>
+"Va bene. Questo è il costo..." e mi porse un DiPAD in cui era indicata una cifra.<br/>
+"Costo? Quale costo?" le chiesi io molto sorpreso "l'altra volta non ho pagato niente!"<br/>
+"Questo perché l'altra volta non aveva ancora ricevuto l'assegnazione ad una nave spaziale e perché faceva ancora parte dell'Accademia. Ora che è un Ufficiale della Flotta deve pagare come uno qualsiasi."<br/>
+"E va bene, pagherò" oh porca miseria! Ma è una cifra mostruosa! Anche volendo, non posso pagarla, soprattutto dopo che quel maledetto Ferengi ieri sera mi ha ripulito! "Ehm... accettate 
+        Carte di Credito Spaziali o Cambiali Interplanetarie?"<br/>
+"Mi dispiace, ma accettiamo soltanto contanti. Del resto non vorremmo dover infastidire i suoi parenti, nel caso dovesse succederle qualcosa mentre è nello spazio, con richieste di soldi. Lei capisce..."<br/>
+Appena sentii queste parole iniziai a fare gli scongiuri in tutte le maniere possibili. "Va beh, vorrà dire che farò il cambio di nome appena possibile." Dissi in tono vago "Arrivederci." 
+        e speriamo che se non ci rivediamo sia per colpa sua!<br/>
+"Arrivederci, Guardiamarina. E non si dimentichi il suo DiPAD"<br/>
+"Grazie." così a quel punto, dopo aver raccolto il DiPAD, mi avviai mesto mesto verso lo spazioporto dove una navetta mi avrebbe portato al bacino di attracco della Afrodite. 
+        Certo che quella impiegata del cavolo mi aveva dato il benvenuto nella flotta!<br/>
+<br/>
+Erano le 16:00 quando arrivai al bacino, molto in ritardo rispetto all'orario previsto per l'insediamento dell'equipaggio, ma il Capitano avrebbe capito (spero). Dopo aver sbrigato 
+        tutte le formalità di rito stavo per farmi teletrasportare a bordo, quando da un obl' la vidi! Era l' illuminata soltanto dai riflettori del bacino (le luci di posizione erano spente). 
+        Nonostante non fosse bella come una nave di classe Sovereign o cattiva come una di classe Defiant, non potevo non essere entusiasta della Afrodite: la mia nave. 
+        Le due gondole di curvatura, attaccate direttamente alla sezione a disco per mezzo di piloni le conferivano un aspetto insolito oltre che affascinante. Dal punto in cui mi trovavo, 
+        si poteva vedere completamente la sezione a disco e si vedeva anche la Plancia ed io quasi riuscivo a vedere al suo interno un giovane Capo Operazioni seduto a fianco del timoniere 
+        tutto intento a lavorare su quella che era la sua prima nave stellare. Distrattamente, toccai il mio comunicatore, e chiamai la Afrodite.<br/>
+"Afrodite, qui parla il Capo Operazioni Peter Jacket. Uno da portare a bordo."<br/>
+"Ricevuto Capo Jacket. Qui sala teletrasporto 2. Prepararsi a salire a bordo."<br/>
+"Afrodite, qui Jacket..." diedi nuovamente un'occhiata attraverso l'oblò a quella che sarebbe stata la mia casa per i successivi mesi "... energia!"<br/>
+<br/>
+Dopotutto, il Capitano non se la prese più di tanto per il mio ritardo (del resto tutti gli Ufficiali Superiori non erano arrivati puntuali, chi per una ragione, chi per un'altra). 
+        Con me in particolare era stato molto gentile: mi aveva assegnato ai turni di notte, per solo una settimana... Al di là di questo finora era filato tutto liscio. 
+        Appena dopo la ramanzina del Capitano, presi possesso della mia postazione in Plancia insieme al mio vice, il GM Boregh, un Klingon, anche se diverso da tutti quelli 
+        che avevo conosciuto. Un gigante di almeno 2 metri di altezza e oltre 100 chili di peso con l'hobby della bat'leth (quale Klingon non ce l'ha?), ma molto riservato e tranquillo, 
+        oltre che molto pasticcione. In dieci giorni che lo conoscevo mi aveva già ustionato tre volte con bevande varie, aveva provato ad arrostirmi 4 volte con riparazioni non perfette 
+        alle varie consolle in cui lavoravamo e una volta, in sala ologrammi per poco non mi faceva sbranare da un leone! E ho l'impressione che questo sia solo l'inizio! 
+        Del resto non l'ho mai rimproverato più di tanto. Anche se ha un carattere piuttosto mite, è pur sempre un Klingon (per giunta gigantesco) e se si dovesse arrabbiare... 
+        A sua discolpa c'è da dire che non lo fa apposta; è soltanto molto goffo, probabilmente a causa della sua mole. Comunque problemi gravi non ce ne sono stati e anche se sono 
+        almeno dieci giorni che cerchiamo queste maledette boe di segnalazione per ripararle tutto va per il meglio. Se si eccettuano gli spiritosi Ufficiali delle navi, poche per altro, 
+        che abbiamo incontrato mentre stavamo riparando le boe: tutti a prenderci in giro per il fatto che eravamo alla nostra prima, e non proprio onorevole, missione. 
+        In ogni caso ora avevo il mio primo incontro personale con il Capitano. Speriamo che vada tutto per il meglio. Suonai alla porta.<br/>
+"Avanti" mi rispose una voce oramai familiare dall'interno della Sala Tattica.<br/>
+Entrai "Salve, Capitano."<br/>
+"Buongiorno Guardiamarina Jacket, si accomodi!" E mi indicò una sedia di fronte alla sua scrivania. La possente figura del Capitano, era intenta a studiare il mio curriculum su di un DiPAD. 
+        Nonostante il suo aspetto potesse incutere timore, io non mi sentivo a disagio con lui, non più almeno di quanto mi sentissi con Boregh. l'unico problema era quel persistente 
+        odore di aglio che pervadeva tutta la stanza. E io detesto l'aglio! "Mi dica, Capo" disse improvvisamente "Cosa l'ha portata a molti milioni di Km dalla Terra?"<br/>
+"Beh, la voglia di esplorare il cosmo, del resto siamo un po' tutti esploratori... voglio dire noi umani lo siamo."<br/>
+"Già, già. E perché ha scelto la sezione Operazioni?"<br/>
+"A dire il vero io avrei voluto la sezione Comando. Ma anche essere il Capo OPS ha i suoi vantaggi. Quasi tutto si svolge in Plancia e io come Capo OPS, devo starci per quasi tutto il mio turno."<br/>
+"Uhm... bene... ha qualche aspirazione?"<br/>
+"Naturalmente io vorrei diventare il Capitano di una Nave Stellare e so che per ottenere questo dovrò lavorare molto sodo e per molto tempo."<br/>
+"Ha ragione, dovrà lavorare sodo." mi disse il Capitano, con fare leggermente distratto. "Comunque, come può ben vedere, la nave che ci è stata assegnata non è delle migliori. 
+        Anzi forse è una delle peggiori. Per questo il lavoro di squadra deve essere una priorità. Ogni sezione deve fare il massimo per il bene della nave e per il bene della Flotta Stellare. 
+        Chi non ha stimoli ad andare avanti è bene che trovi qualcosa da fare giù a Starfleet. E si ricordi il detto Vulcaniano: il bene dei molti vale più di quello dei pochi o di uno... È tutto chiaro?"<br/>
+"Si, Capitano."<br/>
+"Bene, può andare. Ah un'altra cosa, Capo. Potrebbe ridarmi il mio gatto?"<br/>
+"Gatto, quale gatto?" improvvisamente sentii un peso alla testa (niente birra romulana, ieri sera...) e sopra i miei capelli apparve un gatto. Rimasi piuttosto sorpreso (avevo sentito dire 
+        che il Capitano aveva un gatto "particolare" ma questa era la prima volta che ci venivo a contatto) ma lo porsi quasi immediatamente al Capitano.<br/>
+"Grazie, Capo."<br/>
+"Di niente, Signore."<br/>
+E uscii dalla Sala Tattica. Tutto sommato il Capitano mi era sembrata un essere affabile, intelligente e deciso. Anche se era la prima volta che avevo a che fare con un essere di quella razza, 
+        ero sicuro che sarebbe stato un buon Capitano. La cosa importante è che lui mi ritenga un buon Capo Operazioni. Non vorrei che la prossima volta mi spedisse a pulire tutti gli 
+        oblò della nave... dall'esterno!<br/>
+<br/>
+Dopo circa quindici giorni di spazio ero riuscito a familiarizzare con tutto l'equipaggio. D'altro canto, la nostra missione era molto noiosa ed avevamo molto tempo a disposizione. 
+        Avevamo addirittura organizzato un torneo di scacchi per passare il tempo ed io mi stavo comportando abbastanza bene. l'unica persona con la quale non ero ancora venuto in contatto 
+        era con il Consigliere di bordo. Un umano che, a detta di chi già aveva avuto a che farci, era una delle persone più insopportabili oltre che logorroiche ed insistenti di questo universo. 
+        Del resto, per quel poco che avevo notato quando ci siamo trovati insieme in Plancia, non avrei mai voluto averci a che fare per tutto il latinum dell'universo. 
+        Inoltre, sembra che un Guardiamarina, dopo averlo incontrato, abbia avuto un esaurimento nervoso istantaneo. In questo momento l'unica cosa che volevo, era andare in sala mensa 
+        per mangiare qualcosa. Attraversai la porta della sala quando sentii una voce che mi chiamava. "Guardiamarina Jacket, ha un minuto?"<br/>
+"Veramente vorrei pranzare..." risposi prontamente al Consigliere, che purtroppo mi aveva accalappiato. "Se vuole, un altro giorno..."<br/>
+"No, facciamo oggi e adesso per la precisione. Mi segua nel mio ufficio." Mi disse in un tono che non ammetteva repliche. E così, anche se molto riluttante andai con lui. 
+        Una volta arrivati, e dopo avermi fatto sedere su una poltrona, al cui confronto un letto Cardassiano era soffice come la neve appena caduta, mi fece parlare di tutta 
+        la mia vita accademica, del perché ero entrato nella flotta, della mia infanzia e via discorrendo. Aveva commentato alcuni avvenimenti come quello della USS Eagle 
+        ("Si è fatto onore, se si esclude il fatto che vi era entrato di nascosto") o le disavventure col Rettore Ster ("Lei odia il Rettore Ster perché le ricorda suo padre, 
+        cosicché lei odia suo padre. Molto interessante...") o anche di quando sono salito sulla compianta Enterprise-D ("Il suo comportamento è stato tipico delle persone insicure.").<br/>
+Alla fine quando mi congedò e mi permise di andare a pranzo ero ridotto ad uno straccio! Stavolta avevo davvero bisogno di un consigliere visto che Stan Becco mi aveva distrutto 
+        formulando le teorie più strampalate ("Lei ha la famosa sindrome di Steinenbashchjeu, unita al complesso di Jhwhxkxhjewrts senza contare che ha senza dubbio bisogno di una persona 
+        amica con cui confidarsi molto spesso. Questo è il mio orario" mi aveva detto porgendomi un DiPAD "Torni pure quando vuole."). Mi aveva lasciato sull'orlo di una crisi di nervi. 
+        Non avendo altri consiglieri al di fuori di lui andai sul ponte ologrammi dove passai il mio tempo per il pranzo a confidarmi con la versione olografica del consigliere Troi 
+        dell'Enterprise-D.<br/>
+<br/>
+Dopo un mese che giravamo per lo spazio ero completamente in tilt. Stavo diventando una preda troppo facile per il caro Stan Becco e avevo paura di trovarmelo di fronte in qualsiasi momento, 
+        con il rischio che mi portasse nel suo ufficio per una seduta. Del resto chi aveva avuto questa sfortuna, mi aveva detto che preferirebbe passare un mese in una camera da tortura 
+        Cardassiana, piuttosto che un'ora con il Consigliere di bordo e d'altro canto, dopo la mia personale esperienza, non potevo dargli torto. Stavo diventando paranoico ed ogni volta 
+        che mi si rivolgeva in Plancia gli rispondevo con un: "Sto benissimo, non si preoccupi."... anche quando mi chiedeva informazioni sulle letture dei sensori! Per fortuna dei miei nervi 
+        (e di quelli di molti altri), arrivò improvvisamente la nostra prima vera missione. Il Capitano Stark ci ordinò di andare alla ricerca della USS Cassiopea, che fu abbandonata 
+        a causa di guasti inspiegabili. La Cassiopea stava trasportando dei manufatti alieni molto importanti e noi avevamo l'ordine di recuperarli. Per fortuna, però, il Capitano Alighieri, 
+        prima di iniziare la ricerca della Cassiopea ci diede l'opportunità di rifiatare un poco, concedendoci qualche ora di licenza per visitare un pianeta-divertimento che si trovava 
+        nella zona in cui dovevamo riparare le ultime boe della precedente missione. A turno, tutti scendemmo sul pianeta, che si chiamava Disney-Planet perché era stato costruito sullo 
+        stile dei parchi Disney della Terra di qualche secolo fa; comprammo anche il biglietto di una lotteria organizzata da un Ferengi del luogo (a dire il vero il pianeta era pieno 
+        di Ferengi, guarda caso) che metteva in palio, tra le altre cose, qualche chilo di Nutella, vera non replicata. Con la mia solita fortuna io scesi sul pianeta insieme a Boregh. 
+        Tralasciamo cosa accadde mentre mi trovavo a terra e quello che mi capitò mentre ero con il mio vice Klingon. Basterà ricordare il giro sull'ottovolante più grande dell'universo, 
+        che si concluse con molto lavoro per la Dottoressa T'Mik. Io e Boregh eravamo seduti di fianco sulla stessa astro-navetta, ed alla fine io ottenni 5 costole incrinate ed un trauma cranico...
+      </p>
+
+      <!-- DIARIO -->
+      <div class="diary-section-title">Diario di Missione</div>
+
+      <p>
+        Il trillo della sveglia mi riportò alla realtà. Mentre mi alzavo dal letto dissi stancamente "Computer, luci.". Accidenti se avevo sonno! Comunque non ci avrei dovuto pensare 
+        visto che stava per iniziare il mio turno in Plancia. Altrimenti sarebbe successo come quel giorno che mi addormentai alla mia consolle e quella mattina dovevamo iniziare 
+        a cercare la Cassiopea. Dovevo soltanto vestirmi il più in fretta possibile per evitare di fare tardi.<br/>
+<br/>
+Appena mi fui vestito mi diressi al Ponte di Comando. Ero un po' assonnato e quando entrai nel turbolift ordinai distrattamente al computer di andare in Plancia. 
+        Quando arrivai notai immediatamente che c'era qualcosa di strano. Tutti gli Ufficiali presenti erano stranamente euforici. Fui subito informato che avevamo vinto il secondo premio 
+        della lotteria Ferengi che consisteva in ben 40 tonnellate di Nutella (vera non replicata) grazie al biglietto XLVI che avevano acquistato i GM Da Nee e Sàpek, durante il loro 
+        turno di sbarco sul Disney Planet. Devo dire che la cosa non mi dispiacque per niente anche se devo ammettere che non riuscivo a capire come mai i Ferengi facessero una lotteria; 
+        soprattutto quello che mi lasciava molto perplesso era il fatto che pagassero le vincite.<br/>
+<br/>
+Di lì a poco avrei iniziato ad accorgermi che quella sarebbe stata una giornata molto lunga e difficile. Mentre mi dirigevo alla mia consolle, il mio vice si scontrò con me facendomi 
+        rovesciare la tazza di caffè che avevo preso prima di entrare in Plancia nella speranza di svegliarmi. "Mi scusi Signore", si affrettò a dire Boregh. "Non si preoccupi Signor Boregh", 
+        gli risposi io, e lo congedai non senza un qualche timore. Non che Boregh fosse violento, anzi, probabilmente è il Klingon più gentile dell'Universo, però essendo notevolmente 
+        più grande e più massiccio di me mi fa sempre un certo effetto e per le cose di poco conto cerco di non discutere con lui. Mentre stavo decidendo se andarmi a cambiare l'uniforme 
+        completamente sporca di caffè, il Capitano prese la decisione per me. "Benvenuto, Capo! Vuole gentilmente sedersi alla sua postazione, visto che anche oggi ha 5 minuti di ritardo?". 
+        "Mi scusi Signore, stavo pensando se era il caso di andare a cambiarmi l'uniforme." Gli dissi io. "Lasci stare, se la cambierò più tardi.". Del resto non ne avevo nessuna pulita, 
+        e avrei dovuto replicarmene un'altra, anche perché dopo qualche ora avrei dovuto giocare la finale del torneo di scacchi che avevamo organizzato sulla Afrodite.<br/>
+<br/>
+Mi avviai alla mia postazione ed iniziai a concentrarmi sulla mia consolle, ma ad un tratto sentii un urlo. Subito dietro di me il Consigliere Stan Becco era caduto e stava venendo soccorso 
+        da Rael. Con successo, a dire la verità, visto che si rialzò quasi subito. Se devo essere sincero, non fui dispiaciuto per la caduta del nostro Stan, almeno se ne sarebbe stato 
+        buono per un po'. Mentre accadeva tutto questo, scattò l'allarme giallo: sembra che in Infermeria ci fosse un problema con un medicinale contro i brufoli che stavano preparando. 
+        Considerando la quantità di Nutella che avevamo vinto, probabilmente il problema brufoli sarebbe entrato presto nelle nostre vite! Di l' a poco, trovammo una sonda che conteneva 
+        informazioni sulla Cassiopea, la nave che stavamo cercando. Il Capitano la face portare a bordo per studiarla. Subito dopo comparve un Pod Ferengi di nome Deposit che ci si stava 
+        avvicinando. Mi accorsi quasi subito che non riceveva le nostre comunicazioni forse a causa di un nostro circuito che più tardi si scoprì che si era danneggiato. Intanto i Ferengi 
+        iniziarono a spararci contro, stranamente però ci mancarono (eravamo a breve distanza). Ci allontanammo un po' per vedere quali erano le loro reali intenzioni, anche perché 
+        il GM Renzi si intromise dicendo che sembrava che i Ferengi stessero sparando usando un qualche tipo di codice. Dopo qualche minuto, passato a verificare le sue affermazioni, 
+        Renzi confermò che i Ferengi stavano cercando di comunicare con i phaser, mediante un vecchio codice utilizzato sulla Terra, noto come codice Morse. Noi però non potevamo 
+        comunicare con loro, perché i nostri sistemi di comunicazione erano in avaria e probabilmente anche i loro, così per cercare di capire cosa volevano i Ferengi, proposi di utilizzare 
+        anche noi il codice Morse, usando le nostre luci di posizione. La mia proposta fu accettata e si rivel' vincente, così scoprimmo che i Ferengi avevano un ferito a bordo 
+        e chiedevano assistenza. Il Capitano decise così di mandare una squadra di sbarco sulla nave Ferengi per cercare di aiutarli. Andarono il Numero Uno, il dottor  Van Bajark 
+        e il GM D'Accardi, con tre guardie della sicurezza. "La prudenza non è mai troppa!" disse con una risata alquanto diabolica. Intanto il dipartimento scientifico stava sempre 
+        cercando di decifrare le informazioni della sonda non riuscendoci completamente. così il Capitano chiese a noi Ufficiali in Plancia di esprimere pareri su come proseguire la missione. 
+        Io suggerii che forse era meglio attendere nei pressi della nave Ferengi finché la squadra di sbarco non fosse rientrata, ma il Capitano fu di opinione diversa, tant'è che iniziammo 
+        subito le ricerche della Cassiopea. Dopo un po' raggiungemmo finalmente il relitto della nave dispersa e scoprimmo anche una cassetta di duralluminio che conteneva i manufatti 
+        che cercavamo. Dopo averla teletrasportata a bordo, ci riavviammo verso la Deposit. Quando arrivammo, fummo informati della situazione dal nostro Numero Uno che disse che il Ferengi 
+        ferito aveva bisogno di essere curato nell'Infermeria della Afrodite, così facemmo rientrare la squadra di sbarco insieme al Ferengi.<br/>
+<br/>
+Siccome sono molto curioso, decisi che volevo avere un'opportunità di studiare i manufatti che avevamo e lo chiesi al Capitano. "Capitano, vorrei andare in laboratorio per studiare 
+        i manufatti". "Va bene signor Jacket" mi rispose il Capitano. Ottenuto il benestare del mio superiore, mi avviai verso il Turboascensore per andare ai laboratori, mentre Boregh 
+        prendeva il mio posto. Quando fui arrivato, entrai con la curiosità che aumentava sempre di più in me e mi avvicinai al GM Da Nee, cercando di iniziare a capire qualcosa 
+        da quella scatoletta di duralluminio. Ad un tratto, però, ci furono dei problemi e la nave iniziò a rollare con tutte le luci che stavano lampeggiando. Chiesi a Da se sapeva cosa 
+        stesse accadendo e lui mi rispose che eravamo entrati nella nebula Pessaioca. Vista la situazione, decisi che era il caso di rientrare in Plancia. Mi sarei tolto la curiosità 
+        in un altro momento. così mi diressi verso il Ponte di Comando e appena vi arrivai mi accorsi subito della precarietà della situazione. Tutto lo schermo era occupato dai classici 
+        disturbi che provoca l'ingresso in una Nebula e sentii il Capitano imprecare. Eravamo senza la propulsione a curvatura e potevamo muoverci soltanto con i motori ad impulso. 
+        Feci a tempo a sedermi alla mia postazione che mi accorsi che la situazione era molto grave, così consigliai al Capitano di inviare il Guardiamarina Rael in Ingegneria per cercare 
+        di dare una mano. Il Capitano accettò il mio consiglio ed inviò Rael in Sala Macchine; poco dopo, uscimmo dalla Nebula. I Ferengi erano ancora dove si trovavano prima del nostro 
+        ingresso nel fenomeno spaziale, ma sembrava che fossero in attesa di qualcosa. Di l' a poco capimmo perché c'erano stati tutti quei problemi: il terribile virus Gates era penetrato 
+        all'interno del Computer dell'Afrodite. La causa inizialmente sembrava essere il relitto della Cassiopea che poteva averci infettato ma siccome anche i Ferengi erano stati colpiti 
+        dal virus (ciò spiegava tutti i problemi che avevano), ed essi non avevano avuto un contatto con la Cassiopea non poteva essere così, ed in seguito capimmo chi è che ci aveva infettato 
+        realmente (così come aveva infettato i Ferengi).<br/>
+<br/>
+Intanto il Ferengi che si trovava a bordo della Afrodite aveva cercato di rubare i manufatti ma era stato catturato in tempo ed era stato torchiato dal Capitano in persona. 
+        "Se ci consegnate i manufatti" aveva esordito lo scienziato Ferengi, dopo aver tentato di rubarli "e mi fate rientrare sulla mia nave, vi daremo il modo per debellare il virus 
+        che vi ha contagiato." A dire la verità io non credo che ci avrebbero aiutati, e probabilmente neanche il Capitano, visto che rise in faccia al prigioniero e andò nel suo alloggio 
+        a vedere la sua holonovela preferita lasciando il Comando a Frruuu. Del resto, se i Ferengi avessero debellato per davvero il virus, non si sarebbero trovati nella situazione 
+        in cui erano. Visto che il Capitano era nel suo alloggio e la nave pressocché in tilt, decisi di andare a cambiarmi l'uniforme nel mio alloggio, non prima però di avere fatto 
+        gli auguri al GM Renzi quando seppi che era il suo compleanno.<br/>
+<br/>
+Una volta arrivato, dissi rivolto al replicatore: "Computer, replicare l'uniforme del GM Peter Jacket; autorizzazione Jacket uno, uno, alfa". Dopo pochi secondi la mia bella uniforme 
+        (soprattutto pulita!) apparve nello scompartimento del replicatore. Era piegata perfettamente (sembrava nuova...); mi affrettai ad indossarla: non volevo che il Capitano 
+        mi beccasse a bighellonare con il casino che c'era. Mi avviai verso la porta del mio alloggio e... la porta non si apri ed io sbattei il naso contro di essa. "Computer aprire 
+        la porta" dissi, molto arrabbiato. "Impossibile eseguire" mi rispose la familiare voce femminile. "Computer, aprire porta, autorizzazione Jacket uno, uno, alfa." "Impossibile eseguire" 
+        ripeté il computer. "Perché?" chiesi io. "Un codice di livello uno le ha bloccate". Chi poteva essere stato? "Di chi è stata l'autorizzazione?" chiesi. "Del capo operazioni Peter Jacket." 
+        Mi trovavo proprio in una bella situazione! A parte il fatto che io non ho una autorizzazione di livello uno, io stesso ho cercato di sbloccare le porte con il mio codice personale, 
+        senza risultato. Ebbi l'impressione che in tutta la situazione c'entrava il virus Gates. A quel punto decisi che era arrivato il momento di mettere le mani dentro il computer della 
+        Afrodite. Mi avvicinai così al terminale sulla mia scrivania ed iniziai a lavorare.<br/>
+<br/>
+Dopo un po' di lavoro riuscii ad avere la meglio sul Virus e potei tornarmene in Plancia, con un po' di mal di testa, ma comunque vittorioso su quell'ammasso di circuiti. Giusto in tempo 
+        per vedere che il Capitano era già rientrato. "Ottimo signor Jacket, vedo che si è cambiata l'uniforme. Comunque è un peccato, perché la consolle della sicurezza è danneggiata..." 
+        mi disse appena mi vide. Capii subito ciò che voleva dire! Iniziai ad aiutare gli altri a riparare la consolle della sicurezza e dopo un po' venimmo a capo anche di questo problema, 
+        ed io riuscii anche a non risporcarmi l'uniforme.<br/>
+<br/>
+Poco dopo aver finito di riparare la consolle, scattò l'allarme rosso: il Ferengi era fuggito dall'Infermeria dove si era fatto portare fingendo un malore ed aveva cercato di rubare 
+        una navetta. Per sua sfortuna la nostra Sicurezza lo aveva trovato, ma se lo era lasciato scappare.<br/>
+Poco dopo si scoprì finalmente come il virus aveva attaccato la Afrodite: grazie al GM Da Nee, scoprimmo che fu la sonda a contagiare il computer dell'Afrodite, facendogli credere 
+        che i sistemi della nave fossero tutti obsoleti e non permettendone il funzionamento. l'unico modo per ottenere nuovamente il controllo della nave era di reinizializzare il 
+        computer principale, in modo da riavere il controllo su tutti i sistemi. così, su invito del Capitano, che intanto era rientrato in Plancia dopo avere avvertito la sicurezza 
+        della fuga dello scienziato Ferengi, mi avviai verso il laboratorio ad aiutare il GM Renzi a debellare definitivamente il Virus Gates. Strada facendo, andai letteralmente 
+        a sbattere, è proprio il caso di dirlo, contro il nostro amico Ferengi, che ormai conscio di aver perso ogni speranza, si arrese a me senza lottare (mostrandosi, come tutti 
+        i Ferengi, molto remissivo). Seppi solo più avanti che intanto la Deposit era scappata lasciandoci il loro scienziato prigioniero a bordo. Evidentemente avevano capito 
+        che la sua missione era fallita ed avevano deciso di salvarsi almeno loro. Noi abbiamo uno scaldabagno, è vero, ma è pur sempre uno scaldabagno di classe Miranda e in uno 
+        scontro a fuoco avremmo avuto sicuramente la meglio.<br/>
+L'unica consolle non sotto il controllo del virus si trovava nel laboratorio medico, così mi ci recai per raggiungere Da Nee; si un' a noi anche il GM Ta Nutri. Ad un certo punto, 
+        però, iniziò a suonare l'allarme rosso e dalla Plancia ci informarono che se non ci sbrigavamo ad eliminare il virus Gates, l'Afrodite avrebbe fatto un grosso botto (silenzioso, 
+        a dire il vero, visto che nello spazio il suono non si propaga.).Cercai di iniziare a lavorare sui computer, ma ero completamente distratto e non riuscivo a capire cosa stessero 
+        dicendo i miei compagni all'interno dell'Infermeria. A breve avrei avuto la finale del torneo di scacchi e per questo ero del tutto assente, così, se prima utilizzai al meglio 
+        la mia conoscenza dei computer per avere la meglio sul virus, adesso non feci altro che eseguire gli ordini, prendendo qualche insulto e rimanendo un po' intontito quando i miei 
+        compagni iniziavano a parlare in modo tecnico. Nonostante la mia completa passività, comunque, riuscimmo nella nostra impresa (forse dovrei dire "loro...") e dopo un po' 
+        il computer fu ripristinato, passando prima per la condizione blu: finalmente il virus Gates era stato definitivamente eliminato dai computer della nostra nave. 
+        A quel punto potei andare finalmente a giocare la finale del torneo di scacchi (contro un guardiamarina della sezione di Ingegneria) e mentre uscivo dall'Infermeria per recarmi 
+        al luogo dello scontro, vidi Geppo cercare di impossessarsi dei manufatti alieni, che altro non erano se non alcuni gomitoli, contrastato dal Capo Medico. Sarei stato molto 
+        curioso di sapere chi avesse vinto, se l'ostinato gatto o il logico Dottore, ma dovevo correre per disputare la finale.<br/>
+<br/>
+Fu soltanto dopo aver preso matto dalla Donna in H7 (cosa non inusuale per me: avrò perso un centinaio di partite in quel modo) che rimpiansi di non essere rimasto a vedere 
+        l'esito finale della lotta tra il gatto e la Dottoressa! così, dopo aver esalato l'ultima mossa (la 37ª), mi avviai verso la Plancia giusto in tempo per sentire che avevano 
+        deciso di cambiare le uniformi e di farle di un giallo molto acceso, per fare contento l'Ammiraglio di turno. La cosa sembrava non aver avuto molti consensi se è vero 
+        che c'erano molte persone che litigavano. ciò che però mi sorprese più di tutto era uno strano avvoltoio, che stava girando in tondo sopra la testa del Capitano e che non 
+        sapevo proprio come fosse arrivato l'ora...!
+      </p>
+      
+        <br/>
+        <br/>
+        <em style="color:rgba(248,248,255,0.5);">
+          GM Peter Jacket<br/>
+          COO<br/>
+          USS Afrodite NCC-1863
+        </em>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+    <a href="log_mission2.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Log Mission: 1
+    </a>
+    <div style="margin-left:auto;display:flex;gap:8px;">
+      <!-- Primo diario: bottone precedente spento -->
+      <a href="log_mission2_09.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a href="log_mission2_11.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>
