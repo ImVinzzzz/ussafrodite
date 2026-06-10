@@ -1480,6 +1480,11 @@ footer {
   font-style: italic;
 }
 
+.diary-cpu {
+  color: rgba(248,248,255,0.5);
+  font-style: italic;
+}
+
 /* ── DIARY HEADER PHOTO ──────────────────────────────────── */
 .diary-header {
   display: flex;
