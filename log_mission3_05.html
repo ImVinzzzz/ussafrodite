@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario T'Mik – Mission 3 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="log.html">Log</a>
+    <span>›</span>
+    <a href="log_mission3.html">Mission: 3</a>
+    <span>›</span>
+    <span class="current">Diario Personale – GM T'Mik</span>
+  </div>
+
+  <!-- Diary page -->
+  <div class="diary-wrapper">
+
+   <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-solid fa-staff-snake"></i> &nbsp;MED &nbsp;·&nbsp; CMO &nbsp;·&nbsp; Diario Personale
+        </div>
+        <div class="diary-header-name">GM T'Mik</div>
+        <div class="diary-header-mission">Mission: 1 — The curse of USS Cassiopea</div>
+      </div>
+      <!-- Miniatura PG + link scheda -->
+      <div class="diary-header-pgbox">
+        <img src="images/crew/tmik_l.jpg" alt="GM T'Mik"
+                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+        <a href="crew_tmik.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+      </div>
+    </div>
+    <div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">10006.15</span>
+      </div>
+
+      <!-- PROLOGO -->
+      <div class="diary-section-title">Prologo</div>
+
+      <p>
+Finalmente era arrivato il grande giorno, quello per cui mi ero preparata durante i lunghi anni dell'Accademia: il mio primo incarico come Ufficiale Medico Capo.<br/>
+Strinsi fra le mani il mio medaglione IDIC con quello che gli umani avrebbero scambiato per un gesto scaramantico e mi avviai verso la sala riunioni dove avrei dovuto assistere 
+        al discorso di insediamento del Capitano... ma che strano, il Capitano stava andando via mentre gli altri Ufficiali arrivavano insieme a me! Incredibile ma vero, avevamo mancato 
+        il discorso di apertura! "Cominciamo bene!" Pensai tra me e me.<br/>
+Se fossi umana, potrei dire di aver avuto un'intuizione, in realtà le mie capacit� di telepate devono aver agito da filtro... fatto sta che avvertivo un diffuso senso di scoraggiamento, 
+        per così dire di frustrazione. "Non è logico desiderare di prendere parte a missioni pericolose quando si può studiare l'universo da una prospettiva più tranquilla" 
+        mi trovai a riflettere con il mio secondo, "La nostra razza è logica", rispose lui "ed è forse l'unica che vanti tale prerogativa in tutta la galassia".<br/>
+Ma avvertivo persino in lui lo stesso turbamento, e anche se non l'avrei mai ammesso ad alta voce, in me stessa...<br/>
+Le mie riflessioni vennero interrotte dal Capitano che ci annunciava una nuova rotta che ci avrebbe portati al famoso Disney Planet, dove tutti avrebbero avuto una licenza. 
+        "Un pianeta di divertimento in stile Disney, gestito da Ferengi" mi trovo a sottolineare.<br/>
+<br/>
+"Dottoressa, siamo in orbita." mi informa la Plancia.<br/>
+Come Ufficiale Medico Capo, spetta a me decidere i turni di discesa sul pianeta del personale dell'Infermeria, devo includere anche me stessa, naturalmente. Il Capitano è stato perentorio: 
+        ognuno di noi dovrà portare un souvenir dal pianeta come prova dell'avvenuto sbarco. Sembra che abbia preso molto sul serio il suo compito di risollevare il morale dell'equipaggio.<br/>
+Qualche minuto dopo mi aggiro tra le attrazioni del Parco planetario. La ricostruzione dell'omonimo parco sulla Terra è quasi perfetta, tutto però è ambientato nel XXIV secolo.<br/>
+Voglio solo comprare un souvenir e poi tornare a bordo, il divertimento non fa per me, e poi ho del lavoro da sbrigare... ma una sorpresa mi attende: il Capitano ha stabilito 
+        il tempo minimo di permanenza di ciascuno sul pianeta. "Conosce i suoi polli!" come si dice sulla Terra.<br/>
+Non poteva mancare, su un pianeta gestito da Ferengi, l'ennesima "lotteria ruba - crediti" alla quale tutti partecipiamo.
+      </p>
+
+      <!-- DIARIO -->
+      <div class="diary-section-title">Diario di Missione</div>
+
+      <p>
+        Sorpresa, Da Nee vince e si aggiudica una cassa piena di Nutella! "Nutella originale!" sottolinea.<br/>
+Se il Capitano seguirà le usanze dell'epoca, ci verrà chiesto di unirci ad un vecchio rituale terrestre chiamato "Nutella Party". Ed infatti la sera stessa l'intero equipaggio, 
+        riunito nel bar di prora, si diletta nello spalmare la prelibata Nutella su chili di pane appena replicato per l'occasione! Alla faccia della dieta! La mattina seguente mi alzo 
+        con un terribile mal di testa, e mi accorgo subito che il mio viso è pieno di brufoli! Un vulcaniano con i brufoli, questa è bella! Giunta in infermeria, mi accorgo che anche 
+        il mio secondo e i nostri assistenti lo sono.<br/>
+Deve essere stata la Nutella, sicuramente il Ferengi non ha specificato che uno degli effetti collaterali legati ad un eccessivo consumo...<br/>
+"Plancia ad Infermeria..." Aspettavo questa chiamata, il Capitano mi informa che anche il resto dell'equipaggio ha subito la nostra stessa sorte e mi dice di mettermi al lavoro 
+        per trovare un rimedio.<br/>
+Io e i miei assistenti cominciamo subito. È necessario mescolare la giusta quantità di Top-Ex-An con dell'acido acetinsalitico.<br/>
+Proprio mentre siamo concentratissimi sulla formula, si aprono le porte dell'Infermeria, per lasciar passare un giovane Guardiamarina della sezione ingegneria che si soffia rumorosamente 
+        il naso, e si presenta come il GM Castell. "C'è qualche problema?" le chiedo. Mi espone la sua situazione, dai sintomi deduco in maniera certa di cosa si tratta: "È raffreddore, 
+        Robert" sottolineo rivolta al mio Secondo. Registro, quindi, il diario medico (la precisione è essenziale): "Diario del Primo Ufficiale Medico: sono le 13:13:13, il GM Castell 
+        si è presentata in Infermeria per la cura di un raffreddore. Ho prescritto aspirina e un'antica cura Vulcan nota come rimedio della Nonna: latte caldo e miele".<br/>
+Ora posso tornare con Robert allo studio di quell'antidoto, ma mi attende una terribile sorpresa, si tratta di una probabile contaminazione!<br/>
+Dando l'allarme giallo, avverto la Plancia, e mi metto immediatamente alla ricerca di un metodo per riparare al danno. Ma i nostri guai sono appena iniziati: dagli scossoni alla nave 
+        che rischiano di rovesciare tutte le mie provette deduco che siamo sotto attacco. Risuona infatti l'allarme e viene richiesto un medico per la squadra di sbarco che dovrà 
+        teletrasportarsi su una nave Ferengi. La situazione in Infermeria è sempre più complicata, mando Robert mentre continuo a lavorare all'antidoto contro i brufoli e la nave 
+        si dirige alla ricerca della Cassiopea, torneremo poi a riprendere la squadra di sbarco.<br/>
+<br/>
+Dopo qualche ora la squadra di sbarco è di nuovo a bordo, con uno scienziato ferengi ferito, ed io posso riavere il mio aiutante.<br/>
+"Dobbiamo testare il preparato n.1083.", lo informo. Ma proprio mentre ci rimettiamo al lavoro risuona di nuovo l'allarme, e come se già non bastasse, in infermeria entra una donna 
+        trascinando un secchio pieno di acqua sporca e uno spazzolone. La fisso interdetta e solo dopo qualche istante riesco a chiederle chi sia. Mi dice di essere Ernestina, l'addetta 
+        alle pulizie della nave e, sottolinea, anche dell'Infermeria.<br/>
+"Non può pulire ora." replico "Se ne vada!" divento intrattabile quando sono alle prese con un problema che non riesco a risolvere. E poi, siamo nel XXIV secolo, possibile che le navi 
+        si puliscano ancora così? L'Infermiera Vanian guarda disgustata quello straccio sporco e quell'acqua a dir poco nera e chiede: "Ha già pulito tutta la nave con quell'acqua, vero?" 
+        Ho deciso che non ascolterò una parola di più; andrò a protestare direttamente con il Capitano. Ma una sorpresa mi attende: le porte dell'Infermeria sono bloccate!<br/>
+Chiamo la manutenzione che mi informa che il virus Gates si è impadronito dei sistemi della nave e che manderanno qualcuno al più presto per riparare il danno. Ma il GM Field, 
+        che si trova in infermeria per dei controlli (dal suo aspetto sembra che sia stato uno dei maggiori estimatori della Nutella, ieri sera), prova a riparare le porte, senza perdersi 
+        in chiacchiere, prima dell'arrivo di qualcuno della manutenzione. Se fossi umana, a questo punto sarei furibonda: chiusa nella mia infermeria con un'addetta alle pulizie che 
+        sta ficcanasando tra i miei esperimenti e che continua a parlare non si sa bene di cosa... nel giro di qualche minuto la porta viene riparata. Do la serata libera a Vanian. 
+        Ha un appuntamento con Christian D'Accardi per un altro Nutella Party in occasione di un compleanno della sezione Scientifica. Vorrei ricordare loro, e a tutto il resto 
+        dell'equipaggio che i brufoli incombono; pare che l'unico immune sia il primo Ufficiale Fruuuu, evidentemente la sua particolare struttura basata sul silicio riesce a digerire 
+        quintali di Nutella senza effetti collaterali.<br/>
+Ben presto vengo informata che il virus Gates ha infettato tutti i sistemi della nave: è convinto che tutti i sistemi di bordo siano obsoleti ad eccezione di quelli dell'Infermeria. 
+        Nella sua illogicità, evidentemente il virus Gates suppone che un luogo gestito da Vulcan sia il più efficiente... come dargli torto?<br/>
+Dopo qualche minuto arrivano due guardie che scortano il prigioniero Ferengi in Infermeria. A quanto pare, accusa dolori alle orecchie (tutti sanno quanto questa parte del corpo 
+        sia sensibile nei Ferengi). Lo faccio adagiare su un lettino diagnostico, ma ben presto mi accorgo dell'inganno. "Credevi che fosse facile fare fessi due medici Vulcan, 
+        o forse pensavi che fosse più semplice scappare dall'Infermeria?". Il Ferengi tenta di fuggire, ma ha dimenticato la mossa segreta dei Vulcan, la famosa presa vulcaniana 
+        che lo rende subito privo di coscienza. Purtroppo quando si riprende riesce a scappare ferendo anche l'infermiere Capui. Do subito l'allarme ed insieme a Robert mi occupo di Capui, 
+        con un vago senso di angoscia circa ciò che dirà il Capitano... ma come dice sempre Robert, in fondo siamo medici, non poliziotti.<br/>
+Io e Robert torniamo presto al nostro lavoro anche se devo rifiutare la sua idea di un composto basato sugli acidià non vorrei fare dei crateri sul viso dei miei colleghi al posto 
+        dei brufoli. Finalmente riusciamo nell�ardita impresa, ma il nostro antidoto ha un sapore che tutti trovano disgustoso, così decidiamo di replicarlo all'interno delle razioni alimentari.<br/>
+<br/>
+Il virus Gates imperversa ancora su tutti gli altri sistemi della nave, per cui i controlli di Ingegneria vengono trasferiti in Infermeria. A quanto pare non è destino che si possa lavorare 
+        in pace, con tutti questi tecnici che si sono impossessati delle nostre consolle. Ma ben presto abbiamo un piccolo diversivo, sono stati ritrovati i manufatti alieni, si tratta 
+        di preziosissimi gomitoli. Ora, però è necessario convincere Geppo, il gatto del Capitano che non è logico voler giocare a tutti i costi con quei gomitoli. Io e Robert ci avviciniamo: 
+        spetta a noi il delicato compito. Ci riusciremo? Lo saprete nella prossima puntata, sempre se riusciremo a trovarlo dal momento che Geppo ha pensato bene di rendersi invisibile...
+      </p>
+      
+        <br/>
+        <br/>
+        <em style="color:rgba(248,248,255,0.5);">
+          GM T'Mik<br/>
+          CMO<br/>
+          USS Afrodite NCC-1863
+        </em>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+    <a href="log_mission3.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Log Mission: 3
+    </a>
+    <div style="margin-left:auto;display:flex;gap:8px;">
+      <!-- Primo diario: bottone precedente spento -->
+      <a href="log_mission3_04.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a href="log_mission3_06.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+

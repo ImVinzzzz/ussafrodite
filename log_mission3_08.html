@@ -1,0 +1,594 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario D'Accardi – Mission 3 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="log.html">Log</a>
+    <span>›</span>
+    <a href="log_mission3.html">Mission: 3</a>
+    <span>›</span>
+    <span class="current">Diario Personale – GM D'Accardi</span>
+  </div>
+
+  <!-- Diary page -->
+  <div class="diary-wrapper">
+
+   <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-solid fa-shield-halved"></i> &nbsp;SEC &nbsp;·&nbsp; XTO &nbsp;·&nbsp; Diario Personale
+        </div>
+        <div class="diary-header-name">GM C. D'Accardi</div>
+        <div class="diary-header-mission">Mission: 1 — The curse of USS Cassiopea</div>
+      </div>
+      <!-- Miniatura PG + link scheda -->
+      <div class="diary-header-pgbox">
+        <img src="images/crew/daccardi_l.jpg" alt="C. D'Accardi"
+                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+        <a href="crew_daccardi.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+      </div>
+    </div>
+    <div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">10006.15</span>
+      </div>
+
+      <!-- PROLOGO -->
+      <div class="diary-section-title">Prologo</div>
+
+      <p>
+Il Sole era già alto sull'orizzonte cercando di svegliare quella porzione di Pianeta ancora assopito e coperto da un freddo strato di nebbia. Un gruppo di umani era radunato in uno 
+        slargo della strada principale che collegava un piccolo borgo alla città.<br/>
+Non lontano da lì, il GM Christian D'Accardi dormiva rannicchiato nel letto abbracciato al suo cuscino godendosi gli ultimi giorni della sua licenza post-diploma, mentre, nella stanza accanto, 
+        la consolle delle comunicazioni ronzava indicando l'arrivo di un messaggio.<br/>
+Nel dormiveglia, quello strano sibilo gli ricordò l'Accademia, le lezioni, gli esami; ma, ringraziando il cielo ne eera uscito fuori già da diverso tempo.<br/>
+Una strana risata compiaciuta gli usci dalla bocca sbadigliante, mentre il giovane compagno di stanza (Chicco, il cane dei suoi familiari, uno Yorkshire nano) cominciò a ballargli 
+        intorno al letto quasi per dargli il buongiorno.<br/>
+Dopo averlo accarezzato, il neo ufficiale scese dal letto sbadigliando per dirigersi verso la rumorosa consolle e, per puro caso, il suo sguardo si posò sopra un vecchio comò stile 
+        tardo XX secolo con un DiPAD: erano i suoi genitori che lo informavano che erano usciti.<br/>
+Si sedette svogliatamente alla consolle, certo di vedere il bel viso di Cecil la sua fidanzata... - "EX fidanzata" si corresse a voce alta cercando di ricordare la litigata della sera prima.<br/>
+Prese in braccio Chicco cercando quasi di giustificarsi.<br/>
+"Non ti preoccupare, tornerà tutto a posto - disse al suo compagno - "anzi, vedrai che è lei che vuole vederci per fare la pace" e dicendo così si collegò con il centro messaggi.<br/>
+Per prima cosa vide il simbolo della federazione e subito dopo apparve lo stemma di Starfleet con la insegne identificativa del comando. Poi apparve un volto - quel volto! - e una voce - 
+        quella voce! - che poteva venire solo dal suo passato: doveva venire dal suo passato!<br/>
+"Visti gli esiti del Corso di Studi..." Mentre risuonavano le parole del non più giovane istruttore, una lunga serie di ricordi risuonarono nella sua testa: Miscia ed Annatrek, 
+        il Kobayashi Test, la cerimonia della consegna dei diplomi, ma soprattutto gli esami con quell'uomo (che Uomo non era!) e con quella che scherzosamente (?) chiamava "Banda di criminali" (il Corpo insegnanti dell'Academy). 
+        "... vista la Sua posizione nella Graduatoria Finale ..." Era convinto di non dover più sentire quella voce, di sentire quel groppo alla gola che saliva quando si presentava 
+        ad Al Cobledick, eppure... "... abbiamo il piacere di comunicarle che Lei è stato assegnato all'astronave federale USS Afrodite - NCC-1863 con l'incarico di Vice Capo del 
+        Dipartimento Sicurezza ... "<br/>
+Fece finalmente caso alle parole: cosa voleva da lui l'Academy ora?<br/>
+"Fermare e riascoltare messaggio!" disse finalmente, tornando alla realtà. Al secondo passaggio capì che quello era un messaggio d'auguri, fatto nel solito modo cinico e severo, 
+        ma sempre un segno di bontà da parte di quelli che aveva pensato come degli aguzzini ... forse erano più dolci di come se li ricordava, forse non li aveva capiti fino in fondo 
+        o forse... erano cambiate le cose: era ormai un giovane ufficiale della Flotta Astrale; ormai il suo compito era di dimostrare ciò che aveva imparato... era giunto il momento 
+        del suo PRIMO IMBARCO!<br/>
+<br/>
+Più tardi, dopo essersi cambiato, cercò di esaminare con calma la situazione. Certo aveva pochi dati con se, ma qualcosa pur aveva!<br/>
+Tentò la connessione con il sistema informativo della Flotta innestandosi al primo tentativo: aveva davanti a sé la porta per la più grande banca dati del Quadrante Alfa, ma...<br/>
+"Questo è il canale informativo della Flotta Astrale, scandire a voce alta, nome, grado destinazione e mansioni Starfleet seguito dal codice e livello di sicurezza."<br/>
+Codice di Sicurezza? Quale codice di sicurezza?<br/>
+Già, era da prevederlo; i primi intoppi burocratici: come novello ufficiale non gli erano ancora stati ancora comunicati i nuovi codici e quelli vecchi (da studente dell'Accademia) 
+        erano stati disabilitati al conseguimento del grado per passare la "pratica" agli uffici di Starfleet.<br/>
+"Per tutti i diavoli!" imprecò.<br/>
+Si grattò la testa perplesso, poi - a malincuore - decise di passare per i LUNGHI canali burocratici.<br/>
+Si collegò, questa volta attraverso la rete civile, al Comando Planetario di Starfleet dove gli apparve una giovane sottufficiale alle comunicazioni. La terrestre disse, con voce fredda 
+        e quasi disturbata:<br/>
+"Centro di Comunicazione EU4, dicaaaa"<br/>
+"Buongiorno" esordì lui. "Ecco .. io sarei ... il Guardiamarina D'Accardi Christian" disse emozionato; era la prima volta che si presentava con il nuovo grado. "Avrei un problema 
+        con la rete informativa di Starfleet, potrebbe aiutarmi dicendomi dove poss..."<br/>
+"Rete informativa?" Non lo lasciò finire. "La connetto io, buongiorno" sparendo e facendo comparire il logo della Federazione. Non fece in tempo a finire che la solita vocina cominciò:<br/>
+"Questo è il canale informativo della Flotta Stellare, scandire a voce alta, nome, grado destinazione e mansioni Starfleet seguito dal codice e livello di sicurezza."<br/>
+Non male ... proprio niente male!<br/>
+Non si perse d'animo. Digitò qualcosa sulla consolle e riapparve la giovane di prima.<br/>
+"Centro di Comunicazione EU4, dicaaaa"<br/>
+Questa volta aveva in testa un piano diverso: avrebbe fatto valere il suo grado.<br/>
+"Senta signorina, sono il GM D'Accardi Christian e avrei un problema. Con chi ho il piacere di parlare?" calcò lievemente sulla parola 'piacere'.<br/>
+La ragazza rispose: "Capo di Seconda Classe Barbara Lewinsky - Servizio Comunicazioni del Comando Planetario di Starfleet - Distretto Europa 4. Dica pure, qual è il problema?"<br/>
+"Come le stavo dicendo, sono nuovamente il GuardiaMarina - e pesò in questo caso l'accento sul grado - D'Accardi Christian e vorrei parlare con l'Ufficio del Personale del Dipartimento di Sicurezza."<br/>
+Questa volta riuscì nell'intento. Ottenne un codice SECLAR provvisorio di livello basso, ma almeno aveva l'accesso ai canali delle rete federale.<br/>
+Iniziò subito la ricerca partendo dalle informazioni sulla nave che lo avrebbe ospitato: la USS Afrodite.<br/>
+Dopo pochi minuti ottenne il massimo che poteva consentirgli quel livello di sicurezza: sul video gli apparvero la figura di una nave Miranda e le normali informazioni di servizio.<br/>
+Più in basso, affianco alla storia della nave, c'erano i link motivo della sua ricerca:<br/>
+<br/>
+<strong>ULTIMA POSIZIONE CONOSCIUTA, MISSIONE ATTUALE, EQUIPAGGIO.</strong><br/>
+<br/>
+Digitò qualcosa e iniziò - con molta curiosità - l'esplorazione. Sul video apparve:</p>
+
+      <!-- BOX MESSAGGIO 1 / START-->
+      <div class="msg-box">
+  <div class="msg-box-header">
+    <i class="fa-solid fa-circle-nodes"></i>
+    ULTIMA POSIZIONE CONOSCIUTA
+    <span class="msg-id">DATA-[ID:0047/a]</span>
+  </div>
+  <div class="msg-box-body">
+
+    <div class="msg-box-row">
+      <span class="msg-label">Nave</span>
+      <span class="msg-value">USS Afrodite - NCC-1863</span>
+    </div>
+    <div class="msg-box-row">
+      <span class="msg-label">Posizione</span>
+      <span class="msg-value">Sol III, In allestimento presso l'Hangar Spaziale. Attracco 23.</span>
+    </div>
+    <div class="msg-box-row">
+      <span class="msg-label">Direzione Tecnica</span>
+      <span class="msg-value">Dipartimento Tecnico Starfleet</span>
+    </div>
+    <div class="msg-box-row">
+      <span class="msg-label">Resp. Tecnico</span>
+      <span class="msg-value">Ing. TC White Alvar</span>
+    </div>
+    <div class="msg-box-row">
+      <span class="msg-label">Resp. Operativo</span>
+      <span class="msg-value">GM Jidtzia Ta Nutri (Ingegnere Capo USS Afrodite)</span>
+    </div>
+
+    <!-- Testo libero opzionale 
+    <div class="msg-box-text">
+      <p>Testo libero del messaggio, se presente.</p>
+    </div> -->
+
+  </div>
+  <div class="msg-box-footer">
+    <span>Canale sicuro · Crittografia livello 1</span>
+    <span>StraFleet Command</span>
+  </div>
+</div>
+      <!-- BOX MESSAGGIO  1 / END-->
+
+      <p>
+Spostò la mano sulla seconda casella.
+      </p>
+
+ <!-- BOX MESSAGGIO 2 / START-->
+      <div class="msg-box">
+  <div class="msg-box-header">
+    <i class="fa-solid fa-circle-nodes"></i>
+    MISSIONE ATTUALE
+    <span class="msg-id">DATA-[ID:0047/b]</span>
+  </div>
+  <div class="msg-box-body">
+
+    <div class="msg-box-row">
+      <span class="msg-label">Nave</span>
+      <span class="msg-value">USS Afrodite - NCC-1863</span>
+    </div>
+    <div class="msg-box-row">
+      <span class="msg-label">Missione</span>
+      <span class="msg-value">A disposizione del comando di Flotta.</span>
+    </div>
+
+    <!-- Testo libero opzionale sotto le righe strutturate
+    <div class="msg-box-text">
+      <p>Testo libero del messaggio, se presente.</p>
+    </div> -->
+
+  </div>
+  <div class="msg-box-footer">
+    <span>Canale sicuro · Crittografia livello 1</span>
+    <span>StraFleet Command</span>
+  </div>
+</div>
+      <!-- BOX MESSAGGIO  2 / END-->
+
+<p>
+Effettivamente non aveva ottenuto molte informazioni, ma forse, nell'ultima casella avrebbe avuto più fortuna.<br/>
+Cliccò tremante la terza casella.
+</p>
+
+      <!-- BOX MESSAGGIO 3 / START-->
+      <div class="msg-box">
+  <div class="msg-box-header">
+    <i class="fa-solid fa-circle-nodes"></i>
+    EQUIPAGGIO.
+    <span class="msg-id">DATA-[ID:0047/c]</span>
+  </div>
+  <div class="msg-box-body">
+
+    <div class="msg-box-row">
+      <span class="msg-label">Nave</span>
+      <span class="msg-value">USS Afrodite - NCC-1863</span>
+    </div>
+    <div class="msg-box-row">
+      <span class="msg-label">Equipaggio:</span>
+      <!-- span class="msg-value">A disposizione del comando di Flotta.</span> -->
+    </div>
+
+    <!-- Testo libero -->
+    <div class="msg-box-text">
+      <p>Equipaggio in formazione. <br/>
+        Allo stato attuale è stato deliberato solo in merito alla composizione degli ufficiali superiori. <br/>
+        Altre informazioni non disponibili per questo livello di sicurezza.</p>
+    </div>
+
+  </div>
+  <div class="msg-box-footer">
+    <span>Canale sicuro · Crittografia livello 1</span>
+    <span>StraFleet Command</span>
+  </div>
+</div>
+      <!-- BOX MESSAGGIO  3 / END-->
+
+      <p>
+Se lo aspettava. Aveva quindi in serbo un piano d'emergenza: che ufficiale alla sicurezza sarebbe stato, altrimenti?!<br/>
+<br/>
+Rientrò nella rete federale ottenendo la comunicazione con una lontana stazione di controllo nei pressi del confine Klingon. Mandò un messaggio strano, quasi incomprensibile, 
+        ma che aveva un preciso significato per il ricevente: Christian stava chiedendo nuovamente aiuto a Miscia, la compagna d'avventure in Accademia, che essendo già a destinazione, 
+        aveva pieno accesso alle informazioni federali.<br/>
+<br/>
+Il messaggio recitava più o meno così:</p>
+
+<!-- BOX MESSAGGIO 4 / START-->
+      <div class="msg-box">
+  <div class="msg-box-header">
+    <i class="fa-solid fa-satellite-dish"></i>
+    OUTCOMING MESSAGE
+    <span class="msg-id">MSG-[ID: Z0022/a]</span>
+  </div>
+  <div class="msg-box-body">
+
+    <div class="msg-box-row">
+      <span class="msg-label">Da</span>
+      <span class="msg-value">GM Christian D'Accardi - Abitazione Privata</span>
+    </div>
+    <div class="msg-box-row">
+      <span class="msg-label">A:</span>
+      <span class="msg-value">GM Miscia - Stazione Spaziale McGregoris</span>
+    </div>
+    <div class="msg-box-row">
+      <span class="msg-label">Oggetto:</span>
+      <span class="msg-value">Ricette Accademiche</span>
+    </div>
+
+    <!-- Testo libero -->
+    <div class="msg-box-row"><span class="msg-label">Testo del messaggio:</span></div>
+    <div class="msg-box-text">
+      <p>Ciao, scusa se mi faccio vivo solo quando ho bisogno; ma l'altro giorno stavo pensando a quando abbiamo preparato la PASTA E FAGIOLI in Accademia e di come mi hai aiutato. 
+        Ora devo preparare gli "Spaghetti di Afrodite" e non so gli INGREDIENTI. Ovviamente, in CUCINA non sanno niente! Se poi, riesci a farmi sapere qualcosa anche della PENTOLA 
+        e del CONTORNO, ti ringrazierò veramente di cuore.<br/>
+<br/>
+Come te la cavi tu nella tua CUCINA? Com'è il CUOCO? Fammi sapere.<br/>
+<br/>
+Ciao, Pisellina. <br/>Chris.</p>
+    </div>
+
+  </div>
+  <div class="msg-box-footer">
+    <span>Canale aperto</span>
+    <span>FUP · COMM</span>
+  </div>
+</div>
+      <!-- BOX MESSAGGIO  5 / END-->
+<p>
+Qualche giorno dopo ricevette la tanto sospirata risposta. Il modo in cui la ricevette non è molto chiaro: pare ci fosse di mezzo un ragazzo della sicurezza, un imprecisato scambio 
+  di favori e un cappotto di pelliccia. Comunque fosse, il messaggio era lì.
+</p>
+
+      <!-- BOX MESSAGGIO 4 / START-->
+      <div class="msg-box">
+  <div class="msg-box-header">
+    <i class="fa-solid fa-satellite-dish"></i>
+    INCOMING MESSAGE
+    <span class="msg-id">MSG-[ID: Q0135/b]</span>
+  </div>
+  <div class="msg-box-body">
+
+    <div class="msg-box-row">
+      <span class="msg-label">Da</span>
+      <span class="msg-value">GM Miscia - Stazione Spaziale McGregoris</span>
+    </div>
+    <div class="msg-box-row">
+      <span class="msg-label">A:</span>
+      <span class="msg-value">GM Christian D'Accardi - Abitazione Privata</span>
+    </div>
+    <div class="msg-box-row">
+      <span class="msg-label">Oggetto:</span>
+      <span class="msg-value">Re: Ricette Accademiche</span>
+    </div>
+
+    <!-- Testo libero -->
+    <div class="msg-box-row"><span class="msg-label">Testo del messaggio:</span></div>
+    <div class="msg-box-text">
+      <p>Ciao Cucciolo,<br/>
+fa piacere che ti ricordi ancora di me, ma è mai possibile che io e te quando siamo nei guai abbiamo bisogno uno dell'altra? Ah, se solo ... comunque, eccoti la lista che ti serviva.<br/>
+Non ti dico cosa ho dovuto fare per fartela avere;: ma ti rendi conto di dove sono? Come posso recapitarti un messaggio (fuori dei canali ufficiali) dalla zona più controllata del settore?<br/>
+Lo so, per me hai fatto di peggio all'Academy.<br/>
+<br/>
+Veniamo a noi, dunque.<br/>
+Caro Chris, dove sei capitato!!!<br/>
+La USS Afrodite non ha ancora una vera e propria missione. Allo stato attuale è a disposizione del Comando per le prove di verifica e collaudo guidate da quello sarà il Capo 
+        del Dipartimento Tecnico: Jidtizia Ta Nutri.<br/>
+Ed ora reggiti forte: il tuo capitano è un diavolo! Nel senso che è un diavolo con tanto di corna!<br/>
+Ma non è finita qui: il tuo primo ufficiale è un essere che ha lasciato molte tracce del suo passaggio in Accademia. Reggiti forte: il tuo primo ufficiale è l'Horta Frruu! 
+        Si sussurra che le modifiche che sta effettuando l'Afrodite siano dipese da lei/lui/esso ... insomma, da Frruuu!!!<br/>
+Vuoi notizie sul tuo ufficiale superiore?<br/>
+Il capo della sicurezza è Rael, un'umano-romulana che odia quanto te i Klingon!<br/>
+Il Servizio medico è in mano ai vulcaniani: il capo è di razza pura e si chiama T'Mik, il suo aiutante è Robert Van Bajark di chiara origine umana e vulcaniana.<br/>
+A capo del Dip. Scientifico troverai una terrestre, Fabiola Renzi, con un'altro mezzo sangue: Da Nee (Umano-Bajoriano).<br/>
+Gli ultimi due ufficiali superiori sono umani: Jidtzia Ta Nutri (Dip. Tecnico) e Peter Jacket (Dip. Operazioni).<br/>
+<br/>
+Più di questo non sono riuscita a scoprire, anche perché ultimamente c'è parecchio movimento sul confine e controllano tutti canali informativi e è va bhe è lasciamo perdere!<br/>
+Qui fa freddo (l'abbigliamento più in uso da queste parti sono delle pellicce!); se dovessi passare di qua, portami qualcosa di caldo... ad esempio te!<br/>
+<br/>
+Un bacio, tua<br/>
+Miscia </p>
+    </div>
+
+  </div>
+  <div class="msg-box-footer">
+    <span>Canale aperto</span>
+    <span>FUP · COMM</span>
+  </div>
+</div>
+      <!-- BOX MESSAGGIO  5 / END-->
+    
+<p>
+Quando alzò gli occhi dal messaggio, Chris disse: "Bene, ci sarà da divertirsi!" e continuò a preparare i bagagli.<br/>
+L'avventura stava per aver inizio.<br/>
+<br/>
+Qualche giorno dopo, il giovane GM stava in piedi sopra la pedana del teletrasporto assorto nei suoi pensieri: dopo tutto quello era il suo primo incarico e aveva voglia di ben figurare 
+  fin da subito con il suo Capitano ed il resto dei suoi compagni di avventura.<br/>
+Dopo esser sceso dalla pedana e ringraziato il tecnico del teletrasporto, uscì dalla sala per trovarsi in un immenso salone.<br/>
+Si guardò attorno: sulla sinistra c'era una grande vetrata panoramica che dava sulle aree di attracco; sul lato opposto c'era una immensa vetrata che invece dava verso l'esterno; 
+  di fronte a lui, invece, c'era una marea di gente, tutto personale Starfleet, di tutte le razze della Federazione e non solo!<br/>
+Cercò un posticino tranquillo nei pressi della vetrata interna (quella che dava sull'hangar) e cercò con lo sguardo la sagoma della sua nave e l'Afrodite era lì, splendida, con le sue 
+  due gondole rivolte verso il basso, compatta come lo sprinter sui blocchi di partenza.<br/>
+Certo di fronte alle due navi di classe Constitution che erano ormeggiate l'affianco l'Afrodite non sembrava un granché; ma - come avrebbe detto il leggendario Capitano Scott - 
+  quella era la sua "bambina"; era da servire e riverire come una donna, e poi... come non si poteva amare una nave con quel nome!<br/>
+<br/>
+Gli venne in mente quella frase leggendaria detta da un vecchio Ammiraglio ad un giovane ufficiale che suonava più o meno così: "Tratta la tua nave come una signora e lei ti riporterà 
+  sempre a casa!" e sentì dentro di sé come un brivido; si sentì fiero di esser arrivato a quel punto; di aver lottato per appartenere ad un gruppo di persone con quel passato e con 
+  quel futuro; si sentì fiero di quella delta sul petto piena di tradizione e di impegni.<br/>
+Si alzò e si recò verso il molo di attracco: era in forte anticipo e decise di fare il giro più lungo, ma sicuramente il più panoramico.<br/>
+<br/>
+Dopo circa una mezz'ora si trovò davanti ad un corridoio laterale di circa 15 metri; sul suo fianco c'era una tabella che recitava:
+</p>
+
+<!-- TABELLA 1 / START-->
+<div class="msg-box">
+  <div class="msg-box-header">
+    <i class="fa-solid fa-location-crosshairs"></i>
+    Attracco 23
+    <span class="msg-id">USS Afrodite - NCC-1863</span>
+  </div>
+</div>
+<!-- TABELLA 1 / END -->
+
+      <p>
+ed in fondo due umani con la divisa della Sicurezza.<br/>
+<br/>
+Si presentò ai due.<br/>
+"Sono il GM D'Accardi Christian, Vice Responsabile del Dip. di Sicurezza, chiedo il permesso di salire a bordo."<br/>
+"Certo Signore,. Se può favorire le sue carte di imbarco..." disse il morettino.<br/>
+"Sa, è una formalità; ma come può ben capire, non ci si può fidare di nessuno" aggiunse il secondo.<br/>
+"Certamente... sapete se sono arrivati i miei bagagli?"<br/>
+"Mi dispiace signore, non so proprio... ma credo di sì... in effetti non attendevamo nessuno prima delle nove... lei è in anticipo di due ore... provi a vedere nel suo alloggio... 
+        vediamo... si rechi qui, Signore!" disse il primo indicandomi su un DiPAD l'esatta posizione della mia stanza.<br/>
+"La ringrazio." concluse il giovane GM.<br/>
+"Ah, Signore" prosegui il morettino "... benvenuto a bordo, signore!"<br/>
+Gli sorrise.<br/>
+<br/>
+Percorse il corridoio alla ricerca del turboascensore.<br/>
+"Scusi signora" disse dopo circa cinque minuti di infruttuosa ricerca alla donna non più giovanissima che con secchi e scopone gli si presentò all'improvviso davanti (era buffa: 
+        sembrava un quadro di altri tempi - quella era forse l'unica persona che aveva visto usare quelle anticaglie per le pulizie!) "saprebbe indicarmi il turboascen... ehtciù... sore?"<br/>
+"Voi giovani d'oggi... le scale! Ci sono le scale. Con tutta questa tecnologia vi rammollite" sembrò lamentarsi paternalisticamente la signora "dove finiremo di questo passo?".<br/>
+"Ehtciù... mi scusi sa, ma credo di essere allergico alla polvere..."<br/>
+"A lei piace il coniglio? Perché se lo vedo quello strecoso... ma guardi le pedate che lascia... per non parlare del suo cibo..."<br/>
+"Il che...?" chiese il GM<br/>
+"Niente, niente..." Poi sospirando aggiunse: "Secondo corridoio a sinistra!"<br/>
+<br/>
+Finalmente arrivò al suo alloggio.<br/>
+La stanza era più grande di quello che si aspettava: c'era un piccolo ingresso, la zona notte si trovava a sinistra dell'entrata (dove vide appoggiate anche le sue valigie); 
+        a destra dell'ingresso c'era la zona soggiorno con due divani, un tavolo e quattro sedie ed in fondo, la consolle delle comunicazioni dove si recò subito per conoscere le sue prime comunicazioni<br/>1
+"Dunque... riunione con gli ufficiali superiori ore 10.00; riunione di staff sicurezza, riunione tecnica..."<br/>
+Si girò di scatto: era convinto di aver visto un uomo in piedi dietro di lui con qualcosa sopra la spalla, ma non c'era nessuno.<br/>
+"Ehtciù" starnutì. Riprese la sua consultazione.<br/>
+Di nuovo quella sensazione...<br/>
+Si girò di scatto. Nessuno.<br/>
+Corse fuori. Ancora nessuno.<br/>
+Rientrò.<br/>
+Nella stanza un forte odore di aglio si diffuse rapidamente.<br/>
+Andò a distendersi, perplesso, sul letto.<br/>
+Qualcuno, con uno splendido paio di piccoli cornetti sulla testa, rise di vero cuore da qualche parte, sulla nave.<br/>
+"Benvenuto a bordo, GM".<br/>
+      </p>
+
+      <!-- DIARIO -->
+      <div class="diary-section-title">Diario di Missione</div>
+
+      <p>
+        La nostra prima missione aveva tutto tranne l'aria della grande missione eroica: opera di sminamento.<br/>
+La vita trascorreva tranquilla (come poteva essere altrimenti?), l'equipaggio si era già adeguato allo standard qualitativo della nave: le avarie erano la normale routine, il Capitan Beppe 
+        dava i primi segni di cedimento (in Plancia andava in giro in canottiera), Frruuu invece aveva già ceduto (era arrivato/a a cucinare in Plancia il riso e tracce ormai se ne trovavano 
+        ovunque), Rael (perfetta come sempre) era l'unica che manteneva una certa dignità (si mormora che "scazzava" solo nel suo alloggio andando in giro con un phaser in mano)... 
+        ma per il resto tutto procedeva tranquillamente.<br/>
+Io ero alle prese con un piccolo problema tecnico dovuto a una coppia di "animali da riproduzione" in divisa Starfleet: i Sottufficiali Adam Smith e Kiss Mey che - si narra - si accoppiavano 
+        appena possibile e dove possibile (anche dove impossibile...).<br/>
+Ora ho davanti a me il giovane insieme alla capo infermiera Vanian una El-Ariana che è venuta nel mio ufficio a lamentarsi perché pare che una sua infermiera (tale Chun Ki) sia stata vista 
+        praticare tecniche multiple di accoppiamento in compagnia dello Smith sulla mega-ruota gigante al Disney Planet (unica sosta nel nostro girovagare) e, come ricordo della sosta, 
+        sia tornata con un dolce souvenir: è incinta!<br/>
+"Il problema non c'è Signore; mi prendo sempre le mie responsabilità!"<br/>
+"Non è questo il punto, Adam" - incalzò l'infermiera - "Ad Eva non ci pensi? E a tuo figlio? E poi, parliamoci chiaro, da quello che si dice in giro, tu sei pieno di donne! Kiss Mey, Chun Ki, Tania..."<br/>
+"Siamo gelose, eh, Vanian?" cercò di smorzare il Sottufficiale con un sorriso falsamente tranquillo.<br/>
+L'El-Auriana non rispose a parole, ma i suoi occhi erano una dichiarazione di guerra.<br/>
+"Ora basta, Signor Smith" intervenni.<br/>
+"Ma, Signore... con il dovuto permesso... questi sono affari miei e... non vedo cosa c'entriate voi?" cercò di difendersi in modo scomposto ed approssimativo l'addetto alla Sicurezza in evidente affanno.<br/>
+"Vede, Signor Smith, dal momento che il dipartimento Medico" - e guardai Vanian - "interviene presso il nostro Dipartimento per chiedere di porre rimedio alla situazione" - tornai a guardare 
+        Adam - "questo diventa un mio problema".<br/>
+Poi alzando sempre di più la voce: "Ed io non voglio problemi! è chiaro?" sbattei i pugni sul tavolo.<br/>
+Si fece silenzio nella stanza; poi con voce più calma ripresi: "Quindi, i miei ordini per lei sono i seguenti: stia lontano dai guai e soprattutto dalle donne! è chiaro?"<br/>
+"Sì, Signore" disse lo Smith con un fil di voce.<br/>
+All'improvviso si udì il suono inconfondibile del comunicatore.<br/>
+"Il Vice Capo Dipartimento della Sicurezza a rapporto dal Capitano, immediatamente!"<br/>
+"Ricevuto" dissi; poi rivolto ai due: "Ed ora scusatemi... siamo intesi vero Smith?"<br/>
+Poi appena Lo Smith si fu allontanato, rivolto a Vanian: "Ci vediamo più tardi? C'è una festa di compleanno a base di Nutella e... mi farebbe piacere che ci fossi anche tu!"<br/>
+Lei mi rispose con un sorriso.<br/>
+E uscii di corsa.<br/>
+<br/>
+Il Capitano era in Plancia.<br/>
+"Bene Signor D'Accardi, mi segua nella sala tattica".<br/>
+Entrai nella sua stanza e subito fui inebriato dall'inconfondibile odore d'aglio.<br/>
+"Si sieda GM e parliamo un po'". Mi accomodai.<br/>
+"Come ha trascorso la sosta al Disney Planet? Ha portato il souvenir come comandatole?"<br/>
+Tutto qui! Informazioni sul Disney Planet? Avrà saputo del tuffo nel lago...<br/>
+"Tutto bene, signore; a parte uno spiacevole incidente... insomma... sì, sono finito nel laghetto dei cigni ed insieme a me il capellino che aveva la forma di un cane... credo che lo 
+        chiamassero Plutone, no, forse è Pluto... però non mi sono fatto male se non nel morale... etciù... mi scusi Signore... ha presente la scena? Un Ufficiale con la divisa tutta bagnata 
+        e con sulla testa uno strano capellino... l'ho dovuto buttare anche perché cominciava a scolorire...!"<br/>
+"Bene, bene... e com'è il morale dei suoi uomini?"<br/>
+"Vede, Capitano, siamo tutti in attesa dell'estrazione della Lotteria Ferengi e poi la sosta al Disney Planet è stato un toccasana per gli uomini!"<br/>
+"Ed invece per quanto riguarda la zona di detenzione, è stato tutto riparato?"<br/>
+"Pare di sì, Signore" - dissi - "se ne occupa comunque Rael, io sono occupato con un'altra serie di... etciù... problemi. Mi scusi Signore, ma ci deve essere in giro Geppo, credo, ed io sono... 
+        etciù... allergico al pelo di gatto."<br/>
+"Mi sono giunte delle voci, infatti... si mormora, che... insomma, cerchi di frenare gli ormoni dei suoi Sottufficiali e dica al Capo Smith... beh, ha capito, ci pensi lei, va bene? 
+        Che figura ci faremmo con gli altri se si sapesse in giro questa storia è non siamo mica LOVE BOAT!"<br/>
+"Certo Signore... etciù..." gli dico mentre dentro di me una vocina mi diceva che il Capitano avrebbe proprio voluto esser lì, e quando feci per andarmene mi richiamò... "ah, GM, 
+        si faccia vedere in Infermeria per questa sua allergia, altrimenti come farà a stare in Plancia?"<br/>
+"Certo Signore, agli ordini, Signore. Ci passo subito!" sorrisi pensando al fatto che Vanian era di turno proprio in quel momento.<br/>
+Una mezz'ora dopo stavo uscendo dall'Infermeria, quando vengo quasi travolto da un gruppo di tecnici urlanti: "Abbiamo vinto! Abbiamo vinto!"<br/>
+<br/>
+Vedo poco più in là, Arianna Field, la nostra bibliotecaria.<br/>
+"Ciao, cosa succede?" le chiedo.<br/>
+"Ciao, pare che abbiamo vinto il secondo premio alla Lotteria Ferengi"<br/>
+"Ah, e..."<br/>
+"Già, il Capitano vuole organizzare un mega Nutella-party per tutto l'equipaggio"<br/>
+"Capisco"<br/>
+"Ehm, scusa... hai visto il Capo Smith?" mi dice lei "mi ha dato appuntamento qui davanti perché voleva farmi vedere la sua collezione di souvenir, ma è in ritardo..."<br/>
+Smith, ancora lui!<br/>
+"No, guarda... e poi ho l'impressione che avrò da fare altre cose... eccolo che arriva" - poi rivolto a lui "Allora, Smith, finito di sistemare l'arsenale? No, perché avrei da darle un altro incarico..."<br/>
+"Ehm... sì... provvedo subito, Signore..."<br/>
+"Bene la aspetto sul ponte tre tra... diciamo cinque minuti?"<br/>
+"Sì, Signore. Va bene vengo subito!"<br/>
+<br/>
+Dopo aver salutato la Field e sistemato Smith, vengo convocato in sala teletrasporto con il Primo Ufficiale, l'Ufficiale Medico Robert Van Bajark e tre uomini della sicurezza 
+        (Kelly De Forest detto Junior, Tomas Magnum detto P.I. e Kiss Mey inviata in missione di sbarco per tenerla lontana dal focoso Smith).<br/>
+La nostra missione sembra semplice: abbiamo avuto notizia che c'è una nave Ferengi in avaria e che abbia anche un ferito a bordo. Il nostro compito è quello di soccorrerlo e - già che 
+        ci siamo - di dare un'occhiata in giro.<br/>
+È la mia prima missione a bordo di una nave non federale: ho il cuore in gola, ma mi sento pronto; operativo.<br/>
+È proprio come pensavo: una volta a bordo mi trovo in una nave poco illuminata e con molti circuiti fumosi in avaria. Non faccio in tempo ad avvertire i miei uomini di stare attenti, 
+        che Magnum inciampa; lo troviamo steso per terra abbracciato ad una strana statua di arte ferengi.<br/>
+Frruuu tenta di superare l'imbarazzante situazione in cui il giovane addetto alla sicurezza ci ha già cacciati presentandosi formalmente con fare sicuro, spigliato, falsamente tranquillo.<br/>
+Tutto fiato sprecato! Il ferengi ha notato il tutto e grazie al suo spirito commerciale tenta di farsi rivalsa dell'imbranato ufficiale:<br/>
+"Bell'aiuto siete! Vi faremo pagare i danni, sapete?"<br/>
+Robert soccorre subito Magnum, io mi avvicino a lui e riesco solo a dirgli:<br/>
+"Grazie per l'entrata così plateale!! Piuttosto come stai?"<br/>
+"Ho un gran dolore... qui sulla gamba... ahi"<br/>
+"Dottore lo stabilizzi che poi lo porteremo sull'Afrodite è e state attenti! Basta un ferito a missione!"<br/>
+Dall'atteggiamento di Frruuu capisco subito che avrebbe volentieri sbranato il giovane sottufficiale (per la situazione in cui ci ha cacciato) e il ferengi (come osa questo tipetto!), 
+        ma nonostante tutto lo segue (e noi dietro) fino all'Infermeria dove troviamo uno scienziato sdraiato sul lettino.<br/>
+Mentre Frruuu riceve altre informazioni dall'assistente del Dai Mon, noi ci aggiriamo un po' per la stanza.<br/>
+In fondo sulla porta ci sono altri ferengi, impauriti, che guardano con cupidigia Kiss Mey la bella deltiana, che invece si muove per la stanza con molta circospezione senza curarsi troppo 
+        dei loro sguardi lascivi.<br/>
+Il Doc si sta ora occupando del Ferengi, quindi mi avvicino a P.I. per assisterlo.<br/>
+Su richiesta di Frruuu ci mettiamo a disposizione dell'equipaggio della "Deposti" poiché l'Afrodite è sulle tracce della USS Cassiopea e si deve spostare (anche se di poco) dalla attuale 
+        posizione: Frruuu si avvicina a dei circuiti semi-bruciati e inizia le riparazioni; il Doc ed io ci occupiamo dei due feriti; Kiss mey con la collaborazione di Junior tenta di riparare 
+        la macchina di sintetizzazione alimentare.<br/>
+Dopo circa tre ore di lavoro, l'Afrodite richiama richiedendo il teletrasporto del nostro sottufficiale ferito.<br/>
+Speravo proprio che stesse per finire quella missione sulla Deposit, ma Capitan Beppe aveva altri progetti: prima di richiamare la squadra di sbarco voleva capire bene cosa stava succedendo 
+        in quel settore; infatti piccole ma strane anomalie si stavano verificando a bordo della sua nave.<br/>
+Dopo un po', mi arriva alle spalle il primo ufficiale (non pensavo che un essere così pesante potesse essere così silenzioso!) che mi sussurra:<br/>
+"Il Capitano dice che dobbiamo attendere ancora diverso tempo: qui come va?"<br/>
+"Va bene, PI, è a bordo dell'Afrodite e col Doc stiamo tenendo sotto controllo le funzioni vitali del ferengi!"<br/>
+"Bene, gli altri?"<br/>
+"Sono lì, speriamo che non succeda niente di nuovo!"<br/>
+"Se ne assicuri e torni col medico. Se ci sono problemi io sono su quei circuiti la già."<br/>
+Dopo un rapido sguardo in giro sono tornato dai miei uomini: tutto era calmo e tranquillo. Certo la nave era ridotta proprio male...<br/>
+Quasi un'ora dopo veniamo riteletrasportati a bordo della Afrodite portandoci dietro lo scienziato ferengi. Sinceramente non vedevo l'ora.<br/>
+Questa prima missione non era stata proprio entusiasmante, comunque finalmente ero a casa...<br/>
+Vicino alla pedana del teletrasporto trovo Rael che, dopo avermi aggiornato sugli ultimi accadimenti, mi chiede di prendere il suo posto in Plancia: lei deve andare in Ingegneria 
+        a studiare uno strano manufatto che è stato portato a bordo.<br/>
+<br/>
+Una volta in Plancia noto la presenza di due individui a me poco simpatici: il nostro odiato Consigliere e soprattutto il Klingon Vice Capo OPS.<br/>
+Faccio finta di niente anche se mi sento molto nervoso; mi sistemo sulla postazione a me affidata e faccio un rapido controllo degli strumenti visto che stiamo per entrare in una nebula.<br/>
+Sembra tutto apposto, ma all'improvviso si accende una spia sulla consolle: il guasto sembra irrilevante, ma... ecco all'improvviso una violenta fiammata che mette in anomalia la parte 
+        relativa ai controlli del Dipartimento Sicurezza.<br/>
+Capitan Alighieri invia subito una squadra di tecnici che si mettono subito al lavoro sotto la mia consolle.<br/>
+Dopo circa una decina di minuti, i due hanno già individuato la natura del guasto; il problema è ora riparare il tutto. Ovviamente mi do da fare per ripristinare la consolle di mia pertinenza 
+        e intanto chiedo ai due il perché di tutti quei guasti.<br/>
+"Non lo sappiamo ancora Signore" dice il primo "però pare che sistematicamente tutti gli apparati siano diventati obsoleti!".<br/>
+"Come è possibile?" chiedo io.<br/>
+"Infatti, non è possibile Signore" incalza il secondo.<br/>
+Mentre dialogo con i due tecnici ci giunge notizia che c'è bisogno di aiuto in Ingegneria e, il Capo Operazioni Peter Jacket invita il Capitano a far accorrere l' una squadra della Sicurezza.<br/>
+Mentre provvedo a diramare la chiamata con la consolle di emergenza capto che il caos regna sovrano sull'Afrodite e questa volta non c'entra niente la nebula (ne siamo appena usciti): 
+        apparecchi che si bloccano o mandano messaggi strani; personale tecnico che s'improvvisa infermiere, infermieri che riparano apparecchi tecnici, il prigioniero che tenta una fuga e - 
+        dulcis in fundo - Capitan Alighieri che lascia la Plancia a Frruuu perché deve seguire la puntata della sua holonovela preferita.<br/>
+All'improvviso, poi, tutto si placa: la consolle viene riparata (anche grazie all'aiuto del Capo Operazioni) come anche il banco phaser e finalmente si rianno le comunicazioni interne giusto 
+        in tempo per sentire di uno strano inseguimento sui ponti inferiori che termina con l'arresto del Ferengi.<br/>
+Tutto sembra tornato alla tranquillità di sempre.<br/>
+<br/>
+Anche la batteria phaser, da sempre la nostra spada di Damocle, è ora in perfetta efficienza. Mentre sto per lasciare il posto a Rael sento uno strano messaggio da Starfleet: pare che 
+        le nuove divise saranno di un color giallo acceso!<br/>
+Subito la notizia si diffonde dalla Plancia, già, già fino all'ultimo ponte creando malcontento e soprattutto qualche cenno di insurrezione.<br/>
+Capitan Beppe e il suo Primo Ufficiale, vista la situazione e temendo di perdere il controllo della nave, propongono, per calmare gli animi, un nuovo giro di Nutella, allungato con una forte dose di sedativi.<br/>
+Ovviamente nella lista dei più scalmanati troviamo Smith e Kiss Mey anche se la loro agitazione è dovuta a tutt'altro argomento: pare che un Vice Capo Dipartimento della Sicurezza a caso 
+        abbia fatto recapitare un messaggio anonimo alla giovane deltiana consigliandola di controllare di più il giovane Sottufficiale (e amante) onde evitare...<br/>
+Insomma ora stanno litigando sul Ponte 5!
+      </p>
+      
+        <br/>
+        <br/>
+        <em style="color:rgba(248,248,255,0.5);">
+          GM Christian D'Accardi<br/>
+          XTO<br/>
+          USS Afrodite NCC-1863
+        </em>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+    <a href="log_mission3.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Log Mission: 3
+    </a>
+    <div style="margin-left:auto;display:flex;gap:8px;">
+      <!-- Primo diario: bottone precedente spento -->
+      <a href="log_mission3_07.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a href="log_mission3_09.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+

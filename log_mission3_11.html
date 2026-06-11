@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Rogers – Mission 3 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="log.html">Log</a>
+    <span>›</span>
+    <a href="log_mission3.html">Mission: 3</a>
+    <span>›</span>
+    <span class="current">Diario Personale – GM Rogers</span>
+  </div>
+
+  <!-- Diary page -->
+  <div class="diary-wrapper">
+
+   <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-solid fa-gear"></i> &nbsp;ENG &nbsp;·&nbsp; Ufficiale Ingegnere &nbsp;·&nbsp; Diario Personale
+        </div>
+        <div class="diary-header-name">GM Rogers</div>
+        <div class="diary-header-mission">Mission: 1 — The curse of USS Cassiopea</div>
+      </div>
+      <!-- Miniatura PG + link scheda -->
+      <div class="diary-header-pgbox">
+        <img src="images/crew/rogers.jpg" alt="GM Rogers"
+                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,128,0,0.15);border-radius:6px;border:2px dashed rgba(128,128,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-gear\' style=\'font-size:2rem;color:rgba(128,128,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,128,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+        <a href="crew_rogers.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+      </div>
+    </div>
+    <div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">10006.15</span>
+      </div>
+
+      <!-- Badge SECLAR stilizzato -->
+        <div class="seclar-badge">
+          <i class="fa-solid fa-shield-halved fa-lg"></i>
+          <span>Classificazione: SECLAR 4 &nbsp;·&nbsp; Accesso ristretto</span>
+          <i class="fa-solid fa-lock fa-lg" style="margin-left:auto;"></i>
+        </div>
+      
+      <!-- PROLOGO -->
+      <div class="diary-section-title">Prologo</div>
+
+      <p>
+Dopo essere arrivato sulla stazione spaziale McHyley, mi sono aggiunto al nuovo equipaggio di una nave di classe Miranda, la USS Aphrodite.<br/>
+Salire a bordo non è stato un problema, vista la grande quantità di equipaggio e la mia disinvoltura, ora pero c'è un altro problema da risolvere, infatti, pur avendo un vestito 
+        da civile, non posso aggirarmi a bordo senza una adeguata divisa; rischierei di essere scoperto! Grazie ai diversi corsi e materie imparati all'Accademia, ho potuto riconfigurare 
+        il mio comunicatore da cadetto (che è identico a quello in uso nella Flotta) in modo che risulti perfettamente funzionante anche sulla nave, in più, utilizzando i replicatori interni 
+        ho ottenuto una perfetta uniforme, con tanto di grado.<br/>
+Mi sono prefissato delle fasulle informazioni, cosi se qualcuno me lo chiede, io sono il GM Rogers, che ha prestato servizio sulla U.S.S. Kyushiu venendo trasferito prima della battaglia di Wolf 359.<br/>
+Questa nave è parecchio diversa da le ricostruzioni olografiche dell'Accademia, che presentano le navi così pulite e perfette, sono davvero differenti da questa vecchia nave. 
+        Sembra però essere stata rimodernata di recente, infatti presenta una nuova configurazione del ponte di comando, i colori della nave sono di toni soft, e le postazioni 
+        si presentano ben dislocate, vorrei che i miei compagni d'Accademia la potessero vedere! Solo gli interni sembrano essere "normali" tutto il resto, equipaggio compreso 
+        è addirittura FOLLE ! Ma dico io, si è mai vista una nave che ha come Primo Ufficiale una Horta? Essendo di pietra deve essere incredibilmente lenta ! Il Capitano poi 
+        è di una razza da poco accettata dalla Federazione, sembra un diavolo delle vecchie leggende terrestri diventato umano. Ieri, la nave è partita per la sua prima missione, 
+        se cosi può chiamarsi il dover controllare delle boe di segnalazione, e mentre mi aggiravo sul Ponte 5, mi era sembrato di vedere un'ombra nel corridoio, subito dopo però non 
+        c'era più, ma quando mi sono inoltrato nel corridoio, mi sono trovato di fronte un gatto dal pelo lucido e nero, sembrava talmente normale, come se ci fosse sempre stato 
+        su di una nave stellare, ma non è affatto normale avere un gatto libero che scorrazza per la nave! Comunque, sembrava essersi affezionato a me quasi subito, strano, di solito 
+        non piaccio molto ad alcun animale. Mentre riprendevo il mio girovagare, mi ritrovo di fronte una donna, che, era alquanto fuori luogo, indossava infatti un vestito rosa, 
+        con sopra un vecchio pezzo di stoffa (penso si chiamasse grembiule, agli inizi del XX sec.), e che spingeva un buffo carrello a ruote, con dentro un contenitore d'acqua alquanto 
+        sporca, e uno strumento in legno che finiva con delle spazzole, in tutto, una figura più da holoromanzo di ultima categoria che di una donna presente nella Flotta Stellare.<br/>
+Durante uno dei miei giri sulla nave, incontro l'Ingegnere Capo, una umana che mi ha dato l'ordine di recarmi sul Ponte 13 presso i tubi di Jefferis e controllarne lo stato di efficienza 
+        manualmente! Grazie al cielo all'Accademia sono stato preparato ad eventualità di questo genere, e sono riuscito a cavarmela dopo solo due ore. Non ho un mio alloggio, così, 
+        approfittando della naturale confusione dovuta al Primo Imbarco, riesco ad occupare una stanza originariamente destinata a civili. Il Capo della Sezione Tecnica, nella quale 
+        mi sono momentaneamente installato, mi ordina nuovamente di controllare i tubi di Jefferis, si sono riscontrate infatti delle anomalie, e, contemporaneamente. mi dice di fare 
+        un completo checkup dei diversi sensori interni al Ponte 9, e di controllare anche due replicatori in Sala Mensa; non appena ritorno sul Ponte 13, mi rendo conto di aver 
+        combinato un guaio, infatti, avevo polarizzato male lo strumento diagnostico, con il notevole risultato di creare più casini di prima, questa volta mi ci sono volute ben quattro ore. 
+        Così, tra vari controlli, ho perso tutta la giornata! Il giorno seguente la nave fa scalo presso Disney Planet, pianeta di divertimenti noto quasi quanto Risa, io affascinato, 
+        mi sono recato a Phantom Manor, un esperienza AGGHIACCIANTE! Al ritorno sulla nave ci aspettava una grande scorpacciata di Nutella non replicata vinta ad una lotteria ferengi; 
+        incredibile, è la prima volta che con i ferengi si vince qualcosa!
+      </p>
+
+      <!-- DIARIO -->
+      <div class="diary-section-title">Diario di Missione</div>
+
+      <p>
+        Comunque, finalmente una VERA missione, la nave viene spedita a recuperare la USS Cassiopea, che trasportava degli antichissimi ed importantissimi manufatti alieni, 
+        mi piaceva l'idea di mettere le mani su quei manufatti per poterli studiare per primo... Mentre, come ormai da mesi, stavo controllando l'integrit� dei chip isolineari 
+        all'interno dei sensori primari (la nave sembra, ed è scassata), il GM. Lyorn mio nuovo amico del Dipartimento Scientifico, mi avverte del ritrovamento di una sonda contenente 
+        informazioni sulla Cassiopea. Finito il lavoro, stufo di stare in Sala Macchine, mi reco in Plancia, dove tutti sono fortemente occupati nel capire le intenzioni di una nave ferengi, 
+        quindi per mia fortuna non fanno caso a me e mi posso sistemare comodamente ad una delle postazioni. La Plancia è particolarmente bella, la sua nuova conformazione incita a lavorare 
+        il personale di bordo, i sedili, piuttosto comodi permettono una grande libertà di movimenti, di addetti in Plancia ve ne sono otto compresi gli Ufficiali Superiori. 
+        Dopo essermi perso in questi pensieri, la mia attenzione viene accentrata dalla comunicazione della nave ferengi; avevano un ferito a bordo e richiedevano il nostro aiuto. 
+        Venne subito mandata una squadra di sbarco comprendente la Horta, il  Secondo Ufficiale Medico e il Vice Capo della Sicurezza, mentre la nave riprende la ricerca della Cassiopea. 
+        Il Capitano Alighieri riceve una chiamata dalla DEPOSIT, la nave Ferengi, mentre continuavo ad armeggiare con i vari display; in Plancia scoppia un boato, la Cassiopea viene 
+        ritrovata alla deriva! Il turno lavorativo era finito, andai via dalla Plancia e decisi di andare a mangiare qualcosa; la Sala Mensa era ordinata e quella strana donna con y
+        in testa quello stranissimo straccio continuava a fare delle pulizie manualmente. Dopo aver mangiato una bella porzione di lasagne, antico cibo terrestre da me scoperto da poco, 
+        mi rifugiai nella mia camera.<br/>
+        <br/>
+Più tardi, ritornato in Sala Macchine venni spedito ad riparare le porte dell'Infermeria che si erano bloccate; mentre cercavo con tutti i miei sforzi di aggiustarle, il ferengi 
+        si divertiva a farmi le smorfie da dietro i vetri...<br/>
+Finalmente riuscii a riparare le porte, spinto anche dalla voglia di torturare le orecchie di quel brutto nano, ma quello con una mossa rapidissima, mi diede una spinta (ero in ginocchio) 
+        e fuggi in direzione del turboascensore. Felice di avere fatto il mio lavoro mi recai di nuovo nel Dipartimento Scientifico dove cercai di fare del mio meglio riguardo ai motori 
+        della nave, che fortunatamente ripartirono quasi subito, ma con i soli motori ad impulso. Andai nuovamente in Infermeria per constatare i danni provocati dal virus Gates; 
+        trovai un vulcaniano che cercava di convincere il mio amico gatto, dell'illogicità di giocare con i preziosi manufatti, rimasi sbalordito! (sia per la scena che per il fatto 
+        che i preziosi manufatti erano dei GOMITOLI!), alquanto scioccato, tornai nel mio alloggio, proprio mentre alcuni Guardiamarina si malmenavano per le divise; ma andai in camera e mi addormentai subito.
+      </p>
+      
+        <br/>
+        <br/>
+        <em style="color:rgba(248,248,255,0.5);">
+          GM Rogers<br/>
+          Ufficiale ENG<br/>
+          USS Afrodite NCC-1863
+        </em>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+    <a href="log_mission3.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Log Mission: 3
+    </a>
+    <div style="margin-left:auto;display:flex;gap:8px;">
+      
+      <a href="log_mission3_10.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <!-- Ultimo diario: bottone successivo spento -->
+      <span class="btn-back" style="opacity:0.25;cursor:default;pointer-events:none;margin-bottom:0;">
+        <i class="fa-solid fa-chevron-right"></i>
+      </span>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>
+
+
