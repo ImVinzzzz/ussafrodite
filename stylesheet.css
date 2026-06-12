@@ -1345,7 +1345,7 @@ footer {
   overflow: hidden;
   border: 1px solid rgba(68,136,255,0.3);
   box-shadow: 0 0 16px rgba(68,136,255,0.08);
-  background-color: black;
+  background: black;
 }
 
 .msg-box-header {
