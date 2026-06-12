@@ -1573,6 +1573,7 @@ footer {
 }
 
 /* ── ALLARMI ───────────────────── */
+
 /* RED ALERT */
 .red-alert {
   display: flex;
@@ -1591,6 +1592,7 @@ footer {
   animation: alert-pulse 2.5s ease-in-out infinite;
 }
 
+/* YELLOW ALERT */
 .yellow-alert {
   display: flex;
   align-items: center;
@@ -1611,6 +1613,29 @@ footer {
 @keyframes yellow-pulse {
   0%, 100% { border-color: rgba(220,220,0,0.45); box-shadow: none; }
   50%       { border-color: rgba(250,250,0,0.85); box-shadow: 0 0 14px rgba(200,200,0,0.25); }
+}
+
+/* RED ALERT */
+.purple-alert {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(100,0,0,180.25);
+  border: 1px solid rgba(200,0,180,0.45);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  color: #9600ff;
+  text-transform: uppercase;
+  margin: 20px 0 16px;
+  animation: purple-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes purple-pulse {
+  0%, 100% { border-color: rgba(200,0,255,0.45); box-shadow: none; }
+  50%       { border-color: rgba(250,0,180,0.85); box-shadow: 0 0 14px rgba(150,0,255,0.25); }
 }
 
 
