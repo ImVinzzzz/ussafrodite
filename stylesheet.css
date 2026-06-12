@@ -1620,7 +1620,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: rgba(100,0,0,180.25);
+  background: rgba(100,0,180,0.25);
   border: 1px solid rgba(200,0,180,0.45);
   border-radius: var(--radius-sm);
   padding: 10px 16px;
