@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Ta Nutri – Mission 4 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="log.html">Log</a>
+    <span>›</span>
+    <a href="log_mission4.html">Mission: 4</a>
+    <span>›</span>
+    <span class="current">Diario Personale – GM Ta Nutri</span>
+  </div>
+
+  <!-- Diary page -->
+  <div class="diary-wrapper">
+
+   <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-solid fa-gear"></i> &nbsp;ENG &nbsp;·&nbsp; CEO &nbsp;·&nbsp; Diario Personale
+        </div>
+        <div class="diary-header-name">GM J. Ta Nutri</div>
+        <div class="diary-header-mission">Mission: 2 — The betrothed</div>
+      </div>
+      <!-- Miniatura PG + link scheda -->
+      <div class="diary-header-pgbox">
+        <img src="images/crew/tanutri_l.jpg" alt="GM J. Ta Nutri"
+                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,128,0,0.15);border-radius:6px;border:2px dashed rgba(128,128,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-gear\' style=\'font-size:2rem;color:rgba(128,128,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,128,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+        <a href="crew_tanutri.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+      </div>
+    </div>
+    <div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">10101.15 </span>
+      </div>
+
+      <!-- PROLOGO
+      <div class="diary-section-title">Prologo</div>
+
+      <p>
+FINALMENTE! Il giorno atteso per quattro lunghi anni è arrivato Salire a bordo di questa nave è il coronamento di un sogno... ma cominciamo dall'inizio:<br/>
+Ieri sera, al momento del trasferimento, l'emozione è stata grande, la procedura di attracco di una navetta non mi è mai parsa così lunga...<br/>
+In tarda mattinata c'è stato il discorso del Capitano Alighieri all'equipaggio: è anche per lui il primo incarico, e più che quello di un Alto Ufficiale, mi è parso il discorso 
+        di un vecchio amico di giochi... è una persona davvero squisita, simpatica ed anche un po' stravagante; in fondo è un Diavolo, sarebbe stato strano il contrario!
+      </p>
+
+      <!-- DIARIO -->
+      <div class="diary-section-title">Diario di Missione</div>
+
+      <p>
+        Da qualche tempo mi sento inspiegabilmente nervosa ed ho addirittura l'impressione che ci sia un mostro alle mie calcagna!<br/>
+Tutto è iniziato con l'arrivo del nuovo membro dell'equipaggio, soprannominato "Il FOLLE"! Gli è stato assegnato il piccolo locale attiguo alla Sala Macchine, ma da quando ne ha preso 
+        possesso non l'ho mai visto di persona. A dire la verità non l'ho mai visto e basta! Pur parlandone in giro nessuno sapeva dirmi niente del misterioso personaggio, così ero arrivata 
+        al punto di credere di soffrire di allucinazioni.<br/>
+Fortunatamente il Capitano Alighieri ha esplicitamente ordinato di ignorare il "Signor Folle" e di non aver nessun tipo di contatto con lui. Dunque esiste davvero, io non ho immaginato niente, 
+        e sembra che solo il Capitano ed il Primo Ufficiale siano autorizzati ad incontrarlo. Comunque sia questo nuovo ufficiale deve essere parecchio strano: ascolta in continuazione 
+        lugubri composizioni per organo, accompagnandole con strani suoni ritmati. Ci sono momenti in cui mi sembra di avere accanto una impresa di pompe funebri!!!<br/>
+Non sarei così agitata se sapessi chi davvero sia il FOLLE!!!<br/>
+Magari un agente del servizio segreto della Flotta?!?! Forse qualcuno si è cacciato in guai grossi?!?!<br/>
+<br/>
+TRADIMENTO!!! Un agente infiltrato per controllare il nostro operato... sapevo che era troppo bello ottenere subito un imbarco dopo il diploma... se non stiamo attenti ci sbattono tutti 
+        dietro una scrivania! Addio sogni di gloria, addio brillanti avventure...<br/>
+STOP!!! Calma, calma, devo stare calma: mi sto facendo prendere dal panico. Il mio strisciante pessimismo è tornato alla carica, ma ora so come combatterlo.<br/>
+Computer, suona l'Overture 1812 op. 40 di Ciajkovskij... Ah... và molto meglio... vieni Schumy fammi compagnia. Ora che la musica fa il suo effetto, posso continuare la mia registrazione.<br/>
+<br/>
+Come dicevo, abbiamo a bordo un andoriano di difficile classificazione, ma questo non ha influito più di tanto sulla normale attività della nave.<br/>
+Prima di iniziare il turno, ho chiesto al Capitano l'autorizzazione di installare Windows 25° Secolo per accelerare le operazioni in Sala Motori. Alighieri ha rifiutato a causa del lungo 
+        e laborioso processo d'installazione... e poi perché i motori a curvatura sono ancora fuori uso!<br/>
+Così, incassato il rifiuto, sono tornata al lavoro, accompagnata dalla musica d'organo. L'Unico modo per ignorarla era continuare la revisione delle bobine, come se nulla fosse, rinfrancata 
+        dal pensiero che ormai mancava poco alla risoluzione del problema. Ebbene, ero tanto concentrata da non accorgermi dell'arrivo di Argo, l'avvoltoio del Capitano. Che dire, se non: 
+        è successo! Penoso ricordo. L'odiosa bestiaccia... Argo ci ha scaricato addosso i suoi bi... bi...BISOGNI! Sì ci ha smerdazzato! Oddio, ho ancora davanti agli occhi la pioggia di 
+        escrementi che piombano sulle nostre teste, colpiscono i campi di forza e poi si spiaccicano ovunque. Il Capitano ha chiamato dalla Plancia proprio mentre si scatenava una furiosa 
+        caccia all'avvoltoio; in risposta alle sue domande ha ottenuto solo strilli, e urla prive di significato. Io stessa più che dare ordini strepitavo contro l'universo intero.<br/>
+Comunque, fra strilli e strepitii, mi feci capire dal Capitano e gli spiegai la situazione; il Capitano dette quindi disposizione di teletrasportare l'avvoltoio nel suo alloggio; 
+        rilevate le coordinate... puff! La fabbrica di merd... ehm, l'avvoltoio è sparito. Ora c'era solo da pulire lo schifo che s'era lasciato dietro, senza contare la miriade di piccoli 
+        guasti conseguenti il contatto dei nostri delicati strumenti con la cacchina d'uccello!!! Devo ricordarmi da riferire a Da Nee che è colpa dell'uccello se è rimasto bloccato nel 
+        suo alloggio e a M'Fay che le sue rilevazioni sono andate a farsi benedire perché Argo era in vena di esibizionismo. Affibbiato a Castell il compito di far risplendere la 
+        Sala Macchine, mi sono recata nel mio alloggio per dare una ripulita anche alla sottoscritta. Fatta una rapida doccia, sono andata in Plancia per riferire personalmente al Capitano 
+        che i motori a curvatura erano di nuovo attivi.<br/>
+<br/>
+Ehi, che strano, ora che ci penso, quella puzza mi ha riportato alla mente San Francisco! Ricordo che una volta Ishra ed io decidemmo di fare uno spuntino in un locale vicino alla spiaggia. 
+        Ahimé, c'era bassa marea e le alghe rimaste ad imputridire sull'arenile appestavano l'aria, scappammo via prima che il cameriere prendesse le nostre ordinazioni.<br/>
+Ma, tornando ad oggi, Argo non deve ancora aver finito di combinare danni, già, perché erroneamente è finito in Plancia e non nell'alloggio del Capitano ed ora Argo, il caro Argo, si stava 
+        azzuffando con Geppo fra le consolle di navigazione. Proprio in quel frangente Jean -Luc Picard, comandante della nave ammiraglia della Flotta Stellare appare sul visore principale. 
+        Con un'espressione inorridita, Picard osservava il caos che regnava sul Ponte, a cominciare dal nostro Capitano che girava in canottiera. Completavano il quadro, nell'ordine: 
+        amaca di Rael gettata in un angolo; riso colorato sparso sul pavimento; Frruuu col raffreddore che corrodeva le paratie e donna sciatta con secchio e spazzola!<br/>
+C'era un tale caos che Picard non riusciva neppure a capire chi fosse il Capitano. Io sbadigliavo (con uno sbadiglio ho salutato l'uscita di scena dei due contendenti, agguantati dagli 
+        addetti alla sicurezza), sbadigliavo mentre Picard parlava con Ernestina, che per chissà quale ragione era in Plancia, la quale aveva lavorato per lui sulla Stargazer. D'accordo, 
+        è ignobile da parte mia "dormire in piedi" durante il servizio, ma da quando il Folle è con noi ho perso il sonno. Stanotte, se proprio non riuscirò a chiudere occhio, leggerò qualche 
+        pagina del libro autobiografico <em>'Non sono Spock... ma Ernestina Scramiglio'</em> ed il sonno è assicurato. Come accidenti sono riusciti a convincermi che quel polpettone fosse interessante?<br/>
+A scuotermi dal torpore ci ha pensato il prigioniero ferengi, evaso per l'ennesima volta. Meno male che l'Enterprise era già tornata alla sua analisi della nebula Matilda, altrimenti avremmo 
+        fatto un'altra bella figura con la nave ammiraglia, Riker si è tanto divertito a prenderci in giro. ma quanto è simpatico...!!!<br/>
+Dicevo? Ah, sì: la fuga del ferengi è durata poco, grazie a Boregh che lo ha steso con un gancio! Attivato allarme rosso, disattivato allarme rosso: basta un tocco.<br/>
+Così, fra un incidente e l'altro è finito il mio turno ad eccomi qui, seduta nel mio alloggio a registrare il mio diario. Musica allegra, dolce micia che fa le fusa, tutto sarebbe perfetto 
+        se non facesse così freddo. Rael ha di nuovo messo le mani sui controlli ambientali, ma chi se ne importa. Sono troppo stanca per pensare...<br/>
+<br/>
+EHI! Non sono più scesa in Sala Macchina a controllare lo stato dei lavori...
+      </p>
+      
+        <br/>
+        <em style="color:rgba(248,248,255,0.5);">
+          GM Jidtzia Ta Nutri<br/>
+          CEO<br/>
+          USS Afrodite NCC-1863
+        </em>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+    <a href="log_mission4.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Log Mission: 4
+    </a>
+    <div style="margin-left:auto;display:flex;gap:8px;">
+      <a href="log_mission4_08.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a href="log_mission4_10.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>

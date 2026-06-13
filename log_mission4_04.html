@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Da Nee – Mission 4 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="log.html">Log</a>
+    <span>›</span>
+    <a href="log_mission4.html">Mission: 4</a>
+    <span>›</span>
+    <span class="current">Diario Personale – GM Da Nee</span>
+  </div>
+
+  <!-- Diary page -->
+  <div class="diary-wrapper">
+
+   <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-solid fa-dna"></i> &nbsp;SCI &nbsp;·&nbsp; XSO &nbsp;·&nbsp; Diario Personale
+        </div>
+        <div class="diary-header-name">GM Da Nee</div>
+        <div class="diary-header-mission">Mission: 2 — The betrothed</div>
+      </div>
+      <!-- Miniatura PG + link scheda -->
+      <div class="diary-header-pgbox">
+        <img src="images/crew/danee_l.jpg" alt="GM Da Nee"
+                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+        <a href="crew_danee.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+      </div>
+    </div>
+    <div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">10101.15 </span>
+      </div>
+
+      <!-- PROLOGO -->
+      <div class="diary-section-title">Prologo</div>
+
+      <p>
+Credevo che i manufatti fossero al sicuro, invece Geppo è riuscito ad aggirare i due uomini della sicurezza ed il campo di forza polifasico posto a protezione della teca di duralluminio... 
+        quel gatto ci farà uscire pazzi!<br/>
+Ero nella pizzeria di Lucy per festeggiare con Sàpek, abbiamo preso una mega pizza alla nutella, la nostra preferita, quando mi chiama il Capo Renzi dal Laboratorio 1 per darmi la "bella" 
+        notizia: Geppo è riuscito a mettere i suoi artigli sui gomitoli e... li ha "rotti"... Al che io mi precipito subito al laboratorio per vedere come fosse possibile rompere dei 
+        gomitoli di fibra tessile, al massimo sarà possibile disfarli, ma romperli...!<br/>
+<br/>
+Una volta giunti al Laboratorio 1 (non potevo certo lasciare Sàpek da solo... e nemmeno la pizza!), mi rendo conto che Fabiola non esagerava affatto: i gomitoli si sono veramente rotti, 
+        anzi, per la precisione, solo uno di essi è stato come aperto in due metà semisferiche, dalle quali fuoriescono due antennine.<br/>
+Non avevamo avuto molto tempo per esaminarli attentamente, dato anche il trambusto suscitato tra l'equipaggio a causa delle nuove uniformi color giallo WoodStock, ma gli ultimi sviluppi 
+        ci spingono ad indagare ulteriormente sulla vera natura di questi insoliti manufatti alieni.<br/>
+Ci siamo subito messi all'opera, ed abbiamo constatato che il gomitolo "aperto", cela al suo interno un insolito dispositivo trasmittente: una sorta di circuito isolineare che emette 
+        un segnale nella banda EM, che non risulta nel database federale dei codici criptati.<br/>
+<br/>
+Ad una prima analisi, il segnale si rivela essere un codice criptato misto esadecimale-binario, che il nostro computer non è in grado di decifrare, almeno non basandosi sul database che abbiamo a disposizione.<br/>
+Anche il Capitano è rimasto colpito dalla cosa, e ci ha chiesto di fargli avere al più presto la decodifica, specialmente dopo che gli è arrivata una chiamata subspaziale riservata da Star Fleet.<br/>
+Fabiola, però, è di turno in Plancia, quindi mi lascia nel Laboratorio 1 con la mia squadra.
+      </p>
+
+      <!-- DIARIO -->
+      <div class="diary-section-title">Diario di Missione</div>
+
+      <p>
+        Dopo qualche ora passata al terminale per analizzare lo strano segnale, mi sento talmente stanco che chiamo la Plancia per chiedere a Fabiola di concedermi un paio d'ore di permesso, 
+        ed andare nel mio alloggio. Renzi me ne dà addirittura cinque, ed io volo giù nell'alloggio, dove mi aspettano Sàpek ed un bel pezzo di pizza alla nutella che mi ha conservato...<br/>
+Un po' di riposo è quel che ci voleva... mi sento proprio ricreato.<br/>
+Solo ora mi accorgo di aver lasciato il DiPAD con degli appunti per Sàpek sulla mia consolle in Plancia: esco dal mio alloggio e mi reco al più vicino turbolift. Entro e chiedo: 
+        "Ponte di Comando!", ma il computer risponde: "Spiacente, i civili non sono abilitati ad accedere alla Plancia...". Ma come, io un civile? Cerco di far ragionare il computer per 
+        cinque minuti, ma non c'è verso di fargli capire chi sono... non mi resta che comunicare alla Plancia il guasto, e recarmi al Laboratorio per vedere come procede quella decrittazione. 
+        Mi informano che Beppe ha addirittura scomodato il Folle, e che "lui" c'è riuscito in poco tempo... meglio così, potremmo dedicare risorse alla riparazione di alcuni sistemi. 
+        Come si dice: risolto un problema, sotto con un altro; ci sono alcune cosette da sistemare, quindi do disposizioni alla squadra Delta di occuparsi del turbolift e della consolle 
+        del navigatore, che non vuol saperne di accettare la rotta per il Dsney Planet. In breve tempo quei piccoli inconvenienti sono risolti. Nel frattempo Fabiola mi da un'ottima notizia 
+        che riporta un po' di calma a bordo (ho saputo che n Sala Mensa c'è stata addirittura iuna rissa con diversi feriti più o meno gravi... a causa delle uniformi, credo): dal Comando 
+        di Flotta hanno concesso che l'equipaggio della USS Afrodite non adotti le nuove uniformi per motivi sanitari.<br/>
+E tanto per non perdere l'abitudine, ci tocca nuovamente entrare in una nebula. Stavolta si tratta della Matilda, una strana nebula di gas metronomo che, vibrando, emette delle particolari 
+        modulazioni che sui monitor ricordano un motivetto allegro. Ma la nuova rotta passa proprio di qui, e quindi...<br/>
+Immediatamente scatta l'allarme giallo...<br/>
+È quasi ora di dare il cambio a Fabiola, sto dirigendomi al turbolift, quando incontro il Guardiamarina Rogers. Casualmente, qualche giorno fa, mi sono imbattuto nella sua scheda, mentre 
+        consultavo il database di bordo: ho notato alcune incongruenze, e volevo parlargliene, ma non ho mai potuto. Allora lo fermo per chiedergli alcune spiegazioni, ma non mi riesce 
+        di cavargli nulla, risponde evasivamente alle mie domande. Purtroppo non ho molto tempo, quindi lo saluto, e mi riservo di continuare la conversazione, magari dopo aver parlato 
+        al Capitano dei miei dubbi, dopo che sarà tornata un po' di calma a bordo.<br/>
+Sono le 16:00 precise quando metto piede in Plancia. Giusto in tempo per godermi una scena divertentissima: Geppo, con uno slancio felino, nel tentativo di afferrare Argo, rovescia la sua 
+        ciotola di latte sull'uniforme di Beppe... Prima di lasciarmi la consolle, Fabiola mi ragguaglia sugli ultimi dettagli: i motori sono funzionanti, gli scudi sono a pieno regime, 
+        il ponte ologrammi è stato riparato e... l'Enterprise E è là, sul visore...<br/>
+Poco dopo anche Christian sale in Plancia, seguito a ruota dalla "cara" Ernestina, armata di spazzolone, salita in Plancia per asciugare il guaio combinato da Geppo, giusto in tempo per 
+        vedere la nostra uscita dalla nebula Matilda... una vera liberazione: non mi trovo bene a stare in mezzo ad una nebula, non solo per l'allarme che risuona tra i ponti, ma soprattutto 
+        perché mi sento a disagio quando non ci sono le stelle sul visore.<br/>
+Poi, mentre Beppe si toglie la giacca macchiata per darle una pulita, Rael avverte che l'Enterprise è in collegamento, e senza riflettere, attiva la comunicazione anche in video "Signore, 
+        il Capitano Picard è in linea" - "Salve, sono il Capitano Jean Luc Picard, della nave stellare Enterprise..." a quel punto la faccia del Capitano Picard alla visto di Beppe in 
+        canottiera con un avvoltoio alle spalle, una horta alla sua destra e un gatto sulla poltrona di comando, ha preso la consistenza di un blocco di argilla. Poi Rael si gira verso 
+        di me e mi bisbiglia minacciosa: "Guarda che quel fusto l'ho visto prima io: è mio!" Mi giro verso lo schermo, e vedo che il Comandante Riker è accanto a Picard. Non capisco il 
+        perché della "minaccia" di Rael: lo sanno tutti a bordo che Sàpek non è solo il mio compagno di alloggio. Poi il volto di Picard si illumina radioso, e...<br/>
+"Ernestina, ma che piacere rivederLa, ma come sta, ma come La trovo bene"<br/>
+"Picard ha smesso di perdere tutti quei capelli sul cuscino?"<br/>
+"Ah ah ah Cara Ernestina, non è cambiata per nulla vedo. Cosa ci fa su quella nave di marinai d'acqua dolce?"<br/>
+"'Che vuole, la Flotta ha pensato di bene di affidarli a qualcuno con un poco di esperienze, tanto per essere sicuri che riportino indietro la nave"<br/>
+"Non potevano scegliere di meglio. A quello che vedo avrà il suo bel da fare a tenerli fuori dai guai. Dobbiamo andare ora, mi ha fatto molto piacere incontrarla, spero di rivederLa presto, 
+        magari in migliore compagnia. Arrivederci. Picard, chiudo"<br/>
+E la comunicazione è stata tolta. Per tutto il Ponte regnava un silenzio di gelo, guardavamo tutti Ernestina Scramiglio che raccoglieva il suo secchio ed il suo scopettone, ed usciva 
+        per riprendere il suo giro. Rimanemmo in silenzio parecchi secondi anche dopo che se ne fu andata. Silenzio interrotto da un fragoroso starnuto: Frruuu si è presa un raffreddore 
+        coi fiocchi, data la temperatura un po' bassa, a dire il vero... e allora Beppe la manda in Infermeria; non avete idea di quanto possa essere... fastidioso subire gli effetti 
+        collaterali di una Horta raffreddata...<br/>
+D'un tratto Jacket ci informa che, cosa mai vista a bordo... lo scienziato Ferengi è fuggito di prigione... contemporaneamente scatta l'allarme rosso. La fuga dell'evaso ha breve durata, 
+        però: lo scienziato non ha niente di meglio che andare a sbattere contro il nostro Vice Capo OPS Boregh, il quale lo convince con le "buone" a recarsi in Infermeria.<br/>
+Mentre sono intento ad effettuare alcune verifiche dalla mia consolle, mi chiama Fabiola per dirmi di essersi buscata un brutto raffreddore... devo proprio fare qualcosa per la bassa 
+        temperatura, ci sono molti tra l'equipaggio che si lamentano per il freddo...<br/>
+<br/>
+Finalmente arriviamo a destinazione: le coordinate indicateci dal segnale emesso dai manufatti, ci hanno portati in un sistema inesplorato...<br/>
+Nel frattempo anche Jidtzia si lamenta per il freddo; allora io suggerisco di alzare un po' la temperatura, e tutti si stupiscono per non averci pensato prima!<br/>
+L'unico a risentire della temperatura "normale" pare sia il nostro Capo della Sicurezza...<br/>
+Il Capitano mi chiede di darmi da fare con i sensori, per scoprire qualcosa in questo sistema; mentre lo passo al setaccio, Beppe se ne va nel suo ufficio, lasciando a Peter la poltrona 
+        di comando... ho come l'impressione che nasconda qualcosa!<br/>
+Sono intento nelle analisi, quando la dottoressa T'Mik chiama in Plancia per informarci che il nostro istruttore di ballo, Maurice, le ha appena portato in Infermeria una Renzi alquanto 
+        malandata: completamente sbronza...
+      </p>
+      
+        <br/>
+        <em style="color:rgba(248,248,255,0.5);">
+          GM Da Nee<br/>
+          XSO<br/>
+          USS Afrodite NCC-1863
+        </em>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+    <a href="log_mission4.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Log Mission: 4
+    </a>
+    <div style="margin-left:auto;display:flex;gap:8px;">
+      <a href="log_mission4_03.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a href="log_mission4_05.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>

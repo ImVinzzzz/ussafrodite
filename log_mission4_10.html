@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Diario Jacket – Mission 4 | USS Afrodite</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="stylesheet.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+                integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+        <canvas id="starfield"></canvas>
+        <div class="scanline-overlay"></div>
+
+        <!-- HEADER -->
+        <header id="site-header"></header>
+
+        <main id="main-content">
+
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                        <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+                        <span>›</span>
+                        <a href="log.html">Log</a>
+                        <span>›</span>
+                        <a href="log_mission4.html">Mission: 4</a>
+                        <span>›</span>
+                        <span class="current">Diario Personale – GM Jacket</span>
+                </div>
+
+                <!-- Diary page -->
+                <div class="diary-wrapper">
+
+                        <div class="diary-header"
+                                style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+                                <!-- Testo intestazione -->
+                                <div class="diary-header-text">
+                                        <div class="diary-header-role">
+                                                <i class="fa-solid fa-globe"></i> &nbsp;OPS &nbsp;·&nbsp; COO
+                                                &nbsp;·&nbsp; Diario Personale
+                                        </div>
+                                        <div class="diary-header-name">GM P. JACKET</div>
+                                        <div class="diary-header-mission">Mission: 2 — The betrothed</div>
+                                </div>
+                                <!-- Miniatura PG + link scheda -->
+                                <div class="diary-header-pgbox">
+                                        <img src="images/crew/jacket_l.jpg" alt="GM Peter Jacket"
+                                                onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+                                        <a href="crew_jacket.html">
+                                                <i class="fa-solid fa-image-portrait"></i> Scheda
+                                        </a>
+                                </div>
+                        </div>
+                        <div class="diary-body">
+
+                                <div class="stardate-line">
+                                        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i>
+                                                &nbsp;Stardate</span>
+                                        <span class="stardate-value">10101.15 </span>
+                                </div>
+
+                                <!-- PROLOGO -->
+                                <div class="diary-section-title">Prologo</div>
+
+                                <p>
+                                     La nostra prima missione si è conclusa in maniera, tutto sommato, positiva. Se si eccettua per il sedicente scienziato Ferengi che abbiamo catturato 
+                                        e che in questo momento si trova nelle celle della Afrodite e l'avvoltoio Argo, regalo personale per il Capitano da parte di sua madre, è andato 
+                                        tutto bene. Abbiamo appena ricevuto dei nuovi ordini per la prossima missione da De Leone in persona, che però ha chiesto il massimo riserbo al 
+                                        Capitano, tanto da permettere la conoscenza di tali ordini solo al Capitano stesso e al Numero Uno. Sembra che tutto ruoti intorno ai manufatti 
+                                        alieni recuperati sulla Cassiopea: grazie alla "collaborazione" di Geppo, il vivace "gattino" del Capitano, abbiamo scoperto che all'interno del 
+                                        Manufatto c'era una trasmittente che emette uno strano messaggio in codice che in questo momento si sta tentando di decodificare nel dipartimento 
+                                        scientifico. Dalla fine della missione sulla Cassiopea ho avuto molto tempo per terminare di creare il mio programma olografico; oramai per poterlo 
+                                        utilizzare manca soltanto una diagnostica generale, oltre naturalmente ad un Barista e un Ponte Ologrammi Funzionante!<br/>
+Il Consigliere di bordo continua a tormentarmi tanto che è arrivato a tendermi degli agguati vicino alla porta del mio alloggio a cui sono riuscito a sfuggire grazie al mio vice. 
+                                        Il mite Guardiamarina Boregh, che mi ha fatto da guardia del corpo per un po' di tempo, ultimamente (e chissà come mai, quando ero con lui, Becco 
+                                        non mi si avvicinava...) ha comunque trovato modo di spedire in Infermeria una buona parte dell'equipaggio. Del resto lui è un tipo molto mite, 
+                                        è vero, ma ci sono due cose che non bisogna mai e poi mai fargli; la prima è prenderlo in giro e la seconda è parlare male della botanica ("molte 
+                                        specie senzienti meritano di esistere in questa galassia meno di qualsiasi specie vegetale" ama ripetere spesso). Per sua sfortuna il Guardiamarina 
+                                        Santagata ha fatto entrambe queste cose davanti al mio secondo; risultato molti feriti, molti arrestati e Boregh fresco come una rosa al termine 
+                                        della rissa e, naturalmente, nessuno che l'abbia accusato di aver cominciato la rissa. A dire il vero (e tutto sommato, da ciò che ho sentito dire, 
+                                        mi pare vero) è stato accusato di aver cominciato la rissa il Guardiamarina Santagata, ma nessuno ha voluto infierire su di lui, visto che in questo 
+                                        momento si trova in Infermeria e ci resterà ancora per un bel pezzo. Intanto continuiamo a fare le cavie con le nuove uniformi che, se ad un primo 
+                                        esame potevano dirsi brutte, ad un'analisi successiva ed approfondita appaiono proprio orrende. Il Capitano sta cercando in tutti i modi di trovare 
+                                        una scusa per non fare più da modelli al Comando di Flotta ed ha chiesto a tutti dell'equipaggio di cercare una scusa plausibile per risolvere il 
+                                        problema, ma finora niente di accettabile. In compenso si è rifiutato categoricamente di celebrare il matrimonio tra i due guardiamrina che avevano 
+                                        deciso di fare il grande passo adducendo come scusa "contrasti tra la cerimonia e la sua razza".<br/>
+<br/>
+"Guardiamarina Jacket, non le sembra ora di venire in Plancia o vuole passare direttamente dal suo alloggio alle prigioni della nave?"<br/>
+La voce del Capitano mi fece capire di essere per l'ennesima volta in ritardo.<br/>
+"Qui Jacket." - dissi premendo il mio comunicatore - "Mi scusi Capitano, non succederà più. Arrivo subito".<br/>
+"Lo spero per lei. Sa Guardiamarina, potrei anche ordinarle di fare tre sedute al giorno con il nostro Consigliere di bordo, non so se mi spiego..."<br/>
+No, il Consigliere no!<br/>
+"Si è spiegato benissimo Capitano. Arrivo immediatamente. Jacket, chiudo" - dissi interrompendo la comunicazione con il mio ufficiale comandante.<br/>
+<br/>                                     
+Credo a questo punto che sia il caso di dirigermi alla svelta in Plancia. So che è vietato dalle Convenzioni Intergalattiche sui Diritti degli Esseri Senzienti, ma credo che il Capitano possa mettere in atto la sua minaccia!
+                                </p>
+
+                                <!-- DIARIO -->
+                                <div class="diary-section-title">Diario di Missione</div>
+
+                                <p>
+                                Come al solito, con l'inizio della missione avevamo avuto i nostri primi problemi con lo scaldabagno che alcuni già a San Francisco si ostinano a chiamare 
+                                        astronave. Nell'attesa che riuscissimo a decodificare il messaggio emesso dal manufatto alieno recuperato nella precedente missione, il Capitano 
+                                        aveva deciso di fare un'altra capatina al Disney Planet, magari ritentando nuovamente la fortuna nella speranza di vincere qualche altro barattolone 
+                                        di nutella (per quanto io preferissi il viaggio a Risa...).<br/>
+Ma quando cercai di impostare la rotta dalla mia consolle, per tutta risposta il Computer si rifiutò di accettarla. Dopo svariati tentativi, avvertii il Capitano, che decise di rinunciare 
+        al nuovo viaggio al Disney Planet, consigliandoci di cercare di riparare i sistemi danneggiati della nave nell'attesa. A dire la verità, quando parlai con il Capitano, mi sembrava 
+        un po' distratto: probabilmente erano le voci (più che fondate a giudicare da ciò che vedevo alle mie spalle) che circolavano per la nave sul fatto che Eva Brown ci stava provando 
+        con Frruuu; senza considerare gli innumerevoli problemi che ci dava Argo, l'avvoltoio del Capitano, che passava il suo tempo a litigare con il gatto Geppo e a depositare i suoi 
+        bisogni per tutta la nave e in particolare in sala macchine dove aveva eletto i motori a curvatura a sua stufetta personale, mandando in bestia il nostro Ingegbnere Capo, Jidtzia 
+        Ta Nutri. Ad un tratto, però, il Capitano si calmò un poco: finalmente era stato riparato il ponte ologrammi e lui sarebbe potuto tornare a vedere lì la sua holonovela preferita 
+        ("Una Holonovela vista fuori dal ponte ologrammi non è una vera Holonovela" diceva lui).<br/>
+Prima di iniziare a lavorare sul computer della nave dalla mia postazione in Plancia, però, avevo un altro compito da eseguire: il Capitano mi chiese di inviare un rapporto al Comando di 
+        Flotta per cercare di porre rimedio alla tortura a cui ci stavano sottoponendo con l'introduzione di quelle nuove (e bruttissime) uniformi gialle. Sembrava che lui e il nostro Medico 
+        Capo avessero trovato una soluzione al problema: la dottoressa T'Mik aveva rilasciato un certificato medico in cui sosteneva che non potevamo indossare le nuove uniformi perché 
+        alcuni membri dell'equipaggio erano allergici al giallo delle stesse ed avevano anche problemi di equilibrio. Per quanto io non fossi convinto del risultato, inviai rapporto e 
+        certificato medico ed iniziai a lavorare sul computer. Mentre mi mettevo al lavoro, il Guardiamarina D'Accardi ci informò che avevamo incontrato sulla nostra rotta una Nebula, 
+        all'interno della quale c'era una nave spaziale sconosciuta, che i sensori ancora non erano in grado di identificare perché era fuori del loro raggio di azione. Intanto il mio 
+        lavoro di riparazione del computer stava procedendo bene ed ero arrivato a buon punto, quando il Capitano mi disse di sbrigarmi perché il Numero Uno era riuscito, con l'aiuto 
+        di un personaggio mitico e quasi avvolto nella leggenda noto sotto il nome de "Il Folle", a decrittare il messaggio (che si era rivelato essere una rotta) e così avevamo 
+        assolutamente bisogno di poter nuovamente dirigere la nostra nave in una direzione ben precisa. Non fu un'idea illuminata da parte del Capitano, perché nella fretta toccai un 
+        circuito che non dovevo toccare e mi presi una bella scossa che mi fece rizzare leggermente i capelli in testa, oltre a farmi crollare a Terra come un sacco di patate. 
+        Non so cosa accadde subito dopo, e per quanto tempo rimasi a Terra. So solo che ad un certo punto sentii una voce che mi diceva:<br/>
+"Vede Guardiamarina, questo non è stato un incidente, bensì un suo tentativo inconscio di autopunirsi per alcune cose cattive che ha sicuramente compiuto nella sua infanzia."<br/>
+Non ebbi bisogno di sentire altro, perché avevo già riconosciuto la voce della mia Nemesi: il Consigliere Stanislao Becco!<br/>
+Mi rialzai immediatamente, mi sedetti alla mia postazione e cercai di riprendere la calma, anche se avevo l'uniforme semi-bruciacchiata e i capelli in testa ancora leggermente dritti! 
+        Le riparazioni furono terminate dalla sezione scientifica che riuscì oltre a far accettare la nuova rotta al computer, anche a far uscire dal suo alloggio il Guardiamarina Da Nee 
+        che vi era rimasto bloccato.<br/>
+Ora potevamo dirigerci sul luogo indicato dal manufatto misterioso; solo che non avevamo ancora la velocità di curvatura, e potevamo quindi muoverci solo ad impulso. Proseguendo quindi 
+        sempre a velocità subluce, entrammo nella Nebula Matilda, che si trovava sulla nostra rotta. Una volta entrati, ci accorgemmo che la Nebula aveva uno strano effetto sulla nave 
+        facendola sobbalzare ad uno strano ritmo. Non andammo molto avanti nelle indagini su questa situazione, anche perché ricevemmo la notizia che il nostro stratagemma del certificato 
+        medico per le nuove uniformi era stato creduto e quindi non avremmo dovuto mettere quei bruttissimi stracci gialli. Quando entrammo nella Nebula, il computer attivò l'allarme giallo; 
+        poi, dopo un po', finalmente scoprimmo chi era la nave sconosciuta: vedemmo apparire la figura slanciata di una nave di classe Sovereign e scoprimmo che si trattava... 
+        dell'Enterprise! Erano entrati anche loro nella Nebula perché avevano notato gli strani effetti causati dal gas metronomo della Nebula stessa e volevano saperne di più.<br/>
+Successivamente riuscimmo a ripristinare la velocità di curvatura, che ci mancava dalla precedente missione; così a quel punto potevamo dirigerci nel luogo indicato dal Manufatto. 
+        Non prima però di essere riusciti a riavere gli scudi al massimo: dopo un po' che lavoravo alla mia consolle, riuscii a riportarli nuovamente a pieno regime. A quel punto potevamo 
+        finalmente dirigerci verso il sistema sconosciuto; quindi uscimmo dalla Nebula. Intanto il Capitano continuava ad essere sempre più accigliato: il suo gatto stava litigando 
+        con l'avvoltoio e i due animali avevano rovesciato la tazza di latte del "micetto" addosso al Capitano stesso. Potei accorgermi di questo, non solo per il baccano che c'era in Plancia, 
+        ma anche per le parolacce che il Capitano Alighieri stava "allegramente" pronunciando. In quel momento in Plancia c'era una mezza rivoluzione: avvoltoio e gatto impegnati in un 
+        combattimento furioso, Ernestina che stava cercando di pulire i residui della lotta, il Capitano in canottiera per cercare di ripulirsi l'uniforme e il Consigliere che come al 
+        solito mi stava puntando da dietro la postazione del Numero Uno. In mezzo a quel trambusto, apparve sullo schermo il faccione sorridente del Capitano Picard. Sorridente per poco, 
+        perché appena notò cosa stava accadendo da noi, disse due parole di convenienza (anche loro erano usciti dalla Nebula e si apprestavano a riprendere la loro missione) e facendo 
+        finta di niente salutò la nostra Ernestina che aveva prestato servizio con lui sulla Enterprise-D. Sempre più sconvolto e a disagio, il buon vecchio Capitano Picard (quanti ricordi... 
+        da quel giorno in cui lo incontrai su quella stazione spaziale, a quando prestai servizio sulla compianta Enterprise-D alla postazione tattica del Signor Worf agli ordini del 
+        signor Data) ci salutò e riprese la propria missione. Devo dire che, nonostante il longilineo comandante Riker avesse fatto di tutto per non farsi sentire, io mi sono reso conto 
+        subito che aveva fatto qualcuna delle sue battutacce su di noi anche perché il Consigliere Troi fece un sorrisetto, neanche troppo velato, quando il Numero Uno dell'Enterprise 
+        si mise a bisbigliare.<br/>
+<br/>
+Chiuso il canale con l'Enterprise, continuammo la nostra missione, dirigendoci verso il sistema misterioso. Durante il viaggio, accadde un fatto che diede l'ennesimo colpo alla nostra già 
+        scalcinata astronave. Il nostro Primo Ufficiale si prese il raffreddore, ed essendo una Horta, dal suo "naso" non usciva normale muco, bensì acido, che corrodeva il pavimento della 
+        già martoriata Plancia. In più, quando starnutiva, faceva un volo all'indietro rischiando di perforare le paratie. così il Capitano fu costretto a spedire Frruuu in infermeria prima 
+        che corrodesse del tutto la Plancia; dopodiché la vita sul Ponte di Comando riprese a scorrere tranquilla finché non scattò l'allarme rosso: il prigioniero Ferengi, reduce dell'ultima 
+        missione, era scappato. La sicurezza cercò di riprenderlo, ma non ne ebbe il tempo; il nostro incauto compagno di viaggio ebbe la "brillante" idea di andare a sbattere, durante la sua 
+        fuga, contro il mio vice, Boregh, che lo convinse con le "buone" ad andare in Infermeria: solo più tardi avrei saputo che il motivo per cui il Ferengi andò in Infermeria era per curarsi...<br/>
+<br/>
+Comunque, risolto anche questo inconveniente continuammo il nostro viaggio finché non raggiungemmo il sistema inesplorato. Non appena uscimmo dalla curvatura, io iniziai ad avere il 
+        presentimento che qualcosa stesse per andare male. Iniziai a sudare freddo senza un apparente motivo (e con grande soddisfazione di Becco che si mise a sfregarsi le mani), mi agitai 
+        oltre l'inverosimile ed iniziai quasi a tremare. E a calmarmi non contribuirono certo Argo che si era messo a volare in tondo sopra la mia testa, o il nostro caro Stan Becco che 
+        continuava a sorridere sadicamente. così mi rivolsi al Capitano e, cercando di essere il più calmo possibile, gli chiesi se non era il caso di rientrare alla base. Del resto ad una 
+        prima occhiata dei sensori, quel sistema non aveva niente di bello da vedere e se stavamo là per fare un piacere a De Leone... beh, dopo tutto quello che ci aveva fatto quando 
+        eravamo in Accademia poteva anche sognarsi di ricevere favori da noi. Il Capitano Alighieri, però, mi rispose che aveva degli ordini e che la missione continuava, dicendo inoltre 
+        che non si trattava di fare un piacere a De Leone. E così, un po' grazie alla temperatura dell'astronave che continuava a salire e a scendere (e in quel momento era discretamente 
+        bassa), un po' grazie ad Argo, io non riuscii a calmarmi e continuavo ad essere nervosissimo. E a nulla servì l'idea del Guardiamarina Da Nee di rialzare la temperatura della nostra 
+        astronave: il mio malessere continuava. E, cattivo presagio dopo cattivo presagio, il Capitano per poco non cadde sui segni lasciati dal Numero Uno a causa del suo raffreddore 
+        sul pavimento della Plancia. così decisi di prendermi un attimo di pausa. E dopo aver chiesto il permesso al Capitano ed essermi fatto sostituire dal mio secondo, il Guardiamarina 
+        Boregh (che prima di sedersi alla postazione delle operazioni ringraziò il Capitano per avergli dato un certo catalogo di cui non ho capito il nome), mi diressi verso il 
+        turboascensore per andare nel mio alloggio nella speranza di calmarmi e convincermi che il mio presentimento fosse completamente sbagliato. <br/>
+<br/>
+Scrivere il mio diario personale, mentre bevevo bicchieroni di camomilla formato famiglia, non aveva contribuito per niente a calmarmi. Qualcosa sta per andare male, lo sento, e anche se 
+        non sono un Betazoide e non ho nessun potere empatico, ne sono più che convinto. Forse dovrei andare in Infermeria a farmi dare un calmante... no, non se ne parla. Preferisco 
+        evitare di prendere medicine. Se dovesse succedere veramente qualcosa voglio poter essere pronto a svolgere il mio dovere. Quindi credo che sia il caso di prendere un'altro po' di camomilla.<br/>
+Rivolgendomi al replicatore dissi "Una Caraffa di Camomilla ultra concentrata." <br/>
+E ora, appena mi sono scolato questa camomilla, me ne torno in Plancia e che accada ciò che deve accadere...
+                                </p>
+
+                                <br />
+                                <em style="color:rgba(248,248,255,0.5);">
+                                        GM Peter Jacket<br />
+                                        COO<br />
+                                        USS Afrodite NCC-1863
+                                </em>
+                                </p>
+
+                        </div>
+                </div>
+
+                <!-- Navigation -->
+                <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+                        <a href="log_mission4.html" class="btn-back">
+                                <i class="fa-solid fa-chevron-left"></i> Log Mission: 4
+                        </a>
+                        <div style="margin-left:auto;display:flex;gap:8px;">
+                                <a href="log_mission4_09.html" class="btn-back" style="margin-bottom:0;">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <!-- Ultimo diario: bottone successivo spento -->
+                                <span class="btn-back"
+                                        style="opacity:0.25;cursor:default;pointer-events:none;margin-bottom:0;">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                        </div>
+                </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer id="site-footer"></footer>
+        <script src="script.js"></script>
+</body>
+
+</html>

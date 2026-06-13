@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario D'Accardi – Mission 4 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="log.html">Log</a>
+    <span>›</span>
+    <a href="log_mission4.html">Mission: 4</a>
+    <span>›</span>
+    <span class="current">Diario Personale – GM D'Accardi</span>
+  </div>
+
+  <!-- Diary page -->
+  <div class="diary-wrapper">
+
+   <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-solid fa-shield-halved"></i> &nbsp;SEC &nbsp;·&nbsp; XTO &nbsp;·&nbsp; Diario Personale
+        </div>
+        <div class="diary-header-name">GM C. D'Accardi</div>
+        <div class="diary-header-mission">Mission: 2 — The betrothed</div>
+      </div>
+      <!-- Miniatura PG + link scheda -->
+      <div class="diary-header-pgbox">
+        <img src="images/crew/daccardi_l.jpg" alt="C. D'Accardi"
+                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+        <a href="crew_daccardi.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+      </div>
+    </div>
+    <div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">10101.15 </span>
+      </div>
+
+      <!-- PROLOGO -->
+      <div class="diary-section-title">Prologo</div>
+
+      <p>
+È la fine del turno di guardia in Infermeria e Vanian forse per la prima volta da quando si è imbarcata sulla USS AFRODITE sente il peso di una giornata di lavoro... e che giornata!<br/>
+La giornata più difficile della sua carriera nella Flotta si era appena conclusa con il bendaggio di una mano al Sottocapo Winkler della sicurezza slogata durante la mega rissa scoppiata in sala mensa.<br/>
+Già, la mega rissa... dovuta tutta ad un ordine dell'Ufficio Logistico della Flotta concernente le nuove divise di color giallo che hanno lasciato perplessi i più e insoddisfatti i molti!<br/>
+Avete mai visto un Klingon vestito di giallo?<br/>
+Beh, il GM Tony Santagata ha provato ad esprimere la propria impressione a Boregh il quale, sentitosi offeso nell'onore, ha rifilato una ginocchiata nei denti al povero ufficiale dando così 
+        origine ad una mega rissa che ha coinvolto 43 persone! Per fortuna che il nostro Klingon è un tipo mite!<br/>
+Ci sono voluti dieci minuti di dura battaglia per le squadre della sicurezza per riportare l'ordine con il risultato di 15 persone in infermeria per medicazioni varie, 2 ricoverati in 
+        osservazione (il Tony Santagata e il Sottocapo Potzie Weber del Servizio Tecnico che ha riportato un morso ad un orecchio) e la sala mensa ridotta ad un ammasso di ferraglia e sedie rotte.<br/>
+Ma il problema più grosso è stato quello di calmare la povera Ernestina Scramiglio una volta ripresasi dal mancamento dovuto alla visione di quella sala (post-rissa) che era stata appena pulita (pre-rissa).<br/>
+Sedutasi sulla sedia, Vanian stava passando le consegne all'infermiera appena giunta e che le stava per dare il cambio; quando ecco, dalla porta, spuntare il Vice Capo della Sicurezza.<br/>
+"Ciao Vanian" fa lui.<br/>
+"Ciao... oggi non vengo alle prove del coro: sono proprio stanca... scusami!"<br/>
+"Non ti preoccupare... neanche io ci vado; ho da compilare il rapporto sulla rissa per il Capitano e avevo bisogno di parlare con Tony...<br/> come sta?"<br/>
+"La dottoressa è con lui adesso... nonostante i sedativi continua a lamentarsi nel sonno... io ti consiglierei di passarci più tardi!"
+"Ah... capisco... ma già che ci sono... prenderesti un the con me o sei veramente troppo stanca?"<br/>
+"Ma sì, un the... ma questa volta voglio andare a dormire... l'ultima volta siamo stati sei ore a parlare ed ho saltato il mio turno di riposo".<br/>
+"Mi dispiace" fa lui con sincero rincrescimento.<br/>
+"A me no" fa lei con un sorriso grande come una casa avviandosi verso il ponte d'osservazione.<br/>
+E mentre i due si allontanano dall'infermeria, in sala teletrasporto fanno ingresso due civili imprevisti: la moglie di Adam Smith (Eva Brown) e Daniel D'Accardi (fratello del Vice Capo 
+        della Sicurezza). I due hanno ottenuto un passaggio dalla USS ARGO che si sta dirigendo verso il sistema TURK-1A per una missione umanitaria (una serie di grossi terremoti ha 
+        devastato parte del terzo pianeta) e che - guarda caso - incrociava la rotta con quella della AFRODITE.<br/>
+<br/>
+Tre ore dopo, al suo rientro in alloggio, Christian trova una sorpresa.<br/>
+"E tu che ci fai qua?"<br/>
+"È così che si accoglie tuo fratello?" dice Daniel con un sorriso all'Ufficiale Federale. Poi riprende: "Ti devo parlare, siediti che la ARGO deve ripartire tra un paio d'ore".<br/>
+Dopo un quarto d'ora di informazione sui parenti più prossimi, Daniel spara il vero motivo del loro incontro.<br/>
+"E poi, ti devo parlare di una cosa"<br/>
+"Dimmi"<br/>
+"So già che non capirai, ma te lo voglio dire lo stesso"<br/>
+Christian stava per perdere la pazienza.<br/>
+"Daniel cosa c'è? Cos'è così difficile da dire?"<br/>
+Dopo ancora un attimo di tentennamento...<br/>
+"Ho deciso: mi arruolo nei Maquis!"<br/>
+"E lo vieni a dire a me? Ad un ufficiale della Flotta?"<br/>
+"No, lo vengo a dire a mio fratello!"<br/>
+In quel momento realizzò ciò che per anni non aveva compreso: i due fratelli si stavano allontanando (non solo geograficamente, ma anche a livello personale)!<br/>
+Sì, erano figli degli stessi genitori, avevano vissuto negli stessi posti e con le stesse persone, poi Chris aveva preso la carriera nella Flotta (l'Academy prima e l'Afrodite ora), 
+        aveva cavalcato e domato la velocità a curvatura, si era preparato per girare per mondi strani; Daniel invece era rimasto a casa a vedere il lato meno brillante della Federazione, 
+        lui figlio secondogenito di un capace funzionario federale che gli aveva insegnato cosa voleva dire essere ed appartenere alla Federazione, aveva convissuto con funzionari incapaci 
+        e intenti a soddisfare prima di tutto i loro bisogni; lui sempre ligio ai regolamenti aveva visto infrangere le stesse regole che gli stessi funzionari dovevano far rispettare; lui, 
+        infine, che aveva visto abbandonare dei civili inermi in mani nemiche per discutibili "convenienze politiche" aveva deciso di ribellarsi a questa Federazione.<br/>
+Erano due fratelli, ma stavano percorrendo due strade diverse: erano le due facce della stessa medaglia!<br/>
+Passarono diversi minuti in silenzio. Daniel che guardava fuori verso la nave ARGO dal finestrino della stanza; Christian ancora incredulo continuava a giocherellare con l'ologramma che lo 
+        ritraeva insieme al fratello che di solito stava sul suo comodino (come c'era finito nella sua mano non lo sapeva).<br/>
+"Volevo che lo sapessi direttamente da me..."<br/>
+Chris non rispose, ma dopo un po':<br/>
+"Lui, lo sa?"<br/>
+Non occorreva spiegare chi fosse quel lui: loro padre.<br/>
+"No, oltre a te lo sa solo mamma."<br/>
+C'era ancora poco da aggiungere.<br/>
+Dopo altri cinque minuti si lasciarono, così semplicemente... ognuno per la propria strada.<br/>
+<br/>
+In un'altra stanza, sul ponte inferiore, Eva era giunta alla resa dei conti con Adam sorpreso anche questa volta tra le braccia di una donna!!!<br/>
+Le urla si sentirono per tutta la nave e c'è chi giura che anche sulla Argo le persone più sensibili potevano sentire - in lontananza - i suoni e le minacce provenienti da quella "tranquilla donnina".<br/>
+Ad aggiungere il disagio provato dall'equipaggio della Afrodite, c'è anche l'arrivo di uno strano messaggio da parte del Commando di Flotta il cui testo è stato riferito (in cuffia) solo al Capitano.<br/>
+Col passare del tempo, però, Capitan Beppe prende di petto la situazione ed organizza l'attività di bordo e la nuova missione; ovviamente con le normali precauzioni del caso:<br/>
+  <ol style="margin-left:50px">
+    <li> trasferimento dei civili sulla ARGO</li>
+    <li> trasferimento immediato della Afrodite in zona di missione (dietro preventiva sosta d'obbligo al Disney Planet)</li>
+    <li> piantonare Adam Smith (o limitare la sua possibilità di agire soprattutto nei confronti delle donne dell'equipaggio)</li>
+  </ol>
+<br/>
+Ovviamente il punto tre mi riguardava direttamente da vicino.<br/>
+Ho scandagliato per un'oretta buona tutte le schede su tutto il personale della sicurezza presente a bordo e finalmente:<br/>
+"Ma certo T'Val!" dissi alla fine.<br/>
+T'Val, chi era costui?<br/>
+Costui era una colei, alta circa 185 centimetri, culturista, fisico molto attraente e massiccio, ma soprattutto giovane vulcaniana (di padre vulcan e madre klingon) che ha avuto il suo 
+      Pon Far di recente (quindi sessualmente innocua).<br/>
+Fattala chiamare - e alla presenza del Capo Rael - gli ho spiegato la situazione e la sua missione: doveva scoraggiare IN TUTTI I MODI (leciti ed illeciti - all'occorrenza) l'Adam Smith 
+      dal frequentare donne se non lei; la quale doveva fargli capire - sempre con TUTTI I MODI (leciti ed illeciti - all'occorrenza) che certe attività non erano viste di buon occhio 
+      su questa nave... almeno al momento!<br/>
+Nelle tre ore seguenti si sono sentite urla, volare di schiaffi, minacce in Vulcaniano antico... ma effettivamente, il nostro eroe sembrava aver capito l'antifona... almeno così sembrava 
+      a prima vista! E poi, certe attività fisiche non erano adatte ad un corpo così malridotto dopo la cura di T'Val...<br/>
+<br/>
+E la povera Eva?<br/>
+Nel frattempo era stata vista nell'alloggio di Frruuu, a piangere e lamentarsi per quel marito disgraziato, ed il nostro Primo Ufficiale ci ha messo tutta la sua buona volontà per calmare 
+      la giovane umana tant'è che sono rimasti in cabina per tutta la giornata (Oh, quale raro esempio di dedizione al lavoro)!<br/>
+In tutto questo, Capitan Beppe affronta la sua nuova missione: alla ricerca della Maxwell.<br/>
+È talmente preso dai suoi compiti, che ultimamente sembra si stia scordando di tutti gli impegni presi:<br/>
+<ul style="margin-left:50px">
+  <li>un Nutella party sul ponte 3 (NON ERA MAI SUCCESSO!!)</li>
+  <li>la celebrazione di un matrimonio (un diavolo che celebra un matrimonio?)</li>
+  <li>la presenza di un clandestino a bordo (scoperto da non so chi e non so come)</li>
+  <li>la presenza di un prigioniero ferengi</li>
+  <li>e - udite udite - di Frruuu </li>
+</ul>
+Come l'ha presa la giovane horta?<br/>
+E chi lo sa? è sempre chiusa nella sua cabina con Eva!!!
+      </p>
+
+      <!-- DIARIO -->
+      <div class="diary-section-title">Diario di Missione</div>
+
+      <p>
+        Ogni volta che sono di turno in Plancia, mi stupisco per la quantità di operazioni che in questa sala si controllano: operazioni che non sempre sono da manuale - come da tradizione 
+        sull'Afrodite - ma che non abbassano di molto il livello d'efficienza della nostra beneamata "bambina".<br/>
+Ad esempio, in questo momento Capitan Beppe, sta passeggiando nervosamente per la Plancia a causa di un piccolo disguido tecnico: il nostro prode Beppe ha ordinato di raggiungere il Disney 
+        Planet (che sia quella la nostra nuova destinazione?) ma il computer non ne vuole sapere di portarci al nostro pianeta dei divertimenti. (Che ci sia lo zampino del ferengi?)<br/>
+Il servizio tecnico ha proposto di reinizializzare l'intero sistema montando magari il nuovo sistema operativo Windows 2500; ma Capitan Alighieri non ne vuole sapere di attendere tutto 
+        quel tempo (dovremmo ritardare la sosta al Disney Planet e - parole sue - "non se ne parla proprio!") e passeggia nervosamente attorno alla postazioni tecniche.<br/>
+Invece, la nostra prode horta ha trovato il modo di passare il tempo in modo diverso: sta respingendo (con non troppa convinzione, a dir la verità) le avance di Eva Brown Smith, la quale, 
+        in un angolino della Plancia, tenta di attirare su di sé l'attenzione della nostra horta proprio sotto gli occhi del Capitano: disgustosa!<br/>
+Una notizia proveniente dal ventre della nave, però porta il sorriso al nostro amato Capitano: il ponte ologrammi è stato riparato.<br/>
+Beppe, girandosi con uno sguardo glaciale ma con una strana luce negli occhi, ci comunica che va a vedere la sua holonovela e, "chi di dovere", si organizzi per farci arrivare al Disney 
+        Planet! Non importa come: anche a spinta!<br/>
+Questa è la nostra Afrodite: un complesso strano di umanoidi (ed horte) in divisa gialla che tentano di rappresentare in modo sufficientemente degno la tradizione della Flotta Stellare.<br/>
+A proposito di divise gialle: quel diavolaccio del nostro Capitano, ha inviato un dettagliato rapporto alla Federazione (corredato dei certificati medici appropriatamente preparati dalla 
+        nostra équipe medica) dove è dimostrato - dati alla mano - che alcuni di noi sono allergici alle nuove divise! Speriamo bene, perché dopo l'introduzione delle nuove uniformi 
+        ci sono state ben due risse e sono aumentati i conati di vomito!<br/>
+<br/>
+All'improvviso sono attratto da un puntino luminoso davanti al mio schermo: una nave sconosciuta sta entrando dentro una nebula davanti a noi: aziono i sensori a lungo raggio ma... niente... siamo troppo lontani.<br/>
+Finalmente Frruuu riesce ad allontanare Eva (la quale continua il suo show in un angolo della Plancia) e assume il comando in attesa dell'arrivo di Beppe alle prese con la holonovela.<br/>
+<br/>
+Dopo attenta analisi della banca dati scopriamo che abbiamo davanti a noi una rarissima forma di nebula, una nebula musicale; chiamata così perché emana radiazioni simili a noti ritmi 
+        musicali: quella davanti a noi, dicevo, è la mitica Nebula 424 (secondo una vecchia classificazione federale) ovvero "MATILDA"<br/>
+Mentre stiamo per entrare nella nebula e nel momento in cui il sistema computerizzato della nave fa scattare l'allarme giallo, ci arriva un messaggio del comando di flotta per informarci 
+        che è stato deciso di revocare l'ordine delle nuove divise: ma non c'è il tempo per festeggiare ora... <br/>
+Ci avviciniamo alla nave sconosciuta e - questa volta - riconosciamo la sagoma della nave ammiraglia della flotta: la USS ENTERPRISE del Capitano Picard inviata a studiare le caratteristiche di questa strana nebula.<br/>
+Tralasciando la descrizione della figuraccia fatta con Picard e soci (Alighieri si presenta in canottiera canticchiando al ritmo della nebula; Eva - in atteggiamenti al limite dell'osceno - 
+        cerca di recuperare l'attenzione di Frruuu; Rael è "distratta" da quei "maschioni" dell'Enterprise; l'avvoltoio del Capitano e Geppo che rsi azzuffano; un ufficiale mai visto prima 
+        che fa ciao ciao dal turbolift; Ernestina che assume la direzione del ponte interloquendo lei con Picard;...) si arriva alla fine del turno con le armi ed i motori che funzionano 
+        alla perfezione. Rael mi dà il cambio - mentre anche Da Nee lo dà a Fabiola - e mi dirigo verso l'Infermeria per salutare Vanian e per l'unico vizio (donne a parte) che mi concedo di tanto in tanto: il poker.<br/>
+Questo giro la posta in palio è molto appetitosa: le armi del nostro prigioniero ferengi fanno gola un po' a tutti specialmente a Frruuu, che però non si presenta all'appuntamento, quindi 
+        decidiamo di arruolare Vanian la quale declina l'offerta: lei non gioca a carte!!!<br/>
+La partita è memorabile: un tripudio di poker, scale reali, scale minime e massime, full d'assi e quella faccia da poker che sono che ha il coraggio di vincere anche con una coppia di 
+        donne ("le donne non si scartano mai" è il mio motto!) mentre giocavo contro un full di re ed una scala. Sarà stata la presenza di Vanian, sempre più bella e più affascinante ai 
+        miei occhi, ma oggi tutti i giochi, anche quelli più atroci e vigliacchi, mi riescono.<br/>
+All'arrivo di Frruuu sto vincendo le preziose armi e l'horta tenta di allontanarmi dal gioco (e dalle armi ferengi); purtroppo per lei, il suo raffreddore (dovuto agli innalzamenti 
+        ed abbassamenti della temperatura della nave da parte di Rael e Da Nee) non mi permette di capire ciò che sta dicendo finché...<br/>
+"ALLARME ROSSO! Il prigioniero è scappato di nuovo!"<br/>
+Non è possibile: questo servizio di sicurezza fa più acqua di un vecchio acquario bucato!!!<br/>
+Per fortuna che Beppe è più comprensivo di Picard, altrimenti adesso viaggiavo appeso per le palle sulle gondole a curvatura...<br/>
+Lascio la partita a malincuore e corro verso la zona di detenzione, quando incrocio il Vice OPS Boregh che riporta verso l'Infermeria il nostro prigioniero piuttosto malconcio. 
+        Lo devo ammettere, questo Klingon comincia un po' a piacermi... chissà che non mi debba ricredere...<br/>
+Mentre lo scorto, pregusto la gioia di Rael: potrà mettere in pratica le tecniche apprese in quel nuovo libro!<br/>
+Lo so: le vecchie ma sempre attuali Convenzioni di Ginevra e le nuove convenzioni di Nuova Elvezia (nonché i regolamenti federali) vietano ogni forma di tortura nei confronti dei prigionieri; 
+        ma questa volta una bella scorticatina a fior di pelle e un bagno nel sale non glielo leva nessuno!!!<br/>
+Non può continuare a prendersi beffa del servizio di sicurezza, soprattutto se sono io il Vice Capo!!!<br/>
+<br/>
+Finalmente, trovo un po' di pace.<br/>
+La partita a poker ormai sarà già finita ed io ne approfitto per riposare un poco.<br/>
+Quante emozioni oggi: Matilda, la fine dell'incubo delle divise gialle ed il ritorno alle vecchie divise, Picard, l'Enterprise, Daniel...<br/>
+Già, Daniel... Non è stato facile congedarsi così da Daniel!<br/>
+Era tanto tempo che non lo vedevo... troppo, a questo punto!<br/>
+Forse l'ho perso una seconda volta: per l'ultima volta!!!
+      </p>
+      
+        <br/>
+        <em style="color:rgba(248,248,255,0.5);">
+          GM Christian D'Accardi<br/>
+          XTO<br/>
+          USS Afrodite NCC-1863
+        </em>
+      </p>
+
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+    <a href="log_mission4.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Log Mission: 4
+    </a>
+    <div style="margin-left:auto;display:flex;gap:8px;">
+      <a href="log_mission4_07.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <a href="log_mission4_09.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>
