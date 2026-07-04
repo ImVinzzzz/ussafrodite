@@ -1,0 +1,552 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Alighieri – Mission 5 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission5.html">Mission: 5</a>
+      <span>›</span>
+      <span class="current">Diario di Bordo – Ten JG Alighieri</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #800000 0%, #5a0000 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-circle-chevron-up"></i> &nbsp;COM &nbsp;·&nbsp; CO &nbsp;·&nbsp; Diario di Bordo
+          </div>
+          <div class="diary-header-name">Ten JG G. Alighieri</div>
+          <div class="diary-header-mission">Mission: 5 — It's a Long Way to Tipperary</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/alighieri_l.jpg" alt="Giuseppe Alighieri"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_alighieri.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10108.25</span>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Appena sbarcato sulla base stellare il capitano Alighieri viene avvicinato da un giovane aitante ufficiale che
+          gli consegna
+          un PADD contenente un messaggio riservato personale proveniente dalla UCSM (Ufficio controlli salute mentale )
+          il cui contenuto,
+          effetti e derivati saranno resi disponibili in altra sede e nella prossima STICCON. Si sappia solo a gentile
+          richiesta che il
+          terribile Ammiraglio Terenzio Colbotto - non soddisfatto dello stato psicologico della Afrodite - ha richiesto
+          al Supremo
+          Dr. Comm. Proff. Egregio Giuseppe Bottino di operare un controllo di salute mentale a tutti i membri
+          dell'Equipaggio.<br/>
+          Detti controlli sono stati regolarmente effettuati prima delle meritate licenze e ogni membro della nave ha in
+          effetti
+          incontrato il suddetto Supremo con effetti non trascurabili sul proprio andamento di carriera.<br/>
+          Ma questa è un'altra storia.<br/>
+          Ora le licenze sono in pieno svolgimento e le macchinazioni per interromperle anche...
+        </p>
+
+        <p><span class="diary-section-subtitle"><br>
+            Terra di Sopra, Sahara, durante il meritato riposo dopo-Bottino</span></p>
+
+        <p>
+          ... eppure quella mi sembra la dottoressa T'Mik... cosa farà anche lei da queste parti?<br/>
+          - Ehi, signora, vuole spostarsi mi occupa la visuale... Ma non lo vede che sono già in compagnia? Vuol farmi
+          litigare
+          con la piccola, qui? Non le conviene, quando è arrabbiata Frruuu se le pappa a colazione quelle verdi come
+          lei.. mangia
+          macrobiotico, non lo sapeva?<br/>
+          Ops, scusate, telefono.<br/>
+          <span class="diary-cpu">LEI HA UN NUOVO MESSAGGIO, bam bam!</span><br/>
+          - Scusa, cocca, torno subito. Cosa centra la sabbia?
+        </p>
+
+        <!-- MESSAGGIO -->
+        <div class="msg-box">
+          <div class="msg-box-header">
+            <i class="fa-solid fa-satellite-dish"></i>
+            INCOMING MESSAGE
+            <span class="msg-id">MSG-XZF-005</span>
+          </div>
+          <div class="msg-box-body">
+
+            <div class="msg-box-row">
+              <span class="msg-label">Da:</span>
+              <span class="msg-value">Comandante Ailoura – Comando di Flotta</span>
+            </div>
+            <div class="msg-box-row">
+              <span class="msg-label">A:</span>
+              <span class="msg-value">Ten. JG G. Alighieri - USS Afrodite</span>
+            </div>
+            <div class="msg-box-row">
+              <span class="msg-label">Oggetto:</span>
+              <span class="msg-value">CONVOCAZIONE URGENTE!</span>
+            </div>
+            <div class="msg-box-row">
+              <span class="msg-label">Testo del messaggio:</span>
+            </div>
+
+            <!-- Testo libero opzionale sotto le righe strutturate -->
+            <div class="msg-box-text">
+              <p>BUONGIORNO, Beppe: qualcosa o qualcuno sta diturrrbando le comunicazione subspaziali con un enorrrme
+                mole di messaggi
+                ogni nanosecondo, mandando in tilt il sistema di comunicazione della Federazione interrna. Nelle
+                coordinate che le sto
+                inviando c'è la probabile fonte dei nostrrri guai al Comando.<br/>
+                La sua missione Beppe, se dovesse decidere di accettare, è di trovare il sistema da cui provengono
+                queste trrrasmissioni
+                radio, sbarcaree sul pianeta e far terminare le interferenze.<br/>
+                Come sempre, se doveste mettervi nei guai o perdervi in qualche Nebula senza autorizzazione, la
+                Federazione COL CAVOLO che
+                verrà a recuperarrrrvi.<br/>
+                Questo PADD si autodistruggerrrrà entro 5 secondi.<br/>
+                Buona Forrrrrtuna, Beppe.</p>
+            </div>
+
+          </div>
+          <div class="msg-box-footer">
+            <span>Canale sicuro · Crittografia livello 4</span>
+            <span>STARFLEET COM</span>
+          </div>
+        </div>
+        <p>
+          È finita la licenza, lo sapevo. - Forza piccola, si torna a casa.
+        </p>
+
+        <p><span class="diary-section-subtitle"><br>
+            USS Afrodite - Plancia</span></p>
+
+        <p>
+          - Capitano in Plancia. Atciumm!<br>
+          - Comodi. Signor Boregh, controlli che tutto l'equipaggio sia tornato e pronto a partire, voglio un secondo
+          riscontro, non si sa mai.<br>
+          - Si, signore.<br>
+          - Cos'è tutta questa sabbia in giro per la nave?<br>
+          - Pare che tutti abbiano avuto la nostra idea, Beppino.<br>
+          - Il primo che fa un commento lo mando dai miei. Forza che si parte...<br>
+          <br>
+          - Allora, signor Boregh?<br>
+          - Tutti a bordo, Capitano, eccetto il dottor Adams e il signor D'Accardi.<br>
+          - Cos'è questa storia, Rael? Che significa... in licenza a tempo indeterminato e indeferibile per problemi
+          familiari? Di nuovo il fratello Maquis?<br>
+          - Purtroppo ne so quanto lei capitano. Chris spera di raggiungerci durante la missione, ma non è riuscito a
+          dirmi altro.
+          Per il momento sarà il signor Ciccozzi a prendere il suo posto. Temporanemaente, si capisce.<br>
+          - Si capisce. Alighieri a Consigliere Becco: è richiesta la sua presenza in Plancia per tutto il tempo in cui
+          Gino Ciccozzi
+          presterà servizio come vice capo della sicurezza. Con effetto immediato.<br>
+          - (Ti pare saggio, beppino? Solo per un paio di gerani?)<br>
+          - (Lascia fare a un vecchio diavolo, cocca. Prenderò un Ciccozzi con un Becco, fava e piccioni capisci?).
+          Alighieri a Dottoressa T'Mik: il nostro Dottor "Cuore D'Oro" manca all'appello, come mai?<br>
+          - Qui T'Mik: ho qualche problema con il mio computer Capitano, ma spero di darle quanto prima delle risposte.
+          Sono certa che
+          il Dottor Adams non ci avrebbe mai lasciati partire senza di lui...<br>
+          - Non possiamo aspettare oltre, dottoressa: anche lui dovrà raggiungerci strada facendo... non avrà problemi a
+          farsi dare un passaggio, immagino.<br>
+          A tutto l'equipaggio: ...nnamo!<br/>
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p><span class="diary-section-subtitle"><br/>
+            USS Afrodite, Plancia.</span></p>
+        <!-- citazione -->
+        <div class="diary-quote">
+          Andiamo Andiamo per lo spazio navighiamo.
+        </div>
+
+        <p>
+          - Mi spiace, capitano: nessuna notizia di Adams. Non riesco a trovare i file relativi alla sua licenza.<br/>
+          - A quest'ora sarà ai Confini dell'Universo con birra e noccioline, ridendo di noi. Sempre stato un tipo
+          strano
+          quell'Adams... Impostata la rotta, Bob. Signor Boregh tenga d'occhio i sensori. (Geppo, lascia in pace il
+          signor Da, vieni qui!!!)<br/>
+          - Perché strano, Beppe?<br/>
+          - Normale non è mai stato. Ci siamo incontrati per la prima volta durante una sua visita nella Terra di Sotto.
+          "Le piace questo posto, dottore?" e lui: "È Caldo".<br/>
+          - Bhè, dove abiti tu fa caldo, Beppino.<br/>
+          - Non era un commento. Era IL COMMENTO: così ha definito il luogo dove sono nato in quella sua pazzesca guida
+          galattica...
+          quella cosa che scrive nei suoi momenti liberi.<br/>
+          <em>"TERRA di SOTTO: caldo"</em>.<br/>
+          - Vi è andata bene. Il suo commento al mio pianeta è stato: "poroso". Come fa un pianeta ad essere
+          poroso?<br/>
+          - Bhè se vi vivono una horta e cinquemila uova, forse... Mi domando cosa pensa veramente della
+          Afrodite...<br/>
+          - "Instabile"<br/>
+          - Cosa???<br/>
+          - Già. Dovremo tenerlo d'occhio quando torna a bordo. Avevo pensato di farlo, ma sai com'è le cose da fare
+          sono così tante...<br/>
+          - ... e i tunnel a tua disposizione così POCHI... Però sono dispiaciuto per la mancanza di Chris... dici che
+          abbiamo
+          esaurito le brutte sorprese???<br/>
+          - Mi scusi, capitano...<br/>
+          - Che un angelo ti strozzi con l'aureola, che "diavolo" sarebbe stà cosa?<br/>
+          <br/>
+          La vista improvvisa di una scatoletta rettangolare piena di liquido lattifero bianco che si muove galleggiando
+          a mezz'aria, con un paio di forbici e un asciugamano ai lati può essere troppo anche per una nave come
+          l'Afrodite. Il capitano non fa in tempo ad esternare il suo stupore che il signor Boregh, che stà effettuando
+          la consueta manovra di abbassamento atta a sedersi, con un improvviso sobbalzo perde la rotta prestabilita
+          verso la poltroncina precipitando da un'altezza di circa due metri e rotti, con ovvio accompagnamento di tonfi
+          e urla gagliarde. Per fortuna, l'abitudine alle cose strane, sviluppo tipico in un equipaggio che in pochi
+          mesi ha già visto tre nebule, un matrimonio e un'Accademia della Flotta fatta con le conchigliette, fà sì che
+          il resto degli ufficiali abbia solo il tempo di alzare vari sopraccigli prima di tornare poi ai rispettivi
+          posti, cercando con notevole perizia di evitare di scoppiare a ridere.<br/>
+          Il simbionte all'interno della scatola si presenta: è Tax Ibisont V, ha frequentato l'Accademia per qualche
+          tempo - va bene -, non sopportava nessuno lì - normale - e adesso fa il parrucchiere. È telecinetico. Dà
+          appuntamento a tutti sul Ponte 3, dopo la pizzeria.<br/>
+          Non bastavano l'avvoltoio bavoso e i vari amichetti del Capitano, ora l'Afrodite ha anche un parrucchiere
+          telecinetico con un brutto carattere. E mentre il nuovo membro della nave - ribattezzato ovviamente "Brontolo"
+          - se ne va caracollando verso il turbolift, e tutto è per il momento tranquillo vediamo come hanno passato il
+          tempo i membri della nave più "instabile" del quadrante Alfa.<br/>
+          <br/>
+          <strong>Il Capitano</strong> sta discretamente bene: lo osserviamo mentre approfitta di questa parentesi di
+          calma per mettere
+          al corrente l'equipaggio del messaggio del Presidente della Flotta (finalmente qualche complimento). Beppe è
+          decisamente rilassato sulla sua poltrona di comando: il gatto in grembo, la sua horta vicino, la nave che
+          corre verso un'altra avventura... ha passato poco tempo a casa sua (giusto un salutino) ma dopo aver superato
+          il
+          colloquio con il supremo Bottino, lui e Frruuu sono stati in giro per il Sahara soli soli (con gatto ma senza
+          avvoltoio) e, se possibile, è addirittura più abbronzato. Bhè diciamo la verita: per la prima volta nella sua
+          lunga vita Beppe è riuscito in ciò che nessuno della sua famiglia è riuscito a fare. Ma certo! È riuscito a
+          cucinare tutto da solo una intera padellata di riso fritto!!! Non è una notizia fantastica?<br/>
+          <br/>
+          <strong>L'Infermeria</strong> è di nuovo quella che conosciamo visto che Ernestina ha lavorato di fino ed è
+          riuscita a spostare
+          tutta la sabbia in un solo corridoio... il problema è che Geppo, come tutti i gatti, considera la sabbia un
+          suo
+          preciso territorio personale e nel mentre stiamo parlando si prepara un gran brutto quarto d'ora per la nostra
+          opearatrice ecologica. La dottoressa ha risolto qualche piccolo problema, compreso il 'colpo di Boregh', ed
+          ora sta cercando con logica e calma vulcaniana di risolvere il problema delle interferenze che le impediscono
+          di avere informazioni dalla Terra. Non si hanno ancora notizie del nostro Dr. Adams...<br/>
+          <br/>
+          <strong>Peter</strong> ha dovuto interrompere il suo pisolino post-licenza-interrotta dopo la caduta di Boregh
+          ed ora si trova
+          in Plancia a svolgere i suoi compiti. Non sa ancora che, con lo scambio dei turni e con la presenza di
+          Ciccozzi in Plancia presto dovrà avere a che fare con Becco. Lasciamolo per ora ai suoi stanchi
+          pensieri.<br/>
+          <br/>
+          Credo che <strong>Rael</strong> si senta un po' sola, ora che il prigioniero ferenghi se ne sta sulla Terra e
+          che Chris è
+          dovuto partire... La vista di Adam Smith in pantaloni aderenti e cuccuma di caffé caldo non la tira più
+          su... chissà, forse per lei è ora di un bel Nutella party. Oh no... le solite interferenze delle ore 21.00 che
+          rallentano le funzioni del computer... mai qualcosa di nuovo!<br/>
+          <br/>
+          <strong>Fabiola</strong> e <strong>Da</strong> sono sempre più affiatati e il reparto scientifico funziona
+          alla grande anche se dipendono
+          parecchio dall'Ingegneria alla quale continuano a cedere personale, necessario per le continue incursioni
+          dell'avvoltoio al suo nido e per tenere d'occhio il nostro capo tecnico... JT ha decisamente l'aria più
+          rilassata, sembra l'unica a cui il colloquio con Bottino abbia fatto bene... non si può dire lo stesso del suo
+          staff che sta di nuovo cercando di dare la caccia ad Argo che DEVE AVERNE FATTO UNA delle sue... le
+          trasmissioni
+          sono sempre più disturbate, via via che la nave procede verso la sua destinazione. Un buon segno? O cattiva
+          digestione?<br/>
+          <br/>
+          <span class="diary-cpu">Starfleet-Tel, messaggio gratuito: l'utente chiamato non è abilitato alla chiamata
+            galattica richiesta.
+            Si prega riprovare più tardi, grazie.</span><br/>
+          <br/>
+          La nave sembra diversa ora che i due cadetti sposati, il prigioniero e la Maxwell sono andati via... bhè, per
+          fortuna abbiamo sempre Il Folle, i canarini, Carter Carter, il clandestino...<br/>
+        </p>
+
+        <!-- YELLOW ALERT -->
+        <div class="yellow-alert">
+          <i class="fa-solid fa-disease"></i>
+          <span>Allarme giallo! Rilevazione NEBULA!</span>
+          <i class="fa-solid fa-triangle-exclamation fa-lg" style="margin-left:auto;"></i>
+        </div>
+
+        <p>
+          - Capitano, abbiamo raggiunto il sistema da cui provengono le trasmissioni radio.<br/>
+          - Grazie, Peter. Cosa significa questo suono straziante, Rael? Non li avevano riparati gli altoparlanti?<br/>
+          - Condizione gialla automatica, capitano... capitano! Vuol dire...?<br/>
+          - Oh no...<br/>
+          - Proprio ora...<br/>
+          - E lo avevamo promesso...<br/>
+          - Com'è bella...! Signore... capitano... signor capitano...<br/>
+          - FERMI TUTTI! UNA NEBULA! Nessuno osi fiatare!<br/>
+          - Ma Beppino...<br/>
+          - Signori, ricordate la promessa al Dr. Bottino? Niente NEBULE, nemmeno alla lontana, dobbiamo dimostrare di
+          essere capaci di attenerci alle regole...<br/>
+          - ...chi, NOI?<br/>
+          - ... Su questa nave?!?!<br/>
+          - Capitano, ce l'ho sugli schermi: Nebula BALLA o Balla Nebula, classe Marinetti; una meraviglia pirotecnica,
+          futuristica...<br/>
+          - Impressionante! Signor Da, niente scherzi, cosa significa per voi 'parole d'onore'?<br/>
+          - <em>Parole, Parole, parole...</em><br/>
+          - Vi prego...<br/>
+          - <em>Parole, parole, parole...</em><br/>
+          - Frruuu...<br/>
+          - <em>... soltanto parole e onore per noi!!!</em><br/>
+          - <em>Ma le 'nebule' non le vogliamo più...!?</em><br/>
+          <br/>
+          Perfino i capi della sicurezza hanno un'anima. Ma Beppe è categorico: per evitare sanzioni disciplinari, ha
+          promesso di non visitare Nebule (a meno che non sia strettamente necessario) e così sarà fatto. Naturalmente
+          Da segnerà di nascosto le coordinate della bella Balla e naturalmente Beppe se ne accorgerà subito ma farà
+          finta di niente. È un delitto sprecare un'occasione come questa ma ogni promessa è debito anche su una nave
+          'instabile' come questa.<br/>
+          <br/>
+          E adesso si ritorna alla missione: eravamo arrivati nel sistema, giusto?<br/>
+          - Alighieri a Cartografia: novità Field? Dove conviene dirigerci per prima?<br/>
+          - Mi spiace, capitano, ma con tutte queste interferenze è difficile capire >#�@*[#[ abbiamo tentato di leggere
+          le carte
+          @#*@�#§� ma le puntine non tengono... ZZZTTT... e ora abbiamo finito anche lo scotch... potrebbe dire a
+          Ernestina di
+          passare un momento a togliere la polvere dalle nostre bacheche? Noi... ftzzxzxZxtXxtcxx<br/>
+          - Field! Signor Da, rintracci Renzi e si dia da fare, basta attaccare con il bostik le fotocopie delle mappe
+          alle pareti IO
+          VOGLIO UNA VERA SALA CARTOGRAFICA, è chiaro? O qualcuno vuole avere una nota di demerito per questo?!?<br/>
+          - T'Mik a Plancia: Capitano... avrei bisogno di parlarle in privato...<br/>
+          - Non adesso, dottoressa... Io non pretendo una sala cartografica in stile nave Galaxy con effetti speciali
+          ovunque...<br/>
+          - Capitano...<br/>
+          - ... ma effettuare i calcoli con il regolo e un lapis non mi pare corretto neanche però... Sì,
+          dottoressa...???<br/>
+          - Capitano: ho notizie del Dr. Adams...<br/>
+          - Frruuu a te il comando. Peter, trovami il pianeta giusto. Arrivo, T'Mik.
+        </p>
+
+        <!-- MSG ADAMS -->
+        <div class="msg-box">
+          <div class="msg-box-header">
+            <i class="fa-solid fa-ribbon"></i>
+            NDR
+          </div>
+          <div class="msg-box-body">
+            <div class="msg-box-text">
+              <p>Certe cose non dovrebbero
+                accadere: non sono giuste e basta. Ma certo, direte voi, quando mai l'Universo è giusto? Douglas Noel
+                Adams
+                è morto. Ci piace immaginarlo ancora vivo scalare EL CAPITAN con la sua solita luce negli occhi, la luce
+                delle avventure, dell'amore per la vita... Preferiamo ricordarlo perso in un volo senza fine incontro
+                alla
+                natura che tanto amava piuttosto che morto in un letto d'ospedale. Questa è stata la sua ultima
+                avventura,
+                non tornerà più fra noi. La persona che sta scrivendo queste righe non lo ha mai conosciuto di persona
+                ma
+                solo attraverso quello che scriveva. In un mondo piatto e senza passione era qualcuno fra i tanti, Un
+                Cuore
+                D'Oro, un folle... stava bene in una nave come la nostra, doveva restarci per sempre. Abbiamo preferito
+                far
+                entrare un pizzico di realtà nella nostra meravigliosa fantasia. Perché una piccola grande luce si è
+                spenta
+                e il mondo (quello mio, quello nostro, forse anche di te che stai leggendo) non sarà mai più lo stesso.
+              </p>
+            </div>
+
+          </div>
+          <div class="msg-box-footer">
+            <span>RIP</span>
+            <span>Stardate May 11 2001</span>
+          </div>
+        </div>
+
+        <.>
+          La nave sembra molto più silenziosa ora che Beppe ha annunciato alla nave intera la morte del Dr. Adams: non
+          c'è' tempo per le esequie, uno dei pianeti è stato individuato come il più adatto per una prima ispezione e
+          Frruuu ha già scelto la squadra di sbarco.<br/>
+          È la prima perdita seria per la Afrodite, per un equipaggio
+          sempre pronto a scherzare su tutto e tutti, che mai si sarebbe aspettato di guardare in faccia la morte,
+          quella vera, per la prima volta.<br/>
+          Frruuu, Peter, Fabiola, Rael, Rogers, Robert, Cip e Ciop... la missione
+          continua, non fatevi prendere dal panico...<br/>
+          E mentre il Capitano segue con fare distratto lo scambio di
+          battute fra Ciccozzi e Becco e i vari sostituti prendono posto alle consolle, il suono fievole del
+          teletrasporto risuona in una piccola valle, laggiù in mezzo alle colline...<br/>
+          Oh Oh... qualcosa avverte il nostro
+          Dottor Robert che qualcosa non va... le interferenze? Il forte vento che li costringe a urlare fra di loro? O
+          il progressivo e inesorabile 'smottamento' del nostro primo ufficiale che, a causa della fortissima gravità,
+          sta lentamente sprofondando nel terreno???<br/>
+          Ma non è il capo Operazioni quello che si sente male, di solito?
+          Infatti tutti stanno barcollando ma la missione non può subire ritardi... Avanti in marcia! Su per le colline,
+          attraverso cascatelle e sentieri, saliamo verso la cima dove i segnali sono più vicini... E come dice la
+          nostra cara horta:<br/>
+          <em>Se avanzo seguitemi!<br/>
+            Se indietreggio, scansatevi!<br/>
+            Se mi fermo... spingetemi!!!</em><br/>
+          <br/>
+          Sulla nave, intanto, le cose non sembrano andare meglio: la sala motori sembra il solito campo di battaglia
+          (infatti Jt ha preferito restare a supervisionare in alto ed è stato mandato il signor Rogers... Rogers?! Con
+          la squadra di sbarco). Mancano pochi altri minuti al solito guasto al teletrasporto che di solito accade
+          quando QUALCUNO è fuori della nave. Meglio fare i soliti controlli e mandare il solito Castell a riparare i
+          danni...!<br/>
+          Sarà meglio anche chiamare Ernestina, c'è una macchia di caffé per terra e se qualcuno ci passa
+          sopra...ATTENTA!!! O povero Capo!<br/>
+          Questi ingegneri e i loro spuntini di mezzanotte!<br/>
+          <br/>
+          Beppe sta accarezzando il gatto, perso nei suoi pensieri: si riscuote soltanto quando un forte botto dietro le
+          sue
+          spalle gli procura l'unico istante di divertimento della giornata: Gino Ciccozzi, il nuovo vice della
+          sicurezza (ed ex della sua ragazza) è appena piombato a terra rovesciandosi addosso una tazza di caffé
+          bollente... basta solo un veloce sguardo con il capitano e già Becco è in azione: il consigliere è attratto
+          dai tipi strani e barcollanti come un tribolo da un vulcaniano e si offre subito per prestare i primi
+          soccorsi. Con i due fuori tiro e con Da che supervisiona il resto forse Beppe potrebbe assentarsi per vedere
+          la consueta puntata della sua holonovela preferita.<br/>
+          Ma... incredibile! Resta al suo posto, non fa neanche l'atto di alzarsi. Ciò che è successo al Dr. Adams lo ha
+          dunque sconvolto a tal punto? Forse, per la prima
+          volta nella sua lunga e immortale vita, Beppe HA PAURA per la sua squadra di sbarco?<br/>
+          Forse HA PAURA che qualcun altro possa non TORNARE a bordo!?<br/>
+          <br/>
+          - <em>Agile come un daino, pur col pesante zaino...!!!<br/>
+            - It's a long way to Tipperary!!!<br/>
+            - Noi siamo come le lucciole... brilliamo nelle tenebre...</em><br/>
+          <br/>
+          - Continuate a cantare e a fare gli spiritosi e vedrete! Risparmiate il fiato e spingete! È così che ubbidite
+          al vostro NUMERO UNO?<br/>
+          - Signorsì!<br/>
+          - OOOOhhhhhhh isssaaa! OOOOOOOhhhhhhh issaaaa!<br/>
+          - Rael, questo comportamento triviale dei vostri subalterni non depone a vostro favore...<br/>
+          - Cip, Ciop SILENZIO! Signor Frruuu, in cima è pieno di trasmettitori radio, il paradiso dei radioamatori. Se
+          noi... Rogers, attento!!!<br/>
+          - Ahi, i miei gangli! Rogers, vi sentite bene?<br/>
+          - Siete ancora vivo? Avanti, Robert, come sta? Andate a ripigliarlo ai piedi della collina...<br/>
+          - Veramente preferirei tenere sotto controllo il nostro secondo, signor Rael: temo che nella sua attuale
+          situazione qualcosa non vada bene...<br/>
+          - Ma davvero! Che chicca deduttiva! Il fatto che stia lentamente scomparendo dentro il terreno non le è del
+          tutto sfuggito,
+          quindi! Può controllare la gravita, dottor Robert?<br/>
+          - No signore, le interferenze sono troppe.<br/>
+          - E allora, fili ad aiutare Rogers!<br/>
+          - Sì, Signore, subito Signore!<br/>
+          - Etccciummmm! E si sbrighi, l'erba bagnata mi sta raffreddando! Snifff!<br/>
+          <br/>
+          C'è vento sulla collina quando finalmente la squadra arriva. Rogers si è procurato diverse ferite durante le
+          sua caduta e sarebbe
+          meglio una visita esplorativa sulla nave ma INDOVINATE UN PO' (?!) il teletrasporto non funziona bene e
+          gruppi di furiosi ingegneri pieni di amuleti scaccia iella stanno tentando in questo momento di riparare il
+          riparabile.<br/>
+          Peter si è dato da fare nel frattempo ed ha scoperto nell'ordine (a) il pannello di controllo
+          dell'intera stazione; (b) il segnale di provenienza; (c) il modo per tradurlo e... (d) un cesso. <br/>
+          Delle 4 scoperte l'ultima sembra essere la più promettente (e la più utile tutto sommato) e dopo varie altre
+          ricerche accompagnate da strani rumori e sghignazzamenti vari, il nostro valente capo operazioni fa la
+          scoperta del secolo: all'interno dello strano bagno - in ottima porcellana autopulente - vi è una porta che
+          permette di accedere ad una sala controllo piccola ma perfettamente funzionante.<br/>
+          <br/>
+          - Fael, mesti di fuardia. E voi beguitemi. O beglio sbingefemi... Etccciummm!<br/>
+          - Subito, Signor Frruuu!<br/>
+          - Dobbiamo trovare il modo di spegnere l'impianto senza distruggere altro...<br/>
+          - E se non fosse questo il pianeta da cui dipende il segnale di
+          partenza? Che dice Fabiola, se noi...?<br/>
+          - Giusto, questo potrebbe essere solo un pianeta satellite per la ritrasmissione dei dati ricevuti...
+          Fatto! Dobbiamo tornare sulla nave e dirigerci verso...<br/>
+          - Signor Frruuu, le condizioni di Rogers sono peggiorate, deve essere portato a bordo subito. Tutta la squadra
+          deve tornare, la
+          forza di gravità di questo pianeta è molto più alta di quella terrestre. Vuole qualcosa per il suo
+          raffreddore?<br/>
+          - Farà meglio, bottore. Un antro starbuto e potrei trovarbi dall'altra parte del pianeta!<br/>
+          - Ho le coordinate del pianeta, signor Frruuu. Il teletrasporto è stato riparato, filiamocela finché siamo in
+          tempo!<br/>
+          <br/>
+          Bel lavoro, Afrodite!<br/>
+          Siate tornati in tempo e siete tornati tutti. Frruuu ha smesso di starnutire
+          (un bel sollievo visto che come sappiamo i raffreddori delle horta sono molto fastidiosi).<br/>
+          Visto che gli ingegneri hanno riparato il teletrasporto a tempo di record e che per raggiungere il pianeta,
+          alle
+          coordinate trovate da Renzi, ci vorranno almeno due ore il Capitano ha ordinato di trovarsi tutti quanti in
+          sala ologrammi in alta uniforme per una piccola commemorazione.<br/>
+          Gli unici esentati sembrano essere Rogers, il quale sta abbastanza bene ed è guarito da tutto eccetto il
+          raffreddore
+          (oh si, c'era MOLTO vento) e Ciccozzi, il quale è in preda a strani e mesti dolci ricordi del suo passato con
+          Frruuu e ha preferito
+          restare nel suo alloggio a fissare i suoi gerani.<br/>
+          <br/>
+          Tutti gli altri sono ora davanti ad uno strano, mesto e melanconico Capitano, in alta uniforme:<br/>
+          - Ufficiali, compagni, ex-cadetti... siamo qui riuniti oggi per salutare un grande compagno di
+          avventure:<br/>
+          <strong>Douglas Noël Adams</strong> ci ha lasciato per intraprendere il suo ultimo
+          viaggio verso i <em>confini dell'universo...</em> gli saremo sempre grati per tutte le risate, il calore e il
+          conforto
+          dei suoi racconti meravigliosi.<br/>
+          Questo è il tributo di un equipaggio di <em>praticamente innocui</em> esploratori a
+          un grande viaggiatore di strade e <em>autostrade galattiche</em>.<br/>
+          - Pronti con la salva di 42 colpi di phaser...<br/>
+          - Pronti, Capitano!<br/>
+          - FUOCO!<br/>
+          <br/>
+          <em>Addio, Doug, e grazie per tutto il pesce</em> (...che davi a Geppo!)<br/>
+          - (Accidenti, Frruuu, non volevo far commuovere tutti: rischiamo di annegare fra le lacrime se non facciamo
+          qualcosa!)<br/>
+          - (<em>Niente panico</em>, Beppe: non lo vedi? Abbiamo tutti <em>un'asciugamano</em>...) <br/>
+          <!-- citazione -->
+          <div class="diary-quote">
+            A Douglas Noel Adams (1952-2001)<br/>
+            <span class="diary-em">La USS AFRODITE</span>
+          </div>
+
+          <br/>
+          <em style="color:rgba(248,248,255,0.5);">
+            Tenente JG Giuseppe Alighieri<br/>
+            CO<br/>
+            USS Afrodite NCC-1863
+          </em>
+          </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission5.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 5
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission5_00.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission5_02.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

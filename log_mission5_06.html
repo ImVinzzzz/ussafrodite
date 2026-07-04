@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Van Bajark – Mission 5 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission5.html">Mission: 5</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Van Bajark</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-staff-snake"></i> &nbsp;MED &nbsp;·&nbsp; XMO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM R. VAN BAJARK</div>
+          <div class="diary-header-mission">Mission: 5 — It's a Long Way to Tipperary</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/vanbajark_l.jpg" alt="GM Van Bajark"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_vanbajark.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10108.25</span>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Finalmente un po' di vacanza!Anche noi Vulcan (o mezzi tali) ce la meritiamo, lo sapete? Io, come meta del mio
+          agognato periodo
+          di riposo, ho scelto di andare a trovare una mia amica, la dott.ssa T'Arey a Mata-Utu sulle isole Wallis e
+          Futuna, dove è Capo
+          Ricercatore Medico presso l'Istituto Federale di Medicina Tropicale. Sono arrivato da qualche giorno, dopo un
+          viaggio molto
+          sconfortevole; dalle isole Fiji a Wallis c'è solo una navetta a settimana per il collegamento veloce, e
+          essendo io arrivato
+          di Sabato ho dovuto prendere un mezzo quasi da museo che ci ha messo quasi 4ore! È una fortuna che per il
+          personale e per gli
+          ospiti ci siano alloggi molto confortevoli, mi sono potuto riposare abbastanza.<br />
+          <br />
+          "Come va con il tuo lavoro di ufficiale medico, Robert?" (Pensando a queste cose sono arrivato nell'ufficio di
+          T'Arey e nemmeno
+          me ne sono quasi accorto!)<br />
+          "Sai ho sentito che a bordo vi date alla pazza gioia, con tanto di riso fritto e Nutella Party, un
+          comportamento molto illogico
+          per dei membri della flotta! Hai mai pensato di farti trasferire in un posto più tranquillo, ad esempio che su
+          una stazione spaziale?".<br />
+          "A dire il vero, T'Arey, non sono molto propenso a cambiare: sì, ci sarà la sua illogicità a bordo, ma la mia
+          parte umana si trova
+          benissimo; e poi T'Mik è un ottimo ufficiale e una brava amica..."<br />
+          All' improvviso da una stanza attigua entra una donna grassa vestita in modo moolto stravagante...<br />
+          "T'Arey, scusa se mi sono interrotto ma... chi è quella donna? Sai, assomiglia molto ad una certa persona che
+          c'è a bordo...
+          "sto diventando stranamente nervoso quando vedo la signora aggirarsi tra le apparecchiature con fare sospetto
+          e... zack tira fuori
+          da una tasca un qualcosa che ho gia visto tante volte... uno STRACCIO PER LA POLVERE!!!<br />
+          "Gliel'avevo detto dotto' che era tutto sporco...".<br />
+          T'Arey, con un sopracciglio alzato, replica:<br />
+          "Robert, ti presento... ANNA SCRAMIGLIO, addetta alle pulizie qui in Istituto... credo sia un po'
+          maniaca..."<br />
+          "AAAAAAARGHHHHHH!!!". Ma in quel mentre suona il mio delta: è T'Mik che mi comunica la fine forzata delle
+          nostre ferie... per fortuna! Senza batter ciglio...<br />
+          "AFRODITE... uno da teletrasportare..."
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <>
+          Un eccesso di umanità, del tutto giustificabile ma sempre un eccesso, ecco cosa è stato quell'urlo, stavo
+          dicendo tra me e me
+          appena rientrato; chissaà cosa deve aver pensato di me T'Arey, devo avergli fatto una cattiva impressione, gli
+          manderò una lettera
+          appena possibile. Cosa sarà mai successo di così grave per farci interrompere le ferie così d'improvviso? Le
+          faccie del personale
+          che incontro la dicono lunga sul loro stato emotivo... A quanto pare qualcuno o qualcosa sta interferendo con
+          le comunicazioni
+          della Flotta ,ecco il motivo per cui il Comando ci spedisce a controllare. Il mio alloggio è in ordine proprio
+          come lo avevo
+          lasciato, bene vedo che i documenti sulla crisi Ekloviana sono ancora qui, forse Ernestina non ci ha badato.
+          Mi sto domandando,
+          mentre raggiungo l'infermeria, se la signora Ernestina ha dei parenti o quella Anna è solo un ononima, bah...
+          farò fare una ricerca
+          al computer più tardi...<br />
+          "Computer, fai un check-up di livello 2 su tutta la nave, codice di autentificazione Van
+          Bajark-3-9-omega".<br />
+          <span class="diary-cpu">Check-up iniziato, termine tra due minuti e trenta secondi.</span><br />
+          "Computer controlla la lista del personale di turno e non dell'Infermeria. Avvisa nel caso qualcuno sia
+          assente..."<br />
+          "'namoooo" l'ordine di partenza del nostro capitano è proprio singolare...<br />
+          <span class="diary-cpu">"Check-up livello 2 ultimato, nessuna fonte esterna di radiazioni rilevata. Rilevata
+            amalgama
+            sottile di materiale siliceo e granati vari in percentuale 0.75% a bordo. Provenienza
+            sconosciuta."</span><br />
+          Possibile che ci sia la presenza a bordo di....SABBIA?<br />
+          "Computer, fa una analisi spettrometrica della amalgama: può essere sabbia?"<br />
+          <span class="diary-cpu">"Affermativo, sabbia. Livello granulato: 78% Silice, 21% residui ferrosi, tracce di
+            feldspati"</span><br />
+          "Provenienza possibile?"<br />
+          <span class="diary-cpu">"Deserto del Sahara 95.5%; deserto del Niger 4.5%"</span><br />
+          Chissà chi ha portato a bordo sabbia del deserto. Non è una cosa logica sgrullarsi le scarpe appena
+          rientrati?<br />
+          <span class="diary-cpu">"Controllo del personale ultimato... Assenti il dott. Adams e il C1
+            Vanian."</span><br />
+          "Computer, trova il file personale del dott Adams e inseriscilo sul mio padd."<br />
+          <span class="diary-cpu">"File non trovato... Starfleet Sticaphone, messaggio gratuito: l'utente non è
+            abilitato al tipo di
+            chiamata richiesta"</span><br />
+          "Eh?... Iniziare diagnostica sistemi... livello 1"<br />
+          <span class="diary-cpu">"Interferenze a tutti i livelli".</span><br />
+          Ci mancava anche questa cosa delle interferenze, ok, allora andiamo senza di loro... e per il file,
+          controllerò dopo.<br />
+          In quel mentre, un trillo dal ponte di comando ci avvisava che le comunicazioni interne erano funzionanti e
+          che il sig. Boregh,
+          per qualche ragione era caduto... T'Mik si offrì di andare, io mi spostai verso il mio alloggio dove avevo
+          lasciato una
+          documentazione su gli incidenti minerari di Vaalaria III. Nel turbo ascensore incontrai una cosa, una scatola
+          di latta con delle
+          forbici attaccate ad un lato...<br />
+          "Buongiovno, lei deve esseve il dottove, vevo? Io sono il nuovo pavvucchieve di bovdo, Tax Ibisont V pev
+          sevvivla"<br />
+          "Mi scusi ma cos'è esattamente lei?" Chiesi.<br />
+          "Sono un Trill, lotto pev libevavli dalla schiavitù. Ova sono a bovdo ma pvima evo all'Academy, mistevi dello
+          spazio-tempo,
+          se ha bisogno di me sono sul ponte 8 dopo la pizzevia" In quel mentre ricevetti la comunicazione che il dott
+          Adams era morto
+          e due minuti dopo...<br />
+          "De niro ci metta in orbita. Frruuu, Renzi, Rael, Rogers, Magnum, Jacket, Van Bajark, sbarcate sul pianeta,
+          ispezionatelo fino
+          a che trovate qualcosa, ma, mi raccomando, non voglio perdere nessun altro oggi. Capitan Beppe chiude" A
+          grandi passi raggiunsi
+          la sala teletrasporto 3 dove insieme agli altri ci trasportammo sul pianeta.<br />
+          La gravità, mi accorsi subito, era molto elevata e Frruuu era letteralmente schiacciata a terra, anche gli
+          altri membri della
+          squadraerano in difficoltà, tranne me e... Renzi, per un attimo mi è sembrato di vederla normale e poi è
+          divenuta come gli altri... un po' schiacciata.<br />
+          "Grande Zot, mi sento un po' giù. Non badate a me, Rael, Rogers, Kelley, Magnum, andate in avanscoperta, tutti
+          gli altri mi seguano..."
+          Tutti ma proprio tutti ci mettemmo a terra a strisciare...<br />
+          "Molto, molto divertente.Il prossimo spiritosone gli passeggio sulle gengive. Alzatevi e datevi una mossa." Ci
+          stavamo guardando
+          intorno con circospezione quando da dietro una piccola collina ci apparve una valle ricoperta di
+          trasmettitori. Mentre ci stavamo
+          muovendo per raggiungere i trasmettitori, il guardiamarina Rogers inciamò in una fradice scoperta e ruzzolò
+          giù per la fiancata della
+          collina, io e Rael lo raggiungemmo quasi subito, presi a visitarlo ma il tricorder medico era disturbato dalle
+          onde elettromagnetiche,
+          comunque riuscii a visitare Rogers e comunicai a Frruuu "La rotula destra è uscita dal suo alloggamento, ha un
+          paio di costole
+          incrinate, vari tagli, certo dovrebbe tornare al più presto a bordo."<br />
+          "Dobbiamo proseguire la ricognizione, con tutte quelle interferenze non capirebbero neppure quello che è
+          successo. Van Bajark lei
+          rimanga qui...". Le condizioni del guardiamarina Rogers non erano gravissime, ma con il fatto che il tricorder
+          medico stava subendo
+          le interferenze, dovevo fare tutto da solo, fortuna che all'Accademia di medicina ci insegnano anche i vecchi
+          metodi di studio e di
+          intervento... una igniezione di Tarmerol dovrebbe essere d'aiuto, strano... non sentivo più il polso
+          femorale... meglio avvertire
+          il signor Frruuu.<br />
+          "Signor Frruuu, sono Van Bajark, le condizioni di Rogers sono peggiorate, non riesco a sentire le pulsazioni
+          alla gamba, devo
+          portarlo immediatamente su."<br />
+          "Robert, c'è un problema col teletrasporto cerchi di fare quello che può"<br />
+          "Farò il possibile" dissi, l'unica cosa possibile è provare con una manovra medica vulcan, ma non penso che
+          Rogers ne sarebbe
+          molto contento lo stabilizzerò... finalmente il teletrasporto funziona e noi possiamo tornare a bordo...<br />
+          Stavo per ritirarmi nella mia cabina quando il Capitano ha fatto un annuncio:<br />
+          "A tutto il personale, tra due ore ci sarà il servizio funebre per il Dottor Adams in sala ologrammi".<br />
+          Mi sono voltato esterrefatto verso Carter Carter:<br />
+          "Ma come... quandoio non sapevo..."<br />
+          "Se non ti fossi chiuso nella tua cabina lo avresti saputo, pare sia morto durante un'escursione a El
+          Capitan"<br />
+          <br />
+          Due ore dopo ero lì, col mio boccale di birra in mano ed il mio pacchetto di noccioline, a sentire le ispirate
+          parole del mio
+          Capitano ricordare il nostro primo compagno che ci aveva lasciato, Douglas Noël Adams ci mancherai.
+          <br />
+          <em style="color:rgba(248,248,255,0.5);">
+            GM Robert Van Bajark<br />
+            XMO<br />
+            USS Afrodite NCC-1863
+          </em>
+          </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission5.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 5
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission5_05.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission5_07.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

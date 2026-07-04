@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Rael – Mission 5 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission5.html">Mission: 5</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Rael</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-shield-halved"></i> &nbsp;SEC &nbsp;·&nbsp; CTO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM Rael</div>
+          <div class="diary-header-mission">Mission: 5 — It's a Long Way to Tipperary</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/rael_l.jpg" alt="GM Rael"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,128,0,0.15);border-radius:6px;border:2px dashed rgba(128,128,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-shield-halved\' style=\'font-size:2rem;color:rgba(128,128,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,128,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_rael.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10108.25</span>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Siamo di nuovo in viaggio, sapevo che la licenza lunghissima promessa dall'Amm. De Leone non sarebbe durata a
+          lungo, ma la cosa
+          più dura da digerire è che ci hanno chiamato nel mezzo delle vacanze per farci un controllo psichiatrico
+          all'Ufficio di Controllo
+          Mentale come se noi fossimo un po' strani, beh la nostra non è certo una normale nave della Flotta Stellare,
+          ma dopotutto noi
+          non siamo normali ufficiali della Flotta Stellare altrimenti l'Amm. De Leone non ci affibbierebbe tutte le
+          missioni più strane.<br />
+          <br />
+          Durante le mie vacanze ho incontrato un tizio, un capitano della Flotta, che possiede ancora degli aerei
+          antichi del XX secolo,
+          è senza computer, per volare ha solo un motore, due ali e poi hai l'aria intorno a te e mi stavo divertendo
+          tanto a volarci quando
+          mi arriva la chiamata di Beppe che mi ordina tutto arrabbiato di tornare immediatamente sulla Afrodite per il
+          Colloquio con un
+          certo Dott. Bottino e che non si può disattivare il comunicatore quando un'Ammiraglio ti chiama dal Comando di
+          Flotta si rischia
+          la Corte Marziale, il problema è che stavo facendo una capriola nell'aria quando mi hanno chiamato, e non
+          potevo dirglielo
+          altrimenti mi sarebbero venuti a prendere con la camicia di forza (se esistono ancora).<br />
+          <br />
+          Il colloquio è andato bene: ha solo detto che sono un po' paranoica Beh è giusto un buon Capo della Sicurezza
+          deve essere un
+          po' paranoico, deve sospettare anche dell'ombra che gli cammina accanto. Abbiamo anche dovuto promettere di
+          stare lontani dalle
+          nebule, ma se sono il nostro divertimento più grande!
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          Ora siamo in viaggio e dobbiamo scoprire la causa di alcune interferenze nelle comunicazioni subspaziali e
+          sono anche da sola
+          perché non c'è Chris che è rimasto sul suo pianeta con Vanian per ragioni personali. Ho dovuto nominare un
+          vice provvisorio e il
+          primo disgraziato che mi è capitato sotto gli occhi è stato Ciccozzi che ora si trova nell'ufficio della
+          Sicurezza come responsabile
+          e con la minaccia che se succede qualcosa gli faccio fare la fine del ferenghi. All'improvviso sento il nostro
+          timoniere dice
+          qualcosa e io mi giro sperando che siano di nuovo i Borg o magari il Dominio e invece niente è soltanto una
+          nebula, una nebula
+          anche carina ma capitan Beppe è irremovibile: niente nebule! L'abbiamo promesso al Bottino.<br />
+          <br />
+          Sento un botto e qualcuno che si lamenta in maniera straziante ma non ci faccio caso è Boregh. Allora è
+          proprio vero: più sono alti
+          e più cadono facilmente... penso.<br />
+          Poi Beppe mi chiede di contattare la Flotta Stellare ma la risposta che esce dagli altoparlanti lascia tutti
+          attoniti: <em>"Starfleetel
+            Sticaphone, messaggio gratuito l'utente non abilitato al tipo di chiamata richiesto"</em>. Quelle maledette
+          interferenze devono
+          aver colpito anche noi, allora il capitano fa uno dei suoi soliti annunci diabolici per tenerci tutti
+          all'erta.<br />
+          <br />
+          Finalmente arriviamo al pianeta da dove provengono le interferenze e Beppe decide che una squadra sbarcherà
+          sul pianeta ad
+          investigare. La squadra è composta da Frruuu, io, Renzi come ufficiale scientifico, Van Bajark come dottore,
+          Jacket, Kelley,
+          Magnum e Rogers.<br />
+          <br />
+          Arrivati sul pianeta noto che c'è un problema, ma non bisogna essere molto svegli per capirlo basta guardare
+          il nostro N1 che
+          sta leggermente ma inesorabilmente sprofondando nel terreno, per fortuna si ferma prima di arrivare dall'altra
+          parte.<br />
+          Con il suo solito savoir faire ordina a me e alla mia squadra di andare in perlustrazione e sapendo che quando
+          è di quell'umore
+          non ci si può discutere obbedisco senza fiatare.<br />
+          <br />
+          Superata una collina trovo una valle piena di trasmettitori radio vecchio stile con tanto di grosse parabole,
+          chiamo Frruuu e la
+          avverto della scoperta e lei ci ordina di aspettarla lì, che arriverà subito. Il 'subito' però non arriva
+          tanto subito e
+          comincio a preoccuparmi: che sia successo qualche cosa al resto della squadra? Sto per ordinare a uno dei mie
+          uomini di andarli
+          a cercare quando li vedo arrancare su per la collina. Finalmente arrivano e noto che Frruuu 'respira' con
+          affanno (non sapevo
+          che le Horta avessero il fiatone), gli mostro la nostra scoperta e gli dico che abbiamo avuto anche difficoltà
+          a comunicare con
+          la nave a causa delle interferenze. Iniziamo a scendere giù per la collina e Rogers inciampa e rotola giù,
+          quando lo raggiungiamo
+          Van Bajark controlla le sue condizioni dichiarandole non gravi. Mentre Kelley e Magnum rimangono con il
+          dottore noi continuiamo
+          le nostre ricerche, intanto si è alzato un forte vento, finalmente Jacket trova una sala che potrebbe essere
+          una sala di controllo
+          e mentre Frruuu entra con Jacket e Renzi, io rimango fuori a controllare. I loro sforzi hanno successo e
+          riescono a scoprire
+          dov'è il pianeta da dove proviene il segnale e a riportarci sulla nave tutti sani e salvi.<br />
+          Stasera però niente Nutella-party perché c'è la veglia funebre di un certo Douglas Noël Adams, un membro della
+          sezione Medica
+          che è deceduto in un incidente: anche se non lo conoscevo di persona, non frequento molto l'Infermeria, mi
+          dispiace molto.
+
+          <br />
+          <em style="color:rgba(248,248,255,0.5);">
+            GM Rael<br />
+            CTO<br />
+            USS Afrodite NCC-1863
+          </em>
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission5.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 5
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission5_06.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission5_09.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

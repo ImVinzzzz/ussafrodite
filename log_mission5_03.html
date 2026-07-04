@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Renzi – Mission 5 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission5.html">Mission: 5</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Renzi</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-dna"></i> &nbsp;SCI &nbsp;·&nbsp; CSO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM F. Renzi</div>
+          <div class="diary-header-mission">Mission: 5 — It's a Long Way to Tipperary</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/renzi_l.jpg" alt="F. Renzi"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_renzi.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10108.25</span>
+        </div>
+
+        <!-- YELLOW ALERT -->
+        <div class="yellow-alert">
+          <i class="fa-solid fa-triangle-exclamation fa-lg"></i>
+          <span>Restrizione d'accesso - Codice: Renzi alfa delta zulu 2 2 9</span>
+          <i class="fa-solid fa-triangle-exclamation fa-lg" style="margin-left:auto;"></i>
+        </div>
+
+        <!-- PROLOGO
+      <div class="diary-section-title">Prologo</div>
+
+      <p>
+Un'altra avventura ed nuova che si presenteranno e... a gustarsi la sua holonovela preferita.
+      </p> -->
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          Dopo le vicissitudini di questi giorni non sono proprio in vena di scrivere (si fa per dire) il mio diario
+          personale, per quale
+          motivo? Come vi sentireste se mentre state trascorrendo una magnifica vacanza con una persona veramente
+          speciale vi chiamassero
+          per dirvi che la vostra licenza è stata revocata per non so quali reconditi motivi?<br />
+          Che cosa avevano in mente stavolta al Comando di Flotta? Dove avevano intenzione di spedirci? Il primo
+          ufficiale Frruuu non era
+          stato molto chiaro in proposito, ma presto avremmo scoperto quale era il motivo, intanto... non potei fare a
+          meno di preparare
+          le mie valigie...<br />
+          <br />
+          Qualche giorno dopo, mi trovavo nel mio alloggio sulla Afrodite. Avevo lasciato Da in plancia, non ero proprio
+          dell'umore adatto
+          per stare in compagnia di altre persone. Poco dopo decisi di andare in laboratorio a controllare un po' le
+          cose, forse mi
+          avrebbe fatto bene un po' di distrazione. Passando davanti la sala di cartografia stellare, notai Arianna
+          Field alle prese con
+          una cartina e delle puntine: come si può essere così imbranati? Decisi che non volevo arrabbiarmi quindi
+          chiamai Da e gli
+          chiesi se poteva controllare un po' le cose, lui è sicuramente più paziente di me!<br />
+          <br />
+          Ero immersa a controllare i vari esperimenti che avevamo preparato tempo prima, quando dall'interfono mi
+          giunse la comunicazione
+          che eravamo arrivati a destinazione e che io ero uno dei membri della squadra di sbarco insieme a Frruuu,
+          Rael, Rogers, Kelley,
+          Magnum, Jacket e Van Bajark. Non mi sono mai piaciute le squadre di sbarco, in genere qualcuno torna sempre
+          ferito o... non
+          torna affatto (ma perché mi preoccupavo? a me non sarebbe mai potuto accadere niente di tutto ciò!).<br />
+          Con riluttanza mi diressi verso la sala teletrasporto e, quando fummo tutti presenti e dopo che il capitano si
+          era raccomandato
+          di non commettere imprudenze, giù verso il pianeta.<br />
+          <br />
+          Appena arrivati tutti notarono la differenza di gravità ed io beh... dovetti adeguarmi alla situazione. Frruuu
+          ci divise in due
+          squadre, Rael, Rogers, Kelley e Magnum andarono in avanscoperta risalendo la collina, mentre io, Jacket e Van
+          Bajark 'seguivamo'
+          il nostro primo ufficiale.<br />
+          Poco dopo Rael ci informò che dietro la collina si stendeva una vallata piena zeppa di trasmettitori radio,
+          avevamo trovato
+          il posto giusto! Una volta arrivati in cima ci rendemmo conto di quello che Rael ci aveva detto, ma per agire
+          dovevamo attendere
+          Frruuu, il nostro numero uno, che però si faceva attendere non riuscendo quasi a risalire il fianco della
+          collina data
+          l'elevata forza di gravità del pianeta, ma alla fine gi raggiunse!<br />
+          Iniziammo dunque la discesa... si fa per dire: Rogers inciampò e rotolò per tutto il fianco della collina, io
+          e Van Bajark
+          tentammo di 'inseguirlo' per cercare di fermarlo o quantomeno per rallentare la sua caduta, ma purtroppo
+          riuscimmo a raggiungerlo
+          soltanto quando si fermò in fondo. Purtroppo pe lui riportò due costole incrinate e la fuoriuscita della
+          rotula destra,
+          oltre a vari tagli di lieve entità, ma il malfunzionamento del teletrasporto costrinse il primo ufficiale a
+          lasciare con lui
+          Van Bajark che gli prestò le prime cure, e i due membri della sicurezza Kelley e Magnum di guardia, mentre noi
+          continuammo
+          nell'esplorazione.<br />
+          D'un tratto Jacket ci informò di aver trovato un pannello di controllo pieno di pulsanti che cominciò
+          a schiacciare, il risultato? Si aprì di colpo un pannello al quale ci avvicinammo con curiosità ma che
+          scoprimmo presto
+          essere un gabinetto... il nostro capo operazioni non è molto ferrato nel tradurre le iscrizioni aliene. Lo
+          lasciammo comunque
+          ai suoi 'studi' e continuammo ad ispezionare i dintorni cercando di ripararci dal forte vento che nel
+          frattempo si era alzato.<br />
+          Nel frattempo Jacket era riuscito a decifrare quelle iscrizioni ed a fare in modo che un altro pannello,
+          all'interno del bagno,
+          si aprisse e rivelasse una stanza piena di strumentazioni con le quali cominciò ad armeggiare, mentre mi
+          accorsi che su un
+          computer posto in un angolo della sala c'erano dei numeri, mi avvicinai per vedere meglio e scoprii che si
+          trattava delle
+          coordinate per raggiungere il pianeta da cui proveniva il segnale che poi veniva ritrasmesso da dove ci
+          trovavamo.<br />
+          Raggiunsi tutti gli altri fuori che, nonostante le varie interferenze, erano riusciti in qualche modo a
+          comunicare con la
+          nave e a sapere che finalmente il teletrasporto era riparato e così tutti potemmo tornare a bordo.<br />
+          <br />
+          Una volta arrivati comunicai immediatamente al Capitano le coordinate per raggiungere il pianeta e, dopo
+          averle fatte
+          controllare ed aver fatto impostare la rotta diede ordine di partire.<br />
+          <br />
+          Un paio di ore dopo circa, ci ritrovammo tutti alla veglia funebre del nostro caro Dott. Adams... in suo onore
+          bevemmo birra e mangiammo noccioline...<br />
+        </p>
+
+        <br />
+        <em style="color:rgba(248,248,255,0.5);">
+          GM Fabiola Renzi<br />
+          CSO<br />
+          USS Afrodite NCC-1863
+        </em>
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission5.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 5
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission5_02.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission5_04.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario T'Mik – Mission 5 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission5.html">Mission: 5</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM T'Mik</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-staff-snake"></i> &nbsp;MED &nbsp;·&nbsp; CMO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM T'Mik</div>
+          <div class="diary-header-mission">Mission: 5 — It's a Long Way to Tipperary</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/tmik_l.jpg" alt="GM T'Mik"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_tmik.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10108.25</span>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Tutti sanno che la resistenza del popolo vulcaniano allo stress e alla fatica è superiore a quella di
+          qualsiasi altra specie
+          senziente della galassia (sono ancora in corso studi sui Borg), tuttavia, dopo i recenti avvenimenti
+          sull'Afrodite, era
+          il momento che le risorse quasi illimitate dei Vulcan di bordo venissero ricaricate con un salutare periodo di
+          licenza.
+          Dal momento che eravamo sulla Terra avevo scelto un posto che si avvicinava di molto alle condizioni
+          climatiche di Vulcano,
+          il deserto del Sahara. Ignoravo che anche il capitano e il suo primo ufficiale avessero fatto la stessa
+          scelta, forse cercavano
+          un luogo adatto per guardare le stelle insieme, Capitan Beppe sa essere un tale romantico, quando
+          vuole...<br />
+          Naturalmente la licenza sarebbe continuata tranquilla così, loro a bisbigliarsi parole romantiche al chiaro di
+          luna,
+          io a godermi il caldo del deserto tenendomi a debita distanza (anche perché voci di corridoio sostenevano che
+          avessero avuto
+          un diverbio per via di una danzatrice) se non fosse successo un imprevisto: una comunicazione da Frruuu che mi
+          ordinava
+          di tornare a bordo e di richiamare tutti i membri dell'Infermeria nel più breve tempo possibile e quando il
+          primo ufficiale
+          dice il più breve tempo possibile, ciò significa che il Capitano intendeva... ieri. Eseguo subito l'ordine e
+          mi teletrasporto
+          a bordo. Dopo qualche minuto cominciano ad arrivare gli altri, Ernestina sta già urlando:<br />
+          - Sabbia! Questa è sabbia!<br />
+          - Mi congratulo per la sua deduzione logica, Ernestina.<br />
+          - Logica... logica, ne ho abbastanza di tutta 'sta logica!<br />
+          - Peccato - proseguo imperturbabile - che la sua logica sia offuscata da questa emotività a dir poco...<br />
+          Lei mi interrompe: "Ora insozzerà tutta la nave!!!"<br />
+          - No - replico - le tracce saranno visibili solo nello 0.75% dell'astronave, cioè il tragitto da qui
+          all'Iinfermeria.<br />
+          A questo punto interrompo la nostra amabile conversazione, prima che prenda una piega troppo violenta e mi
+          dirigo in infermeria.
+          Ma Ernestina mi segue brandendo un paio di pattine e mi urla di indossare almeno quelle. Figuriamoci. Io con
+          le pattine.
+          Non sono mica incluse nell'uniforme standard. Eccomi finalmente in infermeria, ci sono quasi tutti: Robert,
+          Carter, Capui,
+          manca Vanian che ha ricevuto ordini diversi dalla flotta e naturalmente Adams è in ritardo, se non arriva nel
+          giro dei prossimi
+          secondi il Capitano lo spellerà vivo.
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          Il Capitano ci informa che siamo pronti per la partenza. Comunico che il dottor Adams è ancora assente, ma non
+          c'è tempo
+          per aspettarlo, e, come tutti sanno, il bene di molti... e quindi si parte, il fiero grido del capitano
+          risuona per tutti
+          i ponti: 'nnamooo!. Rieccomi alle prese con i soliti problemi di routine in infermeria. Cerco di richiamare
+          sul computer
+          la registrazione dell'ultimo teletrasporto compiuto da Adams, ma il computer risponde 'File non trovato'. È
+          strano, non vorrei
+          che ci fossero delle interferenze, il che sembra abbastanza probabile, purtroppo. Mi avvio in plancia,
+          accompagnata
+          dall'Infermiere Capui, per informare personalmente il Capitano, non vorrei che le interferenze si estendessero
+          anche ai sistemi
+          di comunicazione interna, anche se non sembra questo il caso.<br />
+          Nel frattempo, il capitano ci informa della nuova missione e ci porge i complimenti del presidente della
+          Federazione per
+          l'ottimo lavoro svolto con i Sergiss. Mentre proseguiamo sulla nostra rotta, De Niro urla:<br />
+          - Capitano, una nebula! - Tutti si avvicinano per vedere:<br />
+          - La prego capitano!<br />
+          - Sì, Capitano, un'occhiatina veloce...<br />
+          - Non lo saprà nessuno... - Ma il Capitano è irremovibile:<br />
+          - Mi dispiace, ciurma. So quanto amate le Nebule, ma questa volta è proprio fuori percorso... Sarà per la
+          prossima!<br />
+          <br />
+          L'atmosfera di delusione che serpeggia sulla plancia viene presto sostituita dalla sorpresa per il
+          materializzarsi di un essere
+          bavoso che a momenti si 'spiaccica' contro il capitano. È un simbionte Trill che da poco ha aperto una
+          parrucchieria a bordo,
+          proprio accanto alla pizzeria. Marek lo guarda con desiderio e non appena il simbionte sparisce così come era
+          apparso, mi
+          informa di esserne innamorato. Capui, infatti che è in parte Trill ha sempre desiderato essere impiantato con
+          un sembionte,
+          ma purtroppo è stato scartato dal programma. Ci mancava anche questa: innamorarsi di un essere che ha appena
+          detto che non
+          intende farsi impiantare... E io che credevo che l'Infermeria fosse l'ambiente più logico dell'astronave...
+          Consiglio a Marek
+          di passare la prossima franchigia su Vulcano. Ma lui con lo sguardo sognante replica:<br />
+          - Sì, ho sempre sognato una luna di miele in un posto esotico come il monte Seleya!<br />
+          È proprio un caso disperato. Torniamo in Infermeria, abbiamo del lavoro da svolgere e inoltre Marek ha proprio
+          bisogno di distrarsi.<br />
+          Proprio in quel momento vengo informata di un piccolo incidente nel quale è rimasto coinvolto Boregh: sembra
+          che abbia sbattuto
+          la schiena cadendo dalla sua sedia. Dal momento che Marek Capui ha bisogno di tenersi occupato per dimenticare
+          le sue delusioni
+          d'amore lo mando a controllare. Non sembra niente di serio, ma Boregh, che come ogni Klingon è incapace di
+          soffrire in silenzio,
+          sta facendo tremare le paratie, Capui mi contatta dalla plancia:<br />
+          - Dottoressa, Boregh non si fa toccare. Dice che non è onorevole per un klingon.<br />
+          - Gli dica di tenersi il mal di schiena, allora.<br />
+          - Ci ho provato, ma ha ricominciato a urlare e il Capitano si sta arrabbiando sul serio!<br />
+          Tutto ciò è davvero incredibile. È richiesto il mio intervento logico per il riottoso paziente. In qualche
+          minuto raggiungo la plancia.
+          Mi avvicino a Boregh e senza troppi complimenti gli urlo:<br />
+          - O si fa fare un hypospray da Capui o la ricovero in Infermeria e la faccio riassegare alla pulizia dei
+          servizi igienici!<br />
+          Come sospettavo, la logica funziona sempre, anche con le razze che ne sono totalmente prive come i klingon,
+          per cui Boregh si
+          sottomette in silenzio. Dovrebbero insegnare le discipline del Kolinar anche all'Accademia, sarebbero molto
+          utili. A questo punto
+          io e il mio infermiere raccogliamo Boregh per portarlo in infermeria. Peter gli darà il cambio.<br />
+          <br />
+          A breve arrivano le brutte notizie. Un comunicato riesce a superare le interferenze: il dottor Adams è
+          deceduto. È la prima volta
+          che ci troviamo di fronte alla morte di un nostro compagno. Informo il capitano. Tutto l'equipaggio è
+          scioccato, certo, non è morto
+          durante una missione, ma era pur sempre una persona che aveva condiviso con noi un lungo viaggio... ma la
+          missione deve andare avanti.<br />
+          Siamo arrivati nei pressi del pianeta probabile fonte delle interferenze. Viene convocata la squadra di
+          sbarco, tocca a Robert
+          sbarcare. Io resto in infermeria, cerco ancora di ottenere dalla base notizie meno frammentarie sull'incidente
+          occorso ad Adams.
+          In fondo mi sento responsabile, so che non è logico, ma era pur sempre sotto il mio comando. Le interferenze
+          purtroppo persistono.<br />
+          Nel frattempo Robert mi contatta dal pianeta, richiedendo un teletrasporto d'emergenza per un ferito.
+          Purtroppo il teletrasporto
+          non funziona correttamente, e gli suggerisco di provare ad improvvisare. Per fortuna da piccolo ha letto il
+          Manuale delle Giovani
+          Marmotte Spaziali e ora se la cava piuttosto bene con le medicazioni non convenzionali. Dopo un po'
+          fortunatamente il teletrasporto
+          viene riparato e la squadra riesce a tornare sana e salva a bordo. Esaminiamo il guardiamarina Rogers con le
+          attrezzature dell'Infermeria e constatiamo che con qualche giorno di riposo sarà guarito.<br />
+          <br />
+          Ora che la missione sul pianeta si è conclusa. C'è un rituale al quale tutti dobbiamo partecipare. Riuniti in
+          sala ologrammi,
+          ascoltiamo il discorso con il quale il capitano rende onore al nostro compagno scomparso. Come gli altri alzo
+          il mio boccale di
+          birra alla memoria di Douglas Noël Adams. Se il suo katra esiste ancora in qualche forma da qualche parte che
+          possa raggiungere
+          la pace e la prosperità. Addio e grazie di tutte le risate.
+        </p>
+
+        <br />
+        <em style="color:rgba(248,248,255,0.5);">
+          GM T'Mik<br />
+          CMO<br />
+          USS Afrodite NCC-1863
+        </em>
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission5.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 5
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission5_04.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission5_06.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
