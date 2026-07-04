@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Ta Nutri – Mission 5 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission5.html">Mission: 5</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Ta Nutri</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-gear"></i> &nbsp;ENG &nbsp;·&nbsp; CEO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM J. Ta Nutri</div>
+          <div class="diary-header-mission">Mission: 5 — It's a Long Way to Tipperary</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/tanutri_l.jpg" alt="GM J. Ta Nutri"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,128,0,0.15);border-radius:6px;border:2px dashed rgba(128,128,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-gear\' style=\'font-size:2rem;color:rgba(128,128,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,128,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_tanutri.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10108.25</span>
+        </div>
+
+        <!-- PROLOGO
+      <div class="diary-section-title">Prologo</div>
+
+      <p>
+FINALMENTE! Il giorno atteso per quattro lunghi anni è arrivato Salire a bordo di questa nave è il coronamento di un sogno... ma cominciamo dall'inizio:<br/>
+Ieri sera, al momento del trasferimento, l'emozione è stata grande, la procedura di attracco di una navetta non mi è mai parsa così lunga...<br/>
+In tarda mattinata c'è stato il discorso del Capitano Alighieri all'equipaggio: è anche per lui il primo incarico, e più che quello di un Alto Ufficiale, mi è parso il discorso 
+        di un vecchio amico di giochi... è una persona davvero squisita, simpatica ed anche un po' stravagante; in fondo è un Diavolo, sarebbe stato strano il contrario!
+      </p>
+
+      <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+
+          <strong>TORNA AL LAVORO!</strong><br />
+          Il colloquio con Bottino mi era stato utile perché finalmente avevo potuto sfogare tutta la rabbia che avevo
+          accumulato... e giusto in tempo per salvare il salvabile!<br />
+          Già, perché un paio d'ore dopo incontrai il mio Benny ed ero sufficientemente calma da starlo a sentire, fra
+          una moina e l'altra lo ricondussi alla ragione ed ora siamo felicemente fidanzati ... di nuovo!! Ho promesso
+          che mi sarei fatta sentire molto più spesso e che avrei tempestato il Capitano di richieste per avere al più
+          presto una licenza perché non possiamo stare troppo a lungo lontani!<br />
+          <br />
+          Oddio, se ripenso all'espressione ebete che aveva il Supremo quando ho lasciato il suo studio,mi viene ancora
+          da ridere!<br />
+          Quando ha sentito che avevo un appuntamento con Benny si è accasciato sulla sua poltrona con sguardo vacuo!
+          Forse mi sono lasciata troppo andare e come al solito ho esagerato...<br />
+          <br />
+          <strong>MA CHI SE NE FREGA!!!</strong><br />
+          Benton ed io siamo di nuovo insieme ed è questo quello che conta!!!<br />
+          L'amore è meraviglioso, la vita è meravigliosa, questo lavoro è meraviglioso, questa nave è merav... Ah, ma
+          chi voglio prendere in giro? Questa nave è ancora uno schifo e basta!<br />
+          <br />
+          Sul terminale del mio alloggio ho trovato un ruolino di servizio spaventoso: praticamente ogni circuito di
+          questo dannato ferrovecchio è da revisionare. Credo che dovrò fare la voce grossa e chiedere un aumento del
+          personale. A dire la verità ho già trovato due eccellenti candidati: Marcy Stone e Zena Silara.<br />
+          Le ho conosciute durante il corso di Meccanica Celeste in Accademia e ricordo che erano dei fenomeni in
+          laboratorio. Al momento sono assegnate ad una Base Stellare non ricordo più dove. Mi hanno fatto capire che
+          sarebbero molto contente di passare su una nave stellare... anche perché non ho descritto nei minimi dettagli
+          come è lavorare sull'Afrodite.<br />
+          <br />
+          Il Capitano ha chiesto che uno della mia Sezione faccia parte della prossima squadra ma per stavolta passo: ho
+          ancora un mucchio di grane da risolvere e poi siamo bombardati da un'infinità di segnali radio che mi
+          complicano ancora di più la vita.<br />
+          Il computer ha deciso di non collaborare; le ho provate tutte... tranne che prenderlo a calci.<br />
+          - Cos'è questa puzza?<br />
+          - Signore, guardi lassù! Argo! È stato lui!<br />
+          - E che miseria! Mettete al massimo la ventilazione. Signore Iddio che fetore! Aria,aria! Ehi, Von Bila, sì
+          dico a te controlla che non abbia... lo sai. A scanso d'equivoci contatti Miss Spazzolone ed organizzate una
+          squadra per pulire.<br />
+          - Non è necessario Capo. Si è trattato solo di... gas.<br />
+          - Ne è sicuro Castell?<br />
+          - Sì. Ricorda la modifica ai sensori interni? Non rilevano escrementi d'uccello qui in Sala Macchine.<br />
+          - Stavolta è andata bene. Oh... quanto vi ci vuole a sbattere fuori quell'avvoltoio? NO! Niente teletrasporto!
+          Usate le scope che ci ha lasciato Ernestina. Bravi, così. Ehi Castell, venga qui. Rammenta il nostro progetto
+          segreto?<br />
+          - Vuol dire il cam...<br />
+          - Ssssh! Parli piano! Dobbiamo accelerare i tempi!<br />
+          - E il Capitano?<br />
+          - Che cosa c'entra Alighieri? Mica lo voglio ammazzare! Voglio solo assicurarmi che quello sputacchio
+          infernale non trasformi questo posto in un cacatoio per uccelli. Ora torniamo al lavoro. A proposito, chi ha
+          scelto per la squadra di sbarco?<br />
+          - Veramente con tutta questa confusione non ho ancora avuto modo di pensarci.<br />
+          - Eccellente. Mi dia il suo DiPADD; lista del personale... ah ecco mandi lui. Comunichi la scelta a chi di
+          dovere ed avvisi l'interessato. Castell: SUBITO!<br />
+          <br />
+          - Ehi, questi indicatori sono fuori scala. Proviamo con la solita modifica alle armoniche degli scudi. Forse
+          riusciamo a bloccare una parte dei segnali.<br />
+          - Non credo che funzionerà.<br />
+          -Ciao bel micione! Che ci fai da queste parti?<br />
+          - M'Trey. Io sono M'Trey. Ti ho già detto che non voglio essere chiamato "micione". Per un Caitiano è...
+          offensivo. Comunque, anche se non lo meriti ti ho portato lo schema che mi avevi richiesto.<br />
+          - Scusa, ma non è proprio il momento. Come vedi siamo piuttosto impegnati.<br />
+          - Non sono daccordo. È il pianeta la fonte di tutte queste interferenze e visto che vi siamo in orbita
+          temo che i tuoi scudi da soli non riusciranno a bloccare questa enorme quantità di onde radio. Quindi ho
+          pensato di apportare una modifica al nostro filtro subspaziale per provare ad eliminare questi segnali.<br />
+          - Credi che possa funzionare?<br />
+          - Signore, comunicano dal pianeta che Rogers è ferito. Occorre un rimpiazzo.<br />
+          - Rogers? AIUTO!<br />
+          - Tutto a posto Jidtzia?<br />
+          - Sì, Sì. Sono solo scivolata... oddio non sarà per caso... no, è solo caffé. Chi si è preso una pausa caffé
+          non autorizzata? Va bene, ne riparliamo dopo. Dicevamo, l'idea mi sembra buona. Rogers, Rogers, ma sai che
+          proprio non l'ho presente. Scusa M'trey. Castell richiami la scheda personale di Rogers.<br />
+          - Qualcosa non va?<br />
+          - Non ne sono sicura. Come sarebbe che il computer non accetta la richiesta?<br />
+          - Abbiamo lo stesso problema in laboratorio. A quanto pare il bombardamento di onde radio sta interferendo con
+          il normale funzionamento del computer e di quasi la totalità delle apparecchiature di bordo. Se riuscissimo ad
+          individuare con maggiore precisione la banda di frequenza avremmo risolto.<br />
+          - Capo, la Plancia comunica un malfunzionamento del teletrasporto.<br />
+          - Stavo in pensiero! Okay, Joseph ci pensi lei. Noi occupiamoci di mettere in pratica la tua idea.<br />
+          <br />
+          Proprio sul più bello, arriva l'ordine di partenza così non abbiamo potuto testare il nostro gioiellino ma dal
+          momento che ci dirigeremo verso il punto da cui è trasmesso il segnale portante che ci causava tanti guai,
+          credo che non dovremo aspettare molto per verificare le nostre previsioni.<br />
+          Mi resta un dubbio: T'Mik comunica che Rogers ha marcato visita a causa di un forte raffreddore.<br />
+          Ma chi è Rogers?
+
+          <br />
+          <em style="color:rgba(248,248,255,0.5);">
+            GM Jidtzia Ta Nutri<br />
+            CEO<br />
+            USS Afrodite NCC-1863
+          </em>
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission5.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 5
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission5_07.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission5_10.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
