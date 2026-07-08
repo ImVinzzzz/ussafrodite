@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Renzi – Mission 6 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission6.html">Mission: 6</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Renzi</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-dna"></i> &nbsp;SCI &nbsp;·&nbsp; CSO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM F. Renzi</div>
+          <div class="diary-header-mission">Mission: 6 — Afrodite in Wonderland</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/renzi_l.jpg" alt="F. Renzi"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_renzi.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10203.23 </span>
+        </div>
+
+        <!-- YELLOW ALERT -->
+        <div class="yellow-alert">
+          <i class="fa-solid fa-triangle-exclamation fa-lg"></i>
+          <span>Restrizione d'accesso - Codice: Renzi alfa delta zulu 2 2 9</span>
+          <i class="fa-solid fa-triangle-exclamation fa-lg" style="margin-left:auto;"></i>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Era una notte buia e tempestosa. Il vento gelido mi tagliava il volto. Stavo attraversando la steppa, alla
+          disperata ricerca di un
+          rifugio. Non sapevo come ero arrivata in quella landa gelida e desolata. Ricordavo solo che una settimana
+          prima... o era un mese...
+          o forse solo un paio di giorni... non so, avevo perso completamente il senso del tempo... mi trovavo nel mio
+          alloggio, sulla Afrodite,
+          a sorseggiare del the! Qualcosa accadde di repentino ma inesorabile, ed eccomi qui! La tormenta non mi
+          permetteva di vedere ad un palmo
+          dal naso. Ma ecco che, all'improvviso, scorsi una debole luce... forse c'era qualcuno. Accelerai il passo. Era
+          una capanna, sul limitare
+          del bosco. Dal comignolo si alzava un filo di fumo nero. C'era qualcuno? Sarà ospitale? Avevo solo un modo per
+          saperlo! Bussai disperata
+          alla porta, fino a slogarmi i polsi. Mi aprì una vecchina. Indossava un grembiule rattoppato. In testa aveva
+          un fazzoletto, portava
+          delle pattine ai piedi e aveva uno scopettone in mano.<br />
+          - Fabiola! - mi disse. Io non sapevo chi fosse, ma lei evidentemente mi conosceva.<br />
+          - Sono io, Ernestina! Non ti ricordi di me?<br />
+          Quel nome mi era familiare, ma non ricordavo proprio quel volto rugoso. Ebbe cura di me nei giorni seguenti.
+          Mi curò, mi sfamò,
+          rammendò i miei abiti logori. In poche parole: mi rimise in sesto!<br />
+          Qualche tempo dopo, una fresca mattina soleggiata, passata la tormenta che imperversò per giorni e giorni, ero
+          decisa ad andare via
+          da lì, a ritrovare la mia nave... non sapevo neppure se mi trovavo ancora nel quadrante alfa, ma dovevo
+          ritrovare la USS Afrodite.
+          Ernestina mi preparò una bisaccia con cibo e acqua. La salutai affettuosamente ringraziandola per quanto aveva
+          fatto per me e partii.
+          Presi un sentiero, attraverso la foresta, che mi avrebbe condotto ad un villaggio a pochi giorni di
+          cammino.<br />
+          Camminai molto quel giorno. Verso sera giunsi ad una radura e decisi di accamparmi là. C'era solo l'ululato
+          lontano dei lupi a farmi
+          compagnia. Mentre mangiavo un boccone, all'improvviso, un lampo squarciò le nubi e venne a cadere a pochi
+          passi da me. Una strana
+          luce iridescente mi avvolse e un istante dopo ero sulla Afrodite, nel mio alloggio. Mi sentivo stanca, avevo
+          voglia di riposare, ma
+          il mio stomaco brontolava per la fame. Allora decisi di andare in Sala Mensa a mangiare qualcosa. Uscii dal
+          mio alloggio e mi diressi
+          al turbolift più vicino. Quando le porte del turboascensore si aprirono, però, dall'altra parte non c'era la
+          Sala Mensa, ma l'immensa
+          vastità dello spazio. Una vista agghiacciante che mi raggelò il sangue! Miliardi di pentolini luminosi
+          risplendevano nel buio dello
+          spazio. Cosa stava succedendo? Non ebbi il tempo di pensare a nulla perché nuovamente quella luce iridescente
+          mi avvolse. Quando
+          riaprii gli occhi mi ritrovai in una selva oscura che tanta parte dell'ultimo orizzonte il guardo esclude...
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p><span class="diary-section-subtitle"><br>
+            USS Afrodite, Infermeria.</span></p>
+
+        <p>
+          - Dottore, si sta svegliando!<br />
+          - Come dice signor Carter?<br />
+          - La signorina Renzi, si sta risvegliando!<br />
+          - Ma... dove mi trovo!<br />
+          - Ben tornata tra noi! Si trova in Infermeria.<br />
+          - Signor Carter, cosa ci faccio qui?<br />
+          - Il GM Ciccozzi l'ha trovata mentre vagava per i corridoi del ponte 8, e l'ha portata qui!<br />
+          - Cosa mi è successo? E dov'è la dottoressa T'Mik, Robert?<br />
+          - La dottoressa è a rapporto dal Capitano in Sala Mensa. Pare che tutto l'equipaggio sia soggetto ad una
+          attività REM
+          straordinaria. Ma non c'è nulla di cui preoccuparsi. Solo T'Mik pare esserne immune.<br />
+          - Ho fatto un sogno stranissimo...<br />
+          - L'abbiamo monitorata per tutto il tempo. Purtroppo non possiamo dimetterla come per tutti gli altri. A
+          quanto pare, queste
+          'interferenze' che hanno scatenato quest'insolita attività onirica a bordo, hanno su di lei degli effetti
+          insoliti e inaspetntati.<br />
+          - Cioè?<br />
+          - Ancora non lo sappiamo con precisione. Dovremo addormentarla nuovamente e tenerla sotto sedativi per
+          monitorare meglio la sua
+          attività REM. Non si preoccupi. Andrà tutto bene. Signor Carter!?<br />
+          - Sì dottore?<br />
+          - Ripristini lo stato di sonno indotto nella paziente.<br />
+          - Sì dottore!<br />
+          - Ora riposi Renzi... la sveglieremo noi appena avremo raccolto i dati necessari per curarla e stabilizzare la
+          sua...<br />
+          - Ma io mi sento...<br />
+          <br />
+          ... ma sedendo e mirando la diritta via ch'era smarrita, sentii il ferro conficcarsi. Mi appoggiai sopra e lo
+          immersi più
+          profondamente e poi lo spinsi col peso del mio corpo. Decisi di rifugiarmi in quell'angolo di mondo non ancora
+          scoperto dalla morte,
+          e di aspettare qualcosa di certamente terribile... e non successe niente. Guardai il muro, rotto, nero, della
+          cascina, guardai
+          in giro, ma scorsi solo il nulla. Sono il vuoto, sono tutto ciò che esiste, sono in ogni foglia del bosco, in
+          ogni goccia di rugiada.
+          Toccherà mai la superficie della mia piena coscienza quel ricordo, l'attimo antico che l'attrazione d'un
+          attimo identico è venuta
+          così di lontano a richiamare, a commuovere, a sollevare nel più profondo di me stessa. Per conservare la linea
+          temporale stabilita
+          dall'armonioso scorrere delle ere...<br />
+          <br />
+          Mi risvegliarono alcune ore più tardi. Erano riusciti a stabilizzare le mie condizioni di salute e quindi il
+          dottor Van Bajark mi
+          dimise dicendo che potevo riprendere le mie mansioni.<br />
+          Nel persorso dall'Infermeria alla Plancia, una 'musica' assordante rimbombava per tutta la nave. Quando presi
+          posto alla mia
+          postazione sul Ponte di Comando, la situazione non cambiò. Pare che le interferenze, oltre a causare
+          un'insolita attività onirica
+          a bordo, abbiano mandato in tilt il computer di bordo. Da Nee aveva partecipato ad un ricevimento ufficiale in
+          Sala Mensa ed ora
+          riposava nel suo alloggio.<br />
+          In Plancia Adam Smith si lamentava di avere i piedi gonfi. Evidentemente non ne poteva più di portare caffé
+          avanti e indietro
+          per la Plancia. Mi misi subito a controllare i dati dei sensori: non rilevavano nulla di particolare.<br />
+
+          <br />
+          <em style="color:rgba(248,248,255,0.5);">
+            GM Fabiola Renzi<br />
+            CSO<br />
+            USS Afrodite NCC-1863
+          </em>
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission6.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 6
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission6_02.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission6_04.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
