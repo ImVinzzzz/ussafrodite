@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Diario Frruuu – Mission 6 | USS Afrodite</title>
+
+      <!-- Favicon -->
+      <link rel="icon" type="image/svg+xml" href="favicon.svg">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+      <link rel="stylesheet" href="stylesheet.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+      <canvas id="starfield"></canvas>
+      <div class="scanline-overlay"></div>
+
+      <!-- HEADER -->
+      <header id="site-header"></header>
+
+      <main id="main-content">
+
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                  <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+                  <span>›</span>
+                  <a href="log.html">Log</a>
+                  <span>›</span>
+                  <a href="log_mission6.html">Mission: 6</a>
+                  <span>›</span>
+                  <span class="current">Diario Personale – GM Frruuu</span>
+            </div>
+
+            <!-- Diary page -->
+            <div class="diary-wrapper">
+
+                  <div class="diary-header" style="background: linear-gradient(135deg, #800000 0%, #5a0000 100%);">
+                        <!-- Testo intestazione -->
+                        <div class="diary-header-text">
+                              <div class="diary-header-role">
+                                    <i class="fa-solid fa-circle-chevron-up"></i> &nbsp;COM &nbsp;·&nbsp; XO
+                                    &nbsp;·&nbsp; Diario Personale
+                              </div>
+                              <div class="diary-header-name">GM Frruuu</div>
+                              <div class="diary-header-mission">Mission: 6 — Afrodite in Wonderland</div>
+                        </div>
+                        <!-- Miniatura PG + link scheda -->
+                        <div class="diary-header-pgbox">
+                              <img src="images/crew/frruuu_l.jpg" alt="GM Frruuu"
+                                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+                              <a href="crew_frruuu.html">
+                                    <i class="fa-solid fa-image-portrait"></i> Scheda
+                              </a>
+                        </div>
+                  </div>
+                  <div class="diary-body">
+
+                        <div class="stardate-line">
+                              <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i>
+                                    &nbsp;Stardate</span>
+                              <span class="stardate-value">10203.23 </span>
+                        </div>
+
+                        <!-- PROLOGO -->
+                        <div class="diary-section-title">Prologo</div>
+
+                        <p>
+                              Stretti corridoi si allungavano contorti tra pareti di coloratissimi oggetti dalle
+                              irriconoscibili forme impilati l'uno
+                              sull'altro, dal soffitto pendevano squallide luci che combattevano la gravitaà per mezzo
+                              di fili annodati su loro stessi,
+                              Frruuu sentì un rumore dietro di lei ma il corridoio era così stretto che non poté
+                              voltarsi. Il rumore si fece sempre più
+                              vicino e, come ogni cosa sconosciuta, sempre più angosciante. Frruuu cercò di allontanarsi
+                              veloce ma il rumore la seguì
+                              avvicinandosi. Ormai in preda al panico, Frruuu sbatté contro le pareti facendole
+                              ondeggiare... come un Mosè siliceo che
+                              attraversava un mare multicolore. Improvvisamente sentì qualcosa che la colpiva sulla
+                              schiena fermandola, si girò appena e vide
+                              il volto del Capitano Picard che con una smorfia crudele le agitava qualcosa davanti gli
+                              occhi:<br />
+                              "La chiave, guardamarina, ha dimenticato la chiave"<br />
+                              Frruuu si svegliò di soprassalto mandando a gambe all'aria Beppe che dormiva nel letto
+                              sovrastante e facendo ringhiare Geppo che
+                              le dormiva sui gangli.<br />
+                              "Cosa.... cosa... che succede?" Biascicò Beppe ancora mezzo addormentato, mentre tentava
+                              di districarsi dalle coperte, Frruuu non
+                              riusciva ancora a rispondere col cuore che le batteva all'impazzata.<br />
+                              "Scusa, Beppino, ho avuto un incubo" - riuscì finalmente a dire Frruuu. Da quando erano in
+                              viaggio per raggiungere il pianeta da
+                              cui proveniva il segnale che stava disturbando l'intero sistema di comunicazione della
+                              Federazione, si erano succeduti notte dopo
+                              notte, e più si avvicinavano alla loro meta più diventavano strani e angoscianti. Beppe
+                              non se la prese più di tanto, apparentemente
+                              anche lui ne stava avendo uno e il brusco risveglio provocato dalla horta lo aveva salvato
+                              dalla decapitazione da parte di una folle regina:<br />
+                              "Sai una cosa, Cocca, niente cosciotto d'agnello con peperoni la sera" - disse il
+                              Capitano; non ci volle molto però prima che tutti
+                              e tre gli abitanti della cabina fossero nuovamente profondamente addormentati, e ci volle
+                              ancora meno prima che Frruuu non ripiombasse
+                              in un incubo...<br />
+                              ... rettangoli vuoti, era circondata su ogni lato da rettangoli vuoti, delimitati solo da
+                              una fine linea nera, Frruuu si dirigeva ora
+                              a destra, ora a sinistra, in alto, in basso ma sulla sua strada incontrava solo quei
+                              maledetti rettangoli completamente vuoti.
+                              Dopo molto girovagare vide, in lontananza, qualcosa che si muoveva, districandosi tra
+                              quegli spazi vuoti, Frruuu arrivò alla sua meta:
+                              all'interno di uno di quei rettangoli, proprio al centro, vide la forma roteante di una
+                              nebula, densa e marrone. La horta si avvicinò
+                              ad un enorme tricorder lì vicino ed iniziò a scansionare la nebula: "Saccarosio, oli
+                              vegetali, nocciole, lattosio, latte scremato in
+                              polvere, proteine del latte, emulsionante, lecitina di soia, aromi... mentre leggeva i
+                              dati riguardanti la nebula, che mano a mano
+                              apparivano sul display gigante del tricorder, Frruuu si faceva sempre più incredula:
+                              "Grande Zot ma..." improvvisamente la nebula si
+                              ingigantì tanto da inghiottire il primo ufficiale senza che questa avesse neppure la
+                              possibilitaà di gridare.
+                        </p>
+
+                        <!-- DIARIO -->
+                        <div class="diary-section-title">Diario di Missione</div>
+
+                        <p>
+                              Frruuu si sentiva ancora scossa dopo la notte trascorsa a sfuggire da uno psicotico
+                              capitano Picard e da una oleosa nebula.
+                              Si era sentita in colpa quando, la mattina dopo, aveva notato scure occhiaie sul viso del
+                              suo Capitano:<br />
+                              "Grande Zot, Beppino, è colpa mia?" - chiese Frruuu indicando le occhiaie.<br />
+                              "Non preoccuparti Cocca: stanotte ho fatto il sogno più faticoso della mia vita..."<br />
+                              "Spero che la protagonista non fosse quella ballerina verdognola che abbiamo incontrato
+                              nel deserto" - fece Frruuu scherzando
+                              solo a metaà. Beppe sbuffò impaziente:<br />
+                              "Un giorno o l'altro te lo racconterò, adesso andiamo a mangiare, sto morendo di
+                              fame!"<br />
+                              <br />
+                              Si avviarono insieme verso la Sala Mensa, forse una sana colazione poteva sostituire una
+                              sana notte di sonno. La Sala Mensa
+                              non era molto affollata a quell'ora. Frruuu notò però che tutti avevano la tipica faccia
+                              stropicciata di gente che aveva
+                              passato una brutta nottata.<br />
+                              "Non è che siamo passati vicino ad una nebula marrone, vero Beppe?" - chiese Frruuu,
+                              rabbrividendo al ricordo dell'incubo.
+                              Beppe sembrò non notare l'abbinamento di colore con l'oggetto stellare:<br />
+                              "De Niro mi avrebbe avvertito; no credo proprio che dovrò parlarne col dottore, magari è
+                              un virus mutante dell'influenza" -
+                              ghignò Beppe. Fecero una veloce colazione, poi Frruuu lasciò Beppe in Sala Mensa a parlare
+                              col medico, riguardo la strana
+                              attivita onirica che aveva colpito il suo equipaggio, e si diresse verso il Ponte di
+                              Comando.<br />
+                              <br />
+                              Il viaggio proseguiva senza eventi degni di nota. Non che Frruuu si lamentasse: ogni tanto
+                              un poco di traquillità serviva a
+                              distenderle le rughe. Improvvisamente dagli altoparlanti della nave si diffusero le dolci
+                              note di una antica ballata italoromagnola.
+                              il Primo Ufficiale e il Capitano si guardarono interrogativamente:<br />
+                              "Il nostro maestro di ballo ha cambiato genere?"<br />
+                              "Non credo Cocca: ho paura che le interferenze causate da quel pianeta si stiano facendo
+                              più subdole" - Se Frruuu avesse avuto degli
+                              occhi, adesso sarebbero stati rivolti verso il cielo. Di tutte le interferenze che avevano
+                              subito, questa si prospettava come la più fastidiosa.<br />
+                              <br />
+                              Finalmente arrivarono in vista dal pianeta. Purtroppo il file che il Comando aveva cercato
+                              di mandargli, con tutti i dati relativi
+                              alla loro meta, era arrivato criptato e i suoi uomini ancora non erano riusciti a
+                              decifrarlo. Jacket era arrivato solo al 73,8% della
+                              decrittazione. Si trovavano, perciò, davanti un pianeta di cui non sapevano assolutamente
+                              nulla e, considerata la loro fortuna,
+                              era probabilmente abitato da dinosauri vampiri naziskin.<br />
+                              "Beppe, ma i Tyrannosauri sapevano anche volare?" - chiese allarmata Frruuu. Alighieri la
+                              squadrò sorpreso:<br />
+                              "I Tyrannoche?" - Frruuu gli rispose come da lontano, quasi in trans:<br />
+                              "Tyrannosauri, Tyrannosauri con la zucca pelata e un sacco di svastiche appese al collo.
+                              Con lunghi canini forati pronti a succhiare
+                              il sangue delle loro vittime, le avvolgono nel loro lungo mantello, e così muoiono, con un
+                              terribile grido d'agonia soffocato in gola
+                              mentre denti a sciabola gli dilaniano il collo" - terminò mono tono. Sulla plancia era
+                              sceso il silenzio, tutti fissavano il primo
+                              ufficiale a bocca aperta. Anche il capitano non sapeva che rispondere. Con gli occhi
+                              sbarrati si volse a guardare il visore principale,
+                              quasi aspettandosi di vedere veramente arrivare un enorme dinosauro succhiatore di sangue.
+                              Frruuu parve riscuotersi da un sogno a
+                              occhi aperti. Si accorse di essere la protagonista degli sguardi inebetiti di tutti i
+                              presenti, sorridendo imbarazzata disse:<br />
+                              "Ehm... se le horta non si fanno otto ore di sonno tranquillo diventano un pochino... come
+                              dire... paranoiche?" - indurendo poi il
+                              tono della voce aggiunse - "Forza, circolare, non c'è nulla da vedere".<br />
+                              Beppe diede ordine a Da Nee di controllare con la Field, il guardiamarina incaricata della
+                              Cartografia Stellare, i dati proveniente
+                              da quel pianeta. Per passare il tempo, aspettando che la Field desse finalmente segni di
+                              vita, l'equipaggio iniziò a raccontarsi i
+                              sogni che affligevano le nottate di tutti. Frruuu, che ne aveva abbastanza dei suoi,
+                              cercava di ignorare i racconti pieni di
+                              particolari orrorifici che il personale di Plancia si stava scambiando. Tra un matrimonio
+                              all'aria e una nebula nutellifera onnivora,
+                              Da Nee avvertì il Capitano che ben tre navi della Federazioni si stavano avvicinando alla
+                              loro posizione.<br />
+                              "Apra un canale di collegamento multiplo, Rael" - ordinò Beppe, curioso. Pochi secondi
+                              dopo, il visore principale mostrava tre quadranti
+                              con altrettante faccie di Capitani: Erik Tomas McCartney della Efesto; Nova T'hy'la K.
+                              Slerek della Cronos; Gregory Ferrando della
+                              Selene. Sembravano tutti appastanza sorpresi di essersi ritrovati in quello che sembrava
+                              la Convention delle Bagnarole:<br />
+                              "Qui è il Capitano Jean... ehm... Giuseppe Alighieri, della nave Federale Afrodite" -
+                              Frruuu scosse la testa, chissaà com'è, quella
+                              frase faceva molto più effetto quando era il pelato a dirla.<br />
+                              "Qual buon vento!?" chiese sorridendo Nova.<br />
+                              "Già... che cosa vi ha portato in questa parte sperduta dello spazio?" - chiese sempre più
+                              curioso Beppe.<br />
+                              "Siamo in missione speciale per conto di Ailoura" - replicò Erik.<br />
+                              "Anche noi" - risposero in coro gli altri.<br />
+                              Frruuu si rese conto che Ailoura era infida come tutti i gatti, anche se aveva raggiunto
+                              lo stadio evolutivo dei Sapiens. I quattro
+                              Capitani andarono avanti ancora qualche minuto a lamentarsi del metodo di scelta della
+                              Flotta, poi a McCartney venne l'idea di
+                              invitare tutti i capitani ed i loro primi ufficiali sulla Efesto per prendere un tipico tè
+                              delle cinque alla scozzese.<br />
+                              "Ottima idea, credo che ci troviamo tutti d'accordo, vero?" - disse Beppe. Tutti
+                              annuirono. Il consigliere Becco scelse quel momento
+                              per intromettersi nella conversazione:<br />
+                              "Eccellente, è molto importante promuovere la collaborazione tra gli ufficiali ma non
+                              dobbiamo dimenticare anche la bassa manovalanza.
+                              Perché non invitiamo tutti sulla nostra nave per un Nutella Party?" - proclamò Becco,
+                              seraficamente inconsapevole degli sguardi
+                              assassini che tutta 'la bassa manovalanza' gli stavano inviando. Beppe, rosso in volto,
+                              cercò di parare il colpo:<br />
+                              "Ma certamente gli equipaggi saranno troppo impegnati..." - gli altri capitani non gli
+                              fecero neppure finire la frase:<br />
+                              "Ma no, ma no, il mio equipaggio ha certamente bisogno di distrarsi" - disse Nova.<br />
+                              "Ma sì, diamogli un po' di respiro alla ciurma" - concordò Ferrando. Vistosi ormai
+                              nell'impossibilità di rifiutarsi, Beppe, con un
+                              sorriso gelato sul viso, dovette confermare l'invito di Becco. Fece un cenno a
+                              DaNee:<br />
+                              "Perfetto! Un'ultima cosa: vi stiamo trasmettendo le specifiche delle pattine..." -
+                              sguardi stupiti corsero sui visi dei Capitani:<br />
+                              "Le... cosa?" - chiesero quasi all'unisono. Beppe rispose succintamente che la loro donna
+                              della pulizie non avrebbe permesso a nessuno
+                              di inoltrarsi per i corridoi della Afrodite senza il suddetto attrezzo. Ancora un poco
+                              stupiti, i Capitani diedero il loro assenso e
+                              dopo aver preso accordi per l'incontro delle cinque e zero zero sulla Efesto, la
+                              comunicazione venne chiusa. Appena il visore si
+                              spense, Alighieri si voltò come una furia verso Becco:<br />
+                              "Sulla mia nave sono io quello che fa gli inviti, chiaro? Adesso chi glielo dice ad
+                              Ernestina?" - urlò furente al consigliere.
+                              Questi aveva un sorriso stiracchiato, non si aspettava certo una simile reazione:<br />
+                              "Ma Capitano, mi è sembrato gentile ricambiare l'invito, e poi abbiamo Nutella in
+                              quantità...".<br />
+                              "Adesso va LEI da Ernestina e le dice di preparare la Sala Mensa per il Party" - sibilò il
+                              capitano. Becco impallidì ma aveva visto
+                              gli occhi di Alighieri diventare di bragia e non osò contraddirlo; con la coda tra le
+                              gambe, il consigliere andò in cerca della
+                              terribile donna delle pulizie della Afrodite. Frruuu decise che era meglio se andava a
+                              controllare lo stato della Sala Teletrasporto.
+                              Avrebbero fatto una ben magra figura se fossero arrivati sulla Efesto rovesciati per poi
+                              esplodere. L'umore di Beppe non sarebbe
+                              certamente migliorato. Appena entrata in Sala Teletrasporto, vide l'addetto che armeggiava
+                              sotto la consolle. Improvvisamente vide
+                              levarsi un fil di fumo:<br />
+                              "Pinkerton, attento!" - gridò allarmata Frruuu, avvertendo il tecnico. Vide che questi
+                              bypassò freneticamente alcuni chip e il fumo si diradò.<br />
+                              "Che diavolo stai facendo?" - chiese furente la horta. Il guardiamarina tentò di
+                              spiegare:<br />
+                              "Beh, stavo tentando un upgrade, per rendere..."<br />
+                              "... anche capace di grigliare?" - finì per lui il Primo Ufficiale - "Rimetti tutto come
+                              stava: toccare i delicati equilibri di queste
+                              consolle può essere fatale!" - Proprio in quel momento ricevette una chiamata da Beppe che
+                              l'avvertiva che era ora di prepararsi per
+                              l'incontro sulla Efesto. Dando un'ultima occhiataccia a Pinkerton, Frruuu si avviò verso
+                              il suo alloggio.<br />
+                              <br />
+                              Tutti bardati nella loro alta uniforme (che per la horta significava trasformarsi in un
+                              bigné glassato con una enorme mantella bianca)
+                              si avviarono alla Sala Teletrasporto; avevano deciso di portare in dono al Capitano
+                              McCartney un barattolo gigante di nutella e un
+                              mazzo di fiori, su cui Geppo stava cercando di farsi le unghie. Una volta arrivati, Beppe
+                              venne raggiunto da una chiamata:<br />
+                              "Capitano, sono Da Nee: siamo riusciti finalmente a decodificare il file. Nel giro di
+                              qualche ora dovremmo avere il documento
+                              completamente decrittato" - disse compiaciuta la voce di Da Nee attraverso il
+                              comunicatore; Beppe si complimentò per il lavoro ben
+                              svolto. Chiusa la comunicazione salì con Frruuu sulla pedana. Il vibrante brillio del
+                              teletrasporto li stava già avvolgendo che Frruuu
+                              vide che dalla consolle del teletrasporto si stava alzando un fil di fumo:<br />
+                              "Pinkerton, atten..." - tentò di avvertire l'addetto ma erano già arrivati nella Sala
+                              Teletrasporto della Efesto.<br />
+                              <br />
+                              "... to" - non riuscì a trattenersi. Beppe la guardò interrogativamente; Frruuu non voleva
+                              confessare davanti ad estranei in quale
+                              stato erano le consolle della Afrodite, perciò fece segno a Beppe di lasciar perdere. Ad
+                              accogliere la strana coppia c'era il Capo
+                              della Sezione Medica, una dottoressa olografica con tutti gli elettroni al punto giusto.
+                              Frruuu notò in lei una certa aria da gatta
+                              morta che non le piacque affatto. Ma soprattutto non le piacque il sorriso sornione del
+                              suo Capitano:<br />
+                              "Se vuoi posso lasciarvi soli!" - disse acida. Beppe la guardò senza capire.<br />
+                              "Sì, sì! Fai pure il finto tonto: prima quella ballerina verde vomito, adesso questa
+                              biondona... se stai cercando di dirmi che ti sei
+                              stancato di me non avresti potuto trovare argomenti meno diretti?" - concluse amara. Beppe
+                              si stava davvero arrabbiando:<br />
+                              "Se stai entrando in qualche strana fase hortiana, dimmelo, così mi preparo. Ma non ti
+                              azzardare un'altra volta a farmi certe scenate
+                              quando siamo in mezzo ad altri ufficiali, pure vestiti in alta uniforme" - e così dicendo
+                              si mise a camminare tre passi avanti la sua
+                              cocca. Frruuu capì che forse aveva esagerato. Probabilmente la mancanza di sonno le stava
+                              provcurando più danni di quello che lei
+                              stessa fosse disposta ad ammettere. Doveva trovare il modo di farsi perdonare, e trovare
+                              il modo di farsi una passatina sull'emettitore
+                              della Dottoressa. Questa li scortò fino al Bar di Prora. Frruuu notò che il tartan
+                              abbondava ovunque e che i normali trilli che
+                              accompagnano le operazioni delle navi federali erano stati sostituiti con lo struggente
+                              suono delle cornamuse. Prima che potesse
+                              notare qualcos'altro, furono entrambi ingolfati nel poderoso abbraccio di McCartney:<br />
+                              "Benvenuti a bordo amici miei, benvenuti" - li salutò con voce tonante il capitano. Prese
+                              il barattolone di Nutella, ringraziandoli
+                              profusamente, il mazzo di fiori invece venne quasi ignorato, sbattuto in braccio al suo
+                              Primo Ufficiale. Dietro il bancone un
+                              ferenghi stava già versando dei liquidi dal sospetto contenuto alcolico. Dopo qualche
+                              minuto di conversazione per far fischiar le
+                              orecchie agli alti papaveri dell'Accademia, il gruppo fu raggiunto dal Capitano Ferrando e
+                              dal suo secondo Signor Lames. Ripresero
+                              le libagioni (i muffin al riso fritto fecero impazzire Frruuu) e le chiacchiere. Li
+                              raggiunsero alla spicciolata anche gli altri
+                              capitani e primi ufficiali, tranne quello della Cronos, impegnato su altri fronti. Si
+                              parlò dell'effetto 'William Ryker', del forcone
+                              di Beppe e di come era utile a rimestare il riso fritto; delle missioni segrete affidate
+                              da una gatta infingarda; di cavoli e di re.
+                              Quando il livello alcoolico degli ufficiali fu uguale al debito estero di un Paese del
+                              Terzo Mondo del XXI secolo, Eric McCartney
+                              iniziò a cantare accompagnandosi con la cornamusa:<br />
+                              "Sai una cosa, Beppe? Inizio a rimpiangere 'Romagna Miaì - confidò Frruuu a Beppe dopo
+                              pochi minuti di una straziante nenia scozzese.
+                              Il Capitano Nova, data un'occhiata all'ora, si ricordò di un improvviso impegno e, quasi
+                              scappando, salutò la compagnia invitandola
+                              a bordo della Cronos:<br />
+                              "Così potrete ammirare il nostro galeone, il Morning Star" - gridò quando era già in un
+                              punto lontano nel corridoio. Gli altri
+                              approfittarono dell'interruzione per proporre l'inizio delle Olimpiadi Scozzesi:
+                              divertimento a lungo promesso da McCartney.<br />
+                              La prima prova consiteva nel suonare una 'Cornamusa Sversa', ossia riempita di ottimo
+                              whyskey. Vincitore, di parecchie lunghezze, fu
+                              Geppo, il gatto infernale del Capitano Alighieri, l'unico ancora che riusciva a reggersi
+                              in piedi e solo perché era già per sua natura
+                              a quattro zampe. La seconda prova consisteva nel 'Lancio del Cardo Avariato' contro
+                              fotografia del Principe del Galles. Vidi che il
+                              Principe del Galles assomigliava molto ad un ferengi.<br />
+                              "Ecco cosa capita a sposarsi tra consanguinei" - pensò non troppo chiaramente Frruuu.
+                              Questa prova fu vinta dal capitano della Efesto
+                              che sembrava come posseduto da una furia interiore, tanta era la foga con cui colpiva
+                              quella povera foto. Alla terza prova Frruuu era
+                              sicura di riportare una schiacciante vittoria: si trattava infatti di una gara a coppie:
+                              il 'Trasporto degli Ubriachi' in cui
+                              il più lucido deve trasportare il più brillo fino a destinazione, ma la horta non aveva
+                              fatto i conti con la testardaggine di uno
+                              scozzese ubriaco:<br />
+                              "Uhm, Capitano, penso di essere io quella che la deve trasportare" - tentoò di ragionare
+                              Frruuu.<br />
+                              "Non sia mai che un McCartney sci faccia portare da una scignora... hic... e poi hic...
+                              sciono lucidisscimo" - biascicò lo scozzese.<br />
+                              "Essere di sesso femminile non mi impedisce di essere fatta di solida roccia, Capitano:
+                              non può farcela" - lo implorò ancora una
+                              volta Frruuu, ma già Eric stava tentandola di caricarsela sul groppone. Fu il risultato
+                              più scarso degli ultimi quattro secoli:
+                              ben sette centimetri sette prima che il Capitano della Efesto finisse annientato dal peso
+                              della 'donzella' e dalla quantitaà
+                              industriale di alcool in cui stavano annegando i suoi ultimi globuli rossi. Frruuu vide
+                              Ferrando trasportare Bonvicino, il Primo
+                              Ufficiale della Efesto, vittorioso oltre il traguardo, mentre lei tentava di scendere dal
+                              corpo spiattellato di McCartney senza
+                              evaporarlo. Per fortuna, l'ultima fatica riguardava una gara di poesia, in sanscrito
+                              antico masticando tabacco e haggis, e Frruuu
+                              sapeva che la Afrodite poteva contare sul discendente diretto di Dante Alighieri. Sperava
+                              inoltre che i lunghi anni di convivenza
+                              con Beppe le avessero fatto assorbire un poco della sua maestria nel declamare poemi. A
+                              quel punto dell'incontro non erano rimasti
+                              molti concorrenti, infatti il Capitano Ferrando si era ritirato, anche perché tra l'alcool
+                              e la fatica di trasportare il suo
+                              Numero Uno oltre l'ostacolo, aveva serie difficoltà ad aprire correttamente la mandibola.
+                              Frruuu si fece avanti e iniziò a declamare
+                              un'antica poesia del XX Secolo, solo di recente scoperta in alcuni scavi presso
+                              Brescia:<br />
+                              <em>Disse l'oste al vino<br />
+                                    Tu mi diventi vecchio.<br />
+                                    Ti voglio maritare all'acqua del mio secchio.<br />
+                                    Fai le pubblicazioni<br />
+                                    Sposo l'idrolitina del Cavalier Gazzoni!</em><br />
+                              <br />
+                              Spuntarono lacrime tra gli occhi cisposi del pubblico. McCartney accennò qualche nota alla
+                              cornamusa per esprimere la sua
+                              commozione. Venne poi il turno del Capitano Giuseppe Alighieri che, schiarendosi la voce e
+                              masticando tabacco e haggis, iniziò.
+                              Il tuono di applausi che seguirono l'attonito silenzio alla fine della poesia, decretarono
+                              senza ombra di dubbio chi fosse il
+                              vincitore della gara.<br />
+                              A fine giornata, dopo aver salutato e ringraziato il Capitano della Efesto per
+                              l'ospitalità e gli altri ospiti per la cordialità,
+                              Frruuu, Beppe e Geppo si avviarono alla loro nave, sognando solo di potersi togliere la
+                              scomoda divisa da alta uniforme ed infilarsi
+                              nel loro letto a smaltire la sbornia.<br />
+                              Appena teletrasportati, però, ad accoglierli trovarono Ernestina Scramiglio: l'ultima
+                              persona nell'universo da desiderare di
+                              incontrare se si era sbronzi:<br />
+                              "CAPITANO, LO SA COSA HANNO FATTO QUEI VANDALI IN SALA MENSA? MI TOCCHERÀ PULIRE PER UNA
+                              SETTIMANA! C'È NUTELLA APPICCICATA
+                              DAPPERTUTTO..." - e continuò con un tono di voce che poteva forare lastre d'acciaio,
+                              seguendo il Capitano e il Primo Ufficiale fino
+                              al loro alloggio; e rimase ad urlare anche quando la porta le si chiuse in faccia:<br />
+                              "QUESTO CON PICARD NON SAREBBE MAI ACCADUTO!"<br />
+                              Beppe e Frruuu, troppo stanchi e troppo poco lucidi, non ebbero la forza di replicare. Si
+                              buttarono sul letto e dopo poco un
+                              lieve russare s'accompagnò alle urla che ancora giungevano dal corridoio.
+
+
+                              <br />
+                              <em style="color:rgba(248,248,255,0.5);">
+                                    GM Frruuu<br />
+                                    XO<br />
+                                    USS Afrodite NCC-1863
+                              </em>
+                        </p>
+
+                  </div>
+            </div>
+
+            <!-- Navigation -->
+            <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+                  <a href="log_mission6.html" class="btn-back">
+                        <i class="fa-solid fa-chevron-left"></i> Log Mission: 6
+                  </a>
+                  <div style="margin-left:auto;display:flex;gap:8px;">
+                        <a href="log_mission6_01.html" class="btn-back" style="margin-bottom:0;">
+                              <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="log_mission6_03.html" class="btn-back" style="margin-bottom:0;">
+                              <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                  </div>
+            </div>
+
+      </main>
+
+      <!-- FOOTER -->
+      <footer id="site-footer"></footer>
+      <script src="script.js"></script>
+</body>
+
+</html>
