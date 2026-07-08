@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Da Nee – Mission 6 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission6.html">Mission: 6</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Da Nee</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-dna"></i> &nbsp;SCI &nbsp;·&nbsp; XSO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM Da Nee</div>
+          <div class="diary-header-mission">Mission: 6 — Afrodite in Wonderland</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/danee_l.jpg" alt="GM Da Nee"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_danee.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10203.23 </span>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Finalmente il giorno tanto atteso è arrivato... tra pochi minuti il mio Sàpek ed io saremo finalmente uniti in
+          matrimonio.
+          Per l'occasione, Peter ci ha regalato la scenografia: una perfetta ricostruzione olografica della chiesa di
+          Notre-Dame du Haut
+          a Ronchamp. È splendida, con il suo soffitto a capriate, la forma semplice, lineare ma elegante, lanciata
+          verso l'alto con la sua
+          cuspide... proprio un gran bel regalo di nozze. Anche Sàpek apprezza molto Le Corbusier, e Notre-Dame du Haut
+          in particolare, la
+          ritiene l'opera massima dell'architetto svizzero del XX secolo.<br />
+          All'interno ci sono proprio tutti gli amici più cari. Il Capitano sfoggia la sua alta uniforme tirata a
+          lucido: c'è voluto un
+          mese di assillanti 'pressioni', ma alla fine siamo riusciti a convincerlo ad officiare la cerimonia.<br />
+          Sàpek è splendido nel suo abito in velluto blu, con un giglio bianco all'occhiello. L'orecchino che porta
+          all'orecchio sinistro
+          non sembra così brillante, paragonato al suo sorriso... non riesco ancora a crederci.<br />
+          <br />
+          Ci siamo: nell'aria il suono melodioso di violini ed arpe, con intermezzi di cornamusa... e un coro angelico
+          che canta 'Romagna
+          mia'.<br />
+          Siamo uno di fianco all'altro, il Capitano ci è di fronte, Geppo sulla sua spalla e... Frruuu dietro di lui
+          che beve del thè.
+          Ma ecco che Beppe sta per porci la fatidica domanda:<br />
+          - Vuoi tu GM Da Nee prendere come tuo legittimo consorte il qui presente GM Sàpek, per amarlo e onorarlo,
+          nella buona e nella
+          cattiva nebula, finché Adam Smith non vi separi?<br />
+          - Sì, lo voglio!<br />
+          - E vuoi tu GM Sàpek prendere come tuo legittimo consorte il qui presente GM Da Nee, per amarlo e onorarlo,
+          nella buona e nella
+          cattiva nebula, finché Adam Smith non vi separi?<br />
+          A questo punto Sàpek si volta verso di me, accenna un sorriso, alza il sopracciglio e...<br />
+          - Assolutamente NO!!!<br />
+          - Ma... ma... amore mio, che dici?<br />
+          - E non chiamarmi così!!!<br />
+          - Ma... ma...<br />
+          - Ma, ma, ma... non sai dire altro? Ti odio, ti ho sempre odiato... ti ricordi di me solo quando hai bisogno
+          di un sostituto
+          in Plancia per andare a divertirti!<br />
+          - Ma cosa dici?<br />
+          - Sei un verme Da, e io ti schiaccerò ahr ahr ahr ahr...<br />
+          - NOOOOO!!!<br />
+          <br />
+          Mi risveglio di soprassalto nel mio alloggio, nel letto, bagnato come un pulcino, accanto al mio Sàpek, che si
+          è svegliato per il
+          mio urlo... era un incubo! Il 'solito' incubo che mi assilla da molte notti ormai...<br />
+          - Amore, che succede?<br />
+          - Nulla, Sàpek! Perdonami, ti ho svegliato!<br />
+          - Che c'è, hai fatto di nuovo quell'incubo?<br />
+          - Sì, amore mio...<br />
+          - Lo sai che ti amo. Non farei mai nulla del genere! Vieni qua, tra le mie braccia...<br />
+          - Non so cosa mi prenda ultimamente...<br />
+          - Forse si tratta solo di stress da iper-lavoro: forse dovresti andare in Infermeria per un controllo. Anzi,
+          ti ci accompagno,
+          vestiti che andiamo...<br />
+          - Sì, hai ragione, sarà meglio... anche se a quest'ora troveremo solo Carter...<br />
+          <br />
+          Usciamo dal nostro alloggio e... c'è qualcosa che non va: le pareti del corridoio sono stranamente viscide,
+          sembrano ricoperte da
+          una sostanza marrone.<br />
+          Estraggo il tricorder dalla cintura e ho delle letture molto strane: saccarosio, oli vegetali, nocciole, cacao
+          magro, latte scremato,
+          lattosio, siero di latte, lecitina di soia...<br />
+          - Ti ricordano nulla questi dati?<br />
+          - Ma... è Nutella!!!<br />
+          - Esattamente!<br />
+          - Chi sarà stato quell'idiota che ha spalmato nutella sulle paratie?<br />
+          - Te la immagini la faccia di Ernestina quando se ne accorgerà?!?!<br />
+          - Non vorrei essere nei panni del colpevole... Lasciamo stare la Nutella ora, andiamo in Infermeria ché c'è
+          Robert che mi sta aspettando!<br />
+          - Come dici Sàpek? Che c'entra Robert!!!<br />
+          - Non te lo avevo detto? Mi ha chiesto di sposarlo, ed io ho accettato...<br />
+          - NOOOOO!!!<br />
+          <br />
+          - Su coraggio Signor Da...<br />
+          - Booo... non mi sposa più!!! Ma... dove mi trovo!!! E perché mi fa così male l'avambraccio?<br />
+          - È in Infermeria, e l'abbiamo svegliata con un pizzicotto...<br />
+          - Come ci sono arrivato qui? E dov'è Sàpek!<br />
+          - Non saprei, è entrato da solo, poco fa, ed ha attivato il MOE...<br />
+          - Signor Da, cosa ricorda della sua esperienza onirica?<br />
+          - Bhe... dottoressa... è una storia un po' lunga. Da diverse notti faccio sempre un incubo ricorrente...<br />
+          E qui inizia l'avventura del Signor Bonav... ehm, no, questa è un'altra storia... qui inizia il racconto dei
+          miei strani incubi alla Dottoressa.<br />
+          Terminato il racconto, T'Mik mi esamina rapidamente con lo scanner medico: la sua diagnosi è che sono sano, e
+          mi dimette,
+          raccomandandomi solo di riposare.
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          <span class="stardate-value">Due ore dopo, in Plancia</span>
+          - Ma cos'è questo fracasso assordante?<br />
+          - Le interferenze del pianeta, hanno attivato delle sub-routine dell'interfaccia audio, e il computer sta
+          diffondendo musica dagli altoparlanti.<br />
+          - Fatela smettere!!!<br />
+          - Ci sto provando, ma il computer non ne vuol sapere.<br />
+          - Ma che roba è?<br />
+          - Raul Casadei, 'Romagna mia'. Molto in voga nelle sale da ballo nella seconda metà del XX secolo sulla Terra,
+          nella penisola sud-europea.<br />
+          - Dovremmo avvertire il Capitano...<br />
+          - Credo se ne sia già accorto: il problema non è circoscritto alla Plancia, ma interessa tutti i ponti!<br />
+          - Signor De Niro!<br />
+          - Dica pure, Rael!<br />
+          - Siamo riusciti a ricevere quel file da Star Fleet...<br />
+          - Ottimo. Cosa dice?<br />
+          - Purtroppo è criptato, ma ci stiamo lavorando.<br />
+          - Datevi da fare Signor Jacket.<br />
+          <br />
+          <span class="stardate-value">Un'ora più tardi il Capitano e il Numero Uno sono sulle loro poltroncine in
+            Plancia</span><br />
+          - Ci siamo quasi, Capitano. Sono riuscito a completare il 73.8% della chiave di decrittazione.<br />
+          - Ottimo signor Jacket, continui così!<br />
+          - Dalla Sala Macchine ci informano che la musica sta creando problemi anche lì!<br />
+          - Fate qualcosa! Non si possono spegnere questi maledetti altoparlanti?<br />
+          - Sono direttamente interfacciati sulle paratie, Signore: non ci sono fili da tagliare...<br />
+          - Signore, i sensori a lungo raggio hanno scoperto un pianeta in rotta di intercettazione. Se le letture
+          astrometriche sono esatte,
+          si tratta proprio del pianeta da cui parte il segnale ritrasmesso dai ripetitori che abbiamo scoperto.<br />
+          - Signor Da, si informi in proposito. Voglio sapere vita morte e miracoli di quel pianeta, prima di
+          arrivarci!<br />
+          - Sì Capitano; GM Da a Sala Cartografia Stellare.<br />
+          - bzzz bzzz<br />
+          - Plancia a Sala Cartografia Stellare!<br />
+          - bzzz bzzz<br />
+          - Ma che succede!!! Da Nee a GM Field!<br />
+          - Dica pure, Signore!<br />
+          - Ma dove si trova, Arianna? Dovrebbe stare al suo posto in Cartografia Stellare...<br />
+          - Ha ragione Signore, ma sono dovuta venire urgentemente in Sala Macchine. Dovevo trovare il GM
+          Rogers...<br />
+          - E per quale motivo, di grazia?<br />
+          - Il GM Rogers ha sintetizzato un gel polimerico adesivo idrorepellente... sa in che condizioni lavoro in
+          Cartografia Stellare, e
+          quel gel mi sarebbe molto utile: il bostik è finito, e lo scotch non tiene...<br />
+          - Sì, sì... ho capito... lasci stare Rogers, e vada subito al suo posto. Sto trasmettendo i dati dei sensori a
+          lungo raggio alla sua
+          consolle: veda di darmi quante più informazioni le è possibile su questo pianeta... e veda di farlo alla
+          svelta!<br />
+          - Sì Signore... sto già rientrando: il GM Rogers non è qui!<br />
+          - Plancia a GM Rogers!<br />
+          - Signore!<br />
+          - Mi dia la sua posizione, prego!<br />
+          - Sono appena arrivato in Sala Cartografia Stellare, Signore. Dovevo consegnare un gel polimerico al GM Field,
+          ma, a quanto pare, non è qui!<br />
+          - Sta arrivando. La aspetti e già che ci si trova, le dia una mano con l'incarico che le ho affidato. A meno
+          che non abbia un altro
+          compito da svolgere!<br />
+          - Sì, Signore.<br />
+          <br />
+          <span class="stardate-value">Poco dopo</span><br />
+          - Capitano?<br />
+          - Sì...?!?<br />
+          - Stiamo entrando nella casella A4!<br />
+          - Come?<br />
+          - La casella A4.<br />
+          - Stai giocando alla battaglia navale con Adam, per caso?<br />
+          - No, Signore... non ha visto sul tabellone degli eventi... la casella A4!<br />
+          (a questo punto Beppe estrae dalla 'tasca interna' dell'uniforme gli occhiali da lettura, li inforca
+          poggiandoli sulla punta del naso,
+          estrae un 'copione' da sotto la poltroncina ed inizia a sfogliarlo...)<br />
+          - Dunque... vediamo... tabella degli eventi... ah eccolo qui... allegato B... Che casella hai detto?<br />
+          - A4.<br />
+          - A4... A4... dunque: <em>incontri un'altra nave della Federazione...</em> Ah ecco... sì, sì. Ricominciamo...
+          scusate, un lapsus...
+          allora... Sullo schermo!... ehm ma sono in 3!!!<br />
+          - È tutto ok, Beppe. Ho contattato la Maxwell che a sua volta a rigirato la domanda a Stark: l'incontro può
+          avvenire anche tra più navi.<br />
+          - Sei sicuro, Da?<br />
+          - Sì! Ho proprio qui l'e-mail di Giovanna...<br />
+          - Ok ok... se lo dici tu va bene... dunque... ari-scusate!!! Sullo schermo!<br />
+          - Ehi, ma quella la conosco... quella gialla... è sicuramente la Efesto!!!<br />
+          - Le altre due sono la Cronos e la Selene...<br />
+          - Apri un canale multiplo, Rael!<br />
+          - Sì Signore! Canale aperto!<br />
+          - Qui è il Capitano Jean... ehm... Giuseppe Alighieri, della nave Federale Afrodite... (è dalla prima missione
+          che sogno di dirlo).<br />
+          - Sono Nova T'hy'la K. Slerek, al comando della USS Cronos... qual buon vento?<br />
+          - Qui è il Capitamno Gregory Ferrando, della nave federale Selene...<br />
+          - Capitano Paul... ehm... Erick Tomas McCartney, della nave federale Efesto!<br />
+          - Ma quale combinazione... anche voi qui...<br />
+          - A quanto pare la missione 'segreta' e 'riservata' della Ailoura coinvolge altri equipaggi!<br />
+          - Evidentemente sì, cari colleghi.<br />
+          - Sono io che mi sbaglio, o quello che vedo penzolare sopra le vostre teste sono degli insaccati, mio caro
+          Alighieri?<br />
+          - No no... non sbaglia affatto, esimio... ma non fate caso al disordine... né alla musica di 'sottofondo'...
+          il solito guasto tecnico...<br />
+          - Visto che siamo tutti qui: che ne dite di un incontro sulla Efesto? Alle 17.00 è previsto il solito the
+          scozzese! A quell'ora
+          dovreste già aver ricevuto uno degli inviti standard.<br />
+          - Capitano McEntire, sarà un vero piacere...<br />
+          - (Signore, è McCartney, non McEntire)<br />
+          - (Davvero Signor Da?!? Lo so bene...)<br />
+          - ... io e il mio Primo Ufficiale Frruuu accettiamo di buon grado.<br />
+          - Capitano McCartney siamo onorati dell'invito, ma al momento siamo un po' incasinati: temo che riuscirò a
+          salire solo io a bordo del
+          suo sottomar... ehm, nave. Il mio Primo Ufficiale Lames è oberato da turni di servizio, ma non dispero di
+          riuscire a liberarlo:
+          d'altronde, non dovrebbe esserci nulla di male a trascorrere un paio d'ore in buona compagnia, stringendo e
+          rinsaldando amicizie tra di noi!<br />
+          Becco scelse quel momento per intromettersi nella conversazione:<br />
+          - Eccellente, è molto importante promuovere la collaborazione tra gli ufficiali ma non dobbiamo dimenticare
+          anche la bassa manovalanza.
+          Perché non invitiamo tutti sulla nostra nave per un Nutella Party?<br />
+          Becco aveva l'aria soddisfatta, ma ignorava che noi della 'bassa manovalanza' gli stavano lanciando sguardi
+          assassini...<br />
+          Il Capitano, rosso in volto, cercò di metterci una pezza:<br />
+          - ... ma certamente gli equipaggi saranno troppo impegnati...<br />
+          Gli altri Capitani non gli fecero neppure finire la frase.<br />
+          - Ma no, ma no, il mio equipaggio ha certamente bisogno di distrarsi!<br />
+          - Ma sì diamogli un po' di respiro alla ciurma!<br />
+          Vistosi ormai nell'impossibilita di rifiutarsi, Beppe, con un sorriso gelato sul viso, dovette confermare
+          l'invito di Becco.<br />
+          - Perfetto, signori. Allora: alle 17.00 Capitani e Primi Ufficiali da noi per il the, mentre gli altri
+          Ufficiali Superiori da voi per il party.<br />
+          - Perfetto!... Un'ultima cosa: vi stiamo trasmettendo le specifiche per le pattine...<br />
+          - Per cosa?<br />
+          - Le pattine! Sapete: la nostra SSC non vuole vedere nessuno in giro per la nave senza... ma per il resto è
+          una signora tanto gentile!<br />
+          - Ci equipaggeremo con queste pattine, allora!<br />
+          - Dunque, alle 17.00. Alighieri, chiudo!<br />
+          Appena il visore si spense, il Capitano si voltò come una furia verso Becco:<br />
+          - Sulla mia nave sono io quello che fa gli inviti, chiaro? Adesso chi glielo dice ad Ernestina? - urlò furente
+          al Consigliere che
+          non si aspettava una reazione simile:<br />
+          - Ma Capitano, mi è sembrato gentile ricambiare l'invito, e poi abbiamo Nutella in quantità...<br />
+          - Adesso va lei da Ernestina e le dice di preparare la Sala Mensa per il Party!<br />
+          Becco impallidì ma non osò contraddire il Capitano e con la coda tra le gambe andò in cerca della SSC.<br />
+          - Hai capito quella... Ailoura? E pensare che ci aveva fatto credere chissà che!!!<br />
+          - Su Beppe... non prendertela!<br />
+          - Sì cocca, hai ragione!<br />
+          <br />
+          - Capitano, ho decifrato la chiave del file.<br />
+          - Bene Peter, cosa dice?<br />
+          - Ecco...<br />
+          - Dunque?<br />
+          - Non lo so, Capitano!!!<br />
+          - Come sarebbe: non lo so?<br />
+          - Evidentemente ho commesso un errore di calcolo!!!<br />
+          - Cosa ne pensa, signor Da?<br />
+          - Dunque... mi faccia dare un'occhiata, Signore!<br />
+          ...<br />
+          - Peter, è qui l'errore: anziché interpolare con una chiave esagesimale, ne hai usata una binaria
+          inversa.<br />
+          - È vero, Da... hai ragione, ma con questa musica assordante che mi rimbomba nella testa, non riesco a
+          concentrarmi!<br />
+          - Ti capisco, anch'io non la reggo più.<br />
+          - Interpolando correttamente, appare tutto chiaro.<br />
+          - Già... ecco la chiave!<br />
+          - Capitano, ci siamo!<br />
+          - Ben fatto, Signori... Lo dico sempre: lavoro di squadra, e si risolve tutto!!! Un'altra cosa, signor
+          Da.<br />
+          - Sì, Capitano?<br />
+          - La signorina Field, le ha fatto sapere nulla del pianeta? Ha portato a termine l'incarico che le aveva
+          affidato, o brancola ancora nel buio?<br />
+          - In effetti doveva farmi rapporto da un pezzo...<br />
+          - A lei ci penso io, GM Da, lei si occupi di decifrare il file e mi faccia rapporto in Sala Tattica.<br />
+          - Sì, Capitano...<br />
+          <br />
+          <span class="stardate-value">Più tardi...</span><br />
+          - Signore, siamo a destinazione! Ecco il pianeta!<br />
+          - Orbita standard Signor De Niro!<br />
+          - Beppe... sono le 16.45: dobbiamo prepararci...<br />
+          - Sala teletrasporto 2, prepararsi al teletrasporto sulla Efesto! Dove sono i gerani e la nutella?<br />
+          - Sono in ST2 ad aspettarci Beppe...<br />
+          - Bene... allora noi andiamo! Becco, a lei il comando (mi raccomando Bob, pensa tu alla baracca)!<br />
+          - A dopo, Capitano!<br />
+          <br />
+          - Da Nee a GM Sàpek!<br />
+          - Dimmi, cucciolo!<br />
+          - Scusami se non ti ho avvisato prima, biscottino... dovresti sostituirmi per qualche ora in Plancia: io ho un
+          ricevimento ufficiale in Sala Mensa!<br />
+          - Ma non puoi! Non ho ancora rammendato la tua alta uniforme: dopo la Missione su Sergross è a brandelli! Devo
+          ancora riattaccare i bottoni e sistemare i galloni...<br />
+          - Non ne posso replicare una nuova?<br />
+          - Sulla Afrodite?!? Prendi la mia giacca! Io arrivo subito!<br />
+          - Ok, a tra poco.<br />
+          <br />
+          <span class="stardate-value">Sala Mensa. 10 minuti dopo.</span><br />
+          Bene, ci siamo tutti.<br />
+          - Signori, un attimo di attenzione, prego! Prima di tutto: benvenuti a bordo della Afrodite. Io sono il GM
+          Jacket, Capo OPS.
+          Per facilitare la socializzazione, abbiamo preparato delle targhette - sono su quel tavolo - con i vostri
+          nomi. Hanno un codice
+          cromatico per identificare la nave. Oltre al Nutella Party, abbiamo organizzato degli eventi
+          collaterali...<br />
+          <br />
+          Il Party è andato liscio, tutto sommato, senza incidenti... salvo che per la piramide di lattine del GM Andrew
+          Shockley,
+          Secondo Ufficiale Scientifico della USS Efesto: ad un certo punto il tavolino su cui l'aveva poste viene
+          colpito non si sa bene
+          da chi, e le lattine iniziano a rotolare dappertutto disperdendo un po' ovunque il loro contenuto... se ne
+          salva solo una, ma
+          la loro mascotte, Pikachu, tranquillamente ne beve il contenuto, indifferente della disperazione di tutti... è
+          stato un
+          piacevole diversivo intrattenermi con loro, specialmente con Andrew (mi ha confessato che preferisce la musica
+          New-Age al liscio...)
+          e con Catherine Tyler, il Consigliere della Efesto (a lei piace la musica soft...). Ho avuto l'impressione che
+          tra loro ci fosse
+          del tenero... Si parla di tutto: di flipper, beli clavian, cucina, patatine dolci, Nutella, coca cola...
+          Purtroppo il tempo vola
+          in fretta, quindi non ci resta che salutarci e ci rinnoviamo l'invito per rivederci in un'altra occasione.
+          Andrew si offre di farmi
+          fare una partita al suo flipper (ma non è che la cosa mi entusiasmi molto... spero non se ne sia accorto), ed
+          io replico dicendo che
+          mi piacerebbe far ascoltare loro un brano eseguito da me col mio fido beli clavian... sarà per un'altra
+          volta.<br />
+          <br />
+          Dopo il Party, finalmente il mio turno di riposo... mi ci vuole un po' di relax. Tanto più che tra una
+          mezz'oretta mi raggiungerà
+          anche Sàpek e... ci divertiremo con un po' di Nutella che ho trafugato al party...<br />
+          ... nel frattempo mi rilasso suonando un po'.
+
+          <br />
+          <em style="color:rgba(248,248,255,0.5);">
+            GM Da Nee<br />
+            XSO<br />
+            USS Afrodite NCC-1863
+          </em>
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission6.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 6
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission6_03.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission6_05.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
