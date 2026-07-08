@@ -1,0 +1,1060 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Alighieri – Mission 6 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission6.html">Mission: 6</a>
+      <span>›</span>
+      <span class="current">Diario di Bordo – Ten JG Alighieri</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #800000 0%, #5a0000 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-circle-chevron-up"></i> &nbsp;COM &nbsp;·&nbsp; CO &nbsp;·&nbsp; Diario di Bordo
+          </div>
+          <div class="diary-header-name">Ten JG G. Alighieri</div>
+          <div class="diary-header-mission">Mission: 6 — Afrodite in Wonderland</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/alighieri_l.jpg" alt="Giuseppe Alighieri"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_alighieri.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10203.23 </span>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Penso che un sogno così non ritorni mai più...<br />
+          <em>(la chiave... che fine ha fatto la chiave...?)</em><br />
+          mi dipingevo le mani e la faccia di blu<br />
+          <em>(un andoriano, praticamente...)</em><br />
+          poi d'improvviso venivo dal vento rapito...<br />
+          <em>(la portaaaaa...!)</em><br />
+          e incominciavo a volare nel cielo infinito...<br />
+          <em>(una nebula... datemi una nebula! Al cioccolato e vaniglia...!)</em><br />
+          <br />
+          (cantata...)<br />
+          Dorme Beppe, con Geppo e la horta, come tutti dovrebbero provar<br />
+          tutti sapete che dormir da soli non è poi una gran felicità!<br />
+          Indovinate che sogna il capitano...?<br />
+          una nebula, non è una novità...<br />
+          ma l'allarme risuona... (uuuuuu uuuuuuu)<br />
+          Beppe spalanca la bocca...<br />
+          che cosa lo ha fatto scattar...?<br />
+          È una musica in sordina<br />
+          viene dall'Infermeria<br />
+          no, è molto più vicina<br />
+          Beppe scende dal lettino<br />
+          e si trova in un bel giardino<br />
+          MA CHE SOGNO è QUESTO QUA!<br />
+          tra le antenne a passeggiar...<br />
+          ...<br />
+        </p>
+
+        <metti>
+          - È tardi, è tardi sai e io son già in mezzo ai guai!<br />
+          - Frruuu! Aspetta!<br />
+          - Non posso dirti ciao: ho fretta, fretta sai! Oh, beppino, mi taglierà la testa!<br />
+          <br />
+          D'accordo, questo è un bel giardino, pieno di siepi, fiori e antenne paraboliche; rispetto agli altri sogni
+          precedenti
+          (Picard, chiavi e Fra' Marcello benedicente) è un grande passo avanti. Beppe però comincia a stufarsi di
+          questi sogni
+          assurdi che vanno popolando le sue notti.<br />
+          Quest'ultima trovata poi: Frruuu in casacchina a fiori e orologio al collo che corre interrandosi a testa
+          bassa sotto una siepe.
+          Il capitano è tante cose ma non certo una bella bambina bionda in grembiule!<br />
+          Ma la curiosità è troppo forte: e nel sogno si ritrova a seguire Frruuu dentro un lungo tunnel lastricato di
+          mattonelle in ceramica
+          (si sente una voce gridare: le pattine! Mascalzone! Ho dato la cera!). Ma Beppe passa avanti. Ora si ritrova
+          davanti un piccolo
+          portone con davanti un portiere gallonato e pettorauto (uguale sputato al 'suo' Adam Smith) che gli impedisce
+          di passare.<br />
+          - Parola d'ordine! Spiacente signore: senza chiave non si passa!<br />
+          Aridagli, con questa chiave! Questi sogni cominciano a farsi ripetitivi... Beppe non si perde d'animo, vede
+          del riso fritto in una
+          scodella sopra un tavolino (che fino a qualche secondo prima non c'era), ne mangia un cucchiaio, ne mangia un
+          altro... lo finisce
+          tutto ma non succede niente!<br />
+          - Slurp - fa il nostro eroe; poi si teletrasporta con spruzzi d'aglio e sparisce.<br />
+          <br />
+          Un labirinto. Che novità. Questo sembra preciso quello che si trova ad Hampton Court, in Inghilterra. Siepi di
+          mortella alte
+          due metri, giravolte improvvise, radure fra un passaggio e l'altro... perfino l'albero con quel sogghigno è
+          uguale alla quercia
+          che si trova nel centro del... un sogghigno?<br />
+          - Salve Peter...<br />
+          - la luna sa di tè al limon e Marconi non c'è più!... Buongiorno, Capitano! Seconda strofa.<br />
+          - Aspettate, Peter, non sparite subito! Ditemi che strada devo prendere...<br />
+          - Bho... tutto dipende da dove volete andare.<br />
+          - Una vale l'altra in un sogno immagino... comunque stavo seguendo Frruuu...<br />
+          - Allora dovete seguire la musica... in quella direzione!<br />
+          - È la stessa musica che ho sentito sulla nave quando mi sono svegliato... che strano... Peter? Peter!<br />
+          Ma di lui è rimasto solo il sogghigno.<br />
+          Beppe comincia a svoltare a sinistra e a destra, cercando di seguire le note e (che ci crediate o no) dopo
+          l'ennesiva curva
+          due guardie della sicurezza gli sbarrano la strada...<br />
+          - Se credi che siamo casacche rosse dovresti sparare per vederci...<br />
+          - ... e se credi che siamo degli sfigati dovresti ascoltarci...:<br />
+          - Un cadetto diceva a De Leone è orsù è ora Ammiraglio a tre stelle sei tu<br />
+          - ma ancora ci fai, gli scherzi tu fai, oramai non li devi far più, mai più<br />
+          - con il grado che hai non va più...<br />
+          - Gli rispose De Leone: Ma adesso che so che il 'commando' non ho... beh...<br />
+          io li fò, li rifò, li rifò ah aha haha ah ahhaa!<br />
+          <br />
+          Che strane creature si incontrano nei labirinti!<br />
+          Per fortuna Beppe riesce ad aggirarle senza troppi problemi e dopo tante giravolte una vasta radura si apre
+          davanti a lui.
+          E là, sopra un grande divano a forma di fungo (o sopra un grande fungo a forma di divano ) c'è la nostra JT
+          con tanto di gattina
+          in grembo e Benton con ventaglioni. Strano, di solito JT non fuma i narghilè.<br />
+          - Cosa... esser... tuuu? Un'incognita? Un capitano? O capitano, mio capitano! Avanti, Benton, più energia con
+          quel ventaglio,: sto soffocando per il fumo!<br />
+          - Una pipata, signore?<br />
+          - Jidtiza, per caso Frruuu è passata da queste parti?<br />
+          - No, o diavolone, l'unica che è passata di qua finora è la comandantessa Ailoura con un telefonino in mano
+          che chiamava tutti a raccolta!<br />
+          - Peccato, avrei avuto piacere a salutarla...<br />
+          - Lo vede quel sacco?<br />
+          - Quello con su scritto 'pece e piume'?<br />
+          - Sì.<br />
+          - Quello che si agita convulsamente?<br />
+          - Già.<br />
+          - Quello che sembra contenere qualcuno?<br />
+          - Ah ah.<br />
+          - JT, c'è qualcos'altro che deve dirmi?<br />
+          - Sì, signore: un lato ti fa diventare più grande.<br />
+          - Un lato di cosa...?<br />
+          - e l'altro ti fa diventare più piccolo!<br />
+          - L'altro lato di... grazie vado a piedi. E il mio avvoltoio, lo ha visto?<br />
+          - Anche lui è dentro al sacco, capitano...<br />
+          - Ci vediamo, JT!<br />
+          <br />
+          E gira che ti rigira, il labirinto sembra farsi sempre più grande e gli incontri sempre più strani: trichechi,
+          carpentieri, cavoli,
+          reali... anche la musica si fa sempre più forte finché, girato l'ennesimo angolo, Beppe vede una grande tavola
+          piena di nutella e tè
+          alla menta e bruschette e chinotto e attorno al tavolo, a girare velocemente, danzando a tempo con la musica,
+          una stranissima coppia...
+          nientemeno che il capo e il vice scientifico che stanno allegramente cantando:<br />
+          <em>È la mazurca della nutella<br />
+            scaccia pensieri<br />
+            ma quanto è bella!<br />
+            Ci basta un panino<br />
+            per farci sognare...</em><br />
+          - Signor Renzi, signor Da...<br />
+          <em>metti la curvatura...</em><br />
+          - mi spiace disturbarvi...<br />
+          <em>e balla con me!</em><br />
+          - OHHEEEEHHHHHHHH!<br />
+          - Vuole assaggiare qualcosa con noi, signore?<br />
+          - O sì, la Nutella, venga a mangiare un po' di Nutella!<br />
+          - Cominciamo dall'inizio: trenta dì conta settembre...<br />
+          - e mia madre non voleva!<br />
+          - ma l'antenna io misi lo stesso<br />
+          - è la stampa bellezza, e tu non puoi farci niente!<br />
+          - ... ma quanto chinotto avete bevuto?<br />
+          - Sapete signore, oggi è il nostro anniversario di non-incontro!<br />
+          - Tre anni fra tre mesi, signore... se ci penso mi viene da piangere!<br />
+          - (E Sàpek cosa ne pensa di questa vostra intimità?)<br />
+          - (Lui approva, signore.)<br />
+          - (Ci credo). Da Nee, Renzi... uno scienziato sbronzo è già un pericolo pubblico ma due... mettetevi comodi e
+          ditemi: avete visto Frruuu da qualche parte?<br />
+          - Ah ah...<br />
+          - (te lo dicevo che non sarebbe durata...)<br />
+          - (c'entra Eva Brown secondo te?)<br />
+          - L'avete vista o no?<br />
+          - Ma certo... eccola lì!<br />
+          <br />
+          - Poffare Poffarissimo... rumble! È tardi, è tardi, è tardi!<br />
+          - Naturale che è tardi il tuo orologione è indietro di due orbite!<br />
+          - Ma certo! Dallo a noi che lo aggiustiamo!<br />
+          - Non posso, non posso farli aspettare... LEI mi taglierà tutti i gangli!<br />
+          - (che ti avevo detto? è quella polla della Brown!)<br />
+          - (Povera hortuccia...)<br />
+          - Frruuu... aspetta!<br />
+          Uff... macché, interrata un'altra volta... questo sogno comincia a farsi faticoso, pensa Beppe, interrandosi a
+          sua volta.
+          Se almeno Geppo fosse qui con lui!<br />
+          <br />
+          ...<br />
+          - Che bello aver una horta sulla nave<br />
+          'na creatura indifesa<br />
+          c'hai preso sotto terra...<br />
+          Magara scava i buchi tutt'intorno...<br />
+          tanto poi... ce giri attorno!<br />
+          Che bello avr una horta sotto al letto<br />
+          che quando che se move te dà n'calore alieno!<br />
+          <br />
+          - SIGNOR CICCOZZI!<br />
+          - ... e se per caso... capitano!<br />
+          - Indulgiamo in frivolezze al solito, non è così...?<br />
+          - oh no,signore, cioè sì signore volevo dire...<br />
+          - Sta' a sentire, caro il mio re di cuori, se non riesci ad accettare i due di picche sarà meglio che cambi
+          mazzo... o nave! Mi sono spiegato?<br />
+          - (sigh)<br />
+          ...<br />
+          <br />
+          Uff, sono stanco di questo sogno... voglio svegliarmi... VOGLIO SVEGLIARMI!<br />
+          Macché non funziona. Insomma, io ho delle responsabilità, un gatto, una nave, un'equipaggio. Non posso
+          continuare a girare per queste
+          fresche frasche e fare incontri senza un filo di logica... (oh no! Speravo tanto di non incontrare
+          vulcaniani...)<br />
+          - Salve capitano, prenda un numero...<br />
+          - 24! 33!<br />
+          - Ambo!<br />
+          - 47!<br />
+          - (Vota ANTONIO vota ANTONIO!)<br />
+          - Robert, T'Mik, questa non è la giornata adatta!<br />
+          - Lo dice a me?! Sono diventati trasparenti!<br />
+          - Chi?<br />
+          - I miei pazienti... poverini!<br />
+          - Non è stata colpa mia, dottoressa!<br />
+          - Robert... ci sono dei fiori sui biolettini: cosa state combinando tu e la doc?<br />
+          - A quale specie appartenete, capitano?<br />
+          - Una specie pericolosa, dottoressa: diavolo stufo!<br />
+          - Nel senso di stufato?<br />
+          - ... ai funghi?!<br />
+          - Mi sta per venire un mal di testa terribile, sarà meglio che vada. Avrò bisogno di dormire un po' quando
+          finalmente riuscirò a svegliarmi...<br />
+          <br />
+          Si sta come d'autunno<br />
+          sugli alberi i gatti<br />
+          <br />
+          - Salve di nuovo, Peter... oh eccoti qua. Giocate in coppia adesso?<br />
+          - Io e il suo gatto andiamo molto d'accordo, capitano... terza strofa:<br />
+          <em>la nebula<br />
+            mangia i fondatori<br />
+            e lo stambecco... neppur!</em><br />
+          <br />
+          - Voi due, che ne direste di farmi ritrovare Frruuu così che possa svegliarmi una buona volta?!<br />
+          - Sapete giocare a croquet?<br />
+          - Peter...<br />
+          - A rubamazzetto? A lei piace molto giocare.<br />
+          - Peter!!!<br />
+          - Dritto davanti a voi, capitano! E attento alla sua ascia!<br />
+          - Grazie. Il mio gatto se non ti spiace.<br />
+          ...<br />
+          <br />
+          - Tagliategli la testa!<br />
+          - Salve Rael. Cominciavo a preoccuparmi, mancavate soltanto voi...<br />
+          - Fate la riverenza mentre parlate, risparmierete tempo!<br />
+          - Vi gira, capo, lo capisco. Voglio solo vedere Frruuu un momento poi ce ne andiamo e...<br />
+          - Frruuu non può venire: ci serve qualcuno che tenga ferma la bat'leth mentre giochiamo al 'limbo'...<br />
+          - Ciao, Beppino: vuoi provare a passare qua sotto?<br />
+          - Non ho molta voglia di giocare, gente, voglio solo svegliarmi e bere una tonnellata di caffé, non voglio
+          rischiare di
+          addormentarmi di nuovo e rincontrarvi...<br />
+          - È questo il modo di rivolgervi a me? Nessuno si sveglia se io non glielo ordino! Guardie, tagliategli la
+          testa! E anche i capelli già che ci siete!<br />
+          - Rael, da quando avete perso il prigioniero ferenghi non siete più voi...<br />
+          Frruuu, Geppo: sarà meglio darsela a gambe / gangli / zampe...via!!!<br />
+          - Avete sentito cosa ha detto sua maestà? Tagliategli i capelli!<br />
+          - Scappiamo! Forza cocca, un altro dei tuoi tunnel!<br />
+          ...<br />
+          - Non me la conti giusta che volevi giocare alla porta bandiera... tu cercavi la Brown, non è vero? Ah si? E
+          sai io cosa ti dico?
+          Che adesso esco da questo tunnel e me ne vado con il primo che incontro...!<br />
+          - Buonaseeera...<br />
+          - Grande zot... Il Folle!<br />
+          - ... con una ranocchia in mano!?<br />
+          - Benvenuto capitano, signorina Frruuu. Benvenuti alla fine del tunnel...<br />
+          - Il Folle... Non riesco a crederci! Amico, siamo inseguiti dall'intera galassia. L'unico modo per salvarci è
+          che io riesca a svegliarmi...!<br />
+          - Oh no, capitano: l'unico modo per salvarvi è che voi continuiate a sognare...<br />
+          - Non se ne parla neanche, voglio andarmene da qui!<br />
+          - Come volete, capitano... laggiù: seconda antenna a destra e poi dritti fino a sera, non potete
+          sbagliare...<br />
+          - Grazie amico mio, unico savio in un sogno di pazzi...<br />
+          - Se i tavoli hanno le gambe perché non hanno i ginocchi?<br />
+          - Come non detto... venite voi due!<br />
+          <br />
+          <em>Giro giro in sogno dove andiamo non si sa<br />
+            solo che correndo prima o poi ci risvegliam...<br />
+            missioni su missioni dove andiamo non si sa<br />
+            ... iniziata ieri, l'altro ieri finirà...!</em><br />
+          </p>
+
+          <!-- DIARIO -->
+          <div class="diary-section-title">Diario di Missione</div>
+
+          <p><!-- span class="diary-section-subtitle"><br/>
+            USS Afrodite, Plancia.</!--></p>
+          <!-- citazione
+        <div class="diary-quote">
+          Andiamo Andiamo per lo spazio navighiamo.
+        </div> -->
+
+          <p>
+            - <em>È giunta l'ora...</em><br />
+            - psss... sveglia Beppe!<br />
+            - <em>... alfine amici, siam giunti alla tenzon...<br />
+              di come la Nutella è buona...<br />
+              di chinotto e di re!</em><br />
+            Miaooooooo!<br />
+            - ops... scusate, ragazzi. Uno... strano sogno... era solo un sogno... eppure allo stesso tempo non lo
+            era...<br />
+            - Grande Zot beppino è colpa mia?<br />
+            - Non preoccuparti, cocca, ho fatto il sogno più faticoso della mia vita.<br />
+            Su andiamo a far colazione.<br />
+            <br />
+            Strana atmosfera sulla nave al primo turno. In genere i risvegli a bordo vanno dal 'pronto a tutto e oltre'
+            di Becco al 'chi
+            me l'ha fatto fare' di Rael ma stamani... il chiacchiericcio in sala mensa dove i due vanno a farsi un
+            decente cornetto e cappuccio
+            è molto allarmante.<br />
+            Solo la dott. T'mik mantiene il suo solito applomb, ma gli altri...<br />
+            - 'Pece e piume', sicuro, sta dicendo JT ad un piccolo gruppetto 'e vedeste come stava bene'... un
+            figurino!<br />
+            - mh...<br />
+            - Capitano, c'è un problema...<br />
+            - (sigh)<br />
+            - ... l'attività REM dell'equipaggio è insolitamente aumentata, direi di circa 3,256 volte e ciò
+            provoca...<br />
+            - Lo so,dottoressa, tanti sogni in più.<br />
+            - Esattamente. Non sembra essere grave, tutavia non so quanto ciò possa influire sul rendimento e quanto
+            possa durare.<br />
+            - Non possono essere peggiori del mio. Peccato non aver preso appunti, poteva venirne fuori una puntata da
+            olonovela:
+            Lei ha mai letto 'Alice nel paese delle meraviglie'?
+          </p>
+
+          <div class="msg-box">
+            <div class="msg-box-header">
+              <i class="fa-solid fa-wifi"></i>
+              SENTO LA NOSTALGIA D'UN PASSATO<br />
+              OVE LA MAMMA MIA HO LASCIATO.<br />
+              IN QUESTA NOTTE STELLATA<br />
+              NON TI POTRÒ SCORDAR CASETTA MIA,<br />
+              IN QUESTA NOTTE STELLATA<br />
+              LA MIA SERENATA IO CANTO PER TEEE...
+            </div>
+          </div>
+
+          <p>
+            - COSA DIAVOLO ...?!?!
+          </p>
+
+          <div class="msg-box">
+            <div class="msg-box-header">
+              <i class="fa-solid fa-wifi"></i>
+              ROMAGNA MIAAA<br />
+              ROMAGNA IN FIORE
+            </div>
+          </div>
+
+          <p>
+            - Alighieri a Plancia: Cosa credete di fare gli spiritosi a mandare in onda questa 'roba' in sala
+            mensa?<br />
+            - Temo stia andando in onda su tutti ponti, capitano. Stiamo cercando di scollegarlo ma...
+          </p>
+
+          <div class="msg-box">
+            <div class="msg-box-header">
+              <i class="fa-solid fa-wifi"></i>
+              TU SEI LA STELLA, TU SEI L'AMORE!<br />
+            </div>
+          </div>
+
+          <p>
+            - Ma di cosa si tratta, per tutti i...<br />
+            - Liscio, capitano. Un tipo di ballo in voga all'incirca nella metà del ventesimo secolo. Terrestre.<br />
+            - A sì? Ne riparliamo dopo, T'Mik. (svvvvorshhh!)
+          </p>
+
+          <p><span class="diary-section-subtitle"><br />
+              USS Afrodite, Plancia.</p>
+
+          <p>
+            - Capitano in plancia. Atcium!
+          </p>
+
+          <div class="msg-box">
+            <div class="msg-box-header">
+              <i class="fa-solid fa-wifi"></i>
+              QUANDO TI PENSO VORREI TORNARE<br />
+              DALLA MIA BELLA AL CASOLARE.
+            </div>
+          </div>
+
+          <p>
+            - Avanti fuori l'autore! Il nostro istruttore di ballo ha cambiato genere?
+          </p>
+
+          <div class="msg-box">
+            <div class="msg-box-header">
+              <i class="fa-solid fa-wifi"></i>
+              ROMAGNAAA, ROMAGNA MIAAA<br />
+              LONTAAAN DA TEEE... NON SI PUÒ STAAAR!
+            </div>
+          </div>
+
+          <p>
+            - Capisco la mancanza di sonno ma questo è ridicolo! Su, prometto di non arrabbiarmi!<br />
+            - Ma capitano, non siamo stati noi!<br />
+            - Viene dal pianeta: siamo finiti in mezzo ad una trasmissione audio fra il pianeta base e quello su cui
+            siamo diretti!
+            Forse una vecchia comunicazione rimasta nello spazio...<br />
+            - O un tentativo di comunicare con delle forme di vita...<br />
+            - Ma certo! E usano una mazurca per comunicare con...<br />
+            - (non credo sia una mazurca, Beppino. Quelle fanno tatatata tara tatatata tara, i walzer fanno 'ullala
+            ullala'... forse è una polka)<br />
+            - Ventesimo secolo terrestre... forse proviene da qualche nebula...<br />
+            - Bob! Non nominare quella cosa sul ponte! Come possiamo liberarcene?<br />
+            - Quando saremo sufficientemente lontani dal pianeta, capitano, l'interferenza dovrebbe farsi più debole...
+          </p>
+
+          <div class="msg-box">
+            <div class="msg-box-header">
+              <i class="fa-solid fa-wifi"></i>
+              NON TI POTRÒ SCORDAAAR CASETTA MIA...<br />
+              IN QUESTA NOTTE STELLATA...
+            </div>
+          </div>
+
+          <p>
+            - Signore, è in arrivo un messaggio dalla Flotta stellare: sono le informazioni che stavamo aspettando sul
+            pianeta.<br />
+            - Lo trasmetta sul mio DiPadd, Rael, e mi faccia avere...<br />
+            - Mi scusi, signore... non è possibile!<br />
+            - Cosa significa? Rael? Da: le dia una mano.<br />
+            - Anche due... capitano, sembra un messaggio in codice e non le informazioni sul pianeta...<br />
+            - Sul DiPadd. Ehi, Frruuu. Guarda...
+          </p>
+
+          <div class="msg-box">
+            <div class="msg-box-header">
+              <i class="fa-solid fa-satellite-dish"></i>
+              INCOMING MESSAGE
+              <span class="msg-id">MSG-XZF-018</span>
+            </div>
+            <div class="msg-box-body">
+
+              <div class="msg-box-row">
+                <span class="msg-label">Testo del messaggio:</span>
+              </div>
+
+              <!-- Testo libero opzionale sotto le righe strutturate -->
+              <div class="msg-box-text">
+                <p>Un'Antenna per domarli<br />
+                  Un'antenna per trovarli<br />
+                  Un'antenna per ghermirli<br />
+                  e nel buio incatenarli<br />
+                  <br />
+                  Nella Terra di sxx�#!!szzz#!!<br />
+                  dove l'ONDA nera scende...
+                </p>
+              </div>
+
+            </div>
+            <div class="msg-box-footer">
+              <span>Canale sicuro · Crittografia livello 4</span>
+              <span>STARFLEET COM</span>
+            </div>
+          </div>
+
+          <div class="msg-box">
+            <div class="msg-box-header">
+              <i class="fa-solid fa-wifi"></i>
+              LONTAAAN DA TEEE...<br />
+              NON SI PUÒ STAAAR!
+            </div>
+          </div>
+
+          <p>
+            - Jt, la prego, cerchi almeno di abbassare il volume! Faccia il possibile!<br />
+            Che ne pensi, cocca?<br />
+            - Mi ricorda vagamente 'qualcosa', Beppino.<br />
+            - Già: anche a me. Vagamente. Peter, Da continuate a lavorarci sopra.<br />
+            <br />
+            Difficile lavorare con un sottofondo musicale del genere: se proprio doveva essere musica perché non un
+            walzer di Strauss
+            o un concerto di Vivaldi? Perché sempre su questa nave avvengono le cose più strane?<br />
+            In ingegneria hanno più problemi degli altri perché basta solo un piccolo errore di concetrazione per finire
+            nei guai più neri.
+            Tutti si stanno dando da fare eccetto la Field naturalmente. Ma doveva scegliere proprio questo momento per
+            andare in cerca di una
+            colla più adatta? Il solito 'attack' non funziona? Proprio quando l'Afrodite sta per giungere in vista del
+            pianeta proibito deve
+            sparire gettando nel panico tutta la sezione? E questo perché ha finito le puntine da disegno per tenere
+            insieme le cartine... pfui!
+            Che tempi! Che gioventù! Che ingegneri!<br />
+            <br />
+            In infermeria le cose non vanno meglio, la fila dei sognatori della domenica e lunedì continua a
+            ingrossarsi; i numeretti sono finiti
+            da tempo ed ecco che anche lì la stanchezza e la 'Romagna mia' causano guai. Povera dottoressa, il suo
+            selhat olografico è diventato
+            'trasparente'. Come fa un ologramma a diventare trasparente? Non temete, su questa nave tutto è possibile
+            (chiedete a Robert per i particolari).<br />
+            Anche in Plancia le cose non vanno meglio: il nostro Capo della Sicurezza soffre per la mancanza di sonno,
+            caffé, e Adam Smith e ora
+            sta covando qualcuna delle sue solite vendette. Qualcosa ci dice che oggi non è la sua giornata fortunata.
+            Chissà che cosa sognano i romulani?<br />
+            Per fortuna che Da Nee è ben sveglio ('qualcuno' deve aver provveduto) perché riesce ad aiutare il nostro
+            Capo Operazioni che ha
+            qualche difficoltà a tenere gli occhi aperti.<br />
+            Finalmente il pianeta tanto cercato è in vista!<br />
+            <br />
+            Tyrannosauri vampiri naziskin?<br />
+            È questo che hai sognato stanotte, Frruuu? Solo perché non abbiamo la più vaga idea di chi o cosa abiti quel
+            pianeta non dobbiamo
+            pensare subito al peggio. E gli altri cosa hanno sognato?<br />
+            - ... e non voleva più sposarmi. Ti rendi conto? Dopo tutto il tempo dedicato a quella canaglia?<br />
+            - ... avevano le orecchie a punta... e con questo ho detto tutto!<br />
+            - ... l'unico vantaggio è che ora Becco è talmente sconvolto dai miei sogni che ha paura ad avvicinarmi...
+            durerà poche ore ma sempre meglio di niente!<br />
+            - ... un'intera razza distrutta per colpa mia... fare il capitano è un mestiere difficile!<br />
+            Una cosa è certa: Becco avrà da lavorare parecchio su questo equipaggio...<br />
+            <br />
+            - Allora questa decodifica?<br />
+            - Tre antenne ai capitani...<br />
+            - ... nelle loro bagnarole...<br />
+            - ... quattro alle squadre di sbarco...<br />
+            - ... nelle loro tenute grigie...<br />
+            - ... e uno al Consigliere, così la pianta di tormentare!<br />
+            <br />
+            - (questo non c'è nella traduzione, Peter.)<br />
+            - Un'antenna sulla zucca, ecco quello che gli servirebbe...<br />
+            - Signor jackett! È così che lavorate?<br />
+            - (Secondo me è ancora sconvolto dal cesso trovato sul pianeta. Sai Beppino certe esperienze lasciano il
+            segno).<br />
+            - Ci si mette anche Geppo... accidenti, se non rovesci il latte almeno una volta al giorno non sei contento,
+            vero? E ora chi la sente, Ernestina?<br />
+            - Capitano!<br />
+            - Signore! C'è un'altra nave in orbita attorno al pianeta!<br />
+            - Un cubo borg...? (risatine)<br />
+            - No, signore, è dei nostri...<br />
+            - Faccia vedere... rattoppi... acciaccata... gialla... classe Miranda... sì, capitano decisamente uno dei
+            nostri! E non solo ce n'è
+            un'altra a dritta e poi... due! E... Capitano, ci sono tre navi federali di classe Miranda in orbita attorno
+            al pianeta!<br />
+            - Rael, oggi non è la sua giornata... Stiamo calmi. Sullo schermo, Peter, contattiamoli. Aprite lo schermo
+            per un contatto visivo a quattro.<br />
+            <br />
+            - Oggi è un gran giorno per morire...<br />
+            - Suvvia, Rael. Con chi abbiamo a che fare questa volta?<br />
+            Capitano Giuseppe Alighieri della USS Afrodite NCC-1863...<br />
+            le presento il capitano Erik Tomas Macartney della USS Efesto - NCC-1869...<br />
+            il Capitano Nova T'hy'la K. Slerek della USS Cronos - NCC-1861...<br />
+            il capitano Gregory Ferrando della USS Selene - NCC-1866.<br />
+            <br />
+            Capperi! (Ma è possibile tutto questo? Sì, Capitano, ho chiesto alla Jo che ha detto sì...!)<br />
+            (e non ci leveranno dei punti per questo? Ho consultato il regolamento, signore, tutto bene!).<br />
+            Signori, benvenuti! Benvenuti alla Convention delle bagnarole! Mai pianeta ha ricevuto tanto onore da parte
+            della Federazione!<br />
+            - Qual buon vento, Giuseppe!<br />
+            - Salve Greg, come va?<br />
+            - Nova! Sei un sogno!<br />
+            - Mac! Il... diavolo ti porti: sei in ottima forma!<br />
+            - Ricordate tutti il mio Primo Ufficiale? Il mio Capo Operazioni? Vice Scientifico? Capo della Sicurezza? E
+            il mio gatto, ve lo ricordate tutti?<br />
+            - Oh sì!<br />
+            - Oh certo!<br />
+            - ... e chi se lo scorda quello!<br />
+            - Bene, bene che mi racconti di bello, Mac?<br />
+            - Siamo in missione per conto della Ailoura!<br />
+            - Anche noi! (in coro? Ho sentito un coro?)<br />
+            - Ci ha mandati tutti quanti assieme? Senza dirci niente?<br />
+            - Ne ha di fiducia in noi, questo è certo!<br />
+            - Il fior fiore dell'Accademia!<br />
+            - Parla per te, Capitano! Bene, Bene! Che ne direste di un incontro sulla mia Efesto in tempo per il tè
+            delle cinque? Capitano e
+            Primi Ufficiali, ovviamente!<br />
+            - (ti va cocca? ... Questo Mac è quello che va in giro in gonna? È... scozzese, sì. è Allora vengo e, ti
+            prego, porta Geppo!)<br />
+            - Accettiamo, Mac, grazie.<br />
+            - Scusate, gentili signori. Sono il Consigliere della nave, Stanislao Becco, e vorrei invitare il resto dei
+            vostri ufficiali superiori
+            sulla Afrodite per un allegro e rigenerante Nutella Party...<br />
+            - (Becco! Non...) Beh, naturalmente se i vostri ufficiali sono troppo impegnati...<br />
+            - Oh no, accettiamo volentieri, sarà una buona occasione per tutti!<br />
+            - Splendido! Permettete, Capitano? Vi aspettiamo a bordo per le cinque. Come signor Da? ma certo! Sarà
+            meglio che vi trasmettiamo le specifiche delle 'pattine'!<br />
+            - Le... che?<br />
+            - Pattine. capirete una volta saliti a bordo: la nostra addetta alle pulizie della nave ha appena dato la
+            cera e apprezzerebbe molto
+            la vostra gentilezza. Senza contare il pericolo di scivolare nei corridoi.<br />
+            - Già! Pericolosissimo!<br />
+            - Ci vediamo tutti alle cinque da me. E Beppe... porta anche il tuo forcone, d'accordo? Potrebbe
+            servirti.<br />
+            - Lo porto sempre in alta uniforme, Mac. Alighieri, chiudo. BECCO! Dove credete di andare?<br />
+            - A prendere i dovuti accordi con gli addetti in sala mensa...<br />
+            - Oh No! Voi andrete di filato da ERNESTINA SCRAMIGLIO a dirgle che avete avuto la bella idea di riempire la
+            nostra amata e pulitissima
+            (per ora) nave di ben tre equipaggi assortiti! Piacciono anche a me i 'baccanali' e le 'orgie' ma conosco
+            bene il mio equipaggio,
+            figuriamoci gli altri! Non voglio sentire le sue grida per tutto il ponte cinque come l'ultima volta,
+            chiaro? Andate!<br />
+            - Ma capitano...?<br />
+            - ANDATE!<br />
+            - Sì, Capitano.<br />
+            - Che razza di...<br />
+            - Suvvia, Beppino, che vuoi che sia: abbiamo Nutella e cibo in quantità e farà bene anche a noi distrarci un
+            po'...<br />
+            - Ti rendi conto che, come niente, la nave si spaccherà in due, o prenderà fuoco una consolle o chissà cosa
+            e faremo una figura
+            barbina davanti a ben tre navi federali?<br />
+            - Sono anche loro su una classe Miranda: chissà quante ne hanno viste finora!<br />
+            - Hai visto che non hanno battuto ciglio neanche alla vista della nostra Plancia? Non dirmi che vedere le
+            consolle sporche
+            di latte e un avvoltoio che ogni tanto svolazza sul Capitano sia normale! Siamo avventurieri dello spazio,
+            siamo tutti abituati
+            a vedere canottiere e biancheria appesa ad asciugare da un capo all'altro del ponte... certo che magari i
+            salamini e le mortadelle
+            appesi al soffitto avremmo potuto evitarli...<br />
+            - Questo è il solo posto in tutta la nave che ha l'umidità giusta per questo genere di cibo! Con Cip e Ciop
+            in giro e Adam Smith poi
+            non possiamo correre rischi! UFF<br />
+            - Quanto vorrei che Chris fosse qui! Non l'ho mai visto a corto di risorse!
+          </p>
+
+          <div class="msg-box">
+            <div class="msg-box-header">
+              <i class="fa-solid fa-wifi"></i>
+              QUANDOOO TI PEENSO...<br />
+              VORREI TORNAREEE...<br />
+              DALLAAA MIA BEEELLAAA...<br />
+              AL CAAASOLAREEE!
+            </div>
+          </div>
+
+          <p>
+            - Finiti i brutti sogni, sala macchine?<br />
+            - Sì, Capitano, ora siamo tutti con il mal di testa...<br />
+            - Già, dovremo organizzare una gara di ballo a coppie, dato il nostro impianto sonoro!<br />
+            Pronti ad entrare in orbita attorno al pianeta. Ora.<br />
+            - In orbita, Capitano. i sensori non registrano nulla di particolare.
+          </p>
+
+          <div class="msg-box">
+            <div class="msg-box-header">
+              <i class="fa-solid fa-wifi"></i>
+              ROMAAAGNA MIAAA<br />
+              ROMAAAGNA IN FIOOOREEE...
+            </div>
+          </div>
+
+          <p>
+            - Sai Frruuu, passare qualche ora su un'altra nave senza dover ascoltare musica a tutto volume potrebbe
+            anche farci del bene...<br />
+            - Ben detto.<br />
+            - Come vanno le operazioni 'Alle cinque della sera', Rael...? Rael...<br />
+            - Tutto bene, Signore. Si devono essere sentite le urla di Ernestina per tutto il ponte...<br />
+            - Ha fatto bene a mandare Adam Smith di comanda in sala mensa: un po' di sana fatica lo distrarrà dai suoi
+            piedi gonfi, dopo aver
+            fatto tutti quei giri portando caffé.<br />
+            - Dovremmo far qualcosa per tirar su di morale il nostro Becco dopo tutte le urle di Ernestina: perché non
+            si offre volontario Peter?
+            provi a inciampargli davanti. Lo sa quanto ci gode a psicanalizzare i suoi sbagli...<br />
+            - Al momento sono piuttosto occupato, Capitano. Potrei mandare Boregh se per voi va bene...<br />
+            - Fate voi. L'importante è che (Frruuu! Stavo dimenticando: sono state stirate le nostre uniformi? Non
+            vorrei far brutta figura...)<br />
+            - (Non c'è problema: ci passo un momentino sopra e tornano come nuove!).
+          </p>
+
+          <div class="msg-box">
+            <div class="msg-box-header">
+              <i class="fa-solid fa-wifi"></i>
+              ROMAGNA MIAAA<br />
+              ROMAAAGNA IN FIOREEE...
+            </div>
+          </div>
+
+          <p>
+            - A tutto l'equipaggio! Parla il Capitano: io e il Primo Ufficiale stiamo per teletrasportarci sulla USS
+            Efesto, siete pregati di
+            non approfittare della nostra assenza per far esplodere la nave e cosette del genere. Conoscendovi come vi
+            conosco, so di poter
+            contare su di voi: divertitevi, divertiteli e non finite tutta la nutella! Alighieri, chiudo. Becco, le
+            affido la plancia.
+            (Bob, la affido ANCHE a te, non si sa mai). Peter, Da voi non azzardatevi a festeggiare fin quando il codice
+            non è stato decifrato!
+            Rael, vado a vestirmi: fatemi trovare in sala teletrasporto un barattolo da cinque chili di Nutella di
+            cioccolato vero non replicato
+            e un mazzo di fiori.<br />
+            - Preferenze? Crisantemi? Cardi? Gladioli?<br />
+            - Misto.
+          </p>
+
+          <div class="msg-box">
+            <div class="msg-box-header">
+              <i class="fa-solid fa-wifi"></i>
+              ... LONTAN DA TEEE<br />
+              NON SI PUÒ STAAAR!
+            </div>
+          </div>
+
+          <p>
+            - ...(e non voglio vedere levarsi fil di fumo, chiaro?)<br />
+            - Oh, Beppino siamo pronti.<br />
+            - Pronti A dare energia, signor Pinkerton? Avanti, Madame Farfalla, non vorrai arrivare in ritardo!<br />
+            - Da a Capitano Alighieri: siamo riusciti finalmente a decodificare il file, nel giro di qualche ora
+            dovremmo avere il documento completamente decrittato.<br />
+            - Bel lavoro, signor Da. Tenete forte il forte! Energia!
+          </p>
+
+          <p>
+            Il teletrasporto consegna i nostri due eroi è splendidi nelle loro alte uniformi è in territorio
+            straniero... la USS EFESTO!<br />
+            <br />
+            E ora, direttamente dal programma originale, ricevuto in precedenza dall'eccellentissimo capitano McCartney,
+            passiamo a raccontare
+            gli avvenimenti salienti dell'incontro fra i nostri eroi:<br />
+            <li style="margin-left:50px" , type="a">
+            <li><strong>ore 17.00 in punto: arrivo sulla USS Efesto</strong><br />
+              I nostri eroi vengono accolti da uno splendido esemplare femmina è capo medico olografico è grazie alla
+              quale Frruuu ha la sua
+              prima e ultima crisi di gelosia e si permette qualche commento non appropriato, cosa che fa quasi scappare
+              la pazienza al nostro
+              diavoletto. Può una qualunque femmina è per quanto attraente è prendere il posto dell'unico sasso della
+              sua vita immortale?
+              Andiamo, cocca! E poi non sta bene rivolgersi in questo modo al tuo ufficiale comandante! Tze Tze,
+              decisamente inappropriato.<br />
+              Fra parentesi: durante il tragitto si accorgono che la spia dei Wafer del teletrasporto lampeggia ma pare
+              che questo significhi
+              solo che hanno finito quelli al cioccolato. Se è così, il barattolone di Nutella verrà sicuramente
+              apprezzato.</li>
+            <li><strong>ore 17.05: ritrovo presso il Bar di Prora della nave</strong><br />
+              "Benvenuti a bordo amici miei, benvenuti!". Il tartan abbonda ovunque. Gran bel posto davvero. I nostri
+              accettano un drink
+              (che si rivela essere whisky al doppio malto scozzese è su questa nave non credono molto nel sintalcol) e
+              con l'arrivo degli altri
+              invitati la festa comincia!<br />
+              Si fanno le presentazioni. La Nutella viene fagocitata dal Capitano mentre i fiori fanno uno sospettosa
+              fine nelle braccia del
+              signor Bonvicino, primo ufficiale.</li>
+            <li><strong>ore 17,06: saluti e pinzellacchere</strong><br />
+              "Pikachu? Sulla tua nave hai qualcuno a bordo che si chiama Pikachu? Devo smetterla di
+              lamentarmi..."<br />
+              "Bello tutto questo tartan? Sono i colori della tua squadra di calcio?"<br />
+              "A che ti serve quel forcone che ti porti dietro?"<br />
+              "Ehm... a rimestare il riso fritto nel pentolone, a cos'altro altrimenti?"<br />
+              "Non ci picchi più gli andoriani, con quel coso?!"<br />
+              "Non ci sono Andoricani sulla mia nave, Greg!"
+              "Lo credo, bene!"<br />
+              "Capperi Erik, che gambe! Ora capisco perché le hanno scelte per il logo degli X-files!"<br />
+              "Alice...? Aspetta un momento, hai una ALICE sulla tua nave? Ah, il tuo tribolo... Erik, ti è per caso
+              capitato di fare strani
+              sogni ultimamente? Cosa illogiche e assurde che però a ben pensarci potrebbero avere un sottofondo reale
+              ...?"<br />
+              "Pikachu...?"<br />
+              "Oh Beppe, posso presentarti le cugine del Consigliere Tyler? Sono certo che troverete molti argomenti su
+              cui discutere" (le signore sono 'streghe', NDR).<br />
+              "Pikachu...!?"<br />
+              "Sono una horta non sono una santa... non tentarmi non sono una santa!"<br />
+              "CHI È PIKACHU...!?!?"</li>
+            <li><strong>ore 17,20: merenda a base di Scottish Tea (Earl gray con Whiskey al doppio malto), con
+                biscotti.</strong><br />
+              Per l'occasione il prode capitano della Efesto d� una dimostrazione della sua bravura cimentandosi con la
+              cornamusa nella celebre ballata �Mull of Kintyre�. Ci spiace dire che gi� dopo le prime due battute Beppe
+              e Frruuu cominciano a rimpiangere la loro �Romagna mia�. Cominciano le prime defezioni, �qualcuno� si
+              ricorda di appuntamenti presi in precedenza e si d� alla fuga. I nostri due eroi resistono impavidi fino
+              alla fine. Fra un intervallo e un altro Beppe si apparta per collegarsi con la Afrodite per sapere se
+              tutto procede nel modo migliore e se i quattro equipaggi sono riusciti ad amalgamarsi.
+
+              Questo che segue è la risposta alla domanda, direttamente proveniente dalla sala mensa della Afrodite e ad
+              un volume cos� forte da coprire la �Romagna mia��.
+
+
+
+
+
+
+
+
+
+
+
+
+
+              Coro dell�Afrodite, della Efesto, della Cronos e della Selene, a pi� voci.
+
+
+
+              Fatece largo che passamo noi�.
+
+              sti umanoidi de sta Terra bella!
+
+              Ce so ufficiali fatti cor pennello
+
+              e le aliene famo �nnamor�!
+
+              e le aliene famo �nnamor�!
+
+
+
+              Ma che ce frega ma che ce �mporta
+
+              se �Becco� ar vino c�aggiunge l�acqua!
+
+              e noi glie dimo e noi glie famo
+
+              ciai messo l�acqua e m� te pistamo
+
+              ma per� noi semo quelli che gliarispondemo �n coro:
+
+              E� mejo er pane colla nutella che la tua birra romulan parara pappa !
+
+
+
+              voce solista: Bob De Niro
+
+
+
+              Ce piaceno i panini, bruschetta e riso fritto
+
+              perch� non semo Becco noi nun semo Ba-cca-l�
+
+              � l�astronave de li magnaccioni
+
+              � l�atronave de la giovent�
+
+              a noi ce piace de magna e beve
+
+              e poi ce piace de navig� �.!
+
+
+
+              coro (tutti, a canone)
+
+
+
+              Portatece a n�antra nebula
+
+              che noi ce c�inguattamo
+
+              e poi la cartografamo
+
+              embe emb� �.che c��?!!
+
+              Ancora vino �mb�
+
+              volemo bere �mb� �.
+
+              e la nutella �mb�
+
+              e il risotto �mb� �
+
+              Per falla corta
+
+              per falla breve
+
+              �namo Becco portace da beve
+
+              da beve!
+
+              da beve!
+
+              zanz�!
+
+
+
+              - Tutto bene, Beppe?
+
+              - Tutto tranquillo, stanno giocando a Bingo.
+
+
+
+              punto e, ore 17,45 circa: inizio delle Olimpiadi Scozzesi, versione futuristica.
+
+
+
+              1. Suono della Cornamusa Sversa (ove occorre soffiare in una sacca di pelle ripiena di whiskey). Vincitore
+              indiscusso della gara lo stregatto Geppo della Uss Afrodite (s�, quello che abitualmente si trova sulla
+              spalla sinistra del capitano). Ottima performance, suoni discordanti ma gran fiato è di fatto l�unico che
+              data la natura di quattrozampe riesce ancora a reggersi in piedi. Mieeeeoooo!
+
+              2. Lancio del cardo avariato (ovvero centrare con parte marcia del fiore la foto del principe di Galles).
+              Straripante vittoria del capitano McCartney, nessun dubbio in proposito. Che coraggio a farsi la foto, tra
+              parentesi�
+
+              3. Trasporto degli ubriachi (ovvero a chi arriva primo portando di peso un ufficiale ubriaco). Nessun
+              problema per trovare ufficiali ubriachi, qualche difficolt� a trovarli sobri. Nonostante la buonissime
+              possibilit� nessuna vittoria schiacciante per McCartney (� il caso di dirlo visto che gareggiava con
+              Frruuu) dato che l�ultra cotto capitano ha tentato di trasportare �lui� la horta e non il contrario. A
+              quel punto temiamo che parlasse pi� il whiskey che lui. Vittoria meritata per il capitano Ferrando e il
+              trasportato signro Bonvicino. Strano paese la Scozia�.
+
+              4. Lettura di poesia. Stop. Largo al diretto discendente in via paterna del pi� grande poeta della storia
+              terrestre. (nonostante la masticazione di tabacco, chili ed Haggis richiestra dal cerimoniale). Abbiamo
+              qui la trascrizione della poesia vincente, in originale (prima di essere tradotta in sanscrito Antico.).
+
+
+
+              Tanto gentile e tanto onesta pare
+
+              la horta mia quand�ella altrui saluta
+
+              ch�ogni altra aliena st� ferma e muta
+
+              e i suoi gangli non ardiscon di guardare.
+
+              Ella, si va, sentendosi laudare
+
+              con le pattine d�umilt� vestuta
+
+              e par che sia una cosa venuta
+
+              da sotto terra a miracol mostrare.
+
+              Mostrasi s� piacente a chi la mira
+
+              che d� agli occhi un colpo al core
+
+              che �ntender no lo pu� chi non la prova;
+
+              e par che dal traduttore si mova
+
+              una voce soave piena d�amore
+
+              che v� dicendo al cor: Beppino�.
+
+
+
+              punto f: fine della serata: saluti, baci, abbracci e distribuzione di bicarbonato;
+
+              ritorno alla base.
+
+
+
+              - Addio, addio,addio�! Chiss� se ci rivedremo!
+
+              - (quel tuo forcone è fatto di ferro, Beppe?)
+
+              - (Serviti pure).
+
+              - Hip! Arrivederci amici! Possano i McLeod non impedirci di vederci di nuovo !
+
+              - Con la fortuna che abbiamo sono LORO ad abitare questo pianeta!
+
+              - Dagli la specifica delle pattine�.!
+
+              - Grazie di tutto, Erik! Salutaci Pikachu�.
+
+              ��.
+
+
+
+              - Gran cosa l�ospitalit� scozzese�e poi due vittorie su quattro, niente male, possiamo ritenerci
+              soddisfatti. Se non fosse per la paura di sognare di nuovo quel gigantesco luna park fatto di antenne non
+              vedrei l�ora di farmi una buona dormita�Toh, la nave è ancora intera �.
+
+              - CAPITANO! LO SA COSA HANNO FATTO QUEI VANDALI IN SALA MENSA? MI TOCCHERA� PULIRE PER UNA SETTIMANA! C��
+              NUTELLA SPARSA DAPPERTUTTO!
+
+              - Buonasera, Ernestina. Niente tombolata, stasera? (piano b, cocca)
+
+              - HANNO FATTO UN MACELLO! Hanno giocato a bowling nei corridoi, cantato canzoni oscene in tutti i ponti,
+              hanno perfino ballato la quadriglia�.! Hanno cercato di acchiappare l�avvoltoio e quello si è rintanato in
+              uno dei condotti d�areazione e ora non riescono a farlo uscire�.capitano!
+
+              - Il consigliere Becco ha il comando fino alla fine del turno, si faccia aiutare da lui per le pulizie.
+              Alighieri a De Niro: tutto bene lass�?
+
+              - Salve, Beppe: tutto tranquillo, incubi a parte. Becco è qui ma è come morto, è sdraiato sul pavimento,
+              ricoperto da striscie di nutella�.Gli altri equipaggi sono tutti rientrati. I nostri stanno finendo di
+              lavorare sul messaggio.
+
+              - Avvertitemi non appena è pronto, Bob, sar� nel mio alloggio. Alighieri, chiudo. Buonanotte, Ernestina.
+
+              - Ma, CAPITANO!
+
+              - Buonanotte, Ernestina.
+
+
+
+
+
+              Ernestina infuria
+
+              la nebula manca
+
+              sul ponte sventola
+
+              la canotta bianca�. <br />
+              <!-- citazione -->
+              <div class="diary-quote">
+                A Douglas Noel Adams (1952-2001)<br />
+                <span class="diary-em">La USS AFRODITE</span>
+              </div>
+
+              <br />
+              <em style="color:rgba(248,248,255,0.5);">
+                Tenente JG Giuseppe Alighieri<br />
+                CO<br />
+                USS Afrodite NCC-1863
+              </em>
+          </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission6.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 6
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission6_00.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission6_02.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
