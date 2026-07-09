@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario T'Mik – Mission 6 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission6.html">Mission: 6</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM T'Mik</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-staff-snake"></i> &nbsp;MED &nbsp;·&nbsp; CMO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM T'Mik</div>
+          <div class="diary-header-mission">Mission: 6 — Afrodite in Wonderland</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/tmik_l.jpg" alt="GM T'Mik"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_tmik.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10203.23 </span>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          La mente fluttua libera durante la meditazione vulcaniana quotidiana�un�esperienza molto soggettiva e molto privata, della quale non si parla con estranei, nemmeno nel diario di bordo. Era questa comunque l�esperienza che stavo vivendo nel cuore della notte, l� sul ponte ologrammi dove passeggiavo sulle alture del monte Seleya�
+
+Ma ben presto accadde l�imprevisto:� Infermeria a dottoressa�
+
+� Qui T�Mik, cosa c�� che non va, questa volta?�
+
+ � Emergenza medica�
+
+Naturalmente, mi precipito fuori dal ponte ologrammi, dimenticando persino le pattine dentro� intanto nella mia mente penso a un attacco Borg (l�avevo perso, nell�ultima missione) oppure a ferite di oggetti contundenti� insomma sangue e visceri ovunque.
+
+Arrivo davanti all�infermeria. Le porte si aprono e devo dire che resto per un istante sorpresa. Non solo non c�� traccia di emergenza medica e neppure uno ( no, dico neppure uno) schizzetto di sangue sul pavimento, ma il � paziente� se cos� si pu� dire, � Da Nee, che sta parlando con Peppino, il nostro Selhat olografico di emergenza, di un tale matrimonio andato a monte.
+
+Robert e Capui mi fanno segno di non parlare e bisbigliano sottovoce: � Dorme� �Che cosa? E perch� sta parlando con Peppino?�
+
+� Appena arrivato in infermeria ha provato ad attivare il MOE�
+
+�Deve essere davvero fuori se non ricorda che l�abbiamo trasformato in Selhat da guardia�
+
+� Ma perch� non l�avete svegliato? Non mi piace avere sonnambuli in infermeria� Afferro il mio tricorder per controllare che Da sia apposto e noto un�insolita attivit� REM�
+
+� Be�, c�� un solo modo per vedere di che si tratta�
+
+Tutti sanno che se dormi e non sai come svegliarti, un pizzicotto � ci� che ci vuole. Cos� mi avvicino e procedo all�operazione. Un guizzo di lucidit� attraversa lo sguardo di Da (molto insolito da parte sua) e incomincia a singhiozzare disperatamente:
+
+� Boo, non mi sposa pi��.
+
+Ma di che sta parlando? Dopo circa una mezz�ora riusciamo a calmarlo e a capire che trattasi di un incubo, davvero molto realistico, a dire il vero. La cosa tuttavia non sembra preoccupante, quindi decido che forse non � il caso di ricoverarlo.
+
+Pensavo fosse finita l�, e invece la porta dell�infermeria si apre: una lunga fila di ufficiali e civili si lamenta dei sogni fatti: c�era chi affogava nella Nutella, chi aveva paura che gli tagliassero la testa, chi si era trasformato in carta da gioco�sconcertante. Io e Robert non sappiamo pi� cosa fare. Capui ci guarda sconsolato, mentre la fila si allunga. Poi qualcuno ha un�idea brillante: numeri, come al supermercato.
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          Dopo aver visitato il 195� paziente ( per la cronaca di tratta di Maurice Drews, il nostro ballerino che aveva sognato che il suo fornitore di contrabbando aveva esaurito la birra romulana) ed essermi consultata con i miei colleghi, intuisco che comunque non c�� nulla di grave per l�equipaggio, si tratta semplicemente di un�insolita attivit� REM, alla quale io sono immune ed i cui effetti parzialmente assalgono Robert ( nessuno � perfetto).
+
+Dal momento che non � grave, decido di prendermi una pausa e mi reco in sala mensa. Dietro di me, per� i pazienti ( chiss� perch� stanno diventando impazienti) cominciano a urlare le loro disavventure oniriche:
+
+� Dottoressa, mi hanno tagliato la testa�
+
+ � Dottoressa, non la ritrovo!�
+
+� Cosa? La testa?�
+
+� No, la regina di cuori� si � persa nella nebula�
+
+� Quale nebula?�
+
+�Quella di Nutella�.
+
+Non ne posso pi�. Per fortuna in sala mensa intravedo Beppe e Fruu.
+
+ � Capitano, c�� un problema�
+
+Il capitano sospira. Non ama essere interrotto mentre mangia, ma dando un�occhiata al caos di gente intuisce che forse � il caso di darmi retta.
+
+�L�attivit� REM dell�equipaggio � insolitamente aumentata, direi di circa 3,256 volte e ci� provoca��
+
+� Lo so, tanti sogni in pi��
+
+�Esattamente. Non sembra essere grave, tuttavia non so quanto ci� possa influire sul rendimento e quanto possa durare�
+
+�Aspetti, ora le racconto il mio�
+
+Questa proprio non ci voleva. Ora il capitano si lancia in un complicatissimo racconto. Per fortuna lo interrompe la trasmissione a tutto volume di un�antica canzone terrestre� Romagna mia�. Mentre lui si mette in contatto con il ponte, io ne approfitto per tornare in infermeria.
+
+L� trovo una sgradita sorpresa. Robert, accantonati i rimasugli di logica che la sua natura gli consentiva, sta inveendo contro il computer. Non sar� sonnambulo anche lui?
+
+� Che succede Robert?�
+
+� Ecco, vedi� Non � logico adirarsi per qualcosa che ormai � successo, vero?�
+
+� No, certo. Mi complimento per il tuo tentativo di autocontrollo, io non credevo che ne fossi capace�
+
+� No, guarda, io veramente mi riferivo a te. Inavvertitamente devo aver cancellato un file dalla matrice olografica del MOE e ora� guarda, Peppino � trasparente�
+
+� COSA?�
+
+� Dottoressa, dicevamo che la logica�
+
+� Non nominare quella parola. Cos�� successo al mio povero Peppino?�
+
+Cerco di recuperare l�autocontrollo, ma ormai credo sia troppo tardi. Mi avvicino per vedere  meglio e riesco a vedere attraverso Peppino le mura dell�infermeria.
+
+Certo che questa � proprio una giornataccia. E come se non bastasse, continuano a trasmettere quella canzone. Credo che il mio MOE rester� cos� per un po�. Sono tutti troppo impegnati a parlare dei propri sogni. Anche Capui, che dice di aver sognato di fare il bagno nella nebula con il barbiere di bordo�
+
+Arriva anche Boregh in infermeria, per sottoporsi ad una visita, ma naturalmente anche lui ne approfitta per raccontarmi uno stralcio delle sue avventure oniriche. E pensare che Becco sarebbe pi� che felice di ascoltarlo.
+
+Ma presto c�� un diversivo: siamo in orbita intorno al pianeta dal quale provengono le interferenze e qui ci accorgiamo che la nostra missione, quella per la quale eravamo gli unici, audaci, incaricati, in realt� non era solo nostra, in quanto era stata assegnata ad almeno altre tre astronavi, la Cronos, la Efesto e la Selene. Naturalmente, nonostante l�ego ferito dalla mancanza di fiducia del comando nei nostri confronti, siamo tutti lieti dell�incontro, visto che mentre Fruuu e il Capitano sono ospiti per un t� sulla Efesto, a noi � stato ordinato di fare gli onori di casa con gli equipaggi delle altre astronavi.
+
+Quindi stasera Nutella party per tutti. L�unica eccezione al clima festaiolo � naturalmente Ernestina, che nonostante l�obbligo di pattine trasmesso agli invitati, prevede un aumento esponenziale delle cose da pulire.
+        </p>
+
+      <p>
+        <em style="color:rgba(248,248,255,0.5);">
+          GM T'Mik<br />
+          CMO<br />
+          USS Afrodite NCC-1863
+        </em>
+      </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission6.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 6
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission6_04.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission6_06.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

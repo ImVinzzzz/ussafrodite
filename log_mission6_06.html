@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Van Bajark – Mission 6 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission6.html">Mission: 6</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Van Bajark</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-staff-snake"></i> &nbsp;MED &nbsp;·&nbsp; XMO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM R. VAN BAJARK</div>
+          <div class="diary-header-mission">Mission: 6 — Afrodite in Wonderland</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/vanbajark_l.jpg" alt="GM Van Bajark"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_vanbajark.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10203.23 </span>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+
+
+          PROLOGO
+
+          Anche questa volta mi toccava il turno di notte. E anche questa volta mi era stato assegnato Capui. Certo,
+          T�Mik si era giustificata con il fatto che lei, essendo vulcaniana, aveva pi� bisogno di meditazione rispetto
+          a me che avevo anche sangue terrestre� ma come non pensare che non fosse solo la logica a muovere il mio capo
+          quando preparava i turni in infermeria?
+
+          Questi erano i miei pensieri, quando il G.M. Da Nee entr� in infermeria. Subito mi accorsi che non era ferito
+          e non mostrava neppure i sintomi evidenti di qualche malanno. Pensai che fosse venuto a fare quattro
+          chiacchiere, ma mi dovetti ricredere subito. Infatti disse, senza neppure guardarmi:
+
+          �Computer, attivare programma medico olografico di emergenza�.
+
+          La cosa naturalmente mi sembr� strana. Tutti sanno che il nostro MOE � stato riprogrammato personalmente da
+          T�Mik e ora ha le sembianze di un Selhat. La cosa ancora pi� strana era che Da Nee aveva iniziato a parlare
+          con Peppino come se fossero amici di vecchia data� non sapevo cosa fare, e , dopo essermi consultato con
+          Capui, giunsi alla conclusione che in realt� Da non era sveglio, ma soffriva di uno strano caso di
+          sonnambulismo.
+
+          �Robert, c�� una cosa sola da fare� Disse Capui. Io annui, premetti i mio comunicatore e dissi le fatidiche
+          parole:
+
+          Infermeria a dottoressa�
+
+          � Qui T�Mik, cosa c�� che non va, questa volta?�
+
+          � Emergenza medica�
+
+          Dopo qualche minuto la dottoressa arriv� trafelata ( senza pattine) e guardandosi intorno ci chiese quale
+          grave emergenza aveva interrotto la sua meditazione. Io e Capui le facemmo segno di non parlare e bisbigliammo
+          sottovoce che il signor Da dormiva.
+
+          �Che cosa? E perch� sta parlando con Peppino?�
+
+          � Appena arrivato in infermeria ha provato ad attivare il MOE�
+
+          �Deve essere davvero fuori se non ricorda che l�abbiamo trasformato in Selhat da guardia�
+
+          � Ma perch� non l�avete svegliato? Non mi piace avere sonnambuli in infermeria� T�Mik prese il suo tricorder
+          not� un�insolita attivit� REM�
+
+          � Be�, c�� un solo modo per vedere di che si tratta�
+
+          E cos� dicendo gli diede un pizzicotto. Effettivamente ora sembrava anche a me la soluzione pi� logica.
+
+          Da subito iniz� a lamentarsi di un matrimonio mancato, e ce ne volle per convincerlo che era stato solo un
+          sogno. Pensavamo che fosse finita l�, ma una sorpresa ci attendeva la porta dell�infermeria si apr�, mostrando
+          una lunga fila di ufficiali e civili che si lamentava dei sogni fatti: c�era chi affogava nella Nutella, chi
+          aveva paura che gli tagliassero la testa, chi si era trasformato in carta da gioco�sconcertante. Io e T�Mik
+          non sapevamo pi� cosa fare. Capui ci guardava sconsolato, mentre la fila si allungava. Poi qualcuno ebbe
+          un�idea brillante: numeri, come al supermercato.
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          Dopo aver visitato molti pazienti, ciascuno in preda ai pi� svariati incubi, giungemmo alla conclusione che
+          comunque non c�era nulla di grave per l�equipaggio, si trattava semplicemente di un�insolita attivit� REM,
+          alla quale T�Mik era immune ed i cui effetti parzialmente assalivano me ( credo a causa del mio retaggio
+          umano)
+
+          T�Mik decise di andare in sala mensa ad informare il capitano. Nel frattempo in infermeria giunse Fabiola
+          Renzi, accompagnata da Ciccozzi. La adagiammo subito su un lettino diagnostico e subito ci rendemmo conto che
+          il suo caso era alquanto pi� preoccupante degli altri, cos� decidemmo di tenerla sotto sedativi un po� pi� a
+          lungo per monitorare meglio la sua attivit� REM. C�� sempre stato qualcosa di insolito in Renzi, una volta
+          addirittura carter avanz� l�assurda ipotesi che fosse un mutaforma� figuriamoci. Comunque dopo un po� si
+          risvegli�, la informammo della situazione e poi ripristinammo lo stato di sonno indotto.
+
+          Dopo un po� dagli altoparlanti si diffuse una strana musica terrestre e mentre cercavo di escludere gli
+          altoparlanti dell�infermeria per non disturbare il sonno della paziente, commisi l�irreparabile. Non so come
+          ma cancellai un file e resi trasparente il MOE. Proprio mentre cercavo di riparare il danno, inveendo contro
+          il computer e di trovare un modo logico per informare T�Mik, lei torn� in infermeria. Decisi di affrontarla di
+          petto.
+
+          � Che succede Robert?�
+
+          � Ecco, vedi� Non � logico adirarsi per qualcosa che ormai � successo, vero?�
+
+          � No, certo. Mi complimento per il tuo tentativo di autocontrollo, io non credevo che ne fossi capace�
+
+          � No, guarda, io veramente mi riferivo a te. Inavvertitamente devo aver cancellato un file dalla matrice
+          olografica del MOE e ora� guarda, Peppino � trasparente�
+
+          � COSA?�
+
+          � Dottoressa, dicevamo che la logica�
+
+          � Non nominare quella parola. Cos�� successo al mio povero Peppino?�
+
+          Effettivamente era proprio trasparente, si potevano vedere le mura dell�infermeria attraverso il suo corpo.
+
+          Presto per� la nostra attenzione fu distratta da Boregh, che era venuto per una visita e ne aveva approfittato
+          per raccontarci le sue avventure oniriche (pare fosse stato alle prese con una pianta carnivora).
+
+          Nel frattempo ci informarono che eravamo in orbita intorno ad un pianeta, in compagnia di tre altre astronavi
+          ( ma non avevano detto che eravamo gli unici, audaci incaricati?). Il capitano e Fruuu erano invitati dal
+          capitano della Efesto, ma c�era festa anche per noi: un nutella party al quale avevamo invitato gli altri
+          equipaggi e che sarebbe andato avanti fino a tardi.
+
+          Io e T�Mik lasciammo Carter e Capui in infermeria, con l�ordine di continuare a monitorare Renzi e ci
+          dirigemmo in sala mensa, dove il clima festaiolo aveva contagiato tutti, tranne, naturalmente, la povera
+          Ernestina, che avrebbe poi dovuto provvedere alle pulizie. Forse avrei dovuto suggerirle di reclutare Adam
+          Smith come aiutante.
+
+          Alcune ore pi� tardi tornai in infermeria e decisi di risvegliare Fabiola, dal momento che le sue condizioni
+          di salute si erano stabilizzate. Quindi la dimisi dicendole che poteva riprendere le sue mansioni.
+        </p>
+        <p style="diary-cpu">
+          GM Robert Van Bajark<br />
+          XMO<br />
+          USS Afrodite NCC-1863
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission6.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 6
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission6_05.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission6_07.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
