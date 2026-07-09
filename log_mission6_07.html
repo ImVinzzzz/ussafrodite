@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Rael – Mission 6 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission6.html">Mission: 6</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Rael</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-shield-halved"></i> &nbsp;SEC &nbsp;·&nbsp; CTO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM Rael</div>
+          <div class="diary-header-mission">Mission: 6 — Afrodite in Wonderland</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/rael_l.jpg" alt="GM Rael"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,128,0,0.15);border-radius:6px;border:2px dashed rgba(128,128,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-shield-halved\' style=\'font-size:2rem;color:rgba(128,128,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,128,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_rael.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10203.23 </span>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Stiamo andando verso il pianeta delle interferenze e dopo che è arrivato Ciccozzi a darmi il cambio me ne vado
+          a letto, mi
+          addormento sperando di sognare una bella battaglia, ma mi ritrovo in una casetta su pianeta arido e con un
+          grosso sole rosso
+          (capisco che si tartta di Vulcano) circondata da una nidiata di piccoli con le orecchie a punta che continuano
+          a dirmi:
+          "Mamma non è logico..." e un vulcaniano che con quella sua faccia da tonto mi dice: "Hanno ragione i bambini
+          Rael, non è
+          logico arrabbiarsi con le piante". Continuano tutti a ripetere come una cantilena: "Non è logico... non è
+          logico... non è
+          logico..." Argh, io sono illogica, io voglio essere illogica.<br />
+          Mi sveglio di soprassalto e mi guardo intorno. Sono nella mia stanza, tiro un sospiro di sollievo mi alzo e
+          prendo da sotto
+          il letto una bottiglia di birra romulana e ne prendo un bel sorso, forse con questa farò sogni migliori.
+          Infatti sogno di
+          essere una regina assassina e folle che vuole tagliare la testa a tutti. Poi ci troviamo vicino ad una nebula
+          tutta fatta di
+          Nutella: non devo fare altro che aprire un oblò e metterci il dito dentro e poi... ma la Nutella inizia a
+          crescere sempre di
+          più fino a sommergermi e cerca lei di mangiare me.
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          Mi sveglio: tra poco inizia il mio turno di lavoro. È stata una notte agitatissima piena di strani sogni, vedo
+          nei corridoi
+          gli altri membri dell'equipaggio con gli occhi gonfi, cerchiati, e capisco che neanche loro hanno avuto una
+          notte molto
+          tranquilla. Prima di salire su in Plancia faccio un salto in reparto, tanto non sta succedendo niente di
+          particolare. In
+          ufficio ci sono Cip e Ciop, ache loro un po' sconvolti, che mi chiedono se possono andare in Infermeria per
+          parlare con la
+          dottoressa. Do loro il mio permesso... forse dovrei andarci anch'io ma poi mi ricordo che la dottoressa T'Mik
+          è vulcaniana
+          e mi viene in mente l'atroce incubo di stanotte e così preferisco andare su in Plancia.<br />
+          Sto salendo con il turboascensore quando sento un terribile rumore: una strana e assurda musica martellante...
+          arrivata in Plancia,
+          il capitano ancora non c'è. Mando Ciccozzi a riposare, bhe a sentirla bene questa musica non è male ma le
+          parole sono veramente
+          stupide. Mentre controllo i settori cerco di trovare delle parole migliori:<br />
+          <br />
+          <span class="diary-cpu">Versione di Rael di 'Romagna Mia'<br />
+            Sento la nostalgia d'un passato<br />
+            ove il babbo mio ho lasciato.<br />
+            Non ti potrò scordare navetta mia<br />
+            in questa notte stellata<br />
+            la mia serenata io canto per te.<br />
+            Romulus mio, Romulus in fiore,<br />
+            tu sei la stella, tu sei ll'ardore.<br />
+            Quanto ti penso vorrei tornare<br />
+            tra le tue stelle a gironzolare.<br />
+            Romulus mio lontan da te non si può star!</span><br />
+          <br />
+          Ecco, così va meglio!<br />
+          In quel momento arriva il file del rapporto di StarFleet ma, accidenti a loro è criptato e noi non abbiamo la
+          chiave.
+          Il Capitano arriva in quel momento e glielo riferisco... ci penseranno quelli delle Operazioni.<br />
+          Ho voglia di qualcosa di buono, mi guardo intorno ma Adam non c'è, il codardo. Chiamo l'ufficio e non mi
+          risponde nessuno;
+          riprovo a chiamare ma niente: ancora nessuna risposta. Dovrò fare una bella ramanzina a qualcuno oggi. Oggi
+          non è proprio
+          una buona giornata: i file criptati, nessuno in ufficio, Adam scomparso... niente va per il verso giusto.
+          Tanto per
+          completare il quadro giornaliero ci sono tre altre navi intorno al pianeta, non siamo soli.<br />
+          Finalmente Adam entra in plancia e io ho un diavolo per capello (emh no i parenti del capitano non sono qui...
+          diciamo che
+          sono furiosa), e gli chiedo dove sia stato tutto quel tempo; il poverino mormora che è stato in Infermeria.
+          Gli ordino di
+          andare a prendere qualcosa per l'equipaggio di plancia, tutto quello che chiedono.<br />
+          Intanto il Capitano ha contattato le altre tre navi che sono anche loro della Flotta Stellare e hanno
+          organizzato una festa
+          a bordo di una della navi, la Efesto, mentre qui sulla Afrodite ci sarà un Nutella Party. Bhe, dopo l'incubo
+          di stanotte
+          non so se avrò il coraggio di assaggiarne un po'. Adam rovescia un caffé su una consolle, anche lui ci voleva
+          oggi e io lo
+          sgrido aspramente: non verrà alla festa ma farà il cameriere tutto il giorno. Becco quell'inutile e impiccione
+          di
+          consigliere ha il coraggio di dirmi di trattarlo un po' meglio, e poi mi dice:<br />
+          - Vorrei fare una chiaccherata con lei, Capo, è un periodo che la vedo un po' nervosa!<br />
+          - Le ho già detto che non ho tempo, consigliere, però se combina qualcosa verrò io a fare un discorsetto con
+          lei!<br />
+          <br />
+          La festa a bordo della Afrodite è divertente, ci sono gli ufficiali superiori di tutte e tre le navi intorno
+          al pianeta:
+          la Efesto, la Cronos e la Selene, e mangiamo e spettegoliamo sugli istruttori dell'Accademia che ci mandano in
+          queste assurde
+          missioni. Tutti sono contenti tranne Adam che fa da cameriere un po' a tutti, e soprattutto Ernestina che poi
+          dovrà ripulire tutto.
+          <br />
+        </p>
+        <p class="diary-cpu">
+          GM Rael<br />
+          CTO<br />
+          USS Afrodite NCC-1863
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission6.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 6
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission6_06.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission6_09.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

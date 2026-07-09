@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Rogers – Mission 6 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission6.html">Mission: 6</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Rogers</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-gear"></i> &nbsp;ENG &nbsp;·&nbsp; Ufficiale Ingegnere &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM Rogers</div>
+          <div class="diary-header-mission">Mission: 6 — Afrodite in Wonderland</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/rogers.jpg" alt="GM Rogers"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,128,0,0.15);border-radius:6px;border:2px dashed rgba(128,128,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-gear\' style=\'font-size:2rem;color:rgba(128,128,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,128,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_rogers.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10203.23 </span>
+        </div>
+
+        <!-- Badge SECLAR stilizzato -->
+        <div class="seclar-badge">
+          <i class="fa-solid fa-shield-halved fa-lg"></i>
+          <span>Classificazione: SECLAR 4 &nbsp;·&nbsp; Accesso ristretto</span>
+          <i class="fa-solid fa-lock fa-lg" style="margin-left:auto;"></i>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Sono un mezzo vulcan... i sogni strani e illogici non sono per me... tuttavia...<br />
+          Margherite??? Margherite... si quelle strane piante del genere Chrysanthemum...<br />
+          Non capisco perché le sogno...?? E perché parlano... e poi... una Regina di cuori.. un coniglio bianco...Ma
+          che
+          sogno è mai questo?<br />
+          <br />
+          Nel mio alloggio è tutto normale ma solo all'apparenza, lo so non è da me lasciare in disordine, ma il sonno
+          mi
+          ha preso alla sprovvista ieri...<br />
+          È leggermente tardi sull'orario di cambio con il medico che ha il turno notturno... dovevo essere lì alle 7:00
+          e invece sono le 7:45 e ancora non sono arrivato... Il collega mi rimprovererà aspramente!
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          Sono arrivato a lavoro... finalmente... uno degli infermieri di turno mi viene ad accogliere, è Carter Carter.
+          Mi
+          sembra preoccupato.<br />
+          - Buon giorno a tutti, signor Carter che le succede? Non bisogna essere un betazoide per rendersi conto che
+          qualcosa non va in lei...<br />
+          - Sa, ho dormito male stanotte dottore... mi sono girato e rigirato nel letto. Anche gli altri hanno dormito
+          male
+          signore... Da stanotte è arrivato già qualcuno del personale di ingegneria a fare dei controlli...<br />
+          - Che sintomi lamentavano? - dissi io che stentavo a credere che ci fossero gia circa quattro persone con
+          problemi di sonno.<br />
+          - Tutti hanno avuto difficoltà a risvegliarsi dal sonno e tutti hanno continuato a portarsi dietro parte dei
+          loro sogni nella vita reale.<br />
+          Mentre mi diceva questo dalla porta entrò Da Nee, la faccia stralunata e molto
+          assonnato... che strano senza dire nulla ha attivato il MOE. Il Selhat olografico da guardia appare come il
+          suo solito nel centro dell'Infermeria... e ringhiò<br />
+          - Signor Da Nee!! Che cosa sta facendo!! È pericoloso parlare con Peppino!<br />
+          Ma guarda tu se Da Nee deve parlare con Peppino...<br />
+          - Signor Capui chiami la dottoressa T'Mik...<br />
+          <br />
+          Nel frattempo l'Infermeria si è riempita letteralmente... decine di persone si accalcano alle porte... c'è chi
+          si
+          lamenta perché gli hanno tagliato la testa, chi perché ha sognato di essere una carta da gioco e deve fare la
+          guardia per una regina... (ma questi sogni sono tutti accumunati...). C'è chi sogna gatti che scompaiono
+          oppure dei
+          quali si vedono solo i denti... (non è poi così strano: potrebbero star sognando il nostro gatto Geppo). Chi
+          crede
+          di essere una margherita... chi un bruco parlante... (ma sono sempre più convinto di aver sentito questa
+          storia....)<br />
+          Mi avvicino a un terminale - Computer fai una ricerca approfondita su tutti gli argomenti fantastici o meno
+          che
+          abbiano in comune un gatto; un bruco parlante; degli uomini carte da gioco; margherite parlanti...<br />
+          <span class="diary-cpu"> - Ricerca in corso... Ricerca in corso... Attendere...</span><br />
+          Accidenti... inavvertitamente ho cancellato un file della matrice olograficxa del MOE... ummm<br />
+          - Dottoressa T'Mik...<br />
+          - Che succede Robert?<br />
+          - Ecco, vedi... Non è logico adirarsi per qualcosa che ormai è successo, vero?<br />
+          - No, certo. Mi complimento per il tuo tentativo di autocontrollo, io non credevo che ne fossi capace.<br />
+          - No, guarda, io veramente mi riferivo a te. Inavvertitamente devo aver cancellato un file dalla matrice
+          olografica del MOE e ora... guarda, Peppino è trasparente!<br />
+          - COSA?<br />
+          - Dottoressa, dicevamo che la logica...<br />
+          - Non nominare quella parola. Cos'è successo al mio povero Peppino?<br />
+          - Veramente dottoressa... stavo facendo una ricerca... sa... per quella strana attività onirica... e
+          inavvertitamente
+          ho cancellato quel file...<br />
+          <br />
+          <span class="diary-cpu"> - Risultati della ricerca pronti. Terminale in stand-by.</span><br />
+          - Computer elencare i risultati della ricerca.<br />
+          <span class="diary-cpu">- Indici di ricerca presenti in: 1. vecchio libro intitolato 'Alice in Wonderland' di
+            Charles Lutwidge
+            Dodgson, in arte Lewis Carroll. Stampato per la prima volta nel 1903. 2. Film prodotto dalla Walt Disney nel
+            1951.
+            Desidera ulteriori informazioni?</span><br />
+          - No grazie computer.<br />
+          Ora lo ricordo... un vecchissimo film... la protagonista si perdeva nel Paese delle
+          Meraviglie... me lo raccontava la mia mamma... una bella storia se non ricordo male.<br />
+          <br />
+          C'è anche chi ha sognato una nebula di Nutella... ma che strano... sarà perché questa volta non c'erano nebule
+          da visitare?
+          <br />
+        </p>
+        <p class="diary-cpu">
+          GM Rogers<br />
+          Ufficiale ENG<br />
+          USS Afrodite NCC-1863
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission6.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 1
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+
+        <a href="log_mission6_10.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <!-- Ultimo diario: bottone successivo spento -->
+        <span class="btn-back" style="opacity:0.25;cursor:default;pointer-events:none;margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

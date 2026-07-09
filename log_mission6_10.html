@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Diario Jacket – Mission 6 | USS Afrodite</title>
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/svg+xml" href="favicon.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="stylesheet.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+                integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+        <canvas id="starfield"></canvas>
+        <div class="scanline-overlay"></div>
+
+        <!-- HEADER -->
+        <header id="site-header"></header>
+
+        <main id="main-content">
+
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                        <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+                        <span>›</span>
+                        <a href="log.html">Log</a>
+                        <span>›</span>
+                        <a href="log_mission6.html">Mission: 6</a>
+                        <span>›</span>
+                        <span class="current">Diario Personale – GM Jacket</span>
+                </div>
+
+                <!-- Diary page -->
+                <div class="diary-wrapper">
+
+                        <div class="diary-header"
+                                style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+                                <!-- Testo intestazione -->
+                                <div class="diary-header-text">
+                                        <div class="diary-header-role">
+                                                <i class="fa-solid fa-globe"></i> &nbsp;OPS &nbsp;·&nbsp; COO
+                                                &nbsp;·&nbsp; Diario Personale
+                                        </div>
+                                        <div class="diary-header-name">GM P. JACKET</div>
+                                        <div class="diary-header-mission">Mission: 6 — Afrodite in Wonderland
+                                        </div>
+                                </div>
+                                <!-- Miniatura PG + link scheda -->
+                                <div class="diary-header-pgbox">
+                                        <img src="images/crew/jacket_l.jpg" alt="GM Peter Jacket"
+                                                onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+                                        <a href="crew_jacket.html">
+                                                <i class="fa-solid fa-image-portrait"></i> Scheda
+                                        </a>
+                                </div>
+                        </div>
+                        <div class="diary-body">
+
+                                <div class="stardate-line">
+                                        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i>
+                                                &nbsp;Stardate</span>
+                                        <span class="stardate-value">10203.23 </span>
+                                </div>
+
+                                <!-- PROLOGO -->
+                                <div class="diary-section-title">Prologo</div>
+
+                                <p>
+                                        Diario del Capitano, data stellare 54347.5, ci stiamo avvicinando al pianeta dei
+                                        Fondatori. Oramai dovrebbero averci individuato e dovrebbero aver mandato in
+                                        avanscoperta i loro ricognitori. Non so se ce la faremo ma sono onorato di
+                                        essere al comando di questa missione suicida con la mia USS Sovereign nuova di
+                                        zecca.<br />
+                                        - Capitano, una nave Jem'Hadar si sta avvicinando, ci chiamano.<br />
+                                        - Sullo schermo! - dissi.<br />
+                                        - Dichiarate le vostre intenzioni!<br />
+                                        - Qui il Capitano Peter Jacket della USS Sovereign della Federazione. Siamo qui
+                                        per distruggervi insieme ai fondatori. - Poi, rivolgendomi al mio ufficiale alle
+                                        comunicazioni aggiunsi: - Chiudere il contatto.<br />
+                                        - Sì, signore. - Mi rispose lui.<br />
+                                        - Preparare una salva di siluri quantici, contro il pianeta signor Savok - dissi
+                                        all' ufficiale addetto al tattico.<br />
+                                        - Ma, signore... - cercò di intervenire il mio Numero Uno.<br />
+                                        - Fuoco: siluri Quantici, siluri Fotonici e anche i phaser tutti contro il
+                                        pianeta.<br />
+                                        - Ma Capitano...<br />
+                                        - È un'ordine... - urlai.<br />
+                                        - Mi rifiuto di...<br />
+                                        C'era da aspettarselo: gli ufficiali non sono più quelli di una volta. Con un
+                                        balzo
+                                        scavalcai la consolle tattica, spostai il signor Savok e feci fuoco con tutta la
+                                        Santabarbara della nave urlando: - La Vittoria è vita!<br />
+                                        - Il Pianeta dei Fondatori è distrutto. - riferì mogio il mio Numero Uno.<br />
+                                        - Evvai! - urlai - Beccatevi questo! - mi sentivo un eroe avevo salvato la
+                                        Federazione e tutto il quadrante alpha...<br />
+                                        - Lei ha distrutto un'intera razza...<br />
+                                        - Una razza con cui eravamo in pace! - aggiunse il mio Numero Uno.<br />
+                                        - Cosa?!? In pace?!? Ma io non lo sapevo... - cercai di difendermi. Del resto
+                                        sono
+                                        arrivato solo alla fine della quarta stagione di DS9, cosa ne potevo sapere di
+                                        cosa
+                                        succede dopo.<br />
+                                        - Ha distrutto una razza, peggio dei Borg! E la colpa è solo sua! - disse uno,
+                                        additandomi.<br />
+                                        - Sua! - continuò un altro.<br />
+                                        - Sua! - sentenziò un terzo.<br />
+                                        - Sua...!<br />
+                                        - Sua...!<br />
+                                        - Sua...!<br />
+                                        - Sua...!<br />
+                                        - Solo sua!<br />
+                                        - Su...<br />
+                                        AAAAAARGHHHHHHHHH!<br />
+                                        <br />
+                                        Mi svegliai di soprassalto: ero nel mio alloggio sulla Afrodite ed era
+                                        stato tutto un sogno. Un incubo a dire la verità. Avevo sterminato una razza!
+                                        Per fortuna era solo un sogno. Forse dovrei rivedere la domanda che ho
+                                        inoltrato per passare alla sezione Comando...
+                                </p>
+
+                                <!-- DIARIO -->
+                                <div class="diary-section-title">Diario di Missione</div>
+
+                                <p>
+                                        La nottataccia che avevo passato aveva portato i suoi risultati: ero
+                                        completamente intontito e mi sentivo assolutamente fuori fase. Il Turno di
+                                        lavoro in plancia sapevo che non mi sarebbe piaciuto per niente. Barcollando
+                                        leggermente comunque mi diressi verso il turbolift e una volta dentro ordinai al
+                                        computer di portarmi sul ponte di comando. Una volta arrivato in plancia, presi
+                                        il mio posto e mandai Boregh al suo turno di riposo. In realtà il mio vice
+                                        Klingon non se ne sarebbe stato in panciolle per il resto del tempo nel suo
+                                        alloggio o a coltivare le sue amate piante, bensì sarebbe dovuto andare in
+                                        infermeria a parlare del perché stava continuando a fare (come tutti
+                                        dell'equipaggio del resto) dei sogni catastrofici. Per la cronaca, il suo si
+                                        trattava della sua pianta ornamentale Klingon che con tanto di Bat'leth lo
+                                        faceva a fette e se lo mangiava!<br />
+                                        <br />
+                                        Mentre mi trovavo bellamente alla mia postazione a non fare null... ehm... a
+                                        cercare di ricapitolare le idee dopo la nottataccia che avevo passato, arrivò
+                                        dall federazione il file che stavamo attendendo con ansia. Sfortunatamente il
+                                        file era criptato e Rael che aveva ricevuto il file non era in grado di
+                                        decrittarlo. Indovinate un po' a chi toccò la patata bollente della
+                                        decrittazione del file? Proprio al sottoscritto! Era un degno proseguimento per
+                                        una giornata del cavolo seguita ad una nottata impossibile. L'unica cosa
+                                        positiva era la notizia che la dottoressa T'Mik aveva valutato appieno la
+                                        situazione
+                                        onirica dell'equipaggio ed era propensa a ritenere che non fosse niente di
+                                        grave. Diavolo di una vulcaniana! Solo perché lei non risentiva degli effetti di
+                                        questa strana forma di attività notturna che provocava a tutto l'equipaggio i
+                                        più disparati incubi diceva che non era nulla di grave. Stavo pensando che un
+                                        giorno o l'altro avrei dovuto intraprendere una lunga ed esauriente discussione
+                                        con la dottoressa su cosa pensavo della sua logica del cavolo! Comunque dopo
+                                        poco che lavoravo ero riuscito a completare il 73,8% della chiave di
+                                        decrittazione e sembrava che il più del lavoro fosse finito. Improvvisamente
+                                        però uno strano fenomeno musicale. Dai diffusori situati in plancia iniziò a
+                                        risuonare per tutto il ponte di comando una strana musica che fu identificata
+                                        dai più come un ballo liscio del XX secolo della Terra chiamato 'Romagna Mia'
+                                        che ottenne il risultato di mandare tutti gli ufficiali ancora più in paranoia
+                                        di prima. Anche a me dava molto fastidio riuscendo a deconcentrarmi notevolmente
+                                        con il risultato che la decrittazione del file avrebbe richiesto ancora notevole
+                                        tempo. E poi era una musica veramente noiosa!<br />
+                                        <br />
+                                        Mentre continuavo a lavorare sul file, avvistammo il pianeta che era la nostra
+                                        meta, ma avendo ancora il file con le informazioni in decrittazione non ne
+                                        sapevamo niente. Mentre il nostro primo ufficiale si mise a farneticare qualcosa
+                                        su degli strani tirannosauri naziskin, ci accorgemmo dalle analisi dei sensori
+                                        che tre navi della federazione stavano convergendo sul pianeta verso il quale ci
+                                        stavamo dirigendo noi. Il Capitano ordin� di mandare sullo schermo un
+                                        collegamento con le tre navi e a video ci apparvero i visi sorridenti dei
+                                        Capitani della Cronos, della Efesto e della Selene. Dopo i saluti di rito e dopo
+                                        aver scoperto che non eravamo i soli ad essere stati mandati in missione da
+                                        Ailoura, i capitani iniziarono a chiacchierare tra di loro. Venne così in mente
+                                        ad uno di loro (precisamente al Capitano McCartney della Efesto) di prendere,
+                                        capitani e primi ufficiali, un tipico te delle cinque alla scozzese. Furono
+                                        tutti molto contenti e approvarono la proposta. Fu allora che quel satanasso del
+                                        consigliere di bordo Becco propose di far salire tutto il resto degli altri
+                                        equipaggi a bordo della Afrodite per un Nutella Party. Il Capitano Alighieri
+                                        dopo averlo fulminato con lo sguardo stava per tirare fuori qualche scusa quando
+                                        i Capitani delle altre navi approvarono l'idea. Con riluttanza il nostro
+                                        Alighieri decise che si sarebbe svolto il Nutella Party e dopo aver preso
+                                        accordi per il loro Te, tolse la comunicazione. Fu allora che accadde una cosa
+                                        che mi piacque molto e che anzi mi mandò in brodo di giuggiole! Il Capitano
+                                        furente rimproverò il consigliere dicendo che sulla Afrodite era lui che faceva
+                                        gli inviti e che Ernestina non ne sarebbe stata contenta di quel Nutella Party.
+                                        Spedì così il nostro infido Consigliere ad avvertire la signora Scramiglio che
+                                        avrebbe dovuto preparare la sala mensa per il Nutella Party. Così ci sarebbe
+                                        stato un po' di tempo per fare baldoria. Intanto io stavo cercando di
+                                        terminare la decrittazione del file. Sembrava che ci fossi riuscito, ma invece
+                                        mi accorsi che era tutto sbagliato e lo dissi al Capitano. Il Capitano tuon� che
+                                        se non riuscivo a decrittare correttamente il file mi avrebbe mandato a pulire
+                                        gli scarichi dei motori di Curvatura. Ovviamente dall'esterno! Così il buon Da
+                                        Nee mosso a compassione mi si avvicinò e mi aiutò a terminare la decrittazione
+                                        con successo. Prima di andare a prepararsi per il tè il Capitano bofonchiò
+                                        qualcosa su quanto sia utile il lavoro di squadra: io non gli prestai molta
+                                        attenzione, felice di essermela cavata ancora una volta ed avere evitato le
+                                        minacce del nostro ufficiale comandante.<br />
+                                        <br />
+                                        Quando venne l'ora del party ci dirigemmo tutti in sala mensa... tutti tranne
+                                        Becco, a cui il Capitano aveva affidato la Plancia, e agli ufficiali sfigati che
+                                        avrebbero retto la baracca mentre noi ufficiali anziani ci andavamo a divertire
+                                        in sala mensa.<br />
+                                        <br />
+                                        La festa era veramente affollata. C'erano tutti gli ufficiali superiori delle
+                                        quattro
+                                        astronavi. Nutella e Birra Romulana scorrevano a fiumi e sembravano tutti molto
+                                        contenti (non so se per la Borra Romulana o per la Nutella di cui noi della
+                                        Afrodite eravamo veramente degli appassionati, a dir poco). A dire il vero
+                                        qualcuno scontento c'era: Ernestina che stava evidentemente pensando a
+                                        quanto tempo avrebbe impiegato per ripulire tutto il casino che avremmo fatto.
+                                        Comunque tra un cucchiaio di Nutella ed un sorso di Birra il tempo trascorse
+                                        tranquillo ed in allegria pensando ai bei tempi andati dell'Accademia e facendo
+                                        pettegolezzi sui rispettivi capitani o su qualcuno per cui avevamo particolare
+                                        antipatia (credo di aver parlato male di Becco a tutti i presenti...). Venne poi
+                                        il momento di congedarci e ci salutammo tutti con cordialità ripromettendoci che
+                                        se ce ne fosse stata un'altra possibilità avremmo fatto un nuovo Nutella Party
+                                        appena possibile. Ovviamente questo non piacque per niente ad Ernestina che
+                                        rimase qualche minuto ad 'ammirare' il macello che la festa aveva provocato
+                                        prima di iniziare a sbraitare contro tutto e tutti.<br />
+                                        <br />
+                                        Ripresomi a fatica dal Nutella Party mi diressi verso la Plancia per
+                                        riprendere servizio. Mi sentivo sempre più intontito, il party mi aveva
+                                        leggermente debilitato, ma ero convinto a portare a termine il mio turno di
+                                        lavoro con convinzione. Mentre mi avviavo alla mia consolle felice di non dover
+                                        più decrittare il file (era stata un'operazione veramente laboriosa e per molti
+                                        versi infelice), inciampai e caddi ai piedi di Becco. Il Consigliere mi
+                                        apostrofò subito: "Ma signor Jacket, non c'è bisogno che lei manifesti tutta la
+                                        sua riconoscenza nei miei confronti in questo modo ed in pubblico".<br />
+                                        Rialzandomi immediatamente tra le risate generali della Plancia guardai in malo
+                                        modo il consigliere e mi misi alla mia postazione.<br />
+                                        <br />
+                                        Dopo qualche tempo entrammo finalmente in orbita al pianeta che ad una prima
+                                        analisi dei sensori non rivelava niente di particolare.<br />
+                                        Ora per sapere cosa avremmo dovuto fare, dovevamo soltanto decifrare quel
+                                        benedetto file che avevamo ricevuto dal Comando di Flotta...
+                                        <br />
+                                </p>
+                                <p class="diary-cpu">
+                                        GM Peter Jacket<br />
+                                        COO<br />
+                                        USS Afrodite NCC-1863
+                                </p>
+
+                        </div>
+                </div>
+
+                <!-- Navigation -->
+                <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+                        <a href="log_mission6.html" class="btn-back">
+                                <i class="fa-solid fa-chevron-left"></i> Log Mission: 6
+                        </a>
+                        <div style="margin-left:auto;display:flex;gap:8px;">
+                                <a href="log_mission6_09.html" class="btn-back" style="margin-bottom:0;">
+                                        <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                                <a href="log_mission6_11.html" class="btn-back" style="margin-bottom:0;">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                        </div>
+                </div>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer id="site-footer"></footer>
+        <script src="script.js"></script>
+</body>
+
+</html>

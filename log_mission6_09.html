@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Ta Nutri – Mission 6 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission6.html">Mission: 6</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Ta Nutri</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-gear"></i> &nbsp;ENG &nbsp;·&nbsp; CEO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM J. Ta Nutri</div>
+          <div class="diary-header-mission">Mission: 6 — Afrodite in Wonderland</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/tanutri_l.jpg" alt="GM J. Ta Nutri"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,128,0,0.15);border-radius:6px;border:2px dashed rgba(128,128,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-gear\' style=\'font-size:2rem;color:rgba(128,128,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,128,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_tanutri.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10203.23 </span>
+        </div>
+
+        <!-- PROLOGO
+      <div class="diary-section-title">Prologo</div>
+
+      <p>
+        Il giorno atteso... sarebbe stato strano il contrario!
+      </p> -->
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          Perche' sono qui? Ma poi, dov'è 'qui'?<br />
+          Spazio. Stelle. Nuvole di gas primordiale. Tempesta di elementi chimici...<br />
+          Sono in una nebulosa. Dovrebbe meravigliarmi riuscire a respirare nello spazio pur non indossando una tuta
+          spaziale, ed invece mi
+          sembra naturale. Perché?<br />
+          Sto sognando! Ancora!<br />
+          Allora lasciamoci cullare dal silenzio del Vuoto Interstellare, SchuSchu, mia adorabile gattina. La Nebula
+          stessa sarà la nostra protezione.<br />
+          Morbida, profumata, avvolgente: sii tu la nostra dolce corazza.<br />
+          - Scansione effettuata. Analisi preliminari confermate...<br />
+          Jacket? Dove sei? Che ci fai qui? E dov'è SchuSchu? La nebula è diventata improvvisamente più densa, muoversi
+          al suo interno è come
+          affondare nelle sabbie mobili. Ma devo muovermi perché devo raggiungere quel sacco che ho davanti a me.
+          Schu... lì, lo so...
+          Qualcuno ha chiuso la mia micetta in un sacco! Presto, presto. I suoi miagolii sono sempre più strazianti. Oh
+          Dei, chi ha osato
+          tanto? Mi si porti il colpevole! Voglio infliggergli il giusto castigo.<br />
+          - Eccomi Schu. Sto arrivandoooo...<br />
+          La rabbia mi da forza, l'angoscia mi da velocità. Le mani sciolgono il nodo in un lampo; il sacco si apre in
+          un batter di ciglio e...
+          e Ailoura balza fuori. Ailoura che, interamente coperta di pece e piume, si stiracchia contenta.<br />
+          - Mi restituisca subito SchuSchu... - le urlo.<br />
+          - Prima mi devi chiedere scusa! Che razza di modi. Non ci si comporta così con un ufficiale della Flotta
+          Stellare! E tutto solo
+          perché non volevo credere che questa nebulosa fosse fatta di nutella...<br />
+          Nutella? NUTELLA?<br />
+          <br />
+          Il sogno si frantuma con un urlo liberatorio.<br />
+          Eccomi di nuovo nel mio alloggio ed a fianco, come sempre, la tenera presenza di Schumachina. Certo sarei
+          stata più contenta di trovarci Benton ma...<br />
+          - Che dici Schu? Sono davvero sveglia? - Sussurro. Ultimamente i miei sogni sono stati così intensi che mi
+          riesce sempre più
+          difficile distinguerli dalla realtà. Ne ho parlato in giro e sembra che tutti abbiamo lo stesso problema.
+          Arriveremo a sognare
+          ad occhi aperti? Potrebbe essere divertente, a patto di non sistrarci sul più bello. Basterebbe così poco per
+          far saltare in
+          aria la nave. Sarebbe tanto grave? I miei Antenati si preparavano per una vita intera al trapasso, ritenendolo
+          l'accesso ad una
+          nuova vita, anzi, alla vera vita. Forse però, non avevano capito nulla. Ah, quanto mi piacerebbe fare come mio
+          cugino Akim:
+          ha mollato tutto per andarsene in India, dice che lì ha trovato il significato della vita. Egoista! Poteva
+          pure dirmi qual è!
+          Neanche una cartolina mi ha spedito! In fondo che cosa è una misera cartolina in questo immenso cosmo? Niente!
+          Solo un
+          granello di affetto in un oceano di solitudine. Sigh, Sigh... E che cacchio, lo sa che non ne ho nessuna
+          dall'India. La mia
+          collezione piange!<br />
+          <br />
+          Oddio, ancora Raul Casadei. Uffa, speravo d'avere risolto, ed allora, forza miei Ingegnerucci, vediamo di
+          blocccare queste
+          dannate interferenze.<br />
+          - La scelta alle dame - grido entrando in Sala Macchine.<br />
+          - Oh, Castell, le avevo promesso un giro di lissio! - lo afferro e accenno ad un passo di danza.<br />
+          - Coraggio, muova i piedoni verso quel pannello. Riproviamo con quel filtro subspaziale ma stavolta usiamo una
+          banda diversa.<br />
+          Ahimé, Casadei è più tenace di quanto mi aspettassi.. e questa musica è così appallante! A proposito di sogni,
+          si può sognare
+          a 'orecchie' aperte? Se non riusciamo a spegnere Raul forse posso provare ad ignorarlo.<br />
+          - Crede che finiremo in tempo per il party?<br />
+          - Come dice? Ah sì, il Nutella Party - Il ricordo di quel sogno mi strappa un brivido.<br />
+          - Proviamo, forse ce la facciamo. Oh, Castell, ha l'aria abbattuta, Lei lavora troppo, ragazzo mio. Sa che
+          facciamo? Io continuo
+          qui e lei va a riposare. Da quanto è in servizio? Vada, vada che penso io alla baracca. Non mi guardi in quel
+          modo, non ho
+          'fumato' niente. Una volta tanto voglio far la brava, ne approfitti.<br />
+          <br />
+          Sono passate ormai tre ore e l'unico risultato raggiunto è un colossale mal di testa. Durante il corso, era
+          sembrato facile
+          isolare una particolare classe di frequenza, potenziare questo o quel segnale, ma come sempre la teria è
+          dolorosamente lontana
+          dalla pratica. Come diceva il mio Prof: "Per fare questo mestiere bisogna essere dei masochisti".<br />
+          - Okay, ragazzi ci vediamo fra poco...<br />
+          <br />
+          Il tempo di farsi una doccia e sono pronta per festeggiare. Abbiamo scoperto di non essere gli unici a cui la
+          Flotta ha affidato
+          questa missione (la fiducia: gran bella cosa), e abiamo colto l'occasione per organizzare un mega Nutella
+          Party per i nostri cari
+          colleghi. Fa piacere rivedere vecchi compagni d'Accademia. Inoltre gli equipaggi si sono scambiati inviti per
+          dei tour delle
+          rispettive navi, ma li ho cortesemente declinati, tutti. Avrei poi dovuto a mia volta guidare gli ingegneri
+          nella mia Sala
+          Macchine e non mi sembra il caso.<br />
+          <br />
+          - Ti va di ballare?<br />
+          - Benton! - mi giro di scatto ma nel corridoio ci sono solo io. Cosa dicevo del sognare ad orecchie aperte?
+          Sarebbe stato bello,
+          nzi, meraviglioso. Musica romantica, cielo stellato, mormorio delle onde, la sabbia che ci accarezza i piedi e
+          noi due che...<br />
+          - Ehm... Sta bene Signore?<br />
+          Senza accorgemene mi ero messa a ballare, e adesso che gli racconto a questo?<br />
+          - Sì, sto bene. Stavo... stavo solo... eseguendo una una danza rituale della mia gente... perché... perché
+          oggi è Festa Nazionale
+          e allora noi... ma poi, che gliene importa marinaio? - Gli volto le spalle e corro via.<br />
+          <br />
+          C'è anche T'Mik al party, quasi quasi le racconto quello che mi è successo poco fa... No, meglio di no, ho
+          intorno un discreto
+          numero di ufficiali e dai frammenti di conversazione che ho colto, stanno tutti parlando dei loro sogni. T'Mik
+          li scolta in
+          silenzio, con lo sguardo perso nel vuoto. Ha un colorito decisamente... verdognolo. Dalla sua espressione
+          deduco che non ne possa
+          proprio più di sentri parlare delle nostre strane esperienze oniriche. Rifaccio un salto in Sala Macchine e
+          poi a nanna, sono
+          stanchissima.<br />
+          <br />
+          Laboratorio. Saldatore. Tabelle dati. Tanti, tanti numeri, infinite sequenze di numeri. Aiuto!<br />
+          Sono saltate le saldature! NOOOO!!! Devo ricomciare daccapo! Guarda qui: le curve non coincidono, devo...
+          interpolare!<br />
+          - Bisogna preoccuparsi solo se le cose tornano.<br />
+          - Professore, mi aiuti. Ehi no, aspetti, non mi lasci qui, la prego. AIUTO... AIUTOOOO!<br />
+          Aaaargh. Sì, sono sulla Afrodite, era solo un incubo! È finita... finita. Oh, SchuSchu, susa, sei volata
+          contro la parete.
+          Povera Stellina, vieni qui accanto a me. Stavolta proviamo a sognare Benny, abbiamo in sospeso un appuntamento
+          sulla spiaggia...
+          <br />
+        </p>
+        <p class="diary-cpu">
+          GM Jidtzia Ta Nutri<br />
+          CEO<br />
+          USS Afrodite NCC-1863
+        </p>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission6.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 6
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission6_07.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission6_10.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
