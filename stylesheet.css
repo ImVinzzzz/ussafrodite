@@ -1482,7 +1482,7 @@ footer {
 }
 
 .diary-cpu {
-  color: #1515C9;
+  color: rgba(248,248,255,0.5);
   font-style: italic;
 }
 
