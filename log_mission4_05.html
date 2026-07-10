@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,173 +13,173 @@
 
   <link rel="stylesheet" href="stylesheet.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-<canvas id="starfield"></canvas>
-<div class="scanline-overlay"></div>
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
 
-<!-- HEADER -->
-<header id="site-header"></header>
+  <!-- HEADER -->
+  <header id="site-header"></header>
 
-<main id="main-content">
+  <main id="main-content">
 
-  <!-- Breadcrumb -->
-  <div class="breadcrumb">
-    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
-    <span>›</span>
-    <a href="log.html">Log</a>
-    <span>›</span>
-    <a href="log_mission4.html">Mission: 4</a>
-    <span>›</span>
-    <span class="current">Diario Personale – GM T'Mik</span>
-  </div>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission4.html">Mission: 4</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM T'Mik</span>
+    </div>
 
-  <!-- Diary page -->
-  <div class="diary-wrapper">
+    <!-- Diary page -->
+    <div class="diary-wrapper">
 
-   <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
-      <!-- Testo intestazione -->
-      <div class="diary-header-text">
-        <div class="diary-header-role">
-          <i class="fa-solid fa-staff-snake"></i> &nbsp;MED &nbsp;·&nbsp; CMO &nbsp;·&nbsp; Diario Personale
+      <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-staff-snake"></i> &nbsp;MED &nbsp;·&nbsp; CMO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM T'Mik</div>
+          <div class="diary-header-mission">Mission: 4 — The Voyage Home</div>
         </div>
-        <div class="diary-header-name">GM T'Mik</div>
-        <div class="diary-header-mission">Mission: 2 — The betrothed</div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/tmik_l.jpg" alt="GM T'Mik"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_tmik.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
       </div>
-      <!-- Miniatura PG + link scheda -->
-      <div class="diary-header-pgbox">
-        <img src="images/crew/tmik_l.jpg" alt="GM T'Mik"
-                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
-        <a href="crew_tmik.html">
-          <i class="fa-solid fa-image-portrait"></i> Scheda
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10101.15 </span>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          "Dalla mia mente alla tua mente, i miei pensieri sono i tuoi pensieri, le nostre menti si uniranno, vedo già
+          quello che vedi tu e sento quello che senti tu..." le mie dita poggiano delicatamente sulle tempie del
+          paziente... non avrei mai creduto che avrei avuto il coraggio di farlo, eppure alla fine il giuramento di
+          Ippocrate ha avuto la meglio, sto tentando una fusione mentale con il dottor Stan Becco... i suoi pensieri
+          disordinati si affacciano simultaneamente alla mia mente e un leggero capogiro mi prende... mi soffermo un
+          attimo su un punto... c'è un buco nero, un piccolo lasso temporale che manca ed è sicuramente questo che
+          provocava il mal di testa per il quale era venuto in Infermeria... mi concentro e cerco di ricostruire la
+          scena e vedo... sì. è proprio Peter che scaraventa una mazza sulla testa di Becco, provocando purtroppo solo
+          una leggera commozione celebrare e un'amnesia selettiva... cerco di cancellare nuovamente il ricordo appena
+          affiorato nella mente di Becco, non vorrei che il nostro consigliere ricominciasse a torturare il povero Peter
+          con le sue sedute psicanalitiche... poi li trovo, sono, gli induttori del sonno REM, ora dormirà per un po'...
+          almeno me lo auguro.<br />
+          <br />
+          "Dottor Carter, ho un incarico molto dekicato per lei: controlli che il nostro logorroico paziente continui
+          a dormire e non appena si sveglia..."<br />
+          "La faccio chiamare, dottoressa?"<br />
+          "Nemmeno per sogno: gli faccia un altro hypospray, così ce lo leviamo di torno per un altro po'!<br />
+          "Agli ordini".<br />
+          <br />
+          Dopo aver dato istruzioni al personale dell'Infermeria e affidato il comando, la supervisione di Carter e
+          qualche altra grana a Robert, mi assegno la serata libera (privilegi del comando!!!) e mi reco nel mio
+          alloggio: durante la nostra precedente missione sul pianeta dei Sergiss ho acquistato qualche antica video
+          cassetta e un video registratore, si tratta di "V. E.: Vulcan Emergency" un antico trattato di medicina vulcan
+          in forma di film... credo di meritarmi un po' di relax, in fondo...
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          Mentre mi avvio lungo il corridoio, lo vedo: ma sì, è proprio Anubi, eppure ero sicura che la Maxwell fosse
+          ripartita... mi fermo un attimo ad intrattenere il cane: non è logico che un animale (a parte quelli del
+          capitano, naturalmente, sempre per i privilegi di cui sopra) se ne vada in giro da solo su un'astronave. Il
+          cane sembra gradire la mia presenza e gioca volentieri con me. Dopo un po' arriva la sua legittima
+          proprietaria che mi ringrazia di averlo trovato e mi informa che lei e i novelli sposi sono ancora a bordo
+          perché hanno avuto un problema durante la manovra di decollo dall'hangar.<br />
+          Mi dirigo nel mio alloggio, faccio appena in tempo a godermi qualche scena del film che subito scatta
+          l'allarme rosso che nel giro di qualche secondo si trasforma in condizione verde, poi � di nuovo allarme
+          rosso..."Insomma, che succede?" Chiamo in Plancia e mi informano che si è trattato di un piccolo inconveniente
+          tecnico, routine sulla nostra carc... ehm astronave...<br />
+          <br />
+          Per fortuna i replicatori funzionano, quindi ordino una porzione di pop corn (il sergiss che mi ha venduto le
+          videocassette mi ha assicurato che avrei apprezzato maggiormente la proiezione in questo modo) e mi dedico a
+          quella che potremmo definire una forma di "auto - aggiornamento". Questo film è davvero affascinante, la
+          logica che traspira negli interventi di emergenza dei protagonisti e poi quel chirurgo sembra una persona
+          davvero interessante... la mia visione del film viene bruscamente interrotta da una chiamata dall'Infermeria:
+          mentre eravamo sotto l'attacco dei Borg (eh sì, a quanto pare una volta ogni tanto l'allarme rosso scatta per
+          un motivo reale) Robert ha perso i sensi e cosa ben più grave, Stan Becco li ha riacquistati e ora sta
+          cercando di rendersi utile con il mio secondo. Mi precipito in Infermeria e cerco di curare Robert: con un
+          hypospray si sente meglio, ora posso dimettere anche Stan Becco e visto che non vuole andarsene, incarico
+          Carter di riaccompagnarlo in Plancia, ora tocca a loro sorbirs... cioè usufruire del suo lavoro.<br />
+          <br />
+          Siamo scampati alla minaccia dei Borg, infatti gli scossoni sono terminati e il Capitano ha informato
+          l'equipaggio che siamo in rotta verso la Terra... comunque sono sempre più convinta che per certe missioni
+          sarebbero necessarie due astronavi, meglio se una delle due attrezzata come un ospedale e con cinema IMAX
+          (sempre per quel famoso discorso dell'auto aggiornamento dei medici...). Credo che inviterò anche Robert a
+          godersi il seguito del film, se l'è proprio meritato: sopportare Carter e Becco contemporaneamente durante un
+          attacco Borg... credo che neppure Surak avrebbe avuto la forza mentale sufficiente...<br />
+          <br />
+          Ci chiamano dalla Plancia: ci stiamo avvicinando alla Terra. Io e Robert ci rechiamo in Plancia, il Capitano
+          sa quanto è importante che tutti gli Ufficiali superiori siano in Plancia quando contatterà De Leone.<br />
+          <br />
+          Ora il pianeta è in vista, non riesco a capire il perché dell'emozione che serpeggia a bordo, questi umani
+          sono così sentimentali...
+          Il Capitano ordina di contattare De Leone: è il momento dei brindisi (questa volta champagne, non chinotto,
+          vero Beppe?).<br />
+          Non siamo i soli in orbita... c'è un' altra astronave... il timoniere, sempre più emozionato urla: "È lei , sì
+          è proprio l'Enterprise!" Tutti si volgono emozionati allo schermo, mentre l'astronave attiva i motori e lascia
+          l'orbita... tutte queste emozioni serpeggianti nell'intero equipaggio mi stanno agitando, saranno ancora gli
+          effetti collaterali della fusione mentale... devo lasciare la Plancia, torno in Infermeria e comincio a
+          pensare a cosa significa per me tornare sulla Terra, proprio lì, dove ho frequentato l'Accademia e ho
+          conosciuto Stark... ricordo ancora i pensieri logici e lineari della sua mente.. mentre sono assorta in queste
+          meditazioni inciampo e finisco su una consolle... non so bene cosa sia successo dopo, deve essere scoppiato un
+          piccolo incendio, infatti i miei capelli sono ancora un po' bruciacchiati... Dopo un po' arriva l'onnipresente
+          Ernestina con l'immancabile secchio e il suo straccio, pronta a rimediare... mi do una sistemata e cerco di
+          darmi un contegno, non è molto logico che l'Ufficiale Medico Capo finisca a terra in tutte le missioni... ma
+          tant'è...<br />
+          La Plancia informa tutti i ponti che la manovra di attracco è completata, sarà meglio prepararci allo sbarco!
+          <br />
+        </p>
+        <div class="diary-cpu">
+          <br />
+          GM T'Mik<br />
+          CMO<br />
+          USS Afrodite NCC-1863
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission4.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 4
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission4_04.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission4_06.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
         </a>
       </div>
     </div>
-    <div class="diary-body">
 
-      <div class="stardate-line">
-        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
-        <span class="stardate-value">10101.15 </span>
-      </div>
+  </main>
 
-      <!-- PROLOGO -->
-      <div class="diary-section-title">Prologo</div>
-
-      <p>
-Era cominciata un'altra giornata, che almeno all'apparenza si prospettava tranquilla: finalmente il problema dei brufoli era stato risolto e persino il Guardiamarina Field era tornata 
-        all'originale splendore; Geppo si era finalmente deciso a riconsegnare i gomitoli, anche se c'erano volute le corna del capitano, la logica vulcan non era stata sufficiente... ma, 
-        chissà perché, i guai nello spazio non vengono mai da soli... Utilizzare l'equipaggio come "cavie" per un nuovo tipo di uniforme... questo era troppo anche da De Leone... va beh, 
-        già ci ha assegnato una nave a forma di scaldabagno del XIX secolo, l'ha pure chiamata Afrodite, avremmo dovuto aspettarci che ci chiedesse di andare in giro con delle uniformi gialle 
-        e poi gli stivaloni... ma come si fa?<br/>
-L'intero equipaggio si lamentava, e ben presto il "malcontento popolare" sfociò in una vera rissa al bar di prora, che causò un sovraccarico di lavoro per l'infermeria: 47 feriti. 
-        Urgeva una soluzione... cosa inventarsi? Naturalmente, come tutti sanno, i Vulcan sono incapaci di mentire, tuttavia, cosa che non tutti sanno, sono in grado di "interpretare 
-        creativamente" la verità, cosa nella quale sono sempre stata bravissima... ovviamente, bisogna trovare una ragione logica e plausibile per rifiutarsi... penso che suggerirò al 
-        Capitano che si può provare con un certificato medico: molti membri dell'equipaggio sono allergici al colore giallo, che potrebbe provocare disturbi alla retina, nonché problemi 
-        di deambulazione senza contare quelli di disciplina che ha già provocato (chiudere in cella tutti i klingon presenti a bordo non sembrava una soluzione molto praticabile, anche perché 
-        nessuno osava più avvicinarsi a Boregh visto come aveva ridotto lo sventurato che aveva osato fare commenti sulla sua uniforme).
-      </p>
-
-      <!-- DIARIO -->
-      <div class="diary-section-title">Diario di Missione</div>
-
-      <p>
-        Mi reco in infermeria, sono le 07:00, alcuni miei collaboratori stanno facendo colazione, Chun Ki, mi sembra in uno stato emozionale un po' turbato, sarà per la gravidanza... 
-        forse dovrei organizzarle una visita da Becco... oppure  - splash - lo sapevo, sempre il solito.<br/>
-"Signor Capui, riuscirebbe a fare qualcosa senza rovesciare niente, una volta?"<br/>
-Una chiazza di latte si allarga sull'uniforme del mio infermiere mentre lui farfuglia:<br/>
-"Mi scusi... cioè dottoressa... io non volevo, vado subito a cambiarmi"<br/>
-"Vada pure".<br/>
-Marek si allontana, mi pare di sentire in lontananza accenni alle abitudini sessuali della madre del lattaio... non ho mai capito come mai gli umani esprimano la disarmonia dello spirito 
-        in questo modo... e dire che lui è per metà Trill... forse dovrei far psicanalizzare anche lui, a meno che...<br/>
-"T'Mik, vuole favorire?"<br/>
-Robert ha appena replicato una colazione inglese, completa di uova e pancetta... ancora non riesco ad abituarmi al fatto che lui non sia vegetariano, pur essendo per metà umano...<br/>
-"Prenderò solo un cappuccino".<br/>
-<br/>
-Mi allontano dall'infermeria, ora sono le 08;00, il Capitano è già in Plancia, così posso esporgli la mia idea... naturalmente ho preso l' hypospray per l'allergia all'aglio, non sarebbe 
-        molto delicato starnutirgli in faccia.<br/>
-<br/>
-<span class="stardate-value">SALA TATTICA</span>
-<br/>
-  "Dottoressa, si accomodi... posso chiamarla T'Mik, vero?"<br/>
-"Capitano. Sono qui per proporle... (succintamente esprimo la mia idea)<br/>
-AHAHAHAHAHAH<br/>
-È la prima volta che ascolto la risata diabolica del capitano di persona, devo dire che è davvero... affascinante...<br/>
-"Questa De Leone se la merita proprio... ho sempre supposto che i Vulcan avessero un che di diabolico... sarà per via delle orecchie"<br/>
-<br/>
-Ma.ti.lda... Ma.til.da... Questo ritmo risuona per tutta l'astronave... cosa sarà? Ora che il Capitano ha diffuso la notizia che non c'è più pericolo di dover andare in giro per lo 
-        spazio vestiti come danzatori del ventre e che la calma sembrava ristabilita... eppure ormai dovrei saperlo, non c'è niente di normale qui...<br/>
-Torno in infermeria: devo replicare la mia medicina per l'allergia all'aglio, ma come si fa a lavorare con questo sottofondo musicale? Vanian sembra gradirlo, mi pare che si stia muovendo 
-        a suon di musica... e in effetti, dando una rapida occhiata in giro, mi accorgo che anche gli altri sono presi dal ritmo... beh tutti tranne me e Robert, naturalmente...<br/>
-"Robert, ho bisogno di un composto di trisulferito burillico"<br/>
-"Lo replico subito"<br/>
-"Non riesco a capire dove abbia la testa... Ma questo cos'è? Persino un cadetto del primo anno riuscirebbe a capire la differenza fra trisulferito e trisulferato... ma insomma Robert, 
-        cosa le succede?" - Forse sono stata troppo dura in questi giorni con lui. - "Vada a riposarsi, si prenda la giornata libera"<br/>
-<br/>
-Effettivamente devo riconoscere di aver preteso troppo dai miei collaboratori in infermeria... il problema è che la faccenda dei brufoli sembrava esserci sfuggita di mano... e così avevo 
-        caricato tutti di una mole eccessiva di lavoro. Poi quando tutto sembrava risolto, ci era toccato occuparci dei feriti nella rissa, facendo bene attenzione a che gli "istinti omicidi" 
-        non prendessero nuovamente il sopravvento. In quel momento mi era venuta l'idea: dal momento che la Sicurezza era impegnata, avevo deciso di riprogrammare il MOE dell'Infermeria 
-        per avere una guardia speciale che almeno all'apparenza potesse mantenere l'ordine. Era nato così Peppino, un selaht olografico, che però riusciva a svolgere la sua "funzione 
-        intimidatoria" per non più di qualche minuto, dal momento che era semplice da tenere a bada, comunque mi illudevo che il suo aspetto minaccioso sarebbe riuscito a tenere lontana 
-        almeno Ernestina, fino a che non troverà il modo di disattivarlo, naturalmente... Robert era già andato nel suo alloggio, gli avevo suggerito di riposarsi, sebbene sapevo che 
-        sarebbe stato difficile. Io decisi di andare alla pizzeria del bar di prora, dal momento che avevo saltato il pranzo. Ma una sorpresa mi aspettava, o per meglio dire, incombeva su di me.<br/>
-Non appena uscii dall'infermeria, l'ombra di Becco si disegnò alle mie spalle... ero sfuggita fino ad ora, ma ormai non credevo possibile che sarei riuscita a sottrarmi ulteriormente.<br/>
-"Dottoressa, che piacere vederla! E come mai fuori dall'Infermeria? E perché non pranziamo insieme, potremmo approfittarne per discutere del suo complesso edipico che sostanziandosi in una 
-        evidente quanto ingiustificata insicurezza l'ha portata alla creazione..."<br/>
-È incredibile notare come certi umani non avvertano la necessità di respirare.<br/>
-"Signor Becco, non potrebbe psicanalizzare qualcun altro? Ad esempio il nostro prigioniero Ferengi?"<br/>
-Ma a questo punto è impossibile sottrarsi e quindi mi siedo ed ordino una pizza vegetariana. Fortunatamente l'attenzione del mio "torturatore" viene distratta dall'avvenenza della nostra pizzaiola, Lucy Bliss.<br/>
-Becco parte quindi "all'attacco", dal momento che ha sentito dire che Lucy è una betazoide che non utilizza le sue facoltà empatiche. Credo che quell'uomo mi farà venire il mal di testa... 
-        Con la coda dell'occhio, intanto, vedo Maurice che sta attaccando un annuncio in bacheca: le lezioni di ballo sudamericano riprendono visto che è stato riparato il ponte ologrammi!<br/>
-Finalmente una bella notizia. Il mio turno di riposo è finito. Torno in Infermeria dove Robert e Rael si stanno giocando a poker le armi del nostro fantomatico Ferengi, partecipo alla partita, 
-        cercando di sfruttare la naturale faccia da poker dei Vulcan, ma Robert è più bravo e si aggiudica il premio. A questo punto arriva Frruuu, ha tutti i sintomi di un brutto raffreddore, 
-        effettivamente la temperatura della nave non è molto adeguata... non è niente di grave, per cui prescrivo il solito infallibile rimedio Vulcan, latte caldo e miele. Frruuu si unisce 
-        alla nostra partita a poker ma, sarà per la disperazione di aver perso venti crediti, sarà perché non ne può più di Eva Brown, sarà perché non le piace il latte, fatto stà 
-        che lo rovescia inavvertitamente sul povero Robert (e sono due), il quale corre a cambiarsi.<br/>
-        <br/>
-A questo punto vado nel mio alloggio. Poco dopo mi informano che c'è bisogno di me in Infermeria: pare che il Ferengi si sia nuovamente liberato e sia incappato in Boregh (sono sicura che 
-        in quel momento ha rimpianto di essere fuggito). Devo andare a "rincollare" i pezzi, ma una sorpresa mi attende, le porte del mio alloggio sono bloccate!!! Non è possibile, già sono 
-        rimasta chiusa una volta nell'Infermeria, sarà proprio il caso che il Capitano si decida a rifare i meccanismi... chiamo la manutenzione, e dopo un po' riescono a liberarmi.<br/>
-Ora posso tornare in Infermeria, dove mi aspetta una scena alquanto strana: il nostro insegnante di ballo, Maurice, barcolla sotto il peso di una Fabiola Renzi in preda ai fumi dell'alcool! 
-        Questo poi non me lo sarei mai aspettato! Sapevo che Maurice era un grande estimatore di birra romulana, e che era stato trovato più volte in possesso di alcool non sintetico, 
-        ma non avrei mai immaginato che anche Fabiola... informo la Plancia e già che ci sono, faccio presente al Capitano che sarebbe il caso di adeguare i meccanismi della nave ai nuovi 
-        interni da poco rimodernati. Il "diavolaccio" sa bene che mi deve un favore, (vedi certificato medico) e che i vulcaniani sono come i diavoli, non fanno niente per niente, così mi 
-        promette che il primo meccanismo ad essere rimodernato sarà la porta del mio alloggio, seguito a ruota da quella dell'Infermeria.<br/>
-Meglio di così non poteva andare, ora mi aspetta solo il compito di rimettere in piedi la Renzi.
-      </p>
-
-        <br/>
-        <em style="color:rgba(248,248,255,0.5);">
-          GM T'Mik<br/>
-          CMO<br/>
-          USS Afrodite NCC-1863
-        </em>
-      </p>
-
-    </div>
-  </div>
-
-  <!-- Navigation -->
-  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
-    <a href="log_mission4.html" class="btn-back">
-      <i class="fa-solid fa-chevron-left"></i> Log Mission: 4
-    </a>
-    <div style="margin-left:auto;display:flex;gap:8px;">
-      <a href="log_mission4_04.html" class="btn-back" style="margin-bottom:0;">
-        <i class="fa-solid fa-chevron-left"></i>
-      </a>
-      <a href="log_mission4_06.html" class="btn-back" style="margin-bottom:0;">
-        <i class="fa-solid fa-chevron-right"></i>
-      </a>
-    </div>
-  </div>
-
-</main>
-
-<!-- FOOTER -->
-<footer id="site-footer"></footer>
-<script src="script.js"></script>
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
 </body>
+
 </html>

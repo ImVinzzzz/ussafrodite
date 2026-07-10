@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,154 +13,142 @@
 
   <link rel="stylesheet" href="stylesheet.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-<canvas id="starfield"></canvas>
-<div class="scanline-overlay"></div>
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
 
-<!-- HEADER -->
-<header id="site-header"></header>
+  <!-- HEADER -->
+  <header id="site-header"></header>
 
-<main id="main-content">
+  <main id="main-content">
 
-  <!-- Breadcrumb -->
-  <div class="breadcrumb">
-    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
-    <span>›</span>
-    <a href="log.html">Log</a>
-    <span>›</span>
-    <a href="log_mission4.html">Mission: 4</a>
-    <span>›</span>
-    <span class="current">Diario Personale – GM Rael</span>
-  </div>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission4.html">Mission: 4</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Rael</span>
+    </div>
 
-  <!-- Diary page -->
-  <div class="diary-wrapper">
+    <!-- Diary page -->
+    <div class="diary-wrapper">
 
-   <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
-      <!-- Testo intestazione -->
-      <div class="diary-header-text">
-        <div class="diary-header-role">
-          <i class="fa-solid fa-shield-halved"></i> &nbsp;SEC &nbsp;·&nbsp; CTO &nbsp;·&nbsp; Diario Personale
+      <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-shield-halved"></i> &nbsp;SEC &nbsp;·&nbsp; CTO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM Rael</div>
+          <div class="diary-header-mission">Mission: 4 — The Voyage Home</div>
         </div>
-        <div class="diary-header-name">GM Rael</div>
-        <div class="diary-header-mission">Mission: 2 — The betrothed</div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/rael_l.jpg" alt="GM Rael"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,128,0,0.15);border-radius:6px;border:2px dashed rgba(128,128,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-shield-halved\' style=\'font-size:2rem;color:rgba(128,128,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,128,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_rael.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
       </div>
-      <!-- Miniatura PG + link scheda -->
-      <div class="diary-header-pgbox">
-        <img src="images/crew/rael_l.jpg" alt="GM Rael"
-                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,128,0,0.15);border-radius:6px;border:2px dashed rgba(128,128,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-shield-halved\' style=\'font-size:2rem;color:rgba(128,128,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,128,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
-        <a href="crew_rael.html">
-          <i class="fa-solid fa-image-portrait"></i> Scheda
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10101.15 </span>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Ah, finalmente la Maxwell se ne è andata, il ferengi se n'è andato, i due fidanzatini se ne sono andati, beh
+          loro erano divertenti con i loro continui agguati a Beppe. Improvvisamente sento un botto, mi sembrava troppo
+          bello che tutto andasse bene, e subito controllo se è successo qualcosa e vedo lo Shuttle che sbarella fuori
+          dall'Hangar con una grossa ammaccatura su una fiancata, ecco cosa è successo: o la Maxwell ha bisogno di
+          ripassare come si guida uno shuttle o i due sposini non hanno perso tempo. In quel momento chiama il Comando
+          di Flotta e vuole urgentemente il Capitano Maxwell e così Beppe da l'ordine (purtroppo) di riportare tutti a
+          bordo e... la Missione inizia.
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          Stiamo ancora intorno al pianeta Sergiss e per passare il tempo facciamo il test "Chi vorreste per
+          Capitano?"<br />
+          Ha vinto Beppe, come è normale ma il nostro Primo Ufficiale Frruuu ha ricevuto meno punti di tutti.<br />
+          Chris mi chiama e dice che rimarrà lui giù in ufficio perché ha da fare, gli dico di tenere d'occhio il
+          ferengi che è di nuovo nella nostra prigione. Ma chissà cosa avrà da fare?<br />
+          Mi distraggo un attimo e l'allarme rosso inizia a suonare, ritorno di corsa e vedo gli scudi che si alzano, io
+          li abbasso ma niente da fare ritornano su e quella maledetta sirena continua a suonare poi noto sulla consolle
+          una chiazza umida e appiccicosa, qualcuno ci ha rovesciato qualcosa sopra, finalmente riesco a sistemare gli
+          scudi e mi do un'occhiata intorno ma tutti fanno finta di niente, se prendo chi fa merenda vicino alla
+          consolle tattica lo do in pasto al ferengi.<br />
+          <br />
+          Mentre sto rimuginando per scoprire il colpevole, il sogno di tutta la mia vita si avvera: all'improvviso dal
+          tunnel traswarp che stiamo monitorando un raggio d'energia ci colpisce, spara di nuovo ma evitiamo il colpo,
+          (i nostri ingegneri migliorano di giorno in giorno) un cubo Borg, ecco chi è il nostro avversario. Spara di
+          nuovo e colpisce i nostri scudi che cedono e sento Beppe ordinarmi di fare fuoco con una strana nota stridula
+          nella voce (ma non è immortale lui!). Con una bordata di siluri fotonici colpisco il tunnel traswarp e lo
+          chiudo impedendo al cubo Borg di spararci di nuovo, per fortuna perché contro un cubo Borg non avremmo avuto
+          molte speranze di farcela e soprattutto con questa bagna... emh questa nave modernissima.<br />
+
+          Finalmente Beppe da l'ordine di fare rotta verso casa, cioì la Terra e dopo aver controllato che tutto vada
+          bene mi preparo a inviare tutte le registrazioni sul conto dei Sergiss che abbiamo fatto alla Dott.
+          Kalligàlenos e Adam ne approfitta per mandargli un suo saluto personale. Adam mi preoccupa prima non faceva
+          altro che guai ora invece sembra un agente perfetto.<br />
+          <br />
+          Avvistiamo la terra, meno male abbiamo portato a termine questa interminabile missione però prima di arrivare
+          mi devo prendere un antidepressivo che mi sono fatta portare dall'Infermeria, ne avrà molto bisogno perché mi
+          è arrivato un messaggio dai miei che mi aspettano quando sbarcherò.<br />
+          <br />
+          Ci avviciniamo alla Base Stellare 01 e consiglio al Capitano di fare un paio di giri per controllare meglio
+          la situazione e noto subito che attraccata lì c'è anche l'Enterprise-D, quella sì che è una vera nave, quasi,
+          quasi gli vado a chiedere se hanno bisogno di un Capo della Sicurezza, ma ci devono aver visto anche loro
+          perché partono di corsa, ancora si ricordano del nostro primo (e ultimo) incontro!<br />
+          La manovra d'attracco è finalmente completata e ora scenderemo e speriamo di goderci un po' di licenza e di
+          riposo prima della prossima 'mission impossible' che ci darà De Leone.
+          <br />
+        </p>
+        <div class="diary-cpu">
+          <br />
+          GM Rael<br />
+          CTO<br />
+          USS Afrodite NCC-1863
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission4.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 4
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission4_06.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission4_08.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
         </a>
       </div>
     </div>
-    <div class="diary-body">
 
-      <div class="stardate-line">
-        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
-        <span class="stardate-value">10101.15 </span>
-      </div>
+  </main>
 
-      <!-- PROLOGO -->
-      <div class="diary-section-title">Prologo</div>
-
-      <p>
-Sulla Afrodite c'è fermento: prima di tutto, non ci piacciono proprio le nuove uniformi gialle e si sta pensando a un motivo per non indossarle più; secondo, due guardiamarina vogliono 
-        sposarsi ma Capitan Beppe è irremovibile 'questo matrimonio non s'ha da fare!' Diamine lui è un diavolo e non può celebrare un matrimonio! Per fortuna qui nella Sicurezza non ho 
-        tali esaltati, solo una cosa mi preoccupa, la moglie di Adam, Eva, ha uno strano comportamento quando vede il nostro N°1 Frruuu: è sempre molto gentile e affettuosa; naturalmente 
-        Frruuu ne è molto contenta, anche perché, a parte Capitan Beppe, Eva è l'unica che gli dice qualcosa di carino.<br/>
-<br/>
-Da un po' di tempo mi succede una cosa molto strana ho un caldo da morire, ho chiamato il mio babbo che mi ha tranquillizzato, è il sintomo che sto entrando nell'età matura e anzi mi ha 
-        chiesto se ho 'qualcuno che mi ronza attorno'. Queste sono state le sue effettive parole. Io gli ho risposto con una frase che è meglio non scrivere in questo rapporto.<br/>
-Geppo, il gattaccio del Capitano, è riuscito a prendere un manufatto che si è aperto e all'interno c'era una trasmittente che ha cominciato ad emettere un messaggio, e lassù ci stanno lavorando. 
-        In questo momento mi trovo nel mio ufficio e visto che non ho niente da fare ho da poco iniziato un libro che descrive le torture che si usavano sulla Terra tanto, tanto, tanto tempo 
-        fa e ho una voglia tremenda di provarle sul ferengi ma Cip, anzi Kelley mi ha detto che questo è un modo da fare da klingon, e così, anche se mi dispiace ho deciso di lasciar perdere.<br/>
-<br/>
-"Ehi Junior senti un po', questa si può provare sul prigioniero ferengi, il condannato viene appeso per i piedi e poi gli si attaccano dei pesi sulle braccia, io invece glieli attaccherei 
-        sulle orecchie e poi vediamo di quanto si allungano."<br/>
-"Capo, quando fa così mi sembra proprio un klingon"<br/>
-"Davvero?!?!, va bene allora non lo faccio più, Junior" e poso il libro.<br/>
-"Capo per favore almeno lei non mi chiami Junior"<br/>
-"Va bene... Junior".
-      </p>
-
-      <!-- DIARIO -->
-      <div class="diary-section-title">Diario di Missione</div>
-
-      <p>
-        All'improvviso si attiva l'allarme giallo chiamo Chris che sta su in Plancia.<br/>
-"Ehi Chris, che succede? Non dirmi che siamo stati attaccati!".<br/>
-"No, niente del genere, stiamo solo entrando in una nebula dove abbiamo avvistato qualche cosa ma non riusciamo a capire".<br/>
-<br/>
-Ormai il suo turno è quasi finito e ci diamo il cambio, quando arrivo in Plancia mi racconta tutto quello che è successo: la nebula si chiama Matilda, è composta di gas metronomo, 
-        ed emette delle vibrazioni ritmate che si ripercuotono per tutta la nave; la nave misteriosa nella nebula non è altro che l'ammiraglia della Flotta Stellare, l'Enterprise. 
-        L'Enterprise è entrata nella Nebula Matilda proprio per investigare sulle strane onde. Poi Chris va via sfregandosi le mani mormorando:<br/>
-"... ora mi divertirò";<br/>
-Chissà dove andrà. Pensavo di fare un turno tranquillo invece già c'è stato uno scontro tra il micio del Capitano e l'avvoltoio, e chi ci ha rimesso è stato il Capitano: la tazza del latte 
-        gli si è rovesciata addosso, ho sentito dire parolacce ma mai di questo tipo.<br/>
-<br/>
-Finalmente riusciamo ad uscire dalla nebula e l'Enterprise segue la nostra scia, quando siamo fuori della nebula chiamo il Capitano Jean Luc Picard per chiedergli se ha bisogno d'aiuto, 
-        però ho dimenticato l'incidente del Capitano e quando sul loro schermo appare la nostra Plancia l'espressione di Picard ha preso la consistenza di un blocco d'argilla. 
-        Forse non ha tutti i torti: la nostra nave sembra un accampamento. Capitan Beppe sta in canotta con su scritto il nostro motto 'Don't worry è be Happy' mentre la sua divisa 
-        si sta asciugando sullo stendino alle mie spalle; Geppo è sulla poltrona di comando in tutta la sua grandezza e l'avvoltoio svolazza sopra di lui; Ernestina sta spolverando 
-        la consolle scientifica e canticchia una strana musichetta, in quel momento dal turbolift fà capolino un Guardiamarina che indossa la vecchia uniforme, con la mano gli fa ciao ciao 
-        e subito sparisce nuovamente dietro le porte del turboascensore.. Vediamo Piky che deglutisce rumorosamente poi diventa tutto rosso ma poi vede Ernestina e sorride sollevato...<br/>
-"Ernestina, ma che piacere inaspettato rivederla, come sta?".<br/>
-Sapevo che quella 'dolce' vecchina nascondeva qualche segreto il mio istinto romulano non mi tradisce mai.<br/>
-In quel momento entra nel campo del visore un ufficiale federale, il più bel pezzo di ufficiale che abbia mai visto e le mie orecchie a punta cominciano a vibrare e mentre lui sta parlando 
-        al suo Capitano io mi giro verso Da Nee e gli bisbiglio minacciosamente:<br/>
-"Guarda che quel fusto l'ho visto prima io, è mio!!!".<br/>
-Quando anche lui si gira e guarda verso lo schermo rimane sbalordito...<br/>
-<br/>
-Piky chiede al suo Primo Ufficiale:<br/>
-"Will vedi anche tu quello che vedo io?".<br/>
-Quello sì che lo proteggerei molto volentieri ma purtroppo lui è là e io sono qui, ed ho come Primo Ufficiale una horta. In quel momento Frruuu fa un starnuto fragoroso e poi rincula verso 
-        una paratia e poi tira su con il 'naso' Beppe le dice:<br/>
-"Frruuu, hai un brutto raffreddore, vai giù in Infermeria e fatti dare qualcosa".<br/>
-Una horta con il raffreddore è il massimo e non ho il coraggio di pensare cosa dirà Ernestina quando dovrà ripulire quella cosa viscida che Frruuu lascia dietro di se'.<br/>
-<br/>
-Salutato il capitano Picard continuiamo il nostro viaggio. Improvvisamente scatta l'allarme rosso: è l'ufficio della Sicurezza, il ferengi è fuggito. Per fortuna - mi avverte Chris - 
-        si è scontrato con Boregh - l'unico klingon giardiniere dell'intera galassia - e Chris lo ha riportato in prigione. Io gli chiedo:<br/>
-"Chris, c'era per caso Adam di servizio nella prigione?"<br/>
-Lui mi risponde di sì, ecco ora si spiega perché il ferengi è riuscito a fuggire, Adam deve aver visto passare una ragazza e l'ha seguita.<br/>
-<br/>
-Finalmente sono riusciti a decifrare il misterioso messaggio del manufatto alieno e ci stiamo dirigendo verso le coordinate X40; Y27; Z88; T39, chissà cosa troveremo...!!!
-      </p>
-      
-        <br/>
-        <em style="color:rgba(248,248,255,0.5);">
-          GM Rael<br/>
-          CTO<br/>
-          USS Afrodite NCC-1863
-        </em>
-      </p>
-
-    </div>
-  </div>
-
-  <!-- Navigation -->
-  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
-    <a href="log_mission4.html" class="btn-back">
-      <i class="fa-solid fa-chevron-left"></i> Log Mission: 4
-    </a>
-    <div style="margin-left:auto;display:flex;gap:8px;">
-      <a href="log_mission4_06.html" class="btn-back" style="margin-bottom:0;">
-        <i class="fa-solid fa-chevron-left"></i>
-      </a>
-      <a href="log_mission4_08.html" class="btn-back" style="margin-bottom:0;">
-        <i class="fa-solid fa-chevron-right"></i>
-      </a>
-    </div>
-  </div>
-
-</main>
-
-<!-- FOOTER -->
-<footer id="site-footer"></footer>
-<script src="script.js"></script>
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
 </body>
+
 </html>
