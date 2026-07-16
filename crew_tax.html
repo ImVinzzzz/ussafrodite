@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Drews – USS Afrodite Crew</title>
+
+<!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="crew.html">Crew</a>
+    <span>›</span>
+    <span class="current">Istruttore di Ballo Drews</span>
+  </div>
+
+  <div class="crew-detail-wrapper animate-in">
+
+    <div class="crew-detail-top" style="border: 1px solid rgba(248,248,255,0.25);">
+      <div class="crew-detail-img-wrap" style="border-right:1px solid rgba(248,248,255,0.15);">
+        <img src="images/l_civ.png" alt="Logo Civili"
+             class="crew-dept-logo"
+             onerror="this.style.display='none'" />
+        <img src="images/crew/drews.jpg" alt="Maurice Drews"
+             style="width:160px;height:190px;object-fit:cover;border-radius:8px;border:2px solid rgba(248,248,255,0.3);"
+             onerror="this.outerHTML='<div style=\'width:160px;height:190px;background:rgba(248,248,255,0.08);border-radius:8px;border:2px dashed rgba(248,248,255,0.2);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px\'><i class=\'fa-solid fa-music\' style=\'font-size:3rem;color:rgba(248,248,255,0.25);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.55rem;color:rgba(248,248,255,0.3);letter-spacing:0.1em\'>FOTO</span></div>'" />
+      </div>
+
+      <div class="crew-detail-header" style="background:linear-gradient(135deg, rgba(248,248,255,0.12), rgba(200,200,220,0.08));">
+        <div class="role-label" style="color:rgba(248,248,255,0.5);">
+          <i class="fa-solid fa-user" style="color:rgba(248,248,255,0.6);"></i>
+          &nbsp; Personale Civile
+        </div>
+        <div class="rank-name" style="color:var(--ghost-white);">Maurice Drews</div>
+        <div class="char-name" style="color:rgba(248,248,255,0.75);"></div>
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(248,248,255,0.1);border:1px solid rgba(248,248,255,0.25);color:rgba(248,248,255,0.7);">
+            ISTRUTTORE DI BALLO
+          </span>
+          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(68,136,255,0.1);border:1px solid rgba(68,136,255,0.25);color:rgba(248,248,255,0.5);">
+            CIVILE
+          </span>
+          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(68,136,255,0.1);border:1px solid rgba(68,136,255,0.25);color:rgba(248,248,255,0.5);">
+            PNG
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="crew-stats-table">
+      <div class="crew-stats-grid">
+        <div class="stat-row" style="border-left-color:rgba(248,248,255,0.35);">
+          <span class="s-label">Nome</span>
+          <span class="s-value">Maurice Drews</span>
+        </div>
+        <div class="stat-row" style="border-left-color:rgba(248,248,255,0.35);">
+          <span class="s-label">Qualifica</span>
+          <span class="s-value">Istruttore di Ballo</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Razza</span>
+          <span class="s-value">Umano</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Età</span>
+          <span class="s-value">29 as</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Sesso</span>
+          <span class="s-value">M</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Peso</span>
+          <span class="s-value">82 kg</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Altezza</span>
+          <span class="s-value">1.79 m</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Occhi</span>
+          <span class="s-value">azzurri</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Capelli</span>
+          <span class="s-value">castani</span>
+        </div>
+      </div>
+
+      <div class="crew-notes-section">
+        <h3><i class="fa-solid fa-note-sticky"></i> &nbsp;Note</h3>
+        <p>Ex ingegnere della Flotta, ha deciso di cambiare vita ed ora insegna balli latino-americani sul ponte ologrammi.</p>
+        <p>Ha una passione enorme per tutto ciò che è divertimento, in particolare le belle donne e la birra (non sintetica).</p>
+        <p>Mistero come faccia a procurarsela in qualsiasi punto dello spazio.</p>
+
+        <h3><i class="fa-solid fa-comment-dots"></i> &nbsp;Dice di sè</h3>
+        <p>Ci sono due cose che amo fare nella vita... la seconda è viaggiare.</p>
+
+        <h3><i class="fa-solid fa-medal"></i> &nbsp;Incarichi</h3>
+        <ul>
+          <li>Istruttore di Ballo – USS Afrodite NCC-1863</li>
+          <li>Ufficiale Ingegnere – StarBase 01</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:24px;">
+    <a href="crew.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Fascicoli Equipaggio
+    </a>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
