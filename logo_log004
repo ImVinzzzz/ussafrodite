@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOG #2 – Reunion #1 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="log.html">Log</a>
+    <span>›</span>
+    <span class="current">Log: #2 – Reunion #1</span>
+  </div>
+
+  <!-- Mission header -->
+	<div class="mission-header-block">
+    <div style="font-size:2.5rem;color:var(--lcars-orange);flex-shrink:0;"><i class="fa-solid fa-bars-staggered"></i></div>
+    <div>
+      <div class="mission-header-label">Log: #2</div>
+      <div class="mission-header-title">Reunion #1 - 25 Year Later</div>
+    </div>
+  </div>
+
+<!-- Single diary (Mission 0 has only one diary) -->
+  <div class="diary-wrapper">
+
+    <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-regular fa-circle-dot"></i> &nbsp;Diario Personale
+        </div>
+        <div class="diary-header-name">GM Da Nee</div>
+        <div class="diary-header-mission">Log: #2</div>
+      </div>
+      <!-- Miniatura PG + link scheda -->
+      <!-- div class="diary-header-pgbox">
+        <img src="images/crew/danee.jpg" alt="Da Nee"
+             onerror="this.style.opacity='0.2'" />
+        <a href="crew_danee.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+	  </div -->
+    </div>
+
+<div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">12605.01</span>
+      </div>
+
+      <!-- DIARIO -->
+      <div class="diary-section-title">Diario</div>
+      <p>
+        <em>Inizio registrazione.</em><br/><br/>
+		  Da diverse settimane abbiamo ripreso contatto con il <em>vecchio</em> equipaggio della nave più pazza della storia della STIC ACADEMY. È giunta l'ora di una prima reunion "virtuale", in attesa di una 
+		  in presenza per festeggiare come si deve. Per l'occasione ho preparato un gioco a quiz per movimentare l'incontro...<br/>
+		  <br/>
+		  Come da accordi, apro il canale alle 20.30. Subito si uniscono Renzi e Frruuu a stretto giro.<br/>
+		  Si chiacchiera del più e del meno, si ricordano le <em>avventure</em> e si spettegola un po' sull'equipaggio della Afrodite... tra una risata e una lacrimuccia di commozione, 
+		  si aspettano le 21.00, ora in cui ci dovrebbe raggiungere il buon Robert Van Bajark in collegamento da oltre oceano.<br/>
+		  Nel frattempo, poco prima delle 20.45, si unisce alla reunion anche la dottoressa T'Mik, quasi a sorpresa: aveva annunciato un forte ritardo a causa di una cena che, a quanto pare, 
+		  si è conclusa prima di quanto pensassimo.<br/>
+		  Alle 21.40 circa, finalmente, anche Van Bajark si collega dall'Isola del Principe Edoardo.<br/>
+	  <br/>
+		Dopo un doveroso giro di saluti, pettegolezzi, commenti sulle ultime serie (PIC, DIS, SNW e LD) e <em>chiacchiere</em> di rito, si passa al clou della Reunion, il momento ludico: 
+		un quiz preparato ed allestito su una <!--a href="https://triviatrek.vercel.app/" target="_blank" style="color:var(--ext-color); text-decoration:none"-->piattaforma dedicata.<br/>
+		  <br/>
+		Il primo turno di gioco si conclude con Frruuu in netto vantaggio <strong>(500 punti)</strong> sugli altri che adottano una strategia di gioco più prudente, fermi a 100 punti ciascuno.<br/>
+		Nei successivi due turni di gioco, però, la situazione si ribalta: Frruuu resta ferma a 500 punti (sbaglia anche la domanda su quale sia il titolo dell'episodio 
+		che vede Picard assimilato dai Borg, cadendo nel trabocchetto: risponde <strong>"C. I, Borg"</strong> invece di <strong>"B. The Best of Both Worlds"</strong>) mentre T'Mik balza in testa rispondendo 
+		correttamente alle domande sulle sue materie di competenza (<strong>Scienza e Medicina</strong> e <strong>Vulcano</strong>), mentre Van Bajark si dimostra ferrato in <strong>Tattica e Sicurezza</strong>.<br/>
+		I turni di gioco si susseguono frenetici e incalzanti. Non mancano momenti di perplessità, indecisione o ilarità, e non si è esenti da errori più o meno 
+		<em>imbarazzanti</em>. A titolo esemplificativo: Frruuu sbaglia la domanda su quante siano le razze fondatrici della FUP ma si riprende su quelle di gossip 
+		(indovina sia il nome della moglie di Adam Smith - nonostante la difficoltà: Smith se le è ripassate tutte a bordo della Afrodite - sia quello del compagno dell'XSO); 
+		oppure Renzi che non risponde correttamente alla domanda su Ernestina Scramiglio né a quelle su Romulus (materia che, al contrario, conosce bene Frruuu).<br/>
+		  <br/>
+		Breve momento di panico quando il collegamento, intorno alle 23.00, salta durante il turno di T'Mik che sta per rispondere a una domanda sulle capacità psichiche di Troi. Grazie alle spiccate doti tecniche dell'XSO, 
+		il collegamento è ripristinato a tempo di record e il quiz può proseguire, una domanda dopo l'altra... una risata dopo l'altra... a titolo di cronaca: T'Mik ha risposto correttamente alla domanda su Troi.<br/>
+	<br/>
+		Nonostante l'inizio incerto, è il nostro amato sasso, l'XO Frruuu, ad aggiudicarsi la vittoria con un totale di ben <strong>3600 punti</strong>.<br/>
+		Seconda classificata la dottoressa T'Mik con <strong>3100 punti</strong>.<br/>
+		Sul podio anche Renzi, a brevissima distanza, che totalizza <strong>3050 punti</strong>.<br/>
+		Medaglia di legno all'XMO Van Bajark che si ferma ad appena <strong>2550 punti</strong>.<br/>
+      <br/>
+		Proclamata e adeguatamente festeggiata la vincitrice con tutti gli onori, segue un'ulteriore mezz'ora abbondante di allegre chiacchiere, commenti a caldo e verifica delle informazioni sul database di bordo. 
+		Quindi ci salutiamo con un impegno: contattare il <em>"Comando di Flotta"</em> dello STIC per riprendere le avventure dell'equipaggio della USS Afrodite da dove le avevamo lasciate.
+	  </p>
+
+	<!-- RED ALERT -->
+<div class="red-alert">
+          <i class="fa-solid fa-triangle-exclamation fa-lg"></i>
+          <span>We are back!</span>
+          <i class="fa-solid fa-triangle-exclamation fa-lg" style="margin-left:auto;"></i>
+        </div>
+
+      <p>
+        <em>Fine registrazione.</em><br/>
+        <br/>
+        <em style="color:rgba(248,248,255,0.5);">
+          GM Da Nee<br/>
+          XSO<br/>
+          USS Afrodite NCC-1863<br/><br/><br/>
+        </em>
+      </p>
+	<div class="diary-img-wrap">
+  		<img src="images/log/L_M00b.jpg" alt="Reunion - crew" />
+		<img src="images/log/L_M00a.jpg" alt="Reunion - classifica" />
+  			<div class="diary-img-caption">La classiFica finale del TriviaTrek.</div>
+	</div>
+	
+    </div>
+  </div>
+
+  <div style="margin-top:24px;">
+    <a href="log.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Log Missioni
+    </a>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+<script src="script.js"></script>
+</body>
+</html>
