@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PADD S01 – Campagna Flotta STIC-AL | USS Afrodite</title>
+
+<!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="padd.html">PADD</a>
+    <span>›</span>
+    <span class="current">PD-S01</span>
+  </div>
+
+  <div class="padd-detail-wrapper animate-in">
+
+    <div class="padd-detail-header">
+      <div class="padd-meta">
+        <i class="fa-solid fa-tablet-screen-button"></i>
+        &nbsp;PD-S01 &nbsp;·&nbsp; USS Afrodite &nbsp;·&nbsp;
+        Stardate  <!--span class="js-stardate"></span -->
+      </div>
+      <div class="padd-title">Esplora e Traccia</div>
+      <div style="margin-top:8px;font-size:0.75rem;color:rgba(248,248,255,0.45);">
+        Campagna Flotta STIC-AL
+      </div>
+    </div>
+
+    <div class="padd-detail-body">
+      <p>
+        Si archivia copia fotostatica mappa tracciata durante esplorazione Theta Persei IV. <br/>
+        Vedere LOG di missione relativi per i dettagli. <br/>
+        <img src="images/padd/padd_S01.jpg" alt="mappa Theta Persei">
+      </p>
+      <p style="margin-top:24px;font-size:0.8rem;color:rgba(248,248,255,0.45);font-style:italic;">
+        C2 Fantozzi Ugo<br/>
+        Ufficio Protocollo (TJ 47gamma)<br/>
+        USS Afrodite NCC-1863
+      </p>
+    </div>
+  </div>
+
+  <!-- PULSANTI BTM -->
+  <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+  <a href="padd.html" class="btn-back">
+    <i class="fa-solid fa-chevron-left"></i> PADD
+  </a>
+    <div style="margin-left:auto;display:flex;gap:8px;">
+      <span class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-left"></i>
+      </span>
+      <a href="padd_4x.html" class="btn-back" style="margin-bottom:0;">
+        <i class="fa-solid fa-chevron-right"></i>
+      </a>
+  </div>
+</div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+  
+<script src="script.js"></script>
+</body>
+</html>
