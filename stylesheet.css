@@ -601,10 +601,14 @@ nav.main-nav {
 }
 
 .mission-item {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 16px 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "number badge"
+    "name   name";
+  row-gap: 8px;
+  column-gap: 12px;
+  padding: 14px 18px;
   background: var(--bg-card);
   border-radius: var(--radius-md);
   border: 1px solid rgba(255,153,0,0.15);
@@ -621,25 +625,34 @@ nav.main-nav {
 }
 
 .mission-number {
+  grid-area: number;
   font-family: var(--font-display);
   font-size: 0.7rem;
   font-weight: 700;
   color: var(--lcars-orange);
   letter-spacing: 0.1em;
-  min-width: 80px;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
 }
 
 .mission-name {
+  grid-area: name;
   font-family: var(--font-display);
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-size: clamp(0.78rem, 3.2vw, 0.95rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  flex: 1;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .mission-badge {
+  grid-area: badge;
+  justify-self: end;
+  align-self: center;
   font-size: 0.65rem;
   font-family: var(--font-display);
   letter-spacing: 0.1em;
