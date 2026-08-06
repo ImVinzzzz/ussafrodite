@@ -1102,6 +1102,25 @@ nav.main-nav {
 
 @media (max-width: 700px) { .ship-specs-grid { grid-template-columns: 1fr; } }
 
+.ship-history-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 24px;
+  margin-bottom: 32px;
+  align-items: start;
+}
+
+.ship-history-grid .ship-image-wrap {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .ship-history-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
 .specs-block {
   background: var(--bg-card);
   border-radius: var(--radius-md);
