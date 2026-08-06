@@ -489,6 +489,10 @@ nav.main-nav {
   white-space: nowrap;
 }
 
+.triviatrek-title .title-extra {
+  display: inline;
+}
+
 @media (max-width: 600px) {
   .triviatrek-header {
     flex-direction: column;
@@ -497,9 +501,13 @@ nav.main-nav {
   }
 
   .triviatrek-title {
-    font-size: clamp(0.7rem, 3.4vw, 0.95rem);
+    font-size: clamp(0.75rem, 3.8vw, 0.95rem);
     letter-spacing: 0.05em;
     white-space: nowrap;
+  }
+
+  .triviatrek-title .title-extra {
+    display: none;
   }
 }
 
