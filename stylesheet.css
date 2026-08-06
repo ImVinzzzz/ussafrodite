@@ -1114,6 +1114,17 @@ nav.main-nav {
   margin-bottom: 0;
 }
 
+.ship-history-grid a {
+  color: var(--lcars-orange);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.ship-history-grid a:hover {
+  color: var(--ghost-white);
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .ship-history-grid {
     grid-template-columns: 1fr;
