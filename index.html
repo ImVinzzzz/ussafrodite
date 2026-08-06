@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,222 +10,233 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  
+
   <link rel="stylesheet" href="stylesheet.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-<canvas id="starfield"></canvas>
-<div class="scanline-overlay"></div>
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
 
-<!-- ══════════ HEADER / NAV ══════════ -->
-<header id="site-header"></header>
+  <!-- ══════════ HEADER / NAV ══════════ -->
+  <header id="site-header"></header>
 
-<!-- ═══════════════ MAIN ═══════════════ -->
-<main id="main-content">
+  <!-- ═══════════════ MAIN ═══════════════ -->
+  <main id="main-content">
 
-  <!-- Hero -->
-  <div class="home-hero animate-in">
+    <!-- Hero -->
+    <div class="home-hero animate-in">
 
-    <div class="hero-main">
-      <div style="display:flex;align-items:center;gap:16px;">
-  <img src="images/logo.svg" alt="USS Afrodite"
-       style="height:90px;width:auto;flex-shrink:0;"
-       onerror="this.style.display='none'" />
-  <div>
-    <div class="hero-ship-name">USS Afrodite</div>
-    <div class="hero-registry">NCC - 1863</div>
-    <div class="hero-motto"><b>DO NOT WORRY! BE HAPPY!</b></div>
-  </div>
-</div>
-      <div class="hero-class">
-        <p>Flotta Stellare · Federazione Unita dei Pianeti</p>
-        <p style="margin-top:10px;font-size:0.8rem;color:rgba(248,248,255,0.5);">
-          <span class="stardate-value">Access: <span style="color:var(--lcars-orange);">GRANTED!</span></span> <br/>
-          Il sistema LCARS raccoglie i registri di missione, i diari e i fascicoli dell'equipaggio, nonché le specifiche della nave e le comunicazioni interne.
-        </p>
-        <p style="margin-top:15px;margin-bottom:0px;font-size:0.75rem;color:var(--lcars-orange);">
-          Stardate: <span class="js-stardate"></span>
-        </p>
-      </div>
-    </div>
-
-    <div class="hero-stats">
-      <div class="stat-block">
-        <div class="stat-label"><i class="fa-solid fa-shield-halved"></i> &nbsp;Stato nave</div>
-        <div class="stat-value" style="color:var(--sci-color);">Operativa</div>
-      </div>
-      <div class="stat-block">
-        <div class="stat-label"><i class="fa-solid fa-location-crosshairs"></i> &nbsp;Posizione</div>
-        <div class="stat-value">Quadrante Alfa · Theta Persei IV</div>
-      </div>
-      <div class="stat-block">
-        <div class="stat-label"><i class="fa-solid fa-bars-staggered"></i> &nbsp;Log di MissionE</div>
-        <!-- <div class="stat-value">19 <span style="font-size:0.7rem;color:rgba(248,248,255,0.4)">- UNDER UPDATING -</span></div> -->
-        <div class="stat-value">88 <span span class="nav-status">- UNDER UPDATING -</span></div>
-      </div>
-      <div class="stat-block">
-        <div class="stat-label"><i class="fa-solid fa-people-group"></i> &nbsp;Effettivo equipaggio</div>
-        <div class="stat-value">206 <span style="font-size:0.7rem;color:rgba(248,248,255,0.4)">Ufficiali, Sottufficiali e Civili</span></div>
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- Section nav cards -->
-  <div class="section-grid">
-
-    <a href="log.html" class="section-card log animate-in animate-in-delay-1">
-      <div class="section-card-icon"><i class="fa-solid fa-bars-staggered"></i></div>
-      <div class="section-card-title">Log</div>
-      <div class="section-card-desc">Diari di missione</div>
-    </a>
-
-    <a href="crew.html" class="section-card crew animate-in animate-in-delay-2">
-      <div class="section-card-icon"><i class="fa-solid fa-people-group"></i></div>
-      <div class="section-card-title">Crew</div>
-      <div class="section-card-desc">Fascicoli dell'equipaggio</div>
-    </a>
-
-    <a href="ship.html" class="section-card ship animate-in animate-in-delay-3">
-      <div class="section-card-icon"><i class="fa-solid fa-rocket"></i></div>
-      <div class="section-card-title">Ship</div>
-      <div class="section-card-desc">Specifiche tecniche della nave</div>
-    </a>
-
-    <a href="padd.html" class="section-card padd animate-in animate-in-delay-4">
-      <div class="section-card-icon"><i class="fa-solid fa-tablet-screen-button"></i></div>
-      <div class="section-card-title">PADD</div>
-      <div class="section-card-desc">Comunicazioni e avvisi</div>
-    </a>
-
-  </div>
-
-  <!-- TriviaTrek - Classifica generale -->
-  <div class="triviatrek-section animate-in animate-in-delay-5">
-    <div class="triviatrek-header">
-      <div class="triviatrek-title">
-        <i class="fa-solid fa-trophy"></i> TriviaTrek - classifica generale
-      </div>
-      <div class="triviatrek-badge">LCARS RANKING SYSTEM</div>
-    </div>
-    <div class="triviatrek-grid">
-
-      <!-- 1° Classificato: GM Frruuu -->
-      <div class="triviatrek-card">
-        <div class="triviatrek-rank">1°</div>
-        <div class="triviatrek-img-wrap">
-          <img src="images/crew/frruuu_l.jpg" alt="GM Frruuu" class="triviatrek-img" onerror="this.style.display='none'" />
-        </div>
-        <div class="triviatrek-pg-name">GM Frruuu</div>
-        <div class="triviatrek-score">10.350 <span class="triviatrek-unit">pt</span></div>
-        <div class="triviatrek-quizzes">Quiz partecipati: 2</div>
-      </div>
-
-      <!-- 2° Classificato: GM Van Bajark -->
-      <div class="triviatrek-card">
-        <div class="triviatrek-rank">2°</div>
-        <div class="triviatrek-img-wrap">
-          <img src="images/crew/vanbajark_l.jpg" alt="GM Van Bajark" class="triviatrek-img" onerror="this.style.display='none'" />
-        </div>
-        <div class="triviatrek-pg-name">GM Van Bajark</div>
-        <div class="triviatrek-score">8.000 <span class="triviatrek-unit">pt</span></div>
-        <div class="triviatrek-quizzes">Quiz partecipati: 2</div>
-      </div>
-
-      <!-- 3° Classificato: GM Renzi -->
-      <div class="triviatrek-card">
-        <div class="triviatrek-rank">3°</div>
-        <div class="triviatrek-img-wrap">
-          <img src="images/crew/renzi_l.jpg" alt="GM Renzi" class="triviatrek-img" onerror="this.style.display='none'" />
-        </div>
-        <div class="triviatrek-pg-name">GM Renzi</div>
-        <div class="triviatrek-score">7.600 <span class="triviatrek-unit">pt</span></div>
-        <div class="triviatrek-quizzes">Quiz partecipati: 2</div>
-      </div>
-
-      <!-- 4° Classificato: GM T'Mik -->
-      <div class="triviatrek-card">
-        <div class="triviatrek-rank">4°</div>
-        <div class="triviatrek-img-wrap">
-          <img src="images/crew/tmik_l.jpg" alt="GM T'Mik" class="triviatrek-img" onerror="this.style.display='none'" />
-        </div>
-        <div class="triviatrek-pg-name">GM T'Mik</div>
-        <div class="triviatrek-score">7.550 <span class="triviatrek-unit">pt</span></div>
-        <div class="triviatrek-quizzes">Quiz partecipati: 2</div>
-      </div>
-
-      <!-- 5° Classificato: GM Da Nee -->
-      <div class="triviatrek-card">
-        <div class="triviatrek-rank">5°</div>
-        <div class="triviatrek-img-wrap">
-          <img src="images/crew/danee_l.jpg" alt="GM Da Nee" class="triviatrek-img" onerror="this.style.display='none'" />
-        </div>
-        <div class="triviatrek-pg-name">GM Da Nee</div>
-        <div class="triviatrek-score">0 <span class="triviatrek-unit">pt</span></div>
-        <div class="triviatrek-quizzes">Quiz partecipati: 0</div>
-      </div>
-
-      <!-- 6° Classificato: GM Rael -->
-      <div class="triviatrek-card">
-        <div class="triviatrek-rank">6°</div>
-        <div class="triviatrek-img-wrap">
-          <img src="images/l_sec2.png" alt="GM Rael" class="triviatrek-img" style="object-fit:contain;padding:0.4rem;" onerror="this.style.display='none'" />
-        </div>
-        <div class="triviatrek-pg-name">GM Rael</div>
-        <div class="triviatrek-score">0 <span class="triviatrek-unit">pt</span></div>
-        <div class="triviatrek-quizzes">Quiz partecipati: 0</div>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Section botton 2 cards -->
-  <div class="section-grid2">
-        <div class="hero-main">
-          <p>
-          <em>Diversi anni fa, 10 cadetti facenti parte della ACCADEMIA della FLOTTA STELLARE furono diplomati a forza e buttati fuori dopo i famosi eventi della Kobayashi Maru. 
-            Si rifugiarono a bordo della</em> <span class="stardate-value">USS AFRODITE</span> <em>dove hanno imparato a vivere sguazzando nei guai. 
-            Sono tuttora in giro per le NEBULE.</em><br/><br/>
-          </p>
+      <div class="hero-main">
+        <div style="display:flex;align-items:center;gap:16px;">
+          <img src="images/logo.svg" alt="USS Afrodite" style="height:90px;width:auto;flex-shrink:0;"
+            onerror="this.style.display='none'" />
           <div>
-            <p class="diary-em">Ma se avete una 'mission: impossible' da affrontare...<br/>
-              e disponete di un po' di NUTELLA non replicata...<br/>
-              forse potrete ingaggiare il famoso...</p>
-            <img src="images/ateam.png" style="max-width:100%;height:auto;margin-top:12px;display:block;" />
+            <div class="hero-ship-name">USS Afrodite</div>
+            <div class="hero-registry">NCC - 1863</div>
+            <div class="hero-motto"><b>DO NOT WORRY! BE HAPPY!</b></div>
           </div>
-      </div> 
+        </div>
+        <div class="hero-class">
+          <p>Flotta Stellare · Federazione Unita dei Pianeti</p>
+          <p style="margin-top:10px;font-size:0.8rem;color:rgba(248,248,255,0.5);">
+            <span class="stardate-value">Access: <span style="color:var(--lcars-orange);">GRANTED!</span></span> <br />
+            Il sistema LCARS raccoglie i registri di missione, i diari e i fascicoli dell'equipaggio, nonché le
+            specifiche della nave e le comunicazioni interne.
+          </p>
+          <p style="margin-top:15px;margin-bottom:0px;font-size:0.75rem;color:var(--lcars-orange);">
+            Stardate: <span class="js-stardate"></span>
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-block">
+          <div class="stat-label"><i class="fa-solid fa-shield-halved"></i> &nbsp;Stato nave</div>
+          <div class="stat-value" style="color:var(--sci-color);">Operativa</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-label"><i class="fa-solid fa-location-crosshairs"></i> &nbsp;Posizione</div>
+          <div class="stat-value">Quadrante Alfa · Theta Persei IV</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-label"><i class="fa-solid fa-bars-staggered"></i> &nbsp;Log di MissionE</div>
+          <!-- <div class="stat-value">19 <span style="font-size:0.7rem;color:rgba(248,248,255,0.4)">- UNDER UPDATING -</span></div> -->
+          <div class="stat-value">88 <span span class="nav-status">- UNDER UPDATING -</span></div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-label"><i class="fa-solid fa-people-group"></i> &nbsp;Effettivo equipaggio</div>
+          <div class="stat-value">206 <span style="font-size:0.7rem;color:rgba(248,248,255,0.4)">Ufficiali,
+              Sottufficiali e Civili</span></div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Section nav cards -->
+    <div class="section-grid">
+
+      <a href="log.html" class="section-card log animate-in animate-in-delay-1">
+        <div class="section-card-icon"><i class="fa-solid fa-bars-staggered"></i></div>
+        <div class="section-card-title">Log</div>
+        <div class="section-card-desc">Diari di missione</div>
+      </a>
+
+      <a href="crew.html" class="section-card crew animate-in animate-in-delay-2">
+        <div class="section-card-icon"><i class="fa-solid fa-people-group"></i></div>
+        <div class="section-card-title">Crew</div>
+        <div class="section-card-desc">Fascicoli dell'equipaggio</div>
+      </a>
+
+      <a href="ship.html" class="section-card ship animate-in animate-in-delay-3">
+        <div class="section-card-icon"><i class="fa-solid fa-rocket"></i></div>
+        <div class="section-card-title">Ship</div>
+        <div class="section-card-desc">Specifiche tecniche della nave</div>
+      </a>
+
+      <a href="padd.html" class="section-card padd animate-in animate-in-delay-4">
+        <div class="section-card-icon"><i class="fa-solid fa-tablet-screen-button"></i></div>
+        <div class="section-card-title">PADD</div>
+        <div class="section-card-desc">Comunicazioni e avvisi</div>
+      </a>
+
+    </div>
+
+    <!-- TriviaTrek - Classifica generale -->
+    <div class="triviatrek-section animate-in animate-in-delay-5">
+      <div class="triviatrek-header">
+        <div class="triviatrek-title">
+          <i class="fa-solid fa-trophy"></i> TriviaTrek - classifica generale
+        </div>
+        <div class="triviatrek-badge">LCARS RANKING SYSTEM</div>
+      </div>
+      <div class="triviatrek-grid">
+
+        <!-- 1° Classificato: GM Frruuu -->
+        <div class="triviatrek-card">
+          <div class="triviatrek-rank">1°</div>
+          <div class="triviatrek-img-wrap">
+            <img src="images/crew/frruuu_l.jpg" alt="GM Frruuu" class="triviatrek-img"
+              onerror="this.style.display='none'" />
+          </div>
+          <div class="triviatrek-pg-name">GM Frruuu</div>
+          <div class="triviatrek-score">10.350 <span class="triviatrek-unit">pt</span></div>
+          <div class="triviatrek-quizzes">Quiz affrontati: 2</div>
+        </div>
+
+        <!-- 2° Classificato: GM Van Bajark -->
+        <div class="triviatrek-card">
+          <div class="triviatrek-rank">2°</div>
+          <div class="triviatrek-img-wrap">
+            <img src="images/crew/vanbajark_l.jpg" alt="GM Van Bajark" class="triviatrek-img"
+              onerror="this.style.display='none'" />
+          </div>
+          <div class="triviatrek-pg-name">GM Van Bajark</div>
+          <div class="triviatrek-score">8.000 <span class="triviatrek-unit">pt</span></div>
+          <div class="triviatrek-quizzes">Quiz affrontati: 2</div>
+        </div>
+
+        <!-- 3° Classificato: GM Renzi -->
+        <div class="triviatrek-card">
+          <div class="triviatrek-rank">3°</div>
+          <div class="triviatrek-img-wrap">
+            <img src="images/crew/renzi_l.jpg" alt="GM Renzi" class="triviatrek-img"
+              onerror="this.style.display='none'" />
+          </div>
+          <div class="triviatrek-pg-name">GM Renzi</div>
+          <div class="triviatrek-score">7.600 <span class="triviatrek-unit">pt</span></div>
+          <div class="triviatrek-quizzes">Quiz affrontati: 2</div>
+        </div>
+
+        <!-- 4° Classificato: GM T'Mik -->
+        <div class="triviatrek-card">
+          <div class="triviatrek-rank">4°</div>
+          <div class="triviatrek-img-wrap">
+            <img src="images/crew/tmik_l.jpg" alt="GM T'Mik" class="triviatrek-img"
+              onerror="this.style.display='none'" />
+          </div>
+          <div class="triviatrek-pg-name">GM T'Mik</div>
+          <div class="triviatrek-score">7.550 <span class="triviatrek-unit">pt</span></div>
+          <div class="triviatrek-quizzes">Quiz affrontati: 2</div>
+        </div>
+
+        <!-- 5° Classificato: GM Da Nee -->
+        <div class="triviatrek-card">
+          <div class="triviatrek-rank">5°</div>
+          <div class="triviatrek-img-wrap">
+            <img src="images/crew/danee_l.jpg" alt="GM Da Nee" class="triviatrek-img"
+              onerror="this.style.display='none'" />
+          </div>
+          <div class="triviatrek-pg-name">GM Da Nee</div>
+          <div class="triviatrek-score">0 <span class="triviatrek-unit">pt</span></div>
+          <div class="triviatrek-quizzes">Quiz affrontati: 0</div>
+        </div>
+
+        <!-- 6° Classificato: GM Rael -->
+        <div class="triviatrek-card">
+          <div class="triviatrek-rank">6°</div>
+          <div class="triviatrek-img-wrap">
+            <img src="images/l_sec2.png" alt="GM Rael" class="triviatrek-img" style="object-fit:contain;padding:0.4rem;"
+              onerror="this.style.display='none'" />
+          </div>
+          <div class="triviatrek-pg-name">GM Rael</div>
+          <div class="triviatrek-score">0 <span class="triviatrek-unit">pt</span></div>
+          <div class="triviatrek-quizzes">Quiz affrontati: 0</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Section botton 2 cards -->
+    <div class="section-grid2">
+      <div class="hero-main">
+        <p>
+          <em>Diversi anni fa, 10 cadetti facenti parte della ACCADEMIA della FLOTTA STELLARE furono diplomati a forza e
+            buttati fuori dopo i famosi eventi della Kobayashi Maru.
+            Si rifugiarono a bordo della</em> <span class="stardate-value">USS AFRODITE</span> <em>dove hanno imparato a
+            vivere sguazzando nei guai.
+            Sono tuttora in giro per le NEBULE.</em><br /><br />
+        </p>
+        <div>
+          <p class="diary-em">Ma se avete una 'mission: impossible' da affrontare...<br />
+            e disponete di un po' di NUTELLA non replicata...<br />
+            forse potrete ingaggiare il famoso...</p>
+          <img src="images/ateam.png" style="max-width:100%;height:auto;margin-top:12px;display:block;" />
+        </div>
+      </div>
 
       <a href="old/index.htm" target="_blank" class="section-card ship animate-in animate-in-delay-1">
-       <div class="section-card-icon"><i class="fa-solid fa-link"></i></div>
+        <div class="section-card-icon"><i class="fa-solid fa-link"></i></div>
         <div class="section-card-title">WEB 1.0</div>
-        <div class="section-card-desc">Sito web originale <br/>Versione 1999-2005</div>
+        <div class="section-card-desc">Sito web originale <br />Versione 1999-2005</div>
       </a>
-    
-  </div>
+
+    </div>
 
 
-  
-  <div><br/></div>
-  
 
-  <!-- LCARS decorative footer block -->
-  <div style="margin-top:48px;display:flex;gap:8px;align-items:center;opacity:0.5;">
-    <div style="width:40px;height:40px;border-radius:50%;background:var(--lcars-orange);flex-shrink:0;"></div>
-    <div style="height:12px;border-radius:999px;background:var(--lcars-lavender);flex:0.3;"></div>
-    <div style="height:12px;border-radius:999px;background:var(--lcars-blue);flex:0.5;"></div>
-    <div style="height:12px;border-radius:999px;background:var(--accent-gold);flex:1;"></div>
-    <div style="height:12px;border-radius:999px;background:var(--lcars-lavender);flex:0.2;"></div>
-  </div>
+    <div><br /></div>
 
-</main>
 
-<footer id="site-footer"></footer>
+    <!-- LCARS decorative footer block -->
+    <div style="margin-top:48px;display:flex;gap:8px;align-items:center;opacity:0.5;">
+      <div style="width:40px;height:40px;border-radius:50%;background:var(--lcars-orange);flex-shrink:0;"></div>
+      <div style="height:12px;border-radius:999px;background:var(--lcars-lavender);flex:0.3;"></div>
+      <div style="height:12px;border-radius:999px;background:var(--lcars-blue);flex:0.5;"></div>
+      <div style="height:12px;border-radius:999px;background:var(--accent-gold);flex:1;"></div>
+      <div style="height:12px;border-radius:999px;background:var(--lcars-lavender);flex:0.2;"></div>
+    </div>
 
-<script src="script.js"></script>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
