@@ -1783,7 +1783,9 @@ footer {
   .banner-title { font-size: 1.3rem; }
   .hero-ship-name { font-size: 1.6rem; }
   .section-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
-  .crew-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
+  .crew-grid { grid-template-columns: repeat(2, 1fr); gap: 0.625rem; }
+  .crew-thumb-info { padding: 0.625rem; }
+  .crew-thumb-img { height: 7.5rem; }
 }
 
 /* ── ALLARMI ───────────────────── */
