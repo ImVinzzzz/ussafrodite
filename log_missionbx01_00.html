@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mission: X01 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission1.html">Mission: X01</a>
+      <span>›</span>
+      <span class="current">Campagna FLOTTA STIC-AL</span>
+    </div>
+
+    <!-- Diary page -->
+    <!-- div class="diary-header" style="background: linear-gradient(135deg, #FF9900 0%, #BF6500 100%);" -->
+    <div class="diary-header" style="background: linear-gradient(135deg, #BF6500 0%, #FF9900 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-regular fa-circle-dot"></i> &nbsp;Incoming Message
+        </div>
+        <div class="diary-header-name">Campagna Flotta STIC-AL</div>
+        <div class="diary-header-mission">Mission: X01 — Tetha Persei IV - Mapping</div>
+      </div>
+      <!-- Miniatura PG + link scheda >
+      <div class="diary-header-pgbox">
+        <img src="images/crew/alighieri.gif" alt="Alighieri"
+             onerror="this.style.opacity='0.2'" />
+        <a href="crew_alighieri.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+      </div -->
+    </div>
+
+    <div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">12607.05</span>
+      </div>
+
+      <p><span><img src="images/log/flotta-stic-al.svg" alt="StarFlet Medica Command" class="crew-dept-logo"
+            style="border:none; outline:none;"></span></p>
+      <p style="color:rgba(248,248,255,0.5);font-size:0.8rem;">
+        Comando Flotta STIC-AL <br />
+        Campagna: Esplora e Traccia (2026) </em></p>
+
+      <p><br />La vostra nave ha individuato un pianeta di classe M apparentemente abitabile nel settore non
+        cartografato Theta Persei.<br />
+        Le scansioni orbitali mostrano una vasta area boschiva, un piccolo bacino lacustre alimentato da un corso
+        d’acqua naturale e due strutture artificiali:<br />
+        - una vecchia stazione di ricerca scientifica;<br />
+        - un deposito logistico abbandonato.<br />
+        <br />
+        Tuttavia, qualcosa non va.<br />
+        Ogni tentativo di scansione dettagliata della superficie fallisce. I sensori subiscono interferenze sconosciute
+        e le immagini risultano incomplete o corrotte.<br />
+        Una squadra di sbarco è stata quindi autorizzata a procedere con una ricognizione diretta.<br />
+        Pochi istanti dopo il teletrasporto, però, accade l’imprevisto.<br />
+        I tricorder smettono di funzionare.<br />
+        I comunicatori si spengono.<br />
+        I sistemi di puntamento e navigazione diventano inutilizzabili.<br />
+        Ogni tecnologia avanzata è stata neutralizzata da un campo di interferenza sconosciuto.<br />
+        Siete isolati.<br />
+        Senza sensori.<br />
+        Senza mappe.<br />
+        Senza supporto orbitale.<br />
+        <br />
+        L'unico modo per completare la missione è procedere come gli antichi esploratori della Terra:
+        osservare, annotare, misurare, disegnare.<br />
+        Avete a disposizione soltanto fogli di carta e primitivi strumenti di scrittura.<br />
+        La vostra missione è creare la mappa più dettagliata possibile dell'area circostante.<br />
+        <br />
+        Ma attenzione: le scansioni incomplete della nave suggeriscono che nella zona potrebbero esistere altre
+        strutture… o qualcosa che è stato deliberatamente nascosto.<br />
+        Buona fortuna, squadra di sbarco.
+        <!-- <br/>
+        <em style="color:rgba(248,248,255,0.5);">
+          S.Ten. Giuseppe Alighieri</br>
+          Capitano FF</br>
+          USS Afrodite NCC-1863
+        </em> -->
+      </p>
+
+    </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_missionx01.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Mission: X01
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <!-- Primo diario: bottone precedente spento -->
+        <span class="btn-back" style="opacity:0.25;cursor:default;pointer-events:none;margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </span>
+        <a href="log_missionx01_02.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,198 +10,194 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  
+
   <link rel="stylesheet" href="stylesheet.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-<canvas id="starfield"></canvas>
-<div class="scanline-overlay"></div>
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
 
-<!-- HEADER -->
-<header id="site-header"></header>
+  <!-- HEADER -->
+  <header id="site-header"></header>
 
-<main id="main-content">
+  <main id="main-content">
 
-  <!-- Breadcrumb -->
-  <div class="breadcrumb">
-    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
-    <span>›</span>
-    <a href="log.html">Log</a>
-    <span>›</span>
-    <span class="current">MISSION: X01</span>
-  </div>
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <span class="current">MISSION: X01</span>
+    </div>
 
-  <!-- Mission header -->
-  <div class="mission-header-block">
-    <div style="font-size:2.5rem;color:var(--lcars-orange);flex-shrink:0;"><i class="fa-solid fa-bars-staggered"></i></div>
-    <div>
-      <div class="mission-header-label">MISSION: X01</div>
-      <div class="mission-header-title">Theta Persei IV - Mapping</div>
-      <div style="font-family:'Orbitron',sans-serif;font-size:0.65rem;color:rgba(248,248,255,0.45);margin-top:4px;letter-spacing:0.1em;">
-        CAMPAGNA FLOTTA STIC-AL
+    <!-- Mission header -->
+    <div class="mission-header-block">
+      <div style="font-size:2.5rem;color:var(--lcars-orange);flex-shrink:0;"><i class="fa-solid fa-bars-staggered"></i>
+      </div>
+      <div>
+        <div class="mission-header-label">MISSION: X01</div>
+        <div class="mission-header-title">Theta Persei IV - Mapping</div>
+        <div
+          style="font-family:'Orbitron',sans-serif;font-size:0.65rem;color:rgba(248,248,255,0.45);margin-top:4px;letter-spacing:0.1em;">
+          CAMPAGNA FLOTTA STIC-AL
+        </div>
+      </div>
+      <div style="margin-left:auto;text-align:right;">
+        <div
+          style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.2em;color:rgba(255,153,0,0.5);">
+          STARDATE</div>
+        <div style="font-family:'Orbitron',sans-serif;font-size:0.9rem;color:var(--lcars-orange);">12607.06</div>
       </div>
     </div>
-    <div style="margin-left:auto;text-align:right;">
-      <div style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.2em;color:rgba(255,153,0,0.5);">STARDATE</div>
-      <div style="font-family:'Orbitron',sans-serif;font-size:0.9rem;color:var(--lcars-orange);">12607.05</div>
+
+    <!-- Diary grid -->
+    <div class="diary-grid">
+
+      <!-- Briefing – always first, special styling 00 -->
+      <a href="log_missionx01_00.html" class="diary-card" style="border-color:rgba(255,153,0,0.3);">
+        <div class="diary-card-bar"
+          style="background: linear-gradient(90deg, var(--lcars-orange), var(--accent-gold));"></div>
+        <div class="diary-card-body">
+          <div class="diary-card-role" style="color:var(--lcars-orange);">
+            <i class="fa-solid fa-compass"></i> &nbsp;Campagne 2026-2027
+          </div>
+          <div class="diary-card-name">Flotta STIC-AL</div>
+          <div style="font-size:0.7rem;color:rgba(248,248,255,0.4);margin-top:6px;">Esplora e Traccia</div>
+          <div class="diary-card-arrow">LOG ›</div>
+        </div>
+      </a>
+
+      <!-- x01b – Primo Ufficiale 02 -->
+      <span class="diary-card"> <!-- <a href="log_missionx01_02.html" class="diary-card" -->
+        <div class="diary-card-bar" style="background:var(--cmd-color);"></div>
+        <div class="diary-card-body">
+          <div class="diary-card-role" style="color:var(--cmd-color);">
+            <i class="fa-solid fa-circle-chevron-up"></i> &nbsp;COM · XO
+          </div>
+          <div class="diary-card-name">Rapporto <br />GM Frruuu</div>
+          <div class="diary-card-arrow">LOG ›</div>
+        </div>
+      </span>
+
+      <!-- x01c – Primo Ufficiale Scientifico 03 -->
+      <span class="diary-card">
+        <div class="diary-card-bar" style="background:var(--sci-color);"></div>
+        <div class="diary-card-body">
+          <div class="diary-card-role" style="color:var(--sci-color);">
+            <i class="fa-solid fa-dna"></i> &nbsp;SCI · CSO
+          </div>
+          <div class="diary-card-name">Rapporto <br />GM Renzi</div>
+          <div class="diary-card-arrow">LOG ›</div>
+        </div>
+      </span>
+
+      <!-- x01d – Secondo Ufficiale Scientifico 04 -->
+      <span class="diary-card"> <!-- <a href="log_missionx01_04.html" class="diary-card" -->
+        <div class="diary-card-bar" style="background:var(--sci-color);"></div>
+        <div class="diary-card-body">
+          <div class="diary-card-role" style="color:var(--sci-color);">
+            <i class="fa-solid fa-dna"></i> &nbsp;SCI · XSO
+          </div>
+          <div class="diary-card-name">Rapporto <br />GM Da Nee</div>
+          <div class="diary-card-arrow">LOG ›</div>
+        </div>
+      </span>
+
+      <!-- x01e – Ufficiale Medico Capo 05 -->
+      <span class="diary-card"> <!-- <a href="log_missionx01_05.html" class="diary-card" -->
+        <div class="diary-card-bar" style="background:var(--sci-color);"></div>
+        <div class="diary-card-body">
+          <div class="diary-card-role" style="color:var(--sci-color);">
+            <i class="fa-solid fa-staff-snake"></i> &nbsp;MED · CMO
+          </div>
+          <div class="diary-card-name">Rapporto <br />GM T'Mik</div>
+          <div class="diary-card-arrow">LOG ›</div>
+        </div>
+      </span>
+
+      <!-- x01f – Secondo Ufficiale Medico 06 -->
+      <span class="diary-card"> <!--  <a href="log_missionx01_06.html" class="diary-card" -->
+        <div class="diary-card-bar" style="background:var(--sci-color);"></div>
+        <div class="diary-card-body">
+          <div class="diary-card-role" style="color:var(--sci-color);">
+            <i class="fa-solid fa-staff-snake"></i> &nbsp;MED · XMO
+          </div>
+          <div class="diary-card-name">Rapporto <br />GM Van Bajark</div>
+          <div class="diary-card-arrow">LOG ›</div>
+        </div>
+      </span>
+
+      <!-- x01g – Capo Sicurezza 07 -->
+      <span class="diary-card"> <!-- <a href="log_missionx01_07.html" class="diary-card" -->
+        <div class="diary-card-bar" style="background:var(--ops-color);"></div>
+        <div class="diary-card-body">
+          <div class="diary-card-role" style="color:var(--ops-color);">
+            <i class="fa-solid fa-shield-halved"></i> &nbsp;SEC · CTO
+          </div>
+          <div class="diary-card-name">Rapporto <br />GM Rael</div>
+          <div class="diary-card-arrow">LOG ›</div>
+        </div>
+      </span>
+
+
+      <!-- ----- RAPPORTI PERSONALE EXTRA UFFICIALI ----- -->
+
+      <!-- x01 – Becco 11 -->
+      <span class="diary-card"> <!-- <a href="log_missionx01_11.html" class="diary-card"> -->
+        <div class="diary-card-bar" style="background:var(--sci-color);"></div>
+        <div class="diary-card-body">
+          <div class="diary-card-role" style="color:var(--sci-color);">
+            <i class="fa-solid fa-circle-chevron-up"></i> &nbsp;MED · Consigliere
+          </div>
+          <div class="diary-card-name">Rapporto <br />Dr. Becco</div>
+          <div class="diary-card-arrow">LOG ›</div>
+        </div>
+      </span>
+
+      <!-- x01 – SCI Field 12 -->
+      <span class="diary-card"> <!-- <a href="log_missionx01_12.html" class="diary-card"> -->
+        <div class="diary-card-bar" style="background:var(--sci-color);"></div>
+        <div class="diary-card-body">
+          <div class="diary-card-role" style="color:var(--sci-color);">
+            <i class="fa-solid fa-dna"></i> &nbsp;SCI · Ufficiale
+          </div>
+          <div class="diary-card-name">Rapporto <br />GM Field</div>
+          <div class="diary-card-arrow">LOG ›</div>
+        </div>
+      </span>
+
+      <!-- x01 – OPS Brax 13 -->
+      <span class="diary-card"> <!-- <a href="log_missionx01_13.html" class="diary-card"> -->
+        <div class="diary-card-bar" style="background:var(--ops-color);"></div>
+        <div class="diary-card-body">
+          <div class="diary-card-role" style="color:var(--ops-color);">
+            <i class="fa-solid fa-globe"></i> &nbsp;OPS · Ufficiale
+          </div>
+          <div class="diary-card-name">Rapporto <br />GM Brax</div>
+          <div class="diary-card-arrow">LOG ›</div>
+        </div>
+      </span>
+
     </div>
-  </div>
 
-  <!-- Diary grid -->
-  <div class="diary-grid">
+    <div style="margin-top:24px;">
+      <a href="log.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> LOG Missioni
+      </a>
+    </div>
 
-    <!-- Briefing – always first, special styling 00
-    <a href="log_missionx01_00.html" class="diary-card" style="border-color:rgba(255,153,0,0.3);">
-      <div class="diary-card-bar" style="background: linear-gradient(90deg, var(--lcars-orange), var(--accent-gold));"></div>
-      <div class="diary-card-body">
-        <div class="diary-card-role" style="color:var(--lcars-orange);">
-          <i class="fa-solid fa-compass"></i> &nbsp;Incoming Message
-        </div>
-        <div class="diary-card-name">Comunicazione da StarFleet</div>
-        <div style="font-size:0.7rem;color:rgba(248,248,255,0.4);margin-top:6px;">Ammiraglio T. Colbotto</div>
-        <div class="diary-card-arrow">LOG ›</div>
-      </div>
-    </a>  -->
+  </main>
 
-    <!-- ba – Capitano 01
-    <a href="log_missionx01_01.html" class="diary-card">
-      <div class="diary-card-bar" style="background:var(--cmd-color);"></div>
-      <div class="diary-card-body">
-        <div class="diary-card-role" style="color:var(--cmd-color);">
-          <i class="fa-solid fa-circle-chevron-up"></i> &nbsp;COM · CO
-        </div>
-        <div class="diary-card-name">Rapporto <br/>S.Ten Alighieri</div>
-        <div class="diary-card-arrow">LOG ›</div>
-      </div>
-    </a> -->
-
-    <!-- bb – Primo Ufficiale 02 -->
-    <span class="diary-card">  <!-- <a href="log_missionx01_02.html" class="diary-card" -->
-      <div class="diary-card-bar" style="background:var(--cmd-color);"></div>
-      <div class="diary-card-body">
-        <div class="diary-card-role" style="color:var(--cmd-color);">
-          <i class="fa-solid fa-circle-chevron-up"></i> &nbsp;COM · XO
-        </div>
-        <div class="diary-card-name">Rapporto <br/>GM Frruuu</div>
-        <div class="diary-card-arrow">LOG ›</div>
-      </div>
-    </span>
-
-    <!-- bc – Primo Ufficiale Scientifico 03 -->
-    <span class="diary-card">
-      <div class="diary-card-bar" style="background:var(--sci-color);"></div>
-      <div class="diary-card-body">
-        <div class="diary-card-role" style="color:var(--sci-color);">
-          <i class="fa-solid fa-dna"></i> &nbsp;SCI · CSO
-        </div>
-        <div class="diary-card-name">Rapporto <br/>GM Renzi</div>
-        <div class="diary-card-arrow">LOG ›</div>
-      </div>
-    </span>
-
-    <!-- bd – Secondo Ufficiale Scientifico 04 -->
-    <span class="diary-card"> <!-- <a href="log_missionx01_04.html" class="diary-card" -->
-      <div class="diary-card-bar" style="background:var(--sci-color);"></div>
-      <div class="diary-card-body">
-        <div class="diary-card-role" style="color:var(--sci-color);">
-          <i class="fa-solid fa-dna"></i> &nbsp;SCI · XSO
-        </div>
-        <div class="diary-card-name">Rapporto <br/>GM Da Nee</div>
-        <div class="diary-card-arrow">LOG ›</div>
-      </div>
-    </span>
-
-    <!-- be – Ufficiale Medico Capo 05 -->
-     <span class="diary-card">  <!-- <a href="log_missionx01_05.html" class="diary-card" -->
-      <div class="diary-card-bar" style="background:var(--sci-color);"></div>
-      <div class="diary-card-body">
-        <div class="diary-card-role" style="color:var(--sci-color);">
-          <i class="fa-solid fa-staff-snake"></i> &nbsp;MED · CMO
-        </div>
-        <div class="diary-card-name">Rapporto <br/>GM T'Mik</div>
-        <div class="diary-card-arrow">LOG ›</div>
-      </div>
-    </span>
-
-    <!-- bf – Secondo Ufficiale Medico 06 -->
-     <span class="diary-card">  <!--  <a href="log_missionx01_06.html" class="diary-card" -->
-      <div class="diary-card-bar" style="background:var(--sci-color);"></div>
-      <div class="diary-card-body">
-        <div class="diary-card-role" style="color:var(--sci-color);">
-          <i class="fa-solid fa-staff-snake"></i> &nbsp;MED · XMO
-        </div>
-        <div class="diary-card-name">Rapporto <br/>GM Van Bajark</div>
-        <div class="diary-card-arrow">LOG ›</div>
-      </div>
-    </span>
-
-    <!-- bg – Capo Sicurezza 07 -->
-    <span class="diary-card">  <!-- <a href="log_missionx01_07.html" class="diary-card" -->
-      <div class="diary-card-bar" style="background:var(--ops-color);"></div>
-      <div class="diary-card-body">
-        <div class="diary-card-role" style="color:var(--ops-color);">
-          <i class="fa-solid fa-shield-halved"></i> &nbsp;SEC · CTO
-        </div>
-        <div class="diary-card-name">Rapporto <br/>GM Rael</div>
-        <div class="diary-card-arrow">LOG ›</div>
-      </div>
-    </span>
-
-    <!-- ----- RAPPORTI PERSONALE EXTRA UFFICIALI ----- -->
-
-    <!-- b2 – Becco 11 -->
-    <span class="diary-card">  <!-- <a href="log_missionx01_11.html" class="diary-card"> -->
-      <div class="diary-card-bar" style="background:var(--sci-color);"></div>
-      <div class="diary-card-body">
-        <div class="diary-card-role" style="color:var(--sci-color);">
-          <i class="fa-solid fa-circle-chevron-up"></i> &nbsp;MED · Consigliere
-        </div>
-        <div class="diary-card-name">Rapporto <br/>Dr. Becco</div>
-        <div class="diary-card-arrow">LOG ›</div>
-      </div>
-    </span>
-
-    <!-- bd – SCI Field 12 -->
-    <span class="diary-card">  <!-- <a href="log_missionx01_12.html" class="diary-card"> -->
-      <div class="diary-card-bar" style="background:var(--sci-color);"></div>
-      <div class="diary-card-body">
-        <div class="diary-card-role" style="color:var(--sci-color);">
-          <i class="fa-solid fa-dna"></i> &nbsp;SCI · Ufficiale
-        </div>
-        <div class="diary-card-name">Rapporto <br/>GM Field</div>
-        <div class="diary-card-arrow">LOG ›</div>
-      </div>
-    </span>
-
-    <!-- b2 – OPS Brax 13 -->
-    <span class="diary-card">  <!-- <a href="log_missionx01_13.html" class="diary-card"> -->
-      <div class="diary-card-bar" style="background:var(--ops-color);"></div>
-      <div class="diary-card-body">
-        <div class="diary-card-role" style="color:var(--ops-color);">
-          <i class="fa-solid fa-globe"></i> &nbsp;OPS · Ufficiale
-        </div>
-        <div class="diary-card-name">Rapporto <br/>GM Brax</div>
-        <div class="diary-card-arrow">LOG ›</div>
-      </div>
-    </span>    
-
-  </div>
-
-  <div style="margin-top:24px;">
-    <a href="log.html" class="btn-back">
-      <i class="fa-solid fa-chevron-left"></i> LOG Missioni
-    </a>
-  </div>
-
-</main>
-
-<!-- FOOTER -->
+  <!-- FOOTER -->
   <footer id="site-footer"></footer>
-  
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
