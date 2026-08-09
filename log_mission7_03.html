@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Renzi – Mission 7 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission7.html">Mission: 7</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Renzi</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-dna"></i> &nbsp;SCI &nbsp;·&nbsp; CSO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM F. Renzi</div>
+          <div class="diary-header-mission">Mission: 7 — The Cut!</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/renzi_l.jpg" alt="F. Renzi"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_renzi.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10301.15</span>
+        </div>
+
+        <!-- YELLOW ALERT -->
+        <div class="yellow-alert">
+          <i class="fa-solid fa-triangle-exclamation fa-lg"></i>
+          <span>Restrizione d'accesso - Codice: Renzi alfa delta sierra 2 2 9</span>
+          <i class="fa-solid fa-triangle-exclamation fa-lg" style="margin-left:auto;"></i>
+        </div>
+
+        <!-- PROLOGO  
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Era una notte...
+        </p> -->
+
+        <!-- DIARIO -->
+        <!-- <div class="diary-section-title">Diario di Missione</div> -->
+
+        <p><span class="diary-section-subtitle"><br>
+            USS Afrodite, Infermeria.</span></p>
+
+        <!-- citazione -->
+        <div class="diary-quote">
+          Uno sciame di illusioni fantastiche<br />
+          m'insegue, lor principe e padrone,<br />
+          mentre attraverso lande desertiche<br />
+          cavalco il turbine, fiammeggia il mio sprone.<br />
+          Dieci leghe in fondo all'orizzonte<br />
+          S'accende nella notte la tenzone<br />
+          Con spettri e cavalieri della morte.<br />
+          Viaggio, delirio o immaginazione?
+        </div>
+
+        <p>
+          - "Signor Renzi! Fabiola! Sono Robert... coraggio, si svegli!<br />
+          - ">Uhmmm... Roberrtt! No, ancora cinque minuti... stavo cavalcando un enorme drago rosso e fiammeggiante!
+          Se non mi riaddormento subito sparirà per sempre..."<br />
+          - "Fabiola, abbiamo trovato l'antidoto, presto si sveglierà del tutto e...<br />
+          - "NON VOGLIO! Mi lasci in pace... devo riaddormentarmi... il mio drago..."<br />
+          - "Carter, mi dia una mano stabilizzarla"<br />
+          <br />
+          - "Jackett, stia attento! la provetta... il VIRUS! Oh no, e ora chi glielo dice al capitano che dovremo
+          risintetizzare un altro ciclo di vaccino? Fabiola... non si riaddormenti di nuovo, resti con noi!"<br />
+
+          <!-- citazione -->
+        <div class="diary-quote">
+          Del sole noi siamo<br />
+          guerrieri valenti,<br />
+          siam forza,<br />
+          fierezza,<br />
+          coraggio ed onore!<br />
+          Siam draghi di fuoco...<br />
+          Da sempre presenti,<br />
+          alla vita e alla morte<br />
+          doniam valore!
+        </div>
+        <br />
+        </p>
+        <div class="diary-cpu">
+          <br />GM Fabiola Renzi<br />
+          CSO<br />
+          USS Afrodite NCC-1863
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission7.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 7
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission7_02.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission7_04.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

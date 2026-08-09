@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Rael – Mission 7 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission7.html">Mission: 7</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Rael</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #808000 0%, #555500 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-shield-halved"></i> &nbsp;SEC &nbsp;·&nbsp; CTO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM Rael</div>
+          <div class="diary-header-mission">Mission: 7 — The Cut!</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/rael_l.jpg" alt="GM Rael"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,128,0,0.15);border-radius:6px;border:2px dashed rgba(128,128,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-shield-halved\' style=\'font-size:2rem;color:rgba(128,128,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,128,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_rael.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10301.15</span>
+        </div>
+
+        <!-- PROLOGO 
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Stiamo andando
+        </p -->
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          Siamo di nuovo in viaggio, orbitiamo intorno a Sigma Iota II, il pianeta dei 'disastri federali' (naturalmente
+          questo non lo dirò mai ad alta voce mi potrebbe costare la Corte Marziale).<br />
+          Sono in Plancia, doveva tornare Chris ma di lui nemmeno l'ombra: mi sa che devo cercarmi un altro Vice. Sto
+          cercando di chiamare Starfleet ma risponde continuamente la segreteria e alla decima volta del messaggio: 
+          <span class="diary-em">"STARFLEETEL STICAPHONE, MESSAGGIO GRATUITO: L'UTENTE NON È 
+          ABILITATO AL TIPO DI CHIAMATA RICHIESTA"</span>, colpisco con un pugno il pannello delle comunicazioni e impreco
+          'maledetto coso vuoi rispondere?' e vedo il Consigliere Becco che fa per avvicinarsi ma un'occhiataccia lo
+          convince che forse è meglio che stia lontano da me, molto lontano. Oggi sono un po' nervosa sarà per il sogno
+          che ho fatto non era brutto, anzi, ero nel mezzo di una battaglia combattevo contro degli strano esseri che
+          sembravano klingon ma molto più brutti e al fianco di esseri umani ma alcuni erano biondi e con le orecchie a
+          punta come le mie, ma non sembravano né romulani né vulcaniani, mi sono svegliata, anzi mi hanno svegliata
+          nel gran mezzo della battaglia, problemi alla sicurezza, se Chris non torna presto devo proprio trovarmi un
+          altro Vice, non posso mica continuare a fare tutto da sola.<br />
+          <br />
+          Bisogna scendere sul pianeta e quel diavolo di capitano vuole che questa volta tutto fili liscio e non come le
+          ultime due volte e così ho deciso che prima di scendere farò un piccolo discorsetto alla squadra di sbarco:
+          "Il primo che si perde qualcosa, qualsiasi cosa... finisce al pulire l'ufficio della sicurezza, celle comprese, con il suo spazzolino da denti. Avete
+          capito?" La squadra di sbarco è formata dal nostro N1 Frruuu, Peter, T'Mik, Da Nee e Jadzia, oltre alla squadra
+          di sicurezza: io, Cip, Ciop, Adam Smith (purtroppo) e due novellini, Strider e Haldir.<br />
+          <br />
+          Appena scesi sentiamo dei colpi di fuoco, questo pianeta comincia a piacermi ma non ho il tempo di vedere che
+          succede che Adam mi da subito dei problemi tentando di insidiare una ragazza, e un giornalista che stava lì
+          comincia a fare delle foto e dice: "Ecco di cosa sono capaci gli uomini della Federazione". Poi vengo a sapere
+          che quella era la ragazza di uno dei capi della città.<br />
+          Vediamo una statua in una piazza e Frruuu va a leggere la targa, io sono troppo occupata a controllare la
+          gente che ci si avvicina per vedere di chi è. Dalla nave ci fanno sapere che il loro livello tecnologico non è
+          molto elevato.<br />
+          Non posso credere ai miei occhi: perdo un attimo di vista Adam e vedo in uno schermo che cerca di insidiare
+          anche il capo di una banda. Questo è troppo! Il prossimo pianeta disabitato che troviamo lo lascio là.<br />
+          <br />
+          Dopo un po' lo vedo arrivare di corsa impaurito e inseguito da gente del posto... bhe, io lo lascerei nelle loro
+          grinfie ma fa sempre parte della Federazione e dobbiamo proteggerlo.<br />
+          È un po' che ho perso di vista anche Cip aka Kelley: chissà dov'è andato? Poi lo vedo tornare e questa davvero non me
+          l'aspettavo: non ha più l'uniforme... indossa una scatola con attaccati il comunicatore e il
+          phaser e mi dice di aver fatto una partitina a Fizzbin. Appena torniamo a bordo una bella ramanzina non gliela
+          toglie nessuno.<br />
+          <br />
+          Finalmente Frruuu da l'ordine di tornare a bordo. La missione è conclusa e appena saliamo sulla nave veniamo
+          vaccinati contro il virus dei sogni... era un virus?<br />
+        </p>
+        <div class="diary-cpu">
+          <br />GM Rael<br />
+          CTO<br />
+          USS Afrodite NCC-1863
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission7.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 7
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission7_06.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission7_09.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

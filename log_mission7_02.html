@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Diario Frruuu – Mission 7 | USS Afrodite</title>
+
+      <!-- Favicon -->
+      <link rel="icon" type="image/svg+xml" href="favicon.svg">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+      <link rel="stylesheet" href="stylesheet.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+      <canvas id="starfield"></canvas>
+      <div class="scanline-overlay"></div>
+
+      <!-- HEADER -->
+      <header id="site-header"></header>
+
+      <main id="main-content">
+
+            <!-- Breadcrumb -->
+            <div class="breadcrumb">
+                  <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+                  <span>›</span>
+                  <a href="log.html">Log</a>
+                  <span>›</span>
+                  <a href="log_mission7.html">Mission: 7</a>
+                  <span>›</span>
+                  <span class="current">Diario Personale – GM Frruuu</span>
+            </div>
+
+            <!-- Diary page -->
+            <div class="diary-wrapper">
+
+                  <div class="diary-header" style="background: linear-gradient(135deg, #800000 0%, #5a0000 100%);">
+                        <!-- Testo intestazione -->
+                        <div class="diary-header-text">
+                              <div class="diary-header-role">
+                                    <i class="fa-solid fa-circle-chevron-up"></i> &nbsp;COM &nbsp;·&nbsp; XO
+                                    &nbsp;·&nbsp; Diario Personale
+                              </div>
+                              <div class="diary-header-name">GM Frruuu</div>
+                              <div class="diary-header-mission">Mission: 7 — The Cut!</div>
+                        </div>
+                        <!-- Miniatura PG + link scheda -->
+                        <div class="diary-header-pgbox">
+                              <img src="images/crew/frruuu_l.jpg" alt="GM Frruuu"
+                                    onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+                              <a href="crew_frruuu.html">
+                                    <i class="fa-solid fa-image-portrait"></i> Scheda
+                              </a>
+                        </div>
+                  </div>
+                  <div class="diary-body">
+
+                        <div class="stardate-line">
+                              <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i>
+                                    &nbsp;Stardate</span>
+                              <span class="stardate-value">10301.15</span>
+                        </div>
+
+                        <!-- PROLOGO -->
+                        <div class="diary-section-title">Prologo</div>
+
+                        <p>
+                              - "Svegliati Cocca" Frruuu continuava ad affondare nell'arco morbido e soffice di un 
+                              arcobaleno, la vista da lì sopra era incredibile: lo sguardo poteva spaziare fino alla 
+                              costellazione di Andromeda che galleggiava pigra dentro una tazza di cioccolata fumante. 
+                              All'improvviso una galattica mano pucciò un grandioso biscotto dentro il cioccolato, 
+                              facendo sbattere violentemente Andromeda lungo i bordi della tazza:<br />
+                              - "Attento - gridò Frruuu all'indirizzo del proprietario della mano, il cui volto si 
+                              perdeva tra le stelle - stai facendo rovesciare tutti i buchi neri" Infatti, da ogni buco 
+                              nero della galassia, si stavano rovesciando milioni di bilie azzurre che andavano 
+                              pesantemente a cadere su dei tavoli da biliardo. Frruuu si perse guardando le sfere 
+                              cozzare l'una contro l'altra mentre cercavano di tuffarsi nei fori posti ai lati dei 
+                              tavoli.<br />
+                              - "Svegliati Cocca - il Numero Uno della Afrodite si chiese come mai le bilie si fossero 
+                              messe a parlare con la voce del computer di bordo - Svegliati Cocca" - e Frruuu decise di 
+                              seguire il consiglio che milioni di sfere azzurre le stavano urlando. Piano piano, con  
+                              sforzo, aprì gli occhi e si trovò davanti il viso di Beppe che continuava a gridare 
+                              'Cronk' con entusiasmo:<br />
+                              - "Parli vulcaniano adesso Beppe?" Ma il Capitano continuò a mugugnare frasi senza senso.<br />
+                              Frruuu si stirò i gangli e, girandosi verso la scrivania, vide che era arrivato un 
+                              messaggio urgente dalla Flotta. 'Mi spiace per te ma è tempo di toglierti la sabbia dagli occhi', 
+                              pensò mentre guardava il suo Beppe agitarsi nel sonno:<br />
+                              - "Beppe, muoviti, hai un messaggio urgente!"<br />
+                              - "Cronk"<br />
+                              - "Dai Beppuccio" disse Frruuu col tono più suadente che poteva. Beppe si svegliò di 
+                              colpo, mettendosi a sedere sul letto:<br />
+                              - "Cosa... oh, salve ragazzi: meno male che mi avete svegliato!"<br />
+                              - "Un altro giro nel paese delle meraviglie? - fece Frruuu dopo che si fu ripresa dallo
+                              spavento.<br />
+                              - "E tu: qualche altra nebula cioccolatosa? - rispose Beppe, quasi aggredendo la povera
+                              horta.<br />
+                              - "lasciamo andare. Hai dormito solo per poche ore, perciò ti perdono lo scatto. Lo vuoi 
+                              sentire il messaggio della Flotta?" - il Capitano guardò la luce pulsante sulla sua 
+                              scrivania che segnalava l'arrivo di un messaggio privato.<br />
+                              - "È privato, vatti a fare un giro" Frruuu strinse i gangli. Sarebbe stato meglio per la 
+                              sezione medica trovare al più presto un rimedio contro questi incubi, prima che una certa 
+                              horta decidesse di darsi al tappetaggio.<br />
+                              - "Vado a farmi una doccia" disse, sapendo già che sarebbe stato un lungo, lungo giorno.
+                        </p>
+
+                        <!-- DIARIO -->
+                        <div class="diary-section-title">Diario di Missione</div>
+
+                        <p>
+                              Frruuu si sentiva ancora intontita per gli effetti del sogno da cui Beppe l'aveva tirata
+                              via bruscamente, quando entrò in plancia, la horta non usò la sua proverbiale leggerezza
+                              da étoile, cercò di raggiungere zigzagando la sua postazione, sfortunatamente al posto di
+                              uno zig girò con uno zag colpendo in pieno il consigliere di bordo Becco, questi venne
+                              catapultato violentemente contro una delle paratie laterali, colpendola con la fronte e
+                              rimbalzando indietro, finendo lungo disteso ai piedi del Capitano, Beppe lo degnò di una
+                              mezza occhiata, poi lo scavalcò e si diresse premuroso verso il suo Numero Uno:<br />
+                              - "Cocca, ti sei fatta male? Vieni, vieni, siediti, ti faccio portare un bicchiere di calce
+                              viva?" Frruuu si fece guidare fino alla sua poltrona: certo che il sonno non era più
+                              ristoratore da un bel po' di tempo.<br />
+                              - "Grazie Beppino, scusa se ho messo in disordine, ma mi sento così sfasata, mi sembra di
+                              non essermi svegliata del tutto, di stare ancora sognando... è una sensazione tremenda - 
+                              Beppe annuì comprensivo, anche lui aveva lo stesso problema, anzi, praticamente tutti
+                              sulla nave avevano avuto un'esperienza simile.<br />
+                              - "Il dottore mi ha avvertito che si tratta di un virus, e a breve dovrebbe essere pronto il
+                              vaccino per tutto l'equipaggio. Beh, perlomeno hanno il morale alto: quel Nutella Party
+                              con i guardiamarina delle altre navi deve essere stato strepitoso" Frruuu annuì,
+                              finalmente la mente iniziava a rischiararlesi:<br />
+                              - "Anche noi non ce la siamo cavata male." Beppe ridacchiò ripensando al povero Capitano
+                              McCartney che tentava di issarsi in spalla la horta.<br />
+                              <br />
+                              In quel mentre si udì una voce che riempì la plancia:<br />
+                              <span class="diary-cpu">"Una notizia dell'ultima ora: sono state intercettate comunicazioni radio da parte della 
+                              Federazione, da queste si evince che alcuni suoi rappresentanti stanno per raggiungere il 
+                              nostro pianeta. La Cupola, in un comunicato ufficiale rilasciato solo pochi minuti fa, ha 
+                              dichiarato che se i Federali sono venuti per prendersi una fetta della nostra economia, 
+                              troveranno pane per i loro denti e invitano tutti i cittadini a tenere bene oliato il 
+                              mitra, con una scorta di cartucce: 'Scorrerà sangue Federale se quei disgraziati 
+                              oseranno allungare le loro sporche mani sui nostri guadagni' ha dichiarato il Consigliori 
+                              Luska, della Famiglia Strong. Per ora è tutto; vi terremo informati sugli ultimi sviluppi 
+                              in varie edizioni speciali appena giungeranno altre notizie. Riprendiamo ora con la solita 
+                              programmazione. Passiamo dunque la linea a 'Misteri della Mazzetta' tenuta da Don Ersily. 
+                              Buongiorno."</span><br />
+                              <br />
+                              Tutti quelli che erano sul ponte si guardarono con occhi sbarrati:<br />
+                              - "Da Nee, da dove proveniva quella trasmissione? - chiese il Capitano avvicinandosi alla
+                              postazione delle comunicazioni.<br />
+                              - "Secondo le coordinate, la trasmissione proveniva da una delle principali città del
+                              continente a nord del pianeta"<br />
+                              - "Benissimo, vuol dire che la squadra di sbarco scenderà lì" Frruuu guardò il suo
+                              capitano di sbieco.<br />
+                              - "Ehm, hai sentito quel messaggio? Vuoi far scendere degli uomini nella tana del leone?" - 
+                              gli occhi di Beppe brillarono di una luce oscura.<br />
+                              - "È una mossa astuta, invece: non si aspetteranno mai che oseremmo apparire nel mezzo di
+                              una loro città. Frruuu, ti assegno il compito di formare la squadra di sbarco, io intanto
+                              mi vado a studiare il rapporto" - così dicendo il Capitano si avviò fischiettando al suo
+                              ufficio. Il Numero Uno si accasciò sulla poltrona, avrebbe voluto poter dormire e 
+                              sonnicchiare, almeno un paio di minuti, ma sapeva che quella era un lusso che non avrebbe 
+                              potuto concedersi, con una forza di volontà da catena montuosa, Frruuu iniziò a chiamare 
+                              quelli che avrebbero fatto parte della squadra da sbarco:<br />
+                              - "Signor Da Nee, faccia andare in sala teletrasporto 1 i Signori Jacket, Rael, T'Mik, 
+                              TaNutri, Smith, e quei due della sicurezza, come si chiamano..."<br />
+                              - "Cip e Ciop?" - intervenne Da Nee prima di riuscire a fermarsi, Frruuu sospirò rumorosamente.<br />
+                              - "Almeno per le missioni ufficiali gradirei che venissero usati i nomi completi, comunque 
+                              li chiami e si presenti anche lei: mi spiace ma almeno per un po' dovrà evitare di 
+                              appartarsi col suo Sàpek" - Arrossendo visibilmente, Da Nee lasciò la sua postazione per 
+                              andare a raggiungere i suoi colleghi in sala teletrasporto. Frruuu chiamò il Capitano:<br />
+                              - "Beppe, la squadra è pronta a scendere."<br />
+                              - "Ottimo, adesso arrivo"<br />
+                              - "No Beppe, mi spiace ma è troppo pericoloso. Andrò io al comando della squadra" - ci fu un
+                              lungo silenzio.<br />
+                              - "Va bene, ma stai attenta Cocca, mi raccomando."<br />
+                              <br />
+                              Il gruppo degli Afrodisiaci si materializzò in una via laterale ad una grande piazza, 
+                              dove al centro si ergeva la statua di un ragazzino con un buffo cappello. Appena 
+                              ricomposti, degli scoppi molto vicini li fecero buttare a terra. Solo Da Nee era rimasto in 
+                              piedi: con aria ispirata fissava il vuoto:<br />
+                              - "Signor Frruuu, mi sembra di sentire dei colpi di arma da fuoco."<br />
+                              - "Se adesso mi dice che percepisce della ostilità io le faccio del male" - rispose la horta.<br />
+                              Aspettarono qualche secondo, poi, non sentendo più nulla si rialzarono.<br />
+                              - "Certo che è stata una gran bella accoglienza"<br />
+                              - "Meglio così, in questo modo nessuno potrà farsi delle illusioni su questo pianeta"<br />
+                              Frruuu si mise in testa al gruppo, e con molta circospezione uscirono allo scoperto, ma un
+                              grido li fece fermare:<br />
+                              - "Ehi, Gang, fermi dove siete" - tre uomini e una donna, tutti armati con sofisticatissimi 
+                              mitra, si avvicinarono ad armi spianate ai federali.
+                              - "Fate parlare me" - disse Frruuu mentre si avvicinava ai nuovi arrivati - "Salve indigeni, 
+                              sono il Numero Uno..." - uno degli uomini, quello che indossava la donna tutta spalmata sul
+                              suo fianco sinistro, sbuffò rumorosamente:<br />
+                              - "C'è un solo Numero Uno, e non va in giro rasoterra"<br />
+                              - "Intendevo dire che sono il Primo Ufficiale della nave Afrodite e..." - gli indigeni
+                              iniziarono a sghignazzare.<br />
+                              - "Cos'è? Un nuovo casinò?" - chiese l'uomo asciugandosi gli occhi. Frruuu pensò che 
+                              potevano anche fare a meno dell'accento:<br />
+                              - "Lasciamo perdere, ma adesso dovrete farci un favore" - l'uomo tornò improvvisamente serio.<br />
+                              - "Dipende dal prezzo"<br />
+                              - "Portateci dal vostro capo. - chiese Frruuu, vergognandosi molto di dover ricorrere ad un
+                              simile trito espediente - Potremmo darvi qualcosa di cui essere soddisfatti" - gli occhi
+                              dell'uomo brillarono avidi.<br />
+                              - "D'accordo, aspettate qui" - e si allontanò velocemente con gli altri. Frruuu ne
+                              aproffitò per dare un'occhiata in giro:<br />
+                              - "Occhi aperti... gang. State vicini". Si avvicinarono alla statua al centro della piazza. Sulla
+                              sua base si poteva leggere un'iscrizione:<br />
+                              <span class="diary-cpu">"In questo luogo moriva<br />
+                              dopo decennale attesa<br />
+                              della sua fetta<br />
+                              un vero iotiano"</span><br />
+                              <br />
+                              Frruuu si mise in contatto con la nave:<br />
+                              - "Allora Cocca, state tutti bene?"<br />
+                              - "Finora, diciamo che il Primo Contatto avrebbe potuto essere più piacevole" - tenendo il
+                              tricorder tra i gangli, Frruuu fece un giro del circondario per dare un'idea dell'ambiente 
+                              a quelli rimasti sulla nave. Il Capitano fu attratto dalla statua:<br />
+                              - "Piccola, avvicinati a quella statua... sai chi è?"<br />
+                              - "Non ne ho idea, non c'è il nome. Solo un'iscrizione" - quando il capitano ebbe letto la
+                              dedica seppe con certezza chi era il vero iotiano:<br />
+                              - Sai, cocca, quando torni a bordo ti devo raccontare una storia interessante"<br />
+                              Da Nee intanto era stato attratto da uno dei negozi che circondavano la piazza. Nella vetrina
+                              erano esposti strani apparecchi composti principalmente da un grande visore quadrato.<br />
+                              - "Frruuu, Signore, corra!" - il Primo Ufficiale raggiunse Da Nee e questi le indicò 
+                              semplicemente gli strani apparecchi. Sullo schermo erano apparsi un uomo e una donna con
+                              sovraimpresse alcune notizie:<br />
+                              <span class="diary-cpu">"Falso federale ferito in scontro a fuoco."</span> - Frruuu non poteva credere ai suoi occhi,
+                              anche perché non li aveva.<br />
+                              - "Certo che questi non perdono tempo ad organizzare truffe"<br />
+                              Intanto il loro gruppo aveva 
+                              attirato una folla che non faceva che importunare con domande e pretese. Per fortuna in 
+                              una delle vie laterali si era formata una mega rissa tra decine di persone di bande rivali.<br />
+                              - "Andiamo via presto" - ordinò Frruuu, troppo tardi però per impedire a Peter Jacket di
+                              gettarsi nella mischia, cercando di fare da paciere.<br />
+                              - "Dottore, è grave?"<br />
+                              - "No, zolo un paio di coztole rotte, un dente spezzato, un occhio nero, due dita della mano 
+                              deztra spezzate e il nazo rotto" - sputacchiò T'Mik.<br />
+                              - "Ehm... Dottore..."<br />
+                              - "Lo zo, lo zo, è tutta quezta polvere da zparo"<br />
+                              - "Oh beh, allora..." - Jacket non riusciva a capire bene cosa stessero dicendo quelle voci.
+                              L'unica cosa che sentiva bene era il ronzio nelle orecchie e il dolore in varie parti del
+                              corpo.<br />
+                              - "Gli dia qualcosa che lo rimetta in piedi"<br />
+                              - "Già fatto, Zignore, in pochi zecondi dovrebbe riprendere conozcenza" - prevedibilmente,
+                              alcuni secondi dopo il Signor Jacket era di nuovo lucido e sui suoi piedi, mezza faccia era blu
+                              ma almeno ora era verticale.<br />
+                              - "Quei maledetti, come hanno osato..." - Frruuu non lo fece terminare:<br />
+                              - "Ha mai letto nulla circa la Prima Direttiva? Non si azzardi a fare una cosa del genere, 
+                              almeno senza che glielo ordini. Chiaro?" - Jacket scattò sull'attenti.<br />
+                              - "Sì, Signore" - Frruuu lo guardò sospettosa. Stava certamente macchinando qualcosa per
+                              obbedire senza fiatare. Frruuu cercò di raggruppare i suoi uomini: alcuni stavano
+                              seguendo chissà quale notizia data da quegli apparecchi nel negozio; Ciop stava dando di
+                              gomito ad Adam Smith, rosso in volto; Ta Nutri stava provando uno dei mezzi di trasporto
+                              dei nativi, con scarsi risultati; Jacket era sparito. Frruuu vide arrivare da lontano Cip,
+                              con addosso solo una scatola di cartone appena sufficiente a coprire le vergogne. Frruuu
+                              era indignata:<br />
+                              - "Signor Kelley!" - lo apostrofò la horta il membro della sicurezza tentò una debole difesa.<br />
+                              - "Cercavo di essere amichevole. Ho accettato di giocare a un loro gioco: Fizzbin, e..."<br />
+                              - "Ed è finito nudo"<br />
+                              - "Sì ma - sorrise soddisfatto Kelley - ho salvato il comunicatore" disse indicando lo
+                              strumento, saldamente attaccato alla scatola.<br />
+                              - "Parlerò a Rael del suo comportamento. Se la dovrà vedere con lei" - Kelley impallidì, 
+                              pensando alla camera delle torture allestita dalla persona in questione.<br />
+                              Frruuu vide riapparire Jacket con un largo sorriso soddisfatto tra i lividi. Frruuu non
+                              ebbe il coraggio di chiedere nulla.<br />
+                              - "Cocca, è meglio se risalite a bordo: il nostro medico ha finalmente sintetizzato un
+                              antidoto contro i sogni.<br />
+                              - "Perfetto. Raccolgo quello che è rimasto della squadra e risaliamo"<br />
+                              - "Hai avuto delle perdite?" - chiese allarmato il Capitano.<br />
+                              - "Non ancora".<br />
+                              <br />
+                              Radunare tutti gli Afrodisiaci non richiese molto tempo. Appena arrivati a bordo
+                              trovarono Carter Carte che li iniettò con l'antidoto prima ancora che scendessero dalla
+                              piattaforma. Frruuu si sentiva molto lontana dalla sua solita forma rocciosa:<br />
+                              - "Ragazzi, se mi volete sono nel mio alloggio, vado a riposare" - e così dicendo si
+                              allontanò lasciando che il resto della squadra di sbarco facesse rapporto al
+                              capitano.<br />
+                        </p>
+                        <div class="diary-cpu">
+                              <br />GM Frruuu<br />
+                              XO<br />
+                              USS Afrodite NCC-1863
+                        </div>
+
+                  </div>
+            </div>
+
+            <!-- Navigation -->
+            <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+                  <a href="log_mission7.html" class="btn-back">
+                        <i class="fa-solid fa-chevron-left"></i> Log Mission: 7
+                  </a>
+                  <div style="margin-left:auto;display:flex;gap:8px;">
+                        <a href="log_mission7_01.html" class="btn-back" style="margin-bottom:0;">
+                              <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                        <a href="log_mission7_03.html" class="btn-back" style="margin-bottom:0;">
+                              <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                  </div>
+            </div>
+
+      </main>
+
+      <!-- FOOTER -->
+      <footer id="site-footer"></footer>
+      <script src="script.js"></script>
+</body>
+
+</html>

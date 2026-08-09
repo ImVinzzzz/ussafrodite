@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mission 7 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission7.html">Mission: 7</a>
+      <span>›</span>
+      <span class="current">Ordini da StarFleet</span>
+    </div>
+
+    <!-- Diary page -->
+    <!-- div class="diary-header" style="background: linear-gradient(135deg, #FF9900 0%, #BF6500 100%);" -->
+    <div class="diary-header" style="background: linear-gradient(135deg, #BF6500 0%, #FF9900 100%);">
+      <!-- Testo intestazione -->
+      <div class="diary-header-text">
+        <div class="diary-header-role">
+          <i class="fa-regular fa-circle-dot"></i> &nbsp;Comunicazione
+        </div>
+        <div class="diary-header-name">Ordini da StarFleet</div>
+        <div class="diary-header-mission">Mission: 7 — The Cut!</div>
+      </div>
+      <!-- Miniatura PG + link scheda >
+      <div class="diary-header-pgbox">
+        <img src="images/crew/alighieri.gif" alt="Alighieri"
+             onerror="this.style.opacity='0.2'" />
+        <a href="crew_alighieri.html">
+          <i class="fa-solid fa-image-portrait"></i> Scheda
+        </a>
+      </div -->
+    </div>
+
+    <div class="diary-body">
+
+      <div class="stardate-line">
+        <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+        <span class="stardate-value">10301.15</span>
+      </div>
+
+      <p>
+        Finalmente il Capitano Alighieri riesce a rimanere solo per visionare il messaggio dalla Flotta che è stato così 
+        faticosamente decriptato. Sul visore compare una sezione di spazio familiare, quindi l'immagine si stringe su un 
+        pianeta identico a quello intorno a cui la nave sta orbitando.<br />
+        - "Quello che sta osservando - la voce inconfondibile della dottoressa Kalligàlenos lo distoglie dalla 
+        contemplazione - è Sigma Iotia II, uno degli scheletri più 'spinosi' nell'armadio della Flotta stellare. Il 
+        pianeta, abitato da umanoidi molto simili ai terrestri, ha subito ben due contaminazioni a causa di azioni maldestre di 
+        nostri ufficiali. Una prima volta, l'equipaggio della USS Horizon dimenticò un libro sulla malavita americana 
+        del 1920 'Chicago Mobs of the Twenties', provocando il totale adeguamento della società planetaria alle regole 
+        della criminalità di quell'epoca. In seguito, l'Enterprise del capitano Kirk visitò il pianeta in data stellare 
+        4598.0, ma per un malaugurato incidente, uno dei comunicatori rimase sulla superficie. È presumibile, facendo 
+        una proiezione basata sui risultati della prima contaminazione, che gli Iotiani abbiano adeguato la loro società 
+        alle nuove tecnologie di cui sono venuti in possesso, trasformando il loro sistema politico basato sulla 
+        prevaricazione violenta degli avversari, in un più complesso regime basato sul possesso e sul controllo delle 
+        comunicazioni di massa. A parte il tipo di 'arma' usata, non dovrebbero esserci state molte altre mutazioni nel 
+        costume o nella morale di questo popolo.<br />
+        Le allego la registrazione del diario di bordo del capitano Kirk relativa allo sbarco in questione e le 
+        suggerisco di studiarsela a fondo: chissà che non scopra di avere già qualche elemento per risolvere la sua 
+        missione. Inutile dirle che ogni ulteriore contaminazione, seppur minima, provocherà il definitivo collasso del 
+        sistema degli Iotiani... oltre a una irreversibile svolta della sua carriera nella Flotta! Attendo con ansia di 
+        vedere come risolverà il problema, capitano".<br />
+        <br />
+        Alighieri si accinge ad aprire il file contenente il diario del capitano Kirk, quando viene distratto dal trillo
+        del suo comunicatore.<br />
+        - "Infermeria a capitano! - la voce del suo ufficiale medico rivela una notevole eccitazione - Signore, siamo 
+        venuti a capo della questione dell'aumento dell'attività onirica: si tratta di un virus!"<br />
+        - "Un virus? Non era provocata dalle onde radio?"<br />
+        - "No, signore. Si è trattato solo di una concomitanza accidentale, anche se devo ammettere di essermi lasciato 
+        ingannare dalla cosa. La squadra di sbarco deve aver contratto la malattia sul pianeta dei ripetitori, poi l'ha 
+        portata a bordo. I tempi di incubazione non sono regolari e per questo i disturbi non si sono manifestati per 
+        primi nel personale sceso sul pianeta..."<br />
+        - "Ha già trovato una cura?"<br />
+        - "No, signore, ma io e il mio staff ci stiamo già lavorando!"<br />
+        - "Non perda tempo, allora. Ho bisogno della massima efficienza nel più breve tempo possibile! - ordina Alighieri 
+        incrociando le dita dietro la schiena - Chiudo!"<br />
+        <br />
+        Almeno un problema sembra avviato alla soluzione; ora vediamo di capire che cosa combinò Kirk e cerchiamo di 
+        venire a capo di questa ingarbugliata matassa...
+      </p>
+    </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission7.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 7
+      </a>
+      <!-- Primo diario: bottone precedente spento -->
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <span class="btn-back" style="opacity:0.25;cursor:default;pointer-events:none;margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </span>
+        <a href="log_mission7_01.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

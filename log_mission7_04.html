@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario Da Nee – Mission 7 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission7.html">Mission: 7</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM Da Nee</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-dna"></i> &nbsp;SCI &nbsp;·&nbsp; XSO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM Da Nee</div>
+          <div class="diary-header-mission">Mission: 7 — The Cut!</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/danee_l.jpg" alt="GM Da Nee"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_danee.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10301.15</span>
+        </div>
+
+        <!-- PROLOGO --
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          Finalmente il giorno...
+        </p> -->
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          La festicciola con gli altri equipaggi era andata molto bene... e ancor meglio era andato il 'party' privato:
+          Sàpek ha apprezzato molto la mia idea per un uso 'alternativo' della Nutella!<br />
+          Purtroppo abbiamo avuto solo 2 ore per noi, prima del mio turno in Plancia.<br />
+          <br />
+          Avevo appena preso posto davanti alla mia consolle in Plancia, quando si apre il turbolift, e ne esce Frruuu
+          come non l'avevo mai vista prima: evidentemente non aveva riposato affatto, in preda all'epidemia che ormai da
+          tempo ci stava facendo impazzire tutti. Si trascina zig-zagando verso la sua poltroncina ma... urta Becco che
+          carambola verso la paratia e finisce a terra. Peter, nel vederlo, accenna un 'sorriso' quasi di soddisfazione.
+          Fortunatamente il morale è alto, anche se le trasmissioni con la Federazione sono ancora impossibili.<br />
+          Nel frattempo io riesco ad intercettare una trasmissione radio dal pianeta, e la commuto ai diffusori della
+          Plancia:<br />
+          <br />
+          <span class="diary-em">"Una notizia dell'ultima ora: sono state intercettate comunicazioni radio da parte
+            della Federazione, da
+            queste si evince che alcuni suoi rappresentanti stanno per raggiungere il nostro pianeta. La Cupola, in un
+            comunicato ufficiale rilasciato solo pochi minuti fa, ha dichiarato che se i Federali sono venuti per
+            prendersi una fetta della nostra economia, troveranno pane per i loro denti e invitano tutti i cittadini a
+            tenere bene oliato il mitra, con una scorta di cartucce: 'Scorrerà sangue Federale se quei disgraziati
+            oseranno allungare le loro sporche mani sui nostri guadagni' ha dichiarato il Consigliori Luska, della
+            Famiglia Strong. Per ora è tutto, vi terremo informati sugli ultimi sviluppi in varie edizioni speciali
+            appena giungeranno altre notizie. Riprendiamo, ora, con la solita programmazione. Passiamo dunque la linea a
+            Misteri della Mazzetta tenuta da Don Ersily. Buongiorno."</span><br />
+          <br />
+          - "Da Nee, da dove proveniva quella trasmissione?" - mi chiede il Capitano avvicinandosi alla mia
+          consolle.<br />
+          - "Secondo le letture, la trasmissione proveniva da una delle principali città del continente a nord del
+          pianeta"<br />
+          - "Benissimo, vuol dire cha la squadra di sbarco scenderà lì".<br />
+          Frruuu lanciò a Beppe un'occhiataccia...<br />
+          - "Ehm, hai sentito quel messaggio? Vuoi far scendere degli uomini nella tana del leone?"<br />
+          Ma Beppe pareva avere le idee molto chiare al riguardo:<br />
+          - "È una mossa astuta, invece: non si aspetteranno mai che oseremo apparire nel mezzo di una loro città.
+          Frruuu, ti assegno il compito di formare la squadra di sbarco, io intanto mi vado a studiare il
+          rapporto"<br />
+          E mentre il Capitano si avviò fischiettando al suo ufficio, Frruuu si accasciò sul suo gel polimorfico, e
+          iniziò a fare l'appello. Io speravo dentro di me che non mi chiamasse ma...<br />
+          - "Signor Da Nee, faccia andare in Sala Teletrasporto 1 i Signori Jacket, Rael, T'Mik, Ta Nutri, Smith, e
+          quei due della sicurezza, come si chiamano..."<br />
+          - "Cip e Ciop?" - dissi senza riuscire a trattenermi...<br />
+          - "Almeno per le missioni ufficiali gradirei che venissero usati i nomi completi, comunque li chiami e si
+          presenti anche lei: mi spiace ma almeno per un po' dovrà evitare di appartarsi col suo Sàpek".<br />
+          A quelle parole devo essere arrossito vistosamente, a giudicare dalla faccia che fecero in Plancia.<br />
+          Non mi restò che lasciare la mia postazione e chiamare i miei colleghi a rapporto in ST1 mentre mi dirigevo
+          sconsolato al turbolift.<br />
+          Appena arrivo in ST1, prima di salire sulla pedana, Rael ci ammonisce di stare attenti a non 'perdere' i phaser
+          o i tricorder... come se succedesse spesso di perdere l'equipaggiamento durante le missioni di sbarco!!!<br />
+          <br />
+          <span class="stardate-value">Pochi minuti dopo, sulla superficie</span>
+
+          Ci materializzammo in un vicolo laterale di quella che doveva essere la strada principale, nei pressi di una
+          grande piazza.<br />
+          Non appena ci materializzammo, i miei colleghi si buttarono a terra, forse per gli scoppiettii che si
+          sentivano in lontananza.<br />
+          - "Signor Frruuu, mi sembra di sentire dei colpi d'arma da fuoco" - le dico io.<br />
+          - "Se adesso mi dice che percepisce dell'ostilità... io le faccio del male!" - mi rispose Frruuu, anche se non
+          capii esattamente cosa intendesse: perché mai doveva minacciarmi?<br />
+          <br />
+          Poco dopo, non sentendo più nulla, tutti si rialzarono.<br />
+          - "Certo che è stata una gran bella accoglienza"<br />
+          - "Meglio cosi: in questo modo nessuno potrà farsi delle illusioni su questo pianeta"<br />
+          Poi, Frruuu in testa, uscimmo allo scoperto con molta circospezione, ma un grido ci fece bloccare:<br />
+          - "Ehi, gang, fermi dove siete!" - tre uomini ed una donna, si avvicinano ad armi spianate.<br />
+          - "Fate parlare me" - ci disse Frruuu mentre si avvicinava loro - "Salve indigeni, sono il Numero Uno..." uno
+          degli uomini, quello che doveva essere il 'capo' del gruppo, sbuffò rumorosamente:<br />
+          - "C'è un solo Numero Uno, e non va in giro rasoterra"<br />
+          - "Intendevo dire che sono il Primo Ufficiale della nave Afrodite e..." - a queste parole, iniziarono a
+          sghignazzare.<br />
+          - "Cos'è, un nuovo casinò?" - chiese l'uomo asciugandosi gli occhi.<br />
+          - "Lasciamo perdere... ma adesso dovrete farci un favore" - aggiunse la horta.<br />
+          L'uomo si fece improvvisamente serio: "Dipende dal prezzo!"<br />
+          - "Portateci dal vostro capo. - chiese Frruuu - Potremmo darvi qualcosa di cui essere soddisfatti".<br />
+          - "D'accordo, aspettate qui" - e si allontanò velocemente con gli altri tre dietro.<br />
+          <br />
+          Ne approfittammo per dare un'occhiata in giro:<br />
+          - "Occhi aperti... gang. State vicini".<br />
+          Ci avvicinammo ad una grande statua situata su un basamento al centro della piazza. C'era un'iscrizione sulla
+          targa:<br />
+          <br />
+          <span class="diary-em">
+            In questo luogo moriva, <br />
+            dopo decennale attesa <br />
+            della sua fetta, <br />
+            un vero iotiano.</span> <br />
+          <br />
+          Ad un tratto un edificio attirò la mia attenzione. Aveva una grossa apertura rivestita di una lastra
+          traslucida di silicio trasparente. Attraverso il vetro si vedevano esposti degli strani apparecchi elettronici
+          a forma di
+          parallelepipedo, con un'apertura frontale che pareva un visore. Notai una scritta preoccupante, così chiamai
+          il Numero Uno:<br />
+          - "Frruuu, Signore, corra!"<br />
+          Quando mi raggiunse, le indicai gli strani apparecchi, sullo schermo erano apparsi un uomo e una donna che
+          davano le 'ultime notizie':<br />
+          <span class="diary-em">"Un falso federale ferito in scontro a fuoco..."</span><br />
+          Non potevamo credere alle nostre orecchie:<br />
+          - "Certo che questi non perdono tempo ad organizzare truffe!"<br />
+          <br />
+          Nel frattempo un folto gruppo di autoctoni ci si era affollato intorno, e non facevano altro che importunarci
+          con domande e pretese assurde. Fortunatamente in un vicolo laterale si era formata una rissa tra bande rivali,
+          e ne approfittammo per dileguarci:<br />
+          - "Andiamo via presto!" - ci ordinò Frruuu. Ma non abbastanza tempestivamente per impedire a Peter di buttarsi a
+          capofitto nella mischia, nel vano tentativo di pacificare gli animi. Ne uscì pesto!<br />
+          - "Dottore, è grave?"<br />
+          - "No, zolo un paio di coztole rotte, un dente spezzato, un occhio nero, due dita della mano deztra spezzate e
+          il nazo rotto" - diagnosticò fredda la dottoressa T'Mik.<br />
+          - "Ehm... Dottore..."<br />
+          - "Lo zo, lo zo, è tutta quezta polvere da zparo"<br />
+          - "Oh beh, allora... gli dia qualcosa che lo rimetta in piedi"<br />
+          - "Già fatto, Zignore, in pochi zecondi dovrebbe riprendere conozcenza"<br />
+          Alcuni secondi dopo Peter Jacket era di nuovo lucido e in piedi, anche se aveva solo mezza faccia!<br />
+          - "Quei maledetti, come hanno osato..." - Frruuu non lo fece finire.<br />
+          - "Ha mai letto nulla circa la Prima Direttiva? Non si azzardi più a fare una cosa del genere, almeno senza
+          che glielo ordini. Chiaro?" - Peter scattò sull'attenti:<br />
+          - "Sissignore!"<br />
+          La nostra squadra era un po' 'dispersa' e 'malandata', come al solito:<br />
+          Ciop e Adam seguivano i notiziari da quegli apparecchi esposti in vetrina; Jidtzia ebbe un incidente con una
+          strana vettura a motore; Cip sbucò da un portone con indosso solo una scatola di cellulosa e il comunicatore;
+          Peter sparì non so dove, per tornare poco dopo con un'aria molto soddisfatta... dal canto mio, stavo gelando
+          per il freddo: non vedevo l'ora di risalire a bordo!<br />
+          <br />
+          Come se mi avesse sentito, il Capitano ci richiamò a bordo, informandoci che Robert aveva sintetizzato un
+          antidoto contro i 'sogni'.<br />
+          Come eravamo arrivati, così ripartimmo dalla superficie: tra gli spari degli iotiani!<br />
+          - "Signor Frruuu, mi sembra di sentire degli altri spari..." - dissi, ma Frruuu mi freddò!<br />
+          - "Squadra, in posizione! Capo Braxx... energia!"<br />
+          <br />
+          Appena rimaterializzati a bordo, trovammo ad accoglierci Carter Carter che ci iniettò un hypospray prima
+          ancora di avere il tempo di scendere dalla pedana.<br />
+          Eravamo tutti stanchi... e io dovevo assolutamente scaldarmi... magari sotto le coperte, accoccolato a
+          Sàpek!<br />
+        </p>
+        <div class="diary-cpu">
+          <br />GM Da Nee<br />
+          XSO<br />
+          USS Afrodite NCC-1863
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission7.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 7
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission7_03.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission7_05.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

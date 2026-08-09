@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diario T'Mik – Mission 7 | USS Afrodite</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
+
+  <!-- HEADER -->
+  <header id="site-header"></header>
+
+  <main id="main-content">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+      <span>›</span>
+      <a href="log.html">Log</a>
+      <span>›</span>
+      <a href="log_mission7.html">Mission: 7</a>
+      <span>›</span>
+      <span class="current">Diario Personale – GM T'Mik</span>
+    </div>
+
+    <!-- Diary page -->
+    <div class="diary-wrapper">
+
+      <div class="diary-header" style="background: linear-gradient(135deg, #008080 0%, #005555 100%);">
+        <!-- Testo intestazione -->
+        <div class="diary-header-text">
+          <div class="diary-header-role">
+            <i class="fa-solid fa-staff-snake"></i> &nbsp;MED &nbsp;·&nbsp; CMO &nbsp;·&nbsp; Diario Personale
+          </div>
+          <div class="diary-header-name">GM T'Mik</div>
+          <div class="diary-header-mission">Mission: 7 — The Cut!</div>
+        </div>
+        <!-- Miniatura PG + link scheda -->
+        <div class="diary-header-pgbox">
+          <img src="images/crew/tmik_l.jpg" alt="GM T'Mik"
+            onerror="this.outerHTML='<div style=\'width:72px;height:90px;background:rgba(128,0,0,0.15);border-radius:6px;border:2px dashed rgba(128,0,0,0.35);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px\'><i class=\'fa-solid fa-circle-user\' style=\'font-size:2rem;color:rgba(128,0,0,0.45);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.45rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+          <a href="crew_tmik.html">
+            <i class="fa-solid fa-image-portrait"></i> Scheda
+          </a>
+        </div>
+      </div>
+      <div class="diary-body">
+
+        <div class="stardate-line">
+          <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+          <span class="stardate-value">10301.15</span>
+        </div>
+
+        <!-- PROLOGO -->
+        <div class="diary-section-title">Prologo</div>
+
+        <p>
+          La dottoressa T'Mik si alzò di soprassalto. Stranamente non aveva sentito il computer che come ogni mattina
+          avrebbe dovuto svegliarla alle 7:00. Era molto strano, ma evidentemente non era riuscita a vincere la
+          stanchezza. Aveva dormito per 1.5 ore, le restanti ore della notte le aveva passate a cercare di trovare una
+          cura per l'improvvisa quanto bizzarra epidemia di 'sogni' che affliggeva tutto l'equipaggio. E così aveva
+          dovuto sopportare i casi più disparati, dal sonnambulismo a sogni a base di nutella, birra romulana, paesi
+          delle meraviglie e non ultimo il caso più grave, la Renzi che rifiutava di svegliarsi.<br />
+          Le razze prive di logica sono così illogiche, si trovò a pensare. Ma doveva sbrigarsi. Era in ritardo per la
+          riunione degli ufficiali superiori.<br />
+          Si precipitò in sala riunioni. Il capitano non era ancora arrivato e con aria indifferete si sedette al suo
+          posto.<br />
+          <br />
+          Dopo un accurato briefing degli altri ufficiali, l'attenzione di tutti si concentrò su quella che era stata
+          infomalmente definita 'emergenza onirica'.
+        </p>
+
+        <!-- DIARIO -->
+        <div class="diary-section-title">Diario di Missione</div>
+
+        <p>
+          - "Capitano, dopo ripetute analisi sono giunta alla conclusione che la causa dell'attività onirica è un VIRUS".<br />
+          - "Ah davvero? Questa poi..."<br />
+          - "Capitano se posso permettermi..."<br />
+          - "Lei taccia, Dott. Van Bajark e non mi interrompa... - La dottoressa guardò il suo secondo inarcando un
+          sopracciglio, unico segnale della sua crescente irritazione.<br />
+          Come se nulla fosse, continuò:<br />
+          - ... "È stato sicuramente contratto dalla squadra di sbarco sul pianeta dei ripetitori e poi, una volta che
+          loro sono risaliti a bordo, è stata diffuso per tutta la nave. I tempi di incubazione sono decisamente
+          irregolari e questo spiega i diversi tempi di reazione alla malattia che si sono manifestati: il caso più
+          grave finora è stato registrato dal signor Renzi la quale rifiuta ogni nostro tentativo di aiutarla a
+          svegliarsi per poter continuare a sognare".<br />
+          - "Ma capitano..." - provò di nuovo a interloquire Van Bajark.<br />
+          - "Dottore, la prego di smetterla di interferire nel mio rapporto"<br />
+          A questo punto il capitano cominciava a diventare curioso.<br />
+          - "Si può sapere cosa vuole aggiungere? Ha forse un'ipotesi alternativa?"<br />
+          - "Ecco, io penso..." - ma subito T'Mik lo interruppe:<br />
+          - "Per rendere giustizia al mio staff devo riferire che questa non è l'unica valutazione: il mio vice 
+          afferma trattarsi semplicemente di stress".<br />
+          - "Finalmente!" - sospirò Van Bajark sottovoce.<br />
+          - "Tuttavia, devo anche aggiungere che le probabilità sono di 1 contro 34.827"<br />
+          - "Sono molto basse" - rimuginò il capitano.<br />
+          - "Sono anche molto precise"- sottolineò la dottoressa.<br />
+          - "Non avevo dubbi su questo dottoressa. Comunque non trascurate niente, voglio una cura definitiva!"<br />
+          - Sì, capitano" - risposero all'unisono i due medici.<br />
+          <br />
+          Dopo il briefing, i due ufficiali si recano in infermeria: era necessario rimettersi immediatamente al lavoro.<br />
+          Ad aspettarli c'era Carter Carter, che invece di lavorare armeggiava con un armadio.<br />
+          Al loro arrivo si voltò con aria colpevole.<br />
+          - "Dottoressa, io..."<br />
+          - "Cosa c'è ancora? Cos'hanno sognato questa volta?"<br />
+          - "Un furto"<br />
+          - "Ah. Che originalità. E chi è questo paziente?"<br />
+          - "No, dotoressa, non ha capito. Qualcuno ha davvero rubato il suo phaser, non è un sogno"<br />
+          - "Davvero? Interessante." - La dottoressa imperturbabile si avvicinò all'armadietto dove constatò la
+          veridicità dell'affermazione.<br />
+          A questo punto c'era una sola mossa logica da fare: chiamò la sicurezza e informò Rael dell'accaduto.<br />
+          Nel frattempo decise di dedicarsi a compiti più importanti.<br />
+          <br />
+          Proprio mentre i medici si accingevano a sperimentare le nuove cure, l'interphon si attivò e la dottoressa
+          fu convocata in sala teletrasporto 1 con la squadra di sbarco.<br />
+          - "Le affido l'Infermeria, Robert. Mi raccomando tenga d'occhio Carter, stia lontano da Becco e visto che c'è dia anche
+          una spolveratina sopra gli armadi... Sa, Ernestina è così impegata. Ah dimenticavo, pensi a quel vaccino,
+          altrimenti il capitano la scortica vivo."<br />
+          - "Agli ordini dottoressa. E si diverta"<br />
+          - "Il divertimento è un'emozione umana... tuttavia farò il possibile"<br />
+          <br />
+          La dottoressa si diresse in sala teletrasporto dove incontrò il resto della squadra di sbarco: Frruuu, Rael,
+          Jacket, Da Nee e TaNutri, oltre ad alcuni addetti alla sicurezza. Dopo una esortazione di Rael a tenere d'occhio il
+          proprio equipaggiamento per evitare ulteriori contaminazioni, la squadra di sbarco si dispose sulle
+          piattaforme del teletrasporto.<br />
+          <br />
+          Non appena sbarcati sul pianeta, la dottoressa si accorse che si sentivano spari in lontananza, che da una
+          deduzione logica arrivò a definire di arma da fuoco. Alcuni dei passanti che avevano riconosciuto i nuovi
+          arrivati quali ufficiali della federazione dissero che li consideravano deboli in quanto la federazione non
+          passava da un centinaio d'anni a ritirare una certa 'fetta della torta'.<br />
+          La dottoressa inarcò un sopracciglio e tentò di informare cortesemente gli astanti che non poteva assaggiare
+          nessuna torta, neppure una fetta in quanto dopo l'ultimo Nutella party aveva dovuto mettersi a dieta. Dagli
+          sguardi e dai risolini dei suoi compagni si accorse ben presto di aver frainteso l'offerta. Poco più tardi 
+          fu richiamata ai suoi doveri di medico: il loro gruppo aveva attirato una folla che non faceva che importunare
+          con domande e pretese ma proprio in quel momento in una delle vie laterali si era formata una mega rissa tra
+          decine di persone di bande rivali e Jacket aveva pensato bene di esternare le sue illogicità ed impulsività 
+          del tutto umane offrendosi da paciere. Ora giaceva a terra, pesto e dolorante, ma ancora vivo.<br />
+          - "Dottore, è grave?" -chiese Frruuu con tono preoccupato.<br />
+          - "No, zolo un paio di coztole rotte, un dente spezzato, un occhio nero, due dita della mano deztra spezzate e
+          il nazo rotto" - sputacchiò T'Mik.<br />
+          - "Ehm... Dottore..."<br />
+          - "Lo zo, lo zo, è tutta quezta polvere da zparo"<br />
+          - "Oh beh, allora... gli dia qualcosa che lo rimetta in piedi"<br />
+          - "Già fatto, Zignore, in pochi zecondi dovrebbe riprendere conozcenza."<br />
+          Pochi secondi dopo, infatti, il signor Jacket era perfettamente in grado di ascoltare una ramanzina del Numero
+          Uno sull'importanza della prima direttiva nell'approccio alle culture primitive. La dottoressa riteneva che
+          tale ramanzina sarebbe stata utile anche agli altri che si erano sparpagliati in giro incuranti di ogni
+          possibile contaminazione: Ta Nutri stava provando uno dei mezzi di trasporto dei nativi, con scarsi risultati;
+          il signor Kelley si era dedicato ad uno strano gioco con i nativi che lo aveva privato del suo abbigliamento;
+          e altri addetti della sicurezza vevano probabilmente deciso di assaggiare le varietà di alcol locali...<br />
+          Insomma, era proprio il momento di tornare a bordo. Infatti il capitano ordinò di prepararsi al teletrasporto
+          e informò il gruppo che l'antidoto era stato trovato, pare per merito di Carter.<br />
+          <br />
+          Nella sala teletrasporto il dottor Carter li aspettava con l'hypspray in mano, a dir poco raggiante: aveva già
+          somministrato il vaccino a tutto l'equipaggio e mentre si avviavano in Infermeria iniziò a ragguagliare la
+          dottoressa sui dettagli della cura.<br />
+          Purtroppo la questione virus non poté essere archiviata quel giorno: Jacket aveva deciso che non aveva
+          combinato abbastanza guai e innavvertitamente urtò una provetta che si ruppe e si sparse per tutta
+          l'Infermeria.<br />
+          La dottoressa lo guardò con aria feroce e minacciò di ordinargli una serie di dieci sedute di psicoterapia con
+          Becco. Poi la logica ebbe il sopravvento e si accontentò di distaccarlo per una settimana alle pulizie,
+          sotto lo sguardo vigile di Ernestina.<br />
+        </p>
+        <div class="diary-cpu">
+          <br />GM T'Mik<br />
+          CMO<br />
+          USS Afrodite NCC-1863
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div style="display:flex;gap:12px;margin-top:24px;align-items:center;">
+      <a href="log_mission7.html" class="btn-back">
+        <i class="fa-solid fa-chevron-left"></i> Log Mission: 7
+      </a>
+      <div style="margin-left:auto;display:flex;gap:8px;">
+        <a href="log_mission7_04.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <a href="log_mission7_06.html" class="btn-back" style="margin-bottom:0;">
+          <i class="fa-solid fa-chevron-right"></i>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
