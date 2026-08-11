@@ -780,7 +780,7 @@ nav.main-nav {
 
 .diary-header {
   border-radius: var(--radius-md) var(--radius-md) 0 0;
-  padding: 25px 32px;
+  padding: 0;
   margin-bottom: 0;
 }
 
@@ -1775,7 +1775,7 @@ footer {
 .animate-in-delay-4 { animation-delay: 0.4s; opacity: 0; }
 
 /* ── RESPONSIVE ──────────────────────────────────────────── */
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .header-elbow { width: 110px; }
   .ship-name { font-size: 0.55rem; }
   .nav-link { padding: 5px 12px; font-size: 0.62rem; }
@@ -1786,6 +1786,53 @@ footer {
   .crew-grid { grid-template-columns: repeat(2, 1fr); gap: 0.625rem; }
   .crew-thumb-info { padding: 0.625rem; }
   .crew-thumb-img { height: 7.5rem; }
+
+  /* Diary Header Mobile */
+  .diary-header {
+    flex-direction: column;
+    padding: 0;
+  }
+  .diary-header-text {
+    padding: 16px 16px 12px;
+    width: 100%;
+  }
+  .diary-header-role {
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+    margin-bottom: 4px;
+  }
+  .diary-header-name {
+    font-size: 1.15rem;
+    letter-spacing: 0.06em;
+    line-height: 1.25;
+  }
+  .diary-header-mission {
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    margin-top: 4px;
+  }
+  .diary-header-pgbox {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    padding: 8px 16px;
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    border-radius: 0;
+  }
+  .diary-header-pgbox img {
+    width: 75px;
+    height: 44px;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: var(--radius-sm);
+  }
+  .diary-header-pgbox a {
+    font-size: 0.55rem;
+    padding: 6px 14px;
+  }
 }
 
 /* ── ALLARMI ───────────────────── */
