@@ -136,7 +136,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 8px 0 4px;
+  padding: 24px 0 6px; /* Aumentata l'aria superiore a 24px (3 volte prima) */
 }
 
 .lcars-bar {
@@ -164,7 +164,7 @@ nav.main-nav {
   text-decoration: none;
   color: var(--bg-deep);
   padding: 6px 18px;
-  border-radius: var(--radius-pill);
+  border-radius: 0 19px 19px 0; /* Lati dritti a sinistra e stondati a destra */
   transition: all 0.25s ease;
   text-transform: uppercase;
   display: inline-flex;
@@ -172,7 +172,15 @@ nav.main-nav {
   gap: 8px;
 }
 
-.nav-link.home    { background: var(--lcars-orange); }
+/* Tasto HOME in rosso con scritta e icona bianche */
+.nav-link.home {
+  background: var(--lcars-red);
+  color: #ffffff;
+}
+.nav-link.home i {
+  color: #ffffff;
+}
+
 .nav-link.log     { background: var(--lcars-orange); }
 .nav-link.crew    { background: var(--lcars-lavender); }
 .nav-link.ship    { background: var(--lcars-blue); }
@@ -182,6 +190,12 @@ nav.main-nav {
   filter: brightness(1.25);
   box-shadow: 0 0 16px rgba(255,200,60,0.5);
   transform: translateY(-1px);
+}
+
+.nav-link.home:hover, .nav-link.home.active {
+  background: #d91c38;
+  color: #ffffff;
+  box-shadow: 0 0 16px rgba(220, 30, 60, 0.6);
 }
 
 .nav-status {
@@ -203,6 +217,16 @@ nav.main-nav {
   50%       { opacity: 0.3; }
 }
 
+/* ── STILI FOOTER ────────────────────────────────────────── */
+#site-footer {
+  position: relative;
+  z-index: 400; /* Prevale sulla colonna scrollabile mantenendola al bordo superiore del footer */
+  background: var(--bg-deep);
+  border-top: 2px solid var(--lcars-orange);
+  padding: 24px;
+  text-align: center;
+}
+
 /* ── LCARS DESKTOP LAYOUT (MIN-WIDTH: 992PX) ─────────────── */
 @media (min-width: 992px) {
   #site-header {
@@ -216,13 +240,13 @@ nav.main-nav {
     display: block;
   }
 
-  /* COLONNA FISSA IN ALTO A SINISTRA (Header Elbow + Navigazione Verticale) */
+  /* COLONNA FISSA IN ALTO A SINISTRA (Header Elbow + Navigazione Verticale Fissa) */
   .lcars-sidebar-fixed {
     position: fixed;
     top: 0;
     left: 0;
     width: 180px;
-    z-index: 300;
+    z-index: 350; /* Ancorato fisso in alto, indipendente dallo scroll */
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -248,7 +272,7 @@ nav.main-nav {
   .nav-link {
     width: 180px;
     height: 38px;
-    border-radius: 19px 0 0 19px;
+    border-radius: 0 19px 19px 0; /* Lati dritti a sinistra e stondati a destra */
     padding: 0 16px;
     justify-content: flex-start;
     font-size: 0.75rem;
@@ -268,10 +292,10 @@ nav.main-nav {
     pointer-events: auto;
   }
 
-  /* Riquadri decorativi variopinti LCARS */
+  /* Riquadri decorativi variopinti LCARS con lato dritto a sinistra e stondato a destra */
   .lcars-dec-block {
     width: 180px;
-    border-radius: 12px 0 0 12px;
+    border-radius: 0 12px 12px 0; /* Lati dritti a sinistra e stondati a destra */
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -310,17 +334,17 @@ nav.main-nav {
   .dec-19 { height: 80px;  background: var(--ops-color); }
   .dec-20 { height: 120px; background: var(--lcars-orange); }
 
-  /* TOP HEADER BAR SU DESKTOP */
+  /* TOP HEADER BAR SU DESKTOP CON MAGGIORE ARIA SUPERIORE */
   .header-content {
     position: fixed;
     top: 0;
     left: 180px;
     right: 0;
-    height: 45px;
+    height: 55px;
     z-index: 250;
     background: rgba(0, 8, 20, 0.95);
     backdrop-filter: blur(10px);
-    padding: 0 32px;
+    padding: 16px 32px 0; /* Stacco superiore delle barre colorate dall'alto */
     display: flex;
     align-items: center;
     border-bottom: 2px solid rgba(119, 153, 204, 0.25);
@@ -334,7 +358,7 @@ nav.main-nav {
   /* MARGINE SINISTRO PER IL CONTENUTO PRINCIPALE E FOOTER SU DESKTOP */
   #main-content {
     margin-left: 200px;
-    padding-top: 65px;
+    padding-top: 75px;
     max-width: calc(100% - 220px);
   }
 
