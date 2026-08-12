@@ -1919,40 +1919,92 @@ footer {
 
 /* ── ALLARMI ───────────────────── */
 
-/* RED ALERT */
-.red-alert {
+/* Stile base comune per i box di allerta */
+.red-alert,
+.yellow-alert,
+.purple-alert,
+.green-alert {
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   gap: 12px;
-  background: rgba(180,0,0,0.12);
-  border: 1px solid rgba(200,0,0,0.45);
   border-radius: var(--radius-sm);
-  padding: 10px 16px;
+  padding: 16px 16px;
   font-family: var(--font-display);
   font-size: 0.72rem;
   letter-spacing: 0.2em;
-  color: #ff7777;
   text-transform: uppercase;
   margin: 20px 0 16px;
+}
+
+/* Pseudo-elementi per le bande a righe 45° in alto e in basso */
+.red-alert::before,
+.red-alert::after,
+.yellow-alert::before,
+.yellow-alert::after,
+.purple-alert::before,
+.purple-alert::after,
+.green-alert::before,
+.green-alert::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 6px;
+  pointer-events: none;
+}
+
+.red-alert::before,
+.yellow-alert::before,
+.purple-alert::before,
+.green-alert::before {
+  top: 0;
+}
+
+.red-alert::after,
+.yellow-alert::after,
+.purple-alert::after,
+.green-alert::after {
+  bottom: 0;
+}
+
+/* RED ALERT */
+.red-alert {
+  background: rgba(180,0,0,0.12);
+  border: 1px solid rgba(200,0,0,0.45);
+  color: #ff7777;
   animation: alert-pulse 2.5s ease-in-out infinite;
+}
+
+.red-alert::before,
+.red-alert::after {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 68, 68, 0.85),
+    rgba(255, 68, 68, 0.85) 8px,
+    transparent 8px,
+    transparent 16px
+  );
 }
 
 /* YELLOW ALERT */
 .yellow-alert {
-  display: flex;
-  align-items: center;
-  gap: 12px;
   background: rgba(180,180,0,0.12);
   border: 1px solid rgba(200,200,0,0.45);
-  border-radius: var(--radius-sm);
-  padding: 10px 16px;
-  font-family: var(--font-display);
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
   color: #ffff00;
-  text-transform: uppercase;
-  margin: 20px 0 16px;
   animation: yellow-pulse 2.5s ease-in-out infinite;
+}
+
+.yellow-alert::before,
+.yellow-alert::after {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 0, 0.85),
+    rgba(255, 255, 0, 0.85) 8px,
+    transparent 8px,
+    transparent 16px
+  );
 }
 
 @keyframes yellow-pulse {
@@ -1962,20 +2014,21 @@ footer {
 
 /* PURPLE ALERT */
 .purple-alert {
-  display: flex;
-  align-items: center;
-  gap: 12px;
   background: rgba(100,0,180,0.25);
   border: 1px solid rgba(200,0,180,0.45);
-  border-radius: var(--radius-sm);
-  padding: 10px 16px;
-  font-family: var(--font-display);
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  color: #9600ff;
-  text-transform: uppercase;
-  margin: 20px 0 16px;
+  color: #c800ff;
   animation: purple-pulse 2.5s ease-in-out infinite;
+}
+
+.purple-alert::before,
+.purple-alert::after {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(200, 0, 255, 0.85),
+    rgba(200, 0, 255, 0.85) 8px,
+    transparent 8px,
+    transparent 16px
+  );
 }
 
 @keyframes purple-pulse {
@@ -1985,19 +2038,20 @@ footer {
 
 /* CONDITION GREEN */
 .green-alert {
-  display: flex;
-  align-items: center;
-  gap: 12px;
   background: rgba(0,180,0,0.12);
   border: 1px solid rgba(0,255,0,0.45);
-  border-radius: var(--radius-sm);
-  padding: 10px 16px;
-  font-family: var(--font-display);
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  color: #008000;
-  text-transform: uppercase;
-  margin: 20px 0 16px;
+  color: #00ff66;
+}
+
+.green-alert::before,
+.green-alert::after {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 255, 102, 0.85),
+    rgba(0, 255, 102, 0.85) 8px,
+    transparent 8px,
+    transparent 16px
+  );
 }
 
 
