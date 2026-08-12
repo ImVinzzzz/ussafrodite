@@ -136,7 +136,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 24px 0 6px; /* Aumentata l'aria superiore a 24px (3 volte prima) */
+  padding: 24px 0 6px;
 }
 
 .lcars-bar {
@@ -164,7 +164,7 @@ nav.main-nav {
   text-decoration: none;
   color: var(--bg-deep);
   padding: 6px 18px;
-  border-radius: 0 19px 19px 0; /* Lati dritti a sinistra e stondati a destra */
+  border-radius: 0 19px 19px 0;
   transition: all 0.25s ease;
   text-transform: uppercase;
   display: inline-flex;
@@ -208,10 +208,6 @@ nav.main-nav {
   animation: blink 2.5s step-end infinite;
 }
 
-.lcars-sidebar-scroll {
-  display: none;
-}
-
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0.3; }
@@ -220,7 +216,7 @@ nav.main-nav {
 /* ── STILI FOOTER ────────────────────────────────────────── */
 #site-footer {
   position: relative;
-  z-index: 400; /* Prevale sulla colonna scrollabile mantenendola al bordo superiore del footer */
+  z-index: 100;
   background: var(--bg-deep);
   border-top: 2px solid var(--lcars-orange);
   padding: 24px;
@@ -240,62 +236,65 @@ nav.main-nav {
     display: block;
   }
 
-  /* COLONNA FISSA IN ALTO A SINISTRA (Header Elbow + Navigazione Verticale Fissa) */
+  /* BARRA LATERALE COMPLETAMENTE FISSA (Bloccata al 100%, non scrolla mai) */
   .lcars-sidebar-fixed {
     position: fixed;
     top: 0;
     left: 0;
+    bottom: 0;
     width: 180px;
-    z-index: 350; /* Ancorato fisso in alto, indipendente dallo scroll */
+    z-index: 350;
     display: flex;
     flex-direction: column;
     gap: 6px;
     background: var(--bg-deep);
-    padding-bottom: 6px;
+    padding-bottom: 12px;
+    overflow: hidden;
   }
 
   .header-elbow {
     width: 180px;
     height: 85px;
+    min-height: 85px;
     border-radius: 0 !important;
     box-shadow: none;
+    flex-shrink: 0;
   }
 
+  /* NAVIGAZIONE SEMPRE VISIBILE IN ALTO */
   nav.main-nav {
     display: flex;
     flex-direction: column;
     gap: 6px;
     padding: 0;
     width: 180px;
+    flex-shrink: 0;
   }
 
   .nav-link {
     width: 180px;
     height: 38px;
-    border-radius: 0 19px 19px 0; /* Lati dritti a sinistra e stondati a destra */
+    border-radius: 0 19px 19px 0;
     padding: 0 16px;
     justify-content: flex-start;
     font-size: 0.75rem;
     box-shadow: none;
+    flex-shrink: 0;
   }
 
-  /* COLONNA SCROLLABILE DI RIQUADRI COLORATI (Sotto il 5° bottone PADD) */
-  .lcars-sidebar-scroll {
+  /* RIQUADRI COLORATI DECORATIVI NELLA COLONNA LATERALE */
+  .lcars-sidebar-blocks {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    position: absolute;
-    top: 311px;
-    left: 0;
     width: 180px;
-    z-index: 90;
-    pointer-events: auto;
+    flex: 1;
+    overflow: hidden;
   }
 
-  /* Riquadri decorativi variopinti LCARS con lato dritto a sinistra e stondato a destra */
   .lcars-dec-block {
     width: 180px;
-    border-radius: 0 12px 12px 0; /* Lati dritti a sinistra e stondati a destra */
+    border-radius: 0 12px 12px 0;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -307,6 +306,7 @@ nav.main-nav {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     opacity: 0.9;
+    flex-shrink: 0;
     transition: opacity 0.2s ease;
   }
   .lcars-dec-block:hover {
@@ -331,10 +331,8 @@ nav.main-nav {
   .dec-16 { height: 45px;  background: var(--accent-gold); }
   .dec-17 { height: 70px;  background: var(--lcars-red); }
   .dec-18 { height: 55px;  background: var(--lcars-blue); }
-  .dec-19 { height: 80px;  background: var(--ops-color); }
-  .dec-20 { height: 120px; background: var(--lcars-orange); }
 
-  /* TOP HEADER BAR SU DESKTOP CON MAGGIORE ARIA SUPERIORE */
+  /* BARRA SUPERIORE COMPLETAMENTE FISSA */
   .header-content {
     position: fixed;
     top: 0;
@@ -344,7 +342,7 @@ nav.main-nav {
     z-index: 250;
     background: rgba(0, 8, 20, 0.95);
     backdrop-filter: blur(10px);
-    padding: 16px 32px 0; /* Stacco superiore delle barre colorate dall'alto */
+    padding: 16px 32px 0;
     display: flex;
     align-items: center;
     border-bottom: 2px solid rgba(119, 153, 204, 0.25);

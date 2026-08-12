@@ -1,12 +1,14 @@
 <!-- HEADER LCARS -->
 <div class="header-lcars">
-  <!-- COLONNA DI SINISTRA FISSA (Box Arancio + Navigazione Verticale) -->
-  <div class="lcars-sidebar-fixed">
+  <!-- BARRA LATERALE FISSA (Box Arancio + Navigazione Verticale Sempre Visibile + Blocchi Decorativi) -->
+  <aside class="lcars-sidebar-fixed">
     <div class="header-elbow">
       <span class="ship-name">USS Afrodite</span>
       <span class="ship-registry">NCC-1863</span>
       <span class="ship-motto">DON'T WORRY...<br>BE HAPPY!</span>
     </div>
+    
+    <!-- NAVIGAZIONE SEMPRE VISIBILE IN ALTO -->
     <nav class="main-nav">
       <a href="index.html" class="nav-link home"><i class="fa-solid fa-location-arrow"></i> <span class="nav-text">Home</span></a>
       <a href="log.html"   class="nav-link log"><i class="fa-solid fa-bars-staggered"></i> <span class="nav-text">Log</span></a>
@@ -14,33 +16,31 @@
       <a href="ship.html"  class="nav-link ship"><i class="fa-solid fa-rocket"></i> <span class="nav-text">Ship</span></a>
       <a href="padd.html"  class="nav-link padd"><i class="fa-solid fa-tablet-screen-button"></i> <span class="nav-text">PADD</span></a>
     </nav>
-  </div>
 
-  <!-- COLONNA DI RIQUADRI COLORATI DECORATIVI SCROLLABILE (Sotto il bottone PADD) -->
-  <div class="lcars-sidebar-scroll">
-    <div class="lcars-dec-block dec-1"><span>47291</span></div>
-    <div class="lcars-dec-block dec-2"><span>SYS-OK</span></div>
-    <div class="lcars-dec-block dec-3"><span>02-482</span></div>
-    <div class="lcars-dec-block dec-4"><span>LCARS</span></div>
-    <div class="lcars-dec-block dec-5"><span>10301</span></div>
-    <div class="lcars-dec-block dec-6"><span>SEC-07</span></div>
-    <div class="lcars-dec-block dec-7"><span>NCC-1863</span></div>
-    <div class="lcars-dec-block dec-8"><span>GRID-9</span></div>
-    <div class="lcars-dec-block dec-9"><span>DECK-03</span></div>
-    <div class="lcars-dec-block dec-10"><span>MEM-88</span></div>
-    <div class="lcars-dec-block dec-11"><span>OPS-24</span></div>
-    <div class="lcars-dec-block dec-12"><span>SUB-SP</span></div>
-    <div class="lcars-dec-block dec-13"><span>STATUS</span></div>
-    <div class="lcars-dec-block dec-14"><span>ALPHA</span></div>
-    <div class="lcars-dec-block dec-15"><span>OMNICOM</span></div>
-    <div class="lcars-dec-block dec-16"><span>39611.8</span></div>
-    <div class="lcars-dec-block dec-17"><span>TAC-01</span></div>
-    <div class="lcars-dec-block dec-18"><span>ENG-04</span></div>
-    <div class="lcars-dec-block dec-19"><span>COMM</span></div>
-    <div class="lcars-dec-block dec-20"><span>TERM-END</span></div>
-  </div>
+    <!-- RIQUADRI COLORATI DECORATIVI NELLA COLONNA LATERALE -->
+    <div class="lcars-sidebar-blocks">
+      <div class="lcars-dec-block dec-1"><span>47291</span></div>
+      <div class="lcars-dec-block dec-2"><span>SYS-OK</span></div>
+      <div class="lcars-dec-block dec-3"><span>02-482</span></div>
+      <div class="lcars-dec-block dec-4"><span>LCARS</span></div>
+      <div class="lcars-dec-block dec-5"><span>10301</span></div>
+      <div class="lcars-dec-block dec-6"><span>SEC-07</span></div>
+      <div class="lcars-dec-block dec-7"><span>NCC-1863</span></div>
+      <div class="lcars-dec-block dec-8"><span>GRID-9</span></div>
+      <div class="lcars-dec-block dec-9"><span>DECK-03</span></div>
+      <div class="lcars-dec-block dec-10"><span>MEM-88</span></div>
+      <div class="lcars-dec-block dec-11"><span>OPS-24</span></div>
+      <div class="lcars-dec-block dec-12"><span>SUB-SP</span></div>
+      <div class="lcars-dec-block dec-13"><span>STATUS</span></div>
+      <div class="lcars-dec-block dec-14"><span>ALPHA</span></div>
+      <div class="lcars-dec-block dec-15"><span>OMNICOM</span></div>
+      <div class="lcars-dec-block dec-16"><span>39611.8</span></div>
+      <div class="lcars-dec-block dec-17"><span>TAC-01</span></div>
+      <div class="lcars-dec-block dec-18"><span>ENG-04</span></div>
+    </div>
+  </aside>
 
-  <!-- CONTENUTO TOP HEADER (Barre colorate, orologio e status) -->
+  <!-- BARRA SUPERIORE FISSA (Barre colorate, orologio e status) -->
   <div class="header-content">
     <div class="header-top-bar">
       <div class="lcars-bar lcars-bar-1"></div>
