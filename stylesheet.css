@@ -157,6 +157,7 @@ nav.main-nav {
   text-transform: uppercase;
 }
 
+.nav-link.home    { background: var(--lcars-red); color: var(--ghost-white); }
 .nav-link.log     { background: var(--lcars-orange); }
 .nav-link.crew    { background: var(--lcars-lavender); }
 .nav-link.ship    { background: var(--lcars-blue); }
@@ -1775,10 +1776,78 @@ footer {
 .animate-in-delay-4 { animation-delay: 0.4s; opacity: 0; }
 
 /* ── RESPONSIVE ──────────────────────────────────────────── */
-@media (max-width: 640px) {
-  .header-elbow { width: 110px; }
-  .ship-name { font-size: 0.55rem; }
-  .nav-link { padding: 5px 12px; font-size: 0.62rem; }
+@media (max-width: 768px) {
+  /* Layout LCARS Header in Mobile */
+  .header-lcars {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px 8px;
+  }
+
+  .header-elbow {
+    width: auto;
+    min-width: 0;
+    padding: 8px 24px 8px 14px;
+    border-radius: 0 0 24px 0;
+    margin-bottom: 8px;
+  }
+
+  .header-elbow .header-quote {
+    display: none;
+  }
+
+  .header-content {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Inversione dell'ordine: prima i pulsanti nav, poi la barra LCARS con l'orologio */
+  nav.main-nav {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 8px 0 12px;
+    width: 100%;
+  }
+
+  .header-top-bar {
+    order: 2;
+    padding: 4px 0 8px;
+    width: 100%;
+  }
+
+  /* Nascondi il testo dei pulsanti e lo stato del sistema su mobile */
+  .nav-text,
+  .nav-status {
+    display: none !important;
+  }
+
+  /* Trasforma i pulsanti di navigazione dell'header in cerchi perfetti */
+  .nav-link {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    filter: brightness(1.25);
+    box-shadow: 0 0 16px var(--accent-gold), 0 0 8px var(--lcars-orange);
+    transform: scale(1.05);
+  }
+
   #main-content { padding: 24px 14px 60px; }
   .banner-title { font-size: 1.3rem; }
   .hero-ship-name { font-size: 1.6rem; }
