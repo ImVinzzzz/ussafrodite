@@ -67,149 +67,64 @@ body {
 }
 
 /* ── LCARS HEADER ───────────────────────────────────────── */
-/* ── LCARS HEADER MOBILE / BASE ─────────────────────────── */
 #site-header {
   position: sticky;
   top: 0;
-  z-index: 200;
+  z-index: 100;
   background: rgba(0, 10, 25, 0.95);
   backdrop-filter: blur(12px);
-  border-bottom: none;
+  border-bottom: 2px solid var(--lcars-orange);
   padding: 0;
 }
 
 .header-lcars {
   display: flex;
-  flex-direction: column;
-}
-
-/* Su mobile la barra è orizzontale in cima */
-.lcars-sidebar-fixed {
-  position: static;
-  width: 100%;
-  background: transparent;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 8px 12px;
+  align-items: stretch;
+  min-height: 70px;
 }
 
 .header-elbow {
   background: var(--lcars-orange);
-  width: auto;
+  width: 180px;
   min-width: 140px;
-  height: 48px;
-  min-height: 48px;
-  border-radius: 0 0 20px 0;
+  border-radius: 0 0 40px 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 6px 12px;
+  justify-content: flex-end;
+  padding: 8px 16px 8px 12px;
   flex-shrink: 0;
 }
 
 .ship-name {
   font-family: var(--font-display);
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   font-weight: 700;
   color: var(--bg-deep);
-  letter-spacing: 0.08em;
-  line-height: 1.1;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 
 .ship-registry {
   font-family: var(--font-display);
-  font-size: 0.5rem;
+  font-size: 0.55rem;
   color: rgba(0,10,25,0.75);
-  letter-spacing: 0.06em;
-}
-
-.ship-motto {
-  display: none;
-}
-
-/* Navigazione orizzontale mobile sotto la riga del box arancio */
-nav.main-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 6px;
-  padding: 4px 0;
-  width: auto;
-}
-
-.nav-link {
-  font-family: var(--font-display);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-decoration: none;
-  color: var(--bg-deep);
-  padding: 6px 14px;
-  border-radius: var(--radius-pill); /* Riquadro stondato colorato */
-  transition: all 0.25s ease;
-  text-transform: uppercase;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  height: 34px;
-  width: auto;
-}
-
-/* Su mobile nascondiamo il testo del bottone e mostriamo solo l'icona nel riquadro stondato */
-.nav-link .nav-text {
-  display: none;
-}
-
-/* Tasto HOME in rosso con icona bianca */
-.nav-link.home {
-  background: var(--lcars-red);
-  color: #ffffff !important;
-}
-.nav-link.home i {
-  color: #ffffff !important;
-}
-
-.nav-link.log     { background: var(--lcars-orange); }
-.nav-link.crew    { background: var(--lcars-lavender); }
-.nav-link.ship    { background: var(--lcars-blue); }
-.nav-link.padd    { background: var(--accent-gold); }
-
-.nav-link:hover, .nav-link.active {
-  filter: brightness(1.25);
-  box-shadow: 0 0 12px rgba(255,200,60,0.5);
-}
-
-.nav-link.home:hover, .nav-link.home.active {
-  background: #d91c38;
-  color: #ffffff !important;
-  box-shadow: 0 0 12px rgba(220, 30, 60, 0.6);
-}
-
-/* Blocchi decorativi nascosti su mobile */
-.lcars-sidebar-blocks {
-  display: none;
+  letter-spacing: 0.08em;
 }
 
 .header-content {
-  position: static;
-  width: 100%;
-  height: auto;
-  background: transparent;
-  padding: 4px 12px 8px;
-  border-bottom: none;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
 .header-top-bar {
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 100%;
-  padding: 0;
+  padding: 8px 0 4px;
 }
 
 .lcars-bar {
@@ -220,6 +135,38 @@ nav.main-nav {
 .lcars-bar-1 { background: var(--lcars-lavender); max-width: 60px; }
 .lcars-bar-2 { background: var(--lcars-blue); max-width: 40px; }
 .lcars-bar-3 { background: var(--accent-gold); flex: 1; }
+
+/* ── NAVIGATION ─────────────────────────────────────────── */
+nav.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 0 8px;
+}
+
+.nav-link {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  color: var(--bg-deep);
+  padding: 6px 20px;
+  border-radius: var(--radius-pill);
+  transition: all 0.25s ease;
+  text-transform: uppercase;
+}
+
+.nav-link.log     { background: var(--lcars-orange); }
+.nav-link.crew    { background: var(--lcars-lavender); }
+.nav-link.ship    { background: var(--lcars-blue); }
+.nav-link.padd    { background: var(--accent-gold); }
+
+.nav-link:hover, .nav-link.active {
+  filter: brightness(1.25);
+  box-shadow: 0 0 16px rgba(255,200,60,0.5);
+  transform: translateY(-1px);
+}
 
 .nav-status {
   margin-left: auto;
@@ -234,172 +181,6 @@ nav.main-nav {
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50%       { opacity: 0.3; }
-}
-
-/* STILI FOOTER BASE */
-#site-footer {
-  position: relative;
-  z-index: 100;
-  background: var(--bg-deep);
-  border-top: 2px solid var(--lcars-orange);
-  padding: 24px;
-  text-align: center;
-  margin-left: 0;
-  max-width: 100%;
-}
-
-/* ── LCARS DESKTOP LAYOUT (MIN-WIDTH: 768PX) ─────────────── */
-@media (min-width: 768px) {
-  #site-header {
-    position: relative;
-    background: transparent;
-    border-bottom: none;
-    z-index: 100;
-  }
-
-  .header-lcars {
-    display: block;
-  }
-
-  /* BARRA LATERALE COMPLETAMENTE FISSA SU DESKTOP */
-  .lcars-sidebar-fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 180px;
-    z-index: 350;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    background: var(--bg-deep);
-    padding: 0 0 12px 0;
-    overflow: hidden;
-  }
-
-  .header-elbow {
-    background: var(--lcars-orange);
-    width: 180px;
-    min-width: 180px;
-    height: 85px;
-    min-height: 85px;
-    border-radius: 0 !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 10px 14px;
-    flex-shrink: 0;
-  }
-
-  .ship-name {
-    font-size: 0.65rem;
-    line-height: 1.2;
-  }
-  .ship-registry {
-    font-size: 0.55rem;
-  }
-  .ship-motto {
-    display: block;
-    font-size: 0.52rem;
-  }
-
-  /* NAVIGAZIONE VERTICALE DESKTOP CON TESTO E ICONA */
-  nav.main-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    padding: 0;
-    width: 180px;
-    flex-shrink: 0;
-  }
-
-  .nav-link {
-    width: 180px;
-    height: 38px;
-    padding: 0 16px;
-    border-radius: 0 19px 19px 0; /* Lati dritti a sinistra e stondati a destra */
-    justify-content: flex-start;
-    font-size: 0.75rem;
-  }
-
-  .nav-link .nav-text {
-    display: inline; /* Mostriamo il testo dei bottoni su desktop */
-  }
-
-  /* RIQUADRI COLORATI DECORATIVI NELLA COLONNA LATERALE */
-  .lcars-sidebar-blocks {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    width: 180px;
-    flex: 1;
-    overflow: hidden;
-  }
-
-  .lcars-dec-block {
-    width: 180px;
-    border-radius: 0 12px 12px 0;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    padding: 6px 12px;
-    color: var(--bg-deep);
-    font-family: var(--font-display);
-    font-size: 0.58rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    opacity: 0.9;
-    flex-shrink: 0;
-    transition: opacity 0.2s ease;
-  }
-
-  .dec-1  { height: 50px;  background: var(--lcars-lavender); }
-  .dec-2  { height: 75px;  background: var(--lcars-blue); }
-  .dec-3  { height: 40px;  background: var(--lcars-orange); }
-  .dec-4  { height: 95px;  background: var(--accent-gold); }
-  .dec-5  { height: 55px;  background: #d966ac; }
-  .dec-6  { height: 80px;  background: var(--lcars-red); }
-  .dec-7  { height: 45px;  background: var(--ops-color); }
-  .dec-8  { height: 65px;  background: var(--lcars-blue); }
-  .dec-9  { height: 110px; background: var(--lcars-lavender); }
-  .dec-10 { height: 50px;  background: var(--lcars-orange); }
-  .dec-11 { height: 75px;  background: var(--accent-gold); }
-  .dec-12 { height: 40px;  background: #d966ac; }
-  .dec-13 { height: 85px;  background: var(--lcars-blue); }
-  .dec-14 { height: 60px;  background: var(--lcars-orange); }
-  .dec-15 { height: 100px; background: var(--lcars-lavender); }
-  .dec-16 { height: 45px;  background: var(--accent-gold); }
-  .dec-17 { height: 70px;  background: var(--lcars-red); }
-  .dec-18 { height: 55px;  background: var(--lcars-blue); }
-
-  /* BARRA SUPERIORE COMPLETAMENTE FISSA SU DESKTOP */
-  .header-content {
-    position: fixed;
-    top: 0;
-    left: 180px;
-    right: 0;
-    height: 55px;
-    z-index: 250;
-    background: rgba(0, 8, 20, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 16px 32px 0;
-    display: flex;
-    align-items: center;
-    border-bottom: 2px solid rgba(119, 153, 204, 0.25);
-  }
-
-  /* MARGINI DEL CONTENUTO E FOOTER SU DESKTOP */
-  #main-content {
-    margin-left: 200px;
-    padding-top: 75px;
-    max-width: calc(100% - 220px);
-  }
-
-  #site-footer {
-    margin-left: 200px;
-    max-width: calc(100% - 220px);
-  }
 }
 
 /* ── MAIN LAYOUT ────────────────────────────────────────── */

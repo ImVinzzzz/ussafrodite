@@ -20,16 +20,10 @@ async function loadComponent(selector, filePath) {
 
 function highlightActiveNav() {
   const path = window.location.pathname.split('/').pop() || 'index.html';
-  const currentBase = (path === '' || path === 'index.html') ? 'index' : path.split('.')[0];
-
   document.querySelectorAll('.nav-link').forEach(link => {
     link.classList.remove('active');
     const href = link.getAttribute('href') || '';
-    const hrefBase = href.split('.')[0];
-
-    if (currentBase === 'index' && (hrefBase === 'index' || link.classList.contains('home'))) {
-      link.classList.add('active');
-    } else if (currentBase !== 'index' && hrefBase && currentBase !== 'index' && currentBase.startsWith(hrefBase)) {
+    if (path !== 'index.html' && path !== '' && href && path.startsWith(href.split('.')[0])) {
       link.classList.add('active');
     }
   });
