@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fantozzi Ugo – USS Afrodite Crew</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+<div class="scanline-overlay"></div>
+
+<!-- HEADER -->
+<header id="site-header"></header>
+
+<main id="main-content">
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb">
+    <a href="index.html"><i class="fa-solid fa-location-arrow"></i></a>
+    <span>›</span>
+    <a href="crew.html">Crew</a>
+    <span>›</span>
+    <span class="current">Sottufficiale Protocollo Fantozzi Ugo</span>
+  </div>
+
+  <div class="crew-detail-wrapper animate-in">
+
+    <!-- Top: photo + header -->
+    <div class="crew-detail-top" style="border: 1px solid rgba(128,0,0,0.4);">
+
+      <!-- Left: photo + dept logo -->
+      <div class="crew-detail-img-wrap" style="border-right:1px solid rgba(128,0,0,0.25);">
+        <!-- Logo sezione -->
+        <img src="images/l_com.png" alt="Logo Comando"
+             class="crew-dept-logo"
+             onerror="this.style.display='none'" />
+
+        <!-- Foto PG -->
+        <img src="images/crew/fantozzi.jpg" alt="Fantozzi Ugo"
+             style="width:160px;height:190px;object-fit:cover;border-radius:8px;border:2px solid rgba(128,0,0,0.5);"
+             onerror="this.outerHTML='<div style=\'width:160px;height:190px;background:rgba(128,0,0,0.15);border-radius:8px;border:2px dashed rgba(128,0,0,0.3);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px\'><i class=\'fa-solid fa-scroll\' style=\'font-size:3rem;color:rgba(128,0,0,0.4);\'></i><span style=\'font-family:Orbitron,sans-serif;font-size:0.55rem;color:rgba(128,0,0,0.5);letter-spacing:0.1em\'>FOTO</span></div>'" />
+      </div>
+
+      <!-- Right: title header -->
+      <div class="crew-detail-header" style="background:linear-gradient(135deg, rgba(128,0,0,0.35), rgba(60,0,0,0.5));">
+        <div class="role-label" style="color:rgba(248,248,255,0.6);">
+          <i class="fa-solid fa-circle-chevron-up" style="color:var(--cmd-color);"></i>
+          &nbsp;Servizi Generali · Protocollo
+        </div>
+        <div class="rank-name">Fantozzi Ugo</div>
+        <div class="char-name" style="color:var(--cmd-color);">Capo di Seconda Classe</div>
+        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap;">
+          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(128,0,0,0.2);border:1px solid rgba(128,0,0,0.4);color:rgba(248,248,255,0.7);">
+            ADDETTO AL PROTOCOLLO
+          </span>
+          <span style="font-family:'Orbitron',sans-serif;font-size:0.55rem;letter-spacing:0.15em;padding:3px 10px;border-radius:999px;background:rgba(68,136,255,0.1);border:1px solid rgba(68,136,255,0.25);color:rgba(248,248,255,0.5);">
+            PNG
+          </span>
+        </div>
+        <!-- Link al diario -->
+        <a href="log.html" style="display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-family:'Orbitron',sans-serif;font-size:0.6rem;letter-spacing:0.1em;color:var(--lcars-orange);text-decoration:none;text-transform:uppercase;">
+          <i class="fa-solid fa-file-lines"></i> Diari di Missione
+        </a>
+      </div>
+    </div>
+
+    <!-- Stats + Notes -->
+    <div class="crew-stats-table">
+
+      <div class="crew-stats-grid">
+        <div class="stat-row" style="border-left-color:var(--cmd-color);">
+          <span class="s-label">Nome</span>
+          <span class="s-value">Fantozzi Ugo</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--cmd-color);">
+          <span class="s-label">Grado</span>
+          <span class="s-value">Capo di Seconda Classe</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Razza</span>
+          <span class="s-value">El-Auriano (sui generis)</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Età</span>
+          <span class="s-value">333 anni</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Sesso</span>
+          <span class="s-value">M</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Peso</span>
+          <span class="s-value">82 kg</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Altezza</span>
+          <span class="s-value">1.67 m</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Occhi</span>
+          <span class="s-value">Castani</span>
+        </div>
+        <div class="stat-row" style="border-left-color:var(--lcars-blue);">
+          <span class="s-label">Capelli</span>
+          <span class="s-value">Brizzolati</span>
+        </div>
+      </div>
+
+      <div class="crew-notes-section">
+        <h3><i class="fa-solid fa-note-sticky"></i> &nbsp;Note</h3>
+        <p>El-Auriano decisamente <em>sui generis</em> e tragicamente privo del celebre carisma della sua specie: anziché ascoltare le sagge confidenze dell'equipaggio nei salotti della nave, passa le sue secolari giornate ad inghiottire rospi e a subire i rimproveri di ogni ufficiale di plancia. (Nota bene: Fantozzi è il nome battesimale ed Ugo il cognome di famiglia).</p>
+        <p>A causa di una leggendaria serie di gaffe burocratiche e tragicomici incidenti diplomatici, il suo ufficio è stato assegnato nel rinfrescante e angusto <strong>Tubo di Jefferies 47 gamma</strong>, dove lavora perennemente piegato a novanta gradi, sbattendo la testa contro i condotti del plasma ad ogni squillo di PADD.</p>
+        <p>In perenne deferenza verso i superiori con servili proversioni ("Comandi, Dottore! Dica, Capitano!"), è famigerato per la sua proverbiale sfortuna che attira micro-anomalie temporali ed eruzioni subspaziali esclusivamente quando indossa l'uniforme di gala.</p>
+
+        <h3><i class="fa-solid fa-chess"></i> &nbsp;Hobby &amp; Passioni</h3>
+        <ul>
+          <li>Organizzatore compulsivo della tragica maratona di boccette subspaziali tra sottufficiali.</li>
+          <li>Ama praticare la pesca alla trota olografica sotto la famigerata <em>'Nuvola dell'Impiegato'</em> (una micro-anomalia meteorologica che lo segue costantemente anche nei programmi di olocoperta).</li>
+          <li>Sgranocchiare frittate di micro-gamberi spaziali mentre guarda vecchie partite di Calcio Storico Terrestre con ventilatore a curvatura puntato addosso.</li>
+        </ul>
+
+        <h3><i class="fa-solid fa-medal"></i> &nbsp;Incarichi</h3>
+        <ul>
+          <li>Addetto al Protocollo e Cerimoniale - USS Afrodite NCC-1863</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div style="margin-top:24px;">
+    <a href="crew.html" class="btn-back">
+      <i class="fa-solid fa-chevron-left"></i> Fascicoli Equipaggio
+    </a>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="site-footer"></footer>
+  
+<script src="script.js"></script>
+</body>
+</html>
