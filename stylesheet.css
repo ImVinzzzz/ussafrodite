@@ -1827,25 +1827,38 @@ footer {
     display: none !important;
   }
 
-  /* Trasforma i pulsanti di navigazione dell'header in cerchi perfetti */
+  /* Riduzione altezza pulsanti nav in mobile (forma a capsula compatta e meno invasiva) */
   .nav-link {
     width: 44px;
-    height: 44px;
+    height: 28px;
     min-width: 44px;
     padding: 0;
-    border-radius: 50%;
+    border-radius: var(--radius-pill);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 0.88rem;
     flex-shrink: 0;
+    box-shadow: none;
+    transform: none;
+    transition: filter 0.2s ease, opacity 0.2s ease;
   }
 
-  .nav-link:hover,
-  .nav-link.active {
-    filter: brightness(1.25);
-    box-shadow: 0 0 16px var(--accent-gold), 0 0 8px var(--lcars-orange);
-    transform: scale(1.05);
+  /* Hover: semplice illuminazione e leggera desaturazione senza alone */
+  .nav-link:hover {
+    filter: brightness(1.25) saturate(0.85);
+    box-shadow: none;
+    transform: none;
+  }
+
+  /* Stato attivo senza alone (box-shadow) */
+  .nav-link.active,
+  .nav-link:active,
+  .nav-link:focus {
+    filter: brightness(1.15);
+    box-shadow: none;
+    transform: none;
+    outline: none;
   }
 
   #main-content { padding: 24px 14px 60px; }
