@@ -691,14 +691,37 @@ nav.main-nav {
 
 /* ── MISSION DETAIL (sub-diary list) ────────────────────── */
 .mission-header-block {
-  background: rgba(255,153,0,0.08);
-  border: 3px solid rgba(255,153,0,0.25);
+  background: rgba(255, 153, 0, 0.08);
+  border: 0.1875rem solid rgba(255, 153, 0, 0.25);
   border-radius: var(--radius-md);
-  padding: 24px;
-  margin-bottom: 32px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
+}
+
+.mission-header-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.mission-header-icon {
+  font-size: 2.2rem;
+  color: var(--lcars-orange);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.2rem;
+}
+
+.mission-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .mission-header-label {
@@ -716,6 +739,82 @@ nav.main-nav {
   color: var(--ghost-white);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.mission-header-sub {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  color: rgba(248, 248, 255, 0.45);
+  letter-spacing: 0.1em;
+  margin-top: 0.25rem;
+}
+
+.mission-header-stardate {
+  margin-left: auto;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.mission-stardate-label {
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  color: rgba(255, 153, 0, 0.5);
+  text-transform: uppercase;
+}
+
+.mission-stardate-value {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--lcars-orange);
+}
+
+@media (max-width: 768px) {
+  .mission-header-block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1rem 1.15rem;
+  }
+
+  .mission-header-main {
+    gap: 0.85rem;
+    width: 100%;
+  }
+
+  .mission-header-icon {
+    font-size: 1.4rem;
+    padding-top: 0.1rem;
+  }
+
+  .mission-header-title {
+    font-size: 1.15rem;
+    letter-spacing: 0.05em;
+  }
+
+  .mission-header-sub {
+    margin-top: 0.15rem;
+  }
+
+  .mission-header-stardate {
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+    padding-top: 0.6rem;
+    border-top: 0.0625rem solid rgba(255, 153, 0, 0.2);
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  .mission-stardate-label {
+    font-size: 0.55rem;
+  }
+
+  .mission-stardate-value {
+    font-size: 0.85rem;
+  }
 }
 
 .diary-grid {
