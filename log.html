@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,64 +10,71 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  
+
   <link rel="stylesheet" href="stylesheet.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
-<canvas id="starfield"></canvas>
-<div class="scanline-overlay"></div>
+  <canvas id="starfield"></canvas>
+  <div class="scanline-overlay"></div>
 
-<!-- HEADER -->
-<header id="site-header"></header>
+  <!-- HEADER -->
+  <header id="site-header"></header>
 
-<main id="main-content">
+  <main id="main-content">
 
-  <!-- Page banner -->
-  <div class="page-banner">
-    <div class="banner-elbow" style="background:var(--lcars-orange);"></div>
+    <!-- Page banner -->
+    <div class="page-banner">
+      <div class="banner-elbow" style="background:var(--lcars-orange);"></div>
+      <div>
+        <div class="banner-title"><i class="fa-solid fa-bars-staggered" style="color:var(--lcars-orange);"></i>
+          &nbsp;Log</div>
+        <div class="banner-subtitle">Diari di missione · USS Afrodite NCC-1863</div>
+      </div>
+      <div class="banner-lines">
+        <div class="banner-line banner-line-1"></div>
+        <div class="banner-line banner-line-2"></div>
+        <div class="banner-line banner-line-3"></div>
+      </div>
+    </div>
+
+    <!-- Mission list -->
+    <div class="panel">
+      <div class="stat-block">
+        Roma, città di frontiera! Queste sono le (dis)avventure dell'equipaggio della nave stellare Afrodite,
+        alla ricerca di nuovi metodi per superare le crudeltà (del Comando di Flotta), fino ad arrivare là dove nessun
+        ufficiale è mai giunto prima.
+      </div>
+    </div>
+
     <div>
-      <div class="banner-title"><i class="fa-solid fa-bars-staggered" style="color:var(--lcars-orange);"></i> &nbsp;Log</div>
-      <div class="banner-subtitle">Diari di missione · USS Afrodite NCC-1863</div>
+      <p><br /</p>
     </div>
-    <div class="banner-lines">
-      <div class="banner-line banner-line-1"></div>
-      <div class="banner-line banner-line-2"></div>
-      <div class="banner-line banner-line-3"></div>
-    </div>
-  </div>
 
- <!-- Mission list -->
-  <div class="panel">
-    <div class="stat-block">
-      Roma, città di frontiera! Queste sono le (dis)avventure dell'equipaggio della nave stellare Afrodite, 
-      alla ricerca di nuovi metodi per superare le crudeltà (del Comando di Flotta), fino ad arrivare là dove nessun ufficiale è mai giunto prima.
-    </div>
-  </div>
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-header-bar" style="background:var(--lcars-orange);"></div>
+        <span class="panel-header-title">Diari Personali / di Missione</span>
+        <span
+          style="margin-left:auto;font-family:'Orbitron',sans-serif;font-size:0.55rem;color:rgba(248,248,255,0.3);letter-spacing:0.15em;">13
+          ENTRIES</span>
+      </div>
+      <div class="panel-body">
 
-  <div><p><br/</p> </div>
-  
-  <div class="panel">
-    <div class="panel-header">
-      <div class="panel-header-bar" style="background:var(--lcars-orange);"></div>
-      <span class="panel-header-title">Diari Personali / di Missione</span>
-      <span style="margin-left:auto;font-family:'Orbitron',sans-serif;font-size:0.55rem;color:rgba(248,248,255,0.3);letter-spacing:0.15em;">13 ENTRIES</span>
-    </div>
-    <div class="panel-body">
-    
-      <div class="mission-list">
+        <div class="mission-list">
 
-        <!-- LOG #4 TRIVIATREK #3 -->
-          <span class="mission-item"> <!-- <a href="log_log004.html" class="mission-item" style="background:rgba(255,103,0,0.10);"> -->
+          <!-- LOG #4 TRIVIATREK #3 -->
+          <a href="log_log004.html" class="mission-item" style="background:rgba(255,103,0,0.10);">
             <!-- ;background:rgba(255,204,68,0.04) -->
             <span class="mission-number" style="color:var(--accent-gold);"><i class="fa-regular fa-circle-dot"
                 style="margin-right:6px;"></i>Log: #4</span>
-            <span class="mission-name">Reunion #3 - TriviaTerk: AtoZ rules!</span>
-            <span class="mission-badge special"><i class="fa-solid fa-circle-half-stroke"></i></span>
-          </span>
+            <span class="mission-name">Reunion #3 - TriviaTerk: AtoZ Rules!</span>
+            <span class="mission-badge special"><i class="fa-solid fa-circle"></i></span>
+            </a>
           
           <!-- LOG #3 TRIVIATREK #2 -->
           <a href="log_log003.html" class="mission-item" style="background:rgba(255,103,0,0.10);">
@@ -77,106 +85,121 @@
             <span class="mission-badge special"><i class="fa-solid fa-circle"></i></span>
           </a>
 
-        <!-- MISSION X01 - MAPPATURA -->
-        <a href="log_missionx01.html" class="mission-item">
-          <span class="mission-number"><i class="fa-solid fa-circle-check" style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: X01</span>
-          <span class="mission-name">Theta Persei IV - Mapping</span>
-          <span class="mission-badge"><i class="fa-solid fa-circle-half-stroke"></i></span>
-        </a>
-        
-        <!-- LOG #2 TRIVIATREK DEMO #1 -->
-        <a href="log_log002.html" class="mission-item" style="background:rgba(255,103,0,0.10);">  <!-- ;background:rgba(255,204,68,0.04) -->
-          <span class="mission-number" style="color:var(--accent-gold);"><i class="fa-regular fa-circle-dot" style="margin-right:6px;"></i>Log: #2</span>
-          <span class="mission-name">Reunion #1 - 25 Year Later</span>
-          <span class="mission-badge special"><i class="fa-solid fa-circle"></i></span>
-        </a>
+          <!-- MISSION X01 - MAPPATURA -->
+          <a href="log_missionx01.html" class="mission-item">
+            <span class="mission-number"><i class="fa-solid fa-circle-check"
+                style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: X01</span>
+            <span class="mission-name">Theta Persei IV - Mapping</span>
+            <span class="mission-badge"><i class="fa-solid fa-circle-half-stroke"></i></span>
+          </a>
 
-        <!-- MISSION 8 -->
-        <span class="mission-item"> <!-- <a href="log_mission8.html" class="mission-item"> -->
-          <span class="mission-number"><i class="fa-solid fa-circle-check" style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 8</span>
-          <span class="mission-name">All Good Things...</span>
-          <span class="mission-badge"><i class="fa-regular fa-circle"></i></span>
-        </span> <!-- /a -->
+          <!-- LOG #2 TRIVIATREK DEMO #1 -->
+          <a href="log_log002.html" class="mission-item" style="background:rgba(255,103,0,0.10);">
+            <!-- ;background:rgba(255,204,68,0.04) -->
+            <span class="mission-number" style="color:var(--accent-gold);"><i class="fa-regular fa-circle-dot"
+                style="margin-right:6px;"></i>Log: #2</span>
+            <span class="mission-name">Reunion #1 - 25 Year Later</span>
+            <span class="mission-badge special"><i class="fa-solid fa-circle"></i></span>
+          </a>
 
-        <!-- MISSION 7 -->
-        <a href="log_mission7.html" class="mission-item">
-          <span class="mission-number"><i class="fa-solid fa-circle-check" style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 7</span>
-          <span class="mission-name">The Cut!</span>
-          <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
-        </a>
+          <!-- MISSION 8 -->
+          <span class="mission-item"> <!-- <a href="log_mission5.html" class="mission-item"> -->
+            <span class="mission-number"><i class="fa-solid fa-circle-check"
+                style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 8</span>
+            <span class="mission-name">All Good Things...</span>
+            <span class="mission-badge"><i class="fa-regular fa-circle"></i></span>
+          </span> <!-- /a -->
 
-        <!-- MISSION 6 -->
-        <a href="log_mission6.html" class="mission-item">
-          <span class="mission-number"><i class="fa-solid fa-circle-check" style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 6</span>
-          <span class="mission-name">Afrodite in Wonderland</span>
-          <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
-        </a>
-        
-        <!-- MISSION 5 -->
-        <a href="log_mission5.html" class="mission-item">
-          <span class="mission-number"><i class="fa-solid fa-circle-check" style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 5</span>
-          <span class="mission-name">It's a Long Way to Tipperary</span>
-          <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
-        </a>
+          <!-- MISSION 7 -->
+          <span class="mission-item"> <!-- <a href="log_mission5.html" class="mission-item"> -->
+            <span class="mission-number"><i class="fa-solid fa-circle-check"
+                style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 7</span>
+            <span class="mission-name">The Cut!</span>
+            <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
+          </span> <!-- /a -->
 
-        <!-- COLLOQUIO BOTTINO -->
-        <a href="log_missionb.html" class="mission-item" style="background:rgba(255,235,70,0.10);">
-          <span class="mission-number" style="color:var(--accent-gold);"><i class="fa-regular fa-circle-dot" style="margin-right:6px;"></i>SMC - UCSM</span>
-          <span class="mission-name">The Headshrinker</span>
-          <span class="mission-badge special"><i class="fa-solid fa-circle"></i></span>
-        </a>
+          <!-- MISSION 6 -->
+          <a href="log_mission6.html" class="mission-item">
+            <span class="mission-number"><i class="fa-solid fa-circle-check"
+                style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 6</span>
+            <span class="mission-name">Afrodite in Wonderland</span>
+            <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
+          </a>
 
-        <!-- MISSION 4 -->
-        <a href="log_mission4.html" class="mission-item">
-          <span class="mission-number"><i class="fa-solid fa-circle-check" style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 4</span>
-          <span class="mission-name">The Voyage Home</span>
-          <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
-        </a>
+          <!-- MISSION 5 -->
+          <a href="log_mission5.html" class="mission-item">
+            <span class="mission-number"><i class="fa-solid fa-circle-check"
+                style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 5</span>
+            <span class="mission-name">It's a Long Way to Tipperary</span>
+            <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
+          </a>
 
-        <!-- MISSION 3 -->
-        <a href="log_mission3.html" class="mission-item">
-          <span class="mission-number"><i class="fa-solid fa-circle-check" style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 3</span>
-          <span class="mission-name">The Search for Maxwell</span>
-          <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
-        </a>
+          <!-- COLLOQUIO BOTTINO -->
+          <a href="log_missionb.html" class="mission-item" style="background:rgba(255,235,70,0.10);">
+            <span class="mission-number" style="color:var(--accent-gold);"><i class="fa-regular fa-circle-dot"
+                style="margin-right:6px;"></i>SMC - UCSM</span>
+            <span class="mission-name">The Headshrinker</span>
+            <span class="mission-badge special"><i class="fa-solid fa-circle"></i></span>
+          </a>
 
-        <!-- MISSION 2 -->
-        <a href="log_mission2.html" class="mission-item">
-          <span class="mission-number"><i class="fa-solid fa-circle-check" style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 2</span>
-          <span class="mission-name">The Betrothed</span>
-          <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
-        </a>
+          <!-- MISSION 4 -->
+          <a href="log_mission4.html" class="mission-item">
+            <span class="mission-number"><i class="fa-solid fa-circle-check"
+                style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 4</span>
+            <span class="mission-name">The Voyage Home</span>
+            <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
+          </a>
 
-         <!-- MISSION 1 -->
-        <a href="log_mission1.html" class="mission-item">
-          <span class="mission-number"><i class="fa-solid fa-circle-check" style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 1</span>
-          <span class="mission-name">The Curse of USS Cassiopea</span>
-          <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
-        </a>
-        
-        <!-- LOG #1 FIRST CONTACT-->
-        <a href="log_log001.html" class="mission-item" style="background:rgba(255,103,0,0.10);">  <!-- ;background:rgba(255,204,68,0.04) -->
-          <span class="mission-number" style="color:var(--accent-gold);"><i class="fa-regular fa-circle-dot" style="margin-right:6px;"></i>Log: #1</span>
-          <span class="mission-name">First Contact</span>
-          <span class="mission-badge special"><i class="fa-solid fa-circle"></i></span>
-        </a>
-    
+          <!-- MISSION 3 -->
+          <a href="log_mission3.html" class="mission-item">
+            <span class="mission-number"><i class="fa-solid fa-circle-check"
+                style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 3</span>
+            <span class="mission-name">The Search for Maxwell</span>
+            <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
+          </a>
 
-        <div style="font-size:0.75rem; color: rgba(248,248,255,0.5);"> 
-        <br/><i class="fa-solid fa-circle"></i> DIARIO DISPONIBILE / COMPLETO <br/>
-        <i class="fa-solid fa-circle-half-stroke"></i> DIARIO IN ELABORAZIONE / PARZIALE <br/>
-        <i class="fa-regular fa-circle"></i> DIARIO NON ANCORA DISPONIBILE
-      </div>
+          <!-- MISSION 2 -->
+          <a href="log_mission2.html" class="mission-item">
+            <span class="mission-number"><i class="fa-solid fa-circle-check"
+                style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 2</span>
+            <span class="mission-name">The Betrothed</span>
+            <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
+          </a>
 
+          <!-- MISSION 1 -->
+          <a href="log_mission1.html" class="mission-item">
+            <span class="mission-number"><i class="fa-solid fa-circle-check"
+                style="margin-right:6px;color:rgba(255,153,0,0.5);"></i>M: 1</span>
+            <span class="mission-name">The Curse of USS Cassiopea</span>
+            <span class="mission-badge"><i class="fa-solid fa-circle"></i></span>
+          </a>
+
+          <!-- LOG #1 FIRST CONTACT-->
+          <a href="log_log001.html" class="mission-item" style="background:rgba(255,103,0,0.10);">
+            <!-- ;background:rgba(255,204,68,0.04) -->
+            <span class="mission-number" style="color:var(--accent-gold);"><i class="fa-regular fa-circle-dot"
+                style="margin-right:6px;"></i>Log: #1</span>
+            <span class="mission-name">First Contact</span>
+            <span class="mission-badge special"><i class="fa-solid fa-circle"></i></span>
+          </a>
+
+
+          <div style="font-size:0.75rem; color: rgba(248,248,255,0.5);">
+            <br /><i class="fa-solid fa-circle"></i> DIARIO DISPONIBILE / COMPLETO <br />
+            <i class="fa-solid fa-circle-half-stroke"></i> DIARIO IN ELABORAZIONE / PARZIALE <br />
+            <i class="fa-regular fa-circle"></i> DIARIO NON ANCORA DISPONIBILE
+          </div>
+
+        </div>
       </div>
     </div>
-  </div>
 
-</main>
+  </main>
 
-<!-- FOOTER -->
-<footer id="site-footer"></footer>
+  <!-- FOOTER -->
+  <footer id="site-footer"></footer>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
