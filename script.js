@@ -171,7 +171,71 @@ updateClock();
   });
 })();
 
+// ── PADD GALLERY LIGHTBOX ──────────────────────────────────
+(function initPaddLightbox() {
+  document.addEventListener("DOMContentLoaded", () => {
+    const galleryImages = document.querySelectorAll(".padd-gallery-item img");
+    if (galleryImages.length === 0) return;
+
+    const lightbox = document.createElement("div");
+    lightbox.className = "padd-lightbox";
+    lightbox.id = "paddLightbox";
+    lightbox.setAttribute("role", "dialog");
+    lightbox.setAttribute("aria-modal", "true");
+    lightbox.innerHTML =
+      '<button class="padd-lightbox-close" aria-label="Chiudi popup">' +
+      '<i class="fa-solid fa-xmark"></i>' +
+      "</button>" +
+      '<div class="padd-lightbox-content">' +
+      '<img class="padd-lightbox-img" src="" alt="" />' +
+      '<div class="padd-lightbox-caption"></div>' +
+      "</div>";
+
+    document.body.appendChild(lightbox);
+
+    const lightboxImg = lightbox.querySelector(".padd-lightbox-img");
+    const lightboxCaption = lightbox.querySelector(".padd-lightbox-caption");
+    const closeBtn = lightbox.querySelector(".padd-lightbox-close");
+
+    function openLightbox(imgElement) {
+      lightboxImg.src = imgElement.src;
+      lightboxImg.alt = imgElement.alt || "";
+      const captionElement = imgElement.closest(".padd-gallery-item")?.querySelector(".padd-gallery-caption");
+      lightboxCaption.textContent = captionElement ? captionElement.textContent : (imgElement.alt || "");
+      lightbox.classList.add("active");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove("active");
+      document.body.style.overflow = "";
+    }
+
+    galleryImages.forEach(img => {
+      img.addEventListener("click", () => openLightbox(img));
+    });
+
+    closeBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      closeLightbox();
+    });
+
+    lightbox.addEventListener("click", (e) => {
+      if (e.target === lightbox || e.target.classList.contains("padd-lightbox-content")) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && lightbox.classList.contains("active")) {
+        closeLightbox();
+      }
+    });
+  });
+})();
+
 // ── CONSOLE EASTER EGG ─────────────────────────────────────
 console.log('%c USS AFRODITE - NCC 1863', 'color:#ff9900;font-family:monospace;font-size:18px;font-weight:bold;');
 console.log('%c CLASS: MIRANDA | STARFLEET REGISTRY', 'color:#7799cc;font-family:monospace;font-size:11px;');
 console.log('%c Stardate: ' + getStardate(), 'color:#cc99cc;font-family:monospace;font-size:11px;');
+
