@@ -1,0 +1,930 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "_site",
+  "installCommand": "npm ci",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/crew.html",
+      "destination": "/crew/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_alighieri.html",
+      "destination": "/crew/alighieri/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_argo.html",
+      "destination": "/crew/argo/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_becco.html",
+      "destination": "/crew/becco/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_bliss.html",
+      "destination": "/crew/bliss/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_boregh.html",
+      "destination": "/crew/boregh/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_braxx.html",
+      "destination": "/crew/braxx/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_capui.html",
+      "destination": "/crew/capui/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_carter.html",
+      "destination": "/crew/carter/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_castell.html",
+      "destination": "/crew/castell/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_chunki.html",
+      "destination": "/crew/chunki/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_ciccozzi.html",
+      "destination": "/crew/ciccozzi/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_daccardi.html",
+      "destination": "/crew/daccardi/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_danee.html",
+      "destination": "/crew/danee/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_deniro.html",
+      "destination": "/crew/deniro/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_dnadams.html",
+      "destination": "/crew/dnadams/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_drews.html",
+      "destination": "/crew/drews/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_evabrown.html",
+      "destination": "/crew/evabrown/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_fantozzi.html",
+      "destination": "/crew/fantozzi/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_faq.html",
+      "destination": "/crew/faq/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_field.html",
+      "destination": "/crew/field/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_frruuu.html",
+      "destination": "/crew/frruuu/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_geppo.html",
+      "destination": "/crew/geppo/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_haldir.html",
+      "destination": "/crew/haldir/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_hsmith.html",
+      "destination": "/crew/hsmith/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_jacket.html",
+      "destination": "/crew/jacket/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_jarek.html",
+      "destination": "/crew/jarek/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_kelley.html",
+      "destination": "/crew/kelley/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_kissmey.html",
+      "destination": "/crew/kissmey/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_lambert.html",
+      "destination": "/crew/lambert/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_magnum.html",
+      "destination": "/crew/magnum/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_miscia.html",
+      "destination": "/crew/miscia/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_mtrey.html",
+      "destination": "/crew/mtrey/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_okonnor.html",
+      "destination": "/crew/okonnor/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_peppino.html",
+      "destination": "/crew/peppino/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_pinkerton.html",
+      "destination": "/crew/pinkerton/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_rael.html",
+      "destination": "/crew/rael/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_renzi.html",
+      "destination": "/crew/renzi/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_rogers.html",
+      "destination": "/crew/rogers/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_santagata.html",
+      "destination": "/crew/santagata/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_sapek.html",
+      "destination": "/crew/sapek/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_scramiglio.html",
+      "destination": "/crew/scramiglio/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_smith.html",
+      "destination": "/crew/smith/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_strider.html",
+      "destination": "/crew/strider/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_tanutri.html",
+      "destination": "/crew/tanutri/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_tax.html",
+      "destination": "/crew/tax/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_tmar.html",
+      "destination": "/crew/tmar/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_tmik.html",
+      "destination": "/crew/tmik/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_tval.html",
+      "destination": "/crew/tval/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_vael.html",
+      "destination": "/crew/vael/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_vanbajark.html",
+      "destination": "/crew/vanbajark/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_vanian.html",
+      "destination": "/crew/vanian/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_vlearya.html",
+      "destination": "/crew/vlearya/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_watson.html",
+      "destination": "/crew/watson/",
+      "permanent": true
+    },
+    {
+      "source": "/crew_wesson.html",
+      "destination": "/crew/wesson/",
+      "permanent": true
+    },
+    {
+      "source": "/log.html",
+      "destination": "/log/",
+      "permanent": true
+    },
+    {
+      "source": "/log_log001.html",
+      "destination": "/log/reunion/001/",
+      "permanent": true
+    },
+    {
+      "source": "/log_log002.html",
+      "destination": "/log/reunion/002/",
+      "permanent": true
+    },
+    {
+      "source": "/log_log003.html",
+      "destination": "/log/reunion/003/",
+      "permanent": true
+    },
+    {
+      "source": "/log_log004.html",
+      "destination": "/log/reunion/004/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1.html",
+      "destination": "/log/m1/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1_00.html",
+      "destination": "/log/m1/00/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1_01.html",
+      "destination": "/log/m1/01/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1_02.html",
+      "destination": "/log/m1/02/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1_03.html",
+      "destination": "/log/m1/03/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1_04.html",
+      "destination": "/log/m1/04/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1_05.html",
+      "destination": "/log/m1/05/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1_06.html",
+      "destination": "/log/m1/06/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1_07.html",
+      "destination": "/log/m1/07/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1_08.html",
+      "destination": "/log/m1/08/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1_09.html",
+      "destination": "/log/m1/09/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1_10.html",
+      "destination": "/log/m1/10/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission1_11.html",
+      "destination": "/log/m1/11/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission2.html",
+      "destination": "/log/m2/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission2_00.html",
+      "destination": "/log/m2/00/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission2_01.html",
+      "destination": "/log/m2/01/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission2_02.html",
+      "destination": "/log/m2/02/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission2_03.html",
+      "destination": "/log/m2/03/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission2_04.html",
+      "destination": "/log/m2/04/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission2_05.html",
+      "destination": "/log/m2/05/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission2_06.html",
+      "destination": "/log/m2/06/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission2_07.html",
+      "destination": "/log/m2/07/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission2_08.html",
+      "destination": "/log/m2/08/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission2_09.html",
+      "destination": "/log/m2/09/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission2_10.html",
+      "destination": "/log/m2/10/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3.html",
+      "destination": "/log/m3/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3_00.html",
+      "destination": "/log/m3/00/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3_01.html",
+      "destination": "/log/m3/01/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3_02.html",
+      "destination": "/log/m3/02/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3_03.html",
+      "destination": "/log/m3/03/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3_04.html",
+      "destination": "/log/m3/04/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3_05.html",
+      "destination": "/log/m3/05/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3_06.html",
+      "destination": "/log/m3/06/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3_07.html",
+      "destination": "/log/m3/07/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3_08.html",
+      "destination": "/log/m3/08/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3_09.html",
+      "destination": "/log/m3/09/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3_10.html",
+      "destination": "/log/m3/10/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission3_11.html",
+      "destination": "/log/m3/11/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission4.html",
+      "destination": "/log/m4/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission4_00.html",
+      "destination": "/log/m4/00/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission4_01.html",
+      "destination": "/log/m4/01/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission4_02.html",
+      "destination": "/log/m4/02/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission4_03.html",
+      "destination": "/log/m4/03/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission4_04.html",
+      "destination": "/log/m4/04/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission4_05.html",
+      "destination": "/log/m4/05/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission4_06.html",
+      "destination": "/log/m4/06/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission4_07.html",
+      "destination": "/log/m4/07/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission4_08.html",
+      "destination": "/log/m4/08/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission4_09.html",
+      "destination": "/log/m4/09/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission4_10.html",
+      "destination": "/log/m4/10/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission5.html",
+      "destination": "/log/m5/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission5_00.html",
+      "destination": "/log/m5/00/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission5_01.html",
+      "destination": "/log/m5/01/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission5_02.html",
+      "destination": "/log/m5/02/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission5_03.html",
+      "destination": "/log/m5/03/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission5_04.html",
+      "destination": "/log/m5/04/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission5_05.html",
+      "destination": "/log/m5/05/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission5_06.html",
+      "destination": "/log/m5/06/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission5_07.html",
+      "destination": "/log/m5/07/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission5_09.html",
+      "destination": "/log/m5/09/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission5_10.html",
+      "destination": "/log/m5/10/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission5_11.html",
+      "destination": "/log/m5/11/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission6.html",
+      "destination": "/log/m6/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission6_00.html",
+      "destination": "/log/m6/00/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission6_01.html",
+      "destination": "/log/m6/01/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission6_02.html",
+      "destination": "/log/m6/02/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission6_03.html",
+      "destination": "/log/m6/03/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission6_04.html",
+      "destination": "/log/m6/04/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission6_05.html",
+      "destination": "/log/m6/05/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission6_06.html",
+      "destination": "/log/m6/06/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission6_07.html",
+      "destination": "/log/m6/07/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission6_09.html",
+      "destination": "/log/m6/09/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission6_10.html",
+      "destination": "/log/m6/10/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission6_11.html",
+      "destination": "/log/m6/11/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission7.html",
+      "destination": "/log/m7/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission7_00.html",
+      "destination": "/log/m7/00/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission7_01.html",
+      "destination": "/log/m7/01/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission7_02.html",
+      "destination": "/log/m7/02/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission7_03.html",
+      "destination": "/log/m7/03/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission7_04.html",
+      "destination": "/log/m7/04/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission7_05.html",
+      "destination": "/log/m7/05/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission7_06.html",
+      "destination": "/log/m7/06/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission7_07.html",
+      "destination": "/log/m7/07/",
+      "permanent": true
+    },
+    {
+      "source": "/log_mission7_09.html",
+      "destination": "/log/m7/09/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb.html",
+      "destination": "/log/smc/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_00.html",
+      "destination": "/log/smc/00/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_02.html",
+      "destination": "/log/smc/02/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_04.html",
+      "destination": "/log/smc/04/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_05.html",
+      "destination": "/log/smc/05/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_06.html",
+      "destination": "/log/smc/06/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_07.html",
+      "destination": "/log/smc/07/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_09.html",
+      "destination": "/log/smc/09/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_10.html",
+      "destination": "/log/smc/10/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_11.html",
+      "destination": "/log/smc/11/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_12.html",
+      "destination": "/log/smc/12/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_13.html",
+      "destination": "/log/smc/13/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_14.html",
+      "destination": "/log/smc/14/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_15.html",
+      "destination": "/log/smc/15/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_16.html",
+      "destination": "/log/smc/16/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_17.html",
+      "destination": "/log/smc/17/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_18.html",
+      "destination": "/log/smc/18/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_19.html",
+      "destination": "/log/smc/19/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionx01.html",
+      "destination": "/log/x01/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionx01_00.html",
+      "destination": "/log/x01/00/",
+      "permanent": true
+    },
+    {
+      "source": "/padd.html",
+      "destination": "/padd/",
+      "permanent": true
+    },
+    {
+      "source": "/padd_4a.html",
+      "destination": "/padd/4a/",
+      "permanent": true
+    },
+    {
+      "source": "/padd_4b.html",
+      "destination": "/padd/4b/",
+      "permanent": true
+    },
+    {
+      "source": "/padd_4c.html",
+      "destination": "/padd/4c/",
+      "permanent": true
+    },
+    {
+      "source": "/padd_4d.html",
+      "destination": "/padd/4d/",
+      "permanent": true
+    },
+    {
+      "source": "/padd_4e.html",
+      "destination": "/padd/4e/",
+      "permanent": true
+    },
+    {
+      "source": "/padd_4f.html",
+      "destination": "/padd/4f/",
+      "permanent": true
+    },
+    {
+      "source": "/padd_4g.html",
+      "destination": "/padd/4g/",
+      "permanent": true
+    },
+    {
+      "source": "/padd_4h.html",
+      "destination": "/padd/4h/",
+      "permanent": true
+    },
+    {
+      "source": "/padd_4i.html",
+      "destination": "/padd/4i/",
+      "permanent": true
+    },
+    {
+      "source": "/padd_4x.html",
+      "destination": "/padd/4x/",
+      "permanent": true
+    },
+    {
+      "source": "/padd_S01.html",
+      "destination": "/padd/s01/",
+      "permanent": true
+    },
+    {
+      "source": "/padd_S02.html",
+      "destination": "/padd/s02/",
+      "permanent": true
+    },
+    {
+      "source": "/ship.html",
+      "destination": "/ship/",
+      "permanent": true
+    },
+    {
+      "source": "/old",
+      "destination": "/archive/1999/index.htm",
+      "permanent": true
+    },
+    {
+      "source": "/old/:path*",
+      "destination": "/archive/1999/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/images/:path*",
+      "destination": "/assets/img/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/stylesheet.css",
+      "destination": "/assets/css/site.css",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+/* ── LCARS HEADER ───────────────────────────────────────── */
+#site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(0, 10, 25, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 2px solid var(--lcars-orange);
+  padding: 0;
+}
+
+.header-lcars {
+  display: flex;
+  align-items: stretch;
+  min-height: 70px;
+}
+
+.header-elbow {
+  background: var(--lcars-orange);
+  width: 180px;
+  min-width: 140px;
+  border-radius: 0 0 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 8px 16px 8px 12px;
+  flex-shrink: 0;
+}
+
+.ship-name {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--bg-deep);
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.ship-registry {
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  color: rgba(0,10,25,0.75);
+  letter-spacing: 0.08em;
+}
+
+.header-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-top-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0 4px;
+}
+
+.lcars-bar {
+  height: 10px;
+  border-radius: var(--radius-pill);
+  flex: 1;
+}
+.lcars-bar-1 { background: var(--lcars-lavender); max-width: 60px; }
+.lcars-bar-2 { background: var(--lcars-blue); max-width: 40px; }
+.lcars-bar-3 { background: var(--accent-gold); flex: 1; }
+
+/* ── NAVIGATION ─────────────────────────────────────────── */
+nav.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 0 8px;
+}
+
+.nav-link {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  color: var(--bg-deep);
+  padding: 6px 20px;
+  border-radius: var(--radius-pill);
+  transition: all 0.25s ease;
+  text-transform: uppercase;
+}
+
+.nav-link.home    { background: var(--lcars-red); color: var(--ghost-white); }
+.nav-link.log     { background: var(--lcars-orange); }
+.nav-link.crew    { background: var(--lcars-lavender); }
+.nav-link.ship    { background: var(--lcars-blue); }
+.nav-link.padd    { background: var(--accent-gold); }
+
+.nav-link:hover, .nav-link.active {
+  filter: brightness(1.25);
+  box-shadow: 0 0 16px rgba(255,200,60,0.5);
+  transform: translateY(-1px);
+}
+
+.nav-status {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  color: var(--lcars-blue);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: blink 2.5s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}

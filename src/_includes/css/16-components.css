@@ -1,0 +1,287 @@
+/* ============================================================
+   COMPONENTI v2 (refactoring Eleventy)
+   Sostituiscono gli stili inline ripetuti nelle singole pagine.
+   ============================================================ */
+
+/* ── TONI DI REPARTO ─────────────────────────────────────────
+   Una classe .tone-* imposta le variabili usate da intestazioni,
+   card, badge e fascicoli. Aggiungere qui un nuovo reparto.     */
+.tone-cmd         { --tone: #800000; --tone-rgb: 128,0,0;     --tone-dark: #5a0000; --tone-dark-rgb: 60,0,0; }
+.tone-sci         { --tone: #008080; --tone-rgb: 0,128,128;   --tone-dark: #005555; --tone-dark-rgb: 0,60,60; }
+.tone-ops         { --tone: #808000; --tone-rgb: 128,128,0;   --tone-dark: #555500; --tone-dark-rgb: 60,60,0; }
+.tone-ext         { --tone: #ff8000; --tone-rgb: 255,128,0;   --tone-dark: #b35900; --tone-dark-rgb: 90,45,0; }
+.tone-civ,
+.tone-mascot      { --tone: rgba(248,248,255,0.4); --tone-rgb: 248,248,255; --tone-dark: rgba(40,40,60,0.85); --tone-dark-rgb: 200,200,220; }
+.tone-briefing    { --tone: #BF6500; --tone-rgb: 255,153,0;   --tone-dark: #FF9900; --tone-dark-rgb: 191,101,0; }
+.tone-orange      { --tone: var(--lcars-orange); }
+.tone-lost        { --tone: #cc3333; --tone-rgb: 200,0,0;     --tone-dark: #550000; --tone-dark-rgb: 60,0,0; }
+.tone-transferred { --tone: #cccccc; --tone-rgb: 200,200,210; --tone-dark: #555560; --tone-dark-rgb: 60,60,70; }
+
+/* intestazione dei civili: grigio-blu come in origine */
+.diary-header.tone-civ { background: linear-gradient(135deg, rgba(80,80,100,0.7) 0%, rgba(40,40,60,0.85) 100%); }
+
+/* ── BANNER DI SEZIONE ──────────────────────────────────── */
+.banner-orange   { --b1: var(--lcars-orange);   --b2: var(--lcars-lavender); --b3: var(--lcars-blue); }
+.banner-lavender { --b1: var(--lcars-lavender); --b2: var(--lcars-blue);     --b3: var(--lcars-orange); }
+.banner-blue     { --b1: var(--lcars-blue);     --b2: var(--lcars-lavender); --b3: var(--lcars-orange); }
+.banner-gold     { --b1: var(--accent-gold);    --b2: var(--lcars-orange);   --b3: var(--lcars-blue); }
+.page-banner .banner-elbow,
+.page-banner .banner-line-1 { background: var(--b1, var(--lcars-orange)); }
+.page-banner .banner-line-2 { background: var(--b2, var(--lcars-lavender)); }
+.page-banner .banner-line-3 { background: var(--b3, var(--lcars-blue)); }
+.page-banner .banner-title i { color: var(--b1, var(--lcars-orange)); }
+
+/* ── PANNELLI ───────────────────────────────────────────── */
+.panel + .panel { margin-top: 24px; }
+.panel-header-bar { background: var(--lcars-orange); }
+.panel-header-count {
+  margin-left: auto;
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  color: rgba(248,248,255,0.3);
+  letter-spacing: 0.15em;
+}
+
+/* ── HEADER / FOOTER ────────────────────────────────────── */
+.lcars-clock {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  color: var(--lcars-orange);
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+.footer-disclaimer { font-size: 0.35rem; color: rgba(248,248,255,0.4); }
+
+/* ── HOME ───────────────────────────────────────────────── */
+.hero-brand { display: flex; align-items: center; gap: 16px; }
+.hero-logo { height: 90px; width: auto; flex-shrink: 0; }
+.hero-access { margin-top: 10px; font-size: 0.8rem; color: rgba(248,248,255,0.5); }
+.hero-stardate { margin-top: 15px; margin-bottom: 0; font-size: 0.75rem; color: var(--lcars-orange); }
+.stat-note { font-size: 0.7rem; color: rgba(248,248,255,0.4); }
+.lcars-deco { margin-top: 48px; display: flex; gap: 8px; align-items: center; opacity: 0.5; }
+.lcars-deco-dot { width: 40px; height: 40px; border-radius: 50%; background: var(--lcars-orange); flex-shrink: 0; }
+.lcars-deco-bar { height: 12px; border-radius: var(--radius-pill); }
+.bar-lavender { background: var(--lcars-lavender); }
+.bar-blue     { background: var(--lcars-blue); }
+.bar-gold     { background: var(--accent-gold); }
+
+/* ── INDICE LOG ─────────────────────────────────────────── */
+.mission-number i { margin-right: 6px; color: rgba(255,153,0,0.5); }
+.mission-reunion { background: rgba(255,103,0,0.10); }
+.mission-special { background: rgba(255,235,70,0.10); }
+.mission-reunion .mission-number,
+.mission-special .mission-number,
+.mission-reunion .mission-number i,
+.mission-special .mission-number i { color: var(--accent-gold); }
+.mission-item.is-disabled { cursor: default; }
+.mission-item.is-disabled:hover { transform: none; box-shadow: none; }
+.mission-legend { font-size: 0.75rem; color: rgba(248,248,255,0.5); padding-top: 12px; }
+
+/* ── CARD DIARI (indice missione) ───────────────────────── */
+.diary-card-bar { background: var(--tone); }
+.diary-card-role { color: var(--tone); }
+.diary-card--briefing { border-color: rgba(255,153,0,0.3); }
+.diary-card--briefing .diary-card-bar { background: linear-gradient(90deg, var(--lcars-orange), var(--accent-gold)); }
+.diary-card--briefing .diary-card-role { color: var(--lcars-orange); }
+.diary-card-from { font-size: 0.7rem; color: rgba(248,248,255,0.4); margin-top: 6px; }
+.diary-card.tone-civ .diary-card-role { color: rgba(248,248,255,0.6); }
+.diary-card.is-disabled { opacity: 0.55; cursor: default; }
+.diary-card.is-disabled:hover { transform: none; border-color: rgba(68,136,255,0.15); box-shadow: none; }
+
+/* ── DIARIO ─────────────────────────────────────────────── */
+.diary-body .diary-signature {
+  margin-top: 2.4em;
+  color: rgba(248,248,255,0.5);
+  font-style: italic;
+}
+
+/* ── SEGNAPOSTO FOTO ─────────────────────────────────────── */
+.photo-placeholder {
+  width: 72px;
+  height: 90px;
+  background: rgba(var(--tone-rgb, 128,0,0), 0.15);
+  border-radius: 6px;
+  border: 2px dashed rgba(var(--tone-rgb, 128,0,0), 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 6px;
+  color: rgba(var(--tone-rgb, 128,0,0), 0.5);
+}
+.photo-placeholder i { font-size: 2rem; opacity: 0.9; }
+.photo-placeholder span { font-family: var(--font-display); font-size: 0.45rem; letter-spacing: 0.1em; }
+.diary-header .photo-placeholder { background: rgba(0,0,0,0.2); border-color: rgba(255,255,255,0.3); color: rgba(255,255,255,0.5); }
+.photo-placeholder--lg { width: 160px; height: 190px; border-radius: 8px; gap: 8px; }
+.photo-placeholder--lg i { font-size: 3rem; }
+.photo-placeholder--lg span { font-size: 0.55rem; }
+
+/* ── NAVIGAZIONE IN CALCE ───────────────────────────────── */
+.pager { display: flex; gap: 12px; margin-top: 24px; align-items: center; }
+.pager .btn-back { margin-bottom: 0; }
+.pager-arrows { margin-left: auto; display: flex; gap: 8px; }
+.btn-back.is-disabled { opacity: 0.25; cursor: default; pointer-events: none; }
+
+/* ── FASCICOLI EQUIPAGGIO ───────────────────────────────── */
+.crew-alert { margin-bottom: 20px; }
+.crew-detail-wrapper .crew-detail-top { border: 1px solid rgba(var(--tone-rgb), 0.4); }
+.crew-detail-wrapper .crew-detail-img-wrap { border-right: 1px solid rgba(var(--tone-rgb), 0.25); }
+.crew-detail-wrapper .crew-detail-header { background: linear-gradient(135deg, rgba(var(--tone-rgb), 0.35), rgba(var(--tone-dark-rgb), 0.5)); }
+.crew-detail-wrapper .role-label { color: rgba(248,248,255,0.6); }
+.crew-detail-wrapper .role-label i,
+.crew-detail-wrapper .char-name { color: var(--tone); }
+.crew-detail-img-wrap img.crew-photo {
+  width: 160px;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid rgba(var(--tone-rgb), 0.5);
+}
+.tone-civ.crew-detail-wrapper .crew-detail-top,
+.tone-mascot.crew-detail-wrapper .crew-detail-top { border-color: rgba(248,248,255,0.25); }
+.tone-civ.crew-detail-wrapper .crew-detail-img-wrap { border-right-color: rgba(248,248,255,0.15); }
+.tone-civ.crew-detail-wrapper .crew-detail-header { background: linear-gradient(135deg, rgba(248,248,255,0.12), rgba(200,200,220,0.08)); }
+.tone-civ.crew-detail-wrapper .role-label,
+.tone-civ.crew-detail-wrapper .role-label i { color: rgba(248,248,255,0.5); }
+.tone-civ.crew-detail-wrapper .char-name { color: rgba(248,248,255,0.75); }
+.tone-civ.crew-detail-wrapper img.crew-photo { border-color: rgba(248,248,255,0.3); }
+
+.badge-row { margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+.badge {
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  background: rgba(var(--tone-rgb), 0.2);
+  border: 1px solid rgba(var(--tone-rgb), 0.4);
+  color: rgba(248,248,255,0.7);
+}
+.tone-civ .badge { background: rgba(248,248,255,0.1); border-color: rgba(248,248,255,0.25); }
+.badge-info   { background: rgba(68,136,255,0.1);  border-color: rgba(68,136,255,0.25); color: rgba(248,248,255,0.5); }
+.badge-warn   { background: rgba(255,255,0,0.2);   border-color: rgba(255,255,0,0.5);   color: #ffff00; }
+.badge-danger { background: rgba(200,0,0,0.15);    border-color: rgba(200,0,0,0.4);     color: #ff9999; }
+.badge-muted  { background: rgba(200,200,210,0.12); border-color: rgba(200,200,210,0.35); color: #cccccc; }
+
+.crew-diaries-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  color: var(--lcars-orange);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.crew-diaries-link:hover { color: var(--accent-gold); }
+
+.stat-row { border-left-color: var(--lcars-blue); }
+.stat-row.is-accent { border-left-color: var(--tone); }
+.tone-civ .stat-row.is-accent { border-left-color: rgba(248,248,255,0.35); }
+.stat-row.is-warn   { border-left-color: rgba(255,255,0,0.8); }
+.stat-row.is-warn .s-value   { color: #ffff00; }
+.stat-row.is-danger { border-left-color: rgba(200,0,0,0.8); }
+.stat-row.is-danger .s-value { color: #ff7777; }
+.frame-lost.crew-detail-wrapper .crew-detail-top { border-color: rgba(200,0,0,0.5); }
+.frame-lost.crew-detail-wrapper .crew-detail-img-wrap { border-right-color: rgba(200,0,0,0.3); }
+.frame-lost.crew-detail-wrapper img.crew-photo { border-color: rgba(200,0,0,0.5); }
+.frame-lost .photo-placeholder { --tone-rgb: 200,0,0; color: #ff7777; }
+
+/* card nell'indice equipaggio */
+.crew-thumb-bar { background: var(--tone); }
+.crew-thumb-rank { color: var(--tone); }
+.crew-thumb.tone-mascot .crew-thumb-rank,
+.crew-thumb.tone-civ .crew-thumb-rank { color: rgba(248,248,255,0.5); }
+.crew-thumb.tone-civ .crew-thumb-bar { background: rgba(248,248,255,0.12); }
+.crew-section-badge { background: var(--tone); }
+.crew-section-badge.tone-civ { background: rgba(248,248,255,0.25); color: var(--bg-deep); }
+.crew-thumb-tag { margin-top: 4px; }
+.crew-thumb-tag span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.55rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+.crew-thumb.status-transferred { border-color: rgba(200,200,210,0.35); background: rgba(30,35,45,0.4); }
+.crew-thumb.status-transferred .crew-thumb-bar { background: #cccccc; }
+.crew-thumb.status-transferred .crew-thumb-img i,
+.crew-thumb.status-transferred .crew-thumb-tag span { color: #cccccc; }
+.crew-thumb.status-transferred .crew-thumb-rank { color: rgba(200,200,210,0.7); }
+.crew-thumb.status-transferred .crew-thumb-tag span { background: rgba(200,200,210,0.12); border: 1px solid rgba(200,200,210,0.35); }
+.crew-thumb.status-lost { border-color: rgba(200,0,0,0.45); background: rgba(30,10,10,0.4); }
+.crew-thumb.status-lost .crew-thumb-bar { background: #cc3333; }
+.crew-thumb.status-lost .crew-thumb-img i,
+.crew-thumb.status-lost .crew-thumb-tag span { color: #ff7777; }
+.crew-thumb.status-lost .crew-thumb-tag span { background: rgba(200,0,0,0.25); border: 1px solid rgba(200,0,0,0.5); }
+
+/* ── PADD ───────────────────────────────────────────────── */
+.padd-from { margin-top: 8px; font-size: 0.75rem; color: rgba(248,248,255,0.45); }
+.padd-signature,
+.aside-note,
+.diary-body .aside-note,
+.padd-detail-body .aside-note,
+.padd-detail-body .padd-signature { margin-top: 24px; font-size: 0.8rem; color: rgba(248,248,255,0.45); font-style: italic; }
+.padd-item-sub { font-size: 0.7rem; color: rgba(248,248,255,0.4); margin-top: 3px; }
+.padd-icon img { width: 24px; height: 24px; }
+.padd-item--gold,
+.padd-item--orange { border-color: rgba(255,163,25,0.3); background: rgba(255,153,0,0.05); }
+.padd-item--gold .padd-icon,
+.padd-item--orange .padd-icon { background: rgba(255,163,25,0.1); border-color: rgba(255,153,0,0.3); color: #ff9900; }
+.padd-item--gold .padd-item-title { color: var(--accent-gold); }
+.padd-item--orange .padd-item-title { color: #ff9900; }
+.padd-item--orange .padd-item-sub { color: rgba(255,163,0,0.5); }
+.padd-item--orange .padd-item-id { color: rgba(255,163,25,0.5); }
+.padd-item--red { border-color: rgba(255,100,100,0.3); background: rgba(255,50,50,0.05); }
+.padd-item--red .padd-icon { background: rgba(255,80,80,0.1); border-color: rgba(255,80,80,0.3); color: #ff8888; }
+.padd-item--red .padd-item-title { color: #ff9999; }
+.padd-item--red .padd-item-sub,
+.padd-item--red .padd-item-id { color: rgba(255,150,150,0.5); }
+
+/* ── UTILITY ────────────────────────────────────────────── */
+.text-dim, .diary-body .text-dim, .padd-detail-body .text-dim, .crew-notes-section .text-dim { color: rgba(248,248,255,0.5); }
+.text-soft, .diary-body .text-soft, .padd-detail-body .text-soft, .crew-notes-section .text-soft { color: rgba(248,248,255,0.75); }
+.text-white, .diary-body .text-white, .padd-detail-body .text-white, .crew-notes-section .text-white { color: var(--ghost-white); }
+.text-orange, .diary-body .text-orange, .padd-detail-body .text-orange, .crew-notes-section .text-orange { color: var(--lcars-orange); }
+.text-gold, .diary-body .text-gold, .padd-detail-body .text-gold, .crew-notes-section .text-gold { color: var(--accent-gold); }
+.text-blue, .diary-body .text-blue, .padd-detail-body .text-blue, .crew-notes-section .text-blue { color: var(--lcars-blue); }
+.text-lavender, .diary-body .text-lavender, .padd-detail-body .text-lavender, .crew-notes-section .text-lavender { color: var(--lcars-lavender); }
+.text-cmd, .diary-body .text-cmd, .padd-detail-body .text-cmd, .crew-notes-section .text-cmd { color: var(--cmd-color); }
+.text-sci, .diary-body .text-sci, .padd-detail-body .text-sci, .crew-notes-section .text-sci { color: var(--sci-color); }
+.text-ops, .diary-body .text-ops, .padd-detail-body .text-ops, .crew-notes-section .text-ops { color: var(--ops-color); }
+.text-ext, .diary-body .text-ext, .padd-detail-body .text-ext, .crew-notes-section .text-ext { color: var(--ext-color); }
+.text-small, .diary-body .text-small, .padd-detail-body .text-small, .crew-notes-section .text-small { font-size: 0.78rem; }
+.text-center   { text-align: center; }
+.caption-note, .diary-body .caption-note, .padd-detail-body .caption-note, .crew-notes-section .caption-note { font-size: 0.8rem; color: rgba(248,248,255,0.45); }
+.placeholder-hint { font-size: 0.55rem; color: rgba(119,153,204,0.35); }
+.prose, .diary-body .prose, .padd-detail-body .prose, .crew-notes-section .prose { font-size: 0.9rem; line-height: 1.8; color: rgba(248,248,255,0.8); font-weight: 300; }
+.bg-blue   { background: var(--lcars-blue); }
+.span-all  { grid-column: 1 / -1; }
+.indent    { margin-left: 50px; }
+.mb-0      { margin-bottom: 0; }
+.mb-14     { margin-bottom: 14px; }
+.mt-12     { margin-top: 12px; }
+.mt-24     { margin-top: 24px; }
+.mt-32     { margin-top: 32px; }
+.mr-6      { margin-right: 6px; }
+.ml-auto   { margin-left: auto; }
+.is-hidden { display: none; }
+.img-fluid { max-width: 100%; height: auto; display: block; }
+.kbd { font-size: 0.75em; background: rgba(255,255,255,0.07); padding: 1px 5px; border-radius: 4px; }
+.note-box { margin-top: 24px; padding: 16px 20px; background: rgba(68,136,255,0.06); border: 1px solid rgba(68,136,255,0.15); border-radius: 12px; }
+.note-box-title { font-family: var(--font-display); font-size: 0.6rem; letter-spacing: 0.15em; color: var(--lcars-blue); text-transform: uppercase; margin-bottom: 6px; }
+
+/* ── EFFETTI JS ─────────────────────────────────────────── */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.45s ease, transform 0.45s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+img.img-missing { display: none; }
+
+/* ── ACCESSIBILITÀ ──────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}

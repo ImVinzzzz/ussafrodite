@@ -1,0 +1,9 @@
+---
+permalink: /assets/css/site.css
+eleventyExcludeFromCollections: true
+---
+{#- Il foglio di stile è diviso in file tematici dentro src/_includes/css/
+    e viene unito in un unico site.css durante la build (l'ordine conta). -#}
+{% for f in ['01-base','02-header','03-layout','04-home','05-log','06-diary','07-crew','08-ship','09-padd','10-common','11-diary-content','12-diary-header','13-animations','14-responsive','15-alerts','16-components'] -%}
+{% include "css/" + f + ".css" %}
+{% endfor %}

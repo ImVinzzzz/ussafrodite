@@ -1,0 +1,13 @@
+{#- Banner di sezione. banner: { icon, title, subtitle, tone: orange|lavender|blue|gold } -#}
+<div class="page-banner banner-{{ banner.tone }}">
+  <div class="banner-elbow"></div>
+  <div>
+    <div class="banner-title"><i class="{{ banner.icon }}"></i> &nbsp;{{ banner.title }}</div>
+    <div class="banner-subtitle">{{ banner.subtitle }} · {{ site.ship }}</div>
+  </div>
+  <div class="banner-lines">
+    <div class="banner-line banner-line-1"></div>
+    <div class="banner-line banner-line-2"></div>
+    <div class="banner-line banner-line-3"></div>
+  </div>
+</div>

@@ -1,0 +1,98 @@
+/* ── MAIN LAYOUT ────────────────────────────────────────── */
+#main-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+/* ── PAGE TITLE BANNER ──────────────────────────────────── */
+.page-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.banner-elbow {
+  width: 60px;
+  height: 60px;
+  border-radius: 50% 0 0 50%;
+  flex-shrink: 0;
+}
+
+.banner-title {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ghost-white);
+  text-shadow: 0 0 20px rgba(68,136,255,0.6);
+}
+
+.banner-subtitle {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: var(--lcars-blue);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.banner-lines {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.banner-line {
+  height: 4px;
+  border-radius: var(--radius-pill);
+}
+.banner-line-1 { background: var(--lcars-orange); width: 100%; }
+.banner-line-2 { background: var(--lcars-lavender); width: 70%; }
+.banner-line-3 { background: var(--lcars-blue); width: 40%; }
+
+/* ── PANEL (generic content box) ────────────────────────── */
+.panel {
+  background: var(--bg-panel);
+  border: 1px solid rgba(68, 136, 255, 0.2);
+  border-radius: var(--radius-md);
+  box-shadow: var(--panel-shadow), var(--border-glow);
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.panel:hover {
+  border-color: rgba(68, 136, 255, 0.45);
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(68, 136, 255, 0.15);
+}
+
+.panel-header-bar {
+  width: 6px;
+  height: 32px;
+  border-radius: var(--radius-pill);
+  flex-shrink: 0;
+}
+
+.panel-header-title {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ghost-white);
+}
+
+.panel-body { padding: 20px; }

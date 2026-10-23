@@ -1,0 +1,132 @@
+/* ── SHIP PAGE ───────────────────────────────────────────── */
+.ship-specs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 700px) { .ship-specs-grid { grid-template-columns: 1fr; } }
+
+.ship-history-grid {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 24px;
+  margin-bottom: 32px;
+  align-items: start;
+}
+
+.ship-history-grid .ship-image-wrap {
+  margin-bottom: 0;
+}
+
+.ship-history-grid a {
+  color: var(--lcars-orange);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.ship-history-grid a:hover {
+  color: var(--ghost-white);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .ship-history-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.specs-block {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  border: 1px solid rgba(119,153,204,0.2);
+}
+
+.specs-block h3 {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lcars-blue);
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(119,153,204,0.2);
+}
+
+.spec-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(68,136,255,0.07);
+  font-size: 0.85rem;
+}
+
+.spec-row:last-child { border-bottom: none; }
+
+.spec-row .spec-label {
+  color: rgba(248,248,255,0.55);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.spec-row .spec-val {
+  font-weight: 600;
+  color: var(--ghost-white);
+  text-align: right;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+}
+
+.ship-image-wrap {
+  background: rgba(0,10,25,0.6);
+  border: 1px solid rgba(119,153,204,0.2);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.ship-image-wrap img {
+  max-width: 100%;
+  border-radius: var(--radius-sm);
+  filter: drop-shadow(0 0 20px rgba(68,136,255,0.3));
+}
+
+.ship-image-caption {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  color: var(--lcars-blue);
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.ship-placeholder-img {
+  width: 100%;
+  height: 220px;
+  background: linear-gradient(135deg, rgba(0,20,50,0.8), rgba(0,10,30,0.9));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px dashed rgba(119,153,204,0.3);
+}
+
+.ship-placeholder-img i {
+  font-size: 3rem;
+  color: rgba(119,153,204,0.4);
+}
+
+.ship-placeholder-img span {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: rgba(119,153,204,0.5);
+  text-transform: uppercase;
+}

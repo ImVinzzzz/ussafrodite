@@ -1,0 +1,81 @@
+/* ── DIARY (singola pagina diario) ──────────────────────── */
+.diary-wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.diary-header {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 0;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  padding: 0;
+  margin-bottom: 0;
+  background: linear-gradient(135deg, var(--tone) 0%, var(--tone-dark) 100%);
+}
+
+.diary-header-role {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-bottom: 4px;
+}
+
+.diary-header-name {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.diary-header-mission {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  color: rgba(248,248,255,0.6);
+  margin-top: 4px;
+  letter-spacing: 0.15em;
+}
+
+.diary-body {
+  background: var(--bg-panel);
+  border: 1px solid rgba(68,136,255,0.2);
+  border-top: none;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  padding: 32px;
+}
+
+.stardate-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255,153,0,0.2);
+}
+
+.stardate-label {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  color: var(--lcars-orange);
+  text-transform: uppercase;
+}
+
+.stardate-value {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ghost-white);
+}
+
+.diary-body p {
+  margin-bottom: 1.2em;
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(248,248,255,0.88);
+}

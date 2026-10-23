@@ -1,0 +1,11 @@
+{
+  "cmd":      { "label": "COM", "tone": "cmd",      "icon": "fa-solid fa-circle-chevron-up" },
+  "sci":      { "label": "SCI", "tone": "sci",      "icon": "fa-solid fa-dna" },
+  "med":      { "label": "MED", "tone": "sci",      "icon": "fa-solid fa-staff-snake" },
+  "sec":      { "label": "SEC", "tone": "ops",      "icon": "fa-solid fa-shield-halved" },
+  "eng":      { "label": "ENG", "tone": "ops",      "icon": "fa-solid fa-gear" },
+  "ops":      { "label": "OPS", "tone": "ops",      "icon": "fa-solid fa-globe" },
+  "civ":      { "label": "CIV", "tone": "civ",      "icon": "fa-regular fa-circle-dot" },
+  "ext":      { "label": "EXT", "tone": "ext",      "icon": "fa-solid fa-folder-open" },
+  "briefing": { "label": "",    "tone": "briefing", "icon": "fa-regular fa-circle-dot" }
+}

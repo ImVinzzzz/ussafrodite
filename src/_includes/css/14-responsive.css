@@ -1,0 +1,141 @@
+/* ── RESPONSIVE ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* Layout LCARS Header in Mobile */
+  .header-lcars {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px 8px;
+  }
+
+  .header-elbow {
+    width: auto;
+    min-width: 0;
+    padding: 8px 24px 8px 14px;
+    border-radius: 0 0 24px 0;
+    margin-bottom: 8px;
+  }
+
+  .header-elbow .header-quote {
+    display: none;
+  }
+
+  .header-content {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Inversione dell'ordine: prima i pulsanti nav, poi la barra LCARS con l'orologio */
+  nav.main-nav {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 8px 0 12px;
+    width: 100%;
+  }
+
+  .header-top-bar {
+    order: 2;
+    padding: 4px 0 8px;
+    width: 100%;
+  }
+
+  /* Nascondi il testo dei pulsanti e lo stato del sistema su mobile */
+  .nav-text,
+  .nav-status {
+    display: none !important;
+  }
+
+  /* Riduzione altezza pulsanti nav in mobile (forma a capsula compatta e meno invasiva) */
+  .nav-link {
+    width: 44px;
+    height: 28px;
+    min-width: 44px;
+    padding: 0;
+    border-radius: var(--radius-pill);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.88rem;
+    flex-shrink: 0;
+    box-shadow: none;
+    transform: none;
+    transition: filter 0.2s ease, opacity 0.2s ease;
+  }
+
+  /* Hover: semplice illuminazione e leggera desaturazione senza alone */
+  .nav-link:hover {
+    filter: brightness(1.25) saturate(0.85);
+    box-shadow: none;
+    transform: none;
+  }
+
+  /* Stato attivo senza alone (box-shadow) */
+  .nav-link.active,
+  .nav-link:active,
+  .nav-link:focus {
+    filter: brightness(1.15);
+    box-shadow: none;
+    transform: none;
+    outline: none;
+  }
+
+  #main-content { padding: 24px 14px 60px; }
+  .banner-title { font-size: 1.3rem; }
+  .hero-ship-name { font-size: 1.6rem; }
+  .section-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .crew-grid { grid-template-columns: repeat(2, 1fr); gap: 0.625rem; }
+  .crew-thumb-info { padding: 0.625rem; }
+  .crew-thumb-img { height: 7.5rem; }
+
+  /* Diary Header Mobile */
+  .diary-header {
+    flex-direction: column;
+    padding: 0;
+  }
+  .diary-header-text {
+    padding: 16px 16px 12px;
+    width: 100%;
+  }
+  .diary-header-role {
+    font-size: 0.58rem;
+    letter-spacing: 0.18em;
+    margin-bottom: 4px;
+  }
+  .diary-header-name {
+    font-size: 1.15rem;
+    letter-spacing: 0.06em;
+    line-height: 1.25;
+  }
+  .diary-header-mission {
+    font-size: 0.62rem;
+    letter-spacing: 0.12em;
+    margin-top: 4px;
+  }
+  .diary-header-pgbox {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+    padding: 8px 16px;
+    border-left: none;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    border-radius: 0;
+  }
+  .diary-header-pgbox img {
+    width: 75px;
+    height: 52px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--radius-sm);
+  }
+  .diary-header-pgbox a {
+    font-size: 0.55rem;
+    padding: 6px 14px;
+  }
+}

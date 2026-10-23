@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+---
+{#- Documento PADD. Dati nel front matter di src/padd/<id>.html -#}
+<article class="padd-detail-wrapper animate-in">
+  <div class="padd-detail-header">
+    <div class="padd-meta">
+      <i class="fa-solid fa-tablet-screen-button"></i>
+      &nbsp;{{ code }} &nbsp;·&nbsp; {{ site.name }} &nbsp;·&nbsp;
+      Stardate {% if stardate == 'live' %}<span class="js-stardate"></span>{% else %}{{ stardate }}{% endif %}
+    </div>
+    <h1 class="padd-title">{{ title }}</h1>
+    {% if from and from.length %}
+    <div class="padd-from">{% for l in from %}{{ l }}{% if not loop.last %}<br>{% endif %}{% endfor %}</div>
+    {% endif %}
+  </div>
+
+  <div class="padd-detail-body">
+{{ content | safe }}
+    {% if signature %}
+    <p class="padd-signature">{% for l in signature %}{{ l }}{% if not loop.last %}<br>{% endif %}{% endfor %}</p>
+    {% endif %}
+  </div>
+</article>
+
+{% set back = { url: '/padd/', label: 'PADD' } %}
+{% set nb = collections.padd | neighbours(page.url) %}
+{% include "partials/pager.njk" %}

@@ -1,0 +1,29 @@
+---
+layout: layouts/base.njk
+title: PADD
+---
+{#- Bacheca PADD: generata dai documenti in src/padd/ (ordine = campo `order`) -#}
+{% set banner = { icon: 'fa-solid fa-tablet-screen-button', title: 'PADD', subtitle: 'Comunicazioni & Avvisi', tone: 'gold' } %}
+{% include "partials/banner.njk" %}
+
+<div class="panel">
+  <div class="panel-header">
+    <div class="panel-header-bar bar-gold"></div>
+    <span class="panel-header-title">Bacheca Avvisi e Comunicazioni interne</span>
+    <span class="panel-header-count">{{ collections.padd.length }} ENTRIES</span>
+  </div>
+  <div class="panel-body">
+    <div class="padd-list">
+      {% for p in collections.padd %}
+      <a href="{{ p.url }}" class="padd-item{% if p.data.tone %} padd-item--{{ p.data.tone }}{% endif %}">
+        <div class="padd-icon">{% if p.data.iconImg %}<img src="{{ p.data.iconImg }}" alt="">{% else %}<i class="{{ p.data.icon }}"></i>{% endif %}</div>
+        <div>
+          <div class="padd-item-title">{{ p.data.listTitle or p.data.title }}</div>
+          <div class="padd-item-sub">{{ p.data.listSub or (p.data.from[0] if p.data.from) }}</div>
+        </div>
+        <span class="padd-item-id">{{ p.data.code }}</span>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

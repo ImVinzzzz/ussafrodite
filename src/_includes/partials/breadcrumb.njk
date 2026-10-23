@@ -1,0 +1,8 @@
+{#- crumbs: elenco di { label, url }; l'ultima voce è la pagina corrente -#}
+<nav class="breadcrumb" aria-label="Percorso">
+  <a href="/" aria-label="Home"><i class="fa-solid fa-location-arrow"></i></a>
+  {%- for c in crumbs %}
+  <span>›</span>
+  {% if loop.last or not c.url %}<span class="current">{{ c.label }}</span>{% else %}<a href="{{ c.url }}">{{ c.label }}</a>{% endif %}
+  {%- endfor %}
+</nav>
