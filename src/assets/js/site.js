@@ -119,8 +119,10 @@
     if (img.complete && img.naturalWidth === 0 && !/\.svg($|\?)/i.test(img.src)) markMissing(img);
   });
 
-  // ── LIGHTBOX GALLERIE PADD ────────────────────────────────
-  const galleryImages = document.querySelectorAll(".padd-gallery-item img");
+  // ── LIGHTBOX GALLERIE (PADD e gallerie fotografiche) ──────
+  // Clic su una miniatura: immagine intera a schermo pieno con didascalia.
+  const GALLERY_ITEM = ".padd-gallery-item, .gallery-item";
+  const galleryImages = document.querySelectorAll(".padd-gallery-item img, .gallery-item img");
   if (galleryImages.length) {
     const box = document.createElement("div");
     box.className = "padd-lightbox";
@@ -138,7 +140,7 @@
     galleryImages.forEach((img) => img.addEventListener("click", () => {
       boxImg.src = img.src;
       boxImg.alt = img.alt || "";
-      const cap = img.closest(".padd-gallery-item")?.querySelector(".padd-gallery-caption");
+      const cap = img.closest(GALLERY_ITEM)?.querySelector(".padd-gallery-caption, .gallery-item-caption");
       boxCaption.textContent = cap ? cap.textContent : (img.alt || "");
       box.classList.add("active");
       document.body.style.overflow = "hidden";
