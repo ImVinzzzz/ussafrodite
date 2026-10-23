@@ -1,0 +1,58 @@
+---
+layout: layouts/base.njk
+---
+{#- Fascicolo di un membro dell'equipaggio. Dati nel front matter di src/crew/<id>.html -#}
+{% if custom %}
+{{ content | safe }}
+{% else %}
+<div class="crew-detail-wrapper tone-{{ tone }}{% if frame %} frame-{{ frame }}{% endif %} animate-in">
+
+  {% if alert %}
+  <div class="{{ alert.level }}-alert crew-alert">
+    <i class="{{ alert.icon }} fa-lg"></i>
+    <span>{{ alert.text }}</span>
+    <i class="{{ alert.icon }} fa-lg ml-auto"></i>
+  </div>
+  {% endif %}
+
+  <div class="crew-detail-top">
+    <div class="crew-detail-img-wrap">
+      {% if logo %}<img src="/assets/img/{{ logo }}" alt="Logo reparto" class="crew-dept-logo">{% endif %}
+      {% if photo %}<img src="{{ photo if photo.startsWith('http') else '/assets/img/crew/' + photo }}" alt="{{ charName if rankName == charName else rankName | striptags }}" class="crew-photo">
+      {% else %}{% set size = 'lg' %}{% set phIcon = icon %}{% include "partials/photo-placeholder.njk" %}{% endif %}
+    </div>
+
+    <div class="crew-detail-header">
+      <div class="role-label"><i class="{{ icon }}"></i> &nbsp; {{ roleLabel }}</div>
+      <div class="rank-name">{{ rankName | safe }}</div>
+      <div class="char-name">{{ charName }}</div>
+      {% if badges and badges.length %}
+      <div class="badge-row">
+        {% for b in badges %}
+        {% if b.text %}<span class="badge badge-{{ b.type }}">{{ b.text }}</span>{% else %}<span class="badge">{{ b }}</span>{% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% if diaries %}<a href="{{ diaries.url or diaries }}" class="crew-diaries-link"><i class="fa-solid fa-file-lines"></i> {{ diaries.label or 'Diari di Missione' }}</a>{% endif %}
+    </div>
+  </div>
+
+  <div class="crew-stats-table">
+    <div class="crew-stats-grid">
+      {% for s in stats %}
+      {% set a = statAccent[loop.index0] if statAccent else ('T' if loop.index0 < 2 else 'B') %}
+      <div class="stat-row{{ {'T': ' is-accent', 'W': ' is-warn', 'D': ' is-danger'}[a] or '' }}">
+        <span class="s-label">{{ s[0] }}</span>
+        <span class="s-value">{{ s[1] | safe }}</span>
+      </div>
+      {% endfor %}
+    </div>
+
+{{ content | safe }}
+
+  </div>
+</div>
+{% endif %}
+
+{% set back = { url: '/crew/', label: 'Fascicoli Equipaggio' } %}
+{% include "partials/pager.njk" %}

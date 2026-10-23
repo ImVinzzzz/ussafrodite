@@ -1,0 +1,46 @@
+---
+layout: layouts/base.njk
+title: Log
+eleventyComputed:
+  crumbs: []
+---
+{#- Indice dei log: generato da _data/missions.json (ordine = ordine di visualizzazione) -#}
+{% set banner = { icon: 'fa-solid fa-bars-staggered', title: 'Log', subtitle: 'Diari di missione', tone: 'orange' } %}
+{% include "partials/banner.njk" %}
+
+<div class="panel">
+  <div class="stat-block">
+    Roma, città di frontiera! Queste sono le (dis)avventure dell'equipaggio della nave stellare Afrodite,
+    alla ricerca di nuovi metodi per superare le crudeltà (del Comando di Flotta), fino ad arrivare là dove nessun
+    ufficiale è mai giunto prima.
+  </div>
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <div class="panel-header-bar"></div>
+    <span class="panel-header-title">Diari Personali / di Missione</span>
+    <span class="panel-header-count">{{ missions.length }} ENTRIES</span>
+  </div>
+  <div class="panel-body">
+    <div class="mission-list">
+      {% for m in missions %}
+      {% set special = m.type != 'mission' %}
+      {% set tag = 'a' if (m.url and m.status != 'none') else 'span' %}
+      <{{ tag }}{% if tag == 'a' %} href="{{ m.url }}"{% endif %} class="mission-item mission-{{ m.type }}{% if tag == 'span' %} is-disabled{% endif %}">
+        <span class="mission-number">
+          <i class="{{ 'fa-regular fa-circle-dot' if special else 'fa-solid fa-circle-check' }}"></i>{{ m.code }}
+        </span>
+        <span class="mission-name">{{ m.title }}</span>
+        <span class="mission-badge{% if special %} special{% endif %}" title="{{ legend[m.status] }}"><i class="{{ statusIcon[m.status] }}"></i></span>
+      </{{ tag }}>
+      {% endfor %}
+
+      <div class="mission-legend">
+        {% for key in ['complete', 'partial', 'none'] %}
+        <i class="{{ statusIcon[key] }}"></i> {{ legend[key] }}{% if not loop.last %}<br>{% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+---
+layout: layouts/base.njk
+title: Crew
+---
+{#- Indice dell'equipaggio: sezioni da _data/crewSections.json, card dal front matter `card` dei fascicoli -#}
+{% set banner = { icon: 'fa-solid fa-people-group', title: 'Crew', subtitle: 'Fascicoli Equipaggio', tone: 'lavender' } %}
+{% include "partials/banner.njk" %}
+
+{% for sec in crewSections %}
+<section class="crew-section">
+  <div class="crew-section-header">
+    <span class="crew-section-badge tone-{{ sec.tone }}"><i class="{{ sec.icon }}"></i> {{ sec.badge }}</span>
+    <h2>{{ sec.title }}</h2>
+  </div>
+  <div class="crew-grid">
+    {% for p in collections.crew | inSection(sec.key) %}
+    {% set c = p.data.card %}
+    {% set ct = c.tone if (c.tone and c.tone != 'lost' and c.tone != 'transferred') else p.data.tone %}
+    <a href="{{ p.url }}" class="crew-thumb tone-{{ ct }}{% if p.data.status %} status-{{ p.data.status }}{% endif %}">
+      <div class="crew-thumb-bar"></div>
+      <div class="crew-thumb-img"><i class="{{ c.icon }}"></i></div>
+      <div class="crew-thumb-info">
+        <div class="crew-thumb-rank">{{ c.rank }}</div>
+        <div class="crew-thumb-name">{{ c.name }}</div>
+        <div class="crew-thumb-role">{{ c.role }}</div>
+        {% if c.tag %}<div class="crew-thumb-tag"><span><i class="{{ c.icon }}"></i> {{ c.tag }}</span></div>{% endif %}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}

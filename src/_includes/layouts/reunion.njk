@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+---
+{#- Log speciali delle reunion (src/log/reunion/*.html) -#}
+<div class="mission-header-block">
+  <div class="mission-header-main">
+    <div class="mission-header-icon"><i class="fa-solid fa-bars-staggered"></i></div>
+    <div class="mission-header-info">
+      <div class="mission-header-label">{{ code }}</div>
+      <div class="mission-header-title">{{ heading }}</div>
+    </div>
+  </div>
+</div>
+
+{%- set h = { tone: departments[dept].tone, icon: icon or departments[dept].icon,
+              roleLine: roleLine, name: name, missionLine: missionLine } %}
+<article class="diary-wrapper">
+  {% include "partials/diary-header.njk" %}
+  <div class="diary-body">
+    {% if stardate %}
+    <div class="stardate-line">
+      <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+      <span class="stardate-value">{{ stardate }}</span>
+    </div>
+    {% endif %}
+
+{{ content | safe }}
+
+  </div>
+</article>
+
+{% set back = { url: '/log/', label: 'Log Missioni' } %}
+{% set nb = collections.reunions | neighbours(page.url) %}
+{% include "partials/pager.njk" %}

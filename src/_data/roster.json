@@ -1,0 +1,135 @@
+{
+  "alighieri": {
+    "name": "Ten JG G. Alighieri",
+    "short": "Ten JG Alighieri",
+    "dept": "cmd",
+    "code": "CO",
+    "sign": "Tenente JG Giuseppe Alighieri",
+    "thumb": "alighieri_l.jpg"
+  },
+  "bliss": {
+    "name": "Lucy Bliss",
+    "short": "L. Bliss",
+    "dept": "civ",
+    "code": "Ten Forward",
+    "sign": "Miss Lucy Bliss",
+    "thumb": "bliss.jpg"
+  },
+  "braxx": {
+    "name": "GM Sery Braxx",
+    "short": "GM Brax",
+    "dept": "eng",
+    "code": "Ufficiale",
+    "sign": "GM Sery Brax",
+    "thumb": "braxx.jpg"
+  },
+  "carter": {
+    "name": "Cadetto Carter",
+    "dept": "med",
+    "code": "Infermiere",
+    "sign": "Cadetto V Carter Carter",
+    "thumb": "carter.jpg"
+  },
+  "ciccozzi": {
+    "name": "GM Ciccozzi",
+    "dept": "sec",
+    "code": "Ufficiale",
+    "sign": "GM Gino Ciccozzi",
+    "thumb": "ciccozzi.jpg"
+  },
+  "daccardi": {
+    "name": "GM C. D'Accardi",
+    "short": "GM D'Accardi",
+    "dept": "sec",
+    "code": "XTO",
+    "sign": "GM Christian D'Accardi",
+    "thumb": "daccardi_l.jpg"
+  },
+  "danee": {
+    "name": "GM Da Nee",
+    "dept": "sci",
+    "code": "XSO",
+    "sign": "GM Da Nee",
+    "thumb": "danee_l.jpg"
+  },
+  "drews": {
+    "name": "Maurice Drews",
+    "short": "M. Drews",
+    "dept": "civ",
+    "code": "Istruttore di Ballo",
+    "sign": "Mr Maurice Drews",
+    "thumb": "drews.jpg"
+  },
+  "frruuu": {
+    "name": "GM Frruuu",
+    "dept": "cmd",
+    "code": "XO",
+    "sign": "GM Frruuu",
+    "thumb": "frruuu_l.jpg"
+  },
+  "jacket": {
+    "name": "GM P. JACKET",
+    "short": "GM Jacket",
+    "dept": "ops",
+    "code": "COO",
+    "sign": "GM Peter Jacket",
+    "thumb": "jacket_l.jpg"
+  },
+  "lambert": {
+    "name": "GM Baba Lambert",
+    "short": "GM Lambert",
+    "dept": "cmd",
+    "code": "Ufficiale",
+    "sign": "GM Baba Lambert",
+    "thumb": "lambert.jpg"
+  },
+  "rael": {
+    "name": "GM Rael",
+    "dept": "sec",
+    "code": "CTO",
+    "sign": "GM Rael"
+  },
+  "renzi": {
+    "name": "GM F. Renzi",
+    "short": "GM Renzi",
+    "dept": "sci",
+    "code": "CSO",
+    "sign": "GM Fabiola Renzi",
+    "thumb": "renzi_l.jpg"
+  },
+  "rogers": {
+    "name": "GM Rogers",
+    "dept": "eng",
+    "code": "Ingegnere",
+    "sign": "GM Rogers"
+  },
+  "sapek": {
+    "name": "GM Sàpek",
+    "dept": "sci",
+    "code": "Ufficiale",
+    "sign": "GM Sàpek",
+    "thumb": "sapek_l.jpg"
+  },
+  "tanutri": {
+    "name": "GM J. Ta Nutri",
+    "short": "GM Ta Nutri",
+    "dept": "eng",
+    "code": "CEO",
+    "sign": "GM Jidtzia Ta Nutri"
+  },
+  "tmik": {
+    "name": "GM T'Mik",
+    "dept": "med",
+    "code": "CMO",
+    "sign": "GM T'Mik",
+    "thumb": "tmik_l.jpg"
+  },
+  "vanbajark": {
+    "name": "GM R. VAN BAJARK",
+    "short": "GM Van Bajark",
+    "dept": "med",
+    "code": "XMO",
+    "sign": "GM Robert Van Bajark",
+    "thumb": "vanbajark_l.jpg"
+  }
+}

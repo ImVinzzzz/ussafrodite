@@ -1,0 +1,72 @@
+[
+  {
+    "key": "2xa",
+    "badge": "2XA",
+    "title": "Ufficiali Superiori",
+    "icon": "fa-solid fa-circle-chevron-up",
+    "tone": "orange"
+  },
+  {
+    "key": "2xb",
+    "badge": "2XB",
+    "title": "Personale di Plancia",
+    "icon": "fa-solid fa-circle-chevron-up",
+    "tone": "orange"
+  },
+  {
+    "key": "cmd",
+    "badge": "CMD",
+    "title": "Sezione Comando - CMD",
+    "icon": "fa-solid fa-circle-chevron-up",
+    "tone": "cmd"
+  },
+  {
+    "key": "sci",
+    "badge": "SCI",
+    "title": "Sezione Scientifica - SCI",
+    "icon": "fa-solid fa-dna",
+    "tone": "sci"
+  },
+  {
+    "key": "med",
+    "badge": "MED",
+    "title": "Infermeria - MED",
+    "icon": "fa-solid fa-staff-snake",
+    "tone": "sci"
+  },
+  {
+    "key": "ops",
+    "badge": "OPS",
+    "title": "Sezione Operazioni - OPS",
+    "icon": "fa-solid fa-globe",
+    "tone": "ops"
+  },
+  {
+    "key": "sec",
+    "badge": "SEC",
+    "title": "Tattica e Sicurezza - SEC",
+    "icon": "fa-solid fa-shield-halved",
+    "tone": "ops"
+  },
+  {
+    "key": "eng",
+    "badge": "ENG",
+    "title": "Ingegneria - ENG",
+    "icon": "fa-solid fa-gear",
+    "tone": "ops"
+  },
+  {
+    "key": "civ",
+    "badge": "CIV",
+    "title": "Personale Civile",
+    "icon": "fa-regular fa-circle-dot",
+    "tone": "civ"
+  },
+  {
+    "key": "ext",
+    "badge": "EXT",
+    "title": "External Personnel Files",
+    "icon": "fa-solid fa-folder-open",
+    "tone": "ext"
+  }
+]

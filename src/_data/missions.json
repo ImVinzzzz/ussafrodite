@@ -1,0 +1,227 @@
+[
+  {
+    "key": "log004",
+    "type": "reunion",
+    "code": "Log: #4",
+    "title": "Reunion #3 - TriviaTerk: AtoZ Rules!",
+    "status": "complete",
+    "url": "/log/reunion/004/"
+  },
+  {
+    "key": "log003",
+    "type": "reunion",
+    "code": "Log: #3",
+    "title": "Reunion #2 - TriviaTerk: Vulcan Revenge",
+    "status": "complete",
+    "url": "/log/reunion/003/"
+  },
+  {
+    "key": "x01",
+    "type": "mission",
+    "code": "M: X01",
+    "title": "Theta Persei IV - Mapping",
+    "status": "partial",
+    "url": "/log/x01/",
+    "name": "Mission: X01",
+    "subtitle": "Campagna Flotta STIC-AL",
+    "label": "Mission: X01",
+    "stardate": "12607.06",
+    "kind": "Rapporto",
+    "pending": [
+      {
+        "dept": "cmd",
+        "code": "XO",
+        "kind": "Rapporto",
+        "short": "GM Frruuu",
+        "slot": "02"
+      },
+      {
+        "dept": "sci",
+        "code": "CSO",
+        "kind": "Rapporto",
+        "short": "GM Renzi",
+        "slot": "03"
+      },
+      {
+        "dept": "sci",
+        "code": "XSO",
+        "kind": "Rapporto",
+        "short": "GM Da Nee",
+        "slot": "04"
+      },
+      {
+        "dept": "med",
+        "code": "CMO",
+        "kind": "Rapporto",
+        "short": "GM T'Mik",
+        "slot": "05"
+      },
+      {
+        "dept": "med",
+        "code": "XMO",
+        "kind": "Rapporto",
+        "short": "GM Van Bajark",
+        "slot": "06"
+      },
+      {
+        "dept": "sec",
+        "code": "CTO",
+        "kind": "Rapporto",
+        "short": "GM Rael",
+        "slot": "07"
+      },
+      {
+        "dept": "med",
+        "code": "Consigliere",
+        "kind": "Rapporto",
+        "short": "Dr. Becco",
+        "icon": "fa-solid fa-circle-chevron-up",
+        "slot": "11"
+      },
+      {
+        "dept": "sci",
+        "code": "Ufficiale",
+        "kind": "Rapporto",
+        "short": "GM Field",
+        "slot": "12"
+      },
+      {
+        "dept": "ops",
+        "code": "Ufficiale",
+        "kind": "Rapporto",
+        "short": "GM Brax",
+        "slot": "13"
+      }
+    ]
+  },
+  {
+    "key": "log002",
+    "type": "reunion",
+    "code": "Log: #2",
+    "title": "Reunion #1 - 25 Year Later",
+    "status": "complete",
+    "url": "/log/reunion/002/"
+  },
+  {
+    "key": "m8",
+    "type": "mission",
+    "code": "M: 8",
+    "title": "All Good Things...",
+    "status": "none",
+    "url": null,
+    "name": "Mission: 8"
+  },
+  {
+    "key": "m7",
+    "type": "mission",
+    "code": "M: 7",
+    "title": "The Cut!",
+    "status": "complete",
+    "url": "/log/m7/",
+    "name": "Mission: 7",
+    "label": "Diari di Missione",
+    "stardate": "10301.15",
+    "kind": "Diario Personale"
+  },
+  {
+    "key": "m6",
+    "type": "mission",
+    "code": "M: 6",
+    "title": "Afrodite in Wonderland",
+    "status": "complete",
+    "url": "/log/m6/",
+    "name": "Mission: 6",
+    "label": "Diari di Missione",
+    "stardate": "10203.23",
+    "kind": "Diario Personale"
+  },
+  {
+    "key": "m5",
+    "type": "mission",
+    "code": "M: 5",
+    "title": "It's a Long Way to Tipperary",
+    "status": "complete",
+    "url": "/log/m5/",
+    "name": "Mission: 5",
+    "label": "Diari di Missione",
+    "stardate": "10108.25",
+    "kind": "Diario Personale"
+  },
+  {
+    "key": "smc",
+    "type": "special",
+    "code": "SMC - UCSM",
+    "title": "The Headshrinker",
+    "status": "complete",
+    "url": "/log/smc/",
+    "name": "SMC - UCSM",
+    "label": "Registro Rapporti",
+    "stardate": "10104.21",
+    "kind": "Rapporto",
+    "pending": [
+      {
+        "dept": "sci",
+        "code": "CSO",
+        "kind": "Rapporto",
+        "short": "GM Renzi",
+        "slot": "03"
+      }
+    ]
+  },
+  {
+    "key": "m4",
+    "type": "mission",
+    "code": "M: 4",
+    "title": "The Voyage Home",
+    "status": "complete",
+    "url": "/log/m4/",
+    "name": "Mission: 4",
+    "label": "Diari di Missione",
+    "stardate": "10101.15",
+    "kind": "Diario Personale"
+  },
+  {
+    "key": "m3",
+    "type": "mission",
+    "code": "M: 3",
+    "title": "The Search for Maxwell",
+    "status": "complete",
+    "url": "/log/m3/",
+    "name": "Mission: 3",
+    "label": "Diari di Missione",
+    "stardate": "10006.15",
+    "kind": "Diario Personale"
+  },
+  {
+    "key": "m2",
+    "type": "mission",
+    "code": "M: 2",
+    "title": "The Betrothed",
+    "status": "complete",
+    "url": "/log/m2/",
+    "name": "Mission: 2",
+    "label": "Diari di Missione",
+    "stardate": "9912.05",
+    "kind": "Diario Personale"
+  },
+  {
+    "key": "m1",
+    "type": "mission",
+    "code": "M: 1",
+    "title": "The Curse of USS Cassiopea",
+    "status": "complete",
+    "url": "/log/m1/",
+    "name": "Mission: 1",
+    "label": "Diari di Missione",
+    "stardate": "9907.15",
+    "kind": "Diario Personale"
+  },
+  {
+    "key": "log001",
+    "type": "reunion",
+    "code": "Log: #1",
+    "title": "First Contact",
+    "status": "complete",
+    "url": "/log/reunion/001/"
+  }
+]

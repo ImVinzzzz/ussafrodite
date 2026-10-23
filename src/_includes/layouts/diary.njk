@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+---
+{#- Diario / rapporto / briefing di missione. I dati arrivano da `d` (vedi src/log/log.11tydata.js). -#}
+{%- set h = { tone: d.tone, icon: d.icon, roleLine: d.roleLine, name: d.name, missionLine: d.missionLine,
+              portrait: d.portrait, crewUrl: d.crewUrl, showPg: (d.type != 'briefing' and (d.portrait or d.crewUrl)) } -%}
+<article class="diary-wrapper">
+  {% include "partials/diary-header.njk" %}
+  <div class="diary-body">
+    {% if d.stardate %}
+    <div class="stardate-line">
+      <span class="stardate-label"><i class="fa-solid fa-calendar-day"></i> &nbsp;Stardate</span>
+      <span class="stardate-value">{{ d.stardate }}</span>
+    </div>
+    {% endif %}
+
+{{ content | safe }}
+
+    {% set lines = d.signature %}{% include "partials/signature.njk" %}
+  </div>
+</article>
+
+{% set back = { url: d.mission.url, label: 'Log ' + d.mission.name } %}
+{% set nb = collections.diaries | ofMission(d.mkey) | neighbours(page.url) %}
+{% include "partials/pager.njk" %}

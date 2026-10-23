@@ -1,0 +1,51 @@
+/* ── DIARY HEADER PHOTO ──────────────────────────────────── */
+.diary-header-text {
+  flex: 1;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.diary-header-pgbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  background: rgba(0,0,0,0.2);
+  border-left: 2px solid rgba(255,255,255,0.1);
+  min-width: 90px;
+  flex-shrink: 0;
+  border-radius: var(--radius-md);
+}
+
+.diary-header-pgbox img {
+  width: 70px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.diary-header-pgbox a {
+  font-family: var(--font-display);
+  font-size: 0.5rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(248,248,255,0.6);
+  text-decoration: none;
+  padding: 4px 8px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: var(--radius-pill);
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  background: rgba(0,0,0,0.2);
+}
+
+.diary-header-pgbox a:hover {
+  color: var(--lcars-orange);
+  border-color: var(--lcars-orange);
+  background: rgba(255,153,0,0.1);
+}

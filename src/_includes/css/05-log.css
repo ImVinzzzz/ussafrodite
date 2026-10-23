@@ -1,0 +1,254 @@
+/* ── LOG PAGE ───────────────────────────────────────────── */
+.mission-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mission-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas:
+    "number badge"
+    "name   name";
+  row-gap: 8px;
+  column-gap: 12px;
+  padding: 14px 18px;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255,153,0,0.15);
+  text-decoration: none;
+  color: var(--ghost-white);
+  transition: all 0.25s ease;
+}
+
+.mission-item:hover {
+  border-color: rgba(255,153,0,0.5);
+  background: rgba(0,40,80,0.8);
+  transform: translateX(6px);
+  box-shadow: 0 4px 20px rgba(255,153,0,0.15);
+}
+
+.mission-number {
+  grid-area: number;
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--lcars-orange);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.mission-name {
+  grid-area: name;
+  font-family: var(--font-display);
+  font-size: clamp(0.78rem, 3.2vw, 0.95rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mission-badge {
+  grid-area: badge;
+  justify-self: end;
+  align-self: center;
+  font-size: 0.65rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.1em;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  background: rgba(255,153,0,0.15);
+  color: var(--lcars-orange);
+  border: 1px solid rgba(255,153,0,0.3);
+}
+
+.mission-badge.special { background: rgba(255,204,68,0.15); color: var(--accent-gold); border-color: rgba(255,204,68,0.3); }
+
+/* ── MISSION DETAIL (sub-diary list) ────────────────────── */
+.mission-header-block {
+  background: rgba(255, 153, 0, 0.08);
+  border: 0.1875rem solid rgba(255, 153, 0, 0.25);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.mission-header-main {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.mission-header-icon {
+  font-size: 2.2rem;
+  color: var(--lcars-orange);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.2rem;
+}
+
+.mission-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.mission-header-label {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--lcars-orange);
+  text-transform: uppercase;
+}
+
+.mission-header-title {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: var(--ghost-white);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.mission-header-sub {
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  color: rgba(248, 248, 255, 0.45);
+  letter-spacing: 0.1em;
+  margin-top: 0.25rem;
+}
+
+.mission-header-stardate {
+  margin-left: auto;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.mission-stardate-label {
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  color: rgba(255, 153, 0, 0.5);
+  text-transform: uppercase;
+}
+
+.mission-stardate-value {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--lcars-orange);
+}
+
+@media (max-width: 768px) {
+  .mission-header-block {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1rem 1.15rem;
+  }
+
+  .mission-header-main {
+    gap: 0.85rem;
+    width: 100%;
+  }
+
+  .mission-header-icon {
+    font-size: 1.4rem;
+    padding-top: 0.1rem;
+  }
+
+  .mission-header-title {
+    font-size: 1.15rem;
+    letter-spacing: 0.05em;
+  }
+
+  .mission-header-sub {
+    margin-top: 0.15rem;
+  }
+
+  .mission-header-stardate {
+    margin-left: 0;
+    text-align: left;
+    width: 100%;
+    padding-top: 0.6rem;
+    border-top: 0.0625rem solid rgba(255, 153, 0, 0.2);
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+  }
+
+  .mission-stardate-label {
+    font-size: 0.55rem;
+  }
+
+  .mission-stardate-value {
+    font-size: 0.85rem;
+  }
+}
+
+.diary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.diary-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 2px solid rgba(68,136,255,0.15);
+  transition: all 0.3s ease;
+  background: var(--bg-card);
+}
+
+.diary-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(68,136,255,0.4);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+}
+
+.diary-card-bar {
+  height: 6px;
+  width: 100%;
+}
+
+.diary-card-body {
+  padding: 16px;
+  flex: 1;
+}
+
+.diary-card-role {
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.diary-card-name {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ghost-white);
+}
+
+.diary-card-arrow {
+  margin-top: 12px;
+  font-size: 0.7rem;
+  color: rgba(248,248,255,0.4);
+  letter-spacing: 0.1em;
+}

@@ -1,0 +1,269 @@
+/* ── ALLARMI ───────────────────── */
+
+/* Stile base comune per i box di allerta */
+.red-alert,
+.yellow-alert,
+.purple-alert,
+.green-alert {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: var(--radius-sm);
+  padding: 16px 16px;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 20px 0 16px;
+}
+
+/* Pseudo-elementi per le bande a righe 45° in alto e in basso */
+.red-alert::before,
+.red-alert::after,
+.yellow-alert::before,
+.yellow-alert::after,
+.purple-alert::before,
+.purple-alert::after,
+.green-alert::before,
+.green-alert::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 6px;
+  pointer-events: none;
+}
+
+.red-alert::before,
+.yellow-alert::before,
+.purple-alert::before,
+.green-alert::before {
+  top: 0;
+}
+
+.red-alert::after,
+.yellow-alert::after,
+.purple-alert::after,
+.green-alert::after {
+  bottom: 0;
+}
+
+/* RED ALERT */
+.red-alert {
+  background: rgba(180,0,0,0.12);
+  border: 1px solid rgba(200,0,0,0.45);
+  color: #ff7777;
+  animation: alert-pulse 2.5s ease-in-out infinite;
+}
+
+.red-alert::before,
+.red-alert::after {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 68, 68, 0.85),
+    rgba(255, 68, 68, 0.85) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+}
+
+/* YELLOW ALERT */
+.yellow-alert {
+  background: rgba(180,180,0,0.12);
+  border: 1px solid rgba(200,200,0,0.45);
+  color: #ffff00;
+  animation: yellow-pulse 2.5s ease-in-out infinite;
+}
+
+.yellow-alert::before,
+.yellow-alert::after {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 0, 0.85),
+    rgba(255, 255, 0, 0.85) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+}
+
+@keyframes yellow-pulse {
+  0%, 100% { border-color: rgba(220,220,0,0.45); box-shadow: none; }
+  50%       { border-color: rgba(250,250,0,0.85); box-shadow: 0 0 14px rgba(200,200,0,0.25); }
+}
+
+/* PURPLE ALERT */
+.purple-alert {
+  background: rgba(100,0,180,0.25);
+  border: 1px solid rgba(200,0,180,0.45);
+  color: #c800ff;
+  animation: purple-pulse 2.5s ease-in-out infinite;
+}
+
+.purple-alert::before,
+.purple-alert::after {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(200, 0, 255, 0.85),
+    rgba(200, 0, 255, 0.85) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+}
+
+@keyframes purple-pulse {
+  0%, 100% { border-color: rgba(200,0,255,0.45); box-shadow: none; }
+  50%       { border-color: rgba(250,0,180,0.85); box-shadow: 0 0 14px rgba(150,0,255,0.25); }
+}
+
+/* CONDITION GREEN */
+.green-alert {
+  background: rgba(0,180,0,0.12);
+  border: 1px solid rgba(0,255,0,0.45);
+  color: #00ff66;
+}
+
+.green-alert::before,
+.green-alert::after {
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 255, 102, 0.85),
+    rgba(0, 255, 102, 0.85) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+}
+
+
+/* ── TAMPERED FILE EFFECTS ── CLANDESTINO ───────────────────── */
+
+/* Banner di allerta in cima alla scheda */
+.file-alert-banner {
+  background: rgba(180, 0, 0, 0.12);
+  border: 1px solid rgba(200, 0, 0, 0.45);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: #ff7777;
+  text-transform: uppercase;
+  animation: alert-pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes alert-pulse {
+  0%, 100% { border-color: rgba(200,0,0,0.45); box-shadow: none; }
+  50%       { border-color: rgba(220,0,0,0.85); box-shadow: 0 0 14px rgba(200,0,0,0.25); }
+}
+
+/* Bordo pulsante sulla card manomessa */
+.crew-detail-top.tampered {
+  animation: tampered-border 4s ease-in-out infinite;
+}
+
+@keyframes tampered-border {
+  0%, 100% { border-color: rgba(128,128,0,0.4); }
+  50%       { border-color: rgba(200,0,0,0.55); }
+}
+
+/* Testo barrato + sostituzione */
+.altered-field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.altered-original {
+  text-decoration: line-through;
+  color: rgba(248,248,255,0.28);
+  font-size: 0.78rem;
+}
+
+.altered-replacement {
+  color: var(--lcars-orange);
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* Effetto glitch sul nome nella header card */
+.glitch-text {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.glitch-text::before {
+  color: rgba(255, 0, 0, 0.65);
+  clip-path: polygon(0 0, 100% 0, 100% 38%, 0 38%);
+  animation: glitch-top 5s infinite;
+}
+
+.glitch-text::after {
+  color: rgba(0, 220, 220, 0.55);
+  clip-path: polygon(0 62%, 100% 62%, 100% 100%, 0 100%);
+  animation: glitch-bot 5s infinite;
+}
+
+@keyframes glitch-top {
+  0%, 82%, 100% { transform: translate(0); opacity: 0; }
+  84%            { transform: translate(-4px,  1px); opacity: 1; }
+  86%            { transform: translate( 3px, -1px); opacity: 1; }
+  88%            { transform: translate(0); opacity: 0; }
+}
+
+@keyframes glitch-bot {
+  0%, 82%, 100% { transform: translate(0); opacity: 0; }
+  85%            { transform: translate( 4px,  1px); opacity: 1; }
+  87%            { transform: translate(-3px, -1px); opacity: 1; }
+  89%            { transform: translate(0); opacity: 0; }
+}
+
+/* Badge SECLAR nella sezione note */
+.seclar-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(180,0,0,0.12);
+  border: 1px solid rgba(200,0,0,0.45);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  font-family: var(--font-display);
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  color: #ff7777;
+  text-transform: uppercase;
+  margin: 20px 0 16px;
+  animation: alert-pulse 2.5s ease-in-out infinite;
+}
+
+/* Watermark DOSSIER ALTERATO nella colonna foto */
+.tampered-watermark {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-25deg);
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  letter-spacing: 0.18em;
+  color: rgba(200,0,0,0.35);
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+  border: 1px solid rgba(200,0,0,0.25);
+  padding: 3px 8px;
+  border-radius: 2px;
+}

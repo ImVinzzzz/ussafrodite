@@ -1,0 +1,8 @@
+[
+  { "name": "GM Frruuu",     "img": "crew/frruuu_l.jpg",    "score": "16.950", "quizzes": 4, "avg": "4.238" },
+  { "name": "GM T'Mik",      "img": "crew/tmik_l.jpg",      "score": "16.950", "quizzes": 4, "avg": "4.238" },
+  { "name": "GM Da Nee",     "img": "crew/danee_l.jpg",     "score": "11.400", "quizzes": 2, "avg": "5.700" },
+  { "name": "GM Renzi",      "img": "crew/renzi_l.jpg",     "score": "10.850", "quizzes": 3, "avg": "3.617" },
+  { "name": "GM Van Bajark", "img": "crew/vanbajark_l.jpg", "score": "8.000",  "quizzes": 2, "avg": "4.000" },
+  { "name": "GM Rael",       "img": "l_sec2.png",           "score": "3.250",  "quizzes": 1, "avg": "3.250" }
+]

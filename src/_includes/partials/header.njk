@@ -1,0 +1,27 @@
+<div class="header-lcars">
+  <div class="header-elbow">
+    <span class="ship-name">{{ site.name }}</span>
+    <span class="ship-registry">{{ site.registry }}</span>
+    <span class="ship-name header-quote">DON'T WORRY... <br>BE HAPPY!</span>
+  </div>
+  <div class="header-content">
+    <div class="header-top-bar">
+      <div class="lcars-bar lcars-bar-1"></div>
+      <div class="lcars-bar lcars-bar-2"></div>
+      <div class="lcars-bar lcars-bar-3"></div>
+      <span id="lcars-clock" class="lcars-clock"></span>
+    </div>
+    <nav class="main-nav" aria-label="Navigazione principale">
+      <a href="/" class="nav-link home" aria-label="Home"><i class="fa-solid fa-location-arrow"></i></a>
+      {%- for item in [
+        { key: 'log',  icon: 'fa-bars-staggered',          label: 'Log' },
+        { key: 'crew', icon: 'fa-people-group',            label: 'Crew' },
+        { key: 'ship', icon: 'fa-rocket',                  label: 'Ship' },
+        { key: 'padd', icon: 'fa-tablet-screen-button',    label: 'PADD' }
+      ] %}
+      <a href="/{{ item.key }}/" class="nav-link {{ item.key }}{% if section == item.key %} active{% endif %}"{% if section == item.key %} aria-current="page"{% endif %}><i class="fa-solid {{ item.icon }}"></i> <span class="nav-text">{{ item.label }}</span></a>
+      {%- endfor %}
+      <span class="nav-status">● System ready</span>
+    </nav>
+  </div>
+</div>

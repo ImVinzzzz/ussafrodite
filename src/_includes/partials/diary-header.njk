@@ -1,0 +1,15 @@
+{#- Intestazione colorata di diari, briefing e reunion. Richiede: h = { tone, icon, roleLine, name, missionLine, portrait, crewUrl, showPg } -#}
+<div class="diary-header tone-{{ h.tone }}">
+  <div class="diary-header-text">
+    <div class="diary-header-role"><i class="{{ h.icon }}"></i> &nbsp;{{ h.roleLine }}</div>
+    <div class="diary-header-name">{{ h.name }}</div>
+    {% if h.missionLine %}<div class="diary-header-mission">{{ h.missionLine }}</div>{% endif %}
+  </div>
+  {% if h.showPg %}
+  <div class="diary-header-pgbox">
+    {% if h.portrait %}<img src="{{ h.portrait }}" alt="{{ h.name }}" width="70" height="85">
+    {% else %}{% set size = 'sm' %}{% set phIcon = 'fa-solid fa-circle-user' %}{% include "partials/photo-placeholder.njk" %}{% endif %}
+    {% if h.crewUrl %}<a href="{{ h.crewUrl }}"><i class="fa-solid fa-image-portrait"></i> Scheda</a>{% endif %}
+  </div>
+  {% endif %}
+</div>

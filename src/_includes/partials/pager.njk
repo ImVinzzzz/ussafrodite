@@ -1,0 +1,13 @@
+{#- Barra di navigazione in fondo: ritorno all'indice + precedente/successivo.
+    Richiede: back = { url, label }, nb = { prev, next } (facoltativo) -#}
+<nav class="pager" aria-label="Navigazione">
+  <a href="{{ back.url }}" class="btn-back"><i class="fa-solid fa-chevron-left"></i> {{ back.label }}</a>
+  {% if nb %}
+  <div class="pager-arrows">
+    {% if nb.prev %}<a href="{{ nb.prev.url }}" class="btn-back" aria-label="Precedente" title="Precedente"><i class="fa-solid fa-chevron-left"></i></a>
+    {% else %}<span class="btn-back is-disabled" aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>{% endif %}
+    {% if nb.next %}<a href="{{ nb.next.url }}" class="btn-back" aria-label="Successivo" title="Successivo"><i class="fa-solid fa-chevron-right"></i></a>
+    {% else %}<span class="btn-back is-disabled" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>{% endif %}
+  </div>
+  {% endif %}
+</nav>

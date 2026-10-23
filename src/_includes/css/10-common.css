@@ -1,0 +1,95 @@
+/* ── BREADCRUMB ─────────────────────────────────────────── */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 28px;
+  font-family: var(--font-display);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.breadcrumb a {
+  color: var(--lcars-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover { color: var(--accent-gold); }
+
+.breadcrumb span { color: rgba(248,248,255,0.3); }
+
+.breadcrumb .current { color: rgba(248,248,255,0.6); }
+
+/* ── BACK BUTTON ─────────────────────────────────────────── */
+.btn-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-display);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--lcars-blue);
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 1px solid rgba(119,153,204,0.3);
+  border-radius: var(--radius-pill);
+  transition: all 0.2s ease;
+  margin-bottom: 24px;
+  background: rgba(119,153,204,0.06);
+}
+
+.btn-back:hover {
+  border-color: var(--lcars-blue);
+  background: rgba(119,153,204,0.12);
+  transform: translateX(-3px);
+}
+
+/* ── UTILITY ─────────────────────────────────────────────── */
+.color-cmd  { color: var(--cmd-color); }
+.color-sci  { color: var(--sci-color); }
+.color-ops  { color: var(--ops-color); }
+.color-ext  { color: var(--ext-color); }
+
+.bg-cmd  { background-color: var(--cmd-color); }
+.bg-sci  { background-color: var(--sci-color); }
+.bg-ops  { background-color: var(--ops-color); }
+.bg-ext  { background-color: var(--ext-color); }
+.bg-civ  { background-color: rgba(248,248,255,0.12); color: var(--bg-deep); }
+
+.border-cmd { border-color: var(--cmd-color) !important; }
+.border-sci { border-color: var(--sci-color) !important; }
+.border-ops { border-color: var(--ops-color) !important; }
+.border-ext { border-color: var(--ext-color) !important; }
+
+.scanline-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0,0,0,0.03) 2px,
+    rgba(0,0,0,0.03) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* ── FOOTER ───────────────────────────────────────────────── */
+footer {
+  position: relative;
+  z-index: 1;
+  border-top: 2px solid var(--lcars-orange);
+  background: rgba(0,10,25,0.95);
+  padding: 20px 24px;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  color: rgba(248,248,255,0.3);
+  text-transform: uppercase;
+}

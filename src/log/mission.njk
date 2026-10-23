@@ -1,0 +1,61 @@
+---js
+{
+  // Una pagina indice per ogni missione con url in _data/missions.json
+  pagination: {
+    data: "missions",
+    size: 1,
+    alias: "m",
+    before: (list) => list.filter((m) => m.url && m.type !== "reunion"),
+  },
+  layout: "layouts/base.njk",
+  permalink: (data) => `${data.m.url}index.html`,
+  eleventyComputed: {
+    title: (data) => data.m.name,
+    crumbs: (data) => [{ label: "Log", url: "/log/" }, { label: data.m.name }],
+  },
+}
+---
+<div class="mission-header-block">
+  <div class="mission-header-main">
+    <div class="mission-header-icon"><i class="fa-solid fa-bars-staggered"></i></div>
+    <div class="mission-header-info">
+      <div class="mission-header-label">{{ m.label }}</div>
+      <div class="mission-header-title">{{ m.title }}</div>
+      <div class="mission-header-sub">{{ m.subtitle or m.name }}</div>
+    </div>
+  </div>
+  {% if m.stardate %}
+  <div class="mission-header-stardate">
+    <div class="mission-stardate-label">STARDATE</div>
+    <div class="mission-stardate-value">{{ m.stardate }}</div>
+  </div>
+  {% endif %}
+</div>
+
+<div class="diary-grid">
+  {% for c in collections.diaries | missionCards(m) %}
+  {% if c.pending %}{% set tone = departments[c.dept].tone %}{% set icon = c.icon or departments[c.dept].icon %}
+  {% else %}{% set tone = c.tone %}{% set icon = ('fa-solid fa-compass' if c.type == 'briefing' else c.icon) %}{% endif %}
+  {% set tag = 'span' if c.pending else 'a' %}
+  <{{ tag }}{% if not c.pending %} href="{{ c.url }}"{% endif %} class="diary-card tone-{{ tone }}{% if c.type == 'briefing' %} diary-card--briefing{% endif %}{% if c.pending %} is-disabled{% endif %}"{% if c.pending %} title="Rapporto non ancora disponibile"{% endif %}>
+    <div class="diary-card-bar"></div>
+    <div class="diary-card-body">
+      {% if c.pending %}
+      <div class="diary-card-role"><i class="{{ icon }}"></i> &nbsp;{{ departments[c.dept].label }} · {{ c.code }}</div>
+      <div class="diary-card-name">{{ c.kind or m.kind }}<br>{{ c.short }}</div>
+      {% elif c.type == 'briefing' %}
+      <div class="diary-card-role"><i class="{{ icon }}"></i> &nbsp;{{ c.cardRole }}</div>
+      <div class="diary-card-name">{{ c.cardName }}</div>
+      {% if c.from %}<div class="diary-card-from">{{ c.from }}</div>{% endif %}
+      {% else %}
+      <div class="diary-card-role"><i class="{{ icon }}"></i> &nbsp;{{ c.cardRole }}</div>
+      <div class="diary-card-name">{{ c.kind }}<br>{{ c.short }}</div>
+      {% endif %}
+      <div class="diary-card-arrow">LOG ›</div>
+    </div>
+  </{{ tag }}>
+  {% endfor %}
+</div>
+
+{% set back = { url: '/log/', label: 'Log Missioni' } %}
+{% include "partials/pager.njk" %}

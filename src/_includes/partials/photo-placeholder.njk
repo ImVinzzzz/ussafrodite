@@ -1,0 +1,4 @@
+{#- Segnaposto quando manca la foto. icon: classe Font Awesome -#}
+<div class="photo-placeholder{% if size %} photo-placeholder--{{ size }}{% endif %}" role="img" aria-label="Foto non disponibile">
+  <i class="{{ phIcon or 'fa-solid fa-circle-user' }}"></i><span>FOTO</span>
+</div>

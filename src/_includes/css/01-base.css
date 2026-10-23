@@ -1,0 +1,66 @@
+/* ============================================================
+   USS AFRODITE - NCC 1863 | LCARS INTERFACE STYLESHEET
+   Star Trek TNG Aesthetic | v1.0
+   ============================================================ */
+
+
+/* ── CSS VARIABLES ──────────────────────────────────────── */
+:root {
+  --bg-deep:       #000814;
+  --bg-space:      #00101f;
+  --bg-panel:      rgba(0, 20, 45, 0.85);
+  --bg-card:       rgba(0, 30, 60, 0.7);
+
+  --ghost-white:   #f8f8ff;
+  --accent-gold:   #ffeb44;  /* #ffcc44  */
+  --accent-blue:   #4488ff;
+  --lcars-orange:  #ff9900;
+  --lcars-lavender:#a870dc;  /* #cc99cc; #956596 7474e3 b148b3 */
+  --lcars-blue:    #7799cc; 
+  --lcars-red:     #c40233; 
+
+  --cmd-color:     #800000;
+  --sci-color:     #008080;
+  --ops-color:     #808000;
+  --ext-color:     #ff8000;
+  --civ-color:     rgba(248,248,255,0.15);
+
+  --font-display:  'Orbitron', sans-serif;
+  --font-body:     'Exo 2', sans-serif;
+
+  --radius-sm:     8px;
+  --radius-md:     16px;
+  --radius-lg:     32px;
+  --radius-pill:   999px;
+
+  --border-glow:   0 0 12px rgba(68, 136, 255, 0.4);
+  --panel-shadow:  0 4px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* ── RESET & BASE ───────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--bg-deep);
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(0, 40, 100, 0.35) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(0, 20, 80, 0.3) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, rgba(0, 10, 40, 0.4) 0%, transparent 55%);
+  min-height: 100vh;
+  color: var(--ghost-white);
+  font-family: var(--font-body);
+  font-weight: 300;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ── STARFIELD CANVAS ───────────────────────────────────── */
+#starfield {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}

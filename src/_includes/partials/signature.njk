@@ -1,0 +1,7 @@
+{#- Firma in calce: righe personali + nome della nave -#}
+{% if lines %}
+<p class="diary-signature">
+  {%- for l in lines %}{{ l }}<br>{% endfor %}
+  {{ site.ship }}
+</p>
+{% endif %}
