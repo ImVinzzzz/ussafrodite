@@ -98,7 +98,8 @@
   // Rete di sicurezza: un'immagine non trovata viene nascosta senza
   // lasciare l'icona rotta (i segnaposto "FOTO" sono già nell'HTML).
   const markMissing = (img) => {
-    if (img.dataset.missing) return;
+    // ignora immagini senza indirizzo (es. quella del lightbox prima del clic)
+    if (img.dataset.missing || !img.getAttribute("src") || img.closest(".padd-lightbox")) return;
     img.dataset.missing = "1";
     // ritratti: al posto dell'immagine mostra il segnaposto "FOTO"
     if (img.matches(".crew-photo, .diary-header-pgbox img")) {
@@ -127,7 +128,7 @@
     box.setAttribute("aria-modal", "true");
     box.innerHTML =
       '<button class="padd-lightbox-close" aria-label="Chiudi popup"><i class="fa-solid fa-xmark"></i></button>' +
-      '<div class="padd-lightbox-content"><img class="padd-lightbox-img" src="" alt=""><div class="padd-lightbox-caption"></div></div>';
+      '<div class="padd-lightbox-content"><img class="padd-lightbox-img" alt=""><div class="padd-lightbox-caption"></div></div>';
     document.body.appendChild(box);
 
     const boxImg = box.querySelector(".padd-lightbox-img");
