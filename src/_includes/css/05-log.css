@@ -252,3 +252,19 @@
   color: rgba(248,248,255,0.4);
   letter-spacing: 0.1em;
 }
+
+/* ── DIARIO PERSONALE (src/crew/diario.njk) ─────────────── */
+.mission-header-portrait {
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 0.125rem solid rgba(255, 153, 0, 0.4);
+  flex-shrink: 0;
+}
+
+.personal-log-item .mission-number { flex-wrap: wrap; gap: 0.15rem 0.5rem; }
+.personal-log-code, .personal-log-kind { white-space: nowrap; }
+.personal-log-kind { color: rgba(248, 248, 255, 0.45); font-weight: 400; }
+.personal-log-item .mission-badge { white-space: nowrap; }
+.personal-log-item.is-latest { border-color: rgba(255, 153, 0, 0.45); }

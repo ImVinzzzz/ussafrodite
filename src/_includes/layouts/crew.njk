@@ -33,7 +33,14 @@ layout: layouts/base.njk
         {% endfor %}
       </div>
       {% endif %}
-      {% if diaries %}<a href="{{ diaries.url or diaries }}" class="crew-diaries-link"><i class="fa-solid fa-file-lines"></i> {{ diaries.label or 'Diari di Missione' }}</a>{% endif %}
+      {#- Diario personale: solo Ufficiali Superiori (sezione 2xa) con almeno un diario pubblicato -#}
+      {% set personal = (collections.diaries | personalLog(page.fileSlug)) if section == '2xa' else [] %}
+      {% if personal.length or diaries %}
+      <div class="crew-diaries-links">
+        {% if personal.length %}<a href="/crew/{{ page.fileSlug }}/diario/" class="crew-diaries-link"><i class="fa-solid fa-book-open"></i> Diario Personale</a>{% endif %}
+        {% if diaries %}<a href="{{ diaries.url or diaries }}" class="crew-diaries-link"><i class="fa-solid fa-file-lines"></i> {{ diaries.label or 'Diari di Missione' }}</a>{% endif %}
+      </div>
+      {% endif %}
     </div>
   </div>
 

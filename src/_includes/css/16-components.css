@@ -176,6 +176,8 @@
   text-transform: uppercase;
 }
 .crew-diaries-link:hover { color: var(--accent-gold); }
+.crew-diaries-links { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 22px; margin-top: 16px; }
+.crew-diaries-links .crew-diaries-link { margin-top: 0; }
 
 .stat-row { border-left-color: var(--lcars-blue); }
 .stat-row.is-accent { border-left-color: var(--tone); }
