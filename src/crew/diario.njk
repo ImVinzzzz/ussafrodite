@@ -1,0 +1,73 @@
+---js
+{
+  // Diario personale degli Ufficiali Superiori (sezione 2xa del fascicolo):
+  // una pagina per ufficiale con l'elenco dei suoi diari, dal più recente.
+  // I diari sono quelli in src/log/<missione>/ con `crew: <id>` nel front matter.
+  pagination: {
+    data: "collections.crew",
+    size: 1,
+    alias: "officer",
+    before: (list) => list.filter((p) => p.data.section === "2xa"),
+  },
+  layout: "layouts/base.njk",
+  permalink: (data) => `/crew/${data.officer.fileSlug}/diario/index.html`,
+  eleventyExcludeFromCollections: true,
+  eleventyComputed: {
+    title: (data) => `Diario Personale – ${data.officer.data.crumb}`,
+    crumbs: (data) => [
+      { label: "Crew", url: "/crew/" },
+      { label: data.officer.data.crumb, url: data.officer.url },
+      { label: "Diario Personale" },
+    ],
+  },
+}
+---
+{%- set key = officer.fileSlug -%}
+{%- set r = roster[key] or {} -%}
+{%- set entries = collections.diaries | personalLog(key) -%}
+
+<div class="mission-header-block">
+  <div class="mission-header-main">
+    {% if r.thumb %}<img src="/assets/img/crew/{{ r.thumb }}" alt="{{ r.name }}" class="mission-header-portrait">
+    {% else %}<div class="mission-header-icon"><i class="fa-solid fa-book-open"></i></div>{% endif %}
+    <div class="mission-header-info">
+      <div class="mission-header-label"><i class="fa-solid fa-book-open"></i> &nbsp;Diario Personale</div>
+      <div class="mission-header-title">{{ r.sign or officer.data.rankName | striptags }}</div>
+      <div class="mission-header-sub">{{ officer.data.roleLabel }} · {{ entries.length }} {{ 'voce' if entries.length == 1 else 'voci' }}</div>
+    </div>
+  </div>
+  {% if entries.length %}
+  <div class="mission-header-stardate">
+    <div class="mission-stardate-label">ULTIMA VOCE</div>
+    <div class="mission-stardate-value">{{ entries[0].data.d.stardate }}</div>
+  </div>
+  {% endif %}
+</div>
+
+<div class="panel">
+  <div class="panel-header">
+    <div class="panel-header-bar"></div>
+    <span class="panel-header-title">Registro personale</span>
+    <span class="panel-header-count">{{ entries.length }} ENTRIES</span>
+  </div>
+  <div class="panel-body">
+    <div class="mission-list">
+      {% for e in entries %}
+      {% set d = e.data.d %}
+      <a href="{{ e.url }}" class="mission-item personal-log-item{% if loop.first %} is-latest{% endif %}">
+        <span class="mission-number">
+          <i class="fa-solid fa-file-lines"></i><span class="personal-log-code">{{ d.mission.code }}</span>
+          <span class="personal-log-kind">· {{ d.kind }}</span>
+        </span>
+        <span class="mission-name">{{ d.mission.title }}</span>
+        <span class="mission-badge{% if d.mission.type != 'mission' %} special{% endif %}" title="Stardate">SD {{ d.stardate }}</span>
+      </a>
+      {% else %}
+      <p>Nessun diario pubblicato.</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% set back = { url: officer.url, label: 'Fascicolo ' + officer.data.crumb } %}
+{% include "partials/pager.njk" %}
