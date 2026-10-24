@@ -70,6 +70,7 @@
 10101.15 | LOG M4: D'ACCARDI | /log/m4/08/
 10101.15 | LOG M4: TA NUTRI | /log/m4/09/
 10101.15 | LOG M4: JACKET | /log/m4/10/
+10104.15 | CREW: D'ACCARDI TRASFERITO | /crew/daccardi/
 10104.21 | LOG SMC: COMUNICAZIONE DA STARFLEET | /log/smc/00/
 10104.21 | LOG SMC: FRRUUU | /log/smc/02/
 10104.21 | LOG SMC: DA NEE | /log/smc/04/
@@ -101,7 +102,6 @@
 10108.25 | LOG M5: JACKET | /log/m5/10/
 10108.25 | LOG M5: ROGERS | /log/m5/11/
 10108.25 | CREW: ADAMS DECEASED | /crew/dnadams/
-# 10108.25 | CREW: D'ACCARDI TRASFERITO | /crew/daccardi/      <- da verificare (stardate?)
 10203.23 | SHIP HISTORY 6 | /ship/
 10203.23 | LOG M6: ORDINI DA STARFLEET | /log/m6/00/
 10203.23 | LOG M6: ALIGHIERI | /log/m6/01/
