@@ -54,6 +54,13 @@ export default function (eleventyConfig) {
     };
   });
 
+  // Diario personale di un membro dell'equipaggio: tutti i suoi diari
+  // pubblicati, dal più recente al più vecchio (stardate decrescente).
+  eleventyConfig.addFilter("personalLog", (items, crewKey) =>
+    (items || [])
+      .filter((p) => p.data.crew === crewKey && p.data.d.type !== "briefing")
+      .sort((a, b) => slotNum(b.data.d.stardate) - slotNum(a.data.d.stardate)));
+
   eleventyConfig.addFilter("inSection", (items, key) =>
     (items || []).filter((p) => p.data.section === key));
 

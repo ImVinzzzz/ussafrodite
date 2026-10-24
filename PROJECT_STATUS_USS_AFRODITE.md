@@ -17,6 +17,7 @@ Istruzioni operative in `README.md`.
 | Diari | `src/log/<missione>/<NN>.html` | `/log/m1/05/` |
 | Reunion | `src/log/reunion/<NNN>.html` | `/log/reunion/001/` |
 | Crew | `src/crew/index.njk` + `src/crew/<nome>.html` | `/crew/`, `/crew/tmik/` |
+| Diario personale (Ufficiali Superiori) | `src/crew/diario.njk` (generato dai diari con `crew: <nome>`) | `/crew/tmik/diario/` |
 | PADD | `src/padd/index.njk` + `src/padd/<id>.html` | `/padd/`, `/padd/4a/` |
 | Ship | `src/ship/index.html` | `/ship/` |
 | Sito storico | `archive/1999/` | `/archive/1999/index.htm` |
