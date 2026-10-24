@@ -17,6 +17,7 @@
 #  Elenco iniziale ricavato dai contenuti del sito (24/10/2026): da
 #  integrare e rettificare a mano.
 # ══════════════════════════════════════════════════════════════════════
+9905.09  | FIRST CONTACT | /log/reunion/001/
 9907.15  | LOG M1: ORDINI DA STARFLEET | /log/m1/00/
 9907.15  | LOG M1: ALIGHIERI | /log/m1/01/
 9907.15  | LOG M1: FRRUUU | /log/m1/02/
