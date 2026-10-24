@@ -34,13 +34,13 @@
 9907.15  | PADD 4C: BIGLIETTO LOTTERIA | /padd/4c/
 9907.15  | PADD 4B: MICROSCRITTURA | /padd/4b/
 9907.15  | PADD 4G: USS AFRODITE – TECHNICAL MANUAL | /padd/4g/
+9907.15  | PADD 4X: AVVISI GENERALI | /padd/4x/
 9907.15  | SHIP HISTORY 1 | /ship/
 9912.05  | LOG M2: ORDINI DA STARFLEET | /log/m2/00/
 9912.05  | LOG M2: ALIGHIERI | /log/m2/01/
 9912.05  | LOG M2: FRRUUU | /log/m2/02/
 9912.05  | LOG M2: RENZI | /log/m2/03/
 9912.05  | LOG M2: DA NEE | /log/m2/04/
-10002.14 | PADD 4D: CARTOLINA DAL DISNEYPLANET | /padd/4d/
 9912.05  | LOG M2: T'MIK | /log/m2/05/
 9912.05  | LOG M2: VAN BAJARK | /log/m2/06/
 9912.05  | LOG M2: RAEL | /log/m2/07/
@@ -48,6 +48,7 @@
 9912.05  | LOG M2: TA NUTRI | /log/m2/09/
 9912.05  | LOG M2: JACKET | /log/m2/10/
 9912.05  | SHIP HISTORY 2 | /ship/
+10002.14 | PADD 4D: CARTOLINA DAL DISNEYPLANET | /padd/4d/
 10006.15 | LOG M3: ORDINI DA STARFLEET | /log/m3/00/
 10006.15 | LOG M3: ALIGHIERI | /log/m3/01/
 10006.15 | LOG M3: FRRUUU | /log/m3/02/
@@ -136,6 +137,5 @@
 12609.08 | PADD S02: STAR TREK 60° | /padd/s02/
 
 # ── PADD senza stardate numerico: spostali nel punto giusto ─────────
-LIVE     | PADD 4X: AVVISI GENERALI | /padd/4x/
 IGNOTA   | PADD 4E: SOS | /padd/4e/
-LIVE     | PADD 4F: O VOI CHE SIETE TUTTI DENTRO A UN FOCO... | /padd/4f/
+IGNOTA   | PADD 4F: O VOI CHE SIETE... | /padd/4f/
