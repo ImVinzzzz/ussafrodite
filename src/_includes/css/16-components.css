@@ -287,3 +287,7 @@ img.img-missing { display: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
 }
+
+/* Icona ruotata di 45° (Font Awesome "fa-rotate-by"), es. trasferimento D'Accardi:
+   icon: "fa-solid fa-arrow-up-right-from-square fa-rotate-by fa-rotate-45" */
+.fa-rotate-45 { --fa-rotate-angle: 45deg; }
