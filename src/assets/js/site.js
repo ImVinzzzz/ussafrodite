@@ -164,6 +164,29 @@
     if (img.complete && img.naturalWidth === 0 && !/\.svg($|\?)/i.test(img.src)) markMissing(img);
   });
 
+  // ── GALLERIE PADD: STESSA ALTEZZA, LARGHEZZA PROPORZIONALE ──
+  // Ogni elemento cresce in proporzione al rapporto larghezza/altezza della
+  // sua immagine, così tutte le immagini della riga risultano alte uguali
+  // senza tagli né deformazioni. La griglia non supera la larghezza che
+  // corrisponde all'altezza massima (--padd-gallery-h, vedi 09-padd.css).
+  document.querySelectorAll(".padd-gallery-grid").forEach((grid) => {
+    const items = [...grid.querySelectorAll(".padd-gallery-item")];
+    const imgs = items.map((it) => it.querySelector("img"));
+    const layout = () => {
+      if (!imgs.every((img) => img && img.naturalWidth > 0)) return;
+      let sum = 0;
+      items.forEach((it, i) => {
+        const ratio = imgs[i].naturalWidth / imgs[i].naturalHeight;
+        it.style.flex = `${ratio} 1 0%`;
+        sum += ratio;
+      });
+      grid.style.maxWidth =
+        `calc(${sum.toFixed(4)} * var(--padd-gallery-h) + ${items.length - 1} * var(--padd-gallery-gap))`;
+    };
+    imgs.forEach((img) => img && !img.complete && img.addEventListener("load", layout));
+    layout();
+  });
+
   // ── LIGHTBOX GALLERIE (PADD e gallerie fotografiche) ──────
   // Clic su una miniatura: immagine intera a schermo pieno con didascalia.
   // Vale anche per qualsiasi immagine con l'attributo data-lightbox,
