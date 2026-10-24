@@ -108,12 +108,18 @@
 }
 
 /* Griglia per immagini affiancate nei PADD */
+/* Le immagini hanno tutte la stessa altezza e larghezza proporzionale:
+   site.js assegna a ogni elemento un flex-grow pari al rapporto
+   larghezza/altezza della sua immagine e limita la larghezza della griglia
+   perché l'altezza non superi --padd-gallery-h. Niente tagli, niente bande. */
 .padd-gallery-grid {
+  --padd-gallery-h: clamp(12rem, 30vw, 17.5rem);
+  --padd-gallery-gap: 1.25rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 1.25rem;
-  margin: 1.5rem 0;
+  gap: var(--padd-gallery-gap);
+  margin: 1.5rem auto;
   flex-wrap: nowrap;
 }
 
@@ -122,15 +128,13 @@
   flex-direction: column;
   align-items: center;
   margin: 0;
-  flex: 0 1 auto;
+  flex: 1 1 0;
   min-width: 0;
 }
 
 .padd-gallery-item img {
-  height: clamp(12rem, 30vw, 17.5rem);
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;
+  width: 100%;
+  height: auto;
   margin: 0 0 0.5rem 0;
   display: block;
   cursor: pointer;
@@ -236,13 +240,6 @@
   background-color: var(--color-gold);
   color: var(--bg-deep);
   transform: scale(1.1);
-}
-
-@media (max-width: 48rem) {
-  .padd-gallery-item img {
-    height: auto;
-    width: 100%;
-  }
 }
 
 .video-wrap {
