@@ -166,8 +166,11 @@
 
   // ── LIGHTBOX GALLERIE (PADD e gallerie fotografiche) ──────
   // Clic su una miniatura: immagine intera a schermo pieno con didascalia.
+  // Vale anche per qualsiasi immagine con l'attributo data-lightbox,
+  // il cui valore diventa la didascalia:
+  //   <img src="…" alt="…" data-lightbox="USS Afrodite - NCC 1863">
   const GALLERY_ITEM = ".padd-gallery-item, .gallery-item";
-  const galleryImages = document.querySelectorAll(".padd-gallery-item img, .gallery-item img");
+  const galleryImages = document.querySelectorAll(".padd-gallery-item img, .gallery-item img, img[data-lightbox]");
   if (galleryImages.length) {
     const box = document.createElement("div");
     box.className = "padd-lightbox";
@@ -186,7 +189,7 @@
       boxImg.src = img.src;
       boxImg.alt = img.alt || "";
       const cap = img.closest(GALLERY_ITEM)?.querySelector(".padd-gallery-caption, .gallery-item-caption");
-      boxCaption.textContent = cap ? cap.textContent : (img.alt || "");
+      boxCaption.textContent = img.dataset.lightbox || (cap ? cap.textContent : (img.alt || ""));
       box.classList.add("active");
       document.body.style.overflow = "hidden";
     }));
