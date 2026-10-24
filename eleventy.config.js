@@ -14,6 +14,9 @@ export default function (eleventyConfig) {
   // il testo dei diari viene preso alla lettera (layout e front matter sì).
   eleventyConfig.setTemplateFormats(["njk", "html"]);
 
+  // Il registro della homepage è un file di testo letto da _data/registro.js
+  eleventyConfig.addWatchTarget("src/_data/registro.txt");
+
   // ── Collezioni ──────────────────────────────────────────────
   eleventyConfig.addCollection("diaries", (api) =>
     api.getFilteredByGlob("src/log/*/*.html")

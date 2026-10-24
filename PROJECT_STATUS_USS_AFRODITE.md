@@ -12,6 +12,7 @@ Istruzioni operative in `README.md`.
 | Sezione | Sorgente | Indirizzo pubblico |
 |---|---|---|
 | Home | `src/index.njk` | `/` |
+| Home · box LOG (registro aggiornamenti) | `src/_data/registro.txt` (letto da `src/_data/registro.js`) | `/` |
 | Log | `src/log/index.njk` + `src/_data/missions.json` | `/log/` |
 | Missioni | `src/log/mission.njk` (una pagina per missione) | `/log/m1/` … `/log/smc/`, `/log/x01/` |
 | Diari | `src/log/<missione>/<NN>.html` | `/log/m1/05/` |
