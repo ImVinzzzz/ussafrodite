@@ -150,15 +150,125 @@
 /* ── SECTION GRID (2 cards) ─────────────────────── */
 .section-grid2 {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 16px;
   margin-top: 32px;
 }
 
-@media (max-width: 768px) {
-  .section-grid2 {
-    grid-template-columns: 1fr;
-  }
+/* tablet: testo su tutta la riga, LOG e WEB 1.0 affiancati sotto */
+@media (max-width: 1024px) {
+  .section-grid2 { grid-template-columns: 1fr 1fr; }
+  .section-grid2 > .hero-main { grid-column: 1 / -1; }
+}
+
+@media (max-width: 600px) {
+  .section-grid2 { grid-template-columns: 1fr; }
+}
+
+/* ── BOX "LOG" (registro aggiornamenti) ─────────────────── */
+/* contain: size → il box non allunga la riga: prende l'altezza dei box
+   accanto e l'elenco scorre al suo interno */
+.home-log {
+  contain: size;
+  min-height: 16rem;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-panel);
+  border: 1px solid rgba(255, 153, 0, 0.3);
+  border-radius: var(--radius-md);
+  box-shadow: 0 0 40px rgba(255, 153, 0, 0.08), var(--panel-shadow);
+  overflow: hidden;
+}
+
+@media (max-width: 600px) { .home-log { min-height: 22rem; } }
+
+.home-log-head {
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.9rem 1rem 0.7rem;
+  border-bottom: 1px solid rgba(255, 153, 0, 0.25);
+  background: linear-gradient(90deg, rgba(255, 153, 0, 0.12), transparent 70%);
+}
+
+.home-log-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lcars-orange);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.home-log-count {
+  font-family: var(--font-display);
+  font-size: 0.5rem;
+  letter-spacing: 0.15em;
+  color: rgba(248, 248, 255, 0.4);
+  white-space: nowrap;
+}
+
+.home-log-list {
+  flex: 1 1 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0.6rem 0.5rem 0.6rem 0.75rem;
+  list-style: none;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 153, 0, 0.5) transparent;
+  font-family: ui-monospace, "Cascadia Mono", Consolas, "Courier New", monospace;
+  font-size: 0.68rem;
+  line-height: 1.35;
+}
+.home-log-list:focus-visible { outline: 1px solid var(--lcars-orange); outline-offset: -3px; }
+.home-log-list::-webkit-scrollbar { width: 6px; }
+.home-log-list::-webkit-scrollbar-thumb { background: rgba(255, 153, 0, 0.45); border-radius: 3px; }
+
+.home-log-row > a,
+.home-log-row > span {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 0.4rem;
+  padding: 0.18rem 0.3rem;
+  border-radius: 4px;
+  color: rgba(248, 248, 255, 0.78);
+  text-decoration: none;
+}
+.home-log-row > a::before,
+.home-log-row > span::before { content: "›"; color: var(--lcars-orange); }
+.home-log-row > a:hover { background: rgba(255, 153, 0, 0.12); color: #fff; }
+
+.home-log-text { overflow-wrap: anywhere; }
+.home-log-sd { color: rgba(255, 153, 0, 0.7); white-space: nowrap; font-size: 0.6rem; padding-top: 0.08rem; }
+
+/* voce più recente (l'ultima prima del cursore) */
+.home-log-row:nth-last-child(2) > * { color: var(--accent-gold); }
+
+/* animazione "compilatore" (gestita da site.js) */
+.home-log-row.is-pending { display: none; }
+.home-log-row.is-new > * { animation: home-log-in 0.6s ease-out; }
+@keyframes home-log-in {
+  from { background: rgba(255, 153, 0, 0.3); color: #fff; }
+  to   { background: transparent; }
+}
+
+.home-log-cursor {
+  padding: 0.18rem 0.3rem;
+  color: var(--lcars-orange);
+  animation: home-log-blink 1s steps(1) infinite;
+}
+@keyframes home-log-blink { 50% { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .home-log-cursor, .home-log-row.is-new > * { animation: none; }
 }
 
 /* ── TRIVIATREK CLASSIFICA GENERALE ──────────────────────── */
