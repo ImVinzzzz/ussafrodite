@@ -1,0 +1,141 @@
+# ══════════════════════════════════════════════════════════════════════
+#  REGISTRO AGGIORNAMENTI  ·  box "LOG" della homepage
+# ══════════════════════════════════════════════════════════════════════
+#  Una riga = una voce.   Formato:   STARDATE | TESTO | LINK
+#
+#  · STARDATE  es. 9907.15 (oppure testo libero: LIVE, IGNOTA…)
+#  · TESTO     quello che compare nel box
+#  · LINK      facoltativo: indirizzo della pagina (es. /log/m1/01/).
+#              Senza link la voce compare ma non è cliccabile.
+#
+#  · Il box mostra le voci NELL'ORDINE DI QUESTO FILE, dall'alto (la più
+#    vecchia) al basso (la più recente): le novità vanno aggiunte in fondo.
+#  · Le righe che iniziano con # sono commenti e non compaiono.
+#  · Gli spazi per allineare le colonne sono facoltativi.
+#  · Il carattere | non può comparire dentro il testo.
+#
+#  Elenco iniziale ricavato dai contenuti del sito (24/10/2026): da
+#  integrare e rettificare a mano.
+# ══════════════════════════════════════════════════════════════════════
+9905.06  | PADD 4A: ALL'ATTENZIONE DELL'EQUIPAGGIO | /padd/4a/
+9905.09  | LOG: FIRST CONTACT | /log/reunion/001/
+9907.15  | SHIP HISTORY 1 | /ship/
+9907.15  | LOG M1: ORDINI DA STARFLEET | /log/m1/00/
+9907.15  | LOG M1: ALIGHIERI | /log/m1/01/
+9907.15  | LOG M1: FRRUUU | /log/m1/02/
+9907.15  | LOG M1: RENZI | /log/m1/03/
+9907.15  | LOG M1: DA NEE | /log/m1/04/
+9907.15  | LOG M1: T'MIK | /log/m1/05/
+9907.15  | LOG M1: VAN BAJARK | /log/m1/06/
+9907.15  | LOG M1: RAEL | /log/m1/07/
+9907.15  | LOG M1: D'ACCARDI | /log/m1/08/
+9907.15  | LOG M1: TA NUTRI | /log/m1/09/
+9907.15  | LOG M1: JACKET | /log/m1/10/
+9907.15  | LOG M1: ROGERS | /log/m1/11/
+9912.05  | SHIP HISTORY 2 | /ship/
+9912.05  | LOG M2: ORDINI DA STARFLEET | /log/m2/00/
+9912.05  | LOG M2: ALIGHIERI | /log/m2/01/
+9912.05  | LOG M2: FRRUUU | /log/m2/02/
+9912.05  | LOG M2: RENZI | /log/m2/03/
+9912.05  | LOG M2: DA NEE | /log/m2/04/
+9912.05  | LOG M2: T'MIK | /log/m2/05/
+9912.05  | LOG M2: VAN BAJARK | /log/m2/06/
+9912.05  | LOG M2: RAEL | /log/m2/07/
+9912.05  | LOG M2: D'ACCARDI | /log/m2/08/
+9912.05  | LOG M2: TA NUTRI | /log/m2/09/
+9912.05  | LOG M2: JACKET | /log/m2/10/
+10002.14 | PADD 4D: CARTOLINA DAL DISNEYPLANET | /padd/4d/
+10006.15 | SHIP HISTORY 3 | /ship/
+10006.15 | LOG M3: ORDINI DA STARFLEET | /log/m3/00/
+10006.15 | LOG M3: ALIGHIERI | /log/m3/01/
+10006.15 | LOG M3: FRRUUU | /log/m3/02/
+10006.15 | LOG M3: RENZI | /log/m3/03/
+10006.15 | LOG M3: DA NEE | /log/m3/04/
+10006.15 | LOG M3: T'MIK | /log/m3/05/
+10006.15 | LOG M3: VAN BAJARK | /log/m3/06/
+10006.15 | LOG M3: RAEL | /log/m3/07/
+10006.15 | LOG M3: D'ACCARDI | /log/m3/08/
+10006.15 | LOG M3: TA NUTRI | /log/m3/09/
+10006.15 | LOG M3: JACKET | /log/m3/10/
+10006.15 | LOG M3: SÀPEK | /log/m3/11/
+10101.15 | SHIP HISTORY 4 | /ship/
+10101.15 | LOG M4: ORDINI DA STARFLEET | /log/m4/00/
+10101.15 | LOG M4: ALIGHIERI | /log/m4/01/
+10101.15 | LOG M4: FRRUUU | /log/m4/02/
+10101.15 | LOG M4: RENZI | /log/m4/03/
+10101.15 | LOG M4: DA NEE | /log/m4/04/
+10101.15 | LOG M4: T'MIK | /log/m4/05/
+10101.15 | LOG M4: VAN BAJARK | /log/m4/06/
+10101.15 | LOG M4: RAEL | /log/m4/07/
+10101.15 | LOG M4: D'ACCARDI | /log/m4/08/
+10101.15 | LOG M4: TA NUTRI | /log/m4/09/
+10101.15 | LOG M4: JACKET | /log/m4/10/
+10104.21 | LOG SMC: COMUNICAZIONE DA STARFLEET | /log/smc/00/
+10104.21 | LOG SMC: FRRUUU | /log/smc/02/
+10104.21 | LOG SMC: DA NEE | /log/smc/04/
+10104.21 | LOG SMC: T'MIK | /log/smc/05/
+10104.21 | LOG SMC: VAN BAJARK | /log/smc/06/
+10104.21 | LOG SMC: RAEL | /log/smc/07/
+10104.21 | LOG SMC: TA NUTRI | /log/smc/09/
+10104.21 | LOG SMC: JACKET | /log/smc/10/
+10104.21 | LOG SMC: LAMBERT | /log/smc/11/
+10104.21 | LOG SMC: SÀPEK | /log/smc/12/
+10104.21 | LOG SMC: CARTER | /log/smc/13/
+10104.21 | LOG SMC: CICCOZZI | /log/smc/14/
+10104.21 | LOG SMC: ROGERS | /log/smc/15/
+10104.21 | LOG SMC: BRAXX | /log/smc/16/
+10104.21 | LOG SMC: DREWS | /log/smc/17/
+10104.21 | LOG SMC: BLISS | /log/smc/18/
+10104.21 | LOG SMC: U. ALIGHIERI | /log/smc/19/
+10105.25 | PADD 4H: ATTENTATO AGLI ISTRUTTORI | /padd/4h/
+10108.25 | SHIP HISTORY 5 | /ship/
+10108.25 | LOG M5: ORDINI DA STARFLEET | /log/m5/00/
+10108.25 | LOG M5: ALIGHIERI | /log/m5/01/
+10108.25 | LOG M5: FRRUUU | /log/m5/02/
+10108.25 | LOG M5: RENZI | /log/m5/03/
+10108.25 | LOG M5: DA NEE | /log/m5/04/
+10108.25 | LOG M5: T'MIK | /log/m5/05/
+10108.25 | LOG M5: VAN BAJARK | /log/m5/06/
+10108.25 | LOG M5: RAEL | /log/m5/07/
+10108.25 | LOG M5: TA NUTRI | /log/m5/09/
+10108.25 | LOG M5: JACKET | /log/m5/10/
+10108.25 | LOG M5: ROGERS | /log/m5/11/
+10108.25 | CREW: ADAMS DECEASED | /crew/dnadams/
+# 10108.25 | CREW: D'ACCARDI TRASFERITO | /crew/daccardi/      <- da verificare (stardate?)
+10203.23 | SHIP HISTORY 6 | /ship/
+10203.23 | LOG M6: ORDINI DA STARFLEET | /log/m6/00/
+10203.23 | LOG M6: ALIGHIERI | /log/m6/01/
+10203.23 | LOG M6: FRRUUU | /log/m6/02/
+10203.23 | LOG M6: RENZI | /log/m6/03/
+10203.23 | LOG M6: DA NEE | /log/m6/04/
+10203.23 | LOG M6: T'MIK | /log/m6/05/
+10203.23 | LOG M6: VAN BAJARK | /log/m6/06/
+10203.23 | LOG M6: RAEL | /log/m6/07/
+10203.23 | LOG M6: TA NUTRI | /log/m6/09/
+10203.23 | LOG M6: JACKET | /log/m6/10/
+10203.23 | LOG M6: ROGERS | /log/m6/11/
+10301.15 | SHIP HISTORY 7 | /ship/
+10301.15 | LOG M7: ORDINI DA STARFLEET | /log/m7/00/
+10301.15 | LOG M7: ALIGHIERI | /log/m7/01/
+10301.15 | LOG M7: FRRUUU | /log/m7/02/
+10301.15 | LOG M7: RENZI | /log/m7/03/
+10301.15 | LOG M7: DA NEE | /log/m7/04/
+10301.15 | LOG M7: T'MIK | /log/m7/05/
+10301.15 | LOG M7: VAN BAJARK | /log/m7/06/
+10301.15 | LOG M7: RAEL | /log/m7/07/
+10301.15 | LOG M7: TA NUTRI | /log/m7/09/
+10301.15 | PADD 4I: INTERCETTAZIONE DA SIGMA IOTIA II | /padd/4i/
+12605.01 | LOG: REUNION #1 - 25 YEAR LATER | /log/reunion/002/
+12607.05 | LOG X01: THETA PERSEI IV - MAPPING | /log/x01/00/
+12607.05 | PADD S01: ESPLORA E TRACCIA | /padd/s01/
+12607.10 | LOG: REUNION #2 - TRIVIATERK: VULCAN REVENGE | /log/reunion/003/
+12608.15 | LOG: REUNION #3 - TRIVIATERK: ATOZ RULES! | /log/reunion/004/
+12609.08 | PADD S02: STAR TREK 60° | /padd/s02/
+
+# ── PADD senza stardate numerico: spostali nel punto giusto ─────────
+LIVE     | PADD 4X: AVVISI GENERALI | /padd/4x/
+LIVE     | PADD 4B: MICROSCRITTURA | /padd/4b/
+LIVE     | PADD 4C: BIGLIETTO LOTTERIA | /padd/4c/
+IGNOTA   | PADD 4E: SOS | /padd/4e/
+LIVE     | PADD 4F: O VOI CHE SIETE TUTTI DENTRO A UN FOCO... | /padd/4f/
+LIVE     | PADD 4G: USS AFRODITE – TECHNICAL MANUAL | /padd/4g/

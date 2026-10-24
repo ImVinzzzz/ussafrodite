@@ -100,6 +100,24 @@ title: Home
     </div>
   </div>
 
+  {#- Registro aggiornamenti: voci in src/_data/registro.txt (dalla più vecchia alla più recente) -#}
+  <section class="home-log animate-in animate-in-delay-1" aria-labelledby="home-log-title">
+    <div class="home-log-head">
+      <h2 class="home-log-title" id="home-log-title"><i class="fa-solid fa-terminal"></i> Log</h2>
+      <span class="home-log-count">{{ registro.length }} ENTRIES</span>
+    </div>
+    <ol class="home-log-list js-home-log" tabindex="0" aria-label="Registro aggiornamenti, dal più vecchio al più recente">
+      {%- for e in registro %}
+      <li class="home-log-row">
+        {%- if e.url %}<a href="{{ e.url }}">{% else %}<span>{% endif -%}
+        <span class="home-log-text">{{ e.text }}</span>{% if e.sd %}<span class="home-log-sd">SD {{ e.sd }}</span>{% endif %}
+        {%- if e.url %}</a>{% else %}</span>{% endif -%}
+      </li>
+      {%- endfor %}
+      <li class="home-log-cursor" aria-hidden="true">_</li>
+    </ol>
+  </section>
+
   <a href="/archive/1999/index.htm" target="_blank" rel="noopener" class="section-card ship animate-in animate-in-delay-1">
     <div class="section-card-icon"><i class="fa-solid fa-link"></i></div>
     <div class="section-card-title">WEB 1.0</div>
