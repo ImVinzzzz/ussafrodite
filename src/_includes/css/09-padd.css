@@ -261,3 +261,13 @@
       width: 100%; height: 100%;
       border: none;
     }
+
+/* Immagini singole apribili a tutta pagina (attributo data-lightbox), es. pagina Ship */
+img[data-lightbox] {
+  cursor: zoom-in;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+img[data-lightbox]:hover {
+  transform: translateY(-0.25rem);
+  filter: drop-shadow(0 0.5rem 1.25rem rgba(255, 153, 0, 0.35));
+}
