@@ -94,12 +94,56 @@
     cards.forEach((el) => { el.classList.add("reveal"); observer.observe(el); });
   }
 
+  // ── BOX "LOG" IN HOMEPAGE: compilazione riga per riga ─────
+  // Quando il box entra nello schermo le voci compaiono una alla volta,
+  // dalla più vecchia alla più recente, come l'output di un compilatore.
+  // Rotellina, tocco o tastiera sull'elenco: compare tutto subito e si
+  // scorre a mano. Senza JS o con "riduci movimento": elenco completo.
+  const homeLog = document.querySelector(".js-home-log");
+  if (homeLog) {
+    const rows = [...homeLog.querySelectorAll(".home-log-row")];
+    const toBottom = () => { homeLog.scrollTop = homeLog.scrollHeight; };
+
+    if (reduceMotion || !("IntersectionObserver" in window) || !rows.length) {
+      toBottom();
+    } else {
+      const delay = Math.max(25, Math.min(110, 9000 / rows.length)); // ~9 s in tutto
+      let i = 0;
+      let timer = null;
+      rows.forEach((r) => r.classList.add("is-pending"));
+
+      const step = () => {
+        if (i >= rows.length) return;
+        const row = rows[i++];
+        row.classList.remove("is-pending");
+        row.classList.add("is-new");
+        toBottom();
+        timer = setTimeout(step, delay);
+      };
+      const finish = () => {
+        if (i >= rows.length) return;
+        clearTimeout(timer);
+        rows.forEach((r) => r.classList.remove("is-pending"));
+        i = rows.length;
+        toBottom();
+      };
+      ["wheel", "touchstart", "pointerdown", "keydown"].forEach((ev) =>
+        homeLog.addEventListener(ev, finish, { passive: true }));
+
+      const io = new IntersectionObserver((entries) => {
+        if (!entries.some((e) => e.isIntersecting)) return;
+        io.disconnect();
+        step();
+      }, { threshold: 0.25 });
+      io.observe(homeLog);
+    }
+  }
+
   // ── IMMAGINI MANCANTI ─────────────────────────────────────
   // Rete di sicurezza: un'immagine non trovata viene nascosta senza
   // lasciare l'icona rotta (i segnaposto "FOTO" sono già nell'HTML).
   const markMissing = (img) => {
-    // ignora immagini senza indirizzo (es. quella del lightbox prima del clic)
-    if (img.dataset.missing || !img.getAttribute("src") || img.closest(".padd-lightbox")) return;
+    if (img.dataset.missing) return;
     img.dataset.missing = "1";
     // ritratti: al posto dell'immagine mostra il segnaposto "FOTO"
     if (img.matches(".crew-photo, .diary-header-pgbox img")) {
@@ -119,10 +163,8 @@
     if (img.complete && img.naturalWidth === 0 && !/\.svg($|\?)/i.test(img.src)) markMissing(img);
   });
 
-  // ── LIGHTBOX GALLERIE (PADD e gallerie fotografiche) ──────
-  // Clic su una miniatura: immagine intera a schermo pieno con didascalia.
-  const GALLERY_ITEM = ".padd-gallery-item, .gallery-item";
-  const galleryImages = document.querySelectorAll(".padd-gallery-item img, .gallery-item img");
+  // ── LIGHTBOX GALLERIE PADD ────────────────────────────────
+  const galleryImages = document.querySelectorAll(".padd-gallery-item img");
   if (galleryImages.length) {
     const box = document.createElement("div");
     box.className = "padd-lightbox";
@@ -130,7 +172,7 @@
     box.setAttribute("aria-modal", "true");
     box.innerHTML =
       '<button class="padd-lightbox-close" aria-label="Chiudi popup"><i class="fa-solid fa-xmark"></i></button>' +
-      '<div class="padd-lightbox-content"><img class="padd-lightbox-img" alt=""><div class="padd-lightbox-caption"></div></div>';
+      '<div class="padd-lightbox-content"><img class="padd-lightbox-img" src="" alt=""><div class="padd-lightbox-caption"></div></div>';
     document.body.appendChild(box);
 
     const boxImg = box.querySelector(".padd-lightbox-img");
@@ -140,7 +182,7 @@
     galleryImages.forEach((img) => img.addEventListener("click", () => {
       boxImg.src = img.src;
       boxImg.alt = img.alt || "";
-      const cap = img.closest(GALLERY_ITEM)?.querySelector(".padd-gallery-caption, .gallery-item-caption");
+      const cap = img.closest(".padd-gallery-item")?.querySelector(".padd-gallery-caption");
       boxCaption.textContent = cap ? cap.textContent : (img.alt || "");
       box.classList.add("active");
       document.body.style.overflow = "hidden";
