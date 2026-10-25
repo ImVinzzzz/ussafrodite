@@ -43,13 +43,6 @@
         "slot": "03"
       },
       {
-        "dept": "sci",
-        "code": "XSO",
-        "kind": "Rapporto",
-        "short": "GM Da Nee",
-        "slot": "04"
-      },
-      {
         "dept": "med",
         "code": "CMO",
         "kind": "Rapporto",
