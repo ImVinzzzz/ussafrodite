@@ -3,7 +3,7 @@ layout: layouts/base.njk
 title: Home
 ---
 {#- Home / dashboard LCARS. Contatori calcolati automaticamente dai contenuti. -#}
-{% set logCount = collections.diaries.length + collections.reunions.length %}
+{% set logCount = (collections.diaries | noBriefing).length + collections.reunions.length %}
 <div class="home-hero animate-in">
   <div class="hero-main">
     <div class="hero-brand">
