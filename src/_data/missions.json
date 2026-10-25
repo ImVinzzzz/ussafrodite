@@ -62,21 +62,6 @@
         "kind": "Rapporto",
         "short": "GM Rael",
         "slot": "07"
-      },
-      {
-        "dept": "med",
-        "code": "Consigliere",
-        "kind": "Rapporto",
-        "short": "Dr. Becco",
-        "icon": "fa-solid fa-circle-chevron-up",
-        "slot": "11"
-      },
-      {
-        "dept": "ops",
-        "code": "Ufficiale",
-        "kind": "Rapporto",
-        "short": "GM Brax",
-        "slot": "13"
       }
     ]
   },
