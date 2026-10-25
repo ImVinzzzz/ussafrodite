@@ -131,11 +131,25 @@
     "kind": "Rapporto",
     "pending": [
       {
+        "dept": "cmd",
+        "code": "CO",
+        "kind": "Rapporto",
+        "short": "Ten JG Alighieri",
+        "slot": "01"
+      },
+      {
         "dept": "sci",
         "code": "CSO",
         "kind": "Rapporto",
         "short": "GM Renzi",
         "slot": "03"
+      },
+      {
+        "dept": "sec",
+        "code": "XTO",
+        "kind": "Rapporto",
+        "short": "GM D'Accardi",
+        "slot": "08"
       }
     ]
   },
