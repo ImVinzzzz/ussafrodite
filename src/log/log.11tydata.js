@@ -19,7 +19,7 @@ function resolve(data) {
     mkey, slot, type, mission,
     dept: deptKey,
     tone: dept.tone,
-    icon: data.icon || dept.icon,
+    icon: data.icon || r.icon || dept.icon,
     code, kind, name,
     short: data.short ?? r.short ?? name,
     roleLine,
