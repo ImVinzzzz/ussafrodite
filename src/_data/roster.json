@@ -7,6 +7,14 @@
     "sign": "Tenente JG Giuseppe Alighieri",
     "thumb": "alighieri_l.jpg"
   },
+  "argo": {
+    "name": "Argo",
+    "dept": "eng",
+    "code": "Mascotte",
+    "icon": "fa-solid fa-skull",
+    "sign": "Argo",
+    "thumb": "argo.jpg"
+  },
   "becco": {
     "name": "Dr. Stanislao Becco",
     "short": "Dr. Becco",
@@ -24,6 +32,13 @@
     "sign": "Miss Lucy Bliss",
     "thumb": "bliss.jpg"
   },
+  "boregh": {
+    "name": "GM Boregh",
+    "dept": "ops",
+    "code": "XOO",
+    "sign": "GM Boregh",
+    "thumb": "boregh.jpg"
+  },
   "braxx": {
     "name": "GM Sery Braxx",
     "short": "GM Brax",
@@ -32,12 +47,35 @@
     "sign": "GM Sery Brax",
     "thumb": "braxx.jpg"
   },
+  "capui": {
+    "name": "C3 Marek Capui",
+    "short": "C3 Capui",
+    "dept": "med",
+    "code": "Infermiere",
+    "sign": "C3 Marek Capui",
+    "thumb": "capui.jpg"
+  },
   "carter": {
     "name": "Cadetto Carter",
     "dept": "med",
     "code": "Infermiere",
     "sign": "Cadetto V Carter Carter",
     "thumb": "carter.jpg"
+  },
+  "castell": {
+    "name": "GM Joseph Castell",
+    "short": "GM Castell",
+    "dept": "eng",
+    "code": "XEO",
+    "sign": "GM Joseph Castell",
+    "thumb": "castell.jpg"
+  },
+  "chunki": {
+    "name": "C2 Chun Ki",
+    "dept": "med",
+    "code": "Infermiera",
+    "sign": "C2 Chun Ki",
+    "thumb": "chunki.jpg"
   },
   "ciccozzi": {
     "name": "GM Ciccozzi",
@@ -61,6 +99,14 @@
     "sign": "GM Da Nee",
     "thumb": "danee_l.jpg"
   },
+  "deniro": {
+    "name": "GM Robert F. De Niro",
+    "short": "GM De Niro",
+    "dept": "cmd",
+    "code": "Pilota",
+    "sign": "GM Robert F. De Niro",
+    "thumb": "deniro.jpg"
+  },
   "drews": {
     "name": "Maurice Drews",
     "short": "M. Drews",
@@ -68,6 +114,30 @@
     "code": "Istruttore di Ballo",
     "sign": "Mr Maurice Drews",
     "thumb": "drews.jpg"
+  },
+  "evabrown": {
+    "name": "Eva Brown",
+    "short": "E. Brown",
+    "dept": "ext",
+    "code": "Civile",
+    "sign": "Sig.ra Eva Brown",
+    "thumb": "evabrown.jpg"
+  },
+  "fantozzi": {
+    "name": "C2 Fantozzi Ugo",
+    "short": "C2 Fantozzi",
+    "dept": "cmd",
+    "code": "Protocollo",
+    "sign": "C2 Fantozzi Ugo",
+    "thumb": "fantozzi.jpg"
+  },
+  "faq": {
+    "name": "C2 Tania Faq",
+    "short": "C2 Faq",
+    "dept": "ops",
+    "code": "Sottufficiale",
+    "sign": "C2 Tania Faq",
+    "thumb": "faq.jpg"
   },
   "field": {
     "name": "GM Arianna Field",
@@ -84,6 +154,29 @@
     "sign": "GM Frruuu",
     "thumb": "frruuu_l.jpg"
   },
+  "geppo": {
+    "name": "Geppo",
+    "dept": "civ",
+    "code": "Mascotte",
+    "icon": "fa-solid fa-shield-cat",
+    "sign": "Geppo",
+    "thumb": "geppo.jpg"
+  },
+  "haldir": {
+    "name": "C3 Haldir",
+    "dept": "sec",
+    "code": "Addetto",
+    "sign": "C3 Haldir",
+    "thumb": "haldir.jpg"
+  },
+  "hsmith": {
+    "name": "C2 Horace Smith",
+    "short": "C2 H. Smith",
+    "dept": "sec",
+    "code": "Addetto",
+    "sign": "C2 Horace Smith",
+    "thumb": "hsmith.jpg"
+  },
   "jacket": {
     "name": "GM P. JACKET",
     "short": "GM Jacket",
@@ -92,6 +185,29 @@
     "sign": "GM Peter Jacket",
     "thumb": "jacket_l.jpg"
   },
+  "jarek": {
+    "name": "C2 Jarek Sol",
+    "short": "C2 Jarek",
+    "dept": "sci",
+    "code": "Spettrometria",
+    "sign": "C2 Jarek Sol",
+    "thumb": "jarek.jpg"
+  },
+  "kelley": {
+    "name": "C2 DeForest Kelley",
+    "short": "C2 Kelley",
+    "dept": "sec",
+    "code": "Addetto",
+    "sign": "C2 DeForest Kelley",
+    "thumb": "deforest.jpg"
+  },
+  "kissmey": {
+    "name": "C2 Kiss Mey",
+    "dept": "sec",
+    "code": "Addetto",
+    "sign": "C2 Kiss Mey",
+    "thumb": "mey.jpg"
+  },
   "lambert": {
     "name": "GM Baba Lambert",
     "short": "GM Lambert",
@@ -99,6 +215,45 @@
     "code": "Ufficiale",
     "sign": "GM Baba Lambert",
     "thumb": "lambert.jpg"
+  },
+  "magnum": {
+    "name": "C2 Thomas Magnum",
+    "short": "C2 Magnum",
+    "dept": "sec",
+    "code": "Addetto",
+    "sign": "C2 Thomas Magnum",
+    "thumb": "magnum.jpg"
+  },
+  "mtrey": {
+    "name": "GM M'Trey",
+    "dept": "eng",
+    "code": "Ufficiale",
+    "sign": "GM M'Trey",
+    "thumb": "mtrey.jpg"
+  },
+  "okonnor": {
+    "name": "C3 Angel O'Konnor",
+    "short": "C3 O'Konnor",
+    "dept": "med",
+    "code": "Infermiere",
+    "sign": "C3 Angel O'Konnor",
+    "thumb": "okonnor.jpg"
+  },
+  "peppino": {
+    "name": "Peppino",
+    "dept": "med",
+    "code": "Mascotte",
+    "icon": "fa-solid fa-cat",
+    "sign": "Peppino",
+    "thumb": "peppino.jpg"
+  },
+  "pinkerton": {
+    "name": "GM Pete P. Pinkerton",
+    "short": "GM Pinkerton",
+    "dept": "ops",
+    "code": "Teletrasporto",
+    "sign": "GM Pete Patryk Pinkerton",
+    "thumb": "pinkerton.jpg"
   },
   "rael": {
     "name": "GM Rael",
@@ -121,12 +276,42 @@
     "code": "Ingegnere",
     "sign": "GM Rogers"
   },
+  "santagata": {
+    "name": "GM Tony Santagata",
+    "short": "GM Santagata",
+    "dept": "sec",
+    "code": "Ufficiale",
+    "sign": "GM Tony Santagata"
+  },
   "sapek": {
     "name": "GM Sàpek",
     "dept": "sci",
     "code": "Ufficiale",
     "sign": "GM Sàpek",
     "thumb": "sapek_l.jpg"
+  },
+  "scramiglio": {
+    "name": "Ernestina Scramiglio",
+    "short": "E. Scramiglio",
+    "dept": "civ",
+    "code": "SSC",
+    "sign": "Sig.ra Ernestina Scramiglio",
+    "thumb": "scramiglio.jpg"
+  },
+  "smith": {
+    "name": "C1 Adam Smith",
+    "short": "C1 A. Smith",
+    "dept": "sec",
+    "code": "Addetto",
+    "sign": "C1 Adam Smith",
+    "thumb": "smith.jpg"
+  },
+  "strider": {
+    "name": "C3 Strider",
+    "dept": "sec",
+    "code": "Addetto",
+    "sign": "C3 Strider",
+    "thumb": "strider.jpg"
   },
   "tanutri": {
     "name": "GM J. Ta Nutri",
@@ -135,12 +320,34 @@
     "code": "CEO",
     "sign": "GM Jidtzia Ta Nutri"
   },
+  "tmar": {
+    "name": "C1 T'Mar",
+    "dept": "sci",
+    "code": "Esobiologia",
+    "sign": "C1 T'Mar",
+    "thumb": "tmar.jpg"
+  },
   "tmik": {
     "name": "GM T'Mik",
     "dept": "med",
     "code": "CMO",
     "sign": "GM T'Mik",
     "thumb": "tmik_l.jpg"
+  },
+  "tval": {
+    "name": "GM T'Val",
+    "dept": "sec",
+    "code": "Ufficiale",
+    "sign": "GM T'Val",
+    "thumb": "tval.jpg"
+  },
+  "vael": {
+    "name": "GM Elian Vaèl",
+    "short": "GM Vaèl",
+    "dept": "sci",
+    "code": "Astrofisica",
+    "sign": "GM Elian Vaèl",
+    "thumb": "vael.jpg"
   },
   "vanbajark": {
     "name": "GM R. VAN BAJARK",
@@ -149,5 +356,35 @@
     "code": "XMO",
     "sign": "GM Robert Van Bajark",
     "thumb": "vanbajark_l.jpg"
+  },
+  "vanian": {
+    "name": "C1 Vanian",
+    "dept": "med",
+    "code": "Infermiera Capo",
+    "sign": "C1 Vanian",
+    "thumb": "vanian.jpg"
+  },
+  "vlearya": {
+    "name": "GM V'Learya",
+    "dept": "eng",
+    "code": "Ufficiale",
+    "sign": "GM V'Learya",
+    "thumb": "vlearya.jpg"
+  },
+  "watson": {
+    "name": "GM John H. Watson",
+    "short": "GM Watson",
+    "dept": "cmd",
+    "code": "COMM",
+    "sign": "GM John H. Watson",
+    "thumb": "watson.jpg"
+  },
+  "wesson": {
+    "name": "C2 Daniel B. Wesson",
+    "short": "C2 Wesson",
+    "dept": "sec",
+    "code": "Addetto",
+    "sign": "C2 Daniel Baird Wesson",
+    "thumb": "wesson.jpg"
   }
 }
