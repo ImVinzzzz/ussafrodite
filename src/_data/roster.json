@@ -7,6 +7,15 @@
     "sign": "Tenente JG Giuseppe Alighieri",
     "thumb": "alighieri_l.jpg"
   },
+  "becco": {
+    "name": "Dr. Stanislao Becco",
+    "short": "Dr. Becco",
+    "dept": "med",
+    "code": "Consigliere",
+    "icon": "fa-solid fa-circle-chevron-up",
+    "sign": "Dr. Stanislao Becco",
+    "thumb": "becco.jpg"
+  },
   "bliss": {
     "name": "Lucy Bliss",
     "short": "L. Bliss",
@@ -18,7 +27,7 @@
   "braxx": {
     "name": "GM Sery Braxx",
     "short": "GM Brax",
-    "dept": "eng",
+    "dept": "ops",
     "code": "Ufficiale",
     "sign": "GM Sery Brax",
     "thumb": "braxx.jpg"
@@ -59,6 +68,14 @@
     "code": "Istruttore di Ballo",
     "sign": "Mr Maurice Drews",
     "thumb": "drews.jpg"
+  },
+  "field": {
+    "name": "GM Arianna Field",
+    "short": "GM Field",
+    "dept": "sci",
+    "code": "Ufficiale",
+    "sign": "GM Arianna Field",
+    "thumb": "field.jpg"
   },
   "frruuu": {
     "name": "GM Frruuu",
