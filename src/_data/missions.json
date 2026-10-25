@@ -72,13 +72,6 @@
         "slot": "11"
       },
       {
-        "dept": "sci",
-        "code": "Ufficiale",
-        "kind": "Rapporto",
-        "short": "GM Field",
-        "slot": "12"
-      },
-      {
         "dept": "ops",
         "code": "Ufficiale",
         "kind": "Rapporto",
