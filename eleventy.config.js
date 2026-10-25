@@ -39,6 +39,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("ofMission", (items, key) =>
     (items || []).filter((p) => p.data.d.mkey === key));
 
+  // Solo diari e rapporti, senza i briefing ("Ordini da StarFleet")
+  eleventyConfig.addFilter("noBriefing", (items) =>
+    (items || []).filter((p) => p.data.d.type !== "briefing"));
+
   // Card dell'indice missione: diari pubblicati + rapporti in arrivo
   eleventyConfig.addFilter("missionCards", (items, mission) => {
     const published = (items || [])
