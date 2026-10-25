@@ -772,47 +772,47 @@
     },
     {
       "source": "/log_missionb_11.html",
-      "destination": "/log/smc/11/",
-      "permanent": true
-    },
-    {
-      "source": "/log_missionb_12.html",
-      "destination": "/log/smc/12/",
-      "permanent": true
-    },
-    {
-      "source": "/log_missionb_13.html",
-      "destination": "/log/smc/13/",
-      "permanent": true
-    },
-    {
-      "source": "/log_missionb_14.html",
-      "destination": "/log/smc/14/",
-      "permanent": true
-    },
-    {
-      "source": "/log_missionb_15.html",
       "destination": "/log/smc/15/",
       "permanent": true
     },
     {
-      "source": "/log_missionb_16.html",
-      "destination": "/log/smc/16/",
-      "permanent": true
-    },
-    {
-      "source": "/log_missionb_17.html",
+      "source": "/log_missionb_12.html",
       "destination": "/log/smc/17/",
       "permanent": true
     },
     {
+      "source": "/log_missionb_13.html",
+      "destination": "/log/smc/26/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_14.html",
+      "destination": "/log/smc/32/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_15.html",
+      "destination": "/log/smc/45/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_16.html",
+      "destination": "/log/smc/29/",
+      "permanent": true
+    },
+    {
+      "source": "/log_missionb_17.html",
+      "destination": "/log/smc/49/",
+      "permanent": true
+    },
+    {
       "source": "/log_missionb_18.html",
-      "destination": "/log/smc/18/",
+      "destination": "/log/smc/50/",
       "permanent": true
     },
     {
       "source": "/log_missionb_19.html",
-      "destination": "/log/smc/19/",
+      "destination": "/log/smc/52/",
       "permanent": true
     },
     {
