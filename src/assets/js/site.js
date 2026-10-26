@@ -248,6 +248,37 @@
     });
   }
 
+  // ── ALTEZZA HEADER ────────────────────────────────────────
+  // Espone l'altezza reale dell'header fisso come --header-h, usata da
+  // scroll-margin-top per non far finire i titoli sotto l'header.
+  const siteHeader = document.getElementById("site-header");
+  if (siteHeader) {
+    const setHeaderH = () => document.documentElement.style.setProperty("--header-h", siteHeader.offsetHeight + "px");
+    setHeaderH();
+    window.addEventListener("resize", setHeaderH, { passive: true });
+  }
+
+  // ── BARRA SEZIONI CREW ────────────────────────────────────
+  // Evidenzia nella barra .crew-jump la sezione attualmente in vista.
+  const jumpLinks = [...document.querySelectorAll(".crew-jump-link")];
+  if (jumpLinks.length && "IntersectionObserver" in window) {
+    const byId = new Map(jumpLinks.map((a) => [decodeURIComponent(a.hash.slice(1)), a]));
+    const visible = new Set();
+    const mark = () => {
+      const first = [...byId.keys()].find((id) => visible.has(id));
+      jumpLinks.forEach((a) => {
+        const on = byId.get(first) === a;
+        a.classList.toggle("is-current", on);
+        if (on) a.setAttribute("aria-current", "location"); else a.removeAttribute("aria-current");
+      });
+    };
+    const spy = new IntersectionObserver((entries) => {
+      entries.forEach((e) => (e.isIntersecting ? visible.add(e.target.id) : visible.delete(e.target.id)));
+      mark();
+    }, { rootMargin: "-30% 0px -60% 0px" });
+    byId.forEach((_, id) => { const s = document.getElementById(id); if (s) spy.observe(s); });
+  }
+
   // ── CONSOLE ───────────────────────────────────────────────
   console.log("%c USS AFRODITE - NCC 1863", "color:#ff9900;font-family:monospace;font-size:18px;font-weight:bold;");
   console.log("%c CLASS: MIRANDA | STARFLEET REGISTRY", "color:#7799cc;font-family:monospace;font-size:11px;");
