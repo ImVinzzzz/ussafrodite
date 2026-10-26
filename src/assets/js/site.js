@@ -225,6 +225,29 @@
     });
   }
 
+  // ── TORNA IN CIMA ─────────────────────────────────────────
+  // Il pulsante (layouts/base.njk) compare dopo aver scorso la pagina
+  // di circa mezzo schermo e riporta in cima con uno scorrimento morbido
+  // (immediato con "riduci movimento").
+  const toTop = document.querySelector(".js-back-to-top");
+  if (toTop) {
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      const limit = Math.min(400, window.innerHeight * 0.5);
+      toTop.classList.toggle("is-visible", window.scrollY > limit);
+    };
+    window.addEventListener("scroll", () => {
+      if (!ticking) { ticking = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    update();
+
+    toTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+      toTop.blur();
+    });
+  }
+
   // ── CONSOLE ───────────────────────────────────────────────
   console.log("%c USS AFRODITE - NCC 1863", "color:#ff9900;font-family:monospace;font-size:18px;font-weight:bold;");
   console.log("%c CLASS: MIRANDA | STARFLEET REGISTRY", "color:#7799cc;font-family:monospace;font-size:11px;");
