@@ -3,6 +3,8 @@
     "key": "2xa",
     "badge": "2XA",
     "title": "Ufficiali Superiori",
+    "short": "Ufficiali",
+    "navIcon": "fa-solid fa-star",
     "icon": "fa-solid fa-circle-chevron-up",
     "tone": "orange"
   },
@@ -10,6 +12,8 @@
     "key": "2xb",
     "badge": "2XB",
     "title": "Personale di Plancia",
+    "short": "Plancia",
+    "navIcon": "fa-solid fa-display",
     "icon": "fa-solid fa-circle-chevron-up",
     "tone": "orange"
   },
@@ -17,6 +21,7 @@
     "key": "cmd",
     "badge": "CMD",
     "title": "Sezione Comando - CMD",
+    "short": "CMD",
     "icon": "fa-solid fa-circle-chevron-up",
     "tone": "cmd"
   },
@@ -24,6 +29,7 @@
     "key": "sci",
     "badge": "SCI",
     "title": "Sezione Scientifica - SCI",
+    "short": "SCI",
     "icon": "fa-solid fa-dna",
     "tone": "sci"
   },
@@ -31,6 +37,7 @@
     "key": "med",
     "badge": "MED",
     "title": "Infermeria - MED",
+    "short": "MED",
     "icon": "fa-solid fa-staff-snake",
     "tone": "sci"
   },
@@ -38,6 +45,7 @@
     "key": "ops",
     "badge": "OPS",
     "title": "Sezione Operazioni - OPS",
+    "short": "OPS",
     "icon": "fa-solid fa-globe",
     "tone": "ops"
   },
@@ -45,6 +53,7 @@
     "key": "sec",
     "badge": "SEC",
     "title": "Tattica e Sicurezza - SEC",
+    "short": "SEC",
     "icon": "fa-solid fa-shield-halved",
     "tone": "ops"
   },
@@ -52,6 +61,7 @@
     "key": "eng",
     "badge": "ENG",
     "title": "Ingegneria - ENG",
+    "short": "ENG",
     "icon": "fa-solid fa-gear",
     "tone": "ops"
   },
@@ -59,6 +69,7 @@
     "key": "civ",
     "badge": "CIV",
     "title": "Personale Civile",
+    "short": "CIV",
     "icon": "fa-regular fa-circle-dot",
     "tone": "civ"
   },
@@ -66,6 +77,7 @@
     "key": "ext",
     "badge": "EXT",
     "title": "External Personnel Files",
+    "short": "EXT",
     "icon": "fa-solid fa-folder-open",
     "tone": "ext"
   }
