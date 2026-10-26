@@ -6,8 +6,19 @@ title: Crew
 {% set banner = { icon: 'fa-solid fa-people-group', title: 'Crew', subtitle: 'Fascicoli Equipaggio', tone: 'lavender' } %}
 {% include "partials/banner.njk" %}
 
+{#- Barra LCARS di collegamento rapido alle sezioni (etichetta breve `short`, icona `navIcon` o `icon`) -#}
+<nav class="crew-jump" aria-label="Sezioni dell'equipaggio">
+  <span class="crew-jump-cap" aria-hidden="true"></span>
+  <ul class="crew-jump-list">
+    {% for sec in crewSections %}{% if (collections.crew | inSection(sec.key) | length) %}
+    <li><a class="crew-jump-link tone-{{ sec.tone }}" href="#{{ sec.key }}" title="{{ sec.title }}"><i class="{{ sec.navIcon or sec.icon }}" aria-hidden="true"></i><span>{{ sec.short or sec.badge }}</span></a></li>
+    {% endif %}{% endfor %}
+  </ul>
+  <span class="crew-jump-fill" aria-hidden="true"></span>
+</nav>
+
 {% for sec in crewSections %}
-<section class="crew-section">
+<section class="crew-section" id="{{ sec.key }}">
   <div class="crew-section-header">
     <span class="crew-section-badge tone-{{ sec.tone }}"><i class="{{ sec.icon }}"></i> {{ sec.badge }}</span>
     <h2>{{ sec.title }}</h2>
