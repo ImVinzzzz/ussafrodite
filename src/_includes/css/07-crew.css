@@ -1,6 +1,97 @@
 /* ── CREW PAGE ──────────────────────────────────────────── */
 .crew-section {
   margin-bottom: 48px;
+  /* lascia spazio all'header fisso quando si arriva da un link della barra */
+  scroll-margin-top: calc(var(--header-h, 90px) + 16px);
+}
+
+/* ── BARRA DI COLLEGAMENTO RAPIDO (crew-jump) ───────────── */
+.crew-jump {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+  margin: -16px 0 40px;
+}
+
+.crew-jump-cap,
+.crew-jump-fill {
+  flex-shrink: 0;
+  min-height: 32px;
+  background: var(--lcars-lavender);
+}
+
+.crew-jump-cap {
+  width: 28px;
+  border-radius: var(--radius-pill) 0 0 var(--radius-pill);
+}
+
+.crew-jump-fill {
+  flex: 1;
+  min-width: 24px;
+  background: var(--lcars-blue);
+  opacity: 0.55;
+  border-radius: 0 var(--radius-pill) var(--radius-pill) 0;
+}
+
+.crew-jump-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+}
+
+.crew-jump-link {
+  --jump-ink: var(--bg-deep);
+  height: 32px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--tone, var(--lcars-orange));
+  color: var(--jump-ink);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-radius: 4px;
+  transition: filter 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* reparti con colore scuro: testo chiaro per restare leggibile */
+.crew-jump-link.tone-cmd,
+.crew-jump-link.tone-sci,
+.crew-jump-link.tone-ops { --jump-ink: var(--ghost-white); }
+.crew-jump-link.tone-civ { background: rgba(248,248,255,0.25); --jump-ink: var(--ghost-white); }
+
+.crew-jump-link i { font-size: 0.8rem; }
+
+.crew-jump-link:hover,
+.crew-jump-link:focus-visible,
+.crew-jump-link.is-current {
+  filter: brightness(1.3);
+  box-shadow: 0 0 14px rgba(255,200,60,0.45);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.crew-jump-link:focus-visible { box-shadow: 0 0 0 2px var(--ghost-white); }
+
+@media (max-width: 768px) {
+  .crew-jump { margin: -12px 0 28px; }
+  .crew-jump-cap { width: 14px; }
+  .crew-jump-fill { display: none; }
+  .crew-jump-list { flex: 1; }
+  .crew-jump-list li { flex: 1 0 auto; display: flex; }
+  .crew-jump-link { flex: 1; padding: 0 10px; gap: 6px; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .crew-jump-link { transition: none; }
+  .crew-jump-link:hover,
+  .crew-jump-link.is-current { transform: none; }
 }
 
 .crew-section-header {
