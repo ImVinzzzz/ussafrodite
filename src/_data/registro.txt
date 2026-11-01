@@ -13,9 +13,6 @@
 #  · Le righe che iniziano con # sono commenti e non compaiono.
 #  · Gli spazi per allineare le colonne sono facoltativi.
 #  · Il carattere | non può comparire dentro il testo.
-#
-#  Elenco iniziale ricavato dai contenuti del sito (24/10/2026): da
-#  integrare e rettificare a mano.
 # ══════════════════════════════════════════════════════════════════════
 9905.09  | FIRST CONTACT | /log/reunion/001/
 9907.15  | LOG M1: ORDINI DA STARFLEET | /log/m1/00/
@@ -162,6 +159,13 @@
 10301.15 | LOG M7: TA NUTRI | /log/m7/09/
 10301.15 | SHIP HISTORY 7 | /ship/
 10301.15 | PADD 4I: INTERCETTAZIONE DA SIGMA IOTIA II | /padd/4i/
+10310.15 | LOG M8: BRIEFING OTTAVA MISSIONE | /log/m8/00/
+10310.15 | LOG M8: ALIGHIERI | /log/m8/01/
+10310.15 | LOG M8: FRRUUU | /log/m8/02/
+10310.15 | LOG M8: DA NEE | /log/m8/04/
+10310.15 | LOG M8: T'MIK | /log/m8/05/
+10310.15 | LOG M8: TA NUTRI | /log/m8/09/
+10310.15 | LOG M8: JACKET | /log/m8/10/
 12605.01 | LOG: REUNION #1 - 25 YEAR LATER | /log/reunion/002/
 12607.05 | LOG X01: THETA PERSEI IV - MAPPING | /log/x01/00/
 12607.05 | PADD S01: ESPLORA E TRACCIA | /padd/s01/

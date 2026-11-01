@@ -78,9 +78,35 @@
     "type": "mission",
     "code": "M: 8",
     "title": "All Good Things...",
-    "status": "none",
-    "url": null,
-    "name": "Mission: 8"
+    "status": "complete",
+    "url": "/log/m8/",
+    "name": "Mission: 8",
+    "label": "Diari di Missione",
+    "stardate": "10310.15",
+    "kind": "Diario Personale",
+    "pending": [
+      {
+        "dept": "sci",
+        "code": "CSO",
+        "kind": "Diario Personale",
+        "short": "GM Renzi",
+        "slot": "03"
+      },
+      {
+        "dept": "med",
+        "code": "XMO",
+        "kind": "Diario Personale",
+        "short": "GM Van Bajark",
+        "slot": "06"
+      },
+      {
+        "dept": "sec",
+        "code": "CTO",
+        "kind": "Diario Personale",
+        "short": "GM Rael",
+        "slot": "07"
+      }
+    ]
   },
   {
     "key": "m7",
