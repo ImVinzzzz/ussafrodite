@@ -1,5 +1,13 @@
 [
   {
+    "key": "log005",
+    "type": "reunion",
+    "code": "Log: #5",
+    "title": "Reunion #4 - TriviaTerk: Nel dubbio è la A!",
+    "status": "complete",
+    "url": "/log/reunion/005/"
+  },
+  {
     "key": "log004",
     "type": "reunion",
     "code": "Log: #4",
