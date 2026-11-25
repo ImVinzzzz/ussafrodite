@@ -173,6 +173,7 @@
 12607.10 | LOG: REUNION #2 - TRIVIATERK: VULCAN REVENGE | /log/reunion/003/
 12608.15 | LOG: REUNION #3 - TRIVIATERK: ATOZ RULES! | /log/reunion/004/
 12609.08 | PADD S02: STAR TREK 60° | /padd/s02/
+12610.11 | LOG: REUNION #4 - TRIVIATERK: NEL DUBBIO È LA A! | /log/reunion/005/
 
 # ── PADD senza stardate numerico: spostali nel punto giusto ─────────
 IGNOTA   | PADD 4E: SOS | /padd/4e/
