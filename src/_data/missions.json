@@ -1,5 +1,13 @@
 [
   {
+    "key": "log006",
+    "type": "reunion",
+    "code": "Log: #6",
+    "title": "Reunion #5 - TriviaTerk: ... ce spiccia 'a nave!",
+    "status": "complete",
+    "url": "/log/reunion/006/"
+  },
+  {
     "key": "log005",
     "type": "reunion",
     "code": "Log: #5",
