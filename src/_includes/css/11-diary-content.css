@@ -1,3 +1,20 @@
+/* ── DIARY LINKS ─────────────────────────────────────────── */
+/* Stesso aspetto dei link della pagina Ship (08-ship.css):
+   arancio senza sottolineatura, hover bianco sottolineato. */
+.diary-body a,
+.diary-body a:link,
+.diary-body a:visited {
+  color: var(--lcars-orange);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.diary-body a:hover,
+.diary-body a:focus-visible {
+  color: var(--ghost-white);
+  text-decoration: underline;
+}
+
 /* ── DIARY SUBTITLES ─────────────────────────────────────── */
 .diary-section-title {
   font-family: var(--font-display);
